@@ -290,7 +290,7 @@ export class Stage {
     const order = [...this.figures].sort((p, q) => (q[1].chorus ? 1 : 0) - (p[1].chorus ? 1 : 0));
     for (const [id, f] of order) {
       const dx = (f.tx - f.x) * (f.slow ? 0.025 : 0.09); f.x += dx;
-      if (f.slow && !f.chorus && !(f.reach && f.arm > 0.6)) { f.walked = (f.walked || 0) + Math.abs(dx); if (Math.abs(dx) > 0.35 && f.walked > 46) { f.walked = 0; this.emit('step', { x: f.x, heavy: id === 'char_father' }); } } f.tilt = (f.tilt || 0) + ((f.ttilt || 0) - (f.tilt || 0)) * 0.05; // no steps while the hand steers onto the shoulder
+      if (f.slow && !f.chorus && !(f.reach && this.touching)) { f.walked = (f.walked || 0) + Math.abs(dx); if (Math.abs(dx) > 0.35 && f.walked > 46) { f.walked = 0; this.emit('step', { x: f.x, heavy: id === 'char_father' }); } } f.tilt = (f.tilt || 0) + ((f.ttilt || 0) - (f.tilt || 0)) * 0.05; // no steps while the hand steers onto the shoulder
       if (f.leaving && Math.abs(f.x - f.tx) < 4) { this.figures.delete(id); continue; }
       const speaking = this.speaker === id;
       f.lean += ((speaking ? 1 : 0) - f.lean) * 0.12;
