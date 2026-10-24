@@ -117,7 +117,8 @@ function perfHash(perf) {
 // ---------- boot ----------
 const staging = await fetch('staging.json').then(r => r.json());
 const ids = Object.keys(staging.rigs).sort();
-const nameOf = id => staging.figures[id]?.name || id.replace(/^extra_|^char_/, '').replace(/_+/g, ' ');
+const storyNames = Object.fromEntries((await fetch('story/odyssey-tragic-comedy.json').then(r => r.json())).story.characters.map(c => [c.id, c.name])); // story names first: packet names can be real people
+const nameOf = id => storyNames[id] || staging.figures[id]?.name || id.replace(/^extra_|^char_/, '').replace(/_+/g, ' ');
 const cache = new Map();
 async function actor(id) {
   if (!cache.has(id)) cache.set(id, (async () => {

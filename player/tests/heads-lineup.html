@@ -1,0 +1,24 @@
+<!doctype html><meta charset="utf-8"><title>Head lineup</title>
+<body style="margin:0;background:#2a2118"><canvas id="c" width="1800" height="560"></canvas>
+<script src="../vendor/watson-rig/rig-renderer.js"></script>
+<script type="module">
+// Odie (Watson rig) beside the anchor-rig cast at stage height, feet on one line, to compare head size.
+import { makeAnchorRig, drawAnchorRig, pose, bounds } from '../anchor-rig.js';
+import { loadImage } from '../stage.js'; // also defines window.scaleWatsonHead
+const STRETCH = { thigh_left: 1.35, thigh_right: 1.35, shin_left: 1.35, shin_right: 1.35, upper_arm_left: 1.1, upper_arm_right: 1.1, forearm_left: 1.1, forearm_right: 1.1 };
+const s = await fetch('../staging.json').then(r => r.json()), man = await fetch('../vendor/watson-rig/manifest.json').then(r => r.json());
+const x = document.querySelector('#c').getContext('2d'), FIG = 420, FLOOR = 520;
+const headScale = +(new URLSearchParams(location.search).get('head') || 1);
+const imgs = {}; await Promise.all(man.parts.map(async p => { imgs[p.id] = await loadImage('../vendor/watson-rig/' + p.file); }));
+const m2 = window.scaleWatsonHead ? window.scaleWatsonHead(man, headScale) : man;
+const rc = document.createElement('canvas'); rc.width = 340; rc.height = 520;
+const info = window.WatsonRig.draw(rc.getContext('2d'), m2, imgs, {}, { background: null, padding: 0.02 });
+const top = info.bounds[1] * info.scale + info.ty, bot = info.bounds[3] * info.scale + info.ty, k = FIG / (bot - top);
+x.drawImage(rc, 80 - rc.width * k / 2, FLOOR - bot * k, rc.width * k, rc.height * k);
+const ids = ['char_father', 'char_dana', 'char_ines', 'char_chad', 'char_brookes', 'char_ajax', 'char_karpathi', 'char_dougie', 'char_knuthe', 'char_carmick', 'char_newall', 'extra_vp'];
+let cx = 220;
+for (const id of ids) { const r = s.rigs[id]; const im = {}; await Promise.all(Object.entries(r.files).map(async ([k2, v]) => { im[k2] = await loadImage('../' + v); }));
+  const rig = makeAnchorRig(r.meta, im); rig.stretch = STRETCH; drawAnchorRig(x, rig, {}, cx, FLOOR, FIG); cx += 130; }
+x.strokeStyle = '#c9a24a'; x.beginPath(); x.moveTo(0, FLOOR); x.lineTo(1800, FLOOR); x.stroke();
+document.title = 'ready';
+</script>

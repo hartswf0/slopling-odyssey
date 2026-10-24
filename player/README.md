@@ -19,13 +19,14 @@ Press **Play**. "Start from" lets you rehearse to a later point. ASAPS plays the
 - Ithaca carrying the calipers;
 - Ithaca after taking the chair.
 
-**How it plays.** One screen that never scrolls.
-- Text is paged to fit the panel and turns with the voice; tap the text to read on.
-- Choices are numbered buttons showing the place, prop or person they're about. The same object carries a matching badge on the stage, and clicking it there chooses it.
-- Clicking any person or prop makes them react and shows their name; empty stage does nothing.
-- Island choices open as a chart. **Map** shows the journey, with unvisited places dark.
-- **Back** returns to your last choice by replaying the run under the same seed.
-- Keys: Space or Enter continue, 1–9 choose, M map, Esc close.
+**How it plays.** A lit toy theatre in a dark room. The stage is the screen; on a phone held upright the scene fills it, and the camera holds on whoever matters.
+- Words arrive as subtitles inside the picture, paged to fit and turned by the voice. Tap to read on.
+- Choices are cardboard cards set on the stage, each showing the place, person or thing it's about, which is also ringed on stage.
+- **Locked choices are dark cards with a keyhole.** Try one and the theatre's **prompter** answers from the prompt box. If the key was dropped somewhere you can go back to, the card offers to take you there, and the thing you missed is lit when you land.
+- Touch anyone or anything on stage for their sheet: face and mood, feelings, feelings toward you, private thoughts, and the choice about them. Things also say what taking them opens later.
+- What you carry sits in a pocket that shows itself when it matters. Changes arrive as paper slips. Thoughts appear over the people who have them and go in the **Journal**.
+- **Back**, **Journal**, **Map** and **Menu** are faint words on the stage. Island choices open as a chart that keeps visited and locked islands. Keys: Space or Enter read on, 1–9 choose, M map, J journal, Esc close.
+- The design and its critiques are in `docs/SURFACE.md`; the engine-to-screen mapping is in `docs/SCION_ORCHESTRATION.md`.
 
 The voices, effects and score can each be switched off from the menu (☰); see [`docs/SOUND.md`](../docs/SOUND.md).
 
@@ -88,6 +89,7 @@ python3 tools/extract_kit_props.py        # props/
 node player/tests/conformance.mjs         # ASAPS conformance (below)
 .kvenv/bin/python tools/render_voices.py --model kokoro-v1.0.onnx --voices voices-v1.0.bin   # voices (setup in the script header)
 node player/tests/voices.mjs              # every spoken line has its voice
+node player/tests/fuzz-ui.mjs start 3 1     # random playthroughs of the real UI reach an ending (server on :8765)
 ```
 
 To rebuild the ASAPS bundle, clone ASAPS Modern, `npm install --workspace @asaps/core`, then

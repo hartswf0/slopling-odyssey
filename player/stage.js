@@ -1,4 +1,4 @@
-import { makeAnchorRig, drawAnchorRig } from './anchor-rig.js';
+import { makeAnchorRig, drawAnchorRig, pose, bounds } from './anchor-rig.js';
 // Cardboard toy-theatre stage for the ASAPS player.
 // Everyone but Watson is a single scale-matched figure card on a wire (Pollock-style
 // toy theatre). Watson is the one jointed puppet: the working 15-card front rig.
@@ -9,6 +9,8 @@ const W = 1280, H = 720, FLOOR = 612, FIG_H = 372;
 // their own axis at the recorded anchors; see player/tests/proportion-test.html.
 const STRETCH = { thigh_left: 1.35, thigh_right: 1.35, shin_left: 1.35, shin_right: 1.35, upper_arm_left: 1.1, upper_arm_right: 1.1, forearm_left: 1.1, forearm_right: 1.1 };
 const TAU = Math.PI * 2;
+// Crowds have no ASAPS emotion of their own, so their faces follow what they are doing.
+const CHORUS_FACE = { clap: 'E06', chant: 'E01', shade: 'E17', still: 'E01' };
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
 // the stage's own random source: Math.random belongs to the ASAPS engine, so a replayed run (undo) takes the same branches
@@ -28,6 +30,23 @@ export function loadTrimmed(src) {
   }));
   return trimCache.get(src);
 }
+// Grey copies for the Underworld's shades, made once per card. (ctx.filter cost seconds per frame
+// on software-rendered canvases and does nothing in Safari, so the stage never uses it.)
+const greys = new WeakMap();
+function greyOf(im) {
+  if (!im) return im; if (greys.has(im)) return greys.get(im);
+  const c = document.createElement('canvas'); c.width = im.width; c.height = im.height; const g = c.getContext('2d'); g.drawImage(im, 0, 0);
+  const d = g.getImageData(0, 0, c.width, c.height), a = d.data;
+  for (let i = 0; i < a.length; i += 4) { const l = (a[i] * 0.3 + a[i + 1] * 0.59 + a[i + 2] * 0.11) * 0.8; a[i] = l; a[i + 1] = l; a[i + 2] = l * 1.08; }
+  g.putImageData(d, 0, 0); greys.set(im, c); return c;
+}
+// Odie's head card is drawn smaller than the anchor-rig cast's (measured in tests/heads-lineup.html);
+// enlarge it about its neck pivot so every head on stage is the same size. A copy of the manifest, not new art.
+export const WATSON_HEAD_SCALE = 1.28;
+export function scaleWatsonHead(manifest, k = WATSON_HEAD_SCALE) {
+  return { ...manifest, parts: manifest.parts.map(p => { if (p.id !== 'head') return p; const [px, py] = p.pivot, [x, y, w, h] = p.rect; return { ...p, rect: [px - (px - x) * k, py - (py - y) * k, w * k, h * k] }; }) };
+}
+if (typeof window !== 'undefined') window.scaleWatsonHead = scaleWatsonHead;
 export function loadImage(src) {
   if (!imgCache.has(src)) {
     imgCache.set(src, new Promise((res) => { const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = src; }));
@@ -73,7 +92,7 @@ function autoLayout(set) {
 export class Stage {
   constructor(canvas, staging, rig) {
     this.cv = canvas; this.x = canvas.getContext('2d');
-    this.staging = staging; this.rig = rig; // {api, manifest, images}
+    this.staging = staging; this.rig = rig && { ...rig, manifest: scaleWatsonHead(rig.manifest) }; // {api, manifest, images}; Odie's head matched to the cast
     this.place = null; this.cast = []; this.speaker = null; this.motifs = [];
     this.figures = new Map(); // id -> {img, x, tx, a, ta, lean}
     this.watson = { x: 430, tx: 430, a: 1, pose: 'idle', poseT: 0, from: {}, to: {} };
@@ -236,9 +255,20 @@ export class Stage {
   }
   onFrame(now) {
     const x = this.x, t = (now - this.t0) / 1000;
-    x.setTransform(1, 0, 0, 1, 0, 0); x.clearRect(0, 0, W, H); this.hits = [];
-    x.filter = this.memory ? 'sepia(0.8) saturate(0.75) brightness(1.04)' : 'none'; // the Hendry works, remembered
+    const CH = this.cv.height, oy = 0;
+    x.setTransform(1, 0, 0, 1, 0, 0); x.clearRect(0, 0, W, CH); this.hits = [];
     const lay = this.layoutFor(this.place) || { wash: ['#c9a777', '#6e5236'], pieces: [] };
+    // the camera: eases in on whoever speaks, closer on the touch, and back out when no one does.
+    // On a tall screen the scene fills the frame and the camera holds on one person at a time, as vertical film does.
+    const tg = this.camTarget(t), c = this.cam ||= { ...tg };
+    c.s += (tg.s - c.s) * 0.025; c.x += (tg.x - c.x) * 0.03; c.y += (tg.y - c.y) * 0.03;
+    const hw = W / (2 * c.s), hh = CH / (2 * c.s); c.x = clamp(c.x, hw, W - hw); if (!this.tall) c.y = clamp(c.y, hh, H - hh);
+    x.save();
+    x.setTransform(c.s, 0, 0, c.s, W / 2 - c.x * c.s, CH / 2 - c.y * c.s);
+    if (this.tall) { // the set continues past its own edges: sky above, boards below, so a tall frame is never blank
+      x.fillStyle = lay.wash[0]; x.fillRect(-W, -3000, 3 * W, 3000);
+      const fl = x.createLinearGradient(0, H, 0, H + 900); fl.addColorStop(0, lay.wash[1]); fl.addColorStop(1, '#120c07'); x.fillStyle = fl; x.fillRect(-W, H - 1, 3 * W, 3000);
+    }
     // wash + proscenium board
     const g = x.createLinearGradient(0, 0, 0, H); g.addColorStop(0, lay.wash[0]); g.addColorStop(1, lay.wash[1]); x.fillStyle = g; x.fillRect(0, 0, W, H);
     x.fillStyle = 'rgba(40,26,12,.22)'; x.fillRect(0, FLOOR, W, H - FLOOR);
@@ -256,9 +286,9 @@ export class Stage {
       const footY = FLOOR + 8 - (f.chorus ? 30 : 0);
       this.hits.push({ kind: 'fig', id, r: [f.x - w * 0.42, footY - h, f.x + w * 0.42, footY] });
       x.save(); x.translate(f.x, footY - lift + bob); x.rotate(tilt);
-      if (mode === 'shade') { x.globalAlpha = 0.5; x.filter = 'grayscale(1) brightness(0.8)'; }
+      const shade = mode === 'shade'; if (shade) x.globalAlpha = 0.5;
       x.strokeStyle = 'rgba(30,22,14,.55)'; x.lineWidth = 2; x.beginPath(); x.moveTo(0, -4); x.lineTo(f.x < 640 ? -160 : 160, 40); x.stroke();
-      x.shadowColor = 'rgba(15,8,0,.5)'; x.shadowBlur = 14; x.shadowOffsetX = 6; x.shadowOffsetY = 10;
+      if (!shade && !f.chorus) { x.shadowColor = 'rgba(15,8,0,.5)'; x.shadowBlur = 14; x.shadowOffsetX = 6; x.shadowOffsetY = 10; } // shades cast none
       if (f.flip) x.scale(-1, 1);
       if (rig) {
         // jointed father: his screen-left arm rises toward Watson when reaching
@@ -273,10 +303,13 @@ export class Stage {
         if (mode === 'shade') extra = { head: Math.sin(ph * .6) * 3, upper_arm_left: 3, upper_arm_right: -3 };
         if (mode === 'still') extra = {};
         if (mode === 'idle') extra = { head: Math.sin(ph * 1.1) * 1.5 };
-        rig.stretch = STRETCH;
-        const pts = drawAnchorRig(x, rig, extra, 0, 0, h + 6);
+        rig.stretch = STRETCH; rig.rest ||= bounds(rig, pose(rig, {}));
+        const code = f.chorus ? CHORUS_FACE[mode] : this.faces?.[id];
+        if (code !== f.face) { if (f.faceSeen && !f.chorus) this.emit('face', { x: f.x }); f.face = code; f.faceSeen = true; }
+        let R = this.faceRig(id, rig, code); if (shade) R = (R.grey ||= { ...R, images: Object.fromEntries(Object.entries(R.images).map(([k, v]) => [k, greyOf(v)])) });
+        const pts = drawAnchorRig(x, R, extra, 0, 0, h + 6, rig.rest);
         f.hand = [f.x + (f.flip ? -1 : 1) * pts.hand_left[0], FLOOR + 8 + pts.hand_left[1]];
-      } else if (f.img) { const pk = f.poke ? clamp(1 - (performance.now() - f.poke) / 600, 0, 1) : 0; x.drawImage(f.img, -w / 2, -h - Math.sin(pk * Math.PI) * 14, w, h); }
+      } else if (f.img) { const pk = f.poke ? clamp(1 - (performance.now() - f.poke) / 600, 0, 1) : 0; x.drawImage(shade ? greyOf(f.img) : f.img, -w / 2, -h - Math.sin(pk * Math.PI) * 14, w, h); }
       x.restore();
       const plaque = this.staging.thinkers?.[id];
       if (plaque) { // thinkers carry a name plaque at their feet
@@ -306,7 +339,10 @@ export class Stage {
     this.drawTreeTags(lay, t); this.drawWorkTags(lay, t);
     draw('front'); this.drawProps('front', t);
     if (lay.auto) { x.fillStyle = 'rgba(30,20,10,.55)'; x.font = '12px "Courier Prime", monospace'; x.fillText('placeholder set layout', 14, 22); }
-    x.filter = 'none';
+    if (this.memory) { // the Hendry works, remembered: desaturate, then warm (blend modes, not filters)
+      x.save(); x.globalCompositeOperation = 'saturation'; x.globalAlpha = 0.8; x.fillStyle = 'hsl(0,0%,50%)'; x.fillRect(0, 0, W, H);
+      x.globalCompositeOperation = 'multiply'; x.globalAlpha = 1; x.fillStyle = '#f2d6a6'; x.fillRect(0, 0, W, H); x.restore();
+    }
     if (this.touching && this.shoulderHand && this.watsonPts) { // the father's hand, resting on the shoulder
       const [sx, sy] = this.watsonPts.shoulder, im = this.shoulderHand, w = 78, h = w * im.height / im.width;
       x.save(); x.translate(sx + 4, sy - 14); x.rotate(0.25); x.shadowColor = 'rgba(0,0,0,.45)'; x.shadowBlur = 8; x.drawImage(im, -w / 2, -h / 2, w, h); x.restore();
@@ -315,15 +351,86 @@ export class Stage {
       x.translate(W / 2, 26); x.fillStyle = '#f2e6cc'; x.strokeStyle = '#8a6a43'; x.lineWidth = 2; x.shadowColor = 'rgba(0,0,0,.4)'; x.shadowBlur = 8;
       x.beginPath(); x.rect(-tw / 2, 0, tw, 38); x.fill(); x.stroke(); x.shadowBlur = 0; x.fillStyle = '#2a1c0e'; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText(this.panLabel, 0, 19); x.restore(); }
     this.drawAffordances(t);
-    // grain/vignette
-    const v = x.createRadialGradient(W / 2, H / 2, H * .35, W / 2, H / 2, H * .95); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.38)'); x.fillStyle = v; x.fillRect(0, 0, W, H);
+    x.restore(); x.setTransform(1, 0, 0, 1, 0, 0);
+    if (this.tall) this.drawValance(CH, t);
+    // grain/vignette, over the whole frame
+    const v = x.createRadialGradient(W / 2, CH / 2, Math.min(W, CH) * .35, W / 2, CH / 2, Math.max(W, CH) * .75); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.38)'); x.fillStyle = v; x.fillRect(0, 0, W, CH);
     // scene change wipe
-    const since = now - this.lastSwitch; if (since < 420) { x.fillStyle = `rgba(18,12,6,${1 - since / 420})`; x.fillRect(0, 0, W, H); }
+    const since = now - this.lastSwitch; if (since < 420) { x.fillStyle = `rgba(18,12,6,${1 - since / 420})`; x.fillRect(0, 0, W, CH); }
     requestAnimationFrame(this.onFrame);
   }
+  // ---------- faces: the packets' E01-E17 replacement heads, each hung at its own neck anchor ----------
+  faceRig(id, rig, code) {
+    const src = code && this.staging.rigs[id]?.faces?.[code]; if (!src) return rig;
+    rig.faceRigs ||= {}; if (code in rig.faceRigs) return rig.faceRigs[code] || rig;
+    rig.faceRigs[code] = null; // loading: keep the current head until it arrives
+    const part = this.staging.rigs[id].meta.parts.find(p => p.file === `expressions/${code}.png`);
+    loadImage(src).then(im => { if (im && part) rig.faceRigs[code] = { ...rig, parts: { ...rig.parts, head: part }, images: { ...rig.images, head: im }, faceRigs: null }; });
+    return rig;
+  }
+  // Odie's faces come from a differently framed bank: lay the trimmed head over his head card, keeping its neck and collar
+  watsonImages(code) {
+    const src = code && this.staging.watsonFaces?.[code], base = this.rig.images; if (!src) return base;
+    this.wfaces ||= {}; if (code in this.wfaces) return this.wfaces[code] || base;
+    this.wfaces[code] = null;
+    loadTrimmed(src).then(e => { if (!e) return; const h = base.head, c = document.createElement('canvas'); c.width = h.width; c.height = h.height; const g = c.getContext('2d');
+      g.drawImage(h, 0, 0); const w = 250 / 253 * h.width, k = w / e.width; g.drawImage(e, 123 / 253 * h.width - w / 2, -12 / 338 * h.height, w, e.height * k);
+      this.wfaces[code] = { ...base, head: c }; });
+    return base;
+  }
+  // the head as currently worn, for the HUD and character sheets
+  faceImage(id) {
+    if (id === 'char_player') return this.watsonImages(this.faces?.char_player).head;
+    const rig = this.rigs[id]; if (!rig) return null; const f = this.faceRig(id, rig, this.faces?.[id]); return f.images.head;
+  }
+
+  // A tall screen gets a tall frame, and the scene is zoomed to fill it (see camTarget).
+  setFrame(cssW, cssH) {
+    const tall = cssH > cssW * 0.75, CH = tall ? Math.round(W * cssH / cssW) : H;
+    if (this.cv.height !== CH) this.cv.height = CH;
+    if (this.tall !== tall) this.cam = null; // a new frame shape: the camera cuts rather than drifts
+    this.oy = 0; this.tall = tall; this.baseZoom = 1;
+    return { bandTop: 0, apronTop: 1 };
+  }
+  // A toy theatre's proscenium valance, hung across the top of a tall frame: the theatre's own
+  // architecture where a narrow screen would otherwise show bare wall above the set.
+  drawValance(CH, t) {
+    const x = this.x, h = this.valanceH = Math.round(CH * 0.13), sw = W / 7;
+    const g = x.createLinearGradient(0, 0, 0, h); g.addColorStop(0, '#2a0707'); g.addColorStop(0.55, '#6b1616'); g.addColorStop(1, '#4a0f0f');
+    x.save(); x.fillStyle = g; x.shadowColor = 'rgba(0,0,0,.6)'; x.shadowBlur = 30; x.shadowOffsetY = 12;
+    x.beginPath(); x.moveTo(0, 0); x.lineTo(W, 0); x.lineTo(W, h - 40);
+    for (let i = 7; i > 0; i--) x.quadraticCurveTo(i * sw - sw / 2, h + 34, (i - 1) * sw, h - 40); // scallops
+    x.closePath(); x.fill(); x.shadowBlur = 0; x.shadowOffsetY = 0;
+    x.strokeStyle = '#c9a24a'; x.lineWidth = 6; x.beginPath(); x.moveTo(0, h - 40);
+    for (let i = 0; i < 7; i++) x.quadraticCurveTo(i * sw + sw / 2, h + 34, (i + 1) * sw, h - 40);
+    x.stroke();
+    x.strokeStyle = 'rgba(0,0,0,.22)'; x.lineWidth = 3; for (let i = 1; i < 14; i++) { const px = i * W / 14; x.beginPath(); x.moveTo(px, 0); x.lineTo(px + Math.sin(t * 0.4 + i) * 3, h - 50); x.stroke(); } // folds
+    x.fillStyle = '#c9a24a'; x.fillRect(0, Math.round(h * 0.42), W, 5);
+    x.restore();
+  }
+  camTarget(t) {
+    const breathe = 0.008 * Math.sin(t * 0.09); // a slow breath, so a held scene is never quite still
+    if (this.tall) { // vertical film: a shot that holds everyone who matters, feet at three-fifths of the frame (words and cards sit below)
+      const CH = this.cv.height, xs = [];
+      if (this.touching && this.watsonPts) xs.push(this.watsonPts.shoulder[0] - 90, this.watsonPts.shoulder[0] + 160);
+      else { if (this.hasWatson) xs.push(this.watson.x); for (const [id, f] of this.figures) if (!f.chorus && !f.leaving && !f.motif && (id === this.speaker || xs.length < 2)) xs.push(f.x); }
+      if (!xs.length) xs.push(W / 2);
+      const lo = Math.min(...xs), hi = Math.max(...xs), s = clamp(W / (hi - lo + 250), 1.6, 3.1) * (1 + breathe);
+      return { s, x: (lo + hi) / 2, y: FLOOR - 0.15 * CH / s };
+    }
+    const z = this.baseZoom || 1;
+    if (this.touching && this.watsonPts) return { s: 1.12 * z, x: this.watsonPts.shoulder[0] + 60, y: FLOOR - FIG_H * 0.6 };
+    const f = this.speaker && this.figures.get(this.speaker);
+    if (f && !f.leaving) return { s: (1.06 + breathe) * z, x: f.x, y: FLOOR - FIG_H * 0.55 };
+    if (z > 1.3 && this.hasWatson) return { s: z + Math.max(0, breathe), x: this.watson.x, y: H / 2 }; // tall screen, no one speaking: hold on Odie
+    return { s: z + Math.max(0, breathe), x: W / 2, y: H / 2 };
+  }
+  // screen pixels → stage pixels, through the camera
+  toWorld(px, py) { const c = this.cam || { s: 1, x: W / 2, y: H / 2 }, CH = this.cv.height; return [(px - (W / 2 - c.x * c.s)) / c.s, (py - (CH / 2 - c.y * c.s)) / c.s]; }
   // ---------- what you can click ----------
   // hit test in stage pixels; topmost first. Empty stage answers nothing.
   hitAt(px, py) { for (let i = this.hits.length - 1; i >= 0; i--) { const h = this.hits[i], [a, b, c, d] = h.r; if (px >= a && px <= c && py >= b && py <= d) return h; } return null; }
+  think(id, text) { (this.thoughts ||= []).push({ id, text, t: performance.now() }); this.emit('lift'); }
   same(a, b) { return a && b && a.kind === b.kind && (a.id === b.id || (a.kind === 'prop' && b.id && a.id.split('_')[0] === b.id.split('_')[0])); }
   poke(hit) {
     if (hit.kind === 'fig') { if (hit.id === 'char_player') { this.setWatsonPose('open'); setTimeout(() => this.setWatsonPose('idle'), 900); } else { const f = this.figures.get(hit.id); if (f) f.poke = performance.now(); } }
@@ -332,21 +439,35 @@ export class Stage {
   labelFor(hit) {
     if (hit.kind === 'prop') return hit.id.replace(/_(native|open|glow|strung|unstrung)$/, '').replace(/_/g, ' ');
     if (hit.id === 'char_player') return 'Odie (you)';
-    return this.staging.thinkers?.[hit.id] || this.staging.figures[hit.id]?.name || hit.id.replace(/^char_|^extra_/, '').replace(/_+/g, ' ');
+    return this.charNames?.[hit.id] || this.staging.thinkers?.[hit.id] || this.staging.figures[hit.id]?.name || hit.id.replace(/^char_|^extra_/, '').replace(/_+/g, ' ');
   }
   // numbered badges over objects a current choice is about; hover ring; the inspect tag
   drawAffordances(t) {
     const x = this.x, tag = (cx, cy, txt, fill, ink) => {
-      x.font = '700 20px "Atkinson Hyperlegible", system-ui, sans-serif'; const tw = x.measureText(txt).width + 24;
-      x.save(); x.fillStyle = fill; x.shadowColor = 'rgba(0,0,0,.5)'; x.shadowBlur = 8; x.beginPath(); x.roundRect(cx - tw / 2, cy - 17, tw, 34, 17); x.fill(); x.shadowBlur = 0;
+      x.font = '600 19px "Fraunces", Georgia, serif'; const tw = Math.max(30, x.measureText(txt).width + 18);
+      x.save(); x.fillStyle = fill; x.shadowColor = 'rgba(0,0,0,.5)'; x.shadowBlur = 8; x.beginPath(); x.roundRect(cx - tw / 2, cy - 15, tw, 30, 3); x.fill(); x.shadowBlur = 0;
       x.fillStyle = ink; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText(txt, cx, cy + 1); x.restore();
     };
     const top = h => [(h.r[0] + h.r[2]) / 2, Math.max(24, h.r[1] - 22)];
     if (this.hover && !this.marks?.some(m => this.same(this.hover, m))) { const [cx, cy] = top(this.hover); x.save(); x.strokeStyle = 'rgba(255,240,200,.85)'; x.lineWidth = 3; x.setLineDash([8, 6]); x.beginPath(); x.ellipse(cx, this.hover.r[3] + 4, (this.hover.r[2] - this.hover.r[0]) / 2, 12, 0, 0, TAU); x.stroke(); x.restore(); }
     for (const m of this.marks || []) {
       const h = this.hits.find(q => this.same(q, m)); if (!h) continue; const [cx, cy] = top(h), pulse = 0.5 + 0.5 * Math.sin(t * 4);
-      x.save(); x.strokeStyle = `rgba(255,214,120,${0.5 + pulse * 0.5})`; x.lineWidth = 4; x.beginPath(); x.ellipse(cx, h.r[3] + 4, (h.r[2] - h.r[0]) / 2 + pulse * 6, 14 + pulse * 3, 0, 0, TAU); x.stroke(); x.restore();
-      tag(cx, cy, `${m.n}  ${m.short || ''}`.trim(), '#ffd36e', '#1d1406');
+      x.save(); x.strokeStyle = `rgba(255,230,180,${0.25 + pulse * 0.35})`; x.lineWidth = 2.5; x.beginPath(); x.ellipse(cx, h.r[3] + 4, (h.r[2] - h.r[0]) / 2 + pulse * 6, 14 + pulse * 3, 0, 0, TAU); x.stroke(); x.restore();
+    }
+    // thought bubbles: what an ASAPS reflection says this person has just realised
+    this.thoughts = (this.thoughts || []).filter(th => performance.now() - th.t < 9000);
+    for (const th of this.thoughts) {
+      const h = this.hits.find(q => q.kind === 'fig' && q.id === th.id); if (!h) continue; const el = (performance.now() - th.t) / 1000, a = Math.min(1, el * 3, (9 - el) * 1.5);
+      x.save(); x.globalAlpha = a; x.font = 'italic 21px "Atkinson Hyperlegible", system-ui, sans-serif';
+      const words = th.text.split(' '), lines = []; let l = ''; for (const wd of words) { if (x.measureText(l + ' ' + wd).width > 360 && l) { lines.push(l); l = wd; } else l = l ? l + ' ' + wd : wd; } lines.push(l);
+      const bw = Math.max(...lines.map(t => x.measureText(t).width)) + 34, bh = lines.length * 27 + 22, cx = clamp((h.r[0] + h.r[2]) / 2, bw / 2 + 10, W - bw / 2 - 10), by = Math.max(10, h.r[1] - bh - 34);
+      x.fillStyle = 'rgba(255,250,236,.97)'; x.shadowColor = 'rgba(0,0,0,.45)'; x.shadowBlur = 12; x.beginPath(); x.roundRect(cx - bw / 2, by, bw, bh, 18); x.fill();
+      for (const [dx, dy, r] of [[0, bh + 10, 7], [10, bh + 24, 4.5]]) { x.beginPath(); x.arc((h.r[0] + h.r[2]) / 2 + dx * 0 + (cx > (h.r[0] + h.r[2]) / 2 ? 8 : -8), by + dy, r, 0, TAU); x.fill(); }
+      x.shadowBlur = 0; x.fillStyle = '#2a1c0e'; x.textAlign = 'center'; x.textBaseline = 'top'; lines.forEach((t, i) => x.fillText(t, cx, by + 12 + i * 27)); x.restore();
+    }
+    const sp = this.spotlight; if (sp && performance.now() - sp.t < 10000) { // what you came back for
+      const h = this.hits.find(q => q.kind === sp.kind && q.id.split('_')[0] === sp.id), pulse = 0.5 + 0.5 * Math.sin(t * 5);
+      if (h) { const [cx] = top(h); x.save(); x.strokeStyle = `rgba(255,236,190,${0.45 + pulse * 0.5})`; x.lineWidth = 4; x.shadowColor = 'rgba(255,220,150,.9)'; x.shadowBlur = 18; x.beginPath(); x.ellipse(cx, (h.r[1] + h.r[3]) / 2, (h.r[2] - h.r[0]) / 2 + 18 + pulse * 6, (h.r[3] - h.r[1]) / 2 + 14 + pulse * 4, 0, 0, TAU); x.stroke(); x.restore(); }
     }
     const ins = this.inspect; if (ins && performance.now() - ins.t < 2600) { const h = this.hits.find(q => this.same(q, ins.hit)) || ins.hit, [cx, cy] = top(h); tag(cx, cy - (this.marks?.some(m => this.same(h, m)) ? 40 : 0), this.labelFor(ins.hit), 'rgba(242,230,204,.96)', '#2a1c0e'); }
   }
@@ -376,7 +497,8 @@ export class Stage {
     const rot = this.currentRotations();
     rot.torso = (rot.torso || 0) + Math.sin(t * 1.7) * 0.5; rot.head = (rot.head || 0) + Math.sin(t * 1.1 + 1) * 0.8;
     const rc = this.rigCanvas, rx = rc.getContext('2d');
-    const info = api.draw(rx, manifest, images, rot, { background: null, padding: 0.02 });
+    const wcode = this.faces?.char_player; if (wcode !== this.watsonFace) { if (this.watsonFace !== undefined) this.emit('face', { x: w.x }); this.watsonFace = wcode; }
+    const info = api.draw(rx, manifest, this.watsonImages(wcode), rot, { background: null, padding: 0.02 });
     const [bx0, by0, bx1, by1] = info.bounds, s = info.scale;
     const figTop = by0 * s + info.ty, figBot = by1 * s + info.ty, drawn = figBot - figTop;
     const k = (FIG_H + 6) / drawn; // same height as the figure cards
@@ -389,7 +511,9 @@ export class Stage {
     const surge = this.surge ? clamp(1 - (performance.now() - this.surge) / 5000, 0, 1) : 0;
     const touching = [...this.figures.values()].some(f => f.reach && f.arm > 0.85);
     if (touching && !this.touching) this.emit('touch', { x: this.watsonPts.shoulder[0] }); this.touching = touching;
-    const a = clamp(this.state.craft / 8 + surge, 0, 1.6) * (this.state.dim ? 0.25 : 1) * (touching ? 0.2 : 1);
+    if (this.craftSeen !== this.state.craft) { this.craftSeen = this.state.craft; this.craftAt = performance.now(); } // Craft shows itself when it changes, then rests
+    const lit = Math.max(surge, clamp(1 - (performance.now() - (this.craftAt || 0) - 4000) / 2500, 0, 1));
+    const a = clamp(this.state.craft / 8 + surge, 0, 1.6) * lit * (this.state.dim ? 0.25 : 1) * (touching ? 0.2 : 1);
     this.onLight?.(this.quiet ? 0 : a);
     if (a > 0.02) {
       const [hx, hy] = map(this.watson.pose === 'point' ? info.pivots.hand_right : info.pivots.hand_left);

@@ -30,6 +30,7 @@ CAST = {
     'Ken Tomson': ('am_santa', 0.95), 'Claude Shanning': ('am_liam', 1.05), 'Ilya Sutskov': ('am_echo', 0.95),
     'Gabe Newall': ('am_adam', 1.0), 'Jon Carmick': ('am_michael', 1.08), 'Denis Hassaby': ('bm_daniel', 1.0),
     'Don Knuthe': ('am_onyx', 0.9), 'Ajax': ('am_fenrir', 0.9),
+    'Prompter': ('bf_emma', 1.04),  # the theatre's prompter: the asides in player/asides.json
 }
 VALUES = {'roleHolderName': ['you', 'nobody', 'Ines', 'Dougie', 'Chad', 'nobody yet'], 'islandsVisited': [str(i) for i in range(7)]}
 
@@ -75,6 +76,8 @@ def lines_of(story):
             t = text
             for n, v in zip(names, combo): t = t.replace('${%s}' % n, v)
             if normal(t): expanded.append((spk, t))
+    asides = ROOT / 'player/asides.json'  # the prompter's fourth-wall asides
+    if asides.exists(): expanded += [('Prompter', t) for t in json.load(open(asides))['lines'].values()]
     return expanded
 
 

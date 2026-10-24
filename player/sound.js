@@ -112,6 +112,8 @@ export class Sound {
       prop: () => { this.tone(t, 170 - Math.min(80, (d.h || 100) / 3), 0.1, { f2: 70, peak: 0.16, x }); this.noise(t, 0.05, { f: 1500, q: 1.5, peak: 0.07, x }); },
       lift: () => this.bell(t + 0.1, 91, 0.05, 'sfx'),
       pan: () => this.noise(t, 0.9, { f: 500, f2: 1600, q: 1.2, a: 0.3, peak: 0.07 }),
+      face: () => { this.noise(t, 0.05, { f: 2600, q: 2, a: 0.004, peak: 0.05, x }); this.noise(t + 0.04, 0.03, { f: 1400, q: 3, peak: 0.04, x }); }, // a head card swapped
+      rattle: () => { for (let i = 0; i < 4; i++) { const u = t + i * 0.055 + r() * 0.02; this.noise(u, 0.02, { f: 3800 + r() * 1500, q: 9, peak: 0.16 }); this.tone(u, 1900 + r() * 700, 0.04, { peak: 0.03, type: 'triangle' }); } this.tone(t + 0.25, 140, 0.12, { f2: 90, peak: 0.12 }); }, // a lock tried and held
       page: () => this.noise(t, 0.2, { f: 2400, f2: 1300, q: 0.8, a: 0.03, peak: 0.035 }),
       click: () => this.noise(t, 0.04, { f: 3000, q: 4, peak: 0.2 }),
       still: () => { this.scene.still = true; this.applyLevels(); }, // silence lets the thought land
@@ -140,6 +142,19 @@ export class Sound {
     const start = this.A.currentTime + 0.08; s.start(start, offset);
     this.cur = { s, buf, start: start - offset, e }; s.onended = () => { if (this.cur?.s === s) { this.cur = null; this.applyLevels(); } };
     this.applyLevels();
+  }
+  // The prompter speaks over the scene: the line in progress ducks under him and carries on.
+  async aside(text) {
+    await this.manifestReady; const e = this.manifest?.lines?.[voiceKey(text)];
+    if (!this.A || !e || !this.prefs.voice) return e?.dur || null;
+    try {
+      const buf = await this.A.decodeAudioData(await (await fetch('voices/' + e.file)).arrayBuffer());
+      const s = this.A.createBufferSource(), g = this.A.createGain(); g.gain.value = 1.1; s.buffer = buf; s.connect(g); g.connect(this.master);
+      const t = this.A.currentTime + 0.05; s.start(t);
+      this.bus.voice.gain.setTargetAtTime(0.25, t, 0.08); this.bus.music.gain.setTargetAtTime(0.05, t, 0.1);
+      s.onended = () => this.applyLevels();
+      return e.dur;
+    } catch (err) { return null; }
   }
   // jump the line now playing to a fraction of its length (the text pager keeps voice and page together)
   seekVoice(frac) { const c = this.cur; if (!c) return; try { c.s.onended = null; c.s.stop(); } catch (e) {} this.play(c.buf, c.e, Math.max(0, Math.min(c.e.dur - 0.05, frac * c.e.dur))); }
