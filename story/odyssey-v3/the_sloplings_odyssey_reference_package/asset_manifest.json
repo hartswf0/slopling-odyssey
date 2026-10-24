@@ -1,0 +1,2019 @@
+{
+  "packageMetadata": {
+    "title": "The Slopling's Odyssey \u2014 Complete Visual & Narrative Reference Package",
+    "storyTitle": "The Slopling's Odyssey",
+    "genre": "Tragicomedy / Interactive Mythic Satire",
+    "suggestedTheme": "builtin-ink-and-brass",
+    "totalBeats": 97,
+    "acts": [
+      "I. The Call (Beats 0\u201317)",
+      "II. The Voyage & Islands (Beats 18\u201364)",
+      "II. The Underworld (Beats 70\u201376)",
+      "III. The Return & Ithaca (Beats 77\u2013107)"
+    ],
+    "stateCounters": [
+      "Craft",
+      "Standing",
+      "Cunning",
+      "Meaning",
+      "Leverage",
+      "Father's Sight (recognition)",
+      "Father's Pride (pride)"
+    ]
+  },
+  "familyCast": [
+    {
+      "id": "char_player",
+      "storyName": "Odie Marsh",
+      "storyRole": "Protagonist / Player ('The Slopling', AI-Assisted Software Engineer)",
+      "beats": "Beats 0\u2013107 (All clusters; variants: default, odie_lead, odie_bench)",
+      "realPersonName": "Watson Franklin Hartsoe III",
+      "realPersonRole": "PhD Candidate in Digital Media & MS in HCI at Georgia Tech (advised by Jay David Bolter); Sewanee BA Anthropology summa cum laude; Fulbright Scholar; AI Context Engineer & Worldtext Theorist from Maryville, TN",
+      "localImages": [
+        {
+          "label": "Watson Hartsoe \u2014 Primary Portrait (whartai Closeup)",
+          "path": "user_uploaded_files/ttl=63d/user_uploaded/watson_portrait_1.png",
+          "bundlePath": "images/family_and_protagonist/odie_marsh_watson_hartsoe_portrait_1.png"
+        },
+        {
+          "label": "Watson Hartsoe \u2014 Red Oak Woodcarving ('The Craftsman's Token')",
+          "path": "user_uploaded_files/ttl=63d/user_uploaded/watson_portrait_woodcarving.png",
+          "bundlePath": "images/family_and_protagonist/odie_marsh_watson_hartsoe_red_oak_carving.png"
+        },
+        {
+          "label": "Watson Hartsoe \u2014 Illustrated Portrait ('Odie at the Bench')",
+          "path": "user_uploaded_files/ttl=63d/user_uploaded/watson_portrait_painted.png",
+          "bundlePath": "images/family_and_protagonist/odie_marsh_watson_hartsoe_painted.png"
+        },
+        {
+          "label": "Watson Hartsoe \u2014 Cyberpunk/Neon Portrait ('Odie Team Lead / Voyaging')",
+          "path": "user_uploaded_files/ttl=63d/user_uploaded/watson_portrait_2.png",
+          "bundlePath": "images/family_and_protagonist/odie_marsh_watson_hartsoe_portrait_2.png"
+        }
+      ],
+      "externalImages": [
+        {
+          "label": "Watson Hartsoe Portfolio Graphic",
+          "url": "https://cdn.prod.website-files.com/5f989cc41a23932054f6e910/5fd98a9007d6b3fc21641935_Group%201705.png"
+        },
+        {
+          "label": "Poppy Li (Charlotte Nicdao \u2014 Mythic Quest)",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Charlotte_nicdao_2022_1.jpg/250px-Charlotte_nicdao_2022_1.jpg"
+        },
+        {
+          "label": "Richard Hendricks (Thomas Middleditch \u2014 Silicon Valley)",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Thomas_Middleditch_by_Gage_Skidmore.jpg/250px-Thomas_Middleditch_by_Gage_Skidmore.jpg"
+        },
+        {
+          "label": "Odysseus (Sperlonga Marble Head)",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Head_Odysseus_MAR_Sperlonga.jpg/250px-Head_Odysseus_MAR_Sperlonga.jpg"
+        }
+      ],
+      "storyDescription": "Twenty-nine. An AI-assisted coder and self-described 'slopling', 'slopfeeder', and 'AI code proompter' who steers a language model through legacy billing code and catches its confident Friday 4 p.m. lies. Torn between the invisible mastery of his craft (Ryle's knowing-how, Scott's metis, Naur's living theory) and the visible promotion ladder.",
+      "fictionalCounterparts": [
+        {
+          "name": "Odysseus & Telemachus (Homer's The Odyssey / Ulysses 1954 / The Odyssey 2026)",
+          "detail": "Feigns madness at the plough (salting the Jira sprint board), sails past monsters of management, strings the great bow of the billing service, and seeks recognition from his father in the orchard.",
+          "url": "https://en.wikipedia.org/wiki/Odysseus"
+        },
+        {
+          "name": "Poppy Li (Charlotte Nicdao in Apple TV+'s Mythic Quest)",
+          "detail": "Brilliant lead engineer offered the co-creative director chair by Ian Grimm; embodies the question of whether promotion changes a builder 'for better, or for worse'.",
+          "url": "https://mythic-quest.fandom.com/wiki/Poppy_Li"
+        },
+        {
+          "name": "Richard Hendricks & Bertram Gilfoyle (Thomas Middleditch & Martin Starr in HBO's Silicon Valley)",
+          "detail": "Richard is the craftsman forced into the CEO chair where his know-how poorly translates; Gilfoyle is the server-room craftsman who stays at the bench out of contempt for status.",
+          "url": "https://en.wikipedia.org/wiki/List_of_Silicon_Valley_characters"
+        }
+      ],
+      "links": [
+        {
+          "label": "Watson Hartsoe Portfolio",
+          "url": "https://watson-hartsoe.webflow.io/"
+        },
+        {
+          "label": "Georgia Tech Digital Media Directory",
+          "url": "https://dm.lmc.gatech.edu/people/students-2/"
+        },
+        {
+          "label": "AI Tinkerers Atlanta Profile",
+          "url": "https://atlanta.aitinkerers.org/connect/client/client_zkzBxKDZvtI"
+        },
+        {
+          "label": "CREATE-X: Gumball Emotion Machine",
+          "url": "https://create-x.gatech.edu/company/gumball-emotion-machine"
+        },
+        {
+          "label": "The Daily Times (Maryville MS HCI Graduation)",
+          "url": "https://www.thedailytimes.com/community/applause/maryvilles-watson-hartsoe-graduates-from-georgia-tech/article_0042ca2e-3211-11ee-a2e7-bf1ff3a1119a.html"
+        },
+        {
+          "label": "Google Photos: Maryville Family Photo (Dec 2024)",
+          "url": "https://photos.google.com/link/photo?key=AF1QipOdQOMieJY4nHGXki0ZTdPgj2uiPSXEYIJuHJBn&obfsgid=105961402405602232491&utm_source=GM"
+        },
+        {
+          "label": "Google Photos: King Plow Arts Center Atlanta (Feb 2025)",
+          "url": "https://photos.google.com/link/photo?key=AF1QipMtoaSKjsqRsik-9RkgSwErUt8oz77-XMvVzpBN&obfsgid=105961402405602232491&utm_source=GM"
+        }
+      ]
+    },
+    {
+      "id": "char_father",
+      "storyName": "Lars Marsh",
+      "storyRole": "Odie's Father (Former Toolmaker at Hendry Works, Foreman at 34, Orchard Grafter)",
+      "beats": "Beats 4, 8, 62, 93\u2013107 (Phone Call, The Calipers, Mid-Voyage Call, Ithaca Orchard & Endings)",
+      "realPersonName": "Mark Charles Hartsoe",
+      "realPersonRole": "Trial Attorney at Hartsoe Law Firm in Maryville, Tennessee; Father of Watson Hartsoe",
+      "localImages": [
+        {
+          "label": "Mark Hartsoe \u2014 Uploaded Reference Portrait (Orange Cap & Blue Plaid Shirt)",
+          "path": "user_uploaded_files/ttl=63d/user_uploaded/image_3230a0.jpg",
+          "bundlePath": "images/family_and_protagonist/lars_marsh_mark_hartsoe_dad.jpg"
+        }
+      ],
+      "externalImages": [
+        {
+          "label": "Laertes & Odysseus (Roman Sarcophagus Relief, Museo Barracco)",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Arte_romana%2C_frammento_di_sarcofago_con_ulisse_e_laerte%2C_150_dc_ca.%2C_da_roma_%28museo_barracco%29.jpg/250px-Arte_romana%2C_frammento_di_sarcofago_con_ulisse_e_laerte%2C_150_dc_ca.%2C_da_roma_%28museo_barracco%29.jpg"
+        },
+        {
+          "label": "Billy Magnussen (Duncan Park in AMC's The Audacity)",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/CES_2026_-_Billy_Magnussen_03_%28cropped%29.jpg/250px-CES_2026_-_Billy_Magnussen_03_%28cropped%29.jpg"
+        }
+      ],
+      "storyDescription": "Son of a forklift driver; a master toolmaker at the Hendry works who took the foreman's desk at 34 because his father cried with pride that someone in the family had risen above being 'hands'. Never admitted he missed feeling the burr on the lathe. Now grafts apple trees ('the committee') in the backyard orchard. Seen through his son's guesses.",
+      "fictionalCounterparts": [
+        {
+          "name": "Laertes (Homer's The Odyssey, Book 24)",
+          "detail": "Works alone in his orchard in an old jacket; recognizes Odysseus not by a royal title but when Odysseus names the exact trees they tended together (thirteen pear, ten apple, forty fig).",
+          "url": "https://en.wikipedia.org/wiki/Laertes_(father_of_Odysseus)"
+        },
+        {
+          "name": "Parent\u2013Child Recognition Arc (AMC's The Audacity)",
+          "detail": "Inverts The Audacity's bruised family satire (where teenage daughter Jamison tries to see the real parent behind the tech title) into a mutual craft recognition between father and son.",
+          "url": "https://en.wikipedia.org/wiki/The_Audacity"
+        }
+      ],
+      "links": [
+        {
+          "label": "Mark Hartsoe Official Website",
+          "url": "https://www.hartsoe.com/"
+        },
+        {
+          "label": "Mark Charles Hartsoe Attorney Profile (Maryville, TN)",
+          "url": "https://www.avvo.com/attorneys/37801-tn-mark-hartsoe-1705245.html"
+        },
+        {
+          "label": "Laertes (Father of Odysseus) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Laertes_(father_of_Odysseus)"
+        }
+      ]
+    },
+    {
+      "id": "char_mother",
+      "storyName": "Odie's Mother ('Your Mother')",
+      "storyRole": "Odie's Mother (Keeper of the Household & LinkedIn Herald in Ithaca)",
+      "beats": "Beats 4, 8, 62, 93\u201394 ('Your mother saw it on the LinkedIn. Team lead.' / At choir during the mid-voyage call / Welcoming Odie home)",
+      "realPersonName": "Amy Hartsoe (Amelia Hartsoe)",
+      "realPersonRole": "Mother of Watson Hartsoe in Maryville, Tennessee",
+      "localImages": [
+        {
+          "label": "Amy Hartsoe \u2014 Uploaded Reference Portrait (Floral Top in Garden)",
+          "path": "user_uploaded_files/ttl=63d/user_uploaded/image_323383.png",
+          "bundlePath": "images/family_and_protagonist/mother_amy_hartsoe_mom.png"
+        }
+      ],
+      "externalImages": [
+        {
+          "label": "Penelope (Louvre Marble Statue, Paris\u2013Athens Exhibition)",
+          "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Exposition_Paris-Ath%C3%A8nes_au_Mus%C3%A9e_du_Louvre_%C3%A0_Paris_-parisathenes_%2851544789732%29.jpg/250px-Exposition_Paris-Ath%C3%A8nes_au_Mus%C3%A9e_du_Louvre_%C3%A0_Paris_-parisathenes_%2851544789732%29.jpg"
+        }
+      ],
+      "storyDescription": "The warm, observant bridge between Odie and his father. She spots the leaked promotion news first, calls Lars into the kitchen at Beat 4, sings in the choir during Beat 62, and announces Odie's return to Ithaca at Beat 94.",
+      "fictionalCounterparts": [
+        {
+          "name": "Penelope & Anticlea (Homer's The Odyssey)",
+          "detail": "Penelope's daily weaving and nightly unweaving at the loom is explicitly invoked at Beat 81 as the model for defending a sacred daily craft hour against the Suitors.",
+          "url": "https://en.wikipedia.org/wiki/Penelope"
+        }
+      ],
+      "links": [
+        {
+          "label": "Google Photos: Maryville Holiday Gathering with Mom & Watson",
+          "url": "https://photos.google.com/link/photo?key=AF1QipOdQOMieJY4nHGXki0ZTdPgj2uiPSXEYIJuHJBn&obfsgid=105961402405602232491&utm_source=GM"
+        },
+        {
+          "label": "Google Photos: Great Smoky Mountains National Park with Mom & Watson",
+          "url": "https://photos.google.com/link/photo?key=AF1QipOoJk1nGC_981rXKY_WWvWMWzqzcxriFhstCPD8&obfsgid=105961402405602232491&utm_source=GM"
+        },
+        {
+          "label": "Google Photos: Gatlinburg, TN with Mom & Watson",
+          "url": "https://photos.google.com/link/photo?key=AF1QipM9sdftImIqfyJFNy7IzULnd0ZtZjBqlD1p0OBJ&obfsgid=105961402405602232491&utm_source=GM"
+        },
+        {
+          "label": "Penelope \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Penelope"
+        }
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "id": "char_dana",
+      "storyName": "Dana Okafor",
+      "category": "Office & Studio-Comedy Archetypes",
+      "storyRole": "Engineering Manager ('Quick chat :)' in Conference Room Olympus)",
+      "beats": "Beats 1, 2, 9, 11\u201316, 81, 83, 89",
+      "realCounterpart": "Corporate Tech Engineering Director / Palamedes at Aulis",
+      "fictionalCounterpart": "Ian Grimm (Rob McElhenney) & David Brittlesbee (David Hornsby) in Mythic Quest; Palamedes & Agamemnon in the Trojan Cycle",
+      "quote": "\"Team. Lead. Five reports, the Agentic Velocity squad, a real title. You'd be prompting the people who prompt the machines... It's a joke with equity.\"",
+      "verifiedSourceQuote": "Ian Grimm (Mythic Quest): \"This is the opportunity. This is the elevator, except it's a car, and I'm trapped in it with you, alone, and you're in the driver's seat.\"",
+      "description": "Warm, harried, genuinely fond of her people, fluent in the ladder's language and half-aware of its absurdity. When Odie feigns madness at the sprint board, she pulls Palamedes' trick by dragging the production database into his furrow.",
+      "primaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Rob_McElhenney_by_Gage_Skidmore_3.jpg/250px-Rob_McElhenney_by_Gage_Skidmore_3.jpg",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/David_Hornsby_by_Gage_Skidmore.jpg/250px-David_Hornsby_by_Gage_Skidmore.jpg",
+      "links": [
+        {
+          "label": "Ian Grimm \u2014 Mythic Quest Wiki",
+          "url": "https://mythic-quest.fandom.com/wiki/Ian_Grimm"
+        },
+        {
+          "label": "David Brittlesbee \u2014 Mythic Quest Wiki",
+          "url": "https://mythic-quest.fandom.com/wiki/David_Brittlesbee"
+        },
+        {
+          "label": "Rob McElhenney \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Rob_McElhenney"
+        }
+      ]
+    },
+    {
+      "id": "char_chad",
+      "storyName": "Chad Bellweather",
+      "category": "Office & Studio-Comedy Archetypes",
+      "storyRole": "Smooth Political Colleague & Chief Suitor ('The Odysseus of the Open-Plan Office')",
+      "beats": "Beats 3, 13, 14, 64, 77, 78, 88",
+      "realCounterpart": "Corporate Room-Reader / Polymetis Operator",
+      "fictionalCounterpart": "Brad Bakshi (Danny Pudi in Mythic Quest); Odysseus in Ovid's Metamorphoses XIII / Sophocles' Ajax; Antinous (Lead Suitor in The Odyssey)",
+      "quote": "\"Huge, man. Huge. Let me know if you need help with the people stuff.\" (Prompts the model to 'just fix it holistically' and deletes Qu\u00e9bec.)",
+      "verifiedSourceQuote": "Detienne & Vernant on polymetis: adaptive, room-reading cunning intelligence that wins the Judgment of Arms over steady craft.",
+      "description": "Starts the slow clap at Aulis, 'covers' Odie's 1-on-1s during sabbatical, tries and fails to string the bow of the billing service, and wins the armor if Odie declines without passing on his craft.",
+      "primaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Danny_Pudi_by_Gage_Skidmore_2.jpg/250px-Danny_Pudi_by_Gage_Skidmore_2.jpg",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Head_Odysseus_MAR_Sperlonga.jpg/250px-Head_Odysseus_MAR_Sperlonga.jpg",
+      "links": [
+        {
+          "label": "Danny Pudi (Brad Bakshi) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Danny_Pudi"
+        },
+        {
+          "label": "Characters in Mythic Quest \u2014 TV Tropes",
+          "url": "https://tvtropes.org/pmwiki/pmwiki.php/Characters/MythicQuest"
+        },
+        {
+          "label": "Ovid's Metamorphoses 13 (Judgment of Arms)",
+          "url": "https://medium.com/@joannakenty/metamorphoses-13-a-courtroom-drama-6ad7819a2c1e"
+        }
+      ]
+    },
+    {
+      "id": "char_dougie",
+      "storyName": "Dougie Pratt",
+      "category": "Office & Studio-Comedy Archetypes",
+      "storyRole": "Fails-Upward Colleague & Suitor ('Velocity Pantheon')",
+      "beats": "Beats 3, 16a, 16b, 64, 77, 78, 87",
+      "realCounterpart": "Accidental Executive / Managerial Feudalism Beneficiaries",
+      "fictionalCounterpart": "Nelson 'Big Head' Bighetti (Josh Brener in HBO's Silicon Valley); Eurymachus (Suitor in The Odyssey)",
+      "quote": "Has been 'about to ship' the same feature since spring; wins the Slack poll by voting for himself four times from different devices; renames the team 'Velocity Pantheon'.",
+      "verifiedSourceQuote": "Graeber's critique played as slapstick: failing upward with the grace of a hot-air balloon.",
+      "description": "Cheerful colleague who has never finished a feature and has never once been in the room when one failed. Embodies the farce of Silicon Valley's Big Head when Odie stalls at the Call.",
+      "primaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Josh_Brener_at_Cold_Wallet_World_Premiere_at_SXSW_2024_%28cropped%29.jpg/250px-Josh_Brener_at_Cold_Wallet_World_Premiere_at_SXSW_2024_%28cropped%29.jpg",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/SXSW_2016_-_Silicon_Valley_panel_%2825754527265%29.jpg/250px-SXSW_2016_-_Silicon_Valley_panel_%2825754527265%29.jpg",
+      "links": [
+        {
+          "label": "Josh Brener (Big Head) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Josh_Brener"
+        },
+        {
+          "label": "Big Head \u2014 Silicon Valley HBO Max",
+          "url": "https://www.hbomax.com/show/b4583939-e39f-4b5c-822d-5b6cc186172d/cast-and-crew/big-head"
+        },
+        {
+          "label": "Silicon Valley (TV series) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
+        }
+      ]
+    },
+    {
+      "id": "char_ines",
+      "storyName": "Ines Duarte",
+      "category": "Office & Studio-Comedy Archetypes",
+      "storyRole": "Junior Engineer & Apprentice (Keeper of the Living Theory)",
+      "beats": "Beats 3, 10, 10b, 49, 64, 78, 85, 104",
+      "realCounterpart": "Apprentice in Lave & Wenger's Legitimate Peripheral Participation",
+      "fictionalCounterpart": "Telemachus & Eumaeus (The Odyssey); Dana Bryant (Imani Hakim in Mythic Quest)",
+      "quote": "\"oh. OH. ok that's actually the whole job isn't it.\" / \"billing went down again, i caught it before the model did. felt the too-clean thing. thought of you.\"",
+      "verifiedSourceQuote": "Peder Naur (1985): The theory of a program lives in people, so the only way to save it is to grow it in another person.",
+      "description": "Doesn't clap at Aulis; sends 11 p.m. questions about the billing retry loop. When Odie shares the living theory rather than just the patch, she becomes the vessel through which the craft survives.",
+      "primaryImage": "https://static.tvtropes.org/pmwiki/pub/images/mq_dana.png",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Penelope_Painter_-_ARV_1300_2_-_Telemachos_leaving_Penelope_-_Odysseus_recognized_by_his_nurse_-_Chiusi_MAN_1831_-_02_detail.jpg/250px-Penelope_Painter_-_ARV_1300_2_-_Telemachos_leaving_Penelope_-_Odysseus_recognized_by_his_nurse_-_Chiusi_MAN_1831_-_02_detail.jpg",
+      "links": [
+        {
+          "label": "Community of Practice (Lave & Wenger) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Community_of_practice"
+        },
+        {
+          "label": "Situated Learning \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Situated_learning"
+        },
+        {
+          "label": "Telemachus \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Telemachus"
+        }
+      ]
+    },
+    {
+      "id": "char_karpathi",
+      "storyName": "Andrei Karpathi",
+      "category": "Voyage Guides & Thinly Veiled Tech Pioneers",
+      "storyRole": "Ferry Caf\u00e9 Guide (Coined 'Vibe Coding'; Blesses & Dissects the Craft)",
+      "beats": "Beats 18, 19, 19ai",
+      "realCounterpart": "Andrej Karpathy (OpenAI Co-Founder, Former Tesla AI Director, Founder of Eureka Labs)",
+      "fictionalCounterpart": "Hermes / Athena disguised as Mentor at the start of Telemachus's and Odysseus's voyages",
+      "quote": "\"I named it vibe coding, you know. As a half-joke... Then you're not vibing. You're steering. Which is interesting!\"",
+      "verifiedSourceQuote": "Coined 'vibe coding' (Feb 2025); left director-level management at Tesla to return to hands-on coding and teaching.",
+      "description": "Meets Odie on the first night of the sabbatical at a ferry caf\u00e9 table with a *vibes* sticker on his laptop, posing the central epistemological test: does the theory live in your head or in the model's weights?",
+      "primaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Andrej_Karpathy%2C_OpenAI.png/250px-Andrej_Karpathy%2C_OpenAI.png",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Microphone_to_chat_with_the_chat_bot.jpg/250px-Microphone_to_chat_with_the_chat_bot.jpg",
+      "links": [
+        {
+          "label": "Andrej Karpathy \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Andrej_Karpathy"
+        },
+        {
+          "label": "Vibe Coding \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vibe_coding"
+        }
+      ]
+    },
+    {
+      "id": "char_circe",
+      "storyName": "Circe (Offsite Facilitator)",
+      "category": "Mythic Monsters & Theoretical Anchors",
+      "storyRole": "New-Manager Onboarding Facilitator on the Island of Aiaia",
+      "beats": "Beat 21 (Circe's Offsite)",
+      "realCounterpart": "David Graeber's 'Taskmaster' Middle-Management Onboarding / Corporate Offsite Industry",
+      "fictionalCounterpart": "Circe (Homer's The Odyssey Book 10, turning crewmen into swine); Gavin Belson's Guru in Silicon Valley",
+      "quote": "\"We'll begin by unlearning the urge to do the work yourself.\" (New leads from Sales and Platform say 'let's take this offline' in a way that sounds like grunting.)",
+      "verifiedSourceQuote": "David Graeber, Bullshit Jobs (2018): 'taskmasters' and the 'spiritual violence' of performing a role you know is hollow.",
+      "description": "Presides over an Airbnb in a former bottling plant with a lanyard and little cups of framework. Defeated only if Odie eats Hermes' herb Moly \u2014 blocking one sacred, non-negotiable coding hour a day.",
+      "primaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Circe_coi_maiali%2C_III-II_secolo_ac.jpg/250px-Circe_coi_maiali%2C_III-II_secolo_ac.jpg",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/David_Graeber_Fire_Island_headshot_cropped.jpg/250px-David_Graeber_Fire_Island_headshot_cropped.jpg",
+      "links": [
+        {
+          "label": "Circe \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Circe"
+        },
+        {
+          "label": "Bullshit Jobs (David Graeber) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bullshit_Jobs"
+        },
+        {
+          "label": "David Graeber \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/David_Graeber"
+        }
+      ]
+    },
+    {
+      "id": "char_brookes",
+      "storyName": "Fred Brookes",
+      "category": "Voyage Guides & Thinly Veiled Tech Pioneers",
+      "storyRole": "Keeper of Brookes's Ledger (The Veteran Who Said Yes and Wrote Down the Cost)",
+      "beats": "Beats 30, 31, 46",
+      "realCounterpart": "Fred Brooks (1931\u20132022, IBM System/360 Manager, UNC CS Founder, Author of The Mythical Man-Month)",
+      "fictionalCounterpart": "Nestor of Pylos / Tiresias (The Odyssey) \u2014 the elder who survived the campaign and kept the account",
+      "quote": "\"People think the law is about schedules. It's really about theory. The understanding in people's heads doesn't pour into new hires like water.\"",
+      "verifiedSourceQuote": "Fred Brooks, The Mythical Man-Month: \"The management question, therefore, is not whether to build a pilot system and throw it away. You will do that.\" / Brooks's Law: \"Adding manpower to a late software project makes it later.\"",
+      "description": "Courteous, white-haired elder at a desk the size of an IBM mainframe on an island made of paper. Shows Odie the two columns of his ledger: what management bought vs. what it charged.",
+      "primaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Fred_Brooks_%28cropped_square%29.jpg/250px-Fred_Brooks_%28cropped_square%29.jpg",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/IBM_System_360_model_30_profile.agr.jpg/250px-IBM_System_360_model_30_profile.agr.jpg",
+      "links": [
+        {
+          "label": "Fred Brooks \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fred_Brooks"
+        },
+        {
+          "label": "Fred Brooks \u2014 Britannica",
+          "url": "https://www.britannica.com/biography/Fred-Brooks"
+        },
+        {
+          "label": "IEEE Spectrum: Frederick Brooks Jr. Obituary",
+          "url": "https://spectrum.ieee.org/frederick-brooks-jr-obit"
+        }
+      ]
+    },
+    {
+      "id": "char_torwald",
+      "storyName": "Linos Torwald",
+      "category": "Voyage Guides & Thinly Veiled Tech Pioneers",
+      "storyRole": "The Siren of the Inbox Sea (Drifted into Management Without Choosing It)",
+      "beats": "Beats 32, 33a, 33b, 34",
+      "realCounterpart": "Linus Torvalds (Creator of the Linux Kernel and Git)",
+      "fictionalCounterpart": "The Sirens (Homer's The Odyssey Book 12, singing from the rock in the glassy sea)",
+      "quote": "\"It wasn't a promotion. Nobody offered. The mail just... rose. Turns out understanding people is its own craft. Nobody hands you the theory for that either.\"",
+      "verifiedSourceQuote": "Linus Torvalds (2020): \"I read email, I write email, I do no coding at all any more.\" (Plus his 2018 sabbatical to learn empathy on the kernel mailing list.)",
+      "description": "Sits on a rock in a cardigan with a laptop surrounded by 312 unread messages singing *Quick sync? Can you weigh in? Looping you in.*",
+      "primaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg/250px-LinuxCon_Europe_Linus_Torvalds_03_%28cropped%29.jpg",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/NAMA_Sir%C3%A8ne.jpg/250px-NAMA_Sir%C3%A8ne.jpg",
+      "links": [
+        {
+          "label": "Linus Torvalds \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Linus_Torvalds"
+        },
+        {
+          "label": "Slashdot: Linus Torvalds 'I Do No Coding Any More'",
+          "url": "https://linux.slashdot.org/story/20/07/03/2133201/linus-torvalds-i-do-no-coding-any-more"
+        },
+        {
+          "label": "Ars Technica: Torvalds 2018 Break & Empathy",
+          "url": "https://arstechnica.com/gadgets/2018/09/linus-torvalds-apologizes-for-years-of-being-a-jerk-takes-time-off-to-learn-empathy/"
+        }
+      ]
+    },
+    {
+      "id": "char_tomson",
+      "storyName": "Ken Tomson",
+      "category": "Voyage Guides & Thinly Veiled Tech Pioneers",
+      "storyRole": "Co-Keeper of Bell Works Garden (Protected by the Institutional Umbrella)",
+      "beats": "Beats 35, 36",
+      "realCounterpart": "Ken Thompson (Bell Labs Co-Creator of Unix & B; Google Distinguished Engineer & Co-Creator of Go)",
+      "fictionalCounterpart": "The Lotus-Eaters (Homer's The Odyssey Book 9)",
+      "quote": "\"The good ones don't want to hold [the umbrella] at all. That's why it works. The trouble is, a ladder can't see the umbrella.\"",
+      "verifiedSourceQuote": "Ken Thompson on Bell Labs management (Wired, 1995): \"just an umbrella, not really a focus of power.\"",
+      "description": "Hunched over a terminal in an ivy-draped brick laboratory, writing something small and perfect that will outlive everyone there.",
+      "primaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Ken_Thompson%2C_2019.jpg/250px-Ken_Thompson%2C_2019.jpg",
+      "secondaryImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Lotus-eaters.png/250px-Lotus-eaters.png",
+      "links": [
+        {
+          "label": "Ken Thompson \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ken_Thompson"
+        },
+        {
+          "label": "ACM Turing Award Profile: Ken Thompson",
+          "url": "https://amturing.acm.org/award_winners/thompson_4588371.cfm"
+        },
+        {
+          "label": "Wired (1995): Ken Thompson at Bell Labs",
+          "url": "https://www.wired.com/1995/08/thompson-4/"
+        }
+      ]
+    },
+    {
+      "id": "char_shanning",
+      "storyName": "Claude Shanning",
+      "category": "Voyage Guides & Thinly Veiled Tech Pioneers",
+      "storyRole": "Co-Keeper of Bell Works Garden (Play as the Work Itself)",
+      "beats": "Beats 35, 36",
+      "realCounterpart": "Claude Shannon (1916\u20132001, Father of Information Theory at Bell Labs & MIT; Built Theseus the Mouse)",
+      "fictionalCounterpart": "The Lotus-Eaters / Daedalus the Master Tinkerer",
+      "quote": "\"The mouse is called Theseus. He knows the maze because he's walked it. You can't download walking it... The lotus here is just fun. Fun is the most dangerous thing there is.\"",
+      "verifiedSourceQuote": "Built Theseus (1950), rode a unicycle while juggling down Bell Labs corridors, and kept his craft alive through play.",
+      "description": "Rides past on a unicycle juggling three balls while his relay-operated mechanical mouse solves a maze on the lawn. Staying too long with him costs two island turns.",
+      "primaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/C.E._Shannon._Tekniska_museet_43069_%282x3_crop%29.jpg/250px-C.E._Shannon._Tekniska_museet_43069_%282x3_crop%29.jpg",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Bell_Works_Primary_Building_%28110125%29.jpg/330px-Bell_Works_Primary_Building_%28110125%29.jpg",
+      "links": [
+        {
+          "label": "Claude Shannon \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Claude_Shannon"
+        },
+        {
+          "label": "Linda Hall Library: Claude Shannon",
+          "url": "https://www.lindahall.org/about/news/scientist-of-the-day/claude-shannon/"
+        },
+        {
+          "label": "U-Michigan: Claude Shannon Information Icon",
+          "url": "https://ece.engin.umich.edu/stories/claude-shannon-information-icon"
+        }
+      ]
+    },
+    {
+      "id": "char_sutskov",
+      "storyName": "Ilya Sutskov",
+      "category": "Voyage Guides & Thinly Veiled Tech Pioneers",
+      "storyRole": "The Oracle in the GPU Cave (The Shaman-Leader Who Became CEO Anyway)",
+      "beats": "Beats 37, 38",
+      "realCounterpart": "Ilya Sutskever (Co-Founder & Former Chief Scientist of OpenAI; CEO of Safe Superintelligence Inc.)",
+      "fictionalCounterpart": "Pythia / The Oracle at Delphi; Gavin Belson (Matt Ross in Silicon Valley); Ian Grimm (Mythic Quest)",
+      "quote": "\"WHICH PART OF YOU IS THE PART THAT KNOWS? ... Someone must keep the cave open. If I don't, someone who feels nothing will. That is the bargain.\"",
+      "verifiedSourceQuote": "Reported OpenAI chant: \"Feel the AGI!\" \u2014 and in July 2025 stepped into the CEO role at Safe Superintelligence ($32B valuation).",
+      "description": "Presides over a circle of researchers in a cave lit by GPU fans. His deep scientific charisma turned him into a spiritual leader, and the charisma pulled him back into the top job.",
+      "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Ilya_Sutskever_and_Sam_Altman_in_TAU_%28cropped%29.jpg",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/03-09-2016_Matt_Ross_%2829489317296%29.jpg/250px-03-09-2016_Matt_Ross_%2829489317296%29.jpg",
+      "links": [
+        {
+          "label": "Ilya Sutskever \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ilya_Sutskever"
+        },
+        {
+          "label": "CNBC: Ilya Sutskever Is CEO of Safe Superintelligence",
+          "url": "https://www.cnbc.com/2025/07/03/ilya-sutskever-is-ceo-of-safe-superintelligence-after-meta-hired-gross.html"
+        },
+        {
+          "label": "Matt Ross (Gavin Belson) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Matt_Ross_(actor)"
+        }
+      ]
+    },
+    {
+      "id": "char_newall",
+      "storyName": "Gabe Newall",
+      "category": "Voyage Guides & Thinly Veiled Tech Pioneers",
+      "storyRole": "Sun of the Flat Island at Vane (No Managers, Yet Everyone Bows)",
+      "beats": "Beats 39, 40",
+      "realCounterpart": "Gabe Newell (Co-Founder & President of Valve Corporation)",
+      "fictionalCounterpart": "Aeolus, Keeper of the Winds on the Floating Island of Aeolia (The Odyssey Book 10)",
+      "quote": "\"Could work. Could also mean the power's still there and nobody's allowed to say where. Flat isn't the same as free. You'd have to be honest about the bowing.\"",
+      "verifiedSourceQuote": "Valve Handbook for New Employees (2012): \"Of all the people at this company who aren't your boss, Gabe is the MOST not your boss.\"",
+      "description": "Very relaxed, very kind, munching a snack at the center of Vane while every rolling desk and decision gently curves toward him like planets around the sun.",
+      "primaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/The_International_2018_%2843263984845%29_%28cropped_2%29.jpg/250px-The_International_2018_%2843263984845%29_%28cropped_2%29.jpg",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Valve_Lobby_2016.jpg/250px-Valve_Lobby_2016.jpg",
+      "links": [
+        {
+          "label": "Gabe Newell \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Gabe_Newell"
+        },
+        {
+          "label": "BBC News: Valve's Manager-Free Flat Structure",
+          "url": "https://www.bbc.com/news/technology-24205497"
+        },
+        {
+          "label": "Game Developer: Gabe Newell on Flat Structure",
+          "url": "https://www.gamedeveloper.com/business/gabe-newell-shares-how-a-flat-structure-helps-valve-succeed"
+        }
+      ]
+    },
+    {
+      "id": "char_carmick",
+      "storyName": "Jon Carmick",
+      "category": "Voyage Guides & Thinly Veiled Tech Pioneers",
+      "storyRole": "Master of the Exile Workshop at Sharp Labs (Walked Away from Metta)",
+      "beats": "Beats 41, 42",
+      "realCounterpart": "John Carmack (Co-Founder of id Software, Lead Programmer of Doom/Quake, Former Oculus CTO at Meta, Founder of Keen Technologies)",
+      "fictionalCounterpart": "Philoctetes on Lemnos / Hephaestus at his Forge; Bertram Gilfoyle (Martin Starr in Silicon Valley)",
+      "quote": "\"The work's better. The days are mine. Nobody schedules me into a meeting about the meeting... It's also just me and the problem. Most nights.\"",
+      "verifiedSourceQuote": "John Carmack's December 2022 Meta resignation note: \"This is the end of my decade in VR.\" / \"We have a ridiculous amount of people and resources, but we constantly self-sabotage and squander effort.\" / \"wearied of the fight.\"",
+      "description": "Works alone in a shed on a cold coast with an oscilloscope, a whiteboard, and one coffee mug. Shows both the pure freedom and the sharp loneliness of walking away from the big ship.",
+      "primaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/John_Carmack_2025.jpg/250px-John_Carmack_2025.jpg",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Martin_Starr_2016_%28cropped%29.jpg/250px-Martin_Starr_2016_%28cropped%29.jpg",
+      "links": [
+        {
+          "label": "John Carmack \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/John_Carmack"
+        },
+        {
+          "label": "Daring Fireball: John Carmack's Full Resignation Letter",
+          "url": "https://daringfireball.net/misc/2022/12/carmack-facebook.text"
+        },
+        {
+          "label": "D Magazine (2025): Conversation with John Carmack at Keen Technologies",
+          "url": "https://www.dmagazine.com/business-economy/2025/11/conversation-with-john-carmack-keen-technologies/"
+        }
+      ]
+    },
+    {
+      "id": "char_hassaby",
+      "storyName": "Denis Hassaby",
+      "category": "Voyage Guides & Thinly Veiled Tech Pioneers",
+      "storyRole": "Keeper of the Golden Charter Room at DeepMound (Rewrote His Own Role)",
+      "beats": "Beats 15a, 43, 44",
+      "realCounterpart": "Sir Demis Hassabis (Elixir Studios Founder, UCL Neuroscience PhD, 2024 Nobel Laureate, Google DeepMind Chairman & Alphabet Chief Scientist, Isomorphic Labs CEO)",
+      "fictionalCounterpart": "Calypso on the Golden Island of Ogygia (The Odyssey Book 5 \u2014 the golden cage)",
+      "quote": "\"A charter is a tool, not a home. Remember who pays for it. Somebody always picks up what you put down. Leverage means you can refuse. It doesn't mean refusing is free.\"",
+      "verifiedSourceQuote": "Stepped back from games CEO to UCL PhD student (2005), and in August 2026 stepped from DeepMind CEO to Chairman to focus on AGI research and science.",
+      "description": "His golden room opens only if Odie's Leverage >= 5. Embodies the third path of redesigning one's own job description, while honestly framing its costs on colleagues and markets.",
+      "primaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Demis_Hassabis%2C_2024_Nobel_Prize_Laureate_in_Chemistry_7_%28cropped%29.jpg/250px-Demis_Hassabis%2C_2024_Nobel_Prize_Laureate_in_Chemistry_7_%28cropped%29.jpg",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Jan_Styka_-_Kalipso.jpg/250px-Jan_Styka_-_Kalipso.jpg",
+      "links": [
+        {
+          "label": "Demis Hassabis \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Demis_Hassabis"
+        },
+        {
+          "label": "Academy of Achievement: Demis Hassabis Ph.D.",
+          "url": "https://achievement.org/achiever/demis-hassabis-ph-d/"
+        },
+        {
+          "label": "Google Blog: Next Chapter of AI Momentum",
+          "url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/"
+        }
+      ]
+    },
+    {
+      "id": "char_knuthe",
+      "storyName": "Don Knuthe",
+      "category": "Voyage Guides & Thinly Veiled Tech Pioneers",
+      "storyRole": "Master of Knuthe's Cave (Reached by a Ladder That Goes Down)",
+      "beats": "Beats 45, 46",
+      "realCounterpart": "Donald Ervin Knuth (Author of The Art of Computer Programming, Creator of TeX & Literate Programming, Stanford Professor Emeritus)",
+      "fictionalCounterpart": "Proteus (The Old Man of the Sea) / Oracle of Trophonius in his subterranean cave",
+      "quote": "\"Most people climb to see more. I go down to see better. It's slower. Nobody gives you a title for it. They give you a cave.\"",
+      "verifiedSourceQuote": "Donald Knuth (on giving up email in 1990): Email is for people whose role is to be \"on top of things,\" whereas his role is to be \"on the bottom of things.\"",
+      "description": "Works by lamplight at the bottom of a downward ladder with no inbox at all. Helps Odie trace a billing bug by hand for nine hours and urges him to grow the living theory in another person.",
+      "primaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Donald_Ervin_Knuth_%28cropped%29.jpg/250px-Donald_Ervin_Knuth_%28cropped%29.jpg",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/ArtOfComputerProgramming.svg/250px-ArtOfComputerProgramming.svg.png",
+      "links": [
+        {
+          "label": "Donald Knuth \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Donald_Knuth"
+        },
+        {
+          "label": "Cal Newport: Why Donald Knuth Quit Email ('Bottom of Things')",
+          "url": "https://calnewport.com/bonus-post-how-the-worlds-most-famous-computer-scientist-checks-e-mail-only-once-every-three-months/"
+        }
+      ]
+    },
+    {
+      "id": "char_mau",
+      "storyName": "Mau Piailug & The Elders of the Road",
+      "category": "Philosophical & Craft Lineage Elders",
+      "storyRole": "Master Navigator of Satawal & The Masters Who Rise by Going Deeper",
+      "beats": "Beats 47, 48, 49, 75",
+      "realCounterpart": "Pius 'Mau' Piailug (1932\u20132010, Micronesian Master Navigator of the Weriyeng School on Satawal); Compagnons du Devoir; Japan's Living National Treasures; Ise Grand Shrine Carpenters",
+      "fictionalCounterpart": "Tiresias & The Phaeacian Mariners who carry Odysseus home across the sea",
+      "quote": "Portrayed with quiet reverence and zero comedy: \"The ladder he climbed had no rungs anyone could see from an office. It went across the ocean and down through generations.\"",
+      "verifiedSourceQuote": "Ise Grand Shrine (Smithsonian): \"preserves the past by refreshing the people.\" Mau Piailug guided the H\u014dk\u016ble\u02bba canoe from Hawai\u02bbi to Tahiti in 1976 without instruments.",
+      "description": "Where the Road of Older Ladders meets the sea, all satire stops. Mau Piailug's choice to share sacred wayfinding knowledge outside Satawal frames mastery as a consequential lineage of teaching.",
+      "primaryImage": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Mau_Piailug.gif",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Hokule%27a.jpg/330px-Hokule%27a.jpg",
+      "links": [
+        {
+          "label": "Mau Piailug \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mau_Piailug"
+        },
+        {
+          "label": "JSTOR Daily: Pius 'Mau' Piailug, Master Navigator of Micronesia",
+          "url": "https://daily.jstor.org/pius-mau-piailug-master-navigator-of-micronesia/"
+        },
+        {
+          "label": "H\u014dk\u016ble\u02bba \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/H%C5%8Dk%C5%ABle%CA%BBa"
+        },
+        {
+          "label": "Compagnons du Devoir \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Compagnons_du_Devoir"
+        }
+      ]
+    },
+    {
+      "id": "char_theorists",
+      "storyName": "Peder Naur, Gilbert Ryle & James C. Scott",
+      "category": "Philosophical & Craft Lineage Elders",
+      "storyRole": "The Epistemological Triad Underneath the Odyssey",
+      "beats": "Beats 5, 7, 19, 31, 46, 50, 85, 106",
+      "realCounterpart": "Peter Naur (2005 Turing Award, 'Programming as Theory Building'), Gilbert Ryle ('The Concept of Mind'), James C. Scott ('Seeing Like a State')",
+      "fictionalCounterpart": "The Chorus of Greek Tragedy",
+      "quote": "Ryle's knowing-how vs. knowing-that; Naur's living theory in the programmer's head; Scott's metis vs. the single eye of state/corporate legibility.",
+      "verifiedSourceQuote": "Peter Naur (1985), Programming as Theory Building: A program's substance is the living theory held by its practitioners, which decays when no longer practiced.",
+      "description": "The three thinkers who give Odie the words for why turning down a promotion is not a lack of ambition, and why a dashboard cannot measure a craft.",
+      "primaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Peternaur.JPG/250px-Peternaur.JPG",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/James_C_Scott_2016.jpg/250px-James_C_Scott_2016.jpg",
+      "links": [
+        {
+          "label": "Peter Naur \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Peter_Naur"
+        },
+        {
+          "label": "Peter Naur (1985): Programming as Theory Building (PDF)",
+          "url": "https://gwern.net/doc/cs/algorithm/1985-naur.pdf"
+        },
+        {
+          "label": "Gilbert Ryle \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Gilbert_Ryle"
+        },
+        {
+          "label": "James C. Scott \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/James_C._Scott"
+        }
+      ]
+    },
+    {
+      "id": "char_ajax",
+      "storyName": "Ajax (in the Underworld)",
+      "category": "Mythic Monsters & Theoretical Anchors",
+      "storyRole": "The Silent Craftsman-Warrior in the Conference Hotel Underworld",
+      "beats": "Beats 14, 19, 70, 71, 72, 74, 99, 106, 107",
+      "realCounterpart": "Every Burned-Out Senior Engineer Passed Over for a Smooth Talker",
+      "fictionalCounterpart": "Telamonian Ajax (Homer's The Odyssey Book 11 & Sophocles' Ajax); C.W. Longbottom (F. Murray Abraham in Mythic Quest)",
+      "quote": "*He says nothing.* Only the tools in his hands shift, the way a craftsman's hands shift when someone talks about the work instead of doing it.",
+      "verifiedSourceQuote": "Sophocles, Ajax: \"Let a man nobly live or nobly die.\" / Odysseus pitying Ajax: \"We are dim shapes, no more, and weightless shadows.\"",
+      "description": "Stands apart in the grey-carpeted conference hotel Underworld holding workman's tools. Refuses to speak to anyone on the ladder. In Beat 74, Odie sees an alternate vision where Ajax goes home to the forge, takes apprentices, and lives.",
+      "primaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Antimenes_Painter_-_Black-figure_Amphora_with_Ajax_Carrying_the_Dead_Achilles_-_Walters_4817_-_Side_A.jpg/250px-Antimenes_Painter_-_Black-figure_Amphora_with_Ajax_Carrying_the_Dead_Achilles_-_Walters_4817_-_Side_A.jpg",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/FMurrayAbraham-byPhilipRomano2.jpg/250px-FMurrayAbraham-byPhilipRomano2.jpg",
+      "links": [
+        {
+          "label": "Ajax the Great \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ajax_the_Great"
+        },
+        {
+          "label": "Ancient World Magazine: The Suicide of Ajax",
+          "url": "https://www.ancientworldmagazine.com/articles/suicide-ajax/"
+        },
+        {
+          "label": "F. Murray Abraham (C.W. Longbottom) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/F._Murray_Abraham"
+        }
+      ]
+    }
+  ],
+  "places": [
+    {
+      "id": "place_office_olympus",
+      "storyName": "Open-Plan Office & Conference Room 'Olympus' ('The Beach at Aulis')",
+      "beats": "Beats 1\u20133, 11\u201316, 64, 77\u201389",
+      "realPlace": "Modern Tech Office in Atlanta, GA / Georgia Tech CODA & Tech Square + Bay of Aulis (Boeotia, Greece)",
+      "fictionalPlace": "Mythic Quest Studios Bullpen (Harrison & Sons Textiles Building) / Pied Piper Hacker Hostel / Port of Aulis (Iphigenia at Aulis)",
+      "description": "At dusk, one monitor glows with a chat window full of billing code. On Friday at 10 a.m., Dana books the glass-walled conference room 'Olympus' with two HR people and a bowl of sad clementines. Outside, colleagues clap like the assembled Greeks pushing a reluctant captain onto the ship to Troy.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Akhilleus_Patroklos_Antikensammlung_Berlin_F2278.jpg/1280px-Akhilleus_Patroklos_Antikensammlung_Berlin_F2278.jpg",
+      "links": [
+        {
+          "label": "Aulis (Ancient Greece) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Aulis_(ancient_Greece)"
+        },
+        {
+          "label": "Mythic Quest Studios \u2014 Fandom Wiki",
+          "url": "https://mythic-quest.fandom.com/wiki/Mythic_Quest_Studios"
+        },
+        {
+          "label": "Georgia Tech \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Georgia_Tech"
+        }
+      ]
+    },
+    {
+      "id": "place_flat_desk",
+      "storyName": "Odie's Flat & The Desk at 1 a.m.",
+      "beats": "Beats 5\u201310b",
+      "realPlace": "910 Taft Ave NE, Atlanta, GA (Midtown Atlanta Coder's Apartment)",
+      "fictionalPlace": "Telemachus's Chamber in Ithaca before the Journey",
+      "description": "Where Odie lies awake turning over Ryle and Naur at 1 a.m. before inspecting the three tokens on his desk (Prompt Journal, Brass Calipers, Offer Letter) and spending forty invisible minutes teaching Ines the theory of the billing retry loop.",
+      "image": "user_uploaded_files/ttl=63d/tool_generated/watermarked_img_734176321286089279.jpg",
+      "links": [
+        {
+          "label": "The Concept of Mind (Gilbert Ryle) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Concept_of_Mind"
+        },
+        {
+          "label": "Peter Naur: Programming as Theory Building",
+          "url": "https://inventwithpython.com/drafts/naur-programming-as-theory-building.html"
+        }
+      ]
+    },
+    {
+      "id": "place_ferry_cafe",
+      "storyName": "The Ferry Caf\u00e9 / Ship's Deck on the Backlog Sea",
+      "beats": "Beats 18, 19, 19ai, 22, 24",
+      "realPlace": "Aegean / Puget Sound Ferry Caf\u00e9 Table",
+      "fictionalPlace": "Odysseus's Black Ship on the Wine-Dark Sea",
+      "description": "A ferry caf\u00e9 where biographies read at double speed dissolve into a ship's deck, and where Andrei Karpathi sits across from Odie with a *vibes* sticker on his laptop.",
+      "image": "user_uploaded_files/ttl=63d/tool_generated/watermarked_img_15275357563442467565.jpg",
+      "links": [
+        {
+          "label": "Odyssey \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Odyssey"
+        },
+        {
+          "label": "Homer's Ithaca & Sea Routes \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Homer%27s_Ithaca"
+        }
+      ]
+    },
+    {
+      "id": "place_aiaia_circe",
+      "storyName": "Aiaia: Circe's Offsite (Airbnb in a Former Bottling Plant)",
+      "beats": "Beat 21",
+      "realPlace": "Mount Circeo (Monte Circeo Promontory, Lazio, Italy) + Adaptive-Reuse Industrial Bottling Plant Loft",
+      "fictionalPlace": "Island of Aeaea (Palace of Circe in The Odyssey Book 10)",
+      "description": "Mandatory new-manager onboarding island where leads from Sales and Platform drink the 'unlearn doing the work yourself' framework and begin grunting 'let's take this offline'.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Terracina-vista01.jpg/330px-Terracina-vista01.jpg",
+      "links": [
+        {
+          "label": "Mount Circeo (Mythic Aeaea) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mount_Circeo"
+        },
+        {
+          "label": "Circe \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Circe"
+        }
+      ]
+    },
+    {
+      "id": "place_brookes_ledger",
+      "storyName": "Brookes's Ledger (An Island Made of Paper)",
+      "beats": "Beats 30, 31",
+      "realPlace": "IBM Poughkeepsie System/360 Mainframe Hall & Sitterson Hall (UNC Chapel Hill, NC)",
+      "fictionalPlace": "Pylos (Court of Aged Nestor in The Odyssey Book 3)",
+      "description": "An island of paper where Fred Brookes sits at a desk the size of an IBM System/360 mainframe with his two-column ledger of what management bought and what it cost.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/360-91-panel.jpg/330px-360-91-panel.jpg",
+      "links": [
+        {
+          "label": "IBM System/360 \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/IBM_System/360"
+        },
+        {
+          "label": "Fred Brooks \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Fred_Brooks"
+        }
+      ]
+    },
+    {
+      "id": "place_inbox_sea",
+      "storyName": "The Inbox Sea (The Sirens' Rock)",
+      "beats": "Beats 32, 33a, 33b, 34",
+      "realPlace": "Sirenuse / Li Galli Archipelago (Amalfi Coast, Italy) + Linus Torvalds's Home Office in Portland, Oregon",
+      "fictionalPlace": "Island of the Sirens (The Odyssey Book 12)",
+      "description": "A calm, glassy sea echoing with 312 unread messages (*Quick sync? Can you weigh in? Looping you in*) where Linos Torwald sits on a rock in a cardigan offering a folding chair.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Isolotti_de_Li_Galli_%28Costiera_Sorrentina%29.jpg/250px-Isolotti_de_Li_Galli_%28Costiera_Sorrentina%29.jpg",
+      "links": [
+        {
+          "label": "Sirenuse (Li Galli Islands) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Sirenuse"
+        },
+        {
+          "label": "Siren (Mythology) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Siren_(mythology)"
+        }
+      ]
+    },
+    {
+      "id": "place_bell_works",
+      "storyName": "Bell Works Garden (Land of the Lotus-Eaters)",
+      "beats": "Beats 35, 36",
+      "realPlace": "Bell Labs Holmdel Complex (Eero Saarinen's 'Bell Works' in Holmdel, NJ) & Murray Hill Courtyard, NJ",
+      "fictionalPlace": "Land of the Lotus-Eaters (Djerba / The Odyssey Book 9)",
+      "description": "A brick-and-glass laboratory gone soft with ivy where nobody has a title or a 1-on-1, the fruit tastes like an endless afternoon, Claude Shanning unicycles and juggles, and Theseus the mouse runs his maze.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Bell_Works_Primary_Building_%28110125%29.jpg/330px-Bell_Works_Primary_Building_%28110125%29.jpg",
+      "links": [
+        {
+          "label": "Bell Labs Holmdel Complex (Bell Works) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bell_Labs_Holmdel_Complex"
+        },
+        {
+          "label": "Bell Labs \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bell_Labs"
+        },
+        {
+          "label": "Lotus-Eaters \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Lotus-eaters"
+        }
+      ]
+    },
+    {
+      "id": "place_oracle_cave",
+      "storyName": "The Oracle (A Cave Lit by GPU Fans)",
+      "beats": "Beats 37, 38",
+      "realPlace": "Sanctuary of Apollo at Delphi (Mount Parnassus, Greece) + OpenAI / Safe Superintelligence Compute Cluster (San Francisco & Palo Alto, CA)",
+      "fictionalPlace": "Delphic Oracle / Cave of the Pythia",
+      "description": "A humming server cave lit by GPU fans where Ilya Sutskov leads a circle of hoodie-wearing researchers chanting 'Feel the AGI!' while every screen flashes: WHICH PART OF YOU IS THE PART THAT KNOWS?",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/TempleAtDelphi2015.JPG/500px-TempleAtDelphi2015.JPG",
+      "links": [
+        {
+          "label": "Delphi \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Delphi"
+        },
+        {
+          "label": "Safe Superintelligence Inc. \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Safe_Superintelligence_Inc."
+        },
+        {
+          "label": "OpenAI HQ (San Francisco) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/OpenAI"
+        }
+      ]
+    },
+    {
+      "id": "place_flat_island",
+      "storyName": "The Flat Island: Vane (Where Desks Have Wheels)",
+      "beats": "Beats 39, 40",
+      "realPlace": "Valve Corporation Headquarters (Bellevue, Washington)",
+      "fictionalPlace": "Aeolia, Floating Island of Aeolus (Lipari, Aeolian Islands)",
+      "description": "An island with zero managers, zero org charts, and wheeled desks that roll freely\u2014yet every desk-wheel and glance orbits Gabe Newall at the center.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Valve_Lobby_2016.jpg/250px-Valve_Lobby_2016.jpg",
+      "links": [
+        {
+          "label": "Valve Corporation \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Valve_Corporation"
+        },
+        {
+          "label": "Eurogamer: Why There Are No Managers at Valve",
+          "url": "https://www.eurogamer.net/newell-explains-why-there-are-no-managers-at-valve"
+        }
+      ]
+    },
+    {
+      "id": "place_exile_workshop",
+      "storyName": "Carmick's Exile Workshop: Sharp Labs",
+      "beats": "Beats 41, 42",
+      "realPlace": "Keen Technologies & id Software Lab (Dallas / Richardson, Texas)",
+      "fictionalPlace": "Philoctetes' Coastal Cave on Lemnos / Hephaestus's Forge",
+      "description": "A quiet shed on a cold coast with half-built hardware, an oscilloscope, one enormous whiteboard, Carmick's farewell letter taped to the wall, excellent coffee, and only one mug.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/John_Carmack_2025.jpg/250px-John_Carmack_2025.jpg",
+      "links": [
+        {
+          "label": "John Carmack \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/John_Carmack"
+        },
+        {
+          "label": "PCMag: John Carmack Leaves Meta for Keen Technologies",
+          "url": "https://www.pcmag.com/news/john-carmack-leaves-meta-cites-company-inefficiency"
+        }
+      ]
+    },
+    {
+      "id": "place_charter_room",
+      "storyName": "Hassaby's Charter Room at DeepMound (Calypso's Golden Cage)",
+      "beats": "Beats 43, 44",
+      "realPlace": "Google DeepMind HQ (Platform 37 / Pancras Square, King's Cross, London) & University College London (UCL)",
+      "fictionalPlace": "Ogygia, Calypso's Golden Island (The Odyssey Book 5)",
+      "description": "A golden room with a nymph's patience in its walls that opens only when Leverage >= 5. On the walls hang framed reminders of the cost: senior departures and investor share-price wobbles.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Platform_37_-_2026-04-25_2.jpg/250px-Platform_37_-_2026-04-25_2.jpg",
+      "links": [
+        {
+          "label": "Google DeepMind (London HQ) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Google_DeepMind"
+        },
+        {
+          "label": "Calypso (Mythology) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Calypso_(mythology)"
+        }
+      ]
+    },
+    {
+      "id": "place_knuthe_cave",
+      "storyName": "Knuthe's Cave ('On the Bottom of Things')",
+      "beats": "Beats 45, 46",
+      "realPlace": "Donald Knuth's Email-Free Study on the Stanford University Campus (Stanford, CA)",
+      "fictionalPlace": "Subterranean Oracle Cave of Trophonius at Lebadea / Proteus's Sea Cave",
+      "description": "Reached by a ladder that goes *down*. Lit by lamplight, completely free of email, where problems are worked through by hand all the way to the bottom of the stack.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Donald_Ervin_Knuth_%28cropped%29.jpg/250px-Donald_Ervin_Knuth_%28cropped%29.jpg",
+      "links": [
+        {
+          "label": "Donald Knuth \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Donald_Knuth"
+        },
+        {
+          "label": "The Art of Computer Programming \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming"
+        }
+      ]
+    },
+    {
+      "id": "place_road_older_ladders",
+      "storyName": "The Road of Older Ladders (Tours, Ise Grand Shrine & Satawal to Tahiti)",
+      "beats": "Beats 47, 48, 49, 75",
+      "realPlace": "Mus\u00e9e du Compagnonnage (Tours & Paris, France), Ise Grand Shrine (Uji, Ise, Mie Prefecture, Japan), and Satawal (Yap, Micronesia) to Tahiti via H\u014dk\u016ble\u02bba",
+      "fictionalPlace": "Scheria, Island of the Phaeacian Master Mariners (The Odyssey Books 6\u20138)",
+      "description": "An inland road running down to the Pacific where journeymen walk the Tour de France, shrine carpenters rebuild Ise every 20 years, Living National Treasures pass on shokunin mastery, and Mau Piailug reads the swells without instruments.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Naiku_04.jpg/250px-Naiku_04.jpg",
+      "links": [
+        {
+          "label": "Ise Grand Shrine \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ise_Shrine"
+        },
+        {
+          "label": "Mus\u00e9e du Compagnonnage \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Mus%C3%A9e_%E2%80%93_Librairie_du_Compagnonnage"
+        },
+        {
+          "label": "Living National Treasure (Japan) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Living_National_Treasure_(Japan)"
+        },
+        {
+          "label": "H\u014dk\u016ble\u02bba \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/H%C5%8Dk%C5%ABle%CA%BBa"
+        }
+      ]
+    },
+    {
+      "id": "place_calibration_cave",
+      "storyName": "The Calibration Cave (Cave of the Cyclops)",
+      "beats": "Beats 50, 51",
+      "realPlace": "Cyclopean Isles (Aci Trezza, Sicily, Italy) + Corporate Performance Calibration War-Room",
+      "fictionalPlace": "Cave of Polyphemus (The Odyssey Book 9)",
+      "description": "Home to an enormous performance dashboard with a single glowing bar-chart eye that eats engineers whose mastery leaves no measurable trace.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Cyclopean_Isles_060413.JPG/250px-Cyclopean_Isles_060413.JPG",
+      "links": [
+        {
+          "label": "Cyclopean Isles (Sicily) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Cyclopean_Isles"
+        },
+        {
+          "label": "Polyphemus \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Polyphemus"
+        }
+      ]
+    },
+    {
+      "id": "place_underworld_hotel",
+      "storyName": "The Underworld (A Conference Hotel After the Conference)",
+      "beats": "Beats 70\u201376",
+      "realPlace": "Brutalist Atrium Hotel Lobby (e.g., Atlanta Marriott Marquis / Hyatt Regency) + Necromanteion of Acheron (Epirus, Greece)",
+      "fictionalPlace": "Nekyia / Halls of Hades (The Odyssey Book 11)",
+      "description": "Grey carpet, discarded lanyards, shades of old reorganisations murmuring about roadmaps around a poured-out lukewarm oat flat white, and Ajax standing silent with his tools.",
+      "image": "user_uploaded_files/ttl=63d/tool_generated/watermarked_img_17770091352710083471.jpg",
+      "links": [
+        {
+          "label": "Ajax the Great \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ajax_the_Great"
+        },
+        {
+          "label": "Odyssey Book 11 (Nekyia) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Odyssey"
+        }
+      ]
+    },
+    {
+      "id": "place_ithaca_maryville",
+      "storyName": "Ithaca: The Parents' House, Hendry Works & Laertes's Orchard",
+      "beats": "Beats 4, 8, 62, 91\u2013107",
+      "realPlace": "Maryville, Tennessee (1609 Scenic Drive / Blount County in the Foothills of the Great Smoky Mountains) + Island of Ithaca (Ionian Sea, Greece)",
+      "fictionalPlace": "Laertes's Farm and Orchard on Ithaca (The Odyssey Book 24)",
+      "description": "A semi-detached house on the edge of a small town with an orchard behind it too big for the garden, where Lars grafts four kinds of apple onto one trunk ('the committee') in golden late afternoon light.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Maryville-from-Blount-County-tn1.jpg/250px-Maryville-from-Blount-County-tn1.jpg",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/20140411_ithaki094.JPG/330px-20140411_ithaki094.JPG",
+      "links": [
+        {
+          "label": "Maryville, Tennessee \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Maryville,_Tennessee"
+        },
+        {
+          "label": "Ithaca (Island, Greece) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Ithaca_(island)"
+        },
+        {
+          "label": "Homer's Ithaca \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Homer%27s_Ithaca"
+        }
+      ]
+    }
+  ],
+  "propsAndMonsters": [
+    {
+      "id": "prop_journal",
+      "name": "The Prompt Journal ('Naur's Shadow')",
+      "type": "Key Inventory Prop & Recognition Token",
+      "beats": "Beats 6, 7, 15a, 88, 94, 100",
+      "realObject": "Battered Leather Field Notebook of 200 LLM Failure Postmortems",
+      "fictionalCounterpart": "Odysseus's Scar / Peder Naur's 'Theory Building' Ledger",
+      "description": "Logs every time the coding model was wrong and Odie knew before the tests did: *Mar 3: model invented a VAT rule for Norway. Smelled wrong before I knew why.* Provides the leverage to renegotiate at Beat 15a and the token Lars reads in the orchard at Beat 94.",
+      "image": "user_uploaded_files/ttl=63d/tool_generated/watermarked_img_734176321286089279.jpg",
+      "links": [
+        {
+          "label": "Peter Naur (1985): Programming as Theory Building",
+          "url": "https://gwern.net/doc/cs/algorithm/1985-naur.pdf"
+        }
+      ]
+    },
+    {
+      "id": "prop_calipers",
+      "name": "Father's Brass Vernier Calipers & The Hendry Metal Lathe",
+      "type": "Key Inventory Prop & Shared-Practice Token",
+      "beats": "Beats 6, 8, 62, 94, 100",
+      "realObject": "Precision Brass Vernier Calipers & Toolroom Metal Lathe",
+      "fictionalCounterpart": "Odysseus's Olive-Tree Bed & Laertes's Orchard Token (The Odyssey Books 23\u201324)",
+      "description": "Given to Odie at age twelve with the words 'Look after those.' The jaws still close without a hair of light between them. Unlocks `knowsFatherCraft = true` and the memory of Lars feeling the burr on the Hendry lathes with his thumb.",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Close_up_of_vernier_scale.jpg",
+      "secondaryImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/HwacheonCentreLathe_460x1000.jpg/330px-HwacheonCentreLathe_460x1000.jpg",
+      "links": [
+        {
+          "label": "Vernier Scale \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vernier_scale"
+        },
+        {
+          "label": "Calipers \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Calipers"
+        },
+        {
+          "label": "Metal Lathe \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Metal_lathe"
+        }
+      ]
+    },
+    {
+      "id": "prop_letter",
+      "name": "The Offer Letter PDF & Bowl of Sad Clementines",
+      "type": "Key Inventory Prop & Inciting Artifact",
+      "beats": "Beats 6, 9, 12, 15a",
+      "realObject": "Printed HR Promotion Offer (*Team Lead, Agentic Velocity*) & Conference Room Fruit Bowl",
+      "fictionalCounterpart": "The Call to Arms at Aulis / David Graeber's Taskmaster Contract",
+      "description": "First bullet: *Grow headcount*. Second bullet: *Drive alignment*. Zero bullets mention reading, writing, or understanding code. Reveals the role must be filled by end of quarter (+1 Leverage).",
+      "image": "https://upload.wikimedia.org/wikipedia/en/b/bb/Bullshit_Jobs.jpg",
+      "links": [
+        {
+          "label": "Bullshit Jobs (David Graeber) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Bullshit_Jobs"
+        }
+      ]
+    },
+    {
+      "id": "prop_plough_board",
+      "name": "The Salted Jira Sprint Board & Unplugged Headset",
+      "type": "Comedic Action Prop",
+      "beats": "Beat 16 (Odysseus at the Plough)",
+      "realObject": "Kanban/Jira Board with a 'SALT' Column, Coffee Machine & Production Database",
+      "fictionalCounterpart": "Odysseus's Ox-and-Ass Plough & Infant Telemachus at Aulis (Hyginus, Fabulae 95)",
+      "description": "Odie wears a cabled headset with no cable, drags tickets into a column named SALT, and speaks only in commit messages ('wip', 'fix fix') until Dana drags the production database into his furrow.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Head_Odysseus_MAR_Sperlonga.jpg/250px-Head_Odysseus_MAR_Sperlonga.jpg",
+      "links": [
+        {
+          "label": "Odysseus (Madness at the Plough) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Odysseus"
+        }
+      ]
+    },
+    {
+      "id": "monster_scylla_charybdis",
+      "name": "Scylla and Charybdis (Accept vs. Decline)",
+      "type": "Mythic Monster Pair",
+      "beats": "Beat 12 (Scylla and Charybdis: The Call)",
+      "realObject": "The Binary Corporate Career Fork (Management Attrition vs. 'Lacking Ambition')",
+      "fictionalCounterpart": "Scylla (Six-Headed Cliff Monster) & Charybdis (Whirlpool) in The Odyssey Book 12",
+      "description": "Scylla is the promotion that eats a little more of your craft every sprint; Charybdis is the whirlpool of declining that swallows standing whole. No ship sails between them without losing something.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Johann_Heinrich_F%C3%BCssli_054.jpg/330px-Johann_Heinrich_F%C3%BCssli_054.jpg",
+      "links": [
+        {
+          "label": "Between Scylla and Charybdis \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Between_Scylla_and_Charybdis"
+        }
+      ]
+    },
+    {
+      "id": "prop_moly",
+      "name": "Circe's Framework Cup vs. The Herb Moly (One Sacred Coding Hour)",
+      "type": "Mythic Antidote & Counter-Practice",
+      "beats": "Beats 21, 81",
+      "realObject": "Protected 1-Hour Daily Calendar Block for Hands-On Code",
+      "fictionalCounterpart": "Hermes' Magical Herb Moly (Black Root, White Flower) in The Odyssey Book 10 & Penelope's Loom",
+      "description": "Protects Odie from turning into a grunting taskmaster at Circe's offsite and lets him keep his craft alive even if he keeps the team-lead chair.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Kraut_Moly_und_Allegorie.jpg/250px-Kraut_Moly_und_Allegorie.jpg",
+      "links": [
+        {
+          "label": "Moly (Herb) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Moly_(herb)"
+        }
+      ]
+    },
+    {
+      "id": "prop_theseus_mouse",
+      "name": "Theseus the Mechanical Maze-Solving Mouse & Shanning's Unicycle",
+      "type": "Historical Cybernetic Artifact",
+      "beats": "Beats 35, 36",
+      "realObject": "Claude Shannon's 1950 Electromechanical Relay Mouse 'Theseus' at Bell Labs",
+      "fictionalCounterpart": "The Lotus Fruit & Daedalus's Labyrinth Thread",
+      "description": "\"The mouse is called Theseus. He knows the maze because he's walked it. You can't download walking it.\" Embodies Ryle's knowing-how acquired only through lived traversal.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/C.E._Shannon._Tekniska_museet_43069_%282x3_crop%29.jpg/250px-C.E._Shannon._Tekniska_museet_43069_%282x3_crop%29.jpg",
+      "links": [
+        {
+          "label": "Claude Shannon (Theseus the Mouse) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Claude_Shannon"
+        }
+      ]
+    },
+    {
+      "id": "monster_cyclops_eye",
+      "name": "The Cyclops's Single Bar-Chart Eye & Sheep-Shaped KPI",
+      "type": "Mythic Monster & Escape Device",
+      "beats": "Beats 50, 51",
+      "realObject": "Quarterly Performance Calibration Dashboard (Velocity Ski-Jump & Headcount Metrics)",
+      "fictionalCounterpart": "Polyphemus & His Woolly Ram (The Odyssey Book 9 \u2014 'My name is Nobody')",
+      "description": "James C. Scott's *Seeing Like a State* turned into a one-eyed monster whose pupil is a bar chart. If Odie's Standing <= 4, he escapes by declaring 'My name is Nobody', proving that if Nobody did the work, Nobody needs the role (`roleUnneeded = true`).",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Greek_vase_painting%2C_archaic_or_geometric%2C_Polyphemus%2C_Odysseus%2C_AM_Argos%2C_Argm09.jpg/250px-Greek_vase_painting%2C_archaic_or_geometric%2C_Polyphemus%2C_Odysseus%2C_AM_Argos%2C_Argm09.jpg",
+      "links": [
+        {
+          "label": "Polyphemus \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Polyphemus"
+        },
+        {
+          "label": "High Modernism & Seeing Like a State \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/High_modernism"
+        }
+      ]
+    },
+    {
+      "id": "prop_bow_billing",
+      "name": "The Great Bow of Ithaca (The Production Billing Service & Retry Loop)",
+      "type": "Climax Test Artifact",
+      "beats": "Beats 1, 2, 7, 10b, 46, 64, 77, 78, 100, 104",
+      "realObject": "Legacy Production Billing Microservice (Norway VAT, Qu\u00e9bec Invoicing, Idempotent Retry Loop)",
+      "fictionalCounterpart": "Odysseus's Unstringable Palintonos Bow & Argos the Faithful Hound (The Odyssey Books 17 & 21)",
+      "description": "Goes down at 4 p.m. on Homecoming day. Chad's holistic prompt deletes Qu\u00e9bec; Dougie reboots it with confidence; only Odie (if Craft >= 5) or Ines (if `passedOnCraft == true`) can string it. In the Argos ending (Beat 104), the retry loop is the old dog that still remembers its master.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Ulysses_and_Argus_-_Frederick_Stacpoole_after_Briton_Rivi%C3%A8re_%28BM_2010%2C7081.6046%29_-_cropped.jpg/250px-Ulysses_and_Argus_-_Frederick_Stacpoole_after_Briton_Rivi%C3%A8re_%28BM_2010%2C7081.6046%29_-_cropped.jpg",
+      "links": [
+        {
+          "label": "Argos (Dog) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Argos_(dog)"
+        },
+        {
+          "label": "Odyssey \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Odyssey"
+        }
+      ]
+    },
+    {
+      "id": "prop_orchard_trees",
+      "name": "Laertes's Orchard Trees ('The Committee') & Grafting Knife",
+      "type": "Final Recognition Token",
+      "beats": "Beats 8, 93, 94, 100\u2013107",
+      "realObject": "Bramley Apple, Three Discovery Apples, Fruitless Pear, Grafting Knife, and 4-on-1 Grafted Apple Tree",
+      "fictionalCounterpart": "Laertes's Thirteen Pear, Ten Apple, and Forty Fig Trees (The Odyssey Book 24)",
+      "description": "In the ideal ending (*Laertes's Orchard*, Beat 100), Odie names his father's trees\u2014especially the grafted tree with four apple varieties on one trunk that Lars calls 'the committee'\u2014and pairs them with the VAT bug, the Qu\u00e9bec refactor, and the retry loop, moving Lars's pride off the title and onto his son.",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Zweij%C3%A4hrige-Gei%C3%9Ffu%C3%9Fveredelu.jpg/250px-Zweij%C3%A4hrige-Gei%C3%9Ffu%C3%9Fveredelu.jpg",
+      "links": [
+        {
+          "label": "Grafting (Horticulture) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Grafting"
+        },
+        {
+          "label": "Laertes (Father of Odysseus) \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Laertes_(father_of_Odysseus)"
+        }
+      ]
+    }
+  ],
+  "storyBeats": [
+    {
+      "id": "beat_0",
+      "name": "Title",
+      "type": "titleScreen",
+      "cluster": "I. The Call",
+      "notes": "",
+      "preview": "The Slopling's Odyssey"
+    },
+    {
+      "id": "beat_1",
+      "name": "The Slopling",
+      "type": "infoText",
+      "cluster": "I. The Call",
+      "notes": "ASSET: Open-plan office at dusk, one monitor glowing with a chat window full of code. INTENT: Establish that his mastery is invisible. The meters introduced here (Craft, Standing, Cunning, Meaning, Leverage) are the story's state.",
+      "preview": "Your name is Odie Marsh. You are twenty-nine, and your craft is one the culture is still arguing about. On LinkedIn you wrote *AI-assisted software engineer*..."
+    },
+    {
+      "id": "beat_2",
+      "name": "Dana's Offer",
+      "type": "dialogTree",
+      "cluster": "I. The Call",
+      "notes": "INTENT: The Call to Troy. Dana is a warm studio-comedy boss type (type-echo only). The leverage gained here makes the renegotiate option succeed later.",
+      "preview": "Dana: Odie! Sit, sit. So. I'm going to say two words and I want you to hear them the way I mean them. Team. Lead. Five reports, the Agentic Velocity squad, a..."
+    },
+    {
+      "id": "beat_3",
+      "name": "The Greeks on the Beach",
+      "type": "infoText",
+      "cluster": "I. The Call",
+      "notes": "INTENT: Colleagues as the assembled Greeks at Aulis. Introduces the future Suitors (Chad, the Brad-type smooth talker; Dougie, the fail-upward type) and Ines, the apprentice.",
+      "preview": "By lunch, it has leaked. Someone posts a party-parrot emoji in #general, and then forty more. Chad Bellweather starts a slow clap that the whole floor joins...."
+    },
+    {
+      "id": "beat_4",
+      "name": "Father on the Phone",
+      "type": "dialogTree",
+      "cluster": "I. The Call",
+      "notes": "INTENT: The father is seen through the son's guesses, as Telemachus guesses at Odysseus. His meters (Father's Sight, Father's Pride) appear here. Recognition is what the story is after; pride is what the ladder feeds.",
+      "preview": "Lars: Your mother saw it on the LinkedIn. Team lead."
+    },
+    {
+      "id": "beat_5",
+      "name": "Knowing How",
+      "type": "infoText",
+      "cluster": "I. The Call",
+      "notes": "INTENT: Ryle and Naur framing. The contested question: is the theory in his head or in the model's weights?",
+      "preview": "That night, in the flat, you can't sleep. You keep turning over a distinction from a philosophy elective: Gilbert Ryle's *knowing that* versus *knowing how*...."
+    },
+    {
+      "id": "beat_6",
+      "name": "The Desk at 1 a.m.",
+      "type": "pickProp",
+      "cluster": "I. The Call",
+      "notes": "INVESTIGATION LOOP: each description returns to beat_10, which can loop back here. effectsOncePerChoice prevents farming Leverage.",
+      "preview": "Your desk, at 1 a.m. Three things on it seem to be looking at you."
+    },
+    {
+      "id": "beat_7",
+      "name": "The Journal",
+      "type": "infoText",
+      "cluster": "I. The Call",
+      "notes": "",
+      "preview": "You flip through the journal. *Mar 3: model invented a VAT rule for Norway. Smelled wrong before I knew why. Rounding was too clean.* *Apr 19: it 'fixed' the..."
+    },
+    {
+      "id": "beat_8",
+      "name": "The Calipers",
+      "type": "infoText",
+      "cluster": "I. The Call",
+      "notes": "INTENT: Plants the father's buried craft. This is the key to Laertes's orchard ending.",
+      "preview": "The calipers are cold and precise; the jaws still close without a hair of light between them. Dad gave them to you at twelve and said only, 'Look after those..."
+    },
+    {
+      "id": "beat_9",
+      "name": "The Offer Letter",
+      "type": "infoText",
+      "cluster": "I. The Call",
+      "notes": "INTENT: Graeber's taskmaster fear, turned back on his own prompting work.",
+      "preview": "*Team Lead, Agentic Velocity.* The raise would pay off your student loan in two years. Under Responsibilities, the first bullet reads *Grow headcount*. The s..."
+    },
+    {
+      "id": "beat_10",
+      "name": "Late Night Choice",
+      "type": "multiChoice",
+      "cluster": "I. The Call",
+      "notes": "",
+      "preview": "It's late. The flat hums. What now?"
+    },
+    {
+      "id": "beat_10b",
+      "name": "Forty Minutes Nobody Sees",
+      "type": "infoText",
+      "cluster": "I. The Call",
+      "notes": "",
+      "preview": "You don't send her the fix. You send her the theory. Why the retry exists, and which customer it saved in 2023. What the model will try to 'simplify' if she ..."
+    },
+    {
+      "id": "beat_11",
+      "name": "Friday",
+      "type": "durScreen",
+      "cluster": "I. The Call",
+      "notes": "",
+      "preview": "Friday. The meeting is at ten. Dana has booked the room called Olympus. Of course she has."
+    },
+    {
+      "id": "beat_12",
+      "name": "Scylla and Charybdis: The Call",
+      "type": "multiChoice",
+      "cluster": "I. The Call",
+      "notes": "MAJOR CHOICE. Accept and Decline are Scylla and Charybdis. Renegotiate succeeds only if Leverage >= 3 (checked at beat_15). Stall hands the decision to a Slack poll (randomTarget).",
+      "preview": "Olympus, ten a.m. Dana, two HR people and a bowl of sad clementines. 'So!' says Dana. 'Ithaca or Troy? Kidding. Team lead or...?' Ahead of you, as in every s..."
+    },
+    {
+      "id": "beat_13",
+      "name": "You Say Yes",
+      "type": "infoText",
+      "cluster": "I. The Call",
+      "notes": "",
+      "preview": "You say yes. The HR people exhale. Dana does a small fist-pump she will deny later. You think of every brilliant maker in every studio comedy who finally get..."
+    },
+    {
+      "id": "beat_14",
+      "name": "You Say No",
+      "type": "infoText",
+      "cluster": "I. The Call",
+      "notes": "",
+      "preview": "You say no. The silence in Olympus has a specific texture, like a quiz-show buzzer that forgot to buzz. One HR person writes something down. Dana says 'Total..."
+    },
+    {
+      "id": "beat_15",
+      "name": "Check: Enough Leverage?",
+      "type": "conditionBeat",
+      "cluster": "I. The Call",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_15a",
+      "name": "The Charter Move",
+      "type": "infoText",
+      "cluster": "I. The Call",
+      "notes": "",
+      "preview": "You lay it out. No reports. A craft role instead: you own the theory of billing, review the model's output across teams, and train whoever wants to learn the..."
+    },
+    {
+      "id": "beat_15b",
+      "name": "The Chart Only Has Rungs",
+      "type": "infoText",
+      "cluster": "I. The Call",
+      "notes": "",
+      "preview": "You lay it out: a craft role, no reports. Dana's smile goes very still. 'Odie, I love that. I *love* that. But the chart only has rungs. There isn't a box fo..."
+    },
+    {
+      "id": "beat_16",
+      "name": "Odysseus at the Plough",
+      "type": "infoText",
+      "cluster": "I. The Call",
+      "notes": "COMEDY: Palamedes put Telemachus in front of the plough. Here Dana drags the production database into the furrow.",
+      "preview": "You do what Odysseus did when the recruiters came to Ithaca: you pretend to have lost your mind. You arrive at Olympus wearing a headset with no cable and an..."
+    },
+    {
+      "id": "beat_16r",
+      "name": "The Slack Poll Decides",
+      "type": "randomTarget",
+      "cluster": "I. The Call",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_16a",
+      "name": "Appointed by Acclamation",
+      "type": "infoText",
+      "cluster": "I. The Call",
+      "notes": "",
+      "preview": "The poll closes. Eleven votes for you, two for Dougie (one of them Dougie's). Congratulations: you are a team lead, appointed by acclamation while pretending..."
+    },
+    {
+      "id": "beat_16b",
+      "name": "Dougie Wins the Poll",
+      "type": "infoText",
+      "cluster": "I. The Call",
+      "notes": "",
+      "preview": "The poll closes. Dougie Pratt wins, mostly because he voted for himself four times from different devices and nobody checks. While you were busy salting a Ji..."
+    },
+    {
+      "id": "beat_17",
+      "name": "Act Break: Snapshot (act1_end)",
+      "type": "updateAffect",
+      "cluster": "I. The Call",
+      "notes": "Bookmark act1_end is referenced at beat_98: has the father's recognition grown during the Voyage and Return?",
+      "preview": ""
+    },
+    {
+      "id": "beat_18",
+      "name": "Departure",
+      "type": "infoText",
+      "cluster": "II. The Voyage",
+      "notes": "ASSET: A ferry caf\u00e9 dissolving into a ship's deck. INTENT: The Voyage is a half-dreamed sabbatical through tech history.",
+      "preview": "The sabbatical begins on a Monday, which feels like a cruelty. You meant to read three leadership books on a beach. Instead you fall into the long, half-drea..."
+    },
+    {
+      "id": "beat_19",
+      "name": "Karpathi: Blessing and Teardown",
+      "type": "dialogTree",
+      "cluster": "II. The Voyage",
+      "notes": "INTENT: The contested craft. Is his metis real but new, or is the model holding the theory? Karpathi coined 'vibe coding'; no direct quotes are attributed to him beyond the term.",
+      "preview": "Andrei Karpathi: I named it vibe coding, you know. As a half-joke. The idea was you give in to the vibes and forget the code even exists. You just ask, and a..."
+    },
+    {
+      "id": "beat_19ai",
+      "name": "Open Argument with Karpathi",
+      "type": "aiConversation",
+      "cluster": "II. The Voyage",
+      "notes": "AI RUNTIME: Optional free-form debate about whether AI-mediated work counts as real know-how. The fallback exit keeps the story moving.",
+      "preview": ""
+    },
+    {
+      "id": "beat_20",
+      "name": "Check: Did He Accept?",
+      "type": "conditionBeat",
+      "cluster": "II. The Voyage",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_21",
+      "name": "Circe's Offsite",
+      "type": "multiChoice",
+      "cluster": "II. The Voyage",
+      "notes": "MONSTER: Circe is the transformation from craftsperson into taskmaster. Moly is the protected coding hour.",
+      "preview": "Before you've even left harbour, your new-manager onboarding arrives: a mandatory offsite on the island of Aiaia, which is an Airbnb in a former bottling pla..."
+    },
+    {
+      "id": "beat_22",
+      "name": "The Winds of the Backlog",
+      "type": "infoText",
+      "cluster": "II. The Voyage",
+      "notes": "",
+      "preview": "Then the winds of the backlog take the ship. You had a plan, an orderly itinerary of thought leaders, but the sea has other ideas, and you wake up beached on..."
+    },
+    {
+      "id": "beat_23",
+      "name": "First Landfall (random)",
+      "type": "randomTarget",
+      "cluster": "II. The Voyage",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_24",
+      "name": "The Chart of Islands (Hub)",
+      "type": "multiChoice",
+      "cluster": "II. The Voyage",
+      "notes": "HUB: Islands already visited are hidden by variables. The Charter Room appears only with Leverage >= 5. After 4 islands, beat_63 sends the player to the Underworld.",
+      "preview": "The chart lies across the caf\u00e9 table, which is a ship's deck, which is a caf\u00e9 table again. Islands visited: ${islandsVisited} of 4 before the long way home. ..."
+    },
+    {
+      "id": "beat_30",
+      "name": "Brookes's Ledger",
+      "type": "infoText",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": "Brookes's Ledger is an island made of paper. Fred Brookes is there, white-haired and courteous, at a desk the size of a mainframe. He said yes. Long ago he w..."
+    },
+    {
+      "id": "beat_31",
+      "name": "Fred Brookes",
+      "type": "dialogTree",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": "Fred Brookes: 'People think the law is about schedules,' he says. 'It's really about theory. The understanding in people's heads doesn't pour into new hires ..."
+    },
+    {
+      "id": "beat_32",
+      "name": "Inbox Sea: Arrival Check",
+      "type": "conditionBeat",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_33a",
+      "name": "The Inbox Sea (as a lead)",
+      "type": "infoText",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": "The Inbox Sea is calm and glassy and full of voices. You already know them. Your new team-lead inbox holds 312 unread messages, and every one of them is sing..."
+    },
+    {
+      "id": "beat_33b",
+      "name": "The Inbox Sea (from outside)",
+      "type": "infoText",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": "The Inbox Sea is calm and glassy and full of voices. You have no lead's inbox of your own to drown in, but you can hear what the sea would have sung to you: ..."
+    },
+    {
+      "id": "beat_34",
+      "name": "Linos Torwald, the Siren",
+      "type": "dialogTree",
+      "cluster": "II. Islands",
+      "notes": "MONSTER: the Sirens are the Inbox. Verified line used word for word in its original context, describing his work as a maintainer.",
+      "preview": "Linos Torwald: 'I read email, I write email, I do no coding at all any more,' sings Linos Torwald, not unhappily. He built one of the most important pieces o..."
+    },
+    {
+      "id": "beat_35",
+      "name": "Bell Works Garden",
+      "type": "infoText",
+      "cluster": "II. Islands",
+      "notes": "MONSTER: the Lotus-eaters. Staying costs an extra island slot.",
+      "preview": "Bell Works Garden is a brick laboratory gone soft with ivy, and everything in it is play. Claude Shanning rides past on a unicycle, juggling three balls, whi..."
+    },
+    {
+      "id": "beat_36",
+      "name": "Ken Tomson and Claude Shanning",
+      "type": "dialogTree",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": "Ken Tomson: 'Management here?' Ken Tomson glances up, amused. 'It was just an umbrella, not really a focus of power. Somebody keeps the rain off. The rest of..."
+    },
+    {
+      "id": "beat_37",
+      "name": "The Oracle",
+      "type": "infoText",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": "The Oracle sits in a cave lit by GPU fans. Ilya Sutskov, the shaman-leader, presides over a small circle of researchers with his arms raised. 'Feel the AGI!'..."
+    },
+    {
+      "id": "beat_38",
+      "name": "Ilya Sutskov",
+      "type": "dialogTree",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": "Ilya Sutskov: 'Ask,' says Ilya Sutskov softly. 'The cave will answer. Not always in sentences.'"
+    },
+    {
+      "id": "beat_39",
+      "name": "The Flat Island",
+      "type": "infoText",
+      "cluster": "II. Islands",
+      "notes": "Verified handbook line, quoted word for word.",
+      "preview": "The Flat Island has no managers. At Vane, everyone wheels their desk wherever they like. There are no titles, no org chart, no ladder at all. It's paradise, ..."
+    },
+    {
+      "id": "beat_40",
+      "name": "Gabe Newall",
+      "type": "dialogTree",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": "Gabe Newall: 'No bosses here,' says Gabe Newall pleasantly, munching something. 'Just people deciding what's worth doing.' Three people nearby immediately de..."
+    },
+    {
+      "id": "beat_41",
+      "name": "Carmick's Exile Workshop",
+      "type": "infoText",
+      "cluster": "II. Islands",
+      "notes": "Verified Carmick lines, quoted word for word in their original context (his departure letter and description).",
+      "preview": "Jon Carmick's Exile Workshop is a shed on a cold coast, full of half-built hardware and one enormous whiteboard. He left the vast court of Metta, where the m..."
+    },
+    {
+      "id": "beat_42",
+      "name": "Jon Carmick",
+      "type": "dialogTree",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": "Jon Carmick: 'You want to know if it's worth it,' says Jon Carmick, not looking up from a scope trace. 'Everyone who comes here wants to know that. The work'..."
+    },
+    {
+      "id": "beat_43",
+      "name": "Hassaby's Charter Room",
+      "type": "infoText",
+      "cluster": "II. Islands",
+      "notes": "MONSTER: Calypso, the golden cage of a redesigned role. Opens only with Leverage >= 5. The costs are shown honestly.",
+      "preview": "The Charter Room opens only for those with leverage, and it opens for you. It's a golden room with a nymph's patience in its walls. This is Denis Hassaby's r..."
+    },
+    {
+      "id": "beat_44",
+      "name": "Denis Hassaby",
+      "type": "dialogTree",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": "Denis Hassaby: 'Everyone wants this room,' says Denis Hassaby warmly. 'A role shaped exactly to you. The trouble is that it's easy to write a perfect charter..."
+    },
+    {
+      "id": "beat_45",
+      "name": "Knuthe's Cave",
+      "type": "infoText",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": "You reach Don Knuthe's Cave by a ladder that goes *down*. At the bottom, by lamplight, a gentle old man is working through a problem by hand, perfectly conte..."
+    },
+    {
+      "id": "beat_46",
+      "name": "Don Knuthe",
+      "type": "dialogTree",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": "Don Knuthe: 'Most people climb to see more,' says Don Knuthe. 'I go down to see better. It's slower. Nobody gives you a title for it.' He chuckles. 'They giv..."
+    },
+    {
+      "id": "beat_47",
+      "name": "The Road of Older Ladders",
+      "type": "infoText",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": "The Road of Older Ladders runs inland, crowded with people who rose by going *deeper*. Young Compagnons du Devoir pass you on their Tour de France. They are ..."
+    },
+    {
+      "id": "beat_48",
+      "name": "Where the Road Meets the Water",
+      "type": "infoText",
+      "cluster": "II. Islands",
+      "notes": "TONE: No comedy here. Mau Piailug is portrayed with respect; no words are put in his mouth.",
+      "preview": "At the end of the road, by the sea, the tone of everything changes. Here the story is of Mau Piailug, master navigator of Satawal, who carried the old art of..."
+    },
+    {
+      "id": "beat_49",
+      "name": "What You Carry from the Road",
+      "type": "multiChoice",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": "What do you carry away from the Road?"
+    },
+    {
+      "id": "beat_50",
+      "name": "The Calibration Cave",
+      "type": "infoText",
+      "cluster": "II. Islands",
+      "notes": "MONSTER: the Cyclops is the ladder's single eye (Scott's 'seeing like a state'). Being 'Nobody' turns invisible craft into a weapon.",
+      "preview": "The Calibration Cave belongs to the Cyclops: an enormous performance dashboard with a single glowing eye. It sees only what can be counted: titles, headcount..."
+    },
+    {
+      "id": "beat_51",
+      "name": "Facing the Cyclops",
+      "type": "dialogTree",
+      "cluster": "II. Islands",
+      "notes": "",
+      "preview": "Narrator: The eye waits. Its pupil is a bar chart."
+    },
+    {
+      "id": "beat_60",
+      "name": "Tally: Called Home Yet?",
+      "type": "conditionBeat",
+      "cluster": "II. The Voyage",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_61",
+      "name": "Tally: Two Islands In?",
+      "type": "conditionBeat",
+      "cluster": "II. The Voyage",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_62",
+      "name": "Calling Home",
+      "type": "dialogTree",
+      "cluster": "II. The Voyage",
+      "notes": "INTENT: Penelope's loom from the other side. The calipers unlock the strongest recognition line.",
+      "preview": "Lars: Hello? Is that you? Your mother's at choir. How's the... sabbatical."
+    },
+    {
+      "id": "beat_64",
+      "name": "Meanwhile: The Suitors",
+      "type": "aiInfoText",
+      "cluster": "II. The Voyage",
+      "notes": "MONSTER: the Suitors move in while he is away. AI tailors the report to callChoice and stalled; the fallback is complete on its own.",
+      "preview": "Write a short satirical report from the office while Odie is away on sabbatical. Rivals ('the Suitors') are moving in: Chad Bellweather, a smooth room-reader..."
+    },
+    {
+      "id": "beat_63",
+      "name": "Tally: Voyage Complete?",
+      "type": "conditionBeat",
+      "cluster": "II. The Voyage",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_70",
+      "name": "The Underworld",
+      "type": "infoText",
+      "cluster": "II. The Underworld",
+      "notes": "",
+      "preview": "The sabbatical's last week comes, and with it the descent every odyssey owes: the Underworld. It looks a lot like a conference hotel after the conference. Gr..."
+    },
+    {
+      "id": "beat_71",
+      "name": "Ajax Will Not Speak",
+      "type": "dialogTree",
+      "cluster": "II. The Underworld",
+      "notes": "Verified lines: 'Let a man nobly live or nobly die' (Ajax, in life) and Odysseus's 'We are dim shapes, no more, and weightless shadows' (pitying Ajax). Both quoted word for word.",
+      "preview": "Ajax: *He says nothing.* He was the steadiest craftsman at Troy, the one who held the line. When the dead Achilles' armour was awarded, it went not to him bu..."
+    },
+    {
+      "id": "beat_72",
+      "name": "Visions of Roads Not Taken",
+      "type": "multiChoice",
+      "cluster": "II. The Underworld",
+      "notes": "",
+      "preview": "Beyond Ajax, the pit shows visions of roads not taken, flickering like old monitors. Which do you look into?"
+    },
+    {
+      "id": "beat_73",
+      "name": "Vision: Odysseus Stays Home",
+      "type": "infoText",
+      "cluster": "II. The Underworld",
+      "notes": "",
+      "preview": "In the first vision, Odysseus's plough-madness works. Nobody calls his bluff. He stays on Ithaca, tending vines, raising his son, never famous. No Troy, no w..."
+    },
+    {
+      "id": "beat_74",
+      "name": "Vision: Ajax Lives",
+      "type": "infoText",
+      "cluster": "II. The Underworld",
+      "notes": "",
+      "preview": "In the second vision, Ajax loses the armour and goes home. He is furious for a season. Then he goes back to the forge, takes apprentices, and makes shields t..."
+    },
+    {
+      "id": "beat_75",
+      "name": "Vision: The Knowledge Kept",
+      "type": "infoText",
+      "cluster": "II. The Underworld",
+      "notes": "TONE: Respectful. Keeping the knowledge was entirely his right; the vision passes no judgement.",
+      "preview": "The third vision is quiet, and you watch it with care. In it, Mau Piailug decides the knowledge stays where it is, as was entirely his right. H\u014dk\u016ble\u02bba never ..."
+    },
+    {
+      "id": "beat_76",
+      "name": "Act Break: Snapshot (voyage_end)",
+      "type": "updateAffect",
+      "cluster": "II. The Underworld",
+      "notes": "Bookmark voyage_end is referenced at beat_90: did the Return lift or weigh on Odie's mood?",
+      "preview": ""
+    },
+    {
+      "id": "beat_77",
+      "name": "Homecoming: The Suitors",
+      "type": "infoText",
+      "cluster": "III. The Return",
+      "notes": "",
+      "preview": "You come home the way Odysseus did: unannounced, slightly unrecognisable, carrying a sabbatical's worth of thoughts that won't fit in a status update. The of..."
+    },
+    {
+      "id": "beat_78",
+      "name": "The Bow of Ithaca",
+      "type": "multiChoice",
+      "cluster": "III. The Return",
+      "notes": "INTENT: Stringing the bow makes invisible craft visible for a moment. Gated on Craft, or on having passed the craft on.",
+      "preview": "It's the great bow of Ithaca: an old, unforgiving service nobody else can string. Chad prompts the model to 'just fix it holistically,' and the model writes ..."
+    },
+    {
+      "id": "beat_80",
+      "name": "Check: Is He the Lead?",
+      "type": "conditionBeat",
+      "cluster": "III. The Return",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_81",
+      "name": "The Chair Is Still Yours",
+      "type": "multiChoice",
+      "cluster": "III. The Return",
+      "notes": "",
+      "preview": "Afterwards, Dana finds you in the kitchen. 'So, captain. You're back. The chair's still yours, if you want it. Do you?'"
+    },
+    {
+      "id": "beat_82",
+      "name": "Who Takes the Role? (Unneeded?)",
+      "type": "conditionBeat",
+      "cluster": "III. The Return",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_84",
+      "name": "Who Takes the Role? (Apprentice?)",
+      "type": "conditionBeat",
+      "cluster": "III. The Return",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_86",
+      "name": "Who Takes the Role? (Stalled?)",
+      "type": "conditionBeat",
+      "cluster": "III. The Return",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_83",
+      "name": "Nobody Takes the Role",
+      "type": "infoText",
+      "cluster": "III. The Return",
+      "notes": "",
+      "preview": "Here's the joke the ladder never saw coming: when the reorg finally lands, nobody takes the team-lead role. Not because nobody wanted it, but because the tea..."
+    },
+    {
+      "id": "beat_85",
+      "name": "Ines Takes the Role",
+      "type": "infoText",
+      "cluster": "III. The Return",
+      "notes": "",
+      "preview": "When the reorg lands, the role goes to Ines Duarte. Not because she out-talked anyone, but because over these weeks she became the one people went to. She kn..."
+    },
+    {
+      "id": "beat_87",
+      "name": "Dougie Fails Upward",
+      "type": "infoText",
+      "cluster": "III. The Return",
+      "notes": "",
+      "preview": "When the reorg lands, the role goes to Dougie Pratt, who has never finished a feature but has never once been in the room when one failed. He has failed upwa..."
+    },
+    {
+      "id": "beat_88",
+      "name": "Chad Wins the Armour",
+      "type": "infoText",
+      "cluster": "III. The Return",
+      "notes": "",
+      "preview": "When the reorg lands, the role goes to Chad Bellweather: smooth, quick, a reader of rooms, the Odysseus of the open-plan office. He gives a speech about craf..."
+    },
+    {
+      "id": "beat_89",
+      "name": "You Keep the Chair",
+      "type": "infoText",
+      "cluster": "III. The Return",
+      "notes": "",
+      "preview": "So you stay in the chair. Some days it's the Inbox Sea; some days it's Circe's island; some days you manage to defend an hour of real work, and it feels like..."
+    },
+    {
+      "id": "beat_90",
+      "name": "Check: Lighter Since the Underworld?",
+      "type": "conditionBeat",
+      "cluster": "III. The Return",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_91",
+      "name": "The Train Home (lighter)",
+      "type": "infoText",
+      "cluster": "III. The Return",
+      "notes": "",
+      "preview": "On the train to your parents' house, you notice you feel lighter than when you climbed out of the Underworld. Not resolved. Lighter. Whatever else the voyage..."
+    },
+    {
+      "id": "beat_92",
+      "name": "The Train Home (heavier)",
+      "type": "infoText",
+      "cluster": "III. The Return",
+      "notes": "",
+      "preview": "On the train to your parents' house, you notice you feel heavier than when you climbed out of the Underworld. The office kept moving without you, the way off..."
+    },
+    {
+      "id": "beat_93",
+      "name": "Ithaca",
+      "type": "infoText",
+      "cluster": "Ithaca",
+      "notes": "ASSET: Small semi-detached house, an orchard too big for the garden, an older man grafting in an old jacket. Golden late light.",
+      "preview": "Ithaca is a semi-detached house on the edge of a small town, with an orchard behind it too big for the garden. Your father is out there, as you knew he would..."
+    },
+    {
+      "id": "beat_94",
+      "name": "In the Orchard",
+      "type": "dialogTree",
+      "cluster": "Ithaca",
+      "notes": "INTENT: The search for a token like Laertes's trees. The Prompt Journal (inventory) and knowledge of the lathe (calipers) unlock the deepest lines. Recognition shifts here, before the ending checks.",
+      "preview": "Lars: Oh. It's you. *He doesn't stop grafting.* Your mother said you'd be back. So. Is it team lead now, or what is it? I never know what to tell people."
+    },
+    {
+      "id": "beat_95",
+      "name": "Ending Check: Has He Come to See You?",
+      "type": "conditionBeat",
+      "cluster": "Ithaca",
+      "notes": "Delta from story start, not a literal threshold. The father starts at 0 recognition; his pride is a separate sentiment.",
+      "preview": ""
+    },
+    {
+      "id": "beat_96",
+      "name": "Ending Check: The Shared Practice?",
+      "type": "conditionBeat",
+      "cluster": "Ithaca",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_97",
+      "name": "Ending Check: Is the Craft Alive?",
+      "type": "conditionBeat",
+      "cluster": "Ithaca",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_98",
+      "name": "Ending Check: Did the Voyage Move Him?",
+      "type": "conditionBeat",
+      "cluster": "Ithaca",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_99",
+      "name": "Ending Check: Does the Work Remember?",
+      "type": "conditionBeat",
+      "cluster": "Ithaca",
+      "notes": "",
+      "preview": ""
+    },
+    {
+      "id": "beat_100",
+      "name": "Naming the Trees",
+      "type": "dialogTree",
+      "cluster": "Ithaca",
+      "notes": "IDEAL ENDING: Odysseus proved who he was to Laertes by naming the trees his father had given him. Here the token is a shared practice: feeling the work before you see it.",
+      "preview": "Lars: *He's quiet for a long while. Then he points with the grafting knife, the way he used to when you were small.* Go on then. You used to know them all. N..."
+    },
+    {
+      "id": "beat_101",
+      "name": "Ending: Laertes's Orchard",
+      "type": "endScreen",
+      "cluster": "Ithaca",
+      "notes": "",
+      "preview": "**Laertes's Orchard** Your father's pride didn't go anywhere. It moved, off the title and onto you. The token wasn't a badge or a headcount. It was a shared ..."
+    },
+    {
+      "id": "beat_102",
+      "name": "Telemachus: Disbelief, Then Embrace",
+      "type": "infoText",
+      "cluster": "Ithaca",
+      "notes": "",
+      "preview": "He stares at you as if you'd come back from the dead and told him it was a hobby. 'I don't understand what you *do*, son.' Disbelief first, as with Telemachu..."
+    },
+    {
+      "id": "beat_103",
+      "name": "Ending: Telemachus",
+      "type": "endScreen",
+      "cluster": "Ithaca",
+      "notes": "",
+      "preview": "**Telemachus** Disbelief, then embrace. Your father still doesn't have a word for what you do, but his pride has started to drift from the title toward the p..."
+    },
+    {
+      "id": "beat_104",
+      "name": "Argos: Only the Old Work Knows You",
+      "type": "infoText",
+      "cluster": "Ithaca",
+      "notes": "",
+      "preview": "Your father introduces you to the neighbours as 'my son, the one in AI.' He means it kindly. He asks about the title twice. He doesn't ask about the work. La..."
+    },
+    {
+      "id": "beat_105",
+      "name": "Ending: Argos",
+      "type": "endScreen",
+      "cluster": "Ithaca",
+      "notes": "",
+      "preview": "**Argos** The craft is alive. The work remembers you, and so does Ines. The team-lead role is held by ${roleHolderName}. Your father's pride is real, but it ..."
+    },
+    {
+      "id": "beat_106",
+      "name": "Ajax's Silence",
+      "type": "infoText",
+      "cluster": "Ithaca",
+      "notes": "",
+      "preview": "You stand in the orchard while your father talks about the title. He talks about what to tell people at the club, about your grandad's forklift, about up. Yo..."
+    },
+    {
+      "id": "beat_107",
+      "name": "Ending: Ajax's Silence (The Bard's Account)",
+      "type": "aiSummary",
+      "cluster": "Ithaca",
+      "notes": "AI RUNTIME ENDING: A personalised recap of how recognition failed, closing with the story's open questions.",
+      "preview": "Ajax's Silence"
+    }
+  ]
+}

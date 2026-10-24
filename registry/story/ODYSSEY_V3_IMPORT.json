@@ -1,0 +1,1172 @@
+{
+  "source_archive": "slopling-odyssey-github-repo.zip",
+  "source_content_files": 135,
+  "master_sheets": 20,
+  "kit_crops": 89,
+  "modular_kits": 89,
+  "storybeat_kits": 97,
+  "family_portraits": 6,
+  "concept_plates": 3,
+  "declared_summary": {
+    "totalCards": 186,
+    "modularKitsCount": 89,
+    "storybeatScenesCount": 97,
+    "masterSheetsCount": 20,
+    "totalModularCutPieces": 947,
+    "totalModularBrassPivots": 528,
+    "totalDecisionPathTransitions": 191
+  },
+  "missing_sheet_files": [],
+  "missing_kit_references": [],
+  "unresolved_transition_targets": [
+    {
+      "scene": "beat_2",
+      "target": ""
+    },
+    {
+      "scene": "beat_2",
+      "target": ""
+    },
+    {
+      "scene": "beat_2",
+      "target": ""
+    },
+    {
+      "scene": "beat_2",
+      "target": ""
+    },
+    {
+      "scene": "beat_4",
+      "target": ""
+    },
+    {
+      "scene": "beat_4",
+      "target": ""
+    },
+    {
+      "scene": "beat_19",
+      "target": ""
+    },
+    {
+      "scene": "beat_19",
+      "target": ""
+    },
+    {
+      "scene": "beat_19",
+      "target": ""
+    },
+    {
+      "scene": "beat_31",
+      "target": ""
+    },
+    {
+      "scene": "beat_31",
+      "target": ""
+    },
+    {
+      "scene": "beat_31",
+      "target": ""
+    },
+    {
+      "scene": "beat_34",
+      "target": ""
+    },
+    {
+      "scene": "beat_34",
+      "target": ""
+    },
+    {
+      "scene": "beat_34",
+      "target": ""
+    },
+    {
+      "scene": "beat_36",
+      "target": ""
+    },
+    {
+      "scene": "beat_36",
+      "target": ""
+    },
+    {
+      "scene": "beat_36",
+      "target": ""
+    },
+    {
+      "scene": "beat_38",
+      "target": ""
+    },
+    {
+      "scene": "beat_38",
+      "target": ""
+    },
+    {
+      "scene": "beat_38",
+      "target": ""
+    },
+    {
+      "scene": "beat_40",
+      "target": ""
+    },
+    {
+      "scene": "beat_40",
+      "target": ""
+    },
+    {
+      "scene": "beat_40",
+      "target": ""
+    },
+    {
+      "scene": "beat_42",
+      "target": ""
+    },
+    {
+      "scene": "beat_42",
+      "target": ""
+    },
+    {
+      "scene": "beat_42",
+      "target": ""
+    },
+    {
+      "scene": "beat_44",
+      "target": ""
+    },
+    {
+      "scene": "beat_44",
+      "target": ""
+    },
+    {
+      "scene": "beat_44",
+      "target": ""
+    },
+    {
+      "scene": "beat_46",
+      "target": ""
+    },
+    {
+      "scene": "beat_46",
+      "target": ""
+    },
+    {
+      "scene": "beat_46",
+      "target": ""
+    },
+    {
+      "scene": "beat_51",
+      "target": ""
+    },
+    {
+      "scene": "beat_51",
+      "target": ""
+    },
+    {
+      "scene": "beat_51",
+      "target": ""
+    },
+    {
+      "scene": "beat_62",
+      "target": ""
+    },
+    {
+      "scene": "beat_62",
+      "target": ""
+    },
+    {
+      "scene": "beat_62",
+      "target": ""
+    },
+    {
+      "scene": "beat_71",
+      "target": ""
+    },
+    {
+      "scene": "beat_71",
+      "target": ""
+    },
+    {
+      "scene": "beat_71",
+      "target": ""
+    },
+    {
+      "scene": "beat_71",
+      "target": ""
+    },
+    {
+      "scene": "beat_94",
+      "target": ""
+    },
+    {
+      "scene": "beat_94",
+      "target": ""
+    },
+    {
+      "scene": "beat_94",
+      "target": ""
+    },
+    {
+      "scene": "beat_94",
+      "target": ""
+    },
+    {
+      "scene": "beat_94",
+      "target": ""
+    },
+    {
+      "scene": "beat_94",
+      "target": ""
+    },
+    {
+      "scene": "beat_100",
+      "target": ""
+    }
+  ],
+  "animation_review": "not_performed",
+  "external_citations": "preserved_as_supplied_not_verified",
+  "source_files": [
+    {
+      "source_path": "odyssey_storybeat_kits_cards.html",
+      "repository_path": "story/odyssey-v3/odyssey_storybeat_kits_cards.html",
+      "bytes": 890769,
+      "sha256": "7a426fd8aec79f2c320fb03da034c049abd4bf5be9ed47fe41da436996a2f4e9",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_shot_list.md",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_shot_list.md",
+      "bytes": 98759,
+      "sha256": "fa3345e240baa85c66b1dbb4b63f7ba4324ecf50a2ff6cff8df0bd66a05a8096",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "README.md",
+      "repository_path": "story/odyssey-v3/SOURCE_README.md",
+      "bytes": 4784,
+      "sha256": "1ff9125acafef281a5aecad3057e5dd1997456073f94d6e3b0096c7af886d502",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "index.html",
+      "repository_path": "story/odyssey-v3/index.html",
+      "bytes": 890769,
+      "sha256": "7a426fd8aec79f2c320fb03da034c049abd4bf5be9ed47fe41da436996a2f4e9",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "SHOT_LIST.md",
+      "repository_path": "story/odyssey-v3/SHOT_LIST.md",
+      "bytes": 98759,
+      "sha256": "fa3345e240baa85c66b1dbb4b63f7ba4324ecf50a2ff6cff8df0bd66a05a8096",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "ODYSSEY_V3_COMPLETE_ENSEMBLE_ATLAS.md",
+      "repository_path": "story/odyssey-v3/ODYSSEY_V3_COMPLETE_ENSEMBLE_ATLAS.md",
+      "bytes": 123767,
+      "sha256": "83c707c76d89f5b1192df1e9508a09e55866f72f19db2f7656e86613586e3e93",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_reference_package.html",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_reference_package.html",
+      "bytes": 350137,
+      "sha256": "8221097d2d06a04a0d47ace75c967bf3b139380b87c4ab07b20d852845fdf697",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "push_to_github.sh",
+      "repository_path": "story/odyssey-v3/sources/push_to_github.sh.txt",
+      "bytes": 594,
+      "sha256": "f528f1db242080b0f754a2152b06c05d25c9cef3649524fae2969265d3ae51f1",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "viewer/cards.html",
+      "repository_path": "story/odyssey-v3/viewer/cards.html",
+      "bytes": 4498320,
+      "sha256": "628bf260ad6a63aadf89d1f64642bcfede5ff77da78526cee17159414a6c7f70",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/03_odie_action_voyage_poses_kraft.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/03_odie_action_voyage_poses_kraft.jpg",
+      "bytes": 894278,
+      "sha256": "dd17f6e2a9ad0e3cdcc09edb9242b24928852d45fa94044b850b2922d982f0a6",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/02_puppet_bodies_cast_heads_fiducial_rig.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/02_puppet_bodies_cast_heads_fiducial_rig.jpg",
+      "bytes": 760611,
+      "sha256": "a9c66d727f906de3f8569276aa21163f5a2088e9fda38ef3e41e5499501a70e1",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/20_ithaca_endings_diecast_node_switchboard.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/20_ithaca_endings_diecast_node_switchboard.jpg",
+      "bytes": 922754,
+      "sha256": "03331a9ed5981dc1427c0295eb495085b7a471ab987323b95d18f6614e35215d",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/10_office_cast_dana_chad_dougie_ines.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/10_office_cast_dana_chad_dougie_ines.jpg",
+      "bytes": 739175,
+      "sha256": "aa96b21947d235c5b66b346eb24f6c49747e9cbdfa0c1e6a87ca50bd6a1d017d",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/01_odie_lars_heads_phonemes_hands.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/01_odie_lars_heads_phonemes_hands.jpg",
+      "bytes": 836984,
+      "sha256": "478d1c364e207476a091536371ff02dfa1f312669ef671e5cef26c09cfd9a33b",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/11_voyage_guides_karpathi_circe_brookes_torwald.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/11_voyage_guides_karpathi_circe_brookes_torwald.jpg",
+      "bytes": 735526,
+      "sha256": "71b986d27d1edd0a4f45ebc14b613eb062c17f92823852aabe715e81552a58cd",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/14_theorists_naur_ryle_scott_ajax_argos.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/14_theorists_naur_ryle_scott_ajax_argos.jpg",
+      "bytes": 669835,
+      "sha256": "d5fa6a55926b22780545333e8a3e653ef5ca0580184a13b923f4d36263b85431",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/06_voyage_islands_orchard_props.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/06_voyage_islands_orchard_props.jpg",
+      "bytes": 760138,
+      "sha256": "db656d8698c002d4c035dc2dc660a6690fa50e093591623b28f9dc4aafaa2122",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/05_office_props_state_progressions.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/05_office_props_state_progressions.jpg",
+      "bytes": 836816,
+      "sha256": "1e1b24b79a43c84353fb99e80da2bcfbbde9422136c4e4b880efe1644837f1cf",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/16_act2_voyage_hub_stage_ensembles.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/16_act2_voyage_hub_stage_ensembles.jpg",
+      "bytes": 708260,
+      "sha256": "2ab220fca9596acc655de1f900e9d9866a9a327611ca1ee19966a4828317d710",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/19_underworld_visions_return_train_sets.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/19_underworld_visions_return_train_sets.jpg",
+      "bytes": 815195,
+      "sha256": "2a026f8466dd5e573bc150897272a9d95756309a1bc6f274ab2aa13b859cc8ea",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/08_fx_monsters_text_haze_meters.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/08_fx_monsters_text_haze_meters.jpg",
+      "bytes": 785287,
+      "sha256": "84684808f7f6aec6cf82d39b2cbd68c6ce50f695bf7605d54ae5bd6989ef03af",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/15_act1_decision_point_stage_ensembles.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/15_act1_decision_point_stage_ensembles.jpg",
+      "bytes": 646966,
+      "sha256": "588d850b0c613f0f228ed03b914323e46ef9397ba3e532620c153c4a0f3af519",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/07_hero_architecture_locations_bow_lathe.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/07_hero_architecture_locations_bow_lathe.jpg",
+      "bytes": 938243,
+      "sha256": "3cab2e7da9582e5148998a82488edbb6e240d128e830ebd6e382c41373c716a3",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/04_odyssey_wardrobe_armour_backing_cards.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/04_odyssey_wardrobe_armour_backing_cards.jpg",
+      "bytes": 819174,
+      "sha256": "9b33bd785d85f32001640dddd7c868e538fa6cbf167d309014c87a5905c2ce4c",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/17_islands_stage_dioramas_part1.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/17_islands_stage_dioramas_part1.jpg",
+      "bytes": 788953,
+      "sha256": "72db99b9193530dc195efe38a69ec6e68e8887df6de562472584ce35793f356b",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/09_family_cast_odie_variants_18_emotions.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/09_family_cast_odie_variants_18_emotions.jpg",
+      "bytes": 772638,
+      "sha256": "afa9d220a8abc0639c5c632a836c27a2cc59fedfb6680b38da532455456f082e",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/12_voyage_guides_tomson_shanning_sutskov_newall.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/12_voyage_guides_tomson_shanning_sutskov_newall.jpg",
+      "bytes": 761160,
+      "sha256": "e76386d2b983a5cda759e34c4f67cbbf14a1844c4ce62545546dba5ad0b10aaa",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/13_guides_carmick_hassaby_knuthe_mau_piailug.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/13_guides_carmick_hassaby_knuthe_mau_piailug.jpg",
+      "bytes": 631551,
+      "sha256": "86a90aa2a9f024c94f91d6ddd44d2f698e92039820b6cd71647a6c71b56e3cfb",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/odyssey_kit_sheets/18_islands_stage_dioramas_part2.jpg",
+      "repository_path": "story/odyssey-v3/images/odyssey_kit_sheets/18_islands_stage_dioramas_part2.jpg",
+      "bytes": 841324,
+      "sha256": "1a33a2f2c2c5bb22261f906ea29fad0d9e46e912edde62762a9501b9b3af53ef",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/05.location.homecoming-siege-and-train-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/05.location.homecoming-siege-and-train-stage.jpg",
+      "bytes": 134985,
+      "sha256": "2f9c0998ae636611458db03826cf81438746a50d8945903d3e1bf323f007c6b1",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.character.ines-duarte-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.character.ines-duarte-kit.jpg",
+      "bytes": 61731,
+      "sha256": "0d3c1fddd69dc2d45bf7ad65ed05c54ccdd0703dd117aeb9effceec4b5cb28a2",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/02.character.nobody-ai-spirit-puppet.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/02.character.nobody-ai-spirit-puppet.jpg",
+      "bytes": 30088,
+      "sha256": "6a98d4a04d64ba48e76016847818610acca7bb3f2d7a7dec50a41c220e446342",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.pose.odie-crouching-knuthe-cave.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.pose.odie-crouching-knuthe-cave.jpg",
+      "bytes": 17534,
+      "sha256": "e564e133fcb21890c2b125bc8c6550e7d1a3da8ee05886a3d8608c05d807264a",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/06.character.lars-marsh-full-puppet.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/06.character.lars-marsh-full-puppet.jpg",
+      "bytes": 30339,
+      "sha256": "f78a7dc1acf67689023d22f7c99e13c82b113175eb81a8d42070edc952aa9e94",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.character.odie-3-role-variants.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.character.odie-3-role-variants.jpg",
+      "bytes": 66532,
+      "sha256": "3d4531bc370b16a9c3c396fb077d09594836e2c5aa5f2f91ed61c5d719edb264",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.location.inbox-sea-siren-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.location.inbox-sea-siren-stage.jpg",
+      "bytes": 50934,
+      "sha256": "119aed008234934c1b105310f0019880191ede0154bde4845f67935d508ff42a",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.switch.diecast-railway-branch-switcher.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.switch.diecast-railway-branch-switcher.jpg",
+      "bytes": 60520,
+      "sha256": "1a8eb4f9cbfcebf949f8f3bacd96a58a393dea592d3c5b482aee81a537619868",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/02.location.chart-of-islands-hub-table.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/02.location.chart-of-islands-hub-table.jpg",
+      "bytes": 48185,
+      "sha256": "c70f2c236b4fda9fdfcf629c629b6cd5ee06023356d5b7fd7a4721226df5d05f",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.pose.odie-supine-awake-1am.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.pose.odie-supine-awake-1am.jpg",
+      "bytes": 24174,
+      "sha256": "978c053222b455180d6758ed2efc87638ae3b7b29c775bcced03e8f7b552f663",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.fx.commit-words-and-chants.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.fx.commit-words-and-chants.jpg",
+      "bytes": 50070,
+      "sha256": "5bc85fd5baf7cdc7d3268864b6f4eaa4f1a7dbecc45585606b49af23ecda3115",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.prop.vernier-calipers-3-states.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.prop.vernier-calipers-3-states.jpg",
+      "bytes": 32725,
+      "sha256": "468e8f3351b4cf37254c0568e296101a71dd02c0853a55e66b57b2435399253e",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.location.oracle-gpu-cave-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.location.oracle-gpu-cave-stage.jpg",
+      "bytes": 61398,
+      "sha256": "b9092f06a0cd45666cb421e4815ece37fae82c9a2da27bb0bdf4d39b62d5c21b",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.location.brookes-paper-island-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.location.brookes-paper-island-stage.jpg",
+      "bytes": 54564,
+      "sha256": "3ecafa47a472faf948cc0799bda726baee996d4a84717bb982c48ddac83aa76b",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.character.don-knuthe-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.character.don-knuthe-kit.jpg",
+      "bytes": 46375,
+      "sha256": "4dd1eb9c1c458c1a8bd37aa534038049c090290808a1871609f0924d2ce24c2d",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/02.fx.circe-swine-mask-lanyard-cups.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/02.fx.circe-swine-mask-lanyard-cups.jpg",
+      "bytes": 38742,
+      "sha256": "21656254723a285b5fc301ffc5ea845871c52f49825e9541ae29485c3c3bf230",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.emotion.eyes-brows-phonemes-34.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.emotion.eyes-brows-phonemes-34.jpg",
+      "bytes": 81747,
+      "sha256": "66ee44b5756fdc7451b6d193e45bc33c26c23df7e3c90ff726c39e288b9d78a0",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/04.character.ajax-underworld-and-shades.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/04.character.ajax-underworld-and-shades.jpg",
+      "bytes": 52498,
+      "sha256": "7935065d7953b1b7740dbd921ccfaa87d05757978e70da18d380bd9eb343316e",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.character.ken-tomson-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.character.ken-tomson-kit.jpg",
+      "bytes": 60072,
+      "sha256": "a7180124fa3299578a728ed0a25c5cd33ae6d22d1d0550dc21adbe8d970b8f67",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.location.carmick-exile-shed-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.location.carmick-exile-shed-stage.jpg",
+      "bytes": 50736,
+      "sha256": "23fb56dec76e8a9e31d21a91a62882eec00447a256858764adbf16dcf791a408",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/04.emotion.taskmaster-stare-reverence-ajax-silence.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/04.emotion.taskmaster-stare-reverence-ajax-silence.jpg",
+      "bytes": 34318,
+      "sha256": "4490b6dfa8e170208e97ecd12d4b284c1eb9a3f211dad52024d792d80866038c",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.fx.scylla-heads-and-charybdis-whirlpool.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.fx.scylla-heads-and-charybdis-whirlpool.jpg",
+      "bytes": 76768,
+      "sha256": "194f3f9f08efdbaaebdcf28c38ffd353f5c7ab4761568922fef4865e91470cc3",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.hero.sprint-board-salt.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.hero.sprint-board-salt.jpg",
+      "bytes": 21368,
+      "sha256": "32d9067d0eaceb7b211afc8d52b29c9d51d4e672a246c38f4976eaea40655db9",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+      "bytes": 43489,
+      "sha256": "ca411c9efe631ad2001310854dee5cf97f486311d31802a3d4b81009bc19cbfd",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.location.road-of-older-ladders-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.location.road-of-older-ladders-stage.jpg",
+      "bytes": 52501,
+      "sha256": "9f9ada48185df189cec8ae9881fabdf9cfd774dcce930b07d537c0606c4df9f5",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.wardrobe.circe-dress-and-torwald-cardigan.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.wardrobe.circe-dress-and-torwald-cardigan.jpg",
+      "bytes": 30439,
+      "sha256": "553d5b87475200490b9388f764d341d4f7ffc06aa7e930c5fb7d0ddb8ffb58c8",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.character.fred-brookes-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.character.fred-brookes-kit.jpg",
+      "bytes": 57168,
+      "sha256": "927707aa6fb05447862ea1807c98a9ac8b9a5911c077676917fc6c36f5d37c5a",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.location.1am-apartment-flat-stage-ensemble.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.location.1am-apartment-flat-stage-ensemble.jpg",
+      "bytes": 39203,
+      "sha256": "4938d5d5526697cc67a2accbc27f0b190a1a3eb8032827f1c1c2c87fffd20902",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.location.plough-madness-stage-ensemble.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.location.plough-madness-stage-ensemble.jpg",
+      "bytes": 44051,
+      "sha256": "baeb78d4df766146d929a98e1ba25822eb8d20e606c86d05db65692d19a6361d",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/04.wardrobe.ajax-achilles-bronze-armour.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/04.wardrobe.ajax-achilles-bronze-armour.jpg",
+      "bytes": 33610,
+      "sha256": "ee08b10e1fa9cc66abb67530702015644fee3178368171792bace3d7b96c1c80",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.location.cyclops-calibration-cave-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.location.cyclops-calibration-cave-stage.jpg",
+      "bytes": 47885,
+      "sha256": "42e873bfb652c7594282e20e0f898942d6e58d5f5b2e57cb1fbc0cfa69a1d997",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.character.jon-carmick-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.character.jon-carmick-kit.jpg",
+      "bytes": 51197,
+      "sha256": "db922b2b92700b8f2f740c20948a7eac21ac2b37316630df9e0c1394f5e96733",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.emotion.articulated-hands-12.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.emotion.articulated-hands-12.jpg",
+      "bytes": 66248,
+      "sha256": "ed947474ce60200f687b10a9249822bd1de1d5dfc672b6c397cf196aed55a7d3",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.emotion.sleepless-doubt-and-plough-madness.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.emotion.sleepless-doubt-and-plough-madness.jpg",
+      "bytes": 19626,
+      "sha256": "11ef78bbac19f1cb310e5581ceff323bf3d6366e7db26c812a54b434f5b0cd68",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.pose.odie-seated-rolling-chair.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.pose.odie-seated-rolling-chair.jpg",
+      "bytes": 25292,
+      "sha256": "f5c6ef8065c682e46ea40b1a0a24c6dc99422e5c869c6f280d24e1c03ba09096",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.prop.shannon-unicycle-and-theseus-mouse.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.prop.shannon-unicycle-and-theseus-mouse.jpg",
+      "bytes": 80473,
+      "sha256": "e57a44fece26ac29eaa9b488a114efc9939d8e64c1088a1eeb4423b0e9d0b0b6",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.location.olympus-decision-fork-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.location.olympus-decision-fork-stage.jpg",
+      "bytes": 56238,
+      "sha256": "ca231985a387e65d0a7f64c82f4be51a081c82adb03d718dbf40d46151a21d94",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/04.location.underworld-hotel-and-visions-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/04.location.underworld-hotel-and-visions-stage.jpg",
+      "bytes": 142643,
+      "sha256": "5b9b1b1d430b53ad665745bb4e81f3fd3011e5ebf7ead690e38942264a350c49",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.hero.ibm-360-mainframe.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.hero.ibm-360-mainframe.jpg",
+      "bytes": 27994,
+      "sha256": "af3f026b601064fdf9eb68de20e4c102ca2b53fcca0aa501ca33da8cc9900fee",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/02.location.winds-of-backlog-storm-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/02.location.winds-of-backlog-storm-stage.jpg",
+      "bytes": 48709,
+      "sha256": "4a84a58ad4077f2b74b1a07f5d29968c9f37555cd5db3cc0fe0e05fe9198d9cf",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.location.bell-works-lotus-garden-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.location.bell-works-lotus-garden-stage.jpg",
+      "bytes": 82350,
+      "sha256": "d1115be1375b9f3327ba8dcce9eb1711922049b5f3a4d76a5ff492b52e87ab66",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.character.epistemological-chorus-naur-ryle-scott.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.character.epistemological-chorus-naur-ryle-scott.jpg",
+      "bytes": 142221,
+      "sha256": "5266fb17c09fa50b7b7936c818b314dd5053bb516bc588e02580d0ebbb23634e",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.character.ilya-sutskov-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.character.ilya-sutskov-kit.jpg",
+      "bytes": 65050,
+      "sha256": "678d33b1266e2a3dc50dab85c2247abbd95c72f8698ef91497490ed8561a98e8",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.location.knuthe-subterranean-cave-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.location.knuthe-subterranean-cave-stage.jpg",
+      "bytes": 44602,
+      "sha256": "6718ae4d5a4b75d5fa4945f98c19b0f1c044c856434d7b489a661bd80f5702a8",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.character.denis-hassaby-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.character.denis-hassaby-kit.jpg",
+      "bytes": 46956,
+      "sha256": "1bb22a25aa8f2164aa0353b9724e393e77cc4bfb77171c49c8f139d28f087e7c",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/06.hero.hendry-metal-lathe.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/06.hero.hendry-metal-lathe.jpg",
+      "bytes": 21965,
+      "sha256": "bdfb8009cc0e9aec0da457b888bc10a245c47103f6d9e3a9db90e5887673d354",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/05.hero.great-bow-of-billing.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/05.hero.great-bow-of-billing.jpg",
+      "bytes": 22656,
+      "sha256": "abb46d31f780c822d869c9d4d74a4439264a1ddf260c8cfe8f678d425a7376a3",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/02.character.circe-facilitator-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/02.character.circe-facilitator-kit.jpg",
+      "bytes": 69584,
+      "sha256": "de7e48c175bf3cc432bb8747472dfcae040b84f745ce24dbb2066fbfb775d1b4",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/02.prop.ibm-reel-rotary-phone-amphora.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/02.prop.ibm-reel-rotary-phone-amphora.jpg",
+      "bytes": 71557,
+      "sha256": "c49d2cd29eb72b7b6d7856518059c8fc642b1f074c484bd235a8835046de20c4",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.character.chad-bellweather-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.character.chad-bellweather-kit.jpg",
+      "bytes": 64050,
+      "sha256": "000c21ee6a9d69b71a1065f50523a3c4e514194c684aac15104f7fbc2c120c9d",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/02.location.ferry-cafe-to-ship-reversible-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/02.location.ferry-cafe-to-ship-reversible-stage.jpg",
+      "bytes": 71852,
+      "sha256": "ce6fbb73fe00d7782d03e0bd5c5438a3b98b189c4cef961e607217116fe6d4c7",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/02.location.aiaia-bottling-plant-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/02.location.aiaia-bottling-plant-stage.jpg",
+      "bytes": 59989,
+      "sha256": "7ceb75b2c2ca0ca075cd7380bb720c8280770441ae51f9fe7d1f6f9664b1c9fd",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.hero.olympus-glass-room.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.hero.olympus-glass-room.jpg",
+      "bytes": 22229,
+      "sha256": "24b699d1eaf52975040b9f16f048b789747b4034357548aebd0b7f0ba996893d",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/06.pose.odie-kneeling-orchard-graft.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/06.pose.odie-kneeling-orchard-graft.jpg",
+      "bytes": 27163,
+      "sha256": "00a0c54a7a5e2bd11e337841c1e7a6be6216cc202fafe69fa35f9cafce960e56",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.hero.knuthe-downward-ladder.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.hero.knuthe-downward-ladder.jpg",
+      "bytes": 16739,
+      "sha256": "5b3c9d32427275a2528508a711e809b0af158204d2b0dadb5651aaa5c6e5dc0e",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.location.hassaby-golden-charter-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.location.hassaby-golden-charter-stage.jpg",
+      "bytes": 46405,
+      "sha256": "ad63bfe2404a79548b04bfbff81282eb50f5db1b52f0d082c3e8f8d5826a7148",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.switch.affect-snapshot-iris-dial.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.switch.affect-snapshot-iris-dial.jpg",
+      "bytes": 22298,
+      "sha256": "7023d4dce9cdb967d702c97c04678b9de8b7609c02905b971059d36537a00246",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/02.wardrobe.voyager-cloak-and-wings.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/02.wardrobe.voyager-cloak-and-wings.jpg",
+      "bytes": 20050,
+      "sha256": "bb26c9bcf569207e3cbbeaa6d96aa2c497d4f8e3f26c3698bbd4088d631b00f7",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/06.emotion.disbelief-and-warm-embrace.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/06.emotion.disbelief-and-warm-embrace.jpg",
+      "bytes": 26061,
+      "sha256": "48815a42daeffe26bc63eb8e294b2750158389c20d13c22897231fe1d2b2ed12",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/02.pose.odie-falling-windswept.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/02.pose.odie-falling-windswept.jpg",
+      "bytes": 28863,
+      "sha256": "de9bcfcb98ceb55dec28a83f1f1dbfeb4b601d751379cb960d0c5428e11672c6",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.prop.offer-letter-charter-5-states.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.prop.offer-letter-charter-5-states.jpg",
+      "bytes": 58716,
+      "sha256": "1832f1a359cff6d1c3be7839abdc5cb28d4d16ad01b74f057c0d9031806c9de5",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.character.claude-shanning-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.character.claude-shanning-kit.jpg",
+      "bytes": 68949,
+      "sha256": "027b20da6d3eebdef55ef4cfa26a75031a7fca6f295a8a7d9ebaf4d0e8418ee2",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/06.location.ithaca-house-and-4-ending-overlays.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/06.location.ithaca-house-and-4-ending-overlays.jpg",
+      "bytes": 167333,
+      "sha256": "f1a836c3d36318ebe4fdc875b7c7e1715fa4ff06a8e909287c7b2ef8f4ec8ad6",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.prop.olympus-clementines-bowl.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.prop.olympus-clementines-bowl.jpg",
+      "bytes": 46305,
+      "sha256": "30df2e39c1af997b2f2779a79ab7a7fa0c4c6130e70860ce2994e6d39349d88c",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.switch.node-ensemble-brass-plaque.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.switch.node-ensemble-brass-plaque.jpg",
+      "bytes": 24302,
+      "sha256": "5454956657ca5968542e8c2018fe611d6a19fef9d154b943102d0fe0f79fe97c",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/02.prop.sprint-hourglasses-6-states.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/02.prop.sprint-hourglasses-6-states.jpg",
+      "bytes": 34115,
+      "sha256": "58de2838ea36ba3014aa18e3ce7347cf2c36f300755befac388623f0041b1059",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/02.hero.black-ship-ferry.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/02.hero.black-ship-ferry.jpg",
+      "bytes": 42306,
+      "sha256": "c2313c51ac41224afc962634cd0bc12c5e9d2af1386a24d2c4b99a58612b2912",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.prop.three-hearts-craft-ai-taskmaster.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.prop.three-hearts-craft-ai-taskmaster.jpg",
+      "bytes": 37373,
+      "sha256": "ee801d5731fce86ba58c6498678372ca656bb7b0a2aea05f5003834b8ae19f61",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.wardrobe.coder-vests-headset-collar.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.wardrobe.coder-vests-headset-collar.jpg",
+      "bytes": 30989,
+      "sha256": "ae264810821152e803cbf39f0d84f33c7a973987e5392b64df943a81c0d27d19",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.prop.prompt-journal-and-desk-drawers.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.prop.prompt-journal-and-desk-drawers.jpg",
+      "bytes": 36306,
+      "sha256": "bcab590506cfd7dcc8be3afab5003e18df01603d3fb7ac730f8f3ee11c50b4dd",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.character.mau-piailug-and-elders-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.character.mau-piailug-and-elders-kit.jpg",
+      "bytes": 66107,
+      "sha256": "271df758940ca395805157b0ce5bbf1d6306c28e6387138657fdd190a561b055",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.character.dana-okafor-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.character.dana-okafor-kit.jpg",
+      "bytes": 62822,
+      "sha256": "9829c4453508f3dca4674f1d359a8bd205a30dd3eed3637ac1e2cd5c49f41586",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.fx.seven-brass-state-meters.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.fx.seven-brass-state-meters.jpg",
+      "bytes": 68643,
+      "sha256": "b6251ae5c830d0c9785bd129481f97132371da4066924dcb8708107733163fef",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/06.character.argos-faithful-hound-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/06.character.argos-faithful-hound-kit.jpg",
+      "bytes": 35330,
+      "sha256": "9c55884af42e06ea439931d73fd7bf755f514a062420b6b30ba83fcaff404683",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/06.character.mother-amy-hartsoe-puppet.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/06.character.mother-amy-hartsoe-puppet.jpg",
+      "bytes": 54935,
+      "sha256": "79a0d058b7c55712a4d612807ce53931fb0b27d1027a93ebd11795f41684f8c2",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.wardrobe.agentic-velocity-tracksuits.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.wardrobe.agentic-velocity-tracksuits.jpg",
+      "bytes": 24356,
+      "sha256": "6912c55a18f4afee48bb25bd8dd89814bddff2703a110a596fb162dd3aaea680",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.character.odie-heads-turnaround.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.character.odie-heads-turnaround.jpg",
+      "bytes": 95441,
+      "sha256": "7edf1b19dc31b80a812c75fb794d8340e41dee79e69acc048c72a337f2ad03f7",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.location.dusk-office-stage-ensemble.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.location.dusk-office-stage-ensemble.jpg",
+      "bytes": 53381,
+      "sha256": "8f81adaa468905553a8c33ade72381f86d7c31b8d8cbb8fe61bc8a85abe90832",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.character.gabe-newall-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.character.gabe-newall-kit.jpg",
+      "bytes": 61856,
+      "sha256": "17efb6d502eee9dcdc793323fcb76f0039b86708fa6c790ba9fb439b30365a77",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.character.linos-torwald-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.character.linos-torwald-kit.jpg",
+      "bytes": 69849,
+      "sha256": "9f3125014e5a3f26316884e5c97370b2fea768a7e27e3f70ffa2a9cdaa048767",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/02.character.andrei-karpathi-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/02.character.andrei-karpathi-kit.jpg",
+      "bytes": 52846,
+      "sha256": "f8be47bc9a830b9542ac82e2de7ca67db652520610908f8ffd55c01e1934ed60",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.location.vane-flat-island-stage.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.location.vane-flat-island-stage.jpg",
+      "bytes": 46312,
+      "sha256": "e5e318442d7a96b7753e5f07f64c46da3f24e26ba056a8efd642385a94674bc2",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/06.hero.orchard-committee-tree.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/06.hero.orchard-committee-tree.jpg",
+      "bytes": 38719,
+      "sha256": "3fde938f236edd50e55c2602ff6881dbf5364c9853a8adb57f27ae536141b81e",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.character.dougie-pratt-kit.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.character.dougie-pratt-kit.jpg",
+      "bytes": 68569,
+      "sha256": "2ed803c80928338786ede422302be0aee852200fc46d407c6c00291bda0152cc",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.switch.condition-check-padlock-gates.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.switch.condition-check-padlock-gates.jpg",
+      "bytes": 37126,
+      "sha256": "4bb2eb7868a2793bea8d8d64159a747bd01e4ff234e5b696b0e4350827613481",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.wardrobe.hassaby-sutskov-robes.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.wardrobe.hassaby-sutskov-robes.jpg",
+      "bytes": 39394,
+      "sha256": "748875469cfdea35ea72a008e4b65098f9474fff26381302ba8037c5ae08e415",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/06.emotion.recognition-tears-and-fatherly-pride.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/06.emotion.recognition-tears-and-fatherly-pride.jpg",
+      "bytes": 27828,
+      "sha256": "548b11bea9d0c210a89e40cce915a7a011844097efa9106306169d0729678472",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/03.pose.odie-hologram-nobody.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/03.pose.odie-hologram-nobody.jpg",
+      "bytes": 23376,
+      "sha256": "5588b44fa951f1e1c34c0b9ec8527ae0dd99806e29fd62792e9245710d555a56",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "images/kit_crops/01.pose.odie-plough-walk-and-drift.jpg",
+      "repository_path": "story/odyssey-v3/images/kit_crops/01.pose.odie-plough-walk-and-drift.jpg",
+      "bytes": 61297,
+      "sha256": "ae14ad72a5f2fff8430c54ca1c873bb79b7094ec9df33a9d2222c0a5b594e34c",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_reference_package/README_REFERENCE_BIBLE.md",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_reference_package/README_REFERENCE_BIBLE.md",
+      "bytes": 35140,
+      "sha256": "ed1deeeaba608f506bca15a121e5c62899101017e7f7ba378f7c1e69721cbc95",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_reference_package/asset_manifest.json",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_reference_package/asset_manifest.json",
+      "bytes": 107545,
+      "sha256": "b4db89d8b42a8f18dc786490e4ede0551937d68f0d002e196421bb0762006a55",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_reference_package/viewer/the_sloplings_odyssey_reference_package.html",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_reference_package/viewer/the_sloplings_odyssey_reference_package.html",
+      "bytes": 13012477,
+      "sha256": "53493e9c7d4c4ae9d052c619193ab2d74d614fcd15c2f184aa53269fa5b79e19",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_reference_package/images/family_and_protagonist/odie_marsh_watson_hartsoe_portrait_2.png",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_reference_package/images/family_and_protagonist/odie_marsh_watson_hartsoe_portrait_2.png",
+      "bytes": 372328,
+      "sha256": "2c8ec91aef514c68888b110f4d6bd6d40eccbd87f924f5dd749ff2e094d52dda",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_reference_package/images/family_and_protagonist/odie_marsh_watson_hartsoe_portrait_1.png",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_reference_package/images/family_and_protagonist/odie_marsh_watson_hartsoe_portrait_1.png",
+      "bytes": 401982,
+      "sha256": "b4c85bc252ffacd7c473afba52489044c0e06187d0704bb2d84e27599b984add",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_reference_package/images/family_and_protagonist/lars_marsh_mark_hartsoe_dad.jpg",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_reference_package/images/family_and_protagonist/lars_marsh_mark_hartsoe_dad.jpg",
+      "bytes": 90060,
+      "sha256": "543d6c1d7051ebb4dc4dfd34ca71bcd9067353aeb9df8e44f636f4a5ec0c49b7",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_reference_package/images/family_and_protagonist/odie_marsh_watson_hartsoe_painted.png",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_reference_package/images/family_and_protagonist/odie_marsh_watson_hartsoe_painted.png",
+      "bytes": 398021,
+      "sha256": "fa32a49b50625014563e1fe213b52184894bce64e38db5a426c37cd045024b25",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_reference_package/images/family_and_protagonist/mother_amy_hartsoe_mom.png",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_reference_package/images/family_and_protagonist/mother_amy_hartsoe_mom.png",
+      "bytes": 211465,
+      "sha256": "de94691cbd720b306f581273d7f5eb4240a74942d9e25d450348546276f112a9",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_reference_package/images/family_and_protagonist/odie_marsh_watson_hartsoe_red_oak_carving.png",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_reference_package/images/family_and_protagonist/odie_marsh_watson_hartsoe_red_oak_carving.png",
+      "bytes": 505275,
+      "sha256": "4efe7294b47f752d4d5024e0d9d02641fa38347ddace8b09ded570f186a9e24c",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_reference_package/images/concept_plates/props_still_life_calipers_journal_grafting_theseus.jpg",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_reference_package/images/concept_plates/props_still_life_calipers_journal_grafting_theseus.jpg",
+      "bytes": 827045,
+      "sha256": "c35fb2c6a939a88cd5b1c8e28a3c4faa39fa9ca67d9e3153d8f990abf9a37063",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_reference_package/images/concept_plates/locations_olympus_cyclops_underworld.jpg",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_reference_package/images/concept_plates/locations_olympus_cyclops_underworld.jpg",
+      "bytes": 1127552,
+      "sha256": "6e21c45546a4d48187bbaf791e2973821dbb61c18fa4079b429820c1c7f910a3",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_reference_package/images/concept_plates/hero_triptych_office_voyage_orchard.jpg",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_reference_package/images/concept_plates/hero_triptych_office_voyage_orchard.jpg",
+      "bytes": 970709,
+      "sha256": "d24c03e2235f52770921090a6a69d43717a00ac35df96267a6e2398cd689b888",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_reference_package/story_data/odyssey-tragic-comedy.json",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_reference_package/story_data/odyssey-tragic-comedy.json",
+      "bytes": 246542,
+      "sha256": "d4424422570acb19761e7a789d17b8218df2c504d3909120ecc833a2f261ca62",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "the_sloplings_odyssey_reference_package/story_data/ideator-session.md",
+      "repository_path": "story/odyssey-v3/the_sloplings_odyssey_reference_package/story_data/ideator-session.md",
+      "bytes": 67916,
+      "sha256": "f307b4fab5ab153c9c3701cee14684e33bef6448debdc3f27f92626db5bf6826",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "data/odyssey_v3_complete_cineosis_atlas.json",
+      "repository_path": "story/odyssey-v3/data/odyssey_v3_complete_cineosis_atlas.json",
+      "bytes": 1216116,
+      "sha256": "5a42898fda47b7e797dd29e58f66126b0d4b2af5db434189eb0142bcdc9add7a",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "data/odyssey_v3_complete_atlas.json",
+      "repository_path": "story/odyssey-v3/data/odyssey_v3_complete_atlas.json",
+      "bytes": 431816,
+      "sha256": "543263f31fca6ad66108b95bf4c239726811b8fdf2d96722bb3edf917b7a54e7",
+      "status": "source_preserved"
+    },
+    {
+      "source_path": "data/ref_bible_full.json",
+      "repository_path": "story/odyssey-v3/data/ref_bible_full.json",
+      "bytes": 227907,
+      "sha256": "a65c89270114f4e4e0bc6b463f8e9737b38eb61a7d05775516c0e07a9bc000b3",
+      "status": "source_preserved"
+    }
+  ]
+}

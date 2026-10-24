@@ -1,0 +1,1453 @@
+[
+  {
+    "kit_id": "01.hero.olympus-glass-room",
+    "title": "HERO \u00b7 CONFERENCE ROOM OLYMPUS",
+    "sheet": "S07_HERO_LOCATIONS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.hero.olympus-glass-room.jpg",
+    "candidate_packet_ids": [
+      "place_olympus"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.hero.sprint-board-salt",
+    "title": "HERO \u00b7 SALTED JIRA SPRINT BOARD",
+    "sheet": "S07_HERO_LOCATIONS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.hero.sprint-board-salt.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "02.hero.black-ship-ferry",
+    "title": "HERO \u00b7 AEGEAN FERRY / BLACK SHIP",
+    "sheet": "S07_HERO_LOCATIONS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/02.hero.black-ship-ferry.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.hero.ibm-360-mainframe",
+    "title": "HERO \u00b7 BROOKES'S IBM SYSTEM/360 DESK",
+    "sheet": "S07_HERO_LOCATIONS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.hero.ibm-360-mainframe.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.hero.knuthe-downward-ladder",
+    "title": "HERO \u00b7 DON KNUTHE'S DOWNWARD LADDER",
+    "sheet": "S07_HERO_LOCATIONS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.hero.knuthe-downward-ladder.jpg",
+    "candidate_packet_ids": [
+      "char_knuthe"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "05.hero.great-bow-of-billing",
+    "title": "HERO \u00b7 THE GREAT BOW OF BILLING",
+    "sheet": "S07_HERO_LOCATIONS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/05.hero.great-bow-of-billing.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "06.hero.hendry-metal-lathe",
+    "title": "HERO \u00b7 LARS'S HENDRY METAL LATHE",
+    "sheet": "S07_HERO_LOCATIONS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/06.hero.hendry-metal-lathe.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "06.hero.orchard-committee-tree",
+    "title": "HERO \u00b7 THE COMMITTEE (4-GRAFT APPLE TREE)",
+    "sheet": "S07_HERO_LOCATIONS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/06.hero.orchard-committee-tree.jpg",
+    "candidate_packet_ids": [
+      "place_orchard"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.character.odie-heads-turnaround",
+    "title": "CHARACTER \u00b7 ODIE MARSH 5-ANGLE HEAD TURNAROUND",
+    "sheet": "S01_HEADS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.character.odie-heads-turnaround.jpg",
+    "candidate_packet_ids": [
+      "char_player"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.character.odie-3-role-variants",
+    "title": "CHARACTER \u00b7 ODIE MARSH 3 ROLE VARIANTS (DEFAULT, LEAD, BENCH)",
+    "sheet": "S09_FAMILY_EMOTIONS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.character.odie-3-role-variants.jpg",
+    "candidate_packet_ids": [
+      "char_player"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "06.character.lars-marsh-full-puppet",
+    "title": "CHARACTER \u00b7 LARS MARSH (MARK HARTSOE) FULL PUPPET & KNIFE",
+    "sheet": "S09_FAMILY_EMOTIONS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/06.character.lars-marsh-full-puppet.jpg",
+    "candidate_packet_ids": [
+      "char_father"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "06.character.mother-amy-hartsoe-puppet",
+    "title": "CHARACTER \u00b7 MOTHER (AMY HARTSOE) PUPPET, 3 HEADS & LINKEDIN PHONE",
+    "sheet": "S09_FAMILY_EMOTIONS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/06.character.mother-amy-hartsoe-puppet.jpg",
+    "candidate_packet_ids": [
+      "char_mother"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.character.dana-okafor-kit",
+    "title": "CHARACTER \u00b7 DANA OKAFOR (ENGINEERING MANAGER) FULL KIT",
+    "sheet": "S10_OFFICE_CAST",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.character.dana-okafor-kit.jpg",
+    "candidate_packet_ids": [
+      "char_dana"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.character.chad-bellweather-kit",
+    "title": "CHARACTER \u00b7 CHAD BELLWEATHER (CHIEF SUITOR / POLYMETIS) FULL KIT",
+    "sheet": "S10_OFFICE_CAST",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.character.chad-bellweather-kit.jpg",
+    "candidate_packet_ids": [
+      "char_chad"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.character.dougie-pratt-kit",
+    "title": "CHARACTER \u00b7 DOUGIE PRATT (FAIL-UPWARD SUITOR) FULL KIT",
+    "sheet": "S10_OFFICE_CAST",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.character.dougie-pratt-kit.jpg",
+    "candidate_packet_ids": [
+      "char_dougie"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.character.ines-duarte-kit",
+    "title": "CHARACTER \u00b7 INES DUARTE (APPRENTICE ENGINEER) FULL KIT",
+    "sheet": "S10_OFFICE_CAST",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.character.ines-duarte-kit.jpg",
+    "candidate_packet_ids": [
+      "char_ines"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "02.character.andrei-karpathi-kit",
+    "title": "CHARACTER \u00b7 ANDREI KARPATHI (FERRY CAF\u00c9 VIBE-CODING GUIDE) KIT",
+    "sheet": "S11_GUIDES_I",
+    "crop_path": "story/odyssey-v3/images/kit_crops/02.character.andrei-karpathi-kit.jpg",
+    "candidate_packet_ids": [
+      "char_karpathi"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "02.character.circe-facilitator-kit",
+    "title": "CHARACTER \u00b7 CIRCE (OFFSITE FACILITATOR) & 3 SWINE MANAGERS KIT",
+    "sheet": "S11_GUIDES_I",
+    "crop_path": "story/odyssey-v3/images/kit_crops/02.character.circe-facilitator-kit.jpg",
+    "candidate_packet_ids": [
+      "circe"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.character.fred-brookes-kit",
+    "title": "CHARACTER \u00b7 FRED BROOKES (KEEPER OF THE LEDGER) FULL KIT",
+    "sheet": "S11_GUIDES_I",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.character.fred-brookes-kit.jpg",
+    "candidate_packet_ids": [
+      "char_brookes"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.character.linos-torwald-kit",
+    "title": "CHARACTER \u00b7 LINOS TORWALD (THE SIREN OF THE INBOX SEA) KIT",
+    "sheet": "S11_GUIDES_I",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.character.linos-torwald-kit.jpg",
+    "candidate_packet_ids": [
+      "char_torwald"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.character.ken-tomson-kit",
+    "title": "CHARACTER \u00b7 KEN TOMSON (BELL WORKS UMBRELLA KEEPER) KIT",
+    "sheet": "S12_GUIDES_II",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.character.ken-tomson-kit.jpg",
+    "candidate_packet_ids": [
+      "char_tomson"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.character.claude-shanning-kit",
+    "title": "CHARACTER \u00b7 CLAUDE SHANNING (UNICYCLE JUGGLER & THESEUS MAZE) KIT",
+    "sheet": "S12_GUIDES_II",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.character.claude-shanning-kit.jpg",
+    "candidate_packet_ids": [
+      "char_shanning"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.character.ilya-sutskov-kit",
+    "title": "CHARACTER \u00b7 ILYA SUTSKOV (THE GPU ORACLE & ACOLYTES) KIT",
+    "sheet": "S12_GUIDES_II",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.character.ilya-sutskov-kit.jpg",
+    "candidate_packet_ids": [
+      "char_sutskov"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.character.gabe-newall-kit",
+    "title": "CHARACTER \u00b7 GABE NEWALL (SUN OF FLAT ISLAND & ORBITING CHAIRS) KIT",
+    "sheet": "S12_GUIDES_II",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.character.gabe-newall-kit.jpg",
+    "candidate_packet_ids": [
+      "char_newall"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.character.jon-carmick-kit",
+    "title": "CHARACTER \u00b7 JON CARMICK (EXILE WORKSHOP ENGINEER) KIT",
+    "sheet": "S13_GUIDES_III_ELDERS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.character.jon-carmick-kit.jpg",
+    "candidate_packet_ids": [
+      "char_carmick"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.character.denis-hassaby-kit",
+    "title": "CHARACTER \u00b7 DENIS HASSABY (KEEPER OF THE GOLDEN CHARTER) KIT",
+    "sheet": "S13_GUIDES_III_ELDERS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.character.denis-hassaby-kit.jpg",
+    "candidate_packet_ids": [
+      "char_hassaby"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.character.don-knuthe-kit",
+    "title": "CHARACTER \u00b7 DON KNUTHE (MASTER OF THE DOWNWARD CAVE) KIT",
+    "sheet": "S13_GUIDES_III_ELDERS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.character.don-knuthe-kit.jpg",
+    "candidate_packet_ids": [
+      "char_knuthe"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.character.mau-piailug-and-elders-kit",
+    "title": "CHARACTER \u00b7 MAU PIAILUG & 3 CRAFT LINEAGE MASTERS KIT",
+    "sheet": "S13_GUIDES_III_ELDERS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.character.mau-piailug-and-elders-kit.jpg",
+    "candidate_packet_ids": [
+      "extra_mau"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.character.epistemological-chorus-naur-ryle-scott",
+    "title": "CHARACTER \u00b7 EPISTEMOLOGICAL CHORUS (NAUR, RYLE & JAMES C. SCOTT)",
+    "sheet": "S14_THEORISTS_AJAX_ARGOS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.character.epistemological-chorus-naur-ryle-scott.jpg",
+    "candidate_packet_ids": [
+      "theorist_chorus"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "04.character.ajax-underworld-and-shades",
+    "title": "CHARACTER \u00b7 TELAMONIAN AJAX IN HADES & 3 CONFERENCE-HOTEL GHOSTS",
+    "sheet": "S14_THEORISTS_AJAX_ARGOS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/04.character.ajax-underworld-and-shades.jpg",
+    "candidate_packet_ids": [
+      "char_ajax"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "06.character.argos-faithful-hound-kit",
+    "title": "CHARACTER \u00b7 ARGOS THE FAITHFUL HOUND (BILLING RETRY-LOOP DOG)",
+    "sheet": "S14_THEORISTS_AJAX_ARGOS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/06.character.argos-faithful-hound-kit.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "02.character.nobody-ai-spirit-puppet",
+    "title": "CHARACTER \u00b7 'NOBODY' / AI MODEL HOLOGRAPHIC SPIRIT PUPPET",
+    "sheet": "S02_BODIES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/02.character.nobody-ai-spirit-puppet.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.emotion.sleepless-doubt-and-plough-madness",
+    "title": "EMOTION \u00b7 SLEEPLESS 1 A.M. DOUBT & PLOUGH MADNESS FACEPLATES",
+    "sheet": "S09_FAMILY_EMOTIONS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.emotion.sleepless-doubt-and-plough-madness.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "06.emotion.recognition-tears-and-fatherly-pride",
+    "title": "EMOTION \u00b7 RECOGNITION TEARS & FATHERLY PRIDE FACEPLATES",
+    "sheet": "S09_FAMILY_EMOTIONS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/06.emotion.recognition-tears-and-fatherly-pride.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "06.emotion.disbelief-and-warm-embrace",
+    "title": "EMOTION \u00b7 TELEMACHUS DISBELIEF & WARM EMBRACE FACEPLATES",
+    "sheet": "S09_FAMILY_EMOTIONS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/06.emotion.disbelief-and-warm-embrace.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "04.emotion.taskmaster-stare-reverence-ajax-silence",
+    "title": "EMOTION \u00b7 TASKMASTER STARE, QUIET REVERENCE & AJAX SILENCE",
+    "sheet": "S09_FAMILY_EMOTIONS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/04.emotion.taskmaster-stare-reverence-ajax-silence.jpg",
+    "candidate_packet_ids": [
+      "char_ajax"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.emotion.eyes-brows-phonemes-34",
+    "title": "EMOTION \u00b7 34 REPLACEMENT EYES, BROWS & PHONEME MOUTH TILES",
+    "sheet": "S01_HEADS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.emotion.eyes-brows-phonemes-34.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.emotion.articulated-hands-12",
+    "title": "EMOTION \u00b7 12 EXPRESSIVE HAND GESTURE CUTOUTS",
+    "sheet": "S01_HEADS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.emotion.articulated-hands-12.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.location.dusk-office-stage-ensemble",
+    "title": "LOCATION \u00b7 BEAT 1 OPEN-PLAN OFFICE AT DUSK STAGE ENSEMBLE",
+    "sheet": "S15_ACT1_STAGE_ENSEMBLES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.location.dusk-office-stage-ensemble.jpg",
+    "candidate_packet_ids": [
+      "place_work_office"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.location.1am-apartment-flat-stage-ensemble",
+    "title": "LOCATION \u00b7 BEATS 5\u201310B 1 A.M. APARTMENT FLAT & SWITCH STAGE",
+    "sheet": "S15_ACT1_STAGE_ENSEMBLES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.location.1am-apartment-flat-stage-ensemble.jpg",
+    "candidate_packet_ids": [
+      "place_watson_flat"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.location.olympus-decision-fork-stage",
+    "title": "LOCATION \u00b7 BEAT 12 CONFERENCE ROOM OLYMPUS 4-WAY DECISION STAGE",
+    "sheet": "S15_ACT1_STAGE_ENSEMBLES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.location.olympus-decision-fork-stage.jpg",
+    "candidate_packet_ids": [
+      "place_olympus"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.location.plough-madness-stage-ensemble",
+    "title": "LOCATION \u00b7 BEAT 16 ODYSSEUS AT THE PLOUGH & SLACK POLL STAGE",
+    "sheet": "S15_ACT1_STAGE_ENSEMBLES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.location.plough-madness-stage-ensemble.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "02.location.ferry-cafe-to-ship-reversible-stage",
+    "title": "LOCATION \u00b7 BEATS 18\u201319 REVERSIBLE FERRY CAF\u00c9 / BLACK SHIP STAGE",
+    "sheet": "S16_ACT2_VOYAGE_ENSEMBLES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/02.location.ferry-cafe-to-ship-reversible-stage.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "02.location.aiaia-bottling-plant-stage",
+    "title": "LOCATION \u00b7 BEAT 21 AIAIA BOTTLING PLANT (CIRCE'S OFFSITE) STAGE",
+    "sheet": "S16_ACT2_VOYAGE_ENSEMBLES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/02.location.aiaia-bottling-plant-stage.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "02.location.winds-of-backlog-storm-stage",
+    "title": "LOCATION \u00b7 BEAT 22 WINDS OF THE BACKLOG STORM BELLOWS RIG",
+    "sheet": "S16_ACT2_VOYAGE_ENSEMBLES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/02.location.winds-of-backlog-storm-stage.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "02.location.chart-of-islands-hub-table",
+    "title": "LOCATION \u00b7 BEAT 24 THE CHART OF ISLANDS REVOLVING HUB TABLE",
+    "sheet": "S16_ACT2_VOYAGE_ENSEMBLES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/02.location.chart-of-islands-hub-table.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.location.brookes-paper-island-stage",
+    "title": "LOCATION \u00b7 BEATS 30\u201331 BROOKES'S PAPER ISLAND DIORAMA STAGE",
+    "sheet": "S17_ISLANDS_SETS_I",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.location.brookes-paper-island-stage.jpg",
+    "candidate_packet_ids": [
+      "char_brookes",
+      "place_paper_ledger"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.location.inbox-sea-siren-stage",
+    "title": "LOCATION \u00b7 BEATS 32\u201334 THE INBOX SEA & SIREN MAST STAGE",
+    "sheet": "S17_ISLANDS_SETS_I",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.location.inbox-sea-siren-stage.jpg",
+    "candidate_packet_ids": [
+      "place_inbox_sea"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.location.bell-works-lotus-garden-stage",
+    "title": "LOCATION \u00b7 BEATS 35\u201336 BELL WORKS LOTUS GARDEN & MAZE STAGE",
+    "sheet": "S17_ISLANDS_SETS_I",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.location.bell-works-lotus-garden-stage.jpg",
+    "candidate_packet_ids": [
+      "place_bell_garden"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.location.oracle-gpu-cave-stage",
+    "title": "LOCATION \u00b7 BEATS 37\u201338 THE ORACLE GPU FAN CAVERN STAGE",
+    "sheet": "S17_ISLANDS_SETS_I",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.location.oracle-gpu-cave-stage.jpg",
+    "candidate_packet_ids": [
+      "place_oracle"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.location.vane-flat-island-stage",
+    "title": "LOCATION \u00b7 BEATS 39\u201340 VANE FLAT ISLAND ORBITAL DESK STAGE",
+    "sheet": "S18_ISLANDS_SETS_II",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.location.vane-flat-island-stage.jpg",
+    "candidate_packet_ids": [
+      "place_vane_office"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.location.carmick-exile-shed-stage",
+    "title": "LOCATION \u00b7 BEATS 41\u201342 CARMICK'S EXILE WORKSHOP COASTAL STAGE",
+    "sheet": "S18_ISLANDS_SETS_II",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.location.carmick-exile-shed-stage.jpg",
+    "candidate_packet_ids": [
+      "char_carmick",
+      "place_exile_shed"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.location.hassaby-golden-charter-stage",
+    "title": "LOCATION \u00b7 BEATS 43\u201344 HASSABY'S GOLDEN CHARTER COLONNADE STAGE",
+    "sheet": "S18_ISLANDS_SETS_II",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.location.hassaby-golden-charter-stage.jpg",
+    "candidate_packet_ids": [
+      "char_hassaby",
+      "place_charter_room"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.location.knuthe-subterranean-cave-stage",
+    "title": "LOCATION \u00b7 BEATS 45\u201346 KNUTHE'S SUBTERRANEAN CAVE CUTAWAY STAGE",
+    "sheet": "S18_ISLANDS_SETS_II",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.location.knuthe-subterranean-cave-stage.jpg",
+    "candidate_packet_ids": [
+      "char_knuthe",
+      "place_knuthe_cave"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.location.road-of-older-ladders-stage",
+    "title": "LOCATION \u00b7 BEATS 47\u201349 ROAD OF OLDER LADDERS & PACIFIC SWELLS STAGE",
+    "sheet": "S18_ISLANDS_SETS_II",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.location.road-of-older-ladders-stage.jpg",
+    "candidate_packet_ids": [
+      "place_craft_road"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.location.cyclops-calibration-cave-stage",
+    "title": "LOCATION \u00b7 BEATS 50\u201351 CYCLOPS CALIBRATION CAVE & KPI SHEEP STAGE",
+    "sheet": "S18_ISLANDS_SETS_II",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.location.cyclops-calibration-cave-stage.jpg",
+    "candidate_packet_ids": [
+      "place_calibration_cave"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "04.location.underworld-hotel-and-visions-stage",
+    "title": "LOCATION \u00b7 BEATS 70\u201375 UNDERWORLD HOTEL & 3 VISIONS CRT STAGE",
+    "sheet": "S19_UNDERWORLD_RETURN_SETS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/04.location.underworld-hotel-and-visions-stage.jpg",
+    "candidate_packet_ids": [
+      "place_underworld_conference"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "05.location.homecoming-siege-and-train-stage",
+    "title": "LOCATION \u00b7 BEATS 77\u201392 HOMECOMING SIEGE, 4 CHAIRS & TRAIN HOME STAGE",
+    "sheet": "S19_UNDERWORLD_RETURN_SETS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/05.location.homecoming-siege-and-train-stage.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "06.location.ithaca-house-and-4-ending-overlays",
+    "title": "LOCATION \u00b7 BEATS 93\u2013107 ITHACA HOUSE & 4 ENDING STAGE OVERLAYS",
+    "sheet": "S20_ITHACA_SWITCHBOARD",
+    "crop_path": "story/odyssey-v3/images/kit_crops/06.location.ithaca-house-and-4-ending-overlays.jpg",
+    "candidate_packet_ids": [
+      "place_family_home"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.switch.diecast-railway-branch-switcher",
+    "title": "NODE-SWITCH \u00b7 DIE-CAST BRASS RAILWAY PATH & SET SWITCHBOARD",
+    "sheet": "S20_ITHACA_SWITCHBOARD",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.switch.diecast-railway-branch-switcher.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.switch.condition-check-padlock-gates",
+    "title": "NODE-SWITCH \u00b7 DIE-CAST BRASS CONDITION-BEAT PADLOCK GATES",
+    "sheet": "S20_ITHACA_SWITCHBOARD",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.switch.condition-check-padlock-gates.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.switch.affect-snapshot-iris-dial",
+    "title": "NODE-SWITCH \u00b7 DIE-CAST BRASS AFFECT SNAPSHOT CAMERA DIAL",
+    "sheet": "S20_ITHACA_SWITCHBOARD",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.switch.affect-snapshot-iris-dial.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.switch.node-ensemble-brass-plaque",
+    "title": "NODE-SWITCH \u00b7 'EACH NODE IS A SCENE ENSEMBLE' BRASS PROSCENIUM PLAQUE",
+    "sheet": "S20_ITHACA_SWITCHBOARD",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.switch.node-ensemble-brass-plaque.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "04.wardrobe.ajax-achilles-bronze-armour",
+    "title": "WARDROBE \u00b7 ACHILLES & AJAX BRONZE ARMOUR CARDS",
+    "sheet": "S04_WARDROBE",
+    "crop_path": "story/odyssey-v3/images/kit_crops/04.wardrobe.ajax-achilles-bronze-armour.jpg",
+    "candidate_packet_ids": [
+      "char_ajax"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.wardrobe.hassaby-sutskov-robes",
+    "title": "WARDROBE \u00b7 CHARTER ROBE (HASSABY) & ORACLE ROBE (SUTSKOV)",
+    "sheet": "S04_WARDROBE",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.wardrobe.hassaby-sutskov-robes.jpg",
+    "candidate_packet_ids": [
+      "char_hassaby",
+      "char_sutskov"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.wardrobe.circe-dress-and-torwald-cardigan",
+    "title": "WARDROBE \u00b7 CIRCE'S OFFSITE DRESS & LINOS'S CARDIGAN",
+    "sheet": "S04_WARDROBE",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.wardrobe.circe-dress-and-torwald-cardigan.jpg",
+    "candidate_packet_ids": [
+      "char_torwald",
+      "circe"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.wardrobe.coder-vests-headset-collar",
+    "title": "WARDROBE \u00b7 BENCH VESTS, HEADSET & HR ALIGNMENT COLLAR",
+    "sheet": "S04_WARDROBE",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.wardrobe.coder-vests-headset-collar.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.wardrobe.agentic-velocity-tracksuits",
+    "title": "WARDROBE \u00b7 'AGENTIC VELOCITY' SQUAD NEON TRACKSUITS",
+    "sheet": "S04_WARDROBE",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.wardrobe.agentic-velocity-tracksuits.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "02.wardrobe.voyager-cloak-and-wings",
+    "title": "WARDROBE \u00b7 SEA-VOYAGER CLOAK & DAEDALUS PAPER WINGS",
+    "sheet": "S04_WARDROBE",
+    "crop_path": "story/odyssey-v3/images/kit_crops/02.wardrobe.voyager-cloak-and-wings.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.pose.odie-seated-rolling-chair",
+    "title": "POSE \u00b7 ODIE SEATED IN ROLLING OFFICE CHAIR",
+    "sheet": "S03_POSES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.pose.odie-seated-rolling-chair.jpg",
+    "candidate_packet_ids": [
+      "char_player"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "06.pose.odie-kneeling-orchard-graft",
+    "title": "POSE \u00b7 ODIE KNEELING BY APPLE TREE SCION",
+    "sheet": "S03_POSES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/06.pose.odie-kneeling-orchard-graft.jpg",
+    "candidate_packet_ids": [
+      "char_player"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.pose.odie-supine-awake-1am",
+    "title": "POSE \u00b7 ODIE LYING AWAKE AT 1 A.M. (KNOWING HOW)",
+    "sheet": "S03_POSES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.pose.odie-supine-awake-1am.jpg",
+    "candidate_packet_ids": [
+      "char_player"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.pose.odie-crouching-knuthe-cave",
+    "title": "POSE \u00b7 ODIE CROUCHING LOW (KNUTHE'S CAVE & CYCLOPS RAM)",
+    "sheet": "S03_POSES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.pose.odie-crouching-knuthe-cave.jpg",
+    "candidate_packet_ids": [
+      "char_knuthe",
+      "char_player"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "02.pose.odie-falling-windswept",
+    "title": "POSE \u00b7 ODIE FALLING BACKWARD (WINDS OF THE BACKLOG)",
+    "sheet": "S03_POSES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/02.pose.odie-falling-windswept.jpg",
+    "candidate_packet_ids": [
+      "char_player"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.pose.odie-plough-walk-and-drift",
+    "title": "POSE \u00b7 PLOUGH-MADNESS WALK & INBOX SEA DRIFT",
+    "sheet": "S03_POSES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.pose.odie-plough-walk-and-drift.jpg",
+    "candidate_packet_ids": [
+      "char_player"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.pose.odie-hologram-nobody",
+    "title": "POSE \u00b7 HOLOGRAPHIC 'NOBODY' STANDING CUTOUT",
+    "sheet": "S03_POSES",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.pose.odie-hologram-nobody.jpg",
+    "candidate_packet_ids": [
+      "char_player"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.prop.vernier-calipers-3-states",
+    "title": "PROP \u00b7 FATHER'S BRASS VERNIER CALIPERS (3 STATES)",
+    "sheet": "S05_PROPS_OFFICE",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.prop.vernier-calipers-3-states.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.prop.offer-letter-charter-5-states",
+    "title": "PROP \u00b7 OFFER LETTER & CHARTER (5 STATE PROGRESSIONS)",
+    "sheet": "S05_PROPS_OFFICE",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.prop.offer-letter-charter-5-states.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.prop.olympus-clementines-bowl",
+    "title": "PROP \u00b7 BOWL OF SAD CLEMENTINES (WHOLE, CRACKED & SEGMENTS)",
+    "sheet": "S05_PROPS_OFFICE",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.prop.olympus-clementines-bowl.jpg",
+    "candidate_packet_ids": [
+      "char_ines",
+      "place_olympus"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.prop.prompt-journal-and-desk-drawers",
+    "title": "PROP \u00b7 ODIE'S PROMPT JOURNAL ('NAUR'S SHADOW') & DESK DRAWERS",
+    "sheet": "S05_PROPS_OFFICE",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.prop.prompt-journal-and-desk-drawers.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.prop.three-hearts-craft-ai-taskmaster",
+    "title": "PROP \u00b7 THREE HEARTS (IRON CRAFT, CYAN AI & CLAY TASKMASTER)",
+    "sheet": "S06_PROPS_VOYAGE",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.prop.three-hearts-craft-ai-taskmaster.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "02.prop.sprint-hourglasses-6-states",
+    "title": "PROP \u00b7 SIX SPRINT HOURGLASSES (SABBATICAL TIME COUNTERS)",
+    "sheet": "S06_PROPS_VOYAGE",
+    "crop_path": "story/odyssey-v3/images/kit_crops/02.prop.sprint-hourglasses-6-states.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "02.prop.herb-moly-flower-12-petals",
+    "title": "PROP \u00b7 HERMES' HERB MOLY (BLACK ROOT & 12 WHITE HOUR PETALS)",
+    "sheet": "S06_PROPS_VOYAGE",
+    "crop_path": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "03.prop.shannon-unicycle-and-theseus-mouse",
+    "title": "PROP \u00b7 SHANNON'S CYCLE RIG & THESEUS RELAY MOUSE",
+    "sheet": "S06_PROPS_VOYAGE",
+    "crop_path": "story/odyssey-v3/images/kit_crops/03.prop.shannon-unicycle-and-theseus-mouse.jpg",
+    "candidate_packet_ids": [
+      "theseus_mouse"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "02.prop.ibm-reel-rotary-phone-amphora",
+    "title": "PROP \u00b7 IBM TAPE REEL, ITHACA ROTARY PHONE & AMPHORA",
+    "sheet": "S06_PROPS_VOYAGE",
+    "crop_path": "story/odyssey-v3/images/kit_crops/02.prop.ibm-reel-rotary-phone-amphora.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.fx.scylla-heads-and-charybdis-whirlpool",
+    "title": "FX \u00b7 SCYLLA'S 6 CALENDAR HEADS & CHARYBDIS WHIRLPOOL",
+    "sheet": "S08_FX_MONSTERS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.fx.scylla-heads-and-charybdis-whirlpool.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "02.fx.circe-swine-mask-lanyard-cups",
+    "title": "FX \u00b7 CIRCE'S SWINE MASK, LANYARD & FRAMEWORK CUPS",
+    "sheet": "S08_FX_MONSTERS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/02.fx.circe-swine-mask-lanyard-cups.jpg",
+    "candidate_packet_ids": [
+      "circe"
+    ],
+    "binding_status": "semantic_candidate_needs_visual_review",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.fx.commit-words-and-chants",
+    "title": "FX \u00b7 COMMIT-MESSAGE & CHANT TYPOGRAPHY BLOCKS",
+    "sheet": "S08_FX_MONSTERS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.fx.commit-words-and-chants.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  },
+  {
+    "kit_id": "01.fx.seven-brass-state-meters",
+    "title": "FX \u00b7 7 BRASS-AND-PARCHMENT STATE METER SLIDERS",
+    "sheet": "S08_FX_MONSTERS",
+    "crop_path": "story/odyssey-v3/images/kit_crops/01.fx.seven-brass-state-meters.jpg",
+    "candidate_packet_ids": [],
+    "binding_status": "unresolved",
+    "not_validated": [
+      "view",
+      "scale",
+      "pivot",
+      "anatomy",
+      "animation"
+    ]
+  }
+]

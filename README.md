@@ -2,6 +2,10 @@
 
 Existing production cutouts, labeled character packets, source provenance, and the working Watson motion reference for **The Slopling’s Odyssey**.
 
+## Story, scenes and reference atlas
+
+The [Odyssey V3 story package](story/odyssey-v3/README.md) adds 97 storybeat kits, 89 modular kit records, 20 master sheets, shot lists, story graph, and reference viewers. Start with the [project launcher](index.html). Its [candidate packet crosswalk](registry/story/ODYSSEY_V3_PACKET_CROSSWALK.json) connects story kit names to existing production packets; these bindings still require visual review.
+
 ## Start here
 
 - [Amy and Mark preview catalog](catalogs/Amy_Mark_Cutout_Packets.html) — download the HTML and open it in a browser.

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -e
+REPO_URL="https://github.com/hartswf0/slopling-odyssey.git"
+
+if [ ! -d ".git" ]; then
+  git init
+  git branch -M main
+  git remote add origin "$REPO_URL"
+  git add -A
+  git commit -m "Initial commit: The Slopling's Odyssey V3.0 Atlas, Cineosis Shot List & Reference Bible"
+else
+  git remote set-url origin "$REPO_URL" 2>/dev/null || git remote add origin "$REPO_URL"
+fi
+
+echo "Pushing main branch to $REPO_URL ..."
+git push -u origin main
+echo "Done! Enable GitHub Pages on the 'main' branch (root '/') at https://github.com/hartswf0/slopling-odyssey/settings/pages"

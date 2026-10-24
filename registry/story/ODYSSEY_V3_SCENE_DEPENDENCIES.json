@@ -1,0 +1,2685 @@
+[
+  {
+    "beat_id": "beat_0",
+    "title": "NODE 01 \u00b7 BEAT_0 \u00b7 TITLE",
+    "kit_ids": [
+      "01.switch.node-ensemble-brass-plaque",
+      "02.hero.black-ship-ferry",
+      "06.hero.orchard-committee-tree",
+      "01.character.odie-3-role-variants",
+      "06.character.lars-marsh-full-puppet",
+      "01.prop.three-hearts-craft-ai-taskmaster",
+      "01.fx.seven-brass-state-meters"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Set sail]",
+        "target": "beat_1",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_1: The Slopling] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_1",
+    "title": "NODE 02 \u00b7 BEAT_1 \u00b7 THE SLOPLING",
+    "kit_ids": [
+      "01.location.dusk-office-stage-ensemble",
+      "01.character.odie-3-role-variants",
+      "01.character.odie-heads-turnaround",
+      "01.pose.odie-seated-rolling-chair",
+      "01.emotion.articulated-hands-12",
+      "01.fx.seven-brass-state-meters"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Go to the meeting]",
+        "target": "beat_2",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_2: Dana's Offer] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_2",
+    "title": "NODE 03 \u00b7 BEAT_2 \u00b7 DANA'S OFFER",
+    "kit_ids": [
+      "01.hero.olympus-glass-room",
+      "01.character.dana-okafor-kit",
+      "01.character.odie-3-role-variants",
+      "01.pose.odie-seated-rolling-chair",
+      "01.prop.olympus-clementines-bowl",
+      "01.prop.offer-letter-charter-5-states",
+      "01.switch.diecast-railway-branch-switcher"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: 'So it's the chart you're promoting, not the work.'",
+        "target": "",
+        "mutations": "char_player.leverage +1; nudgeMood(char_player=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: '[Continue]'",
+        "target": "beat_3",
+        "mutations": "char_player.leverage +1; nudgeMood(char_player=)",
+        "set_change": "Reconfigures stage to [beat_3: The Greeks on the Beach] (I. The Call)"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'That's... really kind. Thank you.'",
+        "target": "",
+        "mutations": "char_player.standing +1; fireEmotion(char_player=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Then who keeps the theory of the billing service alive? It lives '",
+        "target": "",
+        "mutations": "char_player.craft +1; char_player.leverage +1; fireEmotion(char_player=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Right. Prompts all the way down.'",
+        "target": "",
+        "mutations": "char_player.cunning +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_3",
+    "title": "NODE 04 \u00b7 BEAT_3 \u00b7 THE GREEKS ON THE BEACH",
+    "kit_ids": [
+      "01.location.dusk-office-stage-ensemble",
+      "01.character.chad-bellweather-kit",
+      "01.character.dougie-pratt-kit",
+      "01.character.ines-duarte-kit",
+      "01.character.odie-3-role-variants",
+      "01.wardrobe.agentic-velocity-tracksuits"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Answer]",
+        "target": "beat_4",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_4: Father on the Phone] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_4",
+    "title": "NODE 05 \u00b7 BEAT_4 \u00b7 FATHER ON THE PHONE",
+    "kit_ids": [
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "02.prop.ibm-reel-rotary-phone-amphora",
+      "01.prop.vernier-calipers-3-states",
+      "01.fx.seven-brass-state-meters"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: 'When did you stop building things, Dad?'",
+        "target": "",
+        "mutations": "addSentiment(char_father=); fireEmotion(char_father=); nudgeMood(char_father=); addReflection(char_father=); fireEmotion(char_player=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Thanks, Dad. I knew you'd be proud.'",
+        "target": "",
+        "mutations": "addSentiment(char_father=); fireEmotion(char_father=); nudgeMood(char_father=); addReflection(char_father=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_5",
+    "title": "NODE 06 \u00b7 BEAT_5 \u00b7 KNOWING HOW",
+    "kit_ids": [
+      "01.location.1am-apartment-flat-stage-ensemble",
+      "01.pose.odie-supine-awake-1am",
+      "01.emotion.sleepless-doubt-and-plough-madness",
+      "01.character.epistemological-chorus-naur-ryle-scott",
+      "01.prop.three-hearts-craft-ai-taskmaster"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Get up]",
+        "target": "beat_6",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_6: The Desk at 1 a.m.] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_6",
+    "title": "NODE 07 \u00b7 BEAT_6 \u00b7 THE DESK AT 1 A.M.",
+    "kit_ids": [
+      "01.location.1am-apartment-flat-stage-ensemble",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.offer-letter-charter-5-states",
+      "01.switch.diecast-railway-branch-switcher"
+    ],
+    "paths": [
+      {
+        "trigger": "PICK PROP TOKEN: [Prompt Journal]",
+        "target": "beat_7",
+        "mutations": "char_player.craft +1; char_player.leverage +1",
+        "set_change": "Focuses stage lamp on [Prompt Journal] -> Reconfigures stage to [beat_7: The Journal] (I. The Call)"
+      },
+      {
+        "trigger": "PICK PROP TOKEN: [Brass Calipers]",
+        "target": "beat_8",
+        "mutations": "knowsFatherCraft = True; fireEmotion(char_player=)",
+        "set_change": "Focuses stage lamp on [Brass Calipers] -> Reconfigures stage to [beat_8: The Calipers] (I. The Call)"
+      },
+      {
+        "trigger": "PICK PROP TOKEN: [Offer Letter]",
+        "target": "beat_9",
+        "mutations": "char_player.standing +1; char_player.leverage +1",
+        "set_change": "Focuses stage lamp on [Offer Letter] -> Reconfigures stage to [beat_9: The Offer Letter] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_7",
+    "title": "NODE 08 \u00b7 BEAT_7 \u00b7 THE JOURNAL",
+    "kit_ids": [
+      "01.location.1am-apartment-flat-stage-ensemble",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.offer-letter-charter-5-states",
+      "01.switch.diecast-railway-branch-switcher"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Close the journal]",
+        "target": "beat_10",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_10: Late Night Choice] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_8",
+    "title": "NODE 09 \u00b7 BEAT_8 \u00b7 THE CALIPERS",
+    "kit_ids": [
+      "01.location.1am-apartment-flat-stage-ensemble",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.offer-letter-charter-5-states",
+      "01.switch.diecast-railway-branch-switcher",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Keep them close]",
+        "target": "beat_10",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_10: Late Night Choice] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_9",
+    "title": "NODE 10 \u00b7 BEAT_9 \u00b7 THE OFFER LETTER",
+    "kit_ids": [
+      "01.location.1am-apartment-flat-stage-ensemble",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.offer-letter-charter-5-states",
+      "01.switch.diecast-railway-branch-switcher"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Put it down]",
+        "target": "beat_10",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_10: Late Night Choice] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_10",
+    "title": "NODE 11 \u00b7 BEAT_10 \u00b7 LATE NIGHT CHOICE",
+    "kit_ids": [
+      "01.location.1am-apartment-flat-stage-ensemble",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.offer-letter-charter-5-states",
+      "01.switch.diecast-railway-branch-switcher"
+    ],
+    "paths": [
+      {
+        "trigger": "THROW BRASS LEVER: 'Look at the desk again'",
+        "target": "beat_6",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_6: The Desk at 1 a.m.] (I. The Call)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Answer Ines's 11 p.m. message about the billing retry'",
+        "target": "beat_10b",
+        "mutations": "mentoredInes = True; char_player.craft +1; char_player.meaning +1; fireEmotion(char_player=)",
+        "set_change": "Reconfigures stage to [beat_10b: Forty Minutes Nobody Sees] (I. The Call)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Go to bed. Friday will come either way.'",
+        "target": "beat_11",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_11: Friday] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_10b",
+    "title": "NODE 12 \u00b7 BEAT_10B \u00b7 FORTY MINUTES NOBODY SEES",
+    "kit_ids": [
+      "01.location.1am-apartment-flat-stage-ensemble",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.offer-letter-charter-5-states",
+      "01.switch.diecast-railway-branch-switcher",
+      "01.character.ines-duarte-kit",
+      "05.hero.great-bow-of-billing"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Back to the desk]",
+        "target": "beat_10",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_10: Late Night Choice] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_11",
+    "title": "NODE 13 \u00b7 BEAT_11 \u00b7 FRIDAY",
+    "kit_ids": [
+      "01.location.olympus-decision-fork-stage",
+      "01.hero.olympus-glass-room",
+      "01.character.dana-okafor-kit",
+      "01.character.odie-3-role-variants",
+      "01.prop.olympus-clementines-bowl",
+      "01.prop.offer-letter-charter-5-states",
+      "01.fx.scylla-heads-and-charybdis-whirlpool",
+      "01.switch.diecast-railway-branch-switcher",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Continue]",
+        "target": "beat_12",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_12: Scylla and Charybdis: The Call] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_12",
+    "title": "NODE 14 \u00b7 BEAT_12 \u00b7 SCYLLA AND CHARYBDIS: THE CALL",
+    "kit_ids": [
+      "01.location.olympus-decision-fork-stage",
+      "01.hero.olympus-glass-room",
+      "01.character.dana-okafor-kit",
+      "01.character.odie-3-role-variants",
+      "01.prop.olympus-clementines-bowl",
+      "01.prop.offer-letter-charter-5-states",
+      "01.fx.scylla-heads-and-charybdis-whirlpool",
+      "01.switch.diecast-railway-branch-switcher",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "THROW BRASS LEVER: 'Accept. Take the chair, like the brilliant makers who took it before you.'",
+        "target": "beat_13",
+        "mutations": "callChoice = accept; char_player.standing +3; char_player.cunning +1; char_player.craft -1; char_player.meaning -1; setCharacterVariant(char_player=); addSentiment(char_father=); addSentiment(char_father=); fireEmotion(char_player=)",
+        "set_change": "Reconfigures stage to [beat_13: You Say Yes] (I. The Call)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Decline. Stay at the workbench and let them call it a lack of ambition.'",
+        "target": "beat_14",
+        "mutations": "callChoice = decline; char_player.craft +1; char_player.standing -2; char_player.meaning +1; char_player.leverage +1; setCharacterVariant(char_player=); addSentiment(char_father=); addSentiment(char_father=); fireEmotion(char_father=); nudgeMood(char_player=)",
+        "set_change": "Reconfigures stage to [beat_14: You Say No] (I. The Call)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Renegotiate: 'What if I lead the craft instead of the people?''",
+        "target": "beat_15",
+        "mutations": "nudgeMood(char_player=)",
+        "set_change": "Reconfigures stage to [beat_15: Check: Enough Leverage?] (I. The Call)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Stall. Feign madness. Plough the sprint board with salt.'",
+        "target": "beat_16",
+        "mutations": "nudgeMood(char_player=)",
+        "set_change": "Reconfigures stage to [beat_16: Odysseus at the Plough] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_13",
+    "title": "NODE 15 \u00b7 BEAT_13 \u00b7 YOU SAY YES",
+    "kit_ids": [
+      "01.location.olympus-decision-fork-stage",
+      "01.hero.olympus-glass-room",
+      "01.character.dana-okafor-kit",
+      "01.character.odie-3-role-variants",
+      "01.prop.olympus-clementines-bowl",
+      "01.prop.offer-letter-charter-5-states",
+      "01.fx.scylla-heads-and-charybdis-whirlpool",
+      "01.switch.diecast-railway-branch-switcher",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Pack a bag]",
+        "target": "beat_17",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_17: Act Break: Snapshot (act1_end)] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_14",
+    "title": "NODE 16 \u00b7 BEAT_14 \u00b7 YOU SAY NO",
+    "kit_ids": [
+      "01.location.olympus-decision-fork-stage",
+      "01.hero.olympus-glass-room",
+      "01.character.dana-okafor-kit",
+      "01.character.odie-3-role-variants",
+      "01.prop.olympus-clementines-bowl",
+      "01.prop.offer-letter-charter-5-states",
+      "01.fx.scylla-heads-and-charybdis-whirlpool",
+      "01.switch.diecast-railway-branch-switcher",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Pack a bag]",
+        "target": "beat_17",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_17: Act Break: Snapshot (act1_end)] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_15",
+    "title": "NODE 17 \u00b7 BEAT_15 \u00b7 CHECK: ENOUGH LEVERAGE?",
+    "kit_ids": [
+      "01.location.olympus-decision-fork-stage",
+      "01.hero.olympus-glass-room",
+      "01.character.dana-okafor-kit",
+      "01.character.odie-3-role-variants",
+      "01.prop.olympus-clementines-bowl",
+      "01.prop.offer-letter-charter-5-states",
+      "01.fx.scylla-heads-and-charybdis-whirlpool",
+      "01.switch.diecast-railway-branch-switcher",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [Leverage high]: char_player.leverage >= 3",
+        "target": "beat_15a",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_15a: The Charter Move] (I. The Call)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [Leverage low]: NOT (leverage >= 3)",
+        "target": "beat_15b",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_15b: The Chart Only Has Rungs] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_15a",
+    "title": "NODE 18 \u00b7 BEAT_15A \u00b7 THE CHARTER MOVE",
+    "kit_ids": [
+      "01.location.olympus-decision-fork-stage",
+      "01.hero.olympus-glass-room",
+      "01.character.dana-okafor-kit",
+      "01.character.odie-3-role-variants",
+      "01.prop.olympus-clementines-bowl",
+      "01.prop.offer-letter-charter-5-states",
+      "01.fx.scylla-heads-and-charybdis-whirlpool",
+      "01.switch.diecast-railway-branch-switcher",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Pack a bag]",
+        "target": "beat_17",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_17: Act Break: Snapshot (act1_end)] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_15b",
+    "title": "NODE 19 \u00b7 BEAT_15B \u00b7 THE CHART ONLY HAS RUNGS",
+    "kit_ids": [
+      "01.location.olympus-decision-fork-stage",
+      "01.hero.olympus-glass-room",
+      "01.character.dana-okafor-kit",
+      "01.character.odie-3-role-variants",
+      "01.prop.olympus-clementines-bowl",
+      "01.prop.offer-letter-charter-5-states",
+      "01.fx.scylla-heads-and-charybdis-whirlpool",
+      "01.switch.diecast-railway-branch-switcher",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Pack a bag]",
+        "target": "beat_17",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_17: Act Break: Snapshot (act1_end)] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_16",
+    "title": "NODE 20 \u00b7 BEAT_16 \u00b7 ODYSSEUS AT THE PLOUGH",
+    "kit_ids": [
+      "01.location.plough-madness-stage-ensemble",
+      "01.hero.sprint-board-salt",
+      "01.character.odie-3-role-variants",
+      "01.emotion.sleepless-doubt-and-plough-madness",
+      "01.pose.odie-plough-walk-and-drift",
+      "01.character.dana-okafor-kit",
+      "01.character.dougie-pratt-kit",
+      "01.fx.commit-words-and-chants"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Watch the votes come in]",
+        "target": "beat_16r",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_16r: The Slack Poll Decides] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_16r",
+    "title": "NODE 21 \u00b7 BEAT_16R \u00b7 THE SLACK POLL DECIDES",
+    "kit_ids": [
+      "01.location.plough-madness-stage-ensemble",
+      "01.hero.sprint-board-salt",
+      "01.character.odie-3-role-variants",
+      "01.emotion.sleepless-doubt-and-plough-madness",
+      "01.pose.odie-plough-walk-and-drift",
+      "01.character.dana-okafor-kit",
+      "01.character.dougie-pratt-kit",
+      "01.fx.commit-words-and-chants"
+    ],
+    "paths": [
+      {
+        "trigger": "SPIN ROULETTE WHEEL #1 (Weight 1)",
+        "target": "beat_16a",
+        "mutations": "callChoice = accept; stalled = True; char_player.standing +2; char_player.craft -1; setCharacterVariant(char_player=); addSentiment(char_father=); addSentiment(char_father=)",
+        "set_change": "Reconfigures stage to [beat_16a: Appointed by Acclamation] (I. The Call)"
+      },
+      {
+        "trigger": "SPIN ROULETTE WHEEL #2 (Weight 1)",
+        "target": "beat_16b",
+        "mutations": "callChoice = decline; stalled = True; char_player.standing -1; char_player.meaning +1; addSentiment(char_father=)",
+        "set_change": "Reconfigures stage to [beat_16b: Dougie Wins the Poll] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_16a",
+    "title": "NODE 22 \u00b7 BEAT_16A \u00b7 APPOINTED BY ACCLAMATION",
+    "kit_ids": [
+      "01.location.plough-madness-stage-ensemble",
+      "01.hero.sprint-board-salt",
+      "01.character.odie-3-role-variants",
+      "01.emotion.sleepless-doubt-and-plough-madness",
+      "01.pose.odie-plough-walk-and-drift",
+      "01.character.dana-okafor-kit",
+      "01.character.dougie-pratt-kit",
+      "01.fx.commit-words-and-chants"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Pack a bag]",
+        "target": "beat_17",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_17: Act Break: Snapshot (act1_end)] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_16b",
+    "title": "NODE 23 \u00b7 BEAT_16B \u00b7 DOUGIE WINS THE POLL",
+    "kit_ids": [
+      "01.location.plough-madness-stage-ensemble",
+      "01.hero.sprint-board-salt",
+      "01.character.odie-3-role-variants",
+      "01.emotion.sleepless-doubt-and-plough-madness",
+      "01.pose.odie-plough-walk-and-drift",
+      "01.character.dana-okafor-kit",
+      "01.character.dougie-pratt-kit",
+      "01.fx.commit-words-and-chants"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Pack a bag]",
+        "target": "beat_17",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_17: Act Break: Snapshot (act1_end)] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_17",
+    "title": "NODE 24 \u00b7 BEAT_17 \u00b7 ACT BREAK: SNAPSHOT (ACT1_END)",
+    "kit_ids": [
+      "01.switch.affect-snapshot-iris-dial",
+      "01.fx.seven-brass-state-meters",
+      "02.location.ferry-cafe-to-ship-reversible-stage"
+    ],
+    "paths": [
+      {
+        "trigger": "IRIS CAMERA DIAL SNAPSHOT",
+        "target": "beat_18",
+        "mutations": "Bookmark(act1_end)",
+        "set_change": "Reconfigures stage to [beat_18: Departure] (II. The Voyage)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_18",
+    "title": "NODE 25 \u00b7 BEAT_18 \u00b7 DEPARTURE",
+    "kit_ids": [
+      "02.location.ferry-cafe-to-ship-reversible-stage",
+      "02.hero.black-ship-ferry",
+      "02.character.andrei-karpathi-kit",
+      "01.character.odie-3-role-variants",
+      "02.character.nobody-ai-spirit-puppet",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Say hello]",
+        "target": "beat_19",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_19: Karpathi: Blessing and Teardown] (II. The Voyage)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_19",
+    "title": "NODE 26 \u00b7 BEAT_19 \u00b7 KARPATHI: BLESSING AND TEARDOWN",
+    "kit_ids": [
+      "02.location.ferry-cafe-to-ship-reversible-stage",
+      "02.hero.black-ship-ferry",
+      "02.character.andrei-karpathi-kit",
+      "01.character.odie-3-role-variants",
+      "02.character.nobody-ai-spirit-puppet",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: 'It's metis. Practical judgement under uncertainty. Knowing when t'",
+        "target": "",
+        "mutations": "char_player.craft +1; char_player.meaning +1; fireEmotion(char_player=); nudgeMood(char_player=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: '[Continue]'",
+        "target": "beat_20",
+        "mutations": "char_player.craft +1; char_player.meaning +1; fireEmotion(char_player=); nudgeMood(char_player=)",
+        "set_change": "Reconfigures stage to [beat_20: Check: Did He Accept?] (II. The Voyage)"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Honestly? Maybe the model holds the theory and I just hold the le'",
+        "target": "",
+        "mutations": "char_player.meaning -1; char_player.cunning +1; addSentiment(char_player=); nudgeMood(char_player=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Argue with me properly. Out loud. As long as it takes.'",
+        "target": "beat_19ai",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_19ai: Open Argument with Karpathi] (II. The Voyage)"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Everyone says the real skill now is reading rooms, not diffs.'",
+        "target": "",
+        "mutations": "char_player.cunning +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_19ai",
+    "title": "NODE 27 \u00b7 BEAT_19AI \u00b7 OPEN ARGUMENT WITH KARPATHI",
+    "kit_ids": [
+      "02.location.ferry-cafe-to-ship-reversible-stage",
+      "02.hero.black-ship-ferry",
+      "02.character.andrei-karpathi-kit",
+      "01.character.odie-3-role-variants",
+      "02.character.nobody-ai-spirit-puppet",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "FALLBACK EXIT: 'Say the ship is leaving, that the question is still open, and that he should go and see how others answered it.'",
+        "target": "beat_20",
+        "mutations": "Exits AI conversation",
+        "set_change": "Reconfigures stage to [beat_20: Check: Did He Accept?] (II. The Voyage)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_20",
+    "title": "NODE 28 \u00b7 BEAT_20 \u00b7 CHECK: DID HE ACCEPT?",
+    "kit_ids": [
+      "02.location.ferry-cafe-to-ship-reversible-stage",
+      "02.hero.black-ship-ferry",
+      "02.character.andrei-karpathi-kit",
+      "01.character.odie-3-role-variants",
+      "02.character.nobody-ai-spirit-puppet",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [New lead: Circe's offsite]: callChoice == accept",
+        "target": "beat_21",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_21: Circe's Offsite] (II. The Voyage)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [Straight to sea]: NOT (callChoice == accept)",
+        "target": "beat_22",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_22: The Winds of the Backlog] (II. The Voyage)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_21",
+    "title": "NODE 29 \u00b7 BEAT_21 \u00b7 CIRCE'S OFFSITE",
+    "kit_ids": [
+      "02.location.aiaia-bottling-plant-stage",
+      "02.character.circe-facilitator-kit",
+      "03.wardrobe.circe-dress-and-torwald-cardigan",
+      "02.prop.herb-moly-flower-12-petals",
+      "02.fx.circe-swine-mask-lanyard-cups",
+      "04.emotion.taskmaster-stare-reverence-ajax-silence"
+    ],
+    "paths": [
+      {
+        "trigger": "THROW BRASS LEVER: 'Drink the framework.'",
+        "target": "beat_22",
+        "mutations": "becameTaskmaster = True; char_player.craft -2; char_player.cunning +2; char_player.meaning -2; char_player.standing +1; nudgeMood(char_player=)",
+        "set_change": "Reconfigures stage to [beat_22: The Winds of the Backlog] (II. The Voyage)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Eat the moly: block one sacred coding hour a day and tell Circe it's non-negotiable.'",
+        "target": "beat_22",
+        "mutations": "char_player.craft +1; char_player.cunning +1; char_player.meaning +1; fireEmotion(char_player=)",
+        "set_change": "Reconfigures stage to [beat_22: The Winds of the Backlog] (II. The Voyage)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_22",
+    "title": "NODE 30 \u00b7 BEAT_22 \u00b7 THE WINDS OF THE BACKLOG",
+    "kit_ids": [
+      "02.location.winds-of-backlog-storm-stage",
+      "02.hero.black-ship-ferry",
+      "02.pose.odie-falling-windswept",
+      "02.prop.sprint-hourglasses-6-states"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Look around]",
+        "target": "beat_23",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_23: First Landfall (random)] (II. The Voyage)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_23",
+    "title": "NODE 31 \u00b7 BEAT_23 \u00b7 FIRST LANDFALL (RANDOM)",
+    "kit_ids": [
+      "02.location.winds-of-backlog-storm-stage",
+      "02.hero.black-ship-ferry",
+      "02.pose.odie-falling-windswept",
+      "02.prop.sprint-hourglasses-6-states"
+    ],
+    "paths": [
+      {
+        "trigger": "SPIN ROULETTE WHEEL #1 (Weight 1)",
+        "target": "beat_30",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_30: Brookes's Ledger] (II. Islands)"
+      },
+      {
+        "trigger": "SPIN ROULETTE WHEEL #2 (Weight 1)",
+        "target": "beat_32",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_32: Inbox Sea: Arrival Check] (II. Islands)"
+      },
+      {
+        "trigger": "SPIN ROULETTE WHEEL #3 (Weight 1)",
+        "target": "beat_35",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_35: Bell Works Garden] (II. Islands)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_24",
+    "title": "NODE 32 \u00b7 BEAT_24 \u00b7 THE CHART OF ISLANDS (HUB)",
+    "kit_ids": [
+      "02.location.chart-of-islands-hub-table",
+      "02.prop.sprint-hourglasses-6-states",
+      "01.switch.condition-check-padlock-gates",
+      "01.switch.diecast-railway-branch-switcher"
+    ],
+    "paths": [
+      {
+        "trigger": "THROW BRASS LEVER: 'Brookes's Ledger, an island made of paper'",
+        "target": "beat_30",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_30: Brookes's Ledger] (II. Islands)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'The Inbox Sea, where something is singing'",
+        "target": "beat_32",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_32: Inbox Sea: Arrival Check] (II. Islands)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Bell Works Garden, where the fruit tastes like afternoon'",
+        "target": "beat_35",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_35: Bell Works Garden] (II. Islands)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'The Oracle, a cave lit by GPU fans'",
+        "target": "beat_37",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_37: The Oracle] (II. Islands)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'The Flat Island, which has no managers'",
+        "target": "beat_39",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_39: The Flat Island] (II. Islands)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Carmick's Exile Workshop, a shed on a cold coast'",
+        "target": "beat_41",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_41: Carmick's Exile Workshop] (II. Islands)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Hassaby's Charter Room, golden, and open to you'",
+        "target": "beat_43",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_43: Hassaby's Charter Room] (II. Islands)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Knuthe's Cave, reached by a ladder that goes down'",
+        "target": "beat_45",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_45: Knuthe's Cave] (II. Islands)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'The Road of Older Ladders, running inland to the sea'",
+        "target": "beat_47",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_47: The Road of Older Ladders] (II. Islands)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'The Calibration Cave, home of a single glowing eye'",
+        "target": "beat_50",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_50: The Calibration Cave] (II. Islands)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_30",
+    "title": "NODE 33 \u00b7 BEAT_30 \u00b7 BROOKES'S LEDGER",
+    "kit_ids": [
+      "03.location.brookes-paper-island-stage",
+      "03.hero.ibm-360-mainframe",
+      "03.character.fred-brookes-kit",
+      "01.character.odie-3-role-variants",
+      "02.prop.ibm-reel-rotary-phone-amphora"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Approach the desk]",
+        "target": "beat_31",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_31: Fred Brookes] (II. Islands)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_31",
+    "title": "NODE 34 \u00b7 BEAT_31 \u00b7 FRED BROOKES",
+    "kit_ids": [
+      "03.location.brookes-paper-island-stage",
+      "03.hero.ibm-360-mainframe",
+      "03.character.fred-brookes-kit",
+      "01.character.odie-3-role-variants",
+      "02.prop.ibm-reel-rotary-phone-amphora"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: 'Was it worth it? Saying yes?'",
+        "target": "",
+        "mutations": "char_player.meaning +1; char_player.standing +1; visited_brookes = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: '[Continue]'",
+        "target": "beat_60",
+        "mutations": "char_player.meaning +1; char_player.standing +1; visited_brookes = True; islandsVisited +1",
+        "set_change": "Reconfigures stage to [beat_60: Tally: Called Home Yet?] (II. The Voyage)"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Can I copy the law? For the next headcount meeting.'",
+        "target": "",
+        "mutations": "char_player.leverage +1; char_player.cunning +1; visited_brookes = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Read the cost column without asking anything.'",
+        "target": "",
+        "mutations": "char_player.craft +1; char_player.meaning +1; visited_brookes = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_32",
+    "title": "NODE 35 \u00b7 BEAT_32 \u00b7 INBOX SEA: ARRIVAL CHECK",
+    "kit_ids": [
+      "03.location.inbox-sea-siren-stage",
+      "03.character.linos-torwald-kit",
+      "02.hero.black-ship-ferry",
+      "01.pose.odie-plough-walk-and-drift",
+      "01.fx.commit-words-and-chants"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [Already drowning]: callChoice == accept",
+        "target": "beat_33a",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_33a: The Inbox Sea (as a lead)] (II. Islands)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [Hearing what could have been]: NOT (callChoice == accept)",
+        "target": "beat_33b",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_33b: The Inbox Sea (from outside)] (II. Islands)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_33a",
+    "title": "NODE 36 \u00b7 BEAT_33A \u00b7 THE INBOX SEA (AS A LEAD)",
+    "kit_ids": [
+      "03.location.inbox-sea-siren-stage",
+      "03.character.linos-torwald-kit",
+      "02.hero.black-ship-ferry",
+      "01.pose.odie-plough-walk-and-drift",
+      "01.fx.commit-words-and-chants"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Steer toward the rock]",
+        "target": "beat_34",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_34: Linos Torwald, the Siren] (II. Islands)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_33b",
+    "title": "NODE 37 \u00b7 BEAT_33B \u00b7 THE INBOX SEA (FROM OUTSIDE)",
+    "kit_ids": [
+      "03.location.inbox-sea-siren-stage",
+      "03.character.linos-torwald-kit",
+      "02.hero.black-ship-ferry",
+      "01.pose.odie-plough-walk-and-drift",
+      "01.fx.commit-words-and-chants"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Steer toward the rock]",
+        "target": "beat_34",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_34: Linos Torwald, the Siren] (II. Islands)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_34",
+    "title": "NODE 38 \u00b7 BEAT_34 \u00b7 LINOS TORWALD, THE SIREN",
+    "kit_ids": [
+      "03.location.inbox-sea-siren-stage",
+      "03.character.linos-torwald-kit",
+      "02.hero.black-ship-ferry",
+      "01.pose.odie-plough-walk-and-drift",
+      "01.fx.commit-words-and-chants"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: 'Stuff my ears: notifications off. Sail on.'",
+        "target": "",
+        "mutations": "char_player.craft +1; char_player.meaning +1; char_player.standing -1; visited_inbox = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: '[Continue]'",
+        "target": "beat_60",
+        "mutations": "char_player.craft +1; char_player.meaning +1; char_player.standing -1; visited_inbox = True; islandsVisited +1",
+        "set_change": "Reconfigures stage to [beat_60: Tally: Called Home Yet?] (II. The Voyage)"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Lash me to the mast. I want to listen. What did you learn about p'",
+        "target": "",
+        "mutations": "char_player.cunning +1; char_player.meaning +1; visited_inbox = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Confess: I already have 312 unread and I've been in the role for '",
+        "target": "",
+        "mutations": "char_player.meaning -1; char_player.cunning +1; char_player.standing +1; visited_inbox = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_35",
+    "title": "NODE 39 \u00b7 BEAT_35 \u00b7 BELL WORKS GARDEN",
+    "kit_ids": [
+      "03.location.bell-works-lotus-garden-stage",
+      "03.character.ken-tomson-kit",
+      "03.character.claude-shanning-kit",
+      "03.prop.shannon-unicycle-and-theseus-mouse",
+      "02.prop.sprint-hourglasses-6-states"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Taste the fruit]",
+        "target": "beat_36",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_36: Ken Tomson and Claude Shanning] (II. Islands)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_36",
+    "title": "NODE 40 \u00b7 BEAT_36 \u00b7 KEN TOMSON AND CLAUDE SHANNING",
+    "kit_ids": [
+      "03.location.bell-works-lotus-garden-stage",
+      "03.character.ken-tomson-kit",
+      "03.character.claude-shanning-kit",
+      "03.prop.shannon-unicycle-and-theseus-mouse",
+      "02.prop.sprint-hourglasses-6-states"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: 'Stay one more afternoon. Then one more.'",
+        "target": "",
+        "mutations": "islandsVisited +2; visited_bell = True; char_player.meaning +2; char_player.craft +1; fireEmotion(char_player=); nudgeMood(char_player=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: '[Continue]'",
+        "target": "beat_60",
+        "mutations": "islandsVisited +2; visited_bell = True; char_player.meaning +2; char_player.craft +1; fireEmotion(char_player=); nudgeMood(char_player=)",
+        "set_change": "Reconfigures stage to [beat_60: Tally: Called Home Yet?] (II. The Voyage)"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Who holds the umbrella? Do they ever want to put it down?'",
+        "target": "",
+        "mutations": "islandsVisited +1; visited_bell = True; char_player.meaning +1; char_player.cunning +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Thank them and leave while I still can.'",
+        "target": "",
+        "mutations": "islandsVisited +1; visited_bell = True; char_player.craft +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_37",
+    "title": "NODE 41 \u00b7 BEAT_37 \u00b7 THE ORACLE",
+    "kit_ids": [
+      "03.location.oracle-gpu-cave-stage",
+      "03.character.ilya-sutskov-kit",
+      "03.wardrobe.hassaby-sutskov-robes",
+      "02.character.nobody-ai-spirit-puppet",
+      "01.fx.commit-words-and-chants"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Step into the circle]",
+        "target": "beat_38",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_38: Ilya Sutskov] (II. Islands)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_38",
+    "title": "NODE 42 \u00b7 BEAT_38 \u00b7 ILYA SUTSKOV",
+    "kit_ids": [
+      "03.location.oracle-gpu-cave-stage",
+      "03.character.ilya-sutskov-kit",
+      "03.wardrobe.hassaby-sutskov-robes",
+      "02.character.nobody-ai-spirit-puppet",
+      "01.fx.commit-words-and-chants"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: 'Will what I know survive the next model?'",
+        "target": "",
+        "mutations": "char_player.craft +1; fireEmotion(char_player=); visited_oracle = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: '[Continue]'",
+        "target": "beat_60",
+        "mutations": "char_player.craft +1; fireEmotion(char_player=); visited_oracle = True; islandsVisited +1",
+        "set_change": "Reconfigures stage to [beat_60: Tally: Called Home Yet?] (II. The Voyage)"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Chant along. Feel it.'",
+        "target": "",
+        "mutations": "char_player.cunning +1; char_player.standing +1; char_player.meaning -1; visited_oracle = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'How does a prophet end up running payroll?'",
+        "target": "",
+        "mutations": "char_player.leverage +1; char_player.meaning +1; visited_oracle = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_39",
+    "title": "NODE 43 \u00b7 BEAT_39 \u00b7 THE FLAT ISLAND",
+    "kit_ids": [
+      "03.location.vane-flat-island-stage",
+      "03.character.gabe-newall-kit",
+      "01.pose.odie-seated-rolling-chair"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Wheel closer]",
+        "target": "beat_40",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_40: Gabe Newall] (II. Islands)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_40",
+    "title": "NODE 44 \u00b7 BEAT_40 \u00b7 GABE NEWALL",
+    "kit_ids": [
+      "03.location.vane-flat-island-stage",
+      "03.character.gabe-newall-kit",
+      "01.pose.odie-seated-rolling-chair"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: 'I'll propose it back home: the team doesn't need a lead at all.'",
+        "target": "",
+        "mutations": "roleUnneeded = True; char_player.leverage +1; char_player.cunning +1; visited_flat = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: '[Continue]'",
+        "target": "beat_60",
+        "mutations": "roleUnneeded = True; char_player.leverage +1; char_player.cunning +1; visited_flat = True; islandsVisited +1",
+        "set_change": "Reconfigures stage to [beat_60: Tally: Called Home Yet?] (II. The Voyage)"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Say nothing. Watch whom everyone glances at before they speak.'",
+        "target": "",
+        "mutations": "char_player.cunning +1; char_player.meaning +1; visited_flat = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Wheel my desk into a corner and just build something.'",
+        "target": "",
+        "mutations": "char_player.craft +1; char_player.standing -1; visited_flat = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_41",
+    "title": "NODE 45 \u00b7 BEAT_41 \u00b7 CARMICK'S EXILE WORKSHOP",
+    "kit_ids": [
+      "03.location.carmick-exile-shed-stage",
+      "03.character.jon-carmick-kit",
+      "01.character.odie-3-role-variants"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Knock]",
+        "target": "beat_42",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_42: Jon Carmick] (II. Islands)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_42",
+    "title": "NODE 46 \u00b7 BEAT_42 \u00b7 JON CARMICK",
+    "kit_ids": [
+      "03.location.carmick-exile-shed-stage",
+      "03.character.jon-carmick-kit",
+      "01.character.odie-3-role-variants"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: 'Let me stay a while as your apprentice.'",
+        "target": "",
+        "mutations": "char_player.craft +2; char_player.standing -1; char_player.meaning +1; fireEmotion(char_player=); visited_carmick = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: '[Continue]'",
+        "target": "beat_60",
+        "mutations": "char_player.craft +2; char_player.standing -1; char_player.meaning +1; fireEmotion(char_player=); visited_carmick = True; islandsVisited +1",
+        "set_change": "Reconfigures stage to [beat_60: Tally: Called Home Yet?] (II. The Voyage)"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'What does exile cost?'",
+        "target": "",
+        "mutations": "char_player.meaning +1; char_player.leverage +1; visited_carmick = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'I couldn't do this. I need people.'",
+        "target": "",
+        "mutations": "char_player.cunning +1; char_player.meaning +1; visited_carmick = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_43",
+    "title": "NODE 47 \u00b7 BEAT_43 \u00b7 HASSABY'S CHARTER ROOM",
+    "kit_ids": [
+      "03.location.hassaby-golden-charter-stage",
+      "03.character.denis-hassaby-kit",
+      "03.wardrobe.hassaby-sutskov-robes",
+      "01.prop.offer-letter-charter-5-states",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Sit at the golden table]",
+        "target": "beat_44",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_44: Denis Hassaby] (II. Islands)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_44",
+    "title": "NODE 48 \u00b7 BEAT_44 \u00b7 DENIS HASSABY",
+    "kit_ids": [
+      "03.location.hassaby-golden-charter-stage",
+      "03.character.denis-hassaby-kit",
+      "03.wardrobe.hassaby-sutskov-robes",
+      "01.prop.offer-letter-charter-5-states",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: 'Draft and redraft the perfect role. Stay until it's flawless.'",
+        "target": "",
+        "mutations": "islandsVisited +2; visited_hassaby = True; char_player.standing +1; char_player.meaning -1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: '[Continue]'",
+        "target": "beat_60",
+        "mutations": "islandsVisited +2; visited_hassaby = True; char_player.standing +1; char_player.meaning -1",
+        "set_change": "Reconfigures stage to [beat_60: Tally: Called Home Yet?] (II. The Voyage)"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Take a rough draft and leave while the door is open.'",
+        "target": "",
+        "mutations": "islandsVisited +1; visited_hassaby = True; char_player.leverage +1; char_player.cunning +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Who paid when you stepped back?'",
+        "target": "",
+        "mutations": "islandsVisited +1; visited_hassaby = True; char_player.meaning +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_45",
+    "title": "NODE 49 \u00b7 BEAT_45 \u00b7 KNUTHE'S CAVE",
+    "kit_ids": [
+      "03.location.knuthe-subterranean-cave-stage",
+      "03.hero.knuthe-downward-ladder",
+      "03.character.don-knuthe-kit",
+      "03.pose.odie-crouching-knuthe-cave"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Climb down]",
+        "target": "beat_46",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_46: Don Knuthe] (II. Islands)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_46",
+    "title": "NODE 50 \u00b7 BEAT_46 \u00b7 DON KNUTHE",
+    "kit_ids": [
+      "03.location.knuthe-subterranean-cave-stage",
+      "03.hero.knuthe-downward-ladder",
+      "03.character.don-knuthe-kit",
+      "03.pose.odie-crouching-knuthe-cave"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: 'Let me sit at the bottom of things with you for a day.'",
+        "target": "",
+        "mutations": "char_player.craft +2; char_player.meaning +1; fireEmotion(char_player=); visited_knuthe = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: '[Continue]'",
+        "target": "beat_60",
+        "mutations": "char_player.craft +2; char_player.meaning +1; fireEmotion(char_player=); visited_knuthe = True; islandsVisited +1",
+        "set_change": "Reconfigures stage to [beat_60: Tally: Called Home Yet?] (II. The Voyage)"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Did you ever keep a ledger, like Fred Brookes?'",
+        "target": "",
+        "mutations": "char_player.meaning +1; char_player.leverage +1; visited_knuthe = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'How do I write down what I know for whoever comes after me?'",
+        "target": "",
+        "mutations": "passedOnCraft = True; char_player.craft +1; char_player.meaning +1; visited_knuthe = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_47",
+    "title": "NODE 51 \u00b7 BEAT_47 \u00b7 THE ROAD OF OLDER LADDERS",
+    "kit_ids": [
+      "03.location.road-of-older-ladders-stage",
+      "03.character.mau-piailug-and-elders-kit",
+      "04.emotion.taskmaster-stare-reverence-ajax-silence",
+      "01.character.ines-duarte-kit"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Walk on to the sea]",
+        "target": "beat_48",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_48: Where the Road Meets the Water] (II. Islands)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_48",
+    "title": "NODE 52 \u00b7 BEAT_48 \u00b7 WHERE THE ROAD MEETS THE WATER",
+    "kit_ids": [
+      "03.location.road-of-older-ladders-stage",
+      "03.character.mau-piailug-and-elders-kit",
+      "04.emotion.taskmaster-stare-reverence-ajax-silence",
+      "01.character.ines-duarte-kit"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Turn back toward the ship]",
+        "target": "beat_49",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_49: What You Carry from the Road] (II. Islands)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_49",
+    "title": "NODE 53 \u00b7 BEAT_49 \u00b7 WHAT YOU CARRY FROM THE ROAD",
+    "kit_ids": [
+      "03.location.road-of-older-ladders-stage",
+      "03.character.mau-piailug-and-elders-kit",
+      "04.emotion.taskmaster-stare-reverence-ajax-silence",
+      "01.character.ines-duarte-kit"
+    ],
+    "paths": [
+      {
+        "trigger": "THROW BRASS LEVER: 'Take Ines on properly. Choose to share, as a master chooses.'",
+        "target": "beat_60",
+        "mutations": "passedOnCraft = True; char_player.craft +1; char_player.meaning +2; addSentiment(char_ines=); visited_road = True; islandsVisited +1",
+        "set_change": "Reconfigures stage to [beat_60: Tally: Called Home Yet?] (II. The Voyage)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Resolve to go deeper, not higher, whatever the chart says.'",
+        "target": "beat_60",
+        "mutations": "char_player.craft +1; char_player.meaning +1; visited_road = True; islandsVisited +1",
+        "set_change": "Reconfigures stage to [beat_60: Tally: Called Home Yet?] (II. The Voyage)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Write to your father about the Compagnons, the Treasures and the canoe.'",
+        "target": "beat_60",
+        "mutations": "addSentiment(char_father=); fireEmotion(char_father=); addReflection(char_father=); char_player.meaning +1; visited_road = True; islandsVisited +1",
+        "set_change": "Reconfigures stage to [beat_60: Tally: Called Home Yet?] (II. The Voyage)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_50",
+    "title": "NODE 54 \u00b7 BEAT_50 \u00b7 THE CALIBRATION CAVE",
+    "kit_ids": [
+      "03.location.cyclops-calibration-cave-stage",
+      "03.pose.odie-hologram-nobody",
+      "03.pose.odie-crouching-knuthe-cave",
+      "01.fx.commit-words-and-chants",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Face the eye]",
+        "target": "beat_51",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_51: Facing the Cyclops] (II. Islands)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_51",
+    "title": "NODE 55 \u00b7 BEAT_51 \u00b7 FACING THE CYCLOPS",
+    "kit_ids": [
+      "03.location.cyclops-calibration-cave-stage",
+      "03.pose.odie-hologram-nobody",
+      "03.pose.odie-crouching-knuthe-cave",
+      "01.fx.commit-words-and-chants",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: ''My name is Nobody.''",
+        "target": "",
+        "mutations": "roleUnneeded = True; char_player.cunning +1; char_player.leverage +1; char_player.meaning +1; fireEmotion(char_player=); visited_cyclops = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: '[Continue]'",
+        "target": "beat_60",
+        "mutations": "roleUnneeded = True; char_player.cunning +1; char_player.leverage +1; char_player.meaning +1; fireEmotion(char_player=); visited_cyclops = True; islandsVisited +1",
+        "set_change": "Reconfigures stage to [beat_60: Tally: Called Home Yet?] (II. The Voyage)"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Recite my title, my velocity chart and my headcount plan.'",
+        "target": "",
+        "mutations": "char_player.standing +1; char_player.craft -1; char_player.meaning -1; visited_cyclops = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Put out its eye: argue that the metrics measure the wrong thing.'",
+        "target": "",
+        "mutations": "char_player.standing -1; char_player.meaning +1; char_player.cunning +1; visited_cyclops = True; islandsVisited +1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_60",
+    "title": "NODE 56 \u00b7 BEAT_60 \u00b7 TALLY: CALLED HOME YET?",
+    "kit_ids": [
+      "02.location.chart-of-islands-hub-table",
+      "02.prop.sprint-hourglasses-6-states",
+      "01.switch.condition-check-padlock-gates",
+      "01.switch.diecast-railway-branch-switcher"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [Not yet]: calledHome == False",
+        "target": "beat_61",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_61: Tally: Two Islands In?] (II. The Voyage)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [Already called]: NOT (calledHome == False)",
+        "target": "beat_63",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_63: Tally: Voyage Complete?] (II. The Voyage)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_61",
+    "title": "NODE 57 \u00b7 BEAT_61 \u00b7 TALLY: TWO ISLANDS IN?",
+    "kit_ids": [
+      "02.location.chart-of-islands-hub-table",
+      "02.prop.sprint-hourglasses-6-states",
+      "01.switch.condition-check-padlock-gates",
+      "01.switch.diecast-railway-branch-switcher"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [Time to call home]: islandsVisited >= 2",
+        "target": "beat_62",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_62: Calling Home] (II. The Voyage)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [Keep sailing]: NOT (islandsVisited >= 2)",
+        "target": "beat_63",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_63: Tally: Voyage Complete?] (II. The Voyage)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_62",
+    "title": "NODE 58 \u00b7 BEAT_62 \u00b7 CALLING HOME",
+    "kit_ids": [
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "02.prop.ibm-reel-rotary-phone-amphora",
+      "01.prop.vernier-calipers-3-states",
+      "01.fx.seven-brass-state-meters"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: 'Dad, it's like your lathe. You feel the burr before you see it. T'",
+        "target": "",
+        "mutations": "calledHome = True; addSentiment(char_father=); fireEmotion(char_father=); nudgeMood(char_father=); addReflection(char_father=); fireEmotion(char_player=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Share my screen. Show him a session: the model goes wrong, and I '",
+        "target": "",
+        "mutations": "calledHome = True; addSentiment(char_father=); fireEmotion(char_father=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: '[Continue]'",
+        "target": "beat_64",
+        "mutations": "calledHome = True; addSentiment(char_father=); fireEmotion(char_father=)",
+        "set_change": "Reconfigures stage to [beat_64: Meanwhile: The Suitors] (II. The Voyage)"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Tell him what sounds impressive: the leaders I've met, the plans,'",
+        "target": "",
+        "mutations": "calledHome = True; addSentiment(char_father=); fireEmotion(char_father=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_64",
+    "title": "NODE 59 \u00b7 BEAT_64 \u00b7 MEANWHILE: THE SUITORS",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "01.character.chad-bellweather-kit",
+      "01.character.dougie-pratt-kit",
+      "01.character.ines-duarte-kit"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Back to the sea]",
+        "target": "beat_63",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_63: Tally: Voyage Complete?] (II. The Voyage)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_63",
+    "title": "NODE 60 \u00b7 BEAT_63 \u00b7 TALLY: VOYAGE COMPLETE?",
+    "kit_ids": [
+      "02.location.chart-of-islands-hub-table",
+      "02.prop.sprint-hourglasses-6-states",
+      "01.switch.condition-check-padlock-gates",
+      "01.switch.diecast-railway-branch-switcher"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [Descend]: islandsVisited >= 4",
+        "target": "beat_70",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_70: The Underworld] (II. The Underworld)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [Another island]: NOT (islandsVisited >= 4)",
+        "target": "beat_24",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_24: The Chart of Islands (Hub)] (II. The Voyage)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_70",
+    "title": "NODE 61 \u00b7 BEAT_70 \u00b7 THE UNDERWORLD",
+    "kit_ids": [
+      "04.location.underworld-hotel-and-visions-stage",
+      "04.character.ajax-underworld-and-shades",
+      "04.wardrobe.ajax-achilles-bronze-armour",
+      "04.emotion.taskmaster-stare-reverence-ajax-silence",
+      "03.character.mau-piailug-and-elders-kit",
+      "01.switch.affect-snapshot-iris-dial"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Go to him]",
+        "target": "beat_71",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_71: Ajax Will Not Speak] (II. The Underworld)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_71",
+    "title": "NODE 62 \u00b7 BEAT_71 \u00b7 AJAX WILL NOT SPEAK",
+    "kit_ids": [
+      "04.location.underworld-hotel-and-visions-stage",
+      "04.character.ajax-underworld-and-shades",
+      "04.wardrobe.ajax-achilles-bronze-armour",
+      "04.emotion.taskmaster-stare-reverence-ajax-silence",
+      "03.character.mau-piailug-and-elders-kit",
+      "01.switch.affect-snapshot-iris-dial"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: 'I'm sorry. You were the better craftsman. They gave the armour to'",
+        "target": "",
+        "mutations": "char_player.meaning +1; fireEmotion(char_player=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'We are dim shapes, no more, and weightless shadows.'",
+        "target": "",
+        "mutations": "char_player.meaning +1; fireEmotion(char_player=); char_player.meaning +1; addSentiment(char_player=); nudgeMood(char_player=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: '[Continue]'",
+        "target": "beat_72",
+        "mutations": "char_player.meaning +1; fireEmotion(char_player=); char_player.meaning +1; addSentiment(char_player=); nudgeMood(char_player=)",
+        "set_change": "Reconfigures stage to [beat_72: Visions of Roads Not Taken] (II. The Underworld)"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'I think I might be like you. Steady. And outtalked.'",
+        "target": "",
+        "mutations": "char_player.meaning +1; fireEmotion(char_player=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Craft without a voice is how you end up down here.'",
+        "target": "",
+        "mutations": "char_player.cunning +1; char_player.meaning -1",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_72",
+    "title": "NODE 63 \u00b7 BEAT_72 \u00b7 VISIONS OF ROADS NOT TAKEN",
+    "kit_ids": [
+      "04.location.underworld-hotel-and-visions-stage",
+      "04.character.ajax-underworld-and-shades",
+      "04.wardrobe.ajax-achilles-bronze-armour",
+      "04.emotion.taskmaster-stare-reverence-ajax-silence",
+      "03.character.mau-piailug-and-elders-kit",
+      "01.switch.affect-snapshot-iris-dial"
+    ],
+    "paths": [
+      {
+        "trigger": "THROW BRASS LEVER: 'Odysseus staying home'",
+        "target": "beat_73",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_73: Vision: Odysseus Stays Home] (II. The Underworld)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Ajax accepting the loss, and living'",
+        "target": "beat_74",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_74: Vision: Ajax Lives] (II. The Underworld)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Mau keeping the knowledge, and H\u014dk\u016ble\u02bba never sailing'",
+        "target": "beat_75",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_75: Vision: The Knowledge Kept] (II. The Underworld)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Climb out of the pit.'",
+        "target": "beat_76",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_76: Act Break: Snapshot (voyage_end)] (II. The Underworld)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_73",
+    "title": "NODE 64 \u00b7 BEAT_73 \u00b7 VISION: ODYSSEUS STAYS HOME",
+    "kit_ids": [
+      "04.location.underworld-hotel-and-visions-stage",
+      "04.character.ajax-underworld-and-shades",
+      "04.wardrobe.ajax-achilles-bronze-armour",
+      "04.emotion.taskmaster-stare-reverence-ajax-silence",
+      "03.character.mau-piailug-and-elders-kit",
+      "01.switch.affect-snapshot-iris-dial"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Look away]",
+        "target": "beat_72",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_72: Visions of Roads Not Taken] (II. The Underworld)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_74",
+    "title": "NODE 65 \u00b7 BEAT_74 \u00b7 VISION: AJAX LIVES",
+    "kit_ids": [
+      "04.location.underworld-hotel-and-visions-stage",
+      "04.character.ajax-underworld-and-shades",
+      "04.wardrobe.ajax-achilles-bronze-armour",
+      "04.emotion.taskmaster-stare-reverence-ajax-silence",
+      "03.character.mau-piailug-and-elders-kit",
+      "01.switch.affect-snapshot-iris-dial"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Look away]",
+        "target": "beat_72",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_72: Visions of Roads Not Taken] (II. The Underworld)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_75",
+    "title": "NODE 66 \u00b7 BEAT_75 \u00b7 VISION: THE KNOWLEDGE KEPT",
+    "kit_ids": [
+      "04.location.underworld-hotel-and-visions-stage",
+      "04.character.ajax-underworld-and-shades",
+      "04.wardrobe.ajax-achilles-bronze-armour",
+      "04.emotion.taskmaster-stare-reverence-ajax-silence",
+      "03.character.mau-piailug-and-elders-kit",
+      "01.switch.affect-snapshot-iris-dial"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Look away]",
+        "target": "beat_72",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_72: Visions of Roads Not Taken] (II. The Underworld)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_76",
+    "title": "NODE 67 \u00b7 BEAT_76 \u00b7 ACT BREAK: SNAPSHOT (VOYAGE_END)",
+    "kit_ids": [
+      "04.location.underworld-hotel-and-visions-stage",
+      "04.character.ajax-underworld-and-shades",
+      "04.wardrobe.ajax-achilles-bronze-armour",
+      "04.emotion.taskmaster-stare-reverence-ajax-silence",
+      "03.character.mau-piailug-and-elders-kit",
+      "01.switch.affect-snapshot-iris-dial"
+    ],
+    "paths": [
+      {
+        "trigger": "IRIS CAMERA DIAL SNAPSHOT",
+        "target": "beat_77",
+        "mutations": "Bookmark(voyage_end)",
+        "set_change": "Reconfigures stage to [beat_77: Homecoming: The Suitors] (III. The Return)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_77",
+    "title": "NODE 68 \u00b7 BEAT_77 \u00b7 HOMECOMING: THE SUITORS",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "05.hero.great-bow-of-billing",
+      "01.character.odie-3-role-variants",
+      "01.character.ines-duarte-kit",
+      "01.character.chad-bellweather-kit",
+      "01.character.dougie-pratt-kit",
+      "01.character.dana-okafor-kit",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Watch]",
+        "target": "beat_78",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_78: The Bow of Ithaca] (III. The Return)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_78",
+    "title": "NODE 69 \u00b7 BEAT_78 \u00b7 THE BOW OF ITHACA",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "05.hero.great-bow-of-billing",
+      "01.character.odie-3-role-variants",
+      "01.character.ines-duarte-kit",
+      "01.character.chad-bellweather-kit",
+      "01.character.dougie-pratt-kit",
+      "01.character.dana-okafor-kit",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "THROW BRASS LEVER: 'String the bow: walk to the keyboard and fix it, steering the model line by line.'",
+        "target": "beat_80",
+        "mutations": "char_player.craft +1; char_player.standing +2; char_player.leverage +1; fireEmotion(char_player=); nudgeMood(char_player=)",
+        "set_change": "Reconfigures stage to [beat_80: Check: Is He the Lead?] (III. The Return)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Hand the bow to Ines: 'You know this one. Go.''",
+        "target": "beat_80",
+        "mutations": "char_player.meaning +2; char_player.standing +1; addSentiment(char_ines=); fireEmotion(char_player=); nudgeMood(char_player=)",
+        "set_change": "Reconfigures stage to [beat_80: Check: Is He the Lead?] (III. The Return)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Let the Suitors keep trying. It's not your bow anymore.'",
+        "target": "beat_80",
+        "mutations": "char_player.meaning -1; char_player.standing -1; fireEmotion(char_player=); nudgeMood(char_player=)",
+        "set_change": "Reconfigures stage to [beat_80: Check: Is He the Lead?] (III. The Return)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_80",
+    "title": "NODE 70 \u00b7 BEAT_80 \u00b7 CHECK: IS HE THE LEAD?",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "05.hero.great-bow-of-billing",
+      "01.character.odie-3-role-variants",
+      "01.character.ines-duarte-kit",
+      "01.character.chad-bellweather-kit",
+      "01.character.dougie-pratt-kit",
+      "01.character.dana-okafor-kit",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [Holds the chair]: callChoice == accept",
+        "target": "beat_81",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_81: The Chair Is Still Yours] (III. The Return)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [Someone else]: NOT (callChoice == accept)",
+        "target": "beat_82",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_82: Who Takes the Role? (Unneeded?)] (III. The Return)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_81",
+    "title": "NODE 71 \u00b7 BEAT_81 \u00b7 THE CHAIR IS STILL YOURS",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "05.hero.great-bow-of-billing",
+      "01.character.odie-3-role-variants",
+      "01.character.ines-duarte-kit",
+      "01.character.chad-bellweather-kit",
+      "01.character.dougie-pratt-kit",
+      "01.character.dana-okafor-kit",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "THROW BRASS LEVER: 'Keep the chair, with one sacred coding hour a day, defended like Penelope's loom.'",
+        "target": "beat_89",
+        "mutations": "roleHolderName = you; char_player.standing +1; char_player.meaning +1; nudgeMood(char_player=)",
+        "set_change": "Reconfigures stage to [beat_89: You Keep the Chair] (III. The Return)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Keep the chair fully. The people are the craft now.'",
+        "target": "beat_89",
+        "mutations": "roleHolderName = you; char_player.cunning +1; char_player.craft -1; char_player.standing +1; nudgeMood(char_player=)",
+        "set_change": "Reconfigures stage to [beat_89: You Keep the Chair] (III. The Return)"
+      },
+      {
+        "trigger": "THROW BRASS LEVER: 'Hand it back. Go home to the work.'",
+        "target": "beat_82",
+        "mutations": "char_player.standing -2; char_player.craft +1; char_player.meaning +1; setCharacterVariant(char_player=); nudgeMood(char_player=); addSentiment(char_father=)",
+        "set_change": "Reconfigures stage to [beat_82: Who Takes the Role? (Unneeded?)] (III. The Return)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_82",
+    "title": "NODE 72 \u00b7 BEAT_82 \u00b7 WHO TAKES THE ROLE? (UNNEEDED?)",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "05.hero.great-bow-of-billing",
+      "01.character.odie-3-role-variants",
+      "01.character.ines-duarte-kit",
+      "01.character.chad-bellweather-kit",
+      "01.character.dougie-pratt-kit",
+      "01.character.dana-okafor-kit",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [Nobody]: roleUnneeded == True",
+        "target": "beat_83",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_83: Nobody Takes the Role] (III. The Return)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [Check apprentice]: NOT (roleUnneeded == True)",
+        "target": "beat_84",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_84: Who Takes the Role? (Apprentice?)] (III. The Return)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_84",
+    "title": "NODE 73 \u00b7 BEAT_84 \u00b7 WHO TAKES THE ROLE? (APPRENTICE?)",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "05.hero.great-bow-of-billing",
+      "01.character.odie-3-role-variants",
+      "01.character.ines-duarte-kit",
+      "01.character.chad-bellweather-kit",
+      "01.character.dougie-pratt-kit",
+      "01.character.dana-okafor-kit",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [Ines]: passedOnCraft == True",
+        "target": "beat_85",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_85: Ines Takes the Role] (III. The Return)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [Check stall]: NOT (passedOnCraft == True)",
+        "target": "beat_86",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_86: Who Takes the Role? (Stalled?)] (III. The Return)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_86",
+    "title": "NODE 74 \u00b7 BEAT_86 \u00b7 WHO TAKES THE ROLE? (STALLED?)",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "05.hero.great-bow-of-billing",
+      "01.character.odie-3-role-variants",
+      "01.character.ines-duarte-kit",
+      "01.character.chad-bellweather-kit",
+      "01.character.dougie-pratt-kit",
+      "01.character.dana-okafor-kit",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [Dougie]: stalled == True",
+        "target": "beat_87",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_87: Dougie Fails Upward] (III. The Return)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [Chad]: NOT (stalled == True)",
+        "target": "beat_88",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_88: Chad Wins the Armour] (III. The Return)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_83",
+    "title": "NODE 75 \u00b7 BEAT_83 \u00b7 NOBODY TAKES THE ROLE",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "05.hero.great-bow-of-billing",
+      "01.character.odie-3-role-variants",
+      "01.character.ines-duarte-kit",
+      "01.character.chad-bellweather-kit",
+      "01.character.dougie-pratt-kit",
+      "01.character.dana-okafor-kit",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Go home to your father]",
+        "target": "beat_90",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_90: Check: Lighter Since the Underworld?] (III. The Return)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_85",
+    "title": "NODE 76 \u00b7 BEAT_85 \u00b7 INES TAKES THE ROLE",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "05.hero.great-bow-of-billing",
+      "01.character.odie-3-role-variants",
+      "01.character.ines-duarte-kit",
+      "01.character.chad-bellweather-kit",
+      "01.character.dougie-pratt-kit",
+      "01.character.dana-okafor-kit",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Go home to your father]",
+        "target": "beat_90",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_90: Check: Lighter Since the Underworld?] (III. The Return)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_87",
+    "title": "NODE 77 \u00b7 BEAT_87 \u00b7 DOUGIE FAILS UPWARD",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "05.hero.great-bow-of-billing",
+      "01.character.odie-3-role-variants",
+      "01.character.ines-duarte-kit",
+      "01.character.chad-bellweather-kit",
+      "01.character.dougie-pratt-kit",
+      "01.character.dana-okafor-kit",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Go home to your father]",
+        "target": "beat_90",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_90: Check: Lighter Since the Underworld?] (III. The Return)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_88",
+    "title": "NODE 78 \u00b7 BEAT_88 \u00b7 CHAD WINS THE ARMOUR",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "05.hero.great-bow-of-billing",
+      "01.character.odie-3-role-variants",
+      "01.character.ines-duarte-kit",
+      "01.character.chad-bellweather-kit",
+      "01.character.dougie-pratt-kit",
+      "01.character.dana-okafor-kit",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Go home to your father]",
+        "target": "beat_90",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_90: Check: Lighter Since the Underworld?] (III. The Return)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_89",
+    "title": "NODE 79 \u00b7 BEAT_89 \u00b7 YOU KEEP THE CHAIR",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "05.hero.great-bow-of-billing",
+      "01.character.odie-3-role-variants",
+      "01.character.ines-duarte-kit",
+      "01.character.chad-bellweather-kit",
+      "01.character.dougie-pratt-kit",
+      "01.character.dana-okafor-kit",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Go home to your father]",
+        "target": "beat_90",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_90: Check: Lighter Since the Underworld?] (III. The Return)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_90",
+    "title": "NODE 80 \u00b7 BEAT_90 \u00b7 CHECK: LIGHTER SINCE THE UNDERWORLD?",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "01.character.odie-3-role-variants",
+      "01.switch.affect-snapshot-iris-dial"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [Lighter]: char_player.mood >= 0.05",
+        "target": "beat_91",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_91: The Train Home (lighter)] (III. The Return)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [Heavier]: NOT (mood >= 0.05)",
+        "target": "beat_92",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_92: The Train Home (heavier)] (III. The Return)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_91",
+    "title": "NODE 81 \u00b7 BEAT_91 \u00b7 THE TRAIN HOME (LIGHTER)",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "01.character.odie-3-role-variants",
+      "01.switch.affect-snapshot-iris-dial"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Walk up the path]",
+        "target": "beat_93",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_93: Ithaca] (Ithaca)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_92",
+    "title": "NODE 82 \u00b7 BEAT_92 \u00b7 THE TRAIN HOME (HEAVIER)",
+    "kit_ids": [
+      "05.location.homecoming-siege-and-train-stage",
+      "01.character.odie-3-role-variants",
+      "01.switch.affect-snapshot-iris-dial"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Walk up the path]",
+        "target": "beat_93",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_93: Ithaca] (Ithaca)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_93",
+    "title": "NODE 83 \u00b7 BEAT_93 \u00b7 ITHACA",
+    "kit_ids": [
+      "06.location.ithaca-house-and-4-ending-overlays",
+      "06.hero.orchard-committee-tree",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.character.argos-faithful-hound-kit",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "06.emotion.disbelief-and-warm-embrace",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Say hello]",
+        "target": "beat_94",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_94: In the Orchard] (Ithaca)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_94",
+    "title": "NODE 84 \u00b7 BEAT_94 \u00b7 IN THE ORCHARD",
+    "kit_ids": [
+      "06.location.ithaca-house-and-4-ending-overlays",
+      "06.hero.orchard-committee-tree",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.character.argos-faithful-hound-kit",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "06.emotion.disbelief-and-warm-embrace",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: 'Dad, let me show you what my hands do, even though you can't see '",
+        "target": "",
+        "mutations": "addSentiment(char_father=); fireEmotion(char_father=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'You got it too. At the Hendry works. Why did you stop?'",
+        "target": "",
+        "mutations": "addSentiment(char_father=); fireEmotion(char_father=); addSentiment(char_father=); fireEmotion(char_father=); addReflection(char_father=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Just let him keep reading.'",
+        "target": "",
+        "mutations": "addSentiment(char_father=); fireEmotion(char_father=); addSentiment(char_father=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Tell me about the lathe. The one you gave up.'",
+        "target": "",
+        "mutations": "addSentiment(char_father=); fireEmotion(char_father=); addReflection(char_father=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'The same kind as me. (Show him the journal.)'",
+        "target": "",
+        "mutations": "addSentiment(char_father=); fireEmotion(char_father=); addReflection(char_father=); addSentiment(char_father=); fireEmotion(char_father=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: 'Show him the calipers you still carry.'",
+        "target": "",
+        "mutations": "addSentiment(char_father=); fireEmotion(char_father=); addReflection(char_father=); addSentiment(char_father=); fireEmotion(char_father=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_95",
+    "title": "NODE 85 \u00b7 BEAT_95 \u00b7 ENDING CHECK: HAS HE COME TO SEE YOU?",
+    "kit_ids": [
+      "06.location.ithaca-house-and-4-ending-overlays",
+      "06.hero.orchard-committee-tree",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.character.argos-faithful-hound-kit",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "06.emotion.disbelief-and-warm-embrace",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [Deep recognition]: char_father.sentiment >= 0.45",
+        "target": "beat_96",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_96: Ending Check: The Shared Practice?] (Ithaca)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [Not yet]: NOT (sentiment >= 0.45)",
+        "target": "beat_98",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_98: Ending Check: Did the Voyage Move Him?] (Ithaca)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_96",
+    "title": "NODE 86 \u00b7 BEAT_96 \u00b7 ENDING CHECK: THE SHARED PRACTICE?",
+    "kit_ids": [
+      "06.location.ithaca-house-and-4-ending-overlays",
+      "06.hero.orchard-committee-tree",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.character.argos-faithful-hound-kit",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "06.emotion.disbelief-and-warm-embrace",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [Knows the lathe]: knowsFatherCraft == True",
+        "target": "beat_97",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_97: Ending Check: Is the Craft Alive?] (Ithaca)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [No shared token]: NOT (knowsFatherCraft == True)",
+        "target": "beat_98",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_98: Ending Check: Did the Voyage Move Him?] (Ithaca)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_97",
+    "title": "NODE 87 \u00b7 BEAT_97 \u00b7 ENDING CHECK: IS THE CRAFT ALIVE?",
+    "kit_ids": [
+      "06.location.ithaca-house-and-4-ending-overlays",
+      "06.hero.orchard-committee-tree",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.character.argos-faithful-hound-kit",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "06.emotion.disbelief-and-warm-embrace",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [Laertes's orchard]: char_player.craft >= 5",
+        "target": "beat_100",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_100: Naming the Trees] (Ithaca)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [Craft faded]: NOT (craft >= 5)",
+        "target": "beat_98",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_98: Ending Check: Did the Voyage Move Him?] (Ithaca)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_98",
+    "title": "NODE 88 \u00b7 BEAT_98 \u00b7 ENDING CHECK: DID THE VOYAGE MOVE HIM?",
+    "kit_ids": [
+      "06.location.ithaca-house-and-4-ending-overlays",
+      "06.hero.orchard-committee-tree",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.character.argos-faithful-hound-kit",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "06.emotion.disbelief-and-warm-embrace",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [Telemachus]: char_father.sentiment >= 0.2",
+        "target": "beat_102",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_102: Telemachus: Disbelief, Then Embrace] (Ithaca)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [Father unmoved]: NOT (sentiment >= 0.2)",
+        "target": "beat_99",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_99: Ending Check: Does the Work Remember?] (Ithaca)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_99",
+    "title": "NODE 89 \u00b7 BEAT_99 \u00b7 ENDING CHECK: DOES THE WORK REMEMBER?",
+    "kit_ids": [
+      "06.location.ithaca-house-and-4-ending-overlays",
+      "06.hero.orchard-committee-tree",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.character.argos-faithful-hound-kit",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "06.emotion.disbelief-and-warm-embrace",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "PADLOCK UNLOCKED [Argos]: char_player.craft >= 5",
+        "target": "beat_104",
+        "mutations": "Condition Gate TRUE",
+        "set_change": "Reconfigures stage to [beat_104: Argos: Only the Old Work Knows You] (Ithaca)"
+      },
+      {
+        "trigger": "PADLOCK LOCKED [Ajax's silence]: NOT (craft >= 5)",
+        "target": "beat_106",
+        "mutations": "Condition Gate FALSE",
+        "set_change": "Reconfigures stage to [beat_106: Ajax's Silence] (Ithaca)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_100",
+    "title": "NODE 90 \u00b7 BEAT_100 \u00b7 NAMING THE TREES",
+    "kit_ids": [
+      "06.location.ithaca-house-and-4-ending-overlays",
+      "06.hero.orchard-committee-tree",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.character.argos-faithful-hound-kit",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "06.emotion.disbelief-and-warm-embrace",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "DIALOGUE PATH: 'Name the trees.'",
+        "target": "",
+        "mutations": "setCharacterVariant(char_father=); fireEmotion(char_father=); addSentiment(char_father=); addReflection(char_father=); setGoalStatus(char_father=); setGoalStatus(char_player=); setGoalStatus(char_player=)",
+        "set_change": "Hold Final Ithaca Proscenium Tableau"
+      },
+      {
+        "trigger": "DIALOGUE PATH: '[Continue]'",
+        "target": "beat_101",
+        "mutations": "setCharacterVariant(char_father=); fireEmotion(char_father=); addSentiment(char_father=); addReflection(char_father=); setGoalStatus(char_father=); setGoalStatus(char_player=); setGoalStatus(char_player=)",
+        "set_change": "Reconfigures stage to [beat_101: Ending: Laertes's Orchard] (Ithaca)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_101",
+    "title": "NODE 91 \u00b7 BEAT_101 \u00b7 ENDING: LAERTES'S ORCHARD",
+    "kit_ids": [
+      "06.location.ithaca-house-and-4-ending-overlays",
+      "06.hero.orchard-committee-tree",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.character.argos-faithful-hound-kit",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "06.emotion.disbelief-and-warm-embrace",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Sail again]",
+        "target": "beat_0",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_0: Title] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_102",
+    "title": "NODE 92 \u00b7 BEAT_102 \u00b7 TELEMACHUS: DISBELIEF, THEN EMBRACE",
+    "kit_ids": [
+      "06.location.ithaca-house-and-4-ending-overlays",
+      "06.hero.orchard-committee-tree",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.character.argos-faithful-hound-kit",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "06.emotion.disbelief-and-warm-embrace",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Stay a while]",
+        "target": "beat_103",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_103: Ending: Telemachus] (Ithaca)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_103",
+    "title": "NODE 93 \u00b7 BEAT_103 \u00b7 ENDING: TELEMACHUS",
+    "kit_ids": [
+      "06.location.ithaca-house-and-4-ending-overlays",
+      "06.hero.orchard-committee-tree",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.character.argos-faithful-hound-kit",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "06.emotion.disbelief-and-warm-embrace",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Sail again]",
+        "target": "beat_0",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_0: Title] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_104",
+    "title": "NODE 94 \u00b7 BEAT_104 \u00b7 ARGOS: ONLY THE OLD WORK KNOWS YOU",
+    "kit_ids": [
+      "06.location.ithaca-house-and-4-ending-overlays",
+      "06.hero.orchard-committee-tree",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.character.argos-faithful-hound-kit",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "06.emotion.disbelief-and-warm-embrace",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Watch him graft]",
+        "target": "beat_105",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_105: Ending: Argos] (Ithaca)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_105",
+    "title": "NODE 95 \u00b7 BEAT_105 \u00b7 ENDING: ARGOS",
+    "kit_ids": [
+      "06.location.ithaca-house-and-4-ending-overlays",
+      "06.hero.orchard-committee-tree",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.character.argos-faithful-hound-kit",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "06.emotion.disbelief-and-warm-embrace",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Sail again]",
+        "target": "beat_0",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_0: Title] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_106",
+    "title": "NODE 96 \u00b7 BEAT_106 \u00b7 AJAX'S SILENCE",
+    "kit_ids": [
+      "06.location.ithaca-house-and-4-ending-overlays",
+      "06.hero.orchard-committee-tree",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.character.argos-faithful-hound-kit",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "06.emotion.disbelief-and-warm-embrace",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Let the silence stand]",
+        "target": "beat_107",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_107: Ending: Ajax's Silence (The Bard's Account)] (Ithaca)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  },
+  {
+    "beat_id": "beat_107",
+    "title": "NODE 97 \u00b7 BEAT_107 \u00b7 ENDING: AJAX'S SILENCE (THE BARD'S ACCOUNT)",
+    "kit_ids": [
+      "06.location.ithaca-house-and-4-ending-overlays",
+      "06.hero.orchard-committee-tree",
+      "06.hero.hendry-metal-lathe",
+      "06.character.lars-marsh-full-puppet",
+      "06.character.mother-amy-hartsoe-puppet",
+      "01.character.odie-3-role-variants",
+      "06.character.argos-faithful-hound-kit",
+      "06.emotion.recognition-tears-and-fatherly-pride",
+      "06.emotion.disbelief-and-warm-embrace",
+      "01.prop.vernier-calipers-3-states",
+      "01.prop.prompt-journal-and-desk-drawers",
+      "01.switch.condition-check-padlock-gates"
+    ],
+    "paths": [
+      {
+        "trigger": "STAGE CUE [Sail again]",
+        "target": "beat_0",
+        "mutations": "Stage state preserved",
+        "set_change": "Reconfigures stage to [beat_0: Title] (I. The Call)"
+      }
+    ],
+    "status": "authored_scene_specification_not_rendered"
+  }
+]
