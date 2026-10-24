@@ -1,0 +1,1197 @@
+{
+ "schema": "slopling.player.props.v1",
+ "props": {
+  "01.prop.vernier-calipers-3-states": [
+   {
+    "file": "props/01.prop.vernier-calipers-3-states__01.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.vernier-calipers-3-states.jpg",
+    "source_sha256": "468e8f3351b4cf37254c0568e296101a71dd02c0853a55e66b57b2435399253e",
+    "box": [
+     5,
+     4,
+     137,
+     243
+    ],
+    "w": 132,
+    "h": 239,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.vernier-calipers-3-states__02.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.vernier-calipers-3-states.jpg",
+    "source_sha256": "468e8f3351b4cf37254c0568e296101a71dd02c0853a55e66b57b2435399253e",
+    "box": [
+     158,
+     3,
+     290,
+     243
+    ],
+    "w": 132,
+    "h": 240,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.vernier-calipers-3-states__03.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.vernier-calipers-3-states.jpg",
+    "source_sha256": "468e8f3351b4cf37254c0568e296101a71dd02c0853a55e66b57b2435399253e",
+    "box": [
+     319,
+     0,
+     462,
+     253
+    ],
+    "w": 143,
+    "h": 253,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   }
+  ],
+  "01.prop.offer-letter-charter-5-states": [
+   {
+    "file": "props/01.prop.offer-letter-charter-5-states__01.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.offer-letter-charter-5-states.jpg",
+    "source_sha256": "1832f1a359cff6d1c3be7839abdc5cb28d4d16ad01b74f057c0d9031806c9de5",
+    "box": [
+     8,
+     10,
+     174,
+     222
+    ],
+    "w": 166,
+    "h": 212,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.offer-letter-charter-5-states__02.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.offer-letter-charter-5-states.jpg",
+    "source_sha256": "1832f1a359cff6d1c3be7839abdc5cb28d4d16ad01b74f057c0d9031806c9de5",
+    "box": [
+     190,
+     11,
+     352,
+     222
+    ],
+    "w": 162,
+    "h": 211,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.offer-letter-charter-5-states__03.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.offer-letter-charter-5-states.jpg",
+    "source_sha256": "1832f1a359cff6d1c3be7839abdc5cb28d4d16ad01b74f057c0d9031806c9de5",
+    "box": [
+     361,
+     16,
+     510,
+     216
+    ],
+    "w": 149,
+    "h": 200,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.offer-letter-charter-5-states__04.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.offer-letter-charter-5-states.jpg",
+    "source_sha256": "1832f1a359cff6d1c3be7839abdc5cb28d4d16ad01b74f057c0d9031806c9de5",
+    "box": [
+     524,
+     6,
+     672,
+     216
+    ],
+    "w": 148,
+    "h": 210,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.offer-letter-charter-5-states__05.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.offer-letter-charter-5-states.jpg",
+    "source_sha256": "1832f1a359cff6d1c3be7839abdc5cb28d4d16ad01b74f057c0d9031806c9de5",
+    "box": [
+     670,
+     100,
+     839,
+     204
+    ],
+    "w": 169,
+    "h": 104,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   }
+  ],
+  "01.prop.olympus-clementines-bowl": [
+   {
+    "file": "props/01.prop.olympus-clementines-bowl__01.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.olympus-clementines-bowl.jpg",
+    "source_sha256": "30df2e39c1af997b2f2779a79ab7a7fa0c4c6130e70860ce2994e6d39349d88c",
+    "box": [
+     0,
+     17,
+     183,
+     183
+    ],
+    "w": 183,
+    "h": 166,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.olympus-clementines-bowl__02.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.olympus-clementines-bowl.jpg",
+    "source_sha256": "30df2e39c1af997b2f2779a79ab7a7fa0c4c6130e70860ce2994e6d39349d88c",
+    "box": [
+     179,
+     19,
+     352,
+     181
+    ],
+    "w": 173,
+    "h": 162,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.olympus-clementines-bowl__03.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.olympus-clementines-bowl.jpg",
+    "source_sha256": "30df2e39c1af997b2f2779a79ab7a7fa0c4c6130e70860ce2994e6d39349d88c",
+    "box": [
+     363,
+     31,
+     537,
+     183
+    ],
+    "w": 174,
+    "h": 152,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.olympus-clementines-bowl__04.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.olympus-clementines-bowl.jpg",
+    "source_sha256": "30df2e39c1af997b2f2779a79ab7a7fa0c4c6130e70860ce2994e6d39349d88c",
+    "box": [
+     548,
+     12,
+     618,
+     84
+    ],
+    "w": 70,
+    "h": 72,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.olympus-clementines-bowl__05.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.olympus-clementines-bowl.jpg",
+    "source_sha256": "30df2e39c1af997b2f2779a79ab7a7fa0c4c6130e70860ce2994e6d39349d88c",
+    "box": [
+     625,
+     6,
+     693,
+     65
+    ],
+    "w": 68,
+    "h": 59,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.olympus-clementines-bowl__06.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.olympus-clementines-bowl.jpg",
+    "source_sha256": "30df2e39c1af997b2f2779a79ab7a7fa0c4c6130e70860ce2994e6d39349d88c",
+    "box": [
+     547,
+     116,
+     615,
+     184
+    ],
+    "w": 68,
+    "h": 68,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.olympus-clementines-bowl__07.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.olympus-clementines-bowl.jpg",
+    "source_sha256": "30df2e39c1af997b2f2779a79ab7a7fa0c4c6130e70860ce2994e6d39349d88c",
+    "box": [
+     592,
+     66,
+     657,
+     136
+    ],
+    "w": 65,
+    "h": 70,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.olympus-clementines-bowl__08.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.olympus-clementines-bowl.jpg",
+    "source_sha256": "30df2e39c1af997b2f2779a79ab7a7fa0c4c6130e70860ce2994e6d39349d88c",
+    "box": [
+     659,
+     73,
+     707,
+     128
+    ],
+    "w": 48,
+    "h": 55,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.olympus-clementines-bowl__09.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.olympus-clementines-bowl.jpg",
+    "source_sha256": "30df2e39c1af997b2f2779a79ab7a7fa0c4c6130e70860ce2994e6d39349d88c",
+    "box": [
+     622,
+     137,
+     690,
+     190
+    ],
+    "w": 68,
+    "h": 53,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   }
+  ],
+  "01.prop.prompt-journal-and-desk-drawers": [
+   {
+    "file": "props/01.prop.prompt-journal-and-desk-drawers__01.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.prompt-journal-and-desk-drawers.jpg",
+    "source_sha256": "bcab590506cfd7dcc8be3afab5003e18df01603d3fb7ac730f8f3ee11c50b4dd",
+    "box": [
+     18,
+     13,
+     194,
+     227
+    ],
+    "w": 176,
+    "h": 214,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.prompt-journal-and-desk-drawers__02.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.prompt-journal-and-desk-drawers.jpg",
+    "source_sha256": "bcab590506cfd7dcc8be3afab5003e18df01603d3fb7ac730f8f3ee11c50b4dd",
+    "box": [
+     203,
+     13,
+     381,
+     227
+    ],
+    "w": 178,
+    "h": 214,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.prompt-journal-and-desk-drawers__03.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.prompt-journal-and-desk-drawers.jpg",
+    "source_sha256": "bcab590506cfd7dcc8be3afab5003e18df01603d3fb7ac730f8f3ee11c50b4dd",
+    "box": [
+     388,
+     42,
+     578,
+     218
+    ],
+    "w": 190,
+    "h": 176,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   }
+  ],
+  "01.prop.three-hearts-craft-ai-taskmaster": [
+   {
+    "file": "props/01.prop.three-hearts-craft-ai-taskmaster__01.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.three-hearts-craft-ai-taskmaster.jpg",
+    "source_sha256": "ee801d5731fce86ba58c6498678372ca656bb7b0a2aea05f5003834b8ae19f61",
+    "box": [
+     13,
+     4,
+     160,
+     211
+    ],
+    "w": 147,
+    "h": 207,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.three-hearts-craft-ai-taskmaster__02.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.three-hearts-craft-ai-taskmaster.jpg",
+    "source_sha256": "ee801d5731fce86ba58c6498678372ca656bb7b0a2aea05f5003834b8ae19f61",
+    "box": [
+     167,
+     0,
+     326,
+     215
+    ],
+    "w": 159,
+    "h": 215,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.prop.three-hearts-craft-ai-taskmaster__03.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.prop.three-hearts-craft-ai-taskmaster.jpg",
+    "source_sha256": "ee801d5731fce86ba58c6498678372ca656bb7b0a2aea05f5003834b8ae19f61",
+    "box": [
+     335,
+     6,
+     492,
+     215
+    ],
+    "w": 157,
+    "h": 209,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   }
+  ],
+  "02.prop.herb-moly-flower-12-petals": [
+   {
+    "file": "props/02.prop.herb-moly-flower-12-petals__01.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+    "source_sha256": "ca411c9efe631ad2001310854dee5cf97f486311d31802a3d4b81009bc19cbfd",
+    "box": [
+     83,
+     33,
+     148,
+     120
+    ],
+    "w": 65,
+    "h": 87,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.herb-moly-flower-12-petals__02.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+    "source_sha256": "ca411c9efe631ad2001310854dee5cf97f486311d31802a3d4b81009bc19cbfd",
+    "box": [
+     153,
+     6,
+     206,
+     100
+    ],
+    "w": 53,
+    "h": 94,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.herb-moly-flower-12-petals__03.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+    "source_sha256": "ca411c9efe631ad2001310854dee5cf97f486311d31802a3d4b81009bc19cbfd",
+    "box": [
+     210,
+     32,
+     276,
+     118
+    ],
+    "w": 66,
+    "h": 86,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.herb-moly-flower-12-petals__04.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+    "source_sha256": "ca411c9efe631ad2001310854dee5cf97f486311d31802a3d4b81009bc19cbfd",
+    "box": [
+     30,
+     89,
+     248,
+     491
+    ],
+    "w": 218,
+    "h": 402,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.herb-moly-flower-12-petals__05.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+    "source_sha256": "ca411c9efe631ad2001310854dee5cf97f486311d31802a3d4b81009bc19cbfd",
+    "box": [
+     248,
+     88,
+     329,
+     158
+    ],
+    "w": 81,
+    "h": 70,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.herb-moly-flower-12-petals__06.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+    "source_sha256": "ca411c9efe631ad2001310854dee5cf97f486311d31802a3d4b81009bc19cbfd",
+    "box": [
+     14,
+     154,
+     100,
+     204
+    ],
+    "w": 86,
+    "h": 50,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.herb-moly-flower-12-petals__07.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+    "source_sha256": "ca411c9efe631ad2001310854dee5cf97f486311d31802a3d4b81009bc19cbfd",
+    "box": [
+     259,
+     154,
+     344,
+     204
+    ],
+    "w": 85,
+    "h": 50,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.herb-moly-flower-12-petals__08.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+    "source_sha256": "ca411c9efe631ad2001310854dee5cf97f486311d31802a3d4b81009bc19cbfd",
+    "box": [
+     21,
+     215,
+     105,
+     265
+    ],
+    "w": 84,
+    "h": 50,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.herb-moly-flower-12-petals__09.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+    "source_sha256": "ca411c9efe631ad2001310854dee5cf97f486311d31802a3d4b81009bc19cbfd",
+    "box": [
+     251,
+     218,
+     332,
+     273
+    ],
+    "w": 81,
+    "h": 55,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.herb-moly-flower-12-petals__10.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+    "source_sha256": "ca411c9efe631ad2001310854dee5cf97f486311d31802a3d4b81009bc19cbfd",
+    "box": [
+     26,
+     270,
+     102,
+     336
+    ],
+    "w": 76,
+    "h": 66,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.herb-moly-flower-12-petals__11.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+    "source_sha256": "ca411c9efe631ad2001310854dee5cf97f486311d31802a3d4b81009bc19cbfd",
+    "box": [
+     86,
+     295,
+     127,
+     373
+    ],
+    "w": 41,
+    "h": 78,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.herb-moly-flower-12-petals__12.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+    "source_sha256": "ca411c9efe631ad2001310854dee5cf97f486311d31802a3d4b81009bc19cbfd",
+    "box": [
+     208,
+     293,
+     249,
+     371
+    ],
+    "w": 41,
+    "h": 78,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.herb-moly-flower-12-petals__13.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+    "source_sha256": "ca411c9efe631ad2001310854dee5cf97f486311d31802a3d4b81009bc19cbfd",
+    "box": [
+     233,
+     264,
+     294,
+     339
+    ],
+    "w": 61,
+    "h": 75,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.herb-moly-flower-12-petals__14.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.herb-moly-flower-12-petals.jpg",
+    "source_sha256": "ca411c9efe631ad2001310854dee5cf97f486311d31802a3d4b81009bc19cbfd",
+    "box": [
+     0,
+     379,
+     58,
+     468
+    ],
+    "w": 58,
+    "h": 89,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   }
+  ],
+  "02.prop.ibm-reel-rotary-phone-amphora": [
+   {
+    "file": "props/02.prop.ibm-reel-rotary-phone-amphora__01.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.ibm-reel-rotary-phone-amphora.jpg",
+    "source_sha256": "c49d2cd29eb72b7b6d7856518059c8fc642b1f074c484bd235a8835046de20c4",
+    "box": [
+     0,
+     0,
+     69,
+     128
+    ],
+    "w": 69,
+    "h": 128,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.ibm-reel-rotary-phone-amphora__02.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.ibm-reel-rotary-phone-amphora.jpg",
+    "source_sha256": "c49d2cd29eb72b7b6d7856518059c8fc642b1f074c484bd235a8835046de20c4",
+    "box": [
+     177,
+     8,
+     443,
+     139
+    ],
+    "w": 266,
+    "h": 131,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.ibm-reel-rotary-phone-amphora__03.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.ibm-reel-rotary-phone-amphora.jpg",
+    "source_sha256": "c49d2cd29eb72b7b6d7856518059c8fc642b1f074c484bd235a8835046de20c4",
+    "box": [
+     454,
+     15,
+     567,
+     133
+    ],
+    "w": 113,
+    "h": 118,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.ibm-reel-rotary-phone-amphora__04.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.ibm-reel-rotary-phone-amphora.jpg",
+    "source_sha256": "c49d2cd29eb72b7b6d7856518059c8fc642b1f074c484bd235a8835046de20c4",
+    "box": [
+     583,
+     3,
+     643,
+     158
+    ],
+    "w": 60,
+    "h": 155,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.ibm-reel-rotary-phone-amphora__05.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.ibm-reel-rotary-phone-amphora.jpg",
+    "source_sha256": "c49d2cd29eb72b7b6d7856518059c8fc642b1f074c484bd235a8835046de20c4",
+    "box": [
+     20,
+     144,
+     224,
+     324
+    ],
+    "w": 204,
+    "h": 180,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.ibm-reel-rotary-phone-amphora__06.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.ibm-reel-rotary-phone-amphora.jpg",
+    "source_sha256": "c49d2cd29eb72b7b6d7856518059c8fc642b1f074c484bd235a8835046de20c4",
+    "box": [
+     470,
+     164,
+     567,
+     392
+    ],
+    "w": 97,
+    "h": 228,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.ibm-reel-rotary-phone-amphora__07.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.ibm-reel-rotary-phone-amphora.jpg",
+    "source_sha256": "c49d2cd29eb72b7b6d7856518059c8fc642b1f074c484bd235a8835046de20c4",
+    "box": [
+     568,
+     164,
+     661,
+     392
+    ],
+    "w": 93,
+    "h": 228,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.ibm-reel-rotary-phone-amphora__08.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.ibm-reel-rotary-phone-amphora.jpg",
+    "source_sha256": "c49d2cd29eb72b7b6d7856518059c8fc642b1f074c484bd235a8835046de20c4",
+    "box": [
+     230,
+     214,
+     288,
+     388
+    ],
+    "w": 58,
+    "h": 174,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.ibm-reel-rotary-phone-amphora__09.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.ibm-reel-rotary-phone-amphora.jpg",
+    "source_sha256": "c49d2cd29eb72b7b6d7856518059c8fc642b1f074c484bd235a8835046de20c4",
+    "box": [
+     292,
+     188,
+     396,
+     392
+    ],
+    "w": 104,
+    "h": 204,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.ibm-reel-rotary-phone-amphora__10.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.ibm-reel-rotary-phone-amphora.jpg",
+    "source_sha256": "c49d2cd29eb72b7b6d7856518059c8fc642b1f074c484bd235a8835046de20c4",
+    "box": [
+     388,
+     203,
+     479,
+     392
+    ],
+    "w": 91,
+    "h": 189,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.ibm-reel-rotary-phone-amphora__11.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.ibm-reel-rotary-phone-amphora.jpg",
+    "source_sha256": "c49d2cd29eb72b7b6d7856518059c8fc642b1f074c484bd235a8835046de20c4",
+    "box": [
+     5,
+     278,
+     135,
+     388
+    ],
+    "w": 130,
+    "h": 110,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   }
+  ],
+  "02.prop.sprint-hourglasses-6-states": [
+   {
+    "file": "props/02.prop.sprint-hourglasses-6-states__01.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.sprint-hourglasses-6-states.jpg",
+    "source_sha256": "58de2838ea36ba3014aa18e3ce7347cf2c36f300755befac388623f0041b1059",
+    "box": [
+     16,
+     6,
+     114,
+     138
+    ],
+    "w": 98,
+    "h": 132,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.sprint-hourglasses-6-states__02.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.sprint-hourglasses-6-states.jpg",
+    "source_sha256": "58de2838ea36ba3014aa18e3ce7347cf2c36f300755befac388623f0041b1059",
+    "box": [
+     138,
+     6,
+     236,
+     138
+    ],
+    "w": 98,
+    "h": 132,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.sprint-hourglasses-6-states__03.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.sprint-hourglasses-6-states.jpg",
+    "source_sha256": "58de2838ea36ba3014aa18e3ce7347cf2c36f300755befac388623f0041b1059",
+    "box": [
+     258,
+     6,
+     356,
+     138
+    ],
+    "w": 98,
+    "h": 132,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.sprint-hourglasses-6-states__04.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.sprint-hourglasses-6-states.jpg",
+    "source_sha256": "58de2838ea36ba3014aa18e3ce7347cf2c36f300755befac388623f0041b1059",
+    "box": [
+     16,
+     147,
+     115,
+     276
+    ],
+    "w": 99,
+    "h": 129,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.sprint-hourglasses-6-states__05.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.sprint-hourglasses-6-states.jpg",
+    "source_sha256": "58de2838ea36ba3014aa18e3ce7347cf2c36f300755befac388623f0041b1059",
+    "box": [
+     137,
+     147,
+     236,
+     276
+    ],
+    "w": 99,
+    "h": 129,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.sprint-hourglasses-6-states__06.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.sprint-hourglasses-6-states.jpg",
+    "source_sha256": "58de2838ea36ba3014aa18e3ce7347cf2c36f300755befac388623f0041b1059",
+    "box": [
+     258,
+     147,
+     356,
+     276
+    ],
+    "w": 98,
+    "h": 129,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.prop.sprint-hourglasses-6-states__07.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.prop.sprint-hourglasses-6-states.jpg",
+    "source_sha256": "58de2838ea36ba3014aa18e3ce7347cf2c36f300755befac388623f0041b1059",
+    "box": [
+     386,
+     143,
+     413,
+     230
+    ],
+    "w": 27,
+    "h": 87,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   }
+  ],
+  "03.prop.shannon-unicycle-and-theseus-mouse": [
+   {
+    "file": "props/03.prop.shannon-unicycle-and-theseus-mouse__01.png",
+    "source": "story/odyssey-v3/images/kit_crops/03.prop.shannon-unicycle-and-theseus-mouse.jpg",
+    "source_sha256": "e57a44fece26ac29eaa9b488a114efc9939d8e64c1088a1eeb4423b0e9d0b0b6",
+    "box": [
+     30,
+     9,
+     129,
+     142
+    ],
+    "w": 99,
+    "h": 133,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/03.prop.shannon-unicycle-and-theseus-mouse__02.png",
+    "source": "story/odyssey-v3/images/kit_crops/03.prop.shannon-unicycle-and-theseus-mouse.jpg",
+    "source_sha256": "e57a44fece26ac29eaa9b488a114efc9939d8e64c1088a1eeb4423b0e9d0b0b6",
+    "box": [
+     151,
+     9,
+     250,
+     142
+    ],
+    "w": 99,
+    "h": 133,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/03.prop.shannon-unicycle-and-theseus-mouse__03.png",
+    "source": "story/odyssey-v3/images/kit_crops/03.prop.shannon-unicycle-and-theseus-mouse.jpg",
+    "source_sha256": "e57a44fece26ac29eaa9b488a114efc9939d8e64c1088a1eeb4423b0e9d0b0b6",
+    "box": [
+     272,
+     9,
+     370,
+     141
+    ],
+    "w": 98,
+    "h": 132,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/03.prop.shannon-unicycle-and-theseus-mouse__04.png",
+    "source": "story/odyssey-v3/images/kit_crops/03.prop.shannon-unicycle-and-theseus-mouse.jpg",
+    "source_sha256": "e57a44fece26ac29eaa9b488a114efc9939d8e64c1088a1eeb4423b0e9d0b0b6",
+    "box": [
+     401,
+     6,
+     567,
+     115
+    ],
+    "w": 166,
+    "h": 109,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/03.prop.shannon-unicycle-and-theseus-mouse__05.png",
+    "source": "story/odyssey-v3/images/kit_crops/03.prop.shannon-unicycle-and-theseus-mouse.jpg",
+    "source_sha256": "e57a44fece26ac29eaa9b488a114efc9939d8e64c1088a1eeb4423b0e9d0b0b6",
+    "box": [
+     607,
+     0,
+     675,
+     144
+    ],
+    "w": 68,
+    "h": 144,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/03.prop.shannon-unicycle-and-theseus-mouse__06.png",
+    "source": "story/odyssey-v3/images/kit_crops/03.prop.shannon-unicycle-and-theseus-mouse.jpg",
+    "source_sha256": "e57a44fece26ac29eaa9b488a114efc9939d8e64c1088a1eeb4423b0e9d0b0b6",
+    "box": [
+     5,
+     145,
+     506,
+     384
+    ],
+    "w": 501,
+    "h": 239,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/03.prop.shannon-unicycle-and-theseus-mouse__07.png",
+    "source": "story/odyssey-v3/images/kit_crops/03.prop.shannon-unicycle-and-theseus-mouse.jpg",
+    "source_sha256": "e57a44fece26ac29eaa9b488a114efc9939d8e64c1088a1eeb4423b0e9d0b0b6",
+    "box": [
+     442,
+     135,
+     552,
+     248
+    ],
+    "w": 110,
+    "h": 113,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/03.prop.shannon-unicycle-and-theseus-mouse__08.png",
+    "source": "story/odyssey-v3/images/kit_crops/03.prop.shannon-unicycle-and-theseus-mouse.jpg",
+    "source_sha256": "e57a44fece26ac29eaa9b488a114efc9939d8e64c1088a1eeb4423b0e9d0b0b6",
+    "box": [
+     513,
+     239,
+     658,
+     384
+    ],
+    "w": 145,
+    "h": 145,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   }
+  ],
+  "05.hero.great-bow-of-billing": [
+   {
+    "file": "props/05.hero.great-bow-of-billing__01.png",
+    "source": "story/odyssey-v3/images/kit_crops/05.hero.great-bow-of-billing.jpg",
+    "source_sha256": "abb46d31f780c822d869c9d4d74a4439264a1ddf260c8cfe8f678d425a7376a3",
+    "box": [
+     15,
+     39,
+     93,
+     242
+    ],
+    "w": 78,
+    "h": 203,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/05.hero.great-bow-of-billing__02.png",
+    "source": "story/odyssey-v3/images/kit_crops/05.hero.great-bow-of-billing.jpg",
+    "source_sha256": "abb46d31f780c822d869c9d4d74a4439264a1ddf260c8cfe8f678d425a7376a3",
+    "box": [
+     43,
+     14,
+     286,
+     35
+    ],
+    "w": 243,
+    "h": 21,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/05.hero.great-bow-of-billing__03.png",
+    "source": "story/odyssey-v3/images/kit_crops/05.hero.great-bow-of-billing.jpg",
+    "source_sha256": "abb46d31f780c822d869c9d4d74a4439264a1ddf260c8cfe8f678d425a7376a3",
+    "box": [
+     126,
+     39,
+     202,
+     242
+    ],
+    "w": 76,
+    "h": 203,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/05.hero.great-bow-of-billing__04.png",
+    "source": "story/odyssey-v3/images/kit_crops/05.hero.great-bow-of-billing.jpg",
+    "source_sha256": "abb46d31f780c822d869c9d4d74a4439264a1ddf260c8cfe8f678d425a7376a3",
+    "box": [
+     221,
+     39,
+     317,
+     253
+    ],
+    "w": 96,
+    "h": 214,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/05.hero.great-bow-of-billing__05.png",
+    "source": "story/odyssey-v3/images/kit_crops/05.hero.great-bow-of-billing.jpg",
+    "source_sha256": "abb46d31f780c822d869c9d4d74a4439264a1ddf260c8cfe8f678d425a7376a3",
+    "box": [
+     0,
+     245,
+     208,
+     253
+    ],
+    "w": 208,
+    "h": 8,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   }
+  ],
+  "06.hero.hendry-metal-lathe": [
+   {
+    "file": "props/06.hero.hendry-metal-lathe__01.png",
+    "source": "story/odyssey-v3/images/kit_crops/06.hero.hendry-metal-lathe.jpg",
+    "source_sha256": "bdfb8009cc0e9aec0da457b888bc10a245c47103f6d9e3a9db90e5887673d354",
+    "box": [
+     15,
+     41,
+     288,
+     200
+    ],
+    "w": 273,
+    "h": 159,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/06.hero.hendry-metal-lathe__02.png",
+    "source": "story/odyssey-v3/images/kit_crops/06.hero.hendry-metal-lathe.jpg",
+    "source_sha256": "bdfb8009cc0e9aec0da457b888bc10a245c47103f6d9e3a9db90e5887673d354",
+    "box": [
+     25,
+     16,
+     154,
+     38
+    ],
+    "w": 129,
+    "h": 22,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/06.hero.hendry-metal-lathe__03.png",
+    "source": "story/odyssey-v3/images/kit_crops/06.hero.hendry-metal-lathe.jpg",
+    "source_sha256": "bdfb8009cc0e9aec0da457b888bc10a245c47103f6d9e3a9db90e5887673d354",
+    "box": [
+     157,
+     17,
+     270,
+     39
+    ],
+    "w": 113,
+    "h": 22,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   }
+  ],
+  "01.hero.sprint-board-salt": [
+   {
+    "file": "props/01.hero.sprint-board-salt__01.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.hero.sprint-board-salt.jpg",
+    "source_sha256": "32d9067d0eaceb7b211afc8d52b29c9d51d4e672a246c38f4976eaea40655db9",
+    "box": [
+     17,
+     43,
+     296,
+     204
+    ],
+    "w": 279,
+    "h": 161,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.hero.sprint-board-salt__02.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.hero.sprint-board-salt.jpg",
+    "source_sha256": "32d9067d0eaceb7b211afc8d52b29c9d51d4e672a246c38f4976eaea40655db9",
+    "box": [
+     26,
+     16,
+     94,
+     39
+    ],
+    "w": 68,
+    "h": 23,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.hero.sprint-board-salt__03.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.hero.sprint-board-salt.jpg",
+    "source_sha256": "32d9067d0eaceb7b211afc8d52b29c9d51d4e672a246c38f4976eaea40655db9",
+    "box": [
+     97,
+     16,
+     160,
+     39
+    ],
+    "w": 63,
+    "h": 23,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/01.hero.sprint-board-salt__04.png",
+    "source": "story/odyssey-v3/images/kit_crops/01.hero.sprint-board-salt.jpg",
+    "source_sha256": "32d9067d0eaceb7b211afc8d52b29c9d51d4e672a246c38f4976eaea40655db9",
+    "box": [
+     162,
+     15,
+     225,
+     39
+    ],
+    "w": 63,
+    "h": 24,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   }
+  ],
+  "03.hero.knuthe-downward-ladder": [
+   {
+    "file": "props/03.hero.knuthe-downward-ladder__01.png",
+    "source": "story/odyssey-v3/images/kit_crops/03.hero.knuthe-downward-ladder.jpg",
+    "source_sha256": "5b3c9d32427275a2528508a711e809b0af158204d2b0dadb5651aaa5c6e5dc0e",
+    "box": [
+     40,
+     0,
+     78,
+     26
+    ],
+    "w": 38,
+    "h": 26,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/03.hero.knuthe-downward-ladder__02.png",
+    "source": "story/odyssey-v3/images/kit_crops/03.hero.knuthe-downward-ladder.jpg",
+    "source_sha256": "5b3c9d32427275a2528508a711e809b0af158204d2b0dadb5651aaa5c6e5dc0e",
+    "box": [
+     163,
+     10,
+     262,
+     230
+    ],
+    "w": 99,
+    "h": 220,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/03.hero.knuthe-downward-ladder__03.png",
+    "source": "story/odyssey-v3/images/kit_crops/03.hero.knuthe-downward-ladder.jpg",
+    "source_sha256": "5b3c9d32427275a2528508a711e809b0af158204d2b0dadb5651aaa5c6e5dc0e",
+    "box": [
+     22,
+     67,
+     156,
+     135
+    ],
+    "w": 134,
+    "h": 68,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   }
+  ],
+  "02.hero.black-ship-ferry": [
+   {
+    "file": "props/02.hero.black-ship-ferry__01.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.hero.black-ship-ferry.jpg",
+    "source_sha256": "c2313c51ac41224afc962634cd0bc12c5e9d2af1386a24d2c4b99a58612b2912",
+    "box": [
+     0,
+     0,
+     605,
+     261
+    ],
+    "w": 605,
+    "h": 261,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.hero.black-ship-ferry__02.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.hero.black-ship-ferry.jpg",
+    "source_sha256": "c2313c51ac41224afc962634cd0bc12c5e9d2af1386a24d2c4b99a58612b2912",
+    "box": [
+     134,
+     27,
+     269,
+     56
+    ],
+    "w": 135,
+    "h": 29,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.hero.black-ship-ferry__03.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.hero.black-ship-ferry.jpg",
+    "source_sha256": "c2313c51ac41224afc962634cd0bc12c5e9d2af1386a24d2c4b99a58612b2912",
+    "box": [
+     398,
+     21,
+     588,
+     237
+    ],
+    "w": 190,
+    "h": 216,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   },
+   {
+    "file": "props/02.hero.black-ship-ferry__04.png",
+    "source": "story/odyssey-v3/images/kit_crops/02.hero.black-ship-ferry.jpg",
+    "source_sha256": "c2313c51ac41224afc962634cd0bc12c5e9d2af1386a24d2c4b99a58612b2912",
+    "box": [
+     21,
+     94,
+     354,
+     233
+    ],
+    "w": 333,
+    "h": 139,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   }
+  ],
+  "03.hero.ibm-360-mainframe": [
+   {
+    "file": "props/03.hero.ibm-360-mainframe__01.png",
+    "source": "story/odyssey-v3/images/kit_crops/03.hero.ibm-360-mainframe.jpg",
+    "source_sha256": "af3f026b601064fdf9eb68de20e4c102ca2b53fcca0aa501ca33da8cc9900fee",
+    "box": [
+     19,
+     5,
+     336,
+     199
+    ],
+    "w": 317,
+    "h": 194,
+    "derived": "cut from JPEG kit crop; no native PNG exists"
+   }
+  ]
+ }
+}

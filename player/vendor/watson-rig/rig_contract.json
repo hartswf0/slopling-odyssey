@@ -1,0 +1,221 @@
+{
+  "schema": "watson-cardboard-rig-contract-v4-front-profile-prototype",
+  "character": "Watson / the Slopling",
+  "rig_id": "watson_master_b_front_v2",
+  "legacy_rig_ids": [
+    "watson-front-master-b-v2"
+  ],
+  "scope": "One Watson prototype with separate 15-card front and profile banks sharing a bounded 3D gait. Full cast and story integration remain incomplete.",
+  "status": "prototype",
+  "finished_natural_walk_completed": false,
+  "full_cast_production_fixed": false,
+  "source": "source/master_B.png",
+  "body_parts": 30,
+  "manifest": "manifest.json",
+  "labs": {
+    "joint_study": {
+      "file": "OPEN_RIG_LAB.html",
+      "scope": "Front-view neutral, modest arm bend, isolated foot lift, exploded cards, and joint overlays."
+    },
+    "walking_study": {
+      "file": "OPEN_WALK_LAB.html",
+      "scope": "FRONT / STRAIGHT ON and SIDE / PROFILE use distinct artwork banks. COMPARE / BOTH VIEWS shares gait/frame/scale in orthographic inspection, desktop columns and phone stacking."
+    }
+  },
+  "coordinates": {
+    "cards": "Source pixels; left/right mean viewer sides in the rest master; rest delta rotation is zero.",
+    "gait": "[x,y,z]; x lateral with left negative, y up, z forward; world floor is defined explicitly.",
+    "source_alpha_bounds": [
+      231,
+      7,
+      794,
+      1484
+    ],
+    "source_alpha_height_pixels": 1477,
+    "source_geometry_reference": "manifest.json: source_geometry; use alpha bounds and actual pivots, not padded PNG dimensions.",
+    "calibration_basis": "Registered artwork joints and profile-informed logical ankle; not independently measured anatomical centers.",
+    "profile_cards": "Source pixels; near maps to gait.left, far to gait.right; source silhouette height1477px."
+  },
+  "geometry_rules": {
+    "independent_part_scaling": false,
+    "global_uniform_rig_scaling": true,
+    "joint_parenting_required": true,
+    "front_joint_lab": "Use manifest rectangles at their original dimensions and inherited pivot rotations.",
+    "walking_projection": "Fixed registered 3D rig endpoints and camera projection determine foreshortening; no cosmetic per-part length/width fitting.",
+    "transverse_card_scale": "One native source-pixel/world scale, with camera perspective applied consistently.",
+    "bilateral_calibration": "Small left/right registered card-segment differences are averaged once into scalar lengths; no animated remeasurement and no anatomical-ground-truth claim.",
+    "joint_backing": "Solid concealed overlap attached to its owning segment; retain sufficient material through the required range.",
+    "visible_hardware": "One owner per joint; no brad-sized transparency holes in the digital art.",
+    "trouser_hem_owner": "shin",
+    "boot_owner": "leather shaft and foot",
+    "incompatible_view_mixing": false,
+    "fixed_registered_rig_segment_lengths": true,
+    "preserve_measured_source_proportions": true
+  },
+  "ground_and_connection_rules": {
+    "stance_anchor": "Fixed world coordinate for the duration of its stance event.",
+    "active_contact": "Heel, flat, or toe contact must remain on the floor without sliding.",
+    "root_travel": "Driven by traveled distance; phase derives from distance/strideLength.",
+    "reach_adjustment": "Report root.reachAdjustment explicitly; never compensate by moving a planted foot or changing a fixed registered rig segment length.",
+    "visible_connection": "Rendered shoulder, elbow, wrist, hip, knee, and ankle must read as connected; coincident pivots alone are insufficient.",
+    "visible_grounding": "Painted heel/sole contact must agree with the model contact; numerical contact checks alone are insufficient.",
+    "walk_review": "Inspect a complete loop with fixed ground references for foot drift, weight transfer, clearance, continuity, and self-occlusion.",
+    "anatomical_claim": "A numerical fixed-length pass certifies only the registered model constraints; it is not anatomical or natural-motion certification."
+  },
+  "view_bank": {
+    "file": "locomotion/direction_bank.json",
+    "front": "front_art_prototype",
+    "side": "articulated_profile_prototype",
+    "back": "reference_only_incomplete",
+    "references": "locomotion/existing_direction_references/ contains eight unmodified prior Watson PNGs, labelled by observed screen direction.",
+    "view_change_rule": "Select the matching bank. Camera view, character facing and travel are separate. Front artwork is never substituted for a profile bank.",
+    "profile_manifest": "profile/manifest.json"
+  },
+  "foot_depth_calibration": {
+    "measured": true,
+    "measurement_kind": "profile_artwork",
+    "anatomical_measurement": false,
+    "heel_depth_source_pixels": 45.63574105853079,
+    "toe_depth_source_pixels": 194.43924722637993,
+    "basis": "Observed flat far-profile shoe landmarks at the shared 1477px source height."
+  },
+  "demonstrated": {
+    "front_joint_states": [
+      "neutral",
+      "arm_bend",
+      "foot_lift"
+    ],
+    "controller_mechanics": [
+      "Fixed registered scalar rig-segment lengths",
+      "Alternating ground-locked stance and swing",
+      "Heel/flat/toe contact records",
+      "Distance-driven root travel",
+      "Front and side projection of one 3D skeleton",
+      "Soft-knee reach limits and lower swing clearance",
+      "Separate body-orientation channels and phased elbow/wrist motion"
+    ],
+    "front_walk_art": "Existing front cards run with a distinct lower logical ankle; changing heel/sole and foreshortened surfaces remain limited.",
+    "profile_walk_art": "Separate 15-part screen-right profile bank, native footwear/hand aspect, near/far layering and bounded gait rendering.",
+    "view_controls": "Nine passing actual-app headless script/event checks; see locomotion/proofs/view-controls-validation.json."
+  },
+  "not_completed": [
+    "Finished natural-looking front and profile locomotion approval",
+    "Complete rear-view bank",
+    "Turns, starts/stops, true sidesteps and curved-path contact planning",
+    "Seated and kneeling view banks",
+    "Full expression library in this prototype",
+    "Full-cast consistency and production repair",
+    "Actual story-node integration"
+  ],
+  "known_front_art_limits": [
+    "Painted boot contact may disagree visually with the grounded heel proxy at heel strike.",
+    "Frontal texture on a foreshortened swing shin can read as telescoping.",
+    "Flat cards cannot reveal newly exposed heel, sole, palm-back, or rear surfaces.",
+    "Whole-card depth ordering cannot resolve all self-occlusion.",
+    "Constructed hidden overlap texture is not finished exposed artwork."
+  ],
+  "generation_status": {
+    "state": "profile_generation_completed_remaining_art_refinements_pending",
+    "completed": [
+      "profile/source/master.png",
+      "profile/manifest.json",
+      "profile/parts/"
+    ],
+    "queue": "locomotion/generation_queue.json",
+    "requirements": "locomotion/NEXT_ART_REQUIREMENTS.txt"
+  },
+  "scene_motion_packet_example": "locomotion/scene_motion_packet_EXAMPLE_ONLY.json",
+  "scene_fields_required_for_future_assembly": [
+    "actual_story_node_id",
+    "rig_id",
+    "camera_view",
+    "uniform_rig_scale",
+    "calibration",
+    "motion_parameters",
+    "path",
+    "floor",
+    "contact_policy",
+    "expression_state",
+    "prop_states",
+    "set_layer_ids",
+    "transition"
+  ],
+  "review_evidence": [
+    "REVIEW_STATUS.json",
+    "profile/PROFILE_REVIEW_STATUS.json",
+    "locomotion/WALK_REVIEW_STATUS.json",
+    "locomotion/proofs/view-controls-validation.json",
+    "locomotion/view_proofs/view-render-record.json",
+    "profile/proofs/head_registration/Head_registration_before_after.png",
+    "profile/proofs/head_registration/head-cycle-review.json"
+  ],
+  "claim_boundary": "Mechanical consistency, distinct view banks and bounded artwork connectivity do not establish independent anatomical accuracy, a completed natural walk, or a fixed production cast.",
+  "parts_by_view": {
+    "front": 15,
+    "profile": 15
+  },
+  "active_view_bank_ids": {
+    "front": "watson-front-master-B",
+    "profile": "watson-profile-right-v1"
+  },
+  "locomotion_ankle_registration": {
+    "schema": "profile-informed-front-ankle-v1",
+    "shaft_mount_y": 1330,
+    "logical_ankle_y": 1379.1077737006278,
+    "front_sole_reference_y": 1484,
+    "ankle_height_pixels": 104.89222629937227,
+    "ankle_height_world_at_scale_1": 0.07101707941731365,
+    "foot_length_pixels": 240.07498828491072,
+    "foot_length_world_at_scale_1": 0.16254230757272223,
+    "heel_run_pixels": 45.63574105853079,
+    "toe_run_pixels": 194.43924722637993,
+    "measurement_kind": "Manually registered profile artwork, transferred to the front source at the same silhouette scale.",
+    "anatomical_measurement": false,
+    "source": "manifest.json: source_geometry.locomotion_registration",
+    "separation": "The y1330 shaft mount remains a card attachment. The lower logical ankle is a distinct moving-foot joint. Front PNGs are unchanged."
+  },
+  "known_profile_art_limits": [
+    "Profile illustration has slight three-quarter details in face/jacket; silhouette and limbs face screen-right.",
+    "Source boot brad is a mechanical attachment and not a measured anatomical ankle.",
+    "Source art is one contact pose; broad movement may reveal reconstructed hidden material.",
+    "Canonical shoe dimensions now come from the observed far profile shoe; native near/far profiles still differ by about12.5px in attachment-to-sole height and about4px in length. The renderer preserves shoe aspect and reports residual attachment error."
+  ],
+  "historical_walking_evidence": "locomotion/history/pre_relaxed_walk/ contains the prior gait; locomotion/history/pre_profile_update/ predates profile-informed ankle registration. Neither is current motion validation.",
+  "sources_by_view": {
+    "front": "source/master_B.png",
+    "profile": "profile/source/master.png"
+  },
+  "motion_revision": {
+    "id": "relaxed-walk-and-profile-head-v1",
+    "scope": "Bounded animation revision; natural-walk approval remains incomplete.",
+    "full_stride_body_heights": 0.54,
+    "step_length_body_heights": 0.27,
+    "previous_full_stride_body_heights": 0.36,
+    "cycle_duration_seconds": 1.2,
+    "speed_body_heights_per_second": 0.45,
+    "foot_separation": "0.5 * registered hipWidth; approximately 0.066 body heights",
+    "peak_swing_clearance_body_heights": 0.024,
+    "stance_fraction_per_foot": 0.6,
+    "swing_horizontal_interpolation": "cubic smoothstep",
+    "minimum_knee_flexion_degrees": {
+      "stance": 10,
+      "swing": 6
+    },
+    "requested_hip_height": "sourceHipHeight - 0.013H - 0.009H*cos(4*pi*cycle - 0.2*pi); reach adjustment can lower it further",
+    "body_orientation": "gait.bodyOrientation contains pelvisPitch/Roll/Yaw, torsoPitch/Roll/Yaw and headPitch/Roll/Yaw in radians; subtle phased elbow flexion and wrist lag are also applied.",
+    "measurement_claim": "Animation tuning values; not universal physiological measurements or natural-motion certification."
+  },
+  "profile_head_registration": {
+    "source_collar_pixels": [
+      558,
+      280
+    ],
+    "attachment": "Head neck attachment follows the torso-transformed source collar.",
+    "native_head_scale_preserved": true,
+    "sample_count": 24,
+    "max_attachment_gap_pixels": 5.684341886080802e-14,
+    "interpretation": "Effectively zero numerical gap; no head-scale anisotropy in the sampled cycle. This is a registration check, not natural-motion approval.",
+    "comparison_image": "profile/proofs/head_registration/Head_registration_before_after.png",
+    "check_record": "profile/proofs/head_registration/head-cycle-review.json"
+  }
+}

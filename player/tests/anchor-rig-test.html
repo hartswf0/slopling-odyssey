@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><title>Anchor rig motion test</title>
+<style>body{margin:0;background:#e9dcc3;font:13px monospace}canvas{display:block}</style>
+<canvas id="c" width="1500" height="560"></canvas>
+<script type="module">
+// Motion test for the father's anchor rig: assembled reference vs rig at rest, then a raised right arm.
+import { makeAnchorRig, drawAnchorRig } from '../anchor-rig.js';
+const st = await (await fetch('../staging.json')).json(), r = st.rigs.char_father;
+const load = s => new Promise(res => { const i = new Image(); i.onload = () => res(i); i.src = '../' + s; });
+const images = {}; for (const [k, v] of Object.entries(r.files)) images[k] = await load(v);
+const rig = makeAnchorRig(r.meta, images), ref = await load(st.figures.char_father.src);
+const x = document.getElementById('c').getContext('2d'); x.font = '14px monospace';
+const H = 470, foot = 520;
+x.drawImage(ref, 150 - H * ref.width / ref.height / 2, foot - H, H * ref.width / ref.height, H); x.fillText('ASSEMBLED_REFERENCE', 70, 540);
+drawAnchorRig(x, rig, {}, 450, foot, H); x.fillText('anchor rig, rest', 380, 540);
+const poses = [['arm out', { upper_arm_right: -55, forearm_right: -20 }], ['hand to shoulder', { upper_arm_right: -78, forearm_right: -42, hand_right_relaxed: 10 }], ['both, small', { upper_arm_left: 12, upper_arm_right: -12 }]];
+poses.forEach(([n, p], i) => { const a = drawAnchorRig(x, rig, p, 760 + i * 300, foot, H); x.fillText(n, 700 + i * 300, 540); x.fillStyle = 'red'; x.beginPath(); x.arc(a.hand_right[0], a.hand_right[1], 5, 0, 7); x.fill(); x.fillStyle = 'black'; });
+window.done = rig.ok;
+</script>

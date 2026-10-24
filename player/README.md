@@ -1,0 +1,68 @@
+# Slopling's Odyssey player
+
+The ASAPS story, playable on a cardboard toy-theatre stage. The **real ASAPS engine** (built from ASAPS Modern `packages/core`) runs the 97-beat story graph: choices, conditions, counters, the father's moods and sentiments, and the four endings. A cardboard renderer performs each beat with this repository's own cutouts, sets and story props.
+
+## Play it
+
+```sh
+cd player
+python3 -m http.server 8000      # any static server; the page fetches JSON, so file:// won't work
+# open http://localhost:8000
+```
+
+Press **Play**. "Start from" lets you rehearse to a later point. ASAPS plays the earlier beats with a fixed, seeded set of choices, then hands control to you:
+
+- the beginning;
+- the Call;
+- the Voyage hub;
+- the Underworld;
+- Ithaca carrying the calipers;
+- Ithaca after taking the chair.
+
+The side panel shows live ASAPS state: Craft, Standing, Cunning, Meaning, Leverage, and how much the father sees the title versus the son.
+
+Everything the player needs is in `player/`. You don't need to restore the archives to play it.
+
+## How it fits together
+
+| Piece | What it is |
+|---|---|
+| `vendor/asaps/asaps-core.slopling.js` | ASAPS core 2.0.0 (ASAPS Modern v0.9.133, commit `40aa002`), bundled with esbuild from `slopling-entry.ts`. That entry exports `StoryEngine` and loads a Story Generator file the way ASAPS's own `PlayerEngine.createStoryFromJson` does. PolyForm Noncommercial: see `vendor/asaps/LICENSE.md`. |
+| `player.js` | `CardboardRenderer` implements ASAPS's `IRenderer`. ASAPS calls `renderText`, `renderDialog`, `renderChoices`, `renderPropSelection` and so on; the renderer stages the beat and returns the player's choice. Lines that name a physical event trigger stage cues (naming the trees, the hand on the shoulder, the cut tag). |
+| `stage.js` | Canvas stage. Watson is the working 15-card front rig from `Watson_Working_Reference.zip`. Everyone else is assembled from their scale-matched cards at the recorded anchors (`anchor-rig.js`), with leg and arm cards lengthened so they stand as adults. Craft is drawn as a line of light; Standing as a paper tag. |
+| `staging.json`, `assets/` | Built by `tools/build_player_assets.py` from the scene dependencies and packet crosswalk, with authored cast fixes. Native PNG bytes are copied unchanged; `assets/SELECTION.json` records each one's packet, source member and hash. |
+| `layouts.json` | Set layouts for 22 places, authored with `tools/preview_set_layout.py`. The orchard layout lives in `stage.js`. |
+| `props/`, `props.json` | Story props (calipers, offer letter states, clementines, prompt journal, bow, lathe, phone, hourglasses, moly, IBM 360, Knuthe's ladder). No native PNG exists for these, so `tools/extract_kit_props.py` cuts them from the JPEG kit crops and records each source and crop box in `props/PROPS.json`. |
+
+## Rebuild
+
+```sh
+python3 tools/restore_packets.py          # restores production/ (about 1 GB, git-ignored)
+python3 tools/build_player_assets.py      # staging.json + assets/
+python3 tools/extract_kit_props.py        # props/
+node player/tests/conformance.mjs         # ASAPS conformance (below)
+```
+
+To rebuild the ASAPS bundle, clone ASAPS Modern, `npm install --workspace @asaps/core`, then
+`esbuild packages/core/slopling-entry.ts --bundle --format=esm --platform=browser --outfile=asaps-core.slopling.js` with the entry file from `vendor/asaps/`.
+
+## Validation
+
+**Measured**
+- `node player/tests/conformance.mjs`: across rehearsal seeds 1–60, real ASAPS reaches all four endings and no route loops. The counts were Argos 27, Telemachus 25, Ajax's Silence 5, Laertes's Orchard 3.
+- The two Ithaca rehearsal presets hand over in recorded states, and the browser matched Node exactly. A sound effect that drew on the seeded `Math.random` had broken this; it now uses its own random source.
+- With no AI provider, ASAPS's AI conversation beat shows its own "requires configuration" line and the story continues.
+
+**Judged** (independent critics with fresh context, from still frames; no reviewer watched motion or heard sound)
+1. **First critic, orchard passage: reference stronger.** The gesture was told, not performed. Single cards couldn't reach.
+2. **Inquiry:** I rebuilt the father from his cards at the recorded anchors. At rest it matches his assembled reference (`tests/anchor-rig-test.html`), so his arm can rise.
+3. **Second critic: acceptance condition met, narrowly.** The hand rests on the shoulder, faces are clear, and the tag lies cut on the floor. Its refinements are applied: the hand sits higher, the light dims at contact, and the page fits at 1400×900.
+4. **User review: the cast looked squat, and the story props were missing.** Since then, the cast is lengthened at the anchors (`tests/proportion-test.html`) and props come from the kit crops. Neither change has had an independent review yet.
+
+## Known limits
+
+- **Proportions.** Lengthening the limb cards stretches the knee brads into ovals. That's a compromise with the native art, not new art.
+- **Who appears where.** Cast and set bindings come from the semantic crosswalk plus authored fixes. Beats a critic hasn't seen may still put the wrong person on stage.
+- **Text versus art.** The father is described in an "old jacket" but his art wears short sleeves.
+- **Coverage.** Mau Piailug's passage uses only the sea set; no figure.
+- **Unrestored assets.** `production/` stays git-ignored. Only the selected files are copied into `player/assets/`.

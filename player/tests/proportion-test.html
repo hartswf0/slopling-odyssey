@@ -1,0 +1,21 @@
+<!doctype html><meta charset="utf-8"><title>Proportion test</title>
+<style>body{margin:0;background:#e9dcc3;font:14px monospace}canvas{display:block}</style>
+<canvas id="c" width="1500" height="600"></canvas>
+<script type="module">
+// Proportion experiment: the father's native cards at recorded anchors, as assembled vs with
+// longer legs/torso (length stretch along each card), all at the same overall height as Watson.
+import { makeAnchorRig, drawAnchorRig } from '../anchor-rig.js';
+const st = await (await fetch('../staging.json')).json(), r = st.rigs.char_father;
+const load = s => new Promise(res => { const i = new Image(); i.onload = () => res(i); i.src = '../' + s; });
+const images = {}; for (const [k, v] of Object.entries(r.files)) images[k] = await load(v);
+const x = document.getElementById('c').getContext('2d');
+const H = 520, foot = 560;
+const watsonRef = await load(st.figures.char_player.src);
+const variants = [
+  ['as assembled', {}],
+  ['legs ×1.35', { thigh_left: 1.35, thigh_right: 1.35, shin_left: 1.35, shin_right: 1.35 }],
+  ['legs ×1.45, torso ×1.12', { thigh_left: 1.45, thigh_right: 1.45, shin_left: 1.45, shin_right: 1.45, torso_front: 1.12, upper_arm_left: 1.15, upper_arm_right: 1.15, forearm_left: 1.15, forearm_right: 1.15 }],
+];
+variants.forEach(([n, s], i) => { const rig = makeAnchorRig(r.meta, images); rig.stretch = s; drawAnchorRig(x, rig, {}, 260 + i * 380, foot, H); x.fillText(n, 160 + i * 380, 590); });
+window.done = true;
+</script>
