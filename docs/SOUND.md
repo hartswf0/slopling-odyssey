@@ -6,8 +6,8 @@ Half of what sells a cardboard cutout is what you hear when it moves. The player
 |---|---|---|
 | **Voices** | Kokoro-82M v1.0 (Apache-2.0), pre-rendered offline. One voice per role; Odie's own choices stay unvoiced, because the player speaks them. | `tools/render_voices.py` → `player/voices/` |
 | **Effects** | Synthesized in Web Audio from stage events (below). | `player/sound.js` |
-| **Ambience** | One looping bed per kind of place: office, sea, orchard, workshop, underworld, train, temple, interior. | `sound.js` `bed()` |
-| **Score** | A small procedural score in the same file, described below. | `sound.js` `THEMES` |
+| **Ambience** | Moving beds only (waves, wind) plus sparse room events (keyboards, a far-off press, birds, the train). There are no standing tones: an idle 45 s in the office went from one band sounding through every frame to none above 41% of frames, and near-silence 71% of the time. | `sound.js` `bed()` |
+| **Score** | A small procedural score in the same file: eight bars of music, then eight bars of rest. | `sound.js` `THEMES` |
 
 The score's themes:
 - **The ladder:** pizzicato and a rising music-box arpeggio.

@@ -11,6 +11,8 @@ const STRETCH = { thigh_left: 1.35, thigh_right: 1.35, shin_left: 1.35, shin_rig
 const TAU = Math.PI * 2;
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+// the stage's own random source: Math.random belongs to the ASAPS engine, so a replayed run (undo) takes the same branches
+let seed = 7; const rand = () => ((seed = Math.imul(seed ^ (seed >>> 15), 0x2c1b3c6d) + 0x6d2b79f5 | 0) >>> 0) / 4294967296;
 
 const imgCache = new Map();
 const trimCache = new Map();
@@ -130,7 +132,7 @@ export class Stage {
       const img = fig.src ? await loadImage(fig.src) : null;
       const f = this.figures.get(id);
       if (f && !f.leaving) { if (!f.held) f.tx = tx; f.chorus = isChorus; continue; }
-      this.figures.set(id, { id, img, w: fig.w, h: fig.h, x: tx > 640 ? W + 260 : -260, tx, lean: 0, motif: this.motifs.includes(id), chorus: isChorus, leaving: false, arm: 0, armA: 74, phase: Math.random() * 6 });
+      this.figures.set(id, { id, img, w: fig.w, h: fig.h, x: tx > 640 ? W + 260 : -260, tx, lean: 0, motif: this.motifs.includes(id), chorus: isChorus, leaving: false, arm: 0, armA: 74, phase: rand() * 6 });
       this.emit('enter', { x: tx, chorus: isChorus });
     }
   }
@@ -164,6 +166,7 @@ export class Stage {
       if (p.lift) { x.globalCompositeOperation = 'source-over'; x.shadowColor = 'rgba(255,230,160,.8)'; x.shadowBlur = 22; }
       else { x.shadowColor = 'rgba(20,10,0,.45)'; x.shadowBlur = 10; x.shadowOffsetY = 6; }
       x.drawImage(p.img, -w / 2, -h, w, h); x.restore();
+      this.hits.push({ kind: 'prop', id: p.key, r: [cx - w / 2, by - lift - h, cx + w / 2, by - lift] });
     }
   }
   // Stage cues: physical events the story text names, performed by the cards.
@@ -233,7 +236,7 @@ export class Stage {
   }
   onFrame(now) {
     const x = this.x, t = (now - this.t0) / 1000;
-    x.setTransform(1, 0, 0, 1, 0, 0); x.clearRect(0, 0, W, H);
+    x.setTransform(1, 0, 0, 1, 0, 0); x.clearRect(0, 0, W, H); this.hits = [];
     x.filter = this.memory ? 'sepia(0.8) saturate(0.75) brightness(1.04)' : 'none'; // the Hendry works, remembered
     const lay = this.layoutFor(this.place) || { wash: ['#c9a777', '#6e5236'], pieces: [] };
     // wash + proscenium board
@@ -251,6 +254,7 @@ export class Stage {
       const h = (f.motif ? 330 : FIG_H) * depth, w = h * f.w / f.h, bob = speaking ? (lvl != null ? -lvl * 3.2 : Math.sin(t * 9) * 1.6) : 0;
       const lift = f.reach ? 0 : f.lean * 12, tilt = f.reach ? 0 : (f.x < 640 ? 1 : -1) * f.lean * 0.04 + (f.tilt || 0);
       const footY = FLOOR + 8 - (f.chorus ? 30 : 0);
+      this.hits.push({ kind: 'fig', id, r: [f.x - w * 0.42, footY - h, f.x + w * 0.42, footY] });
       x.save(); x.translate(f.x, footY - lift + bob); x.rotate(tilt);
       if (mode === 'shade') { x.globalAlpha = 0.5; x.filter = 'grayscale(1) brightness(0.8)'; }
       x.strokeStyle = 'rgba(30,22,14,.55)'; x.lineWidth = 2; x.beginPath(); x.moveTo(0, -4); x.lineTo(f.x < 640 ? -160 : 160, 40); x.stroke();
@@ -260,9 +264,9 @@ export class Stage {
         // jointed father: his screen-left arm rises toward Watson when reaching
         f.arm += ((f.reach ? 1 : 0) - f.arm) * 0.04;
         const a = f.arm, g = speaking ? (lvl != null ? Math.min(1, lvl * 1.6) : 1) : 0; f.talk = (f.talk || 0) + (g - (f.talk || 0)) * 0.06;
-        const ph = t + (f.phase || 0);
+        const ph = t + (f.phase || 0), pk = f.poke ? clamp(1 - (performance.now() - f.poke) / 900, 0, 1) : 0;
         let extra = { upper_arm_left: a * f.armA, forearm_left: a * 24, hand_left_relaxed: -a * 12,
-          upper_arm_right: -f.talk * (14 + Math.sin(t * 2.3) * 6), forearm_right: -f.talk * (38 + Math.sin(t * 3.1) * 10), head: Math.sin(t * 1.3 + f.x) * 1.2 };
+          forearm_right: -f.talk * (38 + Math.sin(t * 3.1) * 10), head: Math.sin(t * 1.3 + f.x) * 1.2 + Math.sin(pk * 14) * 7 * pk, upper_arm_right: -f.talk * (14 + Math.sin(t * 2.3) * 6) - Math.sin(pk * Math.PI) * 20 };
         // crowd actions: the Greeks' applause, the Oracle's chant, the shades' drift; Mau and the learner stay still
         if (mode === 'clap') { const c = (Math.sin(ph * 9) + 1) / 2; if (c > 0.97 && !(f.cPrev > 0.97)) this.emit('clap', { x: f.x }); f.cPrev = c; extra = { upper_arm_left: 22, forearm_left: 92 + c * 16, upper_arm_right: -22, forearm_right: -92 - c * 16, head: -2 }; }
         if (mode === 'chant') { const c = Math.sin(ph * 2.4); if (c > 0.98 && !(f.cPrev > 0.98)) this.emit('chant', { x: f.x }); f.cPrev = c; extra = { upper_arm_left: 150 + c * 10, forearm_left: 10, upper_arm_right: -150 - c * 10, forearm_right: -10, head: -6 }; }
@@ -272,7 +276,7 @@ export class Stage {
         rig.stretch = STRETCH;
         const pts = drawAnchorRig(x, rig, extra, 0, 0, h + 6);
         f.hand = [f.x + (f.flip ? -1 : 1) * pts.hand_left[0], FLOOR + 8 + pts.hand_left[1]];
-      } else if (f.img) x.drawImage(f.img, -w / 2, -h, w, h);
+      } else if (f.img) { const pk = f.poke ? clamp(1 - (performance.now() - f.poke) / 600, 0, 1) : 0; x.drawImage(f.img, -w / 2, -h - Math.sin(pk * Math.PI) * 14, w, h); }
       x.restore();
       const plaque = this.staging.thinkers?.[id];
       if (plaque) { // thinkers carry a name plaque at their feet
@@ -310,11 +314,61 @@ export class Stage {
     if (this.panLabel) { x.save(); x.font = '700 20px "Courier Prime", monospace'; const tw = x.measureText(this.panLabel).width + 40;
       x.translate(W / 2, 26); x.fillStyle = '#f2e6cc'; x.strokeStyle = '#8a6a43'; x.lineWidth = 2; x.shadowColor = 'rgba(0,0,0,.4)'; x.shadowBlur = 8;
       x.beginPath(); x.rect(-tw / 2, 0, tw, 38); x.fill(); x.stroke(); x.shadowBlur = 0; x.fillStyle = '#2a1c0e'; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText(this.panLabel, 0, 19); x.restore(); }
+    this.drawAffordances(t);
     // grain/vignette
     const v = x.createRadialGradient(W / 2, H / 2, H * .35, W / 2, H / 2, H * .95); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.38)'); x.fillStyle = v; x.fillRect(0, 0, W, H);
     // scene change wipe
     const since = now - this.lastSwitch; if (since < 420) { x.fillStyle = `rgba(18,12,6,${1 - since / 420})`; x.fillRect(0, 0, W, H); }
     requestAnimationFrame(this.onFrame);
+  }
+  // ---------- what you can click ----------
+  // hit test in stage pixels; topmost first. Empty stage answers nothing.
+  hitAt(px, py) { for (let i = this.hits.length - 1; i >= 0; i--) { const h = this.hits[i], [a, b, c, d] = h.r; if (px >= a && px <= c && py >= b && py <= d) return h; } return null; }
+  same(a, b) { return a && b && a.kind === b.kind && (a.id === b.id || (a.kind === 'prop' && b.id && a.id.split('_')[0] === b.id.split('_')[0])); }
+  poke(hit) {
+    if (hit.kind === 'fig') { if (hit.id === 'char_player') { this.setWatsonPose('open'); setTimeout(() => this.setWatsonPose('idle'), 900); } else { const f = this.figures.get(hit.id); if (f) f.poke = performance.now(); } }
+    this.inspect = { hit, t: performance.now() }; this.emit(hit.kind === 'prop' ? 'prop' : 'pose', { x: (hit.r[0] + hit.r[2]) / 2, h: 60, delta: 30 });
+  }
+  labelFor(hit) {
+    if (hit.kind === 'prop') return hit.id.replace(/_(native|open|glow|strung|unstrung)$/, '').replace(/_/g, ' ');
+    if (hit.id === 'char_player') return 'Odie (you)';
+    return this.staging.thinkers?.[hit.id] || this.staging.figures[hit.id]?.name || hit.id.replace(/^char_|^extra_/, '').replace(/_+/g, ' ');
+  }
+  // numbered badges over objects a current choice is about; hover ring; the inspect tag
+  drawAffordances(t) {
+    const x = this.x, tag = (cx, cy, txt, fill, ink) => {
+      x.font = '700 20px "Atkinson Hyperlegible", system-ui, sans-serif'; const tw = x.measureText(txt).width + 24;
+      x.save(); x.fillStyle = fill; x.shadowColor = 'rgba(0,0,0,.5)'; x.shadowBlur = 8; x.beginPath(); x.roundRect(cx - tw / 2, cy - 17, tw, 34, 17); x.fill(); x.shadowBlur = 0;
+      x.fillStyle = ink; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText(txt, cx, cy + 1); x.restore();
+    };
+    const top = h => [(h.r[0] + h.r[2]) / 2, Math.max(24, h.r[1] - 22)];
+    if (this.hover && !this.marks?.some(m => this.same(this.hover, m))) { const [cx, cy] = top(this.hover); x.save(); x.strokeStyle = 'rgba(255,240,200,.85)'; x.lineWidth = 3; x.setLineDash([8, 6]); x.beginPath(); x.ellipse(cx, this.hover.r[3] + 4, (this.hover.r[2] - this.hover.r[0]) / 2, 12, 0, 0, TAU); x.stroke(); x.restore(); }
+    for (const m of this.marks || []) {
+      const h = this.hits.find(q => this.same(q, m)); if (!h) continue; const [cx, cy] = top(h), pulse = 0.5 + 0.5 * Math.sin(t * 4);
+      x.save(); x.strokeStyle = `rgba(255,214,120,${0.5 + pulse * 0.5})`; x.lineWidth = 4; x.beginPath(); x.ellipse(cx, h.r[3] + 4, (h.r[2] - h.r[0]) / 2 + pulse * 6, 14 + pulse * 3, 0, 0, TAU); x.stroke(); x.restore();
+      tag(cx, cy, `${m.n}  ${m.short || ''}`.trim(), '#ffd36e', '#1d1406');
+    }
+    const ins = this.inspect; if (ins && performance.now() - ins.t < 2600) { const h = this.hits.find(q => this.same(q, ins.hit)) || ins.hit, [cx, cy] = top(h); tag(cx, cy - (this.marks?.some(m => this.same(h, m)) ? 40 : 0), this.labelFor(ins.hit), 'rgba(242,230,204,.96)', '#2a1c0e'); }
+  }
+  // thumbnails drawn from the real assets: a set at its authored layout, a figure's head, a prop
+  async thumb(kind, id, w = 240, h = 135) {
+    const key = kind + ':' + id + ':' + w; (this.thumbs ||= new Map()); if (this.thumbs.has(key)) return this.thumbs.get(key);
+    const make = (async () => {
+      const c = document.createElement('canvas'); c.width = w; c.height = h; const g = c.getContext('2d');
+      if (kind === 'place') {
+        const lay = this.layoutFor(id), set = this.staging.sets[id]; if (!lay || !set) return null;
+        const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, lay.wash[0]); gr.addColorStop(1, lay.wash[1]); g.fillStyle = gr; g.fillRect(0, 0, w, h);
+        g.scale(w / W, h / H);
+        for (const layer of ['back', 'floor', 'mid', 'front']) for (const [pid, cx, by, ph, ly] of lay.pieces) { if (ly !== layer) continue; const src = set.pieces.find(p => p.id === pid)?.src; const im = src && await loadImage(src); if (im) { const pw = ph * im.width / im.height; g.drawImage(im, cx - pw / 2, by - ph, pw, ph); } }
+        return c.toDataURL('image/jpeg', 0.8);
+      }
+      let im = null;
+      if (kind === 'fig') im = this.staging.rigs?.[id] ? await loadImage(this.staging.rigs[id].files.head) : id === 'char_player' ? this.rig.images.head : this.staging.figures[id]?.src ? await loadImage(this.staging.figures[id].src) : null;
+      if (kind === 'prop') im = await this.propImage(id);
+      if (!im) return null; const k = Math.min(w / im.width, h / im.height) * 0.92; g.drawImage(im, (w - im.width * k) / 2, (h - im.height * k) / 2, im.width * k, im.height * k);
+      return c.toDataURL('image/png');
+    })();
+    this.thumbs.set(key, make); return make;
   }
   drawWatson(t) {
     const x = this.x, w = this.watson, { api, manifest, images } = this.rig;
@@ -330,6 +384,7 @@ export class Stage {
     x.save(); x.shadowColor = 'rgba(15,8,0,.5)'; x.shadowBlur = 14; x.shadowOffsetX = 6; x.shadowOffsetY = 10; x.drawImage(rc, dx, dy, dw, dh); x.restore();
     const map = ([px, py]) => [dx + (px * s + info.tx) * k, dy + (py * s + info.ty) * k];
     this.watsonPts = { shoulder: map(info.pivots.upper_arm_right), head: map(info.pivots.head) };
+    this.hits.push({ kind: 'fig', id: 'char_player', r: [w.x - 70, FLOOR + 8 - FIG_H, w.x + 70, FLOOR + 8] });
     // Craft: line of light from his working hand, strength from the craft counter.
     const surge = this.surge ? clamp(1 - (performance.now() - this.surge) / 5000, 0, 1) : 0;
     const touching = [...this.figures.values()].some(f => f.reach && f.arm > 0.85);

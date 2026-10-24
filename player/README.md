@@ -19,7 +19,15 @@ Press **Play**. "Start from" lets you rehearse to a later point. ASAPS plays the
 - Ithaca carrying the calipers;
 - Ithaca after taking the chair.
 
-The voices, effects and score can each be switched off in the Sound panel; see [`docs/SOUND.md`](../docs/SOUND.md).
+**How it plays.** One screen that never scrolls.
+- Text is paged to fit the panel and turns with the voice; tap the text to read on.
+- Choices are numbered buttons showing the place, prop or person they're about. The same object carries a matching badge on the stage, and clicking it there chooses it.
+- Clicking any person or prop makes them react and shows their name; empty stage does nothing.
+- Island choices open as a chart. **Map** shows the journey, with unvisited places dark.
+- **Back** returns to your last choice by replaying the run under the same seed.
+- Keys: Space or Enter continue, 1–9 choose, M map, Esc close.
+
+The voices, effects and score can each be switched off from the menu (☰); see [`docs/SOUND.md`](../docs/SOUND.md).
 
 The side panel shows live ASAPS state: Craft, Standing, Cunning, Meaning, Leverage, and how much the father sees the title versus the son.
 
@@ -30,6 +38,7 @@ Everything the player needs is in `player/`. You don't need to restore the archi
 | Piece | What it is |
 |---|---|
 | `vendor/asaps/asaps-core.slopling.js` | ASAPS core 2.0.0 (ASAPS Modern v0.9.133, commit `40aa002`), bundled with esbuild from `slopling-entry.ts`. That entry exports `StoryEngine` and loads a Story Generator file the way ASAPS's own `PlayerEngine.createStoryFromJson` does. PolyForm Noncommercial: see `vendor/asaps/LICENSE.md`. |
+| `ui.js` | The surface: paging, choices with asset thumbnails, stage badges and clicks, the chart and the journey map, Back. |
 | `player.js` | `CardboardRenderer` implements ASAPS's `IRenderer`. ASAPS calls `renderText`, `renderDialog`, `renderChoices`, `renderPropSelection` and so on; the renderer stages the beat and returns the player's choice. Lines that name a physical event trigger stage cues (naming the trees, the hand on the shoulder, the cut tag). |
 | `stage.js` | Canvas stage. Watson is the working 15-card front rig from `Watson_Working_Reference.zip`. Everyone else is assembled from their scale-matched cards at the recorded anchors (`anchor-rig.js`), with leg and arm cards lengthened so they stand as adults. Craft is drawn as a line of light; Standing as a paper tag. |
 | `staging.json`, `assets/` | Built by `tools/build_player_assets.py` from the scene dependencies and packet crosswalk, with authored cast fixes. Native PNG bytes are copied unchanged; `assets/SELECTION.json` records each one's packet, source member and hash. |

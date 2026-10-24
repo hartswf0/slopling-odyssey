@@ -41,7 +41,6 @@ export class Sound {
     this.applyLevels();
     this.noiseBuf = this.makeNoise(2); this.ks = new Map();
     this.next = A.currentTime + 0.1; this.step = 0; setInterval(() => this.schedule(), 50);
-    this.light = this.makeLight();
   }
   applyLevels() {
     if (!this.A) return; const p = this.prefs, t = this.A.currentTime, duck = this.cur ? 1 : 0;
@@ -122,13 +121,8 @@ export class Sound {
   click() { this.event('click'); }
   slide() { this.event('enter'); }
 
-  // Craft, sonified: the line of light hums faintly at the strength it is drawn.
-  makeLight() {
-    const A = this.A, g = A.createGain(); g.gain.value = 0; g.connect(this.bus.sfx);
-    for (const [f, k] of [[1318.5, 1], [1975.5, 0.5]]) { const o = A.createOscillator(), og = A.createGain(), lfo = A.createOscillator(), lg = A.createGain(); o.frequency.value = f; og.gain.value = 0.012 * k; lfo.frequency.value = 0.3 + k * 0.2; lg.gain.value = 4; lfo.connect(lg); lg.connect(o.detune); o.connect(og); og.connect(g); o.start(); lfo.start(); }
-    return g;
-  }
-  setLight(a) { if (this.A && Math.abs(a - (this.lightA || 0)) > 0.01) { this.lightA = a; this.light.gain.setTargetAtTime(Math.min(1.4, a), this.A.currentTime, 0.4); } }
+  // Craft, sonified: no standing hum (it read as a drone); the line of light chimes when it grows.
+  setLight(a) { if (!this.A) return; if (a > (this.lightA || 0) + 0.15) { const t = this.A.currentTime; [[1318.5, 1], [1975.5, .5]].forEach(([f, k], i) => this.tone(t + i * 0.08, f, 1.6, { a: 0.3, peak: 0.02 * k })); } this.lightA = a; }
 
   // ---------- voices ----------
   async say(text, speaker) {
@@ -138,12 +132,18 @@ export class Sound {
     try {
       const buf = await this.A.decodeAudioData(await (await fetch('voices/' + e.file)).arrayBuffer());
       if (my !== this.sayId) return null;
-      const s = this.A.createBufferSource(); s.buffer = buf; s.connect(this.bus.voice);
-      const start = this.A.currentTime + 0.12; s.start(start);
-      this.cur = { s, start, e }; s.onended = () => { if (this.cur?.s === s) { this.cur = null; this.applyLevels(); } };
-      this.applyLevels(); return e;
+      this.play(buf, e, 0); return e;
     } catch (err) { return null; }
   }
+  play(buf, e, offset) {
+    const s = this.A.createBufferSource(); s.buffer = buf; s.connect(this.bus.voice);
+    const start = this.A.currentTime + 0.08; s.start(start, offset);
+    this.cur = { s, buf, start: start - offset, e }; s.onended = () => { if (this.cur?.s === s) { this.cur = null; this.applyLevels(); } };
+    this.applyLevels();
+  }
+  // jump the line now playing to a fraction of its length (the text pager keeps voice and page together)
+  seekVoice(frac) { const c = this.cur; if (!c) return; try { c.s.onended = null; c.s.stop(); } catch (e) {} this.play(c.buf, c.e, Math.max(0, Math.min(c.e.dur - 0.05, frac * c.e.dur))); }
+  voiceProgress() { const c = this.cur; return c ? Math.max(0, (this.A.currentTime - c.start) / c.e.dur) : null; }
   stopVoice() { this.sayId = (this.sayId || 0) + 1; if (this.cur) { try { this.cur.s.stop(); } catch (e) {} this.cur = null; this.applyLevels(); } }
   // 0..1 loudness of the line now playing (from its rendered envelope); null when nothing is voiced
   voiceLevel() { const c = this.cur; if (!c) return null; const i = Math.floor((this.A.currentTime - c.start) / 0.05); return i < 0 ? 0 : (+c.e.env[i] || 0) / 9; }
@@ -160,15 +160,10 @@ export class Sound {
     const A = this.A, t = A.currentTime, out = A.createGain(); out.gain.setValueAtTime(0.0001, t); out.gain.exponentialRampToValueAtTime(1, t + 1.5); out.connect(this.bus.room);
     const loop = (type, f, q, lvl, lfoHz = 0, lfoAmt = 0) => { const s = A.createBufferSource(), fl = A.createBiquadFilter(), g = A.createGain(); s.buffer = this.noiseBuf; s.loop = true; fl.type = type; fl.frequency.value = f; fl.Q.value = q; g.gain.value = lvl;
       if (lfoHz) { const l = A.createOscillator(), lg = A.createGain(); l.frequency.value = lfoHz; lg.gain.value = lfoAmt; l.connect(lg); lg.connect(g.gain); l.start(); } s.connect(fl); fl.connect(g); g.connect(out); s.start(); return s; };
-    const hum = (f, lvl) => { const o = A.createOscillator(), g = A.createGain(); o.frequency.value = f; g.gain.value = lvl; o.connect(g); g.connect(out); o.start(); return o; };
-    const srcs = [loop('lowpass', 260, 0.7, 0.05)]; // room tone everywhere
-    if (fam === 'sea') srcs.push(loop('lowpass', 520, 0.6, 0.12, 0.11, 0.1), loop('bandpass', 2600, 0.8, 0.012, 0.11, 0.01));
-    if (fam === 'office') srcs.push(hum(60, 0.006), hum(120, 0.004), loop('bandpass', 900, 0.5, 0.02));
-    if (fam === 'orchard') srcs.push(loop('bandpass', 420, 0.5, 0.06, 0.07, 0.05));
-    if (fam === 'workshop' || fam === 'memory') srcs.push(hum(50, 0.01), loop('bandpass', 3000, 1, 0.008));
-    if (fam === 'underworld') srcs.push(hum(41.2, 0.05), hum(61.7, 0.02), loop('bandpass', 700, 3, 0.03, 0.05, 0.03));
-    if (fam === 'train') srcs.push(loop('lowpass', 180, 0.8, 0.12));
-    if (fam === 'temple') srcs.push(hum(110, 0.008), hum(164.8, 0.006));
+        // No standing tones or hums: a bed has to move (waves, wind) or it reads as a drone. Most places are carried by sparse room events instead.
+    const srcs = [];
+    if (fam === 'sea') srcs.push(loop('lowpass', 520, 0.6, 0.05, 0.11, 0.05));
+    if (fam === 'orchard') srcs.push(loop('bandpass', 420, 0.5, 0.025, 0.07, 0.025));
     return () => { const u = A.currentTime; out.gain.setTargetAtTime(0.0001, u, 0.4); srcs.forEach(s => s.stop(u + 2)); };
   }
   // look-ahead scheduler: themes are step functions (one step = a 16th or 8th), plus sparse room events
@@ -176,7 +171,8 @@ export class Sound {
     const A = this.A; if (!A) return; const th = THEMES[this.scene.fam]; const spb = th ? 60 / th.bpm / th.div : 0.25;
     while (this.next < A.currentTime + 0.25) {
       const t = this.next, i = this.step++;
-      if (th && this.prefs.music && !this.scene.still) th.step(this, t, i, this.st);
+      const phrase = Math.floor(i / (th ? th.div * 32 : 1)) % 2 === 1; // eight bars of music, then eight bars of rest
+      if (th && this.prefs.music && !this.scene.still && !phrase) th.step(this, t, i, this.st);
       this.roomEvents(t, spb);
       this.next += spb;
     }
@@ -203,15 +199,14 @@ const THEMES = {
     if (bar % 4 === 3 && k % 2 === 0 && k < 8) s.bell(t, [72, 76, 79, 84][k / 2], 0.07);
     if ((st.standing || 0) >= 6 && bar % 2 === 0 && k === 0) s.pad(t, [60, 64, 67], 0.25, 0.03, 1800); } },
   sea: { bpm: 66, div: 3, step(s, t, i) { const bar = Math.floor(i / 6), k = i % 6, arp = bar % 2 ? [60, 67, 72, 76, 74, 69] : [62, 69, 74, 77, 76, 72];
-    s.pluck(t, arp[k] - 12, k === 0 ? 0.3 : 0.18, 640 + (k - 2.5) * 120);
-    if (i % 24 === 0) s.pad(t, [38, 45], 9, 0.03, 400); } },
+    s.pluck(t, arp[k] - 12, k === 0 ? 0.3 : 0.18, 640 + (k - 2.5) * 120); } },
   orchard: { bpm: 58, div: 2, step(s, t, i, st) { const bar = Math.floor(i / 8), k = i % 8, root = [43, 48, 43, 38][bar % 4];
-    if (k === 0) s.pad(t, (st.recognition || 0) > 0.5 ? [root, root + 7, root + 16] : [root, root + 7], 4.2, 0.03, 600);
+    if (k === 0 && bar % 2 === 0) s.pad(t, (st.recognition || 0) > 0.5 ? [root, root + 7, root + 16] : [root, root + 7], 3, 0.022, 600);
     if (bar % 2 === 1 && k % 2 === 0) s.bell(t, [71, 69, 67, 62][k / 2], 0.07); } },
   memory: { bpm: 46, div: 2, step(s, t, i) { const k = i % 16; const m = [71, null, 69, null, 67, null, 62, null, 64, null, 67, null, 66, null, null, null][k]; if (m) s.bell(t, m + (s.r() - 0.5) * 0.15, 0.06); } },
-  underworld: { bpm: 40, div: 2, step(s, t, i) { if (i % 16 === 0) s.pad(t, [33, 40], 12, 0.04, 250); if (s.r() < 0.12) s.pluck(t, [45, 48, 50, 52, 55][Math.floor(s.r() * 5)] - 12, 0.2); } },
+  underworld: { bpm: 40, div: 2, step(s, t, i) { if (s.r() < 0.12) s.pluck(t, [45, 48, 50, 52, 55][Math.floor(s.r() * 5)] - 12, 0.2); } },
   workshop: { bpm: 72, div: 2, step(s, t, i) { if (i % 8 === 0) s.pizz(t, 38, 0.16); if (i % 16 === 6) s.bell(t, 74, 0.04); } },
-  temple: { bpm: 50, div: 2, step(s, t, i) { if (i % 16 === 0) s.pad(t, [45, 52, 57], 10, 0.03, 500); } },
-  interior: { bpm: 60, div: 2, step(s, t, i) { if (i % 32 === 0) s.pad(t, [48, 55, 64], 7, 0.02, 500); if (i % 32 === 16) s.bell(t, 72, 0.04); } },
-  train: { bpm: 60, div: 2, step(s, t, i) { if (i % 32 === 0) s.pad(t, [45, 52, 60], 8, 0.02, 500); } },
+  temple: { bpm: 50, div: 2, step(s, t, i) { if (i % 16 === 0) s.bell(t, 57, 0.05); if (i % 16 === 6) s.bell(t, 64, 0.035); } },
+  interior: { bpm: 60, div: 2, step(s, t, i) { if (i % 32 === 0) s.bell(t, 72, 0.035); if (i % 32 === 12) s.bell(t, 67, 0.03); } },
+  train: { bpm: 60, div: 2, step(s, t, i) { if (i % 32 === 0) s.bell(t, 69, 0.03); } },
 };
