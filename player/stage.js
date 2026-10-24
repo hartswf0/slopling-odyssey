@@ -28,6 +28,16 @@ export function loadTrimmed(src) {
   }));
   return trimCache.get(src);
 }
+// Grey copies for the Underworld's shades, made once per card. (ctx.filter cost seconds per frame
+// on software-rendered canvases and does nothing in Safari, so the stage never uses it.)
+const greys = new WeakMap();
+function greyOf(im) {
+  if (!im) return im; if (greys.has(im)) return greys.get(im);
+  const c = document.createElement('canvas'); c.width = im.width; c.height = im.height; const g = c.getContext('2d'); g.drawImage(im, 0, 0);
+  const d = g.getImageData(0, 0, c.width, c.height), a = d.data;
+  for (let i = 0; i < a.length; i += 4) { const l = (a[i] * 0.3 + a[i + 1] * 0.59 + a[i + 2] * 0.11) * 0.8; a[i] = l; a[i + 1] = l; a[i + 2] = l * 1.08; }
+  g.putImageData(d, 0, 0); greys.set(im, c); return c;
+}
 export function loadImage(src) {
   if (!imgCache.has(src)) {
     imgCache.set(src, new Promise((res) => { const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = src; }));
@@ -237,7 +247,6 @@ export class Stage {
   onFrame(now) {
     const x = this.x, t = (now - this.t0) / 1000;
     x.setTransform(1, 0, 0, 1, 0, 0); x.clearRect(0, 0, W, H); this.hits = [];
-    x.filter = this.memory ? 'sepia(0.8) saturate(0.75) brightness(1.04)' : 'none'; // the Hendry works, remembered
     const lay = this.layoutFor(this.place) || { wash: ['#c9a777', '#6e5236'], pieces: [] };
     // wash + proscenium board
     const g = x.createLinearGradient(0, 0, 0, H); g.addColorStop(0, lay.wash[0]); g.addColorStop(1, lay.wash[1]); x.fillStyle = g; x.fillRect(0, 0, W, H);
@@ -256,9 +265,9 @@ export class Stage {
       const footY = FLOOR + 8 - (f.chorus ? 30 : 0);
       this.hits.push({ kind: 'fig', id, r: [f.x - w * 0.42, footY - h, f.x + w * 0.42, footY] });
       x.save(); x.translate(f.x, footY - lift + bob); x.rotate(tilt);
-      if (mode === 'shade') { x.globalAlpha = 0.5; x.filter = 'grayscale(1) brightness(0.8)'; }
+      const shade = mode === 'shade'; if (shade) x.globalAlpha = 0.5;
       x.strokeStyle = 'rgba(30,22,14,.55)'; x.lineWidth = 2; x.beginPath(); x.moveTo(0, -4); x.lineTo(f.x < 640 ? -160 : 160, 40); x.stroke();
-      x.shadowColor = 'rgba(15,8,0,.5)'; x.shadowBlur = 14; x.shadowOffsetX = 6; x.shadowOffsetY = 10;
+      if (!shade && !f.chorus) { x.shadowColor = 'rgba(15,8,0,.5)'; x.shadowBlur = 14; x.shadowOffsetX = 6; x.shadowOffsetY = 10; } // shades cast none
       if (f.flip) x.scale(-1, 1);
       if (rig) {
         // jointed father: his screen-left arm rises toward Watson when reaching
@@ -274,9 +283,9 @@ export class Stage {
         if (mode === 'still') extra = {};
         if (mode === 'idle') extra = { head: Math.sin(ph * 1.1) * 1.5 };
         rig.stretch = STRETCH;
-        const pts = drawAnchorRig(x, rig, extra, 0, 0, h + 6);
+        const pts = drawAnchorRig(x, shade ? (rig.grey ||= { ...rig, images: Object.fromEntries(Object.entries(rig.images).map(([k, v]) => [k, greyOf(v)])) }) : rig, extra, 0, 0, h + 6);
         f.hand = [f.x + (f.flip ? -1 : 1) * pts.hand_left[0], FLOOR + 8 + pts.hand_left[1]];
-      } else if (f.img) { const pk = f.poke ? clamp(1 - (performance.now() - f.poke) / 600, 0, 1) : 0; x.drawImage(f.img, -w / 2, -h - Math.sin(pk * Math.PI) * 14, w, h); }
+      } else if (f.img) { const pk = f.poke ? clamp(1 - (performance.now() - f.poke) / 600, 0, 1) : 0; x.drawImage(shade ? greyOf(f.img) : f.img, -w / 2, -h - Math.sin(pk * Math.PI) * 14, w, h); }
       x.restore();
       const plaque = this.staging.thinkers?.[id];
       if (plaque) { // thinkers carry a name plaque at their feet
@@ -306,7 +315,10 @@ export class Stage {
     this.drawTreeTags(lay, t); this.drawWorkTags(lay, t);
     draw('front'); this.drawProps('front', t);
     if (lay.auto) { x.fillStyle = 'rgba(30,20,10,.55)'; x.font = '12px "Courier Prime", monospace'; x.fillText('placeholder set layout', 14, 22); }
-    x.filter = 'none';
+    if (this.memory) { // the Hendry works, remembered: desaturate, then warm (blend modes, not filters)
+      x.save(); x.globalCompositeOperation = 'saturation'; x.globalAlpha = 0.8; x.fillStyle = 'hsl(0,0%,50%)'; x.fillRect(0, 0, W, H);
+      x.globalCompositeOperation = 'multiply'; x.globalAlpha = 1; x.fillStyle = '#f2d6a6'; x.fillRect(0, 0, W, H); x.restore();
+    }
     if (this.touching && this.shoulderHand && this.watsonPts) { // the father's hand, resting on the shoulder
       const [sx, sy] = this.watsonPts.shoulder, im = this.shoulderHand, w = 78, h = w * im.height / im.width;
       x.save(); x.translate(sx + 4, sy - 14); x.rotate(0.25); x.shadowColor = 'rgba(0,0,0,.45)'; x.shadowBlur = 8; x.drawImage(im, -w / 2, -h / 2, w, h); x.restore();
