@@ -12,17 +12,18 @@ const page = await browser.newPage({ viewport: { width: 1500, height: 950 } });
 page.on('pageerror', e => console.error('page error:', e.message));
 await page.goto(base + 'index.html#' + rehearsal);
 await page.waitForFunction(() => window.__player?.sound);
+if (process.env.NO_VOICE) await page.evaluate(() => { window.__player.sound.prefs.voice = false; });
 if (process.env.SFX_ONLY) await page.evaluate(() => Object.assign(window.__player.sound.prefs, { voice: false, music: false })); // clean onsets for tests/av_sync.py
 await page.click('#start'); await page.waitForTimeout(1500);
 await page.waitForFunction(() => window.__player.sound.A && !document.querySelector('#ff')?.offsetParent, null, { timeout: 120000 });
 await page.evaluate(() => {
   const P = window.__player, stage = document.querySelector('#stage'), rc = document.createElement('canvas'); rc.width = 1280; rc.height = 720;
-  const g = rc.getContext('2d'), card = document.querySelector('#card');
+  const g = rc.getContext('2d'), card = document.querySelector('#dialog');
   const wrap = (s, n) => { const w = s.split(/\s+/), L = []; let l = ''; for (const x of w) { if ((l + ' ' + x).length > n) { L.push(l); l = x; } else l = l ? l + ' ' + x : x; } if (l) L.push(l); return L; };
   (function draw() {
     g.drawImage(stage, 0, 0, 1280, 720);
     if (!card.hidden) { // subtitle: speaker and the current voice-sized slice of the card, then the choices
-      const who = card.querySelector('.who')?.textContent || '', body = card.querySelector('.body')?.innerText || card.querySelector('h2')?.innerText || '';
+      const who = card.querySelector('.who')?.hidden ? '' : card.querySelector('.who')?.textContent || '', body = card.querySelector('.text')?.innerText || '';
       const c = P.sound.cur, frac = c ? Math.max(0, (P.sound.A.currentTime - c.start) / c.e.dur) : 1;
       const lines = wrap(body.replace(/\n+/g, ' '), 88), per = 3, k = Math.min(Math.max(0, lines.length - per), Math.floor(frac * lines.length / per) * per);
       const show = (c ? lines.slice(k, k + per) : lines.slice(-per)), opts = c ? [] : [...card.querySelectorAll('.acts button')].map(b => '› ' + b.innerText.split('\n')[0]).slice(0, 3);
@@ -40,13 +41,14 @@ await page.evaluate(() => {
 });
 const until = Date.now() + +secs * 1000; let cards = 0;
 while (Date.now() < until) {
-  const st = await page.evaluate(() => { const c = document.querySelector('#card'); return { open: !c.hidden && !!c.querySelector('.acts button'), voiced: !!window.__player.sound.cur, ended: !!document.querySelector('#log li.end') }; });
+  const st = await page.evaluate(() => { const c = document.querySelector('#dialog'); while (document.querySelector('.pager .tap')) { document.querySelector('#dialog .text').click(); } return { open: !c.hidden && !!c.querySelector('.acts button'), voiced: !!window.__player.sound.cur, ended: !!document.querySelector('#log li.end') }; });
+  if (process.env.IDLE) { await page.waitForTimeout(250); continue; } // just listen: no clicks
   if (st.open && !st.voiced) {
     await page.waitForTimeout(1600); // a beat of silence after the line (and time for a voice to start), then choose
-    if (await page.evaluate(() => !!window.__player.sound.cur || document.querySelector('#card').hidden)) continue;
+    if (await page.evaluate(() => !!window.__player.sound.cur || document.querySelector('#dialog').hidden)) continue;
     if (st.ended) { await page.waitForTimeout(2000); break; } // hold on the ending, then stop
-    const n = await page.$$eval('#card .acts button', bs => bs.length);
-    if (n) { await page.click(`#card .acts button >> nth=${process.env.PICK === 'cycle' ? cards % n : 0}`).catch(() => {}); cards++; } // first choice, or PICK=cycle
+    const n = await page.$$eval('#dialog .acts button', bs => bs.length);
+    if (n) { await page.click(`#dialog .acts button >> nth=${process.env.PICK === 'cycle' ? cards % n : 0}`).catch(() => {}); cards++; } // first choice, or PICK=cycle
   }
   await page.waitForTimeout(250);
 }
