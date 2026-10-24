@@ -4,6 +4,8 @@ import { StoryEngine, storyFromGeneratedJson, ASAPS_CORE_VERSION } from './vendo
 import { Stage, loadImage } from './stage.js';
 import { Sound } from './sound.js';
 import { makeUI } from './ui.js';
+import { makeHUD } from './hud.js';
+import { readWorld } from './world.js';
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -95,6 +97,7 @@ class CardboardRenderer {
 const LABELS = { craft: 'Craft', standing: 'Standing', cunning: 'Cunning', meaning: 'Meaning', leverage: 'Leverage' };
 function readState(engine, stage, ui, live) {
   const ctx = engine.getContext();
+  const world = readWorld(ctx, ui.story); ui.setWorld(world); ui.hud?.update(world, live);
   const c = ctx.getCharacterCountersFor('char_player') || {};
   const call = ctx.getVariable('callChoice'), variant = ctx.getActiveCharacterVariant('char_player');
   const rec = ctx.getSentimentTo('char_father', 'player', 'recognition') || 0, pride = ctx.getSentimentTo('char_father', 'player', 'pride') || 0;
@@ -140,7 +143,11 @@ async function boot() {
   const sound = new Sound(); stage.sound = sound; window.SFX = sound;
   stage.onSound = (name, d) => sound.event(name, d); stage.onLight = a => sound.setLight(a); stage.voiceLevel = () => sound.voiceLevel();
   soundControls(sound);
-  const ui = makeUI({ story: json.story, staging, stage, sound });
+  const ui = makeUI({ story: json.story, staging, stage, sound }); ui.story = json.story;
+  stage.charNames = Object.fromEntries(json.story.characters.map(c => [c.id, c.name])); // the story's names, never a packet's
+  const hud = ui.hud = makeHUD({ story: json.story, staging, stage, ui, sound });
+  ui.onInspect = hit => hud.openSheet(hit);
+  ui.onLocked = rows => hud.openList('Closed by earlier choices', rows); ui.onChoices = () => hud.render();
   $('#engine').textContent = 'ASAPS core ' + ASAPS_CORE_VERSION;
   const sel = $('#rehearse'); sel.innerHTML = Object.entries(REHEARSALS).map(([k, r]) => `<option value="${k}">${esc(r.label)}</option>`).join('');
   const startFrom = location.hash.slice(1); if (REHEARSALS[startFrom]) sel.value = startFrom;
@@ -154,7 +161,7 @@ async function boot() {
     engine = new StoryEngine(renderer, { mockMode: true });
     const story = storyFromGeneratedJson(json);
     const rnd = prng(session.seed); Math.random = rnd; // the engine's own stream for the whole run
-    stage.lastCounters = null; stage.state.tagFall = 0;
+    stage.lastCounters = null; stage.state.tagFall = 0; if (!replay) hud.reset();
     if (replay || session.reh.until) {
       renderer.fast = { rnd, until: replay ? null : session.reh.until, script: replay ? replay.map(s => ({ ...s })) : null };
       stage.quiet = true; $('#ff').hidden = false; $('#ff').textContent = replay ? 'Going back to your last choice…' : 'Rehearsing the route so far…';

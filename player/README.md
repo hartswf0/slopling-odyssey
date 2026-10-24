@@ -23,7 +23,14 @@ Press **Play**. "Start from" lets you rehearse to a later point. ASAPS plays the
 - Text is paged to fit the panel and turns with the voice; tap the text to read on.
 - Choices are numbered buttons showing the place, prop or person they're about. The same object carries a matching badge on the stage, and clicking it there chooses it.
 - Clicking any person or prop makes them react and shows their name; empty stage does nothing.
-- Island choices open as a chart. **Map** shows the journey, with unvisited places dark.
+- **The engine on screen.** The HUD shows Odie's face and five counters, how Lars sees him (the title against his work), the inventory, and the objective.
+  - Faces follow ASAPS emotion and mood: every rigged character uses the packets' E01–E17 expression heads, swapped at the neck anchor.
+  - Click a person for their sheet: mood, feelings, feelings toward you, private thoughts, and the choice about them. Click an item to see what it opens later.
+  - Items you take on stage go to the inventory and glow when a choice can use them; tapping one makes that choice.
+  - Choices closed by earlier play are shown with the reason ("Needs the Prompt Journal: you didn't take it").
+  - Reflections appear as thought bubbles and are kept in the **Journal**.
+  - See `docs/SCION_ORCHESTRATION.md` for which swarm owns which engine channel, and what is still missing.
+- Island choices open as a chart, which keeps visited and locked islands. **Map** shows the journey, with unvisited places dark.
 - **Back** returns to your last choice by replaying the run under the same seed.
 - Keys: Space or Enter continue, 1–9 choose, M map, Esc close.
 
@@ -88,6 +95,7 @@ python3 tools/extract_kit_props.py        # props/
 node player/tests/conformance.mjs         # ASAPS conformance (below)
 .kvenv/bin/python tools/render_voices.py --model kokoro-v1.0.onnx --voices voices-v1.0.bin   # voices (setup in the script header)
 node player/tests/voices.mjs              # every spoken line has its voice
+node player/tests/fuzz-ui.mjs start 3 1     # random playthroughs of the real UI reach an ending (server on :8765)
 ```
 
 To rebuild the ASAPS bundle, clone ASAPS Modern, `npm install --workspace @asaps/core`, then

@@ -29,14 +29,53 @@ html,body{margin:0;height:100%;background:var(--room);color:var(--ink);font-fami
 /* stage: fitted to its row at 16:9 */
 #screen{container-type:size;min-height:0;display:grid;place-items:center;position:relative}
 @media (orientation:portrait){#screen{container-type:inline-size}}
-.fit{position:relative;width:min(100cqw,100cqh*16/9);aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#000;box-shadow:0 14px 40px rgba(0,0,0,.6)}
+.fit{container-type:inline-size;position:relative;width:min(100cqw,100cqh*16/9);aspect-ratio:16/9;border-radius:8px;overflow:hidden;background:#000;box-shadow:0 14px 40px rgba(0,0,0,.6)}
 @media (orientation:portrait){.fit{width:100cqw}}
 canvas{display:block;width:100%;height:100%}
-#toasts{position:absolute;top:10px;right:10px;display:grid;gap:6px;justify-items:end;pointer-events:none}
+#toasts{position:absolute;top:calc(2% + 6.2em);right:1.2%;font-size:clamp(9px,1.3cqw,15px);display:grid;gap:6px;justify-items:end;pointer-events:none}
 .toast{background:rgba(20,40,20,.92);color:#c8f5b0;font-weight:700;font-size:15px;padding:6px 12px;border-radius:999px;animation:pop 2.6s ease forwards}
 .toast.down{background:rgba(50,18,10,.92);color:#ffb59a}
 @keyframes pop{0%{opacity:0;transform:translateY(-6px)}12%{opacity:1;transform:none}80%{opacity:1}100%{opacity:0}}
 #ff,#loading{position:absolute;top:10px;left:10px;background:rgba(10,8,5,.85);color:var(--kraft);font-size:14px;padding:7px 12px;border-radius:6px}
+/* HUD: Odie's state, the father's two ways of seeing him, inventory, objective. Sized to the stage. */
+#hud{position:absolute;inset:0;pointer-events:none;font-size:clamp(9px,1.3cqw,15px)}
+#hud button{pointer-events:auto;font:inherit;cursor:pointer;border:0}
+#hud .me{position:absolute;left:1.2%;top:2%;display:flex;align-items:center;gap:.5em;background:rgba(20,14,8,.78);color:var(--ink);border-radius:999px;padding:.25em .9em .25em .25em}
+#hud .me img{width:3.4em;height:3.4em;border-radius:50%;object-fit:cover;object-position:center 20%;background:#3a2a1a}
+#hud .st{display:flex;gap:.55em}#hud .st b{display:grid;justify-items:center;font-weight:700;font-size:.78em;color:var(--muted);letter-spacing:.05em;text-transform:uppercase}#hud .st em{font-style:normal;color:var(--ink);font-size:1.35em}
+#hud .sees{position:absolute;left:1.2%;top:calc(2% + 4.4em);background:rgba(20,14,8,.78);color:#ffcfae;border-radius:999px;padding:.35em .9em;display:flex;align-items:center;gap:.4em;font-weight:700}
+.bar{display:inline-block;width:4em;height:.55em;background:#4a3c2a;border-radius:99px;overflow:hidden;vertical-align:middle}.bar i{display:block;height:100%;background:var(--brass)}.bar.r i{background:#8fd18a}.bar.p i{background:#e0a070}
+#hud .inv{position:absolute;right:1.2%;top:2%;display:flex;gap:.45em}
+#hud .slot{position:relative;width:4.6em;height:4.6em;border-radius:.6em;background:rgba(20,14,8,.78);border:2px solid #4a3c2a;padding:.25em}
+#hud .slot .img{display:block;width:100%;height:100%;background:center/contain no-repeat}
+#hud .slot.use{border-color:var(--brass);box-shadow:0 0 0 3px rgba(255,211,110,.45),0 0 18px rgba(255,211,110,.7);animation:glow 1.2s ease-in-out infinite alternate}
+#hud .slot em{position:absolute;right:-.5em;top:-.5em;background:var(--brass);color:#1d1406;font-style:normal;font-weight:700;border-radius:50%;width:1.7em;height:1.7em;display:grid;place-items:center}
+@keyframes glow{to{box-shadow:0 0 0 5px rgba(255,211,110,.25),0 0 26px rgba(255,211,110,.9)}}
+#hud .goal{position:absolute;left:1.2%;bottom:3%;background:rgba(20,14,8,.78);color:var(--kraft);border-radius:999px;padding:.3em .9em;font-weight:700}
+.flyer{position:fixed;z-index:20;background:center/contain no-repeat;transition:all .8s cubic-bezier(.5,-0.3,.4,1);pointer-events:none}
+/* sheets and journal: a card over the stage */
+.overlay.card{place-items:center;grid-template-rows:1fr}
+.pane{position:relative;width:min(560px,100%);max-height:100%;overflow:hidden;background:var(--panel);border:1.5px solid var(--line);border-radius:12px;padding:16px 18px;display:grid;gap:8px;align-content:start}
+.pane .close{position:absolute;right:10px;top:10px}
+.pane .head{display:flex;gap:14px;align-items:center;padding-right:40px}.pane .face{width:96px;height:96px;border-radius:12px;object-fit:contain;background:#2b2116 center/contain no-repeat;flex:0 0 auto}
+.pane h2{font-family:var(--display);margin:0;font-size:24px}.pane .tag{margin:2px 0 0;color:var(--brass);font-weight:700;font-size:14px}.pane .now{margin:4px 0 0;font-size:15px}
+.pane .about{margin:0;color:var(--muted);font-size:15px;line-height:1.4}
+.pane h3{margin:6px 0 0;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--brass)}
+.pane ul{list-style:none;margin:0;padding:0;display:grid;gap:4px;font-size:15px}
+.pane .meters li{display:grid;grid-template-columns:150px 1fr 40px;gap:8px;align-items:center}.pane .meters .bar{width:100%;height:9px}.pane .meters b{text-align:right}
+.pane .goals .met b{color:#a8e39e}.pane .goals .failed b{color:#ff9a7a;text-decoration:line-through}
+.pane blockquote{margin:0;padding:8px 12px;border-left:3px solid var(--brass);background:#1f1912;font-style:italic;font-size:15.5px;line-height:1.4}
+.pane .uses li small{color:var(--muted)}
+.pane .act{font:700 16px var(--text);color:#1d1406;background:var(--brass);border:0;border-radius:10px;padding:11px 14px;cursor:pointer;display:flex;gap:10px;align-items:center;text-align:left;box-shadow:0 4px 0 var(--brass-dk)}
+.pane .act .num{width:26px;height:26px;border-radius:50%;background:#1d1406;color:var(--brass);display:grid;place-items:center;flex:0 0 auto}
+#journal .body{display:grid;gap:8px;overflow:auto;max-height:70dvh}.ins{display:flex;gap:10px;align-items:flex-start}.ins img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:center 20%;background:#2b2116}.ins p{margin:2px 0 0;font-style:italic}.ins.goal p{font-style:normal;color:var(--brass)}
+#journalBtn[data-n]:not([data-n=""])::after{content:attr(data-n);margin-left:6px;background:var(--brass);color:#1d1406;border-radius:99px;padding:0 6px;font-size:12px}
+/* locked choices: shown, not pressable, with the reason */
+.acts .locked{font-family:var(--text);background:none;text-align:left;cursor:default;display:flex;align-items:center;gap:10px;padding:6px 12px;border-radius:10px;border:1.5px dashed #5a4a36;color:#a8977f;font-size:clamp(12.5px,.6vw + .8vh,15px)}
+.acts .locked.fold{cursor:pointer}.pane .acts{display:grid;gap:8px}
+.acts .locked .num{width:28px;text-align:center}.acts .locked small{display:block;color:#d7a86e;font-size:.9em}
+.isle.shut{opacity:.5}.isle.shut .img{filter:grayscale(1)}.isle[disabled]{cursor:default}
+@media (max-width:560px){#bar .t{display:none}}
 /* start: the one invitation */
 #start-screen{position:absolute;inset:0;display:grid;place-content:center;justify-items:center;gap:10px;background:radial-gradient(ellipse at center,rgba(15,10,5,.35),rgba(15,10,5,.85));text-align:center;padding:16px}
 #start-screen h1{font-family:var(--display);font-size:clamp(26px,5.5cqw,56px);margin:0;text-shadow:0 3px 18px #000}
@@ -106,12 +145,14 @@ meter{width:100%;height:10px}
     <span class="t">Slopling's Odyssey</span>
     <span id="where"></span>
     <button class="tb" id="undo" hidden title="Go back to your last choice">↶ Back</button>
+    <button class="tb" id="journalBtn" title="Journal: what people realised, how your aims went (J)">Journal</button>
     <button class="tb" id="mapBtn" title="Map (M)">Map</button>
     <button class="tb" id="menuBtn" aria-label="Menu" title="Menu">☰</button>
   </header>
   <main id="screen">
     <div class="fit">
       <canvas id="stage" width="1280" height="720" aria-label="Cardboard stage. Click people and props; numbered badges match the choices."></canvas>
+      <div id="hud" aria-label="Your state"></div>
       <div id="toasts" aria-live="polite"></div>
       <div id="ff" hidden>Rehearsing the route so far…</div>
       <div id="loading" hidden></div>
@@ -135,6 +176,8 @@ meter{width:100%;height:10px}
   <header><h2>Map</h2><p class="hint"></p><button class="tb close">✕ Close</button></header>
   <div class="mapbody"></div>
 </div>
+<div id="sheet" class="overlay card" hidden role="dialog" aria-label="Details"><div class="pane"><button class="tb close">✕</button><div class="body"></div></div></div>
+<div id="journal" class="overlay card" hidden role="dialog" aria-label="Journal"><div class="pane"><div style="display:flex;justify-content:space-between;align-items:center"><h2>Journal</h2><button class="tb close">✕</button></div><div class="body"></div></div></div>
 <div id="menu" class="overlay" hidden role="dialog" aria-label="Menu">
   <div class="sheet">
     <div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0">Menu</h3><button class="tb close">✕</button></div>

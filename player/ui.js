@@ -2,6 +2,7 @@
 // that open only when asked (map, menu). Text is paged to fit the panel and follows the voice;
 // choices are always fully visible, numbered, shown with the real asset they are about, and the
 // same object is badged on the stage so it can be clicked there.
+import { why, propItem } from './world.js';
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const md = s => esc(s).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\*(.+?)\*/g, '<i>$1</i>');
@@ -25,6 +26,17 @@ export function makeUI({ story, staging, stage, sound }) {
   for (const c of story.characters || []) { names.set(c.name.toLowerCase(), c.id); names.set(c.name.split(' ')[0].toLowerCase(), c.id); }
   // multiChoice choice → destination beat, so a choice can show where it goes
   const targets = new Map(); for (const b of story.beats) if (b.type === 'multiChoice') for (const c of b.parameters.choices || []) targets.set(b.id + '|' + c.id, c.target);
+  // every authored choice with its siblings, so the ones ASAPS withholds can be shown with the reason
+  const choiceIndex = new Map();
+  for (const b of story.beats) {
+    if (b.type === 'multiChoice') for (const c of b.parameters.choices || []) choiceIndex.set(b.id + '|' + c.id, { c, siblings: b.parameters.choices });
+    if (b.type === 'dialogTree') (function walk(n) { if (!n) return; for (const c of n.choices || []) { choiceIndex.set(b.id + '|' + c.id, { c, siblings: n.choices });
+      // ASAPS folds a continue-only node into its children's choices and joins the ids: "it_cont" + "i3" → "it_cont_i3"
+      for (const cc of c.dialogNode?.choices || []) choiceIndex.set(b.id + '|' + c.id + '_' + cc.id, { c: cc, siblings: c.dialogNode.choices });
+      walk(c.dialogNode); } })(b.parameters.dialogTree);
+  }
+  const authored = c => choiceIndex.get(beatId + '|' + String(c.id).split('.').pop());
+  let world = null, offered = [];
   const placeOf = id => staging.beats[id]?.place;
   const propWords = [...new Set(Object.keys(staging.props?.names || {}).map(k => k.split('_')[0]))].filter(w => w.length > 3);
   const PROP_ALIAS = { letter: /\b(offer|letter|charter)\b/i, clementines: /clementine/i, flatwhite: /flat white/i };
@@ -38,6 +50,13 @@ export function makeUI({ story, staging, stage, sound }) {
     passed(id) { been.add(id); },
     setBeat(id) { beatId = id; been.add(id); const b = beats.get(id); $('#where').textContent = b ? `${(b.cluster || '').replace(/^[IVX]+\.\s*/, '')} · ${b.name || ''}` : ''; },
     setVisited(ids) { visited = ids || []; },
+    setWorld(w) { world = w; },
+    beat: () => beatId,
+    chooseNumber(n) { current?.choose(n - 1); },
+    // items a current choice uses (by its ASAPS condition, or by naming the thing), as {item name: choice number}
+    usableItems() { const out = {}; offered.forEach((c, i) => { for (const k of authored(c)?.c.conditions || []) if (k.type === 'inventory') out[k.item] = i + 1; const a = ui.about(c), it = a?.kind === 'prop' && propItem(a.id); if (it && world?.inventory.some(e => e.name === it)) out[it] ||= i + 1; }); return out; },
+    // the current choice about this person or thing, if any
+    boundChoice(hit) { const m = (stage.marks || []).find(m => stage.same(hit, m)) || (hit.kind === 'item' ? null : null); if (m) return { n: m.n, text: offered[m.n - 1]?.text }; if (hit.kind === 'item') { const n = ui.usableItems()[hit.id]; if (n) return { n, text: offered[n - 1]?.text }; } return null; },
     say(t, spk) { sound.say(t, spk); },
     speakerId(s) { if (!s) return null; return names.get(String(s).toLowerCase()) || names.get(String(s).split(' ')[0].toLowerCase()) || null; },
     loading(m) { $('#loading').hidden = !m; if (m) $('#loading').textContent = m; },
@@ -62,7 +81,7 @@ export function makeUI({ story, staging, stage, sound }) {
         let page = 0, pages = [], manual = -1, timer = null;
         const list = choices || (timed ? [] : [{ id: 'ok', text: button || 'Continue', isContinue: true }]);
         const onlyContinue = list.length === 1 && list[0].isContinue;
-        const asChart = list.filter(c => { const a = ui.about(c); return a?.kind === 'place' && CHART[a.id]; }).length >= 5;
+        const asChart = ((list.length && authored(list[0])?.siblings) || list).filter(c => { const a = ui.about(c); return a?.kind === 'place' && CHART[a.id]; }).length >= 5; // the hub stays a chart even as islands close
         who.textContent = speaker && !/^narrator$/i.test(speaker) ? speaker : ''; who.hidden = !who.textContent;
         dlg.classList.toggle('title', !!title);
         // actions first: their height decides how much text fits on the last page
@@ -80,7 +99,17 @@ export function makeUI({ story, staging, stage, sound }) {
           if (a) { stage.thumb(a.kind, a.id, 120, 68).then(src => { const th = b.querySelector('.thumb'); if (src && th) th.style.backgroundImage = `url(${src})`; else th?.remove(); }); if (a.kind !== 'place') marks.push({ n: i + 1, kind: a.kind, id: a.id, choose: () => done(c.id) }); }
           acts.append(b);
         });
-        stage.marks = marks;
+        stage.marks = marks; offered = list.filter(c => !c.isContinue); ui.onChoices?.();
+        // the choices ASAPS withheld, and why: an earlier choice, an item, a counter
+        const shown = new Set(list.map(c => authored(c)?.c.id ?? String(c.id).split('.').pop())), au = list.length ? authored(list[0]) : null;
+        const locked = !asChart && au ? au.siblings.filter(c => c.conditions?.length && !shown.has(c.id) && !c.conditions.every(k => /^visited_/.test(k.variable || ''))) : [];
+        const lockedRow = c => `<span class="num">🔒</span><span class="lbl">${md(c.text)}<small>${esc(c.conditions.map(k => why(k, world, beats)).join(' · '))}</small></span>`;
+        for (const c of locked) { const el = document.createElement('div'); el.className = 'locked'; el.innerHTML = lockedRow(c); acts.append(el); }
+        // no room: fold them into one line that opens the list (the panel never scrolls)
+        const fold = () => { if (!locked.length || acts.querySelector('.locked.fold') || acts.offsetHeight <= dlg.clientHeight * 0.62) return;
+          acts.querySelectorAll('.locked').forEach(e => e.remove()); const el = document.createElement('button'); el.className = 'locked fold';
+          el.innerHTML = `<span class="num">🔒</span><span class="lbl">${locked.length} closed by earlier choices<small>why? ▸</small></span>`;
+          el.onclick = () => ui.onLocked?.(locked.map(lockedRow)); acts.append(el); };
         // page the text so nothing ever scrolls
         const html = (title ? `<h2>${esc(title)}</h2>${sub ? `<p class="sub">${esc(sub)}</p>` : ''}` : '');
         const units = []; paras(body).forEach((p, pi) => sentences(p).forEach(s => units.push({ pi, s })));
@@ -89,6 +118,7 @@ export function makeUI({ story, staging, stage, sound }) {
           return html + runs.map(r => `<p>${md(r.t).replace(/\*/g, '')}</p>`).join(''); };
         dlg.hidden = false;
         const layout = () => {
+          fold();
           meas.style.width = text.clientWidth + 'px'; text.style.fontSize = ''; meas.style.fontSize = '';
           const full = dlg.clientHeight - parseFloat(getComputedStyle(dlg).paddingTop) * 2 - (who.hidden ? 0 : who.offsetHeight + 4) - pager.offsetHeight - 6;
           const actsH = acts.offsetHeight + 10, withActs = full - actsH;
@@ -134,15 +164,18 @@ export function makeUI({ story, staging, stage, sound }) {
     map.querySelector('.hint').textContent = pick ? 'Tap an island to sail there. Islands already visited are marked.' : 'Places you have been are lit. Unvisited places stay dark.';
     if (pick) {
       body.innerHTML = '<div class="chart"></div>'; const ch = body.firstChild, POS = ch.clientWidth / Math.max(1, ch.clientHeight) > 1.3 ? CHART_WIDE : CHART;
-      choices.forEach((c, i) => {
-        const a = ui.about(c), pos = a && POS[a.id] || [10 + (i % 5) * 20, 30 + Math.floor(i / 5) * 40], seen = visited.includes(c.id);
-        const b = document.createElement('button'); b.className = 'isle' + (seen ? ' seen' : ''); b.style.left = pos[0] + '%'; b.style.top = pos[1] + '%';
+      const au = authored(choices[0]), offeredIds = new Set(choices.map(c => c.id)), all = au ? au.siblings : choices;
+      all.forEach(c => {
+        const i = choices.findIndex(x => x.id === c.id), open = i >= 0, a = ui.about(c), pos = a && POS[a.id] || [10 + (all.indexOf(c) % 5) * 20, 30 + Math.floor(all.indexOf(c) / 5) * 40];
+        const closed = !open && (c.conditions || []).filter(k => !/^visited_/.test(k.variable || '')).map(k => why(k, world, beats)), wasHere = !open && !closed.length;
+        const b = document.createElement('button'); b.className = 'isle' + (open ? '' : wasHere ? ' seen' : ' shut'); b.style.left = pos[0] + '%'; b.style.top = pos[1] + '%'; b.disabled = !open;
         const [name, ...rest] = c.text.split(/,\s*/);
-        b.innerHTML = `<span class="img"></span><span class="nm"><b>${i + 1}</b> ${esc(name)}</span><small>${esc(rest.join(', '))}${seen ? ' · visited' : ''}</small>`;
-        b.onclick = () => { closeMap(); current?.pick(c.id); };
+        b.innerHTML = `<span class="img"></span><span class="nm">${open ? `<b>${i + 1}</b> ` : wasHere ? '✓ ' : '🔒 '}${esc(name)}</span><small>${esc(open ? rest.join(', ') : wasHere ? 'visited' : closed.join(' · '))}</small>`;
+        b.onclick = () => { if (!open) return; closeMap(); current?.pick(c.id); };
         if (a) stage.thumb('place', a.id, 200, 112).then(src => { if (src) b.querySelector('.img').style.backgroundImage = `url(${src})`; });
         ch.append(b);
       });
+      ch.querySelectorAll('.isle:not([disabled])').forEach((b, k) => b.dataset.k = k);
     } else {
       const seenPlaces = new Set([...been].map(placeOf).filter(Boolean)); if (stage.place) seenPlaces.add(stage.place);
       const hereAct = (beats.get(beatId)?.cluster || '').replace(/^II\. Islands$/, 'II. The Voyage');
@@ -165,16 +198,16 @@ export function makeUI({ story, staging, stage, sound }) {
   cv.addEventListener('pointerleave', () => { stage.hover = null; });
   cv.addEventListener('click', e => {
     const h = stage.hitAt(...toStage(e)); if (!h) return; // empty stage stays inactive
-    const m = (stage.marks || []).find(m => stage.same(h, m));
-    if (m && current) { stage.poke(h); setTimeout(() => current?.choose(m.n - 1), 250); return; }
-    stage.poke(h);
+    stage.poke(h); ui.onInspect?.(h); // the sheet says who or what it is, what they feel, and offers the choice about them
   });
 
   // ---------- keys: Space/Enter/→ continue, 1-9 choose, M map, Esc close ----------
   addEventListener('keydown', e => {
     if (e.target.closest('select, input')) return;
-    if (e.key === 'Escape') { closeMap(); $('#menu').hidden = true; return; }
-    if (!map.hidden && map.classList.contains('choose') && /^[1-9]$/.test(e.key)) { map.querySelectorAll('.isle')[+e.key - 1]?.click(); return; }
+    if (e.key === 'Escape') { closeMap(); for (const o of ['#menu', '#sheet', '#journal']) $(o).hidden = true; return; }
+    if (!$('#sheet').hidden || !$('#journal').hidden) return;
+    if (e.key.toLowerCase() === 'j') { $('#journalBtn').click(); return; }
+    if (!map.hidden && map.classList.contains('choose') && /^[1-9]$/.test(e.key)) { map.querySelectorAll('.isle:not([disabled])')[+e.key - 1]?.click(); return; }
     if (!current || !map.hidden || !$('#menu').hidden) { if (e.key.toLowerCase() === 'm' && current) openMap(null); return; }
     if (e.key === ' ' || e.key === 'Enter' || e.key === 'ArrowRight') { if (document.activeElement?.closest('#dialog .acts') && e.key !== 'ArrowRight') return; e.preventDefault(); current.cont(); }
     else if (/^[1-9]$/.test(e.key)) current.choose(+e.key - 1);

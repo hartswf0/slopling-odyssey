@@ -112,6 +112,7 @@ export class Sound {
       prop: () => { this.tone(t, 170 - Math.min(80, (d.h || 100) / 3), 0.1, { f2: 70, peak: 0.16, x }); this.noise(t, 0.05, { f: 1500, q: 1.5, peak: 0.07, x }); },
       lift: () => this.bell(t + 0.1, 91, 0.05, 'sfx'),
       pan: () => this.noise(t, 0.9, { f: 500, f2: 1600, q: 1.2, a: 0.3, peak: 0.07 }),
+      face: () => { this.noise(t, 0.05, { f: 2600, q: 2, a: 0.004, peak: 0.05, x }); this.noise(t + 0.04, 0.03, { f: 1400, q: 3, peak: 0.04, x }); }, // a head card swapped
       page: () => this.noise(t, 0.2, { f: 2400, f2: 1300, q: 0.8, a: 0.03, peak: 0.035 }),
       click: () => this.noise(t, 0.04, { f: 3000, q: 4, peak: 0.2 }),
       still: () => { this.scene.still = true; this.applyLevels(); }, // silence lets the thought land

@@ -1,4 +1,4 @@
-import { makeAnchorRig, drawAnchorRig } from './anchor-rig.js';
+import { makeAnchorRig, drawAnchorRig, pose, bounds } from './anchor-rig.js';
 // Cardboard toy-theatre stage for the ASAPS player.
 // Everyone but Watson is a single scale-matched figure card on a wire (Pollock-style
 // toy theatre). Watson is the one jointed puppet: the working 15-card front rig.
@@ -9,6 +9,8 @@ const W = 1280, H = 720, FLOOR = 612, FIG_H = 372;
 // their own axis at the recorded anchors; see player/tests/proportion-test.html.
 const STRETCH = { thigh_left: 1.35, thigh_right: 1.35, shin_left: 1.35, shin_right: 1.35, upper_arm_left: 1.1, upper_arm_right: 1.1, forearm_left: 1.1, forearm_right: 1.1 };
 const TAU = Math.PI * 2;
+// Crowds have no ASAPS emotion of their own, so their faces follow what they are doing.
+const CHORUS_FACE = { clap: 'E06', chant: 'E01', shade: 'E17', still: 'E01' };
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
 const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
 // the stage's own random source: Math.random belongs to the ASAPS engine, so a replayed run (undo) takes the same branches
@@ -38,6 +40,13 @@ function greyOf(im) {
   for (let i = 0; i < a.length; i += 4) { const l = (a[i] * 0.3 + a[i + 1] * 0.59 + a[i + 2] * 0.11) * 0.8; a[i] = l; a[i + 1] = l; a[i + 2] = l * 1.08; }
   g.putImageData(d, 0, 0); greys.set(im, c); return c;
 }
+// Odie's head card is drawn smaller than the anchor-rig cast's (measured in tests/heads-lineup.html);
+// enlarge it about its neck pivot so every head on stage is the same size. A copy of the manifest, not new art.
+export const WATSON_HEAD_SCALE = 1.28;
+export function scaleWatsonHead(manifest, k = WATSON_HEAD_SCALE) {
+  return { ...manifest, parts: manifest.parts.map(p => { if (p.id !== 'head') return p; const [px, py] = p.pivot, [x, y, w, h] = p.rect; return { ...p, rect: [px - (px - x) * k, py - (py - y) * k, w * k, h * k] }; }) };
+}
+if (typeof window !== 'undefined') window.scaleWatsonHead = scaleWatsonHead;
 export function loadImage(src) {
   if (!imgCache.has(src)) {
     imgCache.set(src, new Promise((res) => { const i = new Image(); i.onload = () => res(i); i.onerror = () => res(null); i.src = src; }));
@@ -83,7 +92,7 @@ function autoLayout(set) {
 export class Stage {
   constructor(canvas, staging, rig) {
     this.cv = canvas; this.x = canvas.getContext('2d');
-    this.staging = staging; this.rig = rig; // {api, manifest, images}
+    this.staging = staging; this.rig = rig && { ...rig, manifest: scaleWatsonHead(rig.manifest) }; // {api, manifest, images}; Odie's head matched to the cast
     this.place = null; this.cast = []; this.speaker = null; this.motifs = [];
     this.figures = new Map(); // id -> {img, x, tx, a, ta, lean}
     this.watson = { x: 430, tx: 430, a: 1, pose: 'idle', poseT: 0, from: {}, to: {} };
@@ -282,8 +291,11 @@ export class Stage {
         if (mode === 'shade') extra = { head: Math.sin(ph * .6) * 3, upper_arm_left: 3, upper_arm_right: -3 };
         if (mode === 'still') extra = {};
         if (mode === 'idle') extra = { head: Math.sin(ph * 1.1) * 1.5 };
-        rig.stretch = STRETCH;
-        const pts = drawAnchorRig(x, shade ? (rig.grey ||= { ...rig, images: Object.fromEntries(Object.entries(rig.images).map(([k, v]) => [k, greyOf(v)])) }) : rig, extra, 0, 0, h + 6);
+        rig.stretch = STRETCH; rig.rest ||= bounds(rig, pose(rig, {}));
+        const code = f.chorus ? CHORUS_FACE[mode] : this.faces?.[id];
+        if (code !== f.face) { if (f.faceSeen && !f.chorus) this.emit('face', { x: f.x }); f.face = code; f.faceSeen = true; }
+        let R = this.faceRig(id, rig, code); if (shade) R = (R.grey ||= { ...R, images: Object.fromEntries(Object.entries(R.images).map(([k, v]) => [k, greyOf(v)])) });
+        const pts = drawAnchorRig(x, R, extra, 0, 0, h + 6, rig.rest);
         f.hand = [f.x + (f.flip ? -1 : 1) * pts.hand_left[0], FLOOR + 8 + pts.hand_left[1]];
       } else if (f.img) { const pk = f.poke ? clamp(1 - (performance.now() - f.poke) / 600, 0, 1) : 0; x.drawImage(shade ? greyOf(f.img) : f.img, -w / 2, -h - Math.sin(pk * Math.PI) * 14, w, h); }
       x.restore();
@@ -333,9 +345,35 @@ export class Stage {
     const since = now - this.lastSwitch; if (since < 420) { x.fillStyle = `rgba(18,12,6,${1 - since / 420})`; x.fillRect(0, 0, W, H); }
     requestAnimationFrame(this.onFrame);
   }
+  // ---------- faces: the packets' E01-E17 replacement heads, each hung at its own neck anchor ----------
+  faceRig(id, rig, code) {
+    const src = code && this.staging.rigs[id]?.faces?.[code]; if (!src) return rig;
+    rig.faceRigs ||= {}; if (code in rig.faceRigs) return rig.faceRigs[code] || rig;
+    rig.faceRigs[code] = null; // loading: keep the current head until it arrives
+    const part = this.staging.rigs[id].meta.parts.find(p => p.file === `expressions/${code}.png`);
+    loadImage(src).then(im => { if (im && part) rig.faceRigs[code] = { ...rig, parts: { ...rig.parts, head: part }, images: { ...rig.images, head: im }, faceRigs: null }; });
+    return rig;
+  }
+  // Odie's faces come from a differently framed bank: lay the trimmed head over his head card, keeping its neck and collar
+  watsonImages(code) {
+    const src = code && this.staging.watsonFaces?.[code], base = this.rig.images; if (!src) return base;
+    this.wfaces ||= {}; if (code in this.wfaces) return this.wfaces[code] || base;
+    this.wfaces[code] = null;
+    loadTrimmed(src).then(e => { if (!e) return; const h = base.head, c = document.createElement('canvas'); c.width = h.width; c.height = h.height; const g = c.getContext('2d');
+      g.drawImage(h, 0, 0); const w = 250 / 253 * h.width, k = w / e.width; g.drawImage(e, 123 / 253 * h.width - w / 2, -12 / 338 * h.height, w, e.height * k);
+      this.wfaces[code] = { ...base, head: c }; });
+    return base;
+  }
+  // the head as currently worn, for the HUD and character sheets
+  faceImage(id) {
+    if (id === 'char_player') return this.watsonImages(this.faces?.char_player).head;
+    const rig = this.rigs[id]; if (!rig) return null; const f = this.faceRig(id, rig, this.faces?.[id]); return f.images.head;
+  }
+
   // ---------- what you can click ----------
   // hit test in stage pixels; topmost first. Empty stage answers nothing.
   hitAt(px, py) { for (let i = this.hits.length - 1; i >= 0; i--) { const h = this.hits[i], [a, b, c, d] = h.r; if (px >= a && px <= c && py >= b && py <= d) return h; } return null; }
+  think(id, text) { (this.thoughts ||= []).push({ id, text, t: performance.now() }); this.emit('lift'); }
   same(a, b) { return a && b && a.kind === b.kind && (a.id === b.id || (a.kind === 'prop' && b.id && a.id.split('_')[0] === b.id.split('_')[0])); }
   poke(hit) {
     if (hit.kind === 'fig') { if (hit.id === 'char_player') { this.setWatsonPose('open'); setTimeout(() => this.setWatsonPose('idle'), 900); } else { const f = this.figures.get(hit.id); if (f) f.poke = performance.now(); } }
@@ -344,7 +382,7 @@ export class Stage {
   labelFor(hit) {
     if (hit.kind === 'prop') return hit.id.replace(/_(native|open|glow|strung|unstrung)$/, '').replace(/_/g, ' ');
     if (hit.id === 'char_player') return 'Odie (you)';
-    return this.staging.thinkers?.[hit.id] || this.staging.figures[hit.id]?.name || hit.id.replace(/^char_|^extra_/, '').replace(/_+/g, ' ');
+    return this.charNames?.[hit.id] || this.staging.thinkers?.[hit.id] || this.staging.figures[hit.id]?.name || hit.id.replace(/^char_|^extra_/, '').replace(/_+/g, ' ');
   }
   // numbered badges over objects a current choice is about; hover ring; the inspect tag
   drawAffordances(t) {
@@ -359,6 +397,17 @@ export class Stage {
       const h = this.hits.find(q => this.same(q, m)); if (!h) continue; const [cx, cy] = top(h), pulse = 0.5 + 0.5 * Math.sin(t * 4);
       x.save(); x.strokeStyle = `rgba(255,214,120,${0.5 + pulse * 0.5})`; x.lineWidth = 4; x.beginPath(); x.ellipse(cx, h.r[3] + 4, (h.r[2] - h.r[0]) / 2 + pulse * 6, 14 + pulse * 3, 0, 0, TAU); x.stroke(); x.restore();
       tag(cx, cy, `${m.n}  ${m.short || ''}`.trim(), '#ffd36e', '#1d1406');
+    }
+    // thought bubbles: what an ASAPS reflection says this person has just realised
+    this.thoughts = (this.thoughts || []).filter(th => performance.now() - th.t < 9000);
+    for (const th of this.thoughts) {
+      const h = this.hits.find(q => q.kind === 'fig' && q.id === th.id); if (!h) continue; const el = (performance.now() - th.t) / 1000, a = Math.min(1, el * 3, (9 - el) * 1.5);
+      x.save(); x.globalAlpha = a; x.font = 'italic 21px "Atkinson Hyperlegible", system-ui, sans-serif';
+      const words = th.text.split(' '), lines = []; let l = ''; for (const wd of words) { if (x.measureText(l + ' ' + wd).width > 360 && l) { lines.push(l); l = wd; } else l = l ? l + ' ' + wd : wd; } lines.push(l);
+      const bw = Math.max(...lines.map(t => x.measureText(t).width)) + 34, bh = lines.length * 27 + 22, cx = clamp((h.r[0] + h.r[2]) / 2, bw / 2 + 10, W - bw / 2 - 10), by = Math.max(10, h.r[1] - bh - 34);
+      x.fillStyle = 'rgba(255,250,236,.97)'; x.shadowColor = 'rgba(0,0,0,.45)'; x.shadowBlur = 12; x.beginPath(); x.roundRect(cx - bw / 2, by, bw, bh, 18); x.fill();
+      for (const [dx, dy, r] of [[0, bh + 10, 7], [10, bh + 24, 4.5]]) { x.beginPath(); x.arc((h.r[0] + h.r[2]) / 2 + dx * 0 + (cx > (h.r[0] + h.r[2]) / 2 ? 8 : -8), by + dy, r, 0, TAU); x.fill(); }
+      x.shadowBlur = 0; x.fillStyle = '#2a1c0e'; x.textAlign = 'center'; x.textBaseline = 'top'; lines.forEach((t, i) => x.fillText(t, cx, by + 12 + i * 27)); x.restore();
     }
     const ins = this.inspect; if (ins && performance.now() - ins.t < 2600) { const h = this.hits.find(q => this.same(q, ins.hit)) || ins.hit, [cx, cy] = top(h); tag(cx, cy - (this.marks?.some(m => this.same(h, m)) ? 40 : 0), this.labelFor(ins.hit), 'rgba(242,230,204,.96)', '#2a1c0e'); }
   }
@@ -388,7 +437,8 @@ export class Stage {
     const rot = this.currentRotations();
     rot.torso = (rot.torso || 0) + Math.sin(t * 1.7) * 0.5; rot.head = (rot.head || 0) + Math.sin(t * 1.1 + 1) * 0.8;
     const rc = this.rigCanvas, rx = rc.getContext('2d');
-    const info = api.draw(rx, manifest, images, rot, { background: null, padding: 0.02 });
+    const wcode = this.faces?.char_player; if (wcode !== this.watsonFace) { if (this.watsonFace !== undefined) this.emit('face', { x: w.x }); this.watsonFace = wcode; }
+    const info = api.draw(rx, manifest, this.watsonImages(wcode), rot, { background: null, padding: 0.02 });
     const [bx0, by0, bx1, by1] = info.bounds, s = info.scale;
     const figTop = by0 * s + info.ty, figBot = by1 * s + info.ty, drawn = figBot - figTop;
     const k = (FIG_H + 6) / drawn; // same height as the figure cards
