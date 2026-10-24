@@ -20,6 +20,8 @@ const CUES = [
   [/doesn't ask about the work|doesn't\. Not yet/, 'turnAway'],
   [/So you stop\. You say nothing/, 'still'],
   [/lathe/i, 'prop:lathe'],
+  [/takes it and reads/, 'prop:reads'],
+  [/wipes his hands/, 'prop:rag'],
   [/journal/i, 'prop:journal'],
 ];
 function cuesFor(stage, text) {
@@ -162,7 +164,7 @@ async function boot() {
       b.execute = async (ctx, r) => {
         if (my !== runId) { engine.stop(); return null; }
         if (renderer.fast && b.id === reh.until) { renderer.fast = null; Math.random = realRandom; stage.quiet = false; $('#ff').hidden = true; window.__player.handover = handoverState(engine); }
-        await stage.setScene(b.id); await stage.setProps(b.id);
+        if (renderer.live) { await stage.setScene(b.id); await stage.setProps(b.id); } // skipped beats are not staged
         if (renderer.live) $('#log').insertAdjacentHTML('afterbegin', `<li><code>${b.id}</code> ${esc(b.type)} · ${esc(b.name || '')}</li>`);
         $('#beat').textContent = `${b.id} · ${b.type}`;
         const next = await ex(ctx, r);
@@ -176,6 +178,7 @@ async function boot() {
     Math.random = realRandom;
   }
   $('#start').onclick = () => { window.SFX?.init(); stage.state.tagFall = 0; run(); };
-  window.__player = { stage, get engine() { return engine; }, run, select: k => { sel.value = k; } };
+  // preview(beatId): stage a beat without playing (review and screenshots only)
+  window.__player = { stage, get engine() { return engine; }, run, select: k => { sel.value = k; }, preview: async id => { stage.state.craft = 6; await stage.setScene(id); await stage.setProps(id); } };
 }
 boot();

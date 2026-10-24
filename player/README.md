@@ -34,6 +34,17 @@ Everything the player needs is in `player/`. You don't need to restore the archi
 | `layouts.json` | Set layouts for 22 places, authored with `tools/preview_set_layout.py`. The orchard layout lives in `stage.js`. |
 | `props/`, `props.json` | Story props (calipers, offer letter states, clementines, prompt journal, bow, lathe, phone, hourglasses, moly, IBM 360, Knuthe's ladder). No native PNG exists for these, so `tools/extract_kit_props.py` cuts them from the JPEG kit crops and records each source and crop box in `props/PROPS.json`. |
 
+## Who and what is on stage
+
+| | |
+|---|---|
+| **Cast** | 64 rigged figures drawn from the packets. |
+| **Speakers** | Stand in the slots and gesture while they speak. |
+| **Crowds** | A back row, slightly smaller for depth: the office chorus clapping, the HR pair, the VP and a client, the Oracle's researcher circle chanting, Vane colleagues, hidden engineers, the Underworld's reorg shades (grey and translucent), Circe's offsite leads, Ajax's forge apprentices, and the orchard neighbours. |
+| **Thinkers** | Ryle and Naur ("Knowing How"), Graeber (the offer letter), James C. Scott (the Cyclops), and Lave and Wenger (the Road), each with a name plaque. Mau Piailug and a navigation learner stand still by the canoe. |
+| **Sets** | 26 laid out. The Road (beat 47) is a panorama through Compagnons, pottery, Ise and ijazah. Beat 8 is the Hendry works as a sepia memory. |
+| **Props** | Native props from the packets take precedence: the journal (closed, open, reading hands), calipers, offer letter, grafting knife and scion, rag, the father's shoulder-contact hand, Ajax's shield, the oat flat white, unicycle, maze, juggling ball, moly, canoe and paddle, potter's wheel, Ise tools. JPEG kit cuts are used only where nothing native exists: the letter's later states, clementines, bow, hourglasses, lathe, sprint board. |
+
 ## Rebuild
 
 ```sh

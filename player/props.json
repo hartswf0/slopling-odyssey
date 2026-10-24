@@ -23,40 +23,621 @@
   "bow_unstrung": "props/05.hero.great-bow-of-billing__01.png",
   "bow_strung": "props/05.hero.great-bow-of-billing__04.png",
   "lathe": "props/06.hero.hendry-metal-lathe__01.png",
-  "ship": "props/02.hero.black-ship-ferry__01.png"
+  "ship": "props/02.hero.black-ship-ferry__01.png",
+  "calipers_native": "native:calipers_native",
+  "offer_native": "native:offer_native",
+  "journal_native": "native:journal_native",
+  "journal_open": "native:journal_open",
+  "moly_native": "native:moly_native",
+  "unicycle": "native:unicycle",
+  "maze": "native:maze",
+  "juggling_ball": "native:juggling_ball",
+  "flatwhite": "native:flatwhite",
+  "shield": "native:shield",
+  "canoe": "native:canoe",
+  "paddle": "native:paddle",
+  "potter_wheel": "native:potter_wheel",
+  "clay_pot": "native:clay_pot",
+  "timber_joint": "native:timber_joint",
+  "mallet": "native:mallet",
+  "chisel": "native:chisel",
+  "hand_plane": "native:hand_plane",
+  "grafting_knife": "native:grafting_knife",
+  "graft_scion": "native:graft_scion",
+  "graft_tape": "native:graft_tape",
+  "rag": "native:rag",
+  "hand_shoulder": "native:hand_shoulder",
+  "hand_book_left": "native:hand_book_left",
+  "hand_book_right": "native:hand_book_right",
+  "keyboard": "native:keyboard",
+  "headset": "native:headset",
+  "lanyard": "native:lanyard",
+  "framework_cup": "native:framework_cup",
+  "lead_badge": "native:lead_badge",
+  "code_page": "native:code_page"
  },
  "beats": {
-  "beat_2": [["letter", 760, 470, 70, "mid"]],
-  "beat_4": [["phone", 180, 470, 70, "mid"]],
-  "beat_6": [["journal", 610, 600, 92, "front"], ["calipers", 700, 600, 104, "front"], ["letter", 800, 600, 92, "front"]],
-  "beat_7": [["journal", 610, 600, 92, "front", "lift"], ["calipers", 700, 600, 104, "front"], ["letter", 800, 600, 92, "front"]],
-  "beat_8": [["journal", 610, 600, 92, "front"], ["calipers", 700, 600, 104, "front", "lift"], ["letter", 800, 600, 92, "front"]],
-  "beat_9": [["journal", 610, 600, 92, "front"], ["calipers", 700, 600, 104, "front"], ["letter", 800, 600, 92, "front", "lift"]],
-  "beat_10": [["journal", 610, 600, 92, "front"], ["calipers", 700, 600, 104, "front"], ["letter", 800, 600, 92, "front"]],
-  "beat_11": [["hourglass", 640, 470, 80, "mid"]],
-  "beat_12": [["letter", 760, 470, 70, "mid"], ["hourglass_spent", 520, 470, 70, "mid"]],
-  "beat_13": [["letter", 760, 470, 70, "mid"]],
-  "beat_14": [["letter_crumpled", 760, 470, 66, "mid"]],
-  "beat_15a": [["charter", 760, 470, 72, "mid"]],
-  "beat_15b": [["letter_crumpled", 760, 470, 66, "mid"]],
-  "beat_16": [["sprint_salt", 640, 420, 170, "back"], ["clementines_spilled", 1180, 612, 90, "front"]],
-  "beat_16a": [["sprint_salt", 640, 420, 170, "back"]],
-  "beat_16b": [["sprint_salt", 640, 420, 170, "back"]],
-  "beat_21": [["moly", 1200, 612, 170, "front"]],
-  "beat_30": [["mainframe", 820, 470, 120, "mid"]],
-  "beat_31": [["mainframe", 820, 470, 120, "mid"]],
-  "beat_35": [["mouse", 300, 612, 70, "front"], ["wheel", 1170, 612, 100, "front"]],
-  "beat_36": [["mouse", 300, 612, 70, "front"], ["wheel", 1170, 612, 100, "front"]],
-  "beat_45": [["ladder", 1150, 612, 330, "mid"]],
-  "beat_46": [["ladder", 1150, 612, 330, "mid"]],
-  "beat_77": [["bow_unstrung", 1180, 612, 230, "mid"]],
-  "beat_78": [["bow_unstrung", 1180, 612, 230, "mid"]],
-  "beat_80": [["bow_strung", 1180, 612, 230, "mid"]],
-  "beat_81": [["bow_strung", 1180, 612, 230, "mid"]]
+  "beat_2": [
+   [
+    "offer_native",
+    760,
+    470,
+    74,
+    "mid"
+   ]
+  ],
+  "beat_4": [
+   [
+    "phone",
+    180,
+    470,
+    70,
+    "mid"
+   ]
+  ],
+  "beat_6": [
+   [
+    "journal_native",
+    610,
+    600,
+    86,
+    "front"
+   ],
+   [
+    "calipers_native",
+    705,
+    606,
+    70,
+    "front"
+   ],
+   [
+    "offer_native",
+    805,
+    600,
+    92,
+    "front"
+   ]
+  ],
+  "beat_7": [
+   [
+    "journal_native",
+    610,
+    600,
+    86,
+    "front",
+    "lift"
+   ],
+   [
+    "calipers_native",
+    705,
+    606,
+    70,
+    "front"
+   ],
+   [
+    "offer_native",
+    805,
+    600,
+    92,
+    "front"
+   ]
+  ],
+  "beat_8": [
+   [
+    "calipers_native",
+    640,
+    640,
+    90,
+    "front",
+    "lift"
+   ]
+  ],
+  "beat_9": [
+   [
+    "journal_native",
+    610,
+    600,
+    86,
+    "front"
+   ],
+   [
+    "calipers_native",
+    705,
+    606,
+    70,
+    "front"
+   ],
+   [
+    "offer_native",
+    805,
+    600,
+    92,
+    "front",
+    "lift"
+   ]
+  ],
+  "beat_10": [
+   [
+    "journal_native",
+    610,
+    600,
+    86,
+    "front"
+   ],
+   [
+    "calipers_native",
+    705,
+    606,
+    70,
+    "front"
+   ],
+   [
+    "offer_native",
+    805,
+    600,
+    92,
+    "front"
+   ]
+  ],
+  "beat_11": [
+   [
+    "hourglass",
+    640,
+    470,
+    80,
+    "mid"
+   ]
+  ],
+  "beat_12": [
+   [
+    "offer_native",
+    760,
+    470,
+    74,
+    "mid"
+   ],
+   [
+    "hourglass_spent",
+    520,
+    470,
+    70,
+    "mid"
+   ]
+  ],
+  "beat_13": [
+   [
+    "offer_native",
+    760,
+    470,
+    74,
+    "mid"
+   ],
+   [
+    "lanyard",
+    640,
+    640,
+    80,
+    "front"
+   ]
+  ],
+  "beat_14": [
+   [
+    "letter_crumpled",
+    760,
+    470,
+    66,
+    "mid"
+   ]
+  ],
+  "beat_15a": [
+   [
+    "charter",
+    760,
+    470,
+    72,
+    "mid"
+   ]
+  ],
+  "beat_15b": [
+   [
+    "letter_crumpled",
+    760,
+    470,
+    66,
+    "mid"
+   ]
+  ],
+  "beat_16": [
+   [
+    "sprint_salt",
+    640,
+    420,
+    170,
+    "back"
+   ],
+   [
+    "clementines_spilled",
+    1180,
+    612,
+    90,
+    "front"
+   ]
+  ],
+  "beat_16a": [
+   [
+    "sprint_salt",
+    640,
+    420,
+    170,
+    "back"
+   ]
+  ],
+  "beat_16b": [
+   [
+    "sprint_salt",
+    640,
+    420,
+    170,
+    "back"
+   ]
+  ],
+  "beat_21": [
+   [
+    "moly_native",
+    1200,
+    612,
+    180,
+    "front"
+   ],
+   [
+    "framework_cup",
+    90,
+    640,
+    80,
+    "front"
+   ]
+  ],
+  "beat_30": [
+   [
+    "mainframe",
+    820,
+    470,
+    120,
+    "mid"
+   ]
+  ],
+  "beat_31": [
+   [
+    "mainframe",
+    820,
+    470,
+    120,
+    "mid"
+   ]
+  ],
+  "beat_35": [
+   [
+    "maze",
+    250,
+    640,
+    110,
+    "front"
+   ],
+   [
+    "unicycle",
+    1180,
+    612,
+    190,
+    "front"
+   ],
+   [
+    "juggling_ball",
+    1080,
+    620,
+    40,
+    "front"
+   ]
+  ],
+  "beat_36": [
+   [
+    "maze",
+    250,
+    640,
+    110,
+    "front"
+   ],
+   [
+    "unicycle",
+    1180,
+    612,
+    190,
+    "front"
+   ],
+   [
+    "juggling_ball",
+    1080,
+    620,
+    40,
+    "front"
+   ]
+  ],
+  "beat_45": [
+   [
+    "ladder",
+    1150,
+    612,
+    330,
+    "mid"
+   ]
+  ],
+  "beat_46": [
+   [
+    "ladder",
+    1150,
+    612,
+    330,
+    "mid"
+   ]
+  ],
+  "beat_77": [
+   [
+    "bow_unstrung",
+    1180,
+    612,
+    230,
+    "mid"
+   ]
+  ],
+  "beat_78": [
+   [
+    "bow_unstrung",
+    1180,
+    612,
+    230,
+    "mid"
+   ]
+  ],
+  "beat_80": [
+   [
+    "bow_strung",
+    1180,
+    612,
+    230,
+    "mid"
+   ]
+  ],
+  "beat_81": [
+   [
+    "bow_strung",
+    1180,
+    612,
+    230,
+    "mid"
+   ]
+  ],
+  "beat_1": [
+   [
+    "keyboard",
+    780,
+    640,
+    60,
+    "front"
+   ],
+   [
+    "headset",
+    960,
+    640,
+    70,
+    "front"
+   ]
+  ],
+  "beat_48": [
+   [
+    "canoe",
+    950,
+    640,
+    120,
+    "front"
+   ],
+   [
+    "paddle",
+    1180,
+    640,
+    140,
+    "front"
+   ]
+  ],
+  "beat_49": [
+   [
+    "potter_wheel",
+    640,
+    640,
+    110,
+    "front"
+   ],
+   [
+    "clay_pot",
+    1150,
+    640,
+    80,
+    "front"
+   ]
+  ],
+  "beat_70": [
+   [
+    "flatwhite",
+    420,
+    640,
+    60,
+    "front"
+   ]
+  ],
+  "beat_71": [
+   [
+    "shield",
+    1150,
+    612,
+    190,
+    "front"
+   ],
+   [
+    "flatwhite",
+    420,
+    640,
+    60,
+    "front"
+   ]
+  ],
+  "beat_74": [
+   [
+    "shield",
+    1150,
+    612,
+    170,
+    "front"
+   ]
+  ],
+  "beat_85": [
+   [
+    "code_page",
+    640,
+    640,
+    80,
+    "front"
+   ]
+  ],
+  "beat_94": [
+   [
+    "graft_tape",
+    960,
+    470,
+    40,
+    "mid"
+   ],
+   [
+    "grafting_knife",
+    1060,
+    640,
+    40,
+    "front"
+   ],
+   [
+    "rag",
+    160,
+    640,
+    60,
+    "front"
+   ]
+  ]
  },
  "cues": {
-  "lathe": ["lathe", 150, 612, 120, "front"],
-  "journal": ["journal", 380, 560, 80, "front"],
-  "calipers": ["calipers_glow", 380, 560, 96, "front"]
+  "lathe": [
+   "lathe",
+   150,
+   612,
+   120,
+   "front"
+  ],
+  "journal": [
+   "journal_open",
+   700,
+   450,
+   110,
+   "front"
+  ],
+  "calipers": [
+   "calipers_glow",
+   380,
+   560,
+   96,
+   "front"
+  ],
+  "reads": [
+   "journal_open",
+   760,
+   430,
+   120,
+   "front"
+  ],
+  "rag": [
+   "rag",
+   880,
+   640,
+   60,
+   "front"
+  ],
+  "shoulder": [
+   "hand_shoulder",
+   0,
+   0,
+   60,
+   "front"
+  ]
+ },
+ "panorama": {
+  "place_craft_road": [
+   [
+    "timber_joint",
+    1150,
+    640,
+    90,
+    "front"
+   ],
+   [
+    "hand_plane",
+    130,
+    640,
+    60,
+    "front"
+   ]
+  ],
+  "place_pottery": [
+   [
+    "potter_wheel",
+    640,
+    640,
+    110,
+    "front"
+   ],
+   [
+    "clay_pot",
+    1150,
+    640,
+    80,
+    "front"
+   ]
+  ],
+  "place_ise": [
+   [
+    "timber_joint",
+    640,
+    640,
+    90,
+    "front"
+   ],
+   [
+    "mallet",
+    1150,
+    640,
+    70,
+    "front"
+   ],
+   [
+    "chisel",
+    160,
+    640,
+    70,
+    "front"
+   ]
+  ],
+  "place_ijazah": [
+   [
+    "journal_open",
+    640,
+    640,
+    90,
+    "front"
+   ]
+  ]
  }
 }

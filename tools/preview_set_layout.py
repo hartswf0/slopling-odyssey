@@ -32,7 +32,7 @@ def render(lay, out):
             src = Image.open(P / pieces[pid]['src']).convert('RGBA'); w = int(h * src.width / src.height)
             im.alpha_composite(src.resize((max(1, w), max(1, int(h)))), (int(cx - w / 2), int(by - h)))
     for layer in ('back', 'floor', 'mid'): draw(layer)
-    figs = [f for f in ('char_player', 'char_dana', 'char_chad', 'char_ines') if f in st['figures']]
+    figs = [f for f in ('char_player', 'char_dana', 'char_chad', 'char_ines') if st['figures'].get(f, {}).get('src')] or ['char_player']  # rigged cast have no card file
     for i, x in enumerate(lay.get('slots', [])[:3]):
         f = st['figures'][figs[i % len(figs)]]; src = Image.open(P / f['src']).convert('RGBA'); h = 372; w = int(h * src.width / src.height)
         im.alpha_composite(src.resize((w, h)), (int(x - w / 2), FLOOR + 8 - h))
