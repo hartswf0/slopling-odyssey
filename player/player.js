@@ -5,7 +5,8 @@ import { Stage, loadImage } from './stage.js';
 import { Sound } from './sound.js';
 import { makeUI } from './ui.js';
 import { makeHUD } from './hud.js';
-import { readWorld } from './world.js';
+import { readWorld, ITEM_PROP } from './world.js';
+import { makePrompter } from './prompter.js';
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -53,9 +54,9 @@ class CardboardRenderer {
     const f = this.fast; let id, rnd = false;
     if (f.script?.length) { const s = f.script.shift(); if (s.rnd) f.rnd(); this.trail.push({ ...s }); return s.id; } // a rehearsal pick drew one number: draw it again so the engine's stream lines up
     else { rnd = true; const fresh = list.filter(c => !this.visited.includes(c.id)); const pool = fresh.length ? fresh : list; id = pool[Math.floor(f.rnd() * pool.length)].id; }
-    this.trail.push({ id, rnd }); return id;
+    this.trail.push({ id, rnd, beat: this.beatId }); return id;
   }
-  async choose(card) { const id = await card; this.trail.push({ id, rnd: false, live: true }); this.ui.trailChanged?.(); return id; }
+  async choose(card) { const id = await card; this.trail.push({ id, rnd: false, live: true, beat: this.beatId }); this.ui.trailChanged?.(); return id; }
 
   async renderTitleScreen(title, author, buttonText) { if (!(await this.ready())) return; await this.ui.card({ title, sub: author, button: buttonText || 'Begin' }); }
   async renderText(text, buttonText) { if (!(await this.ready())) return; this.ui.say(text); this.stage.setSpeaker(null); this.stage.setWatsonPose('think'); cuesFor(this.stage, text); await this.ui.card({ body: text, button: buttonText || 'Continue' }); }
@@ -82,7 +83,9 @@ class CardboardRenderer {
   async renderDurScreen(text, duration) { if (!(await this.ready())) return; this.ui.say(text); await this.ui.card({ body: text, timed: duration }); }
   async renderEndScreen(message, showRestart, showCredits) {
     this.ui.ended(message); this.ui.say(message); this.ui.sound.coda(String(message).split('\n')[0]);
-    return this.ui.card({ body: message, choices: [...(showCredits ? [{ id: 'credits', text: 'Sources' }] : []), { id: 'restart', text: 'Sail again' }] });
+    const id = await this.ui.card({ body: message, choices: [...(showCredits ? [{ id: 'credits', text: 'Sources' }] : []), { id: 'restart', text: 'Sail again' }] });
+    if (id === 'restart') this.ui.prompter?.say('end', { force: true });
+    return id;
   }
   async renderCreditsPage(c) { await this.ui.card({ title: c.creditsTitle, body: c.creditsBody, button: c.creditsCloseText || 'Close' }); return 'close'; }
   async renderAISummary(d) { return this.renderEndScreen(`**${d.title}**\n\n${d.summary}`, d.showRestart, d.showCredits); }
@@ -143,11 +146,30 @@ async function boot() {
   const sound = new Sound(); stage.sound = sound; window.SFX = sound;
   stage.onSound = (name, d) => sound.event(name, d); stage.onLight = a => sound.setLight(a); stage.voiceLevel = () => sound.voiceLevel();
   soundControls(sound);
-  const ui = makeUI({ story: json.story, staging, stage, sound }); ui.story = json.story;
+  const prompter = makePrompter({ sound });
+  const ui = makeUI({ story: json.story, staging, stage, sound, prompter }); ui.story = json.story; ui.prompter = prompter;
   stage.charNames = Object.fromEntries(json.story.characters.map(c => [c.id, c.name])); // the story's names, never a packet's
   const hud = ui.hud = makeHUD({ story: json.story, staging, stage, ui, sound });
   ui.onInspect = hit => hud.openSheet(hit);
-  ui.onLocked = rows => hud.openList('Closed by earlier choices', rows); ui.onChoices = () => hud.render();
+  ui.onLocked = (locked, pick) => hud.openList(locked, pick);
+  // Where each key lives: the beat that offers an item, sets a variable, or leads to a place. A locked
+  // door can then take you back to the last time you stood there (a replay, so everything after is undone).
+  const keys = { item: {}, var: {}, beat: {} }, add = (m, k, b) => (m[k] ||= new Set()).add(b);
+  for (const b of json.story.beats) (function walk(o) { if (!o || typeof o !== 'object') return; if (Array.isArray(o)) return o.forEach(walk);
+    if (o.type === 'setVariable' && o.target) add(keys.var, o.target, b.id);
+    if (b.type === 'pickProp' && o.name && o.target) add(keys.item, o.name, b.id);
+    if (typeof o.target === 'string' && o.target.startsWith('beat_')) add(keys.beat, o.target, b.id);
+    Object.values(o).forEach(walk); })(b.parameters);
+  ui.rewindFor = conds => {
+    const t = renderer?.trail || [];
+    for (const k of conds || []) {
+      const where = k.type === 'inventory' ? keys.item[k.item] : k.type === 'variable' && !/^visited_/.test(k.variable) ? keys.var[k.variable] : k.type === 'visitedBeat' ? keys.beat[k.beatId] : null;
+      if (!where) continue;
+      for (let i = t.length - 1; i >= 0; i--) if (where.has(t[i].beat)) { const name = json.story.beats.find(b => b.id === t[i].beat)?.name || 'that moment';
+        return { name, go: () => { rewound = { item: k.type === 'inventory' ? k.item : null }; run(t.slice(0, i)); } }; }
+    }
+    return null;
+  }; ui.onChoices = () => hud.render();
   $('#engine').textContent = 'ASAPS core ' + ASAPS_CORE_VERSION;
   const sel = $('#rehearse'); sel.innerHTML = Object.entries(REHEARSALS).map(([k, r]) => `<option value="${k}">${esc(r.label)}</option>`).join('');
   const startFrom = location.hash.slice(1); if (REHEARSALS[startFrom]) sel.value = startFrom;
@@ -173,7 +195,11 @@ async function boot() {
       sound.setScene({ place: stage.place, memory: stage.memory, chorusMode: stage.chorusMode });
       readState(engine, stage, ui, false); trailChanged();
     };
-    renderer.onHandover = async () => { renderer.resumed = true; await handover(); };
+    renderer.onHandover = async () => { renderer.resumed = true; await handover();
+      if (rewound) { // landed: the prompter says so, and the thing you came back for is lit on stage
+        const r = rewound; rewound = null; prompter.say('rewind:go', { force: true });
+        if (r.item) stage.spotlight = { kind: 'prop', id: (ITEM_PROP[r.item] || r.item).split('_')[0], t: performance.now() };
+      } };
     for (const b of story.getAllBeats()) {
       const ex = b.execute.bind(b);
       b.execute = async (ctx, r) => {
@@ -197,10 +223,21 @@ async function boot() {
   ui.trailChanged = trailChanged;
   $('#undo').onclick = () => {
     const t = renderer.trail, last = t.map(s => !!s.live).lastIndexOf(true); if (last < 0) return;
-    ui.toast('Back to your last choice'); run(t.slice(0, last));
+    backs++; if (backs >= 3) { backs = 0; prompter.say('back:again', { force: true }); } else ui.toast('Back to your last choice');
+    run(t.slice(0, last));
   };
-  const start = () => { sound.init(); $('#start-screen').hidden = true; $('#menu').hidden = true; run(); };
+  let backs = 0, rewound = null;
+  // the opening: the theatre already lit on the orchard, the passage everything else leads to; no controls until there is a journey
+  $('#controls').hidden = true; stage.quiet = true; stage.state.craft = 4; stage.craftSeen = 4; // the poster is still: no streak of light
+  stage.setScene('beat_93').then(() => stage.setProps('beat_93')).then(() => { stage.quiet = false; });
+  const start = () => { sound.init(); $('#start-screen').hidden = true; $('#menu').hidden = true; $('#controls').hidden = false; backs = 0; run(); setTimeout(() => prompter.say('hello', { force: true }), 900); };
   $('#start').onclick = start; $('#restart').onclick = start;
+  // the playbill: begin anywhere in the story (ASAPS plays the beats before it with fixed choices)
+  $('#playbill').innerHTML = '<span>or begin at</span>' + Object.entries(REHEARSALS).filter(([k]) => k !== 'start').map(([k, r]) => `<button data-k="${k}">${esc(r.label.replace(/ \(.*\)$/, ''))}</button>`).join('');
+  $('#playbill').querySelectorAll('button').forEach(b => b.onclick = () => { sel.value = b.dataset.k; start(); });
+  // the frame follows the screen: a tall screen gets a stage apron where the words and cards rest
+  const fitFrame = () => { const f = $('.fit'), r = f.getBoundingClientRect(), fr = stage.setFrame(r.width, r.height); f.style.setProperty('--band-top', (fr.bandTop * 100) + '%'); f.style.setProperty('--apron-top', (fr.apronTop * 100) + '%'); };
+  addEventListener('resize', fitFrame); fitFrame();
   // preview(beatId): stage a beat without playing (review and screenshots only)
   window.__player = { stage, sound, ui, get engine() { return engine; }, get renderer() { return renderer; }, run, select: k => { sel.value = k; }, preview: async id => { stage.state.craft = 6; await stage.setScene(id); await stage.setProps(id); } };
 }

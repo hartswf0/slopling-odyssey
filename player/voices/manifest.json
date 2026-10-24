@@ -61,6 +61,10 @@
 "Ajax": {
 "voice": "am_fenrir",
 "speed": 0.9
+},
+"Prompter": {
+"voice": "bf_emma",
+"speed": 1.04
 }
 },
 "lines": {
@@ -1351,6 +1355,182 @@
 "dur": 26.98,
 "env": "014935544333112102211001111001221111111020110001011000000000000113241131320120110312100110111000011100000002210110222211030020000000000001110110000000000002132442323411104301211110000012213330400222210120012202111110312221111111002310000133322220012110300122121100110001100000000000000000022450321336322221210000000000212124123100000000025543343001110112210222021101321022100111110012110110000000000014432223101110121000000001120144003022112222110121110112000110000033144322222211011112101210111002222111100111021110012000110000000000000000",
 "text": "You stand in the orchard while your father talks about the title. He talks about"
+},
+"92f163da": {
+"file": "92f163da.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 4.14,
+"env": "05996224157874018620335200000000584598261694013456454427614124430624333127776532100",
+"text": "Lights. I'm the prompter. I hold the book, and I see everything you choose. Go o"
+},
+"4996afec": {
+"file": "4996afec.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 5.4,
+"env": "077167743330046310346533220000000155951032355515832303145443344454322100000000056356032232362001431312210100",
+"text": "That needs the Prompt Journal. You left it on the desk at one in the morning. I "
+},
+"56751eed": {
+"file": "56751eed.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 4.37,
+"env": "1766995471068863440147620333041654201005647955605851131000000044384134411344645544332000",
+"text": "You'd need your father's calipers for that. They were on the desk. You took some"
+},
+"98871f38": {
+"file": "98871f38.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 3.54,
+"env": "16694146762224322444452225510331100000000198511443454451550021044310100",
+"text": "The offer letter? You didn't take it. Frankly, I respected that."
+},
+"26e5580a": {
+"file": "26e5580a.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 5.42,
+"env": "0489935015125213137650044244353456752556554350646653100000000000006998164363356115763024310000007855433224100",
+"text": "You never picked up the calipers, so you never remembered the lathe. Neither did"
+},
+"aba060b6": {
+"file": "aba060b6.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 4.27,
+"env": "38998437724423225724568514310332100002664202548302219761100344334275005772201456432100",
+"text": "Ines messaged you at eleven p.m. You went to bed. This is that bed, calling."
+},
+"71160f20": {
+"file": "71160f20.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 4.69,
+"env": "0781487751301540342423430023445543100000000463936411000477510376135331014434341276303147300000",
+"text": "That one's for people who took the chair. You didn't. I'm not judging. I just ho"
+},
+"b47555d7": {
+"file": "b47555d7.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 4.44,
+"env": "05969269124134611546665441499731211000000015722656431023349301795113644282536027824243100",
+"text": "You'd have had to teach Ines first. Teaching. It's like prompting, but with a pe"
+},
+"c2462629": {
+"file": "c2462629.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 2.86,
+"env": "0471098876876410005479966335766345233203542530132653104000",
+"text": "You've been there. The island remembers you, even if you don't."
+},
+"5129e1a4": {
+"file": "5129e1a4.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 4.16,
+"env": "057842580444596107312322575244006764112100000004357389200782012554302520431653212000",
+"text": "You'd have had to read Brookes's ledger first. It's a big book. Most people don'"
+},
+"2d6ac809": {
+"file": "2d6ac809.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 4.31,
+"env": "029300037541518975364132055433300000000006558768700320421145534652331453300440013123100",
+"text": "Craft three. The bow wants five. There's no lock to pick here, Odie. There's pra"
+},
+"496dfcfa": {
+"file": "496dfcfa.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 3.82,
+"env": "04356972332554435413235512543012100000015356054664148413335056410244000322000",
+"text": "The Charter Room wants leverage. You have the leverage of a damp napkin."
+},
+"fb7fed72": {
+"file": "fb7fed72.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 3.26,
+"env": "068974555574556644203346234104565424323200000004985144227530432000",
+"text": "The numbers say no. I don't make the numbers. Well. I hold them."
+},
+"1ad04ddf": {
+"file": "1ad04ddf.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 2.37,
+"env": "169203463005544432100056434301242433333224321000",
+"text": "Locked. Not by me. By you, three scenes ago."
+},
+"b1a24b27": {
+"file": "b1a24b27.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 5.21,
+"env": "075185474044598500000000892840564458423274426602337701420023267643032000000001941545448543024555543101000",
+"text": "I can take you back. Everything since then gets swept off the stage. Touch it ag"
+},
+"c61cade2": {
+"file": "c61cade2.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 2.73,
+"env": "0199987838821251798652000048033457646725251445526123200",
+"text": "Fine. Back we go. I'll pretend I didn't see this."
+},
+"923d20f2": {
+"file": "923d20f2.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 3.39,
+"env": "29204178542000738433523343011555445553222004542551212015102443142100",
+"text": "Back again? Odysseus took ten years, and at least he kept moving."
+},
+"df089432": {
+"file": "df089432.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 3.78,
+"env": "0843448976642431312799303655200000006812787244712366205841124642211454322100",
+"text": "That's scenery. It's cardboard. I painted it, so, thank you, I suppose."
+},
+"abb86ec8": {
+"file": "abb86ec8.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 2.45,
+"env": "03547722417612343210414229853005431145510254322000",
+"text": "He's not a button. It's very thin cardboard."
+},
+"5e13d4a2": {
+"file": "5e13d4a2.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 2.71,
+"env": "1397015623477533100348976165488403331067122225553223100",
+"text": "Take your time. He's only been waiting thirty years."
+},
+"e396f008": {
+"file": "e396f008.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 3.03,
+"env": "0698637535526523630054444443220000000766123210600444443322000",
+"text": "The model would have answered by now. Badly. But by now."
+},
+"999707bb": {
+"file": "999707bb.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 3.18,
+"env": "3924446869975245564365678545103431020000068351353246554555433100",
+"text": "That's the show. They don't all end like that. Ask me how I know."
 }
 }
 }

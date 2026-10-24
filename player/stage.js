@@ -255,8 +255,16 @@ export class Stage {
   }
   onFrame(now) {
     const x = this.x, t = (now - this.t0) / 1000;
-    x.setTransform(1, 0, 0, 1, 0, 0); x.clearRect(0, 0, W, H); this.hits = [];
+    const CH = this.cv.height, oy = 0;
+    x.setTransform(1, 0, 0, 1, 0, 0); x.clearRect(0, 0, W, CH); this.hits = [];
     const lay = this.layoutFor(this.place) || { wash: ['#c9a777', '#6e5236'], pieces: [] };
+    // the camera: eases in on whoever speaks, closer on the touch, and back out when no one does.
+    // On a tall screen the scene fills the frame and the camera holds on one person at a time, as vertical film does.
+    const tg = this.camTarget(t), c = this.cam ||= { ...tg };
+    c.s += (tg.s - c.s) * 0.025; c.x += (tg.x - c.x) * 0.03; c.y += (tg.y - c.y) * 0.03;
+    const hw = W / (2 * c.s), hh = CH / (2 * c.s); c.x = clamp(c.x, hw, W - hw); c.y = clamp(c.y, Math.min(hh, H / 2), Math.max(H - hh, H / 2));
+    x.save();
+    x.setTransform(c.s, 0, 0, c.s, W / 2 - c.x * c.s, CH / 2 - c.y * c.s);
     // wash + proscenium board
     const g = x.createLinearGradient(0, 0, 0, H); g.addColorStop(0, lay.wash[0]); g.addColorStop(1, lay.wash[1]); x.fillStyle = g; x.fillRect(0, 0, W, H);
     x.fillStyle = 'rgba(40,26,12,.22)'; x.fillRect(0, FLOOR, W, H - FLOOR);
@@ -339,10 +347,11 @@ export class Stage {
       x.translate(W / 2, 26); x.fillStyle = '#f2e6cc'; x.strokeStyle = '#8a6a43'; x.lineWidth = 2; x.shadowColor = 'rgba(0,0,0,.4)'; x.shadowBlur = 8;
       x.beginPath(); x.rect(-tw / 2, 0, tw, 38); x.fill(); x.stroke(); x.shadowBlur = 0; x.fillStyle = '#2a1c0e'; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText(this.panLabel, 0, 19); x.restore(); }
     this.drawAffordances(t);
-    // grain/vignette
-    const v = x.createRadialGradient(W / 2, H / 2, H * .35, W / 2, H / 2, H * .95); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.38)'); x.fillStyle = v; x.fillRect(0, 0, W, H);
+    x.restore(); x.setTransform(1, 0, 0, 1, 0, 0);
+    // grain/vignette, over the whole frame
+    const v = x.createRadialGradient(W / 2, CH / 2, Math.min(W, CH) * .35, W / 2, CH / 2, Math.max(W, CH) * .75); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.38)'); x.fillStyle = v; x.fillRect(0, 0, W, CH);
     // scene change wipe
-    const since = now - this.lastSwitch; if (since < 420) { x.fillStyle = `rgba(18,12,6,${1 - since / 420})`; x.fillRect(0, 0, W, H); }
+    const since = now - this.lastSwitch; if (since < 420) { x.fillStyle = `rgba(18,12,6,${1 - since / 420})`; x.fillRect(0, 0, W, CH); }
     requestAnimationFrame(this.onFrame);
   }
   // ---------- faces: the packets' E01-E17 replacement heads, each hung at its own neck anchor ----------
@@ -370,6 +379,25 @@ export class Stage {
     const rig = this.rigs[id]; if (!rig) return null; const f = this.faceRig(id, rig, this.faces?.[id]); return f.images.head;
   }
 
+  // A tall screen gets a tall frame, and the scene is zoomed to fill it (see camTarget).
+  setFrame(cssW, cssH) {
+    const tall = cssH > cssW * 0.75, CH = tall ? Math.round(W * cssH / cssW) : H;
+    if (this.cv.height !== CH) this.cv.height = CH;
+    if (this.baseZoom !== CH / H) this.cam = null; // a new frame shape: the camera cuts rather than drifts
+    this.oy = 0; this.baseZoom = CH / H; // the scene always fills the frame
+    return { bandTop: 0, apronTop: 1 };
+  }
+  camTarget(t) {
+    const breathe = 0.008 * Math.sin(t * 0.09); // a slow breath, so a held scene is never quite still
+    const z = this.baseZoom || 1;
+    if (this.touching && this.watsonPts) return { s: 1.12 * z, x: this.watsonPts.shoulder[0] + 60, y: FLOOR - FIG_H * 0.6 };
+    const f = this.speaker && this.figures.get(this.speaker);
+    if (f && !f.leaving) return { s: (1.06 + breathe) * z, x: f.x, y: FLOOR - FIG_H * 0.55 };
+    if (z > 1.3 && this.hasWatson) return { s: z + Math.max(0, breathe), x: this.watson.x, y: H / 2 }; // tall screen, no one speaking: hold on Odie
+    return { s: z + Math.max(0, breathe), x: W / 2, y: H / 2 };
+  }
+  // screen pixels → stage pixels, through the camera
+  toWorld(px, py) { const c = this.cam || { s: 1, x: W / 2, y: H / 2 }, CH = this.cv.height; return [(px - (W / 2 - c.x * c.s)) / c.s, (py - (CH / 2 - c.y * c.s)) / c.s]; }
   // ---------- what you can click ----------
   // hit test in stage pixels; topmost first. Empty stage answers nothing.
   hitAt(px, py) { for (let i = this.hits.length - 1; i >= 0; i--) { const h = this.hits[i], [a, b, c, d] = h.r; if (px >= a && px <= c && py >= b && py <= d) return h; } return null; }
@@ -387,16 +415,15 @@ export class Stage {
   // numbered badges over objects a current choice is about; hover ring; the inspect tag
   drawAffordances(t) {
     const x = this.x, tag = (cx, cy, txt, fill, ink) => {
-      x.font = '700 20px "Atkinson Hyperlegible", system-ui, sans-serif'; const tw = x.measureText(txt).width + 24;
-      x.save(); x.fillStyle = fill; x.shadowColor = 'rgba(0,0,0,.5)'; x.shadowBlur = 8; x.beginPath(); x.roundRect(cx - tw / 2, cy - 17, tw, 34, 17); x.fill(); x.shadowBlur = 0;
+      x.font = '600 19px "Fraunces", Georgia, serif'; const tw = Math.max(30, x.measureText(txt).width + 18);
+      x.save(); x.fillStyle = fill; x.shadowColor = 'rgba(0,0,0,.5)'; x.shadowBlur = 8; x.beginPath(); x.roundRect(cx - tw / 2, cy - 15, tw, 30, 3); x.fill(); x.shadowBlur = 0;
       x.fillStyle = ink; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText(txt, cx, cy + 1); x.restore();
     };
     const top = h => [(h.r[0] + h.r[2]) / 2, Math.max(24, h.r[1] - 22)];
     if (this.hover && !this.marks?.some(m => this.same(this.hover, m))) { const [cx, cy] = top(this.hover); x.save(); x.strokeStyle = 'rgba(255,240,200,.85)'; x.lineWidth = 3; x.setLineDash([8, 6]); x.beginPath(); x.ellipse(cx, this.hover.r[3] + 4, (this.hover.r[2] - this.hover.r[0]) / 2, 12, 0, 0, TAU); x.stroke(); x.restore(); }
     for (const m of this.marks || []) {
       const h = this.hits.find(q => this.same(q, m)); if (!h) continue; const [cx, cy] = top(h), pulse = 0.5 + 0.5 * Math.sin(t * 4);
-      x.save(); x.strokeStyle = `rgba(255,214,120,${0.5 + pulse * 0.5})`; x.lineWidth = 4; x.beginPath(); x.ellipse(cx, h.r[3] + 4, (h.r[2] - h.r[0]) / 2 + pulse * 6, 14 + pulse * 3, 0, 0, TAU); x.stroke(); x.restore();
-      tag(cx, cy, `${m.n}  ${m.short || ''}`.trim(), '#ffd36e', '#1d1406');
+      x.save(); x.strokeStyle = `rgba(255,230,180,${0.25 + pulse * 0.35})`; x.lineWidth = 2.5; x.beginPath(); x.ellipse(cx, h.r[3] + 4, (h.r[2] - h.r[0]) / 2 + pulse * 6, 14 + pulse * 3, 0, 0, TAU); x.stroke(); x.restore();
     }
     // thought bubbles: what an ASAPS reflection says this person has just realised
     this.thoughts = (this.thoughts || []).filter(th => performance.now() - th.t < 9000);
@@ -408,6 +435,10 @@ export class Stage {
       x.fillStyle = 'rgba(255,250,236,.97)'; x.shadowColor = 'rgba(0,0,0,.45)'; x.shadowBlur = 12; x.beginPath(); x.roundRect(cx - bw / 2, by, bw, bh, 18); x.fill();
       for (const [dx, dy, r] of [[0, bh + 10, 7], [10, bh + 24, 4.5]]) { x.beginPath(); x.arc((h.r[0] + h.r[2]) / 2 + dx * 0 + (cx > (h.r[0] + h.r[2]) / 2 ? 8 : -8), by + dy, r, 0, TAU); x.fill(); }
       x.shadowBlur = 0; x.fillStyle = '#2a1c0e'; x.textAlign = 'center'; x.textBaseline = 'top'; lines.forEach((t, i) => x.fillText(t, cx, by + 12 + i * 27)); x.restore();
+    }
+    const sp = this.spotlight; if (sp && performance.now() - sp.t < 10000) { // what you came back for
+      const h = this.hits.find(q => q.kind === sp.kind && q.id.split('_')[0] === sp.id), pulse = 0.5 + 0.5 * Math.sin(t * 5);
+      if (h) { const [cx] = top(h); x.save(); x.strokeStyle = `rgba(255,236,190,${0.45 + pulse * 0.5})`; x.lineWidth = 4; x.shadowColor = 'rgba(255,220,150,.9)'; x.shadowBlur = 18; x.beginPath(); x.ellipse(cx, (h.r[1] + h.r[3]) / 2, (h.r[2] - h.r[0]) / 2 + 18 + pulse * 6, (h.r[3] - h.r[1]) / 2 + 14 + pulse * 4, 0, 0, TAU); x.stroke(); x.restore(); }
     }
     const ins = this.inspect; if (ins && performance.now() - ins.t < 2600) { const h = this.hits.find(q => this.same(q, ins.hit)) || ins.hit, [cx, cy] = top(h); tag(cx, cy - (this.marks?.some(m => this.same(h, m)) ? 40 : 0), this.labelFor(ins.hit), 'rgba(242,230,204,.96)', '#2a1c0e'); }
   }
@@ -451,7 +482,9 @@ export class Stage {
     const surge = this.surge ? clamp(1 - (performance.now() - this.surge) / 5000, 0, 1) : 0;
     const touching = [...this.figures.values()].some(f => f.reach && f.arm > 0.85);
     if (touching && !this.touching) this.emit('touch', { x: this.watsonPts.shoulder[0] }); this.touching = touching;
-    const a = clamp(this.state.craft / 8 + surge, 0, 1.6) * (this.state.dim ? 0.25 : 1) * (touching ? 0.2 : 1);
+    if (this.craftSeen !== this.state.craft) { this.craftSeen = this.state.craft; this.craftAt = performance.now(); } // Craft shows itself when it changes, then rests
+    const lit = Math.max(surge, clamp(1 - (performance.now() - (this.craftAt || 0) - 4000) / 2500, 0, 1));
+    const a = clamp(this.state.craft / 8 + surge, 0, 1.6) * lit * (this.state.dim ? 0.25 : 1) * (touching ? 0.2 : 1);
     this.onLight?.(this.quiet ? 0 : a);
     if (a > 0.02) {
       const [hx, hy] = map(this.watson.pose === 'point' ? info.pivots.hand_right : info.pivots.hand_left);

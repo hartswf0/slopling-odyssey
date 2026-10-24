@@ -1,0 +1,27 @@
+{
+  "note": "The Prompter: the toy theatre's prompter, who holds the book, sees every choice and is not above saying so. Asides break the fourth wall; they never block play. Voiced by tools/render_voices.py (speaker 'Prompter').",
+  "lines": {
+    "hello": "Lights. I'm the prompter. I hold the book, and I see everything you choose. Go on.",
+    "item:Prompt Journal": "That needs the Prompt Journal. You left it on the desk at one in the morning. I watched you walk past it.",
+    "item:Brass Calipers": "You'd need your father's calipers for that. They were on the desk. You took something shinier.",
+    "item:Offer Letter": "The offer letter? You didn't take it. Frankly, I respected that.",
+    "var:knowsFatherCraft": "You never picked up the calipers, so you never remembered the lathe. Neither did he, apparently. Families.",
+    "var:mentoredInes": "Ines messaged you at eleven p.m. You went to bed. This is that bed, calling.",
+    "var:callChoice": "That one's for people who took the chair. You didn't. I'm not judging. I just hold the book.",
+    "var:passedOnCraft": "You'd have had to teach Ines first. Teaching. It's like prompting, but with a person.",
+    "var:visited": "You've been there. The island remembers you, even if you don't.",
+    "visitedBeat": "You'd have had to read Brookes's ledger first. It's a big book. Most people don't.",
+    "counter:craft": "Craft three. The bow wants five. There's no lock to pick here, Odie. There's practice.",
+    "counter:leverage": "The Charter Room wants leverage. You have the leverage of a damp napkin.",
+    "counter": "The numbers say no. I don't make the numbers. Well. I hold them.",
+    "locked": "Locked. Not by me. By you, three scenes ago.",
+    "rewind:offer": "I can take you back. Everything since then gets swept off the stage. Touch it again if you mean it.",
+    "rewind:go": "Fine. Back we go. I'll pretend I didn't see this.",
+    "back:again": "Back again? Odysseus took ten years, and at least he kept moving.",
+    "scenery": "That's scenery. It's cardboard. I painted it, so, thank you, I suppose.",
+    "poke": "He's not a button. It's very thin cardboard.",
+    "idle": "Take your time. He's only been waiting thirty years.",
+    "idle:2": "The model would have answered by now. Badly. But by now.",
+    "end": "That's the show. They don't all end like that. Ask me how I know."
+  }
+}

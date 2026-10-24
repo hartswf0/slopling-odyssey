@@ -1,7 +1,8 @@
-// The heads-up layer: what the ASAPS engine knows, on screen while you play. Odie's face and
-// counters, the father's two ways of seeing him, the inventory (items picked up on stage, glowing
-// when a choice can use them), the objective, and sheets for anyone or anything you click.
-import { FACE_LABEL, COUNTERS, VARIANT_LABEL, ITEM_PROP, propItem, moodWords } from './world.js';
+// What the ASAPS engine knows, without a dashboard. The pocket holds what you carry: it shows itself
+// when something arrives or a choice can use it, and is faint otherwise. Everything else is one touch
+// deep: touch a person for their sheet (face, mood, feelings, thoughts, the choice about them), a thing
+// for what it opens later. Thoughts appear over the people who have them, and go in the Journal.
+import { FACE_LABEL, COUNTERS, VARIANT_LABEL, ITEM_PROP, propItem, moodWords, why } from './world.js';
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const pct = v => Math.round(Math.max(0, Math.min(1, v)) * 100);
@@ -9,7 +10,7 @@ const bar = (v, cls = '') => `<span class="bar ${cls}"><i style="width:${pct(v)}
 const firstSentences = (s, n = 2) => (String(s || '').match(/[^.!?]+[.!?]+/g) || [s || '']).slice(0, n).join(' ').trim();
 
 export function makeHUD({ story, staging, stage, ui, sound }) {
-  const hud = $('#hud'), beats = new Map(story.beats.map(b => [b.id, b]));
+  const pocket = $('#pocket'), beats = new Map(story.beats.map(b => [b.id, b])); let gainedAt = 0;
   let world = null, prev = null;
   const insights = []; // {who, text, kind}
   // every place an item is asked for later, so its sheet can say what picking it up opens
@@ -23,26 +24,17 @@ export function makeHUD({ story, staging, stage, ui, sound }) {
   const itemThumb = (name, el) => { const key = ITEM_PROP[name]; if (key) stage.thumb('prop', key, 96, 96).then(src => { if (src) el.style.backgroundImage = `url(${src})`; }); };
 
   function render() {
-    if (!world) return; const w = world, c = w.counters, f = w.chars.char_father, fatherHere = stage.figures.has('char_father');
-    const pride = f?.sentiments.find(s => s.emotion === 'pride')?.strength || 0, rec = f?.sentiments.find(s => s.emotion === 'recognition')?.strength || 0;
-    const usable = ui.usableItems?.() || {};
-    const islands = w.vars.islandsVisited, voyage = /Voyage|Islands/.test(beats.get(ui.beat?.())?.cluster || '');
-    hud.innerHTML = `
-      <button class="me" title="Odie: your state">${'<img alt="">'}<span class="st">${Object.entries(COUNTERS).map(([k, L]) => `<b title="${L}">${L.slice(0, 3)}<em>${c[k] ?? 0}</em></b>`).join('')}</span></button>
-      ${fatherHere && f ? `<button class="sees" title="How Lars sees you">Lars sees · the title ${bar(pride, 'p')} · you ${bar(rec, 'r')}</button>` : ''}
-      <div class="inv">${w.inventory.map(e => `<button class="slot${usable[e.name] ? ' use' : ''}" data-item="${esc(e.name)}" title="${esc(e.name)}${usable[e.name] ? ': usable now' : ''}"><span class="img"></span>${usable[e.name] ? `<em>${usable[e.name]}</em>` : ''}</button>`).join('')}</div>
-      ${voyage && islands != null ? `<div class="goal">Islands ${islands} of 4</div>` : ''}`;
-    const img = hud.querySelector('.me img'); img.src = faceSrc('char_player') || ''; if (!img.src) img.remove();
-    hud.querySelectorAll('.slot').forEach(el => { itemThumb(el.dataset.item, el.querySelector('.img')); el.onclick = () => { const n = usable[el.dataset.item]; if (n) ui.chooseNumber(n); else openSheet({ kind: 'item', id: el.dataset.item }); }; });
-    hud.querySelector('.me').onclick = () => openSheet({ kind: 'fig', id: 'char_player' });
-    hud.querySelector('.sees')?.addEventListener('click', () => openSheet({ kind: 'fig', id: 'char_father' }));
+    if (!world) return; const usable = ui.usableItems?.() || {};
+    pocket.innerHTML = world.inventory.map(e => `<button data-item="${esc(e.name)}" class="${usable[e.name] ? 'use' : ''}" aria-label="${esc(e.name)}${usable[e.name] ? ', usable now' : ''}">${usable[e.name] ? `<em>${usable[e.name]}</em>` : ''}</button>`).join('');
+    pocket.classList.toggle('rest', !Object.keys(usable).length && performance.now() - gainedAt > 6000);
+    pocket.querySelectorAll('button').forEach(el => { itemThumb(el.dataset.item, el); el.onclick = () => { const n = usable[el.dataset.item]; if (n) ui.chooseNumber(n); else openSheet({ kind: 'item', id: el.dataset.item }); }; });
   }
 
   function update(w, live) {
     prev = world; world = w;
     stage.faces = Object.fromEntries(Object.values(w.chars).map(c => [c.id, c.face]));
     if (live && prev) {
-      for (const e of w.inventory) if (!prev.inventory.some(p => p.name === e.name)) { fly(e.name); ui.toast(`+ ${e.name}`, true); sound.event('lift'); }
+      for (const e of w.inventory) if (!prev.inventory.some(p => p.name === e.name)) { gainedAt = performance.now(); setTimeout(render, 6100); fly(e.name); ui.toast(`Taken: ${e.name}`, true); sound.event('lift'); }
       for (const c of Object.values(w.chars)) { const before = prev.chars[c.id]?.reflections.length || 0; for (const r of c.reflections.slice(before)) { insights.push({ who: c.id, text: r.text, kind: 'thought' }); stage.think(c.id, r.text); } }
       for (const [g, st] of Object.entries(w.goals)) if (prev.goals[g] !== st) { const goal = w.chars.char_player?.goals.find(x => x.id === g); insights.push({ who: 'char_player', text: `${goal?.name || g}: ${st}`, kind: 'goal' }); ui.toast(`Goal ${st}: ${goal?.name || g}`, st !== 'failed'); }
       $('#journalBtn').dataset.n = insights.length || '';
@@ -53,7 +45,7 @@ export function makeHUD({ story, staging, stage, ui, sound }) {
   function fly(name) {
     const key = ITEM_PROP[name], h = stage.hits?.find(q => q.kind === 'prop' && key && q.id.split('_')[0] === key.split('_')[0]); if (!h) return;
     requestAnimationFrame(() => {
-      const cv = $('#stage').getBoundingClientRect(), slot = hud.querySelector(`.slot[data-item="${CSS.escape(name)}"]`)?.getBoundingClientRect(); if (!slot) return;
+      const cv = $('#stage').getBoundingClientRect(), slot = pocket.querySelector(`button[data-item="${CSS.escape(name)}"]`)?.getBoundingClientRect(); if (!slot) return;
       const s = cv.width / 1280, el = document.createElement('div'); el.className = 'flyer'; itemThumb(name, el);
       Object.assign(el.style, { left: cv.left + h.r[0] * s + 'px', top: cv.top + h.r[1] * s + 'px', width: (h.r[2] - h.r[0]) * s + 'px', height: (h.r[3] - h.r[1]) * s + 'px' });
       document.body.append(el); requestAnimationFrame(() => Object.assign(el.style, { left: slot.left + 'px', top: slot.top + 'px', width: slot.width + 'px', height: slot.height + 'px', opacity: 0.4 }));
@@ -106,6 +98,12 @@ export function makeHUD({ story, staging, stage, ui, sound }) {
       : '<p class="small">Nothing yet. When someone in the story realises something, or one of your aims is met or lost, it is kept here.</p>';
   };
   $('#journal .close').onclick = () => { $('#journal').hidden = true; };
-  function openList(title, rows) { sheet.querySelector('.body').innerHTML = `<h2>${esc(title)}</h2><div class="acts">${rows.map(r => `<div class="locked">${r}</div>`).join('')}</div>`; sheet.hidden = false; }
+  // the doors an earlier choice closed, as cards you can still try
+  function openList(locked, pickLock) {
+    const body = sheet.querySelector('.body'); body.innerHTML = '<h2>Closed by earlier choices</h2><div class="acts"></div>'; const acts = body.querySelector('.acts');
+    for (const c of locked) { const b = document.createElement('button'); b.className = 'card locked'; b.style.animation = 'none'; b.style.opacity = 1; b.style.transform = 'none'; b.innerHTML = `<span class="keyhole" aria-hidden="true"></span><span class="lbl">${esc(c.text)}<small>${esc(c.conditions.map(k => why(k, world, beats)).join('. '))}</small></span>`;
+      b.onclick = () => { const going = b.classList.contains('offer'); pickLock(b, c); if (going) sheet.hidden = true; }; acts.append(b); }
+    sheet.hidden = false;
+  }
   return { update, render, openSheet, openList, reset() { world = prev = null; insights.length = 0; $('#journalBtn').dataset.n = ''; } };
 }
