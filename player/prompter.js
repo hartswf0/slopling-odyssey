@@ -10,10 +10,13 @@ export function makePrompter({ sound }) {
   async function say(key, { force = false } = {}) {
     await ready; const t = lines[key] || lines[key.split(':')[0]] || (key.startsWith('counter') ? lines.counter : null); if (!t) return;
     const now = performance.now(); if (!force && now - last < 20000) return; last = now;
-    note.classList.toggle('inline', matchMedia('(orientation: portrait)').matches); // on a tall screen: pinned across the top of the picture
+    // on a tall screen he takes the subtitle's place while he talks (nothing else is covered); otherwise he is pinned at the stage's edge
+    const tall = matchMedia('(orientation: portrait)').matches, dlg = $('#dialog'), home = tall && !dlg.hidden ? dlg : $('.fit');
+    if (note.parentElement !== home) { if (home === dlg) dlg.insertBefore(note, dlg.querySelector('.acts')); else home.append(note); }
+    note.classList.toggle('inline', home === dlg); $('.fit').classList.toggle('aside-on', home === dlg);
     p.textContent = t; note.hidden = false; note.style.animation = 'none'; void note.offsetWidth; note.style.animation = '';
     const dur = (await sound.aside(t)) || t.length / 14;
-    clearTimeout(hideT); hideT = setTimeout(() => { note.hidden = true; }, dur * 1000 + 1600);
+    clearTimeout(hideT); hideT = setTimeout(() => { note.hidden = true; $('.fit').classList.remove('aside-on'); }, dur * 1000 + 1600);
   }
   // which aside answers a locked door, from its first ASAPS condition
   function lockKey(conds) {

@@ -95,9 +95,9 @@ export function makeUI({ story, staging, stage, sound, prompter }) {
         if (asChart) cardEl('opt', `<span class="lbl">Unroll the chart<small>${list.length} islands within reach. Where do the winds take you?</small></span>`).onclick = () => openMap(list);
         else list.forEach((c, i) => {
           if (c.isContinue) { cardEl('cont', esc(c.text || 'Continue')).onclick = () => done(c.id); return; }
-          const a = ui.about(c), b = cardEl('opt', `<span class="n">${i + 1}</span>${a ? '<span class="thumb"></span>' : ''}<span class="lbl">${md(c.text)}${c.description ? `<small>${esc(c.description)}</small>` : ''}${visited.includes(c.id) ? '<small>you have been down this road</small>' : ''}</span>`);
+          const a = ui.about(c), thumb = a && a.kind !== 'fig', b = cardEl('opt', `<span class="n">${i + 1}</span>${thumb ? '<span class="thumb"></span>' : ''}<span class="lbl">${md(c.text)}${c.description ? `<small>${esc(c.description)}</small>` : ''}${visited.includes(c.id) ? '<small>you have been down this road</small>' : ''}</span>`);
           b.dataset.id = c.id; b.onclick = () => done(c.id);
-          if (a) { stage.thumb(a.kind, a.id, 120, 68).then(src => { const th = b.querySelector('.thumb'); if (src && th) th.style.backgroundImage = `url(${src})`; else th?.remove(); }); if (a.kind !== 'place') marks.push({ n: i + 1, kind: a.kind, id: a.id }); }
+          if (thumb) stage.thumb(a.kind, a.id, 120, 68).then(src => { const th = b.querySelector('.thumb'); if (src && th) th.style.backgroundImage = `url(${src})`; else th?.remove(); }); if (a && a.kind !== 'place') marks.push({ n: i + 1, kind: a.kind, id: a.id }); // the person is ringed on stage; a card shows things and places only
         });
         stage.marks = marks; offered = list.filter(c => !c.isContinue); ui.onChoices?.();
         // the choices ASAPS withheld: dark cards with a keyhole. Touch one to try the lock.
@@ -160,8 +160,7 @@ export function makeUI({ story, staging, stage, sound, prompter }) {
     if (card.classList.contains('offer') && card._rewind) { card._rewind.go(); return; } // the prompter speaks when we land
     prompter?.say(prompter.lockKey(c.conditions), { force: true });
     const rw = ui.rewindFor?.(c.conditions);
-    setTimeout(() => dispatchEvent(new Event('resize')), 30); // the card may have grown: page the words again
-    if (rw) { card._rewind = rw; card.classList.add('offer'); (card.querySelector('small') || card.querySelector('.lbl').appendChild(document.createElement('small'))).textContent = `Touch again to go back to ${rw.name.replace(/\.$/, '')}. Everything after it is undone.`; }
+    if (rw) { card._rewind = rw; card.classList.add('offer'); card.querySelector('.lbl').innerHTML = `<small>Touch again to go back to ${esc(rw.name.replace(/\.$/, ''))}. Everything after it is undone.</small>`; } // the offer takes the line's place, so nothing else on screen moves
   }
   ui.pickLock = pickLock;
 

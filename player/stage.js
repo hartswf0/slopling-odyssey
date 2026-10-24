@@ -262,9 +262,13 @@ export class Stage {
     // On a tall screen the scene fills the frame and the camera holds on one person at a time, as vertical film does.
     const tg = this.camTarget(t), c = this.cam ||= { ...tg };
     c.s += (tg.s - c.s) * 0.025; c.x += (tg.x - c.x) * 0.03; c.y += (tg.y - c.y) * 0.03;
-    const hw = W / (2 * c.s), hh = CH / (2 * c.s); c.x = clamp(c.x, hw, W - hw); c.y = clamp(c.y, Math.min(hh, H / 2), Math.max(H - hh, H / 2));
+    const hw = W / (2 * c.s), hh = CH / (2 * c.s); c.x = clamp(c.x, hw, W - hw); if (!this.tall) c.y = clamp(c.y, hh, H - hh);
     x.save();
     x.setTransform(c.s, 0, 0, c.s, W / 2 - c.x * c.s, CH / 2 - c.y * c.s);
+    if (this.tall) { // the set continues past its own edges: sky above, boards below, so a tall frame is never blank
+      x.fillStyle = lay.wash[0]; x.fillRect(-W, -3000, 3 * W, 3000);
+      const fl = x.createLinearGradient(0, H, 0, H + 900); fl.addColorStop(0, lay.wash[1]); fl.addColorStop(1, '#120c07'); x.fillStyle = fl; x.fillRect(-W, H - 1, 3 * W, 3000);
+    }
     // wash + proscenium board
     const g = x.createLinearGradient(0, 0, 0, H); g.addColorStop(0, lay.wash[0]); g.addColorStop(1, lay.wash[1]); x.fillStyle = g; x.fillRect(0, 0, W, H);
     x.fillStyle = 'rgba(40,26,12,.22)'; x.fillRect(0, FLOOR, W, H - FLOOR);
@@ -348,6 +352,7 @@ export class Stage {
       x.beginPath(); x.rect(-tw / 2, 0, tw, 38); x.fill(); x.stroke(); x.shadowBlur = 0; x.fillStyle = '#2a1c0e'; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText(this.panLabel, 0, 19); x.restore(); }
     this.drawAffordances(t);
     x.restore(); x.setTransform(1, 0, 0, 1, 0, 0);
+    if (this.tall) this.drawValance(CH, t);
     // grain/vignette, over the whole frame
     const v = x.createRadialGradient(W / 2, CH / 2, Math.min(W, CH) * .35, W / 2, CH / 2, Math.max(W, CH) * .75); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,.38)'); x.fillStyle = v; x.fillRect(0, 0, W, CH);
     // scene change wipe
@@ -383,12 +388,36 @@ export class Stage {
   setFrame(cssW, cssH) {
     const tall = cssH > cssW * 0.75, CH = tall ? Math.round(W * cssH / cssW) : H;
     if (this.cv.height !== CH) this.cv.height = CH;
-    if (this.baseZoom !== CH / H) this.cam = null; // a new frame shape: the camera cuts rather than drifts
-    this.oy = 0; this.baseZoom = CH / H; // the scene always fills the frame
+    if (this.tall !== tall) this.cam = null; // a new frame shape: the camera cuts rather than drifts
+    this.oy = 0; this.tall = tall; this.baseZoom = 1;
     return { bandTop: 0, apronTop: 1 };
+  }
+  // A toy theatre's proscenium valance, hung across the top of a tall frame: the theatre's own
+  // architecture where a narrow screen would otherwise show bare wall above the set.
+  drawValance(CH, t) {
+    const x = this.x, h = this.valanceH = Math.round(CH * 0.13), sw = W / 7;
+    const g = x.createLinearGradient(0, 0, 0, h); g.addColorStop(0, '#2a0707'); g.addColorStop(0.55, '#6b1616'); g.addColorStop(1, '#4a0f0f');
+    x.save(); x.fillStyle = g; x.shadowColor = 'rgba(0,0,0,.6)'; x.shadowBlur = 30; x.shadowOffsetY = 12;
+    x.beginPath(); x.moveTo(0, 0); x.lineTo(W, 0); x.lineTo(W, h - 40);
+    for (let i = 7; i > 0; i--) x.quadraticCurveTo(i * sw - sw / 2, h + 34, (i - 1) * sw, h - 40); // scallops
+    x.closePath(); x.fill(); x.shadowBlur = 0; x.shadowOffsetY = 0;
+    x.strokeStyle = '#c9a24a'; x.lineWidth = 6; x.beginPath(); x.moveTo(0, h - 40);
+    for (let i = 0; i < 7; i++) x.quadraticCurveTo(i * sw + sw / 2, h + 34, (i + 1) * sw, h - 40);
+    x.stroke();
+    x.strokeStyle = 'rgba(0,0,0,.22)'; x.lineWidth = 3; for (let i = 1; i < 14; i++) { const px = i * W / 14; x.beginPath(); x.moveTo(px, 0); x.lineTo(px + Math.sin(t * 0.4 + i) * 3, h - 50); x.stroke(); } // folds
+    x.fillStyle = '#c9a24a'; x.fillRect(0, Math.round(h * 0.42), W, 5);
+    x.restore();
   }
   camTarget(t) {
     const breathe = 0.008 * Math.sin(t * 0.09); // a slow breath, so a held scene is never quite still
+    if (this.tall) { // vertical film: a shot that holds everyone who matters, feet at three-fifths of the frame (words and cards sit below)
+      const CH = this.cv.height, xs = [];
+      if (this.touching && this.watsonPts) xs.push(this.watsonPts.shoulder[0] - 90, this.watsonPts.shoulder[0] + 160);
+      else { if (this.hasWatson) xs.push(this.watson.x); for (const [id, f] of this.figures) if (!f.chorus && !f.leaving && !f.motif && (id === this.speaker || xs.length < 2)) xs.push(f.x); }
+      if (!xs.length) xs.push(W / 2);
+      const lo = Math.min(...xs), hi = Math.max(...xs), s = clamp(W / (hi - lo + 250), 1.6, 3.1) * (1 + breathe);
+      return { s, x: (lo + hi) / 2, y: FLOOR - 0.15 * CH / s };
+    }
     const z = this.baseZoom || 1;
     if (this.touching && this.watsonPts) return { s: 1.12 * z, x: this.watsonPts.shoulder[0] + 60, y: FLOOR - FIG_H * 0.6 };
     const f = this.speaker && this.figures.get(this.speaker);

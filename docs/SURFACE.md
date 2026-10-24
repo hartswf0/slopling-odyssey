@@ -54,6 +54,7 @@ You are not using an app about a story. You are sitting in front of a cardboard 
 **Measured**
 - No page scroll and no card off-screen: desktop, portrait phone, landscape phone.
 - No emoji anywhere in the interface.
+- Lock, offer and rewind measured on desktop, upright phone and landscape phone. The rewind lands on the line before the desk.
 - The lock, the offer and the rewind work in the real UI. On the ladder route, the journal card answers; touching again rewinds to just before the desk.
 
 **Judged** (independent critics with fresh context, from stills only; none saw motion or heard sound)
@@ -80,7 +81,29 @@ You are not using an app about a story. You are sitting in front of a cardboard 
    - the offer is a lit edge and a handwritten line;
    - the dots and numerals are gone;
    - the controls live on the stage.
-3. **Round 3:** see below.
+3. **Round 3: reference stronger.** The upright phone was the weak frame. Faults:
+   - the camera held one face, so the scene read as a portrait rather than a stage;
+   - the top of the frame was an empty wash;
+   - the cards read as a list;
+   - the prompter's note landed on the actors' heads.
+
+   Repaired:
+   - tall frames use a two-shot (Odie and whoever speaks, plus up to two of the cast);
+   - a proscenium valance closes the top, and the set extends above and below;
+   - the cards are fanned and set in serif, and they no longer carry a thumbnail of the person you can see on stage;
+   - the prompter takes the subtitle's place while he speaks;
+   - a lock's offer replaces its own line, so the cards don't jump.
+
+**Acceptance on an upright phone (iPhone 13, measured)**
+
+| | Both faces in frame | Empty top | Cards' share of height | Note over a face |
+|---|---|---|---|---|
+| Choosing | yes | 10% | 28% | no |
+| After touching a lock | yes | 10% | 26% | no |
+
+**Routes (fuzzer, all six starting points)**
+- 12 random runs, all reaching an ending: Argos, Ajax's Silence and Laertes's Orchard each reached at least once.
+- No page errors.
 
 **Unknown**
 - Motion, sound and timing in play. Nobody has played it on a phone yet.

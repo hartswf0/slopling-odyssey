@@ -25,9 +25,9 @@ canvas{display:block;width:100%;height:100%}
 #dialog{position:absolute;left:0;right:0;bottom:0;max-height:52%;z-index:3;display:flex;flex-direction:column;align-items:center;gap:.4cqw;padding:3cqw 3cqw 1.6cqw;
   background:linear-gradient(to top,rgba(5,4,6,.78) 0%,rgba(5,4,6,.55) 45%,rgba(5,4,6,0) 100%)}
 #dialog>*{width:min(100%,74cqw)}#dialog .acts{width:min(100%,94cqw)}
-@media (orientation:portrait){#dialog .acts{flex-direction:column;align-items:stretch}#dialog .acts .card{flex:0 0 auto;max-width:none;font-size:16px}}
+@media (orientation:portrait){#dialog .acts{flex-direction:column;align-items:center;gap:6px}#dialog .acts .card{flex:0 0 auto;width:84%;max-width:none;min-height:0;padding:7px 12px;font-size:14.5px}#dialog .acts .card:nth-child(2n){margin-left:9%}#dialog .acts .card:nth-child(2n+1){margin-right:9%}#dialog .acts .card .thumb{width:2.6em;height:1.9em}}
 @media (orientation:portrait){#dialog .text,#dialog .measure{font-size:clamp(17px,4.6cqw,23px)}#dialog .who{font-size:12px}}
-@media (orientation:portrait){#dialog{max-height:62%;padding:40px 16px 16px;gap:8px;background:linear-gradient(to top,rgba(5,4,6,.9) 0%,rgba(5,4,6,.7) 60%,rgba(5,4,6,0) 100%)}#dialog>*,#dialog .acts{width:100%}}
+@media (orientation:portrait){#dialog{max-height:44%;padding:34px 14px 14px;gap:8px;background:linear-gradient(to top,rgba(5,4,6,.9) 0%,rgba(5,4,6,.7) 60%,rgba(5,4,6,0) 100%)}#dialog>*,#dialog .acts{width:100%}}
 #dialog .who{font:700 13px/1 var(--text);letter-spacing:.22em;text-transform:uppercase;color:var(--brass)}
 #dialog .text{font-size:clamp(14px,1.75cqw,25px);line-height:1.42;text-shadow:0 2px 3px #000,0 0 18px #000;cursor:pointer;overflow:hidden;flex:0 1 auto}
 #dialog .text{padding:.15em .6em;border-radius:1.2em;background:rgba(6,4,3,.42);box-shadow:0 0 1.4em 1em rgba(6,4,3,.42)}
@@ -41,7 +41,7 @@ canvas{display:block;width:100%;height:100%}
 .acts{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:4px;perspective:900px}
 .card{position:relative;flex:1 1 0;min-width:0;max-width:330px;min-height:3.4em;display:flex;align-items:center;gap:12px;text-align:left;padding:10px 14px 10px 12px;color:var(--card-ink);
   background:repeating-linear-gradient(97deg,rgba(120,80,30,.06) 0 2px,transparent 2px 7px),linear-gradient(160deg,#ecd6a8,#d9b97f);border-radius:2px;box-shadow:0 10px 22px rgba(0,0,0,.55),inset 0 0 0 1px rgba(90,60,25,.35);
-  font:700 clamp(12px,1.3cqw,18px)/1.22 var(--text);transform:rotate(var(--r,0deg));animation:deal .45s cubic-bezier(.2,1.3,.4,1) both;animation-delay:var(--d,0s)}
+  font:600 clamp(12px,1.3cqw,18px)/1.25 var(--display);transform:rotate(var(--r,0deg));animation:deal .45s cubic-bezier(.2,1.3,.4,1) both;animation-delay:var(--d,0s)}
 @keyframes deal{from{transform:rotate(var(--r,0deg)) translateY(30px);opacity:0}}
 .card:hover,.card:focus-visible{outline:none;transform:rotate(0) translateY(-4px)!important;box-shadow:0 0 0 1px rgba(255,220,160,.55),0 0 26px rgba(255,200,120,.35),0 16px 28px rgba(0,0,0,.6)}
 .card .n{display:none}
@@ -64,7 +64,8 @@ canvas{display:block;width:100%;height:100%}
   background:#faf4e6;color:#2a1c0e;padding:.7em 1em .8em;border-radius:3px;box-shadow:0 10px 30px rgba(0,0,0,.55);transform:rotate(-1.2deg);animation:note .35s ease}
 #aside::before{content:"";position:absolute;left:50%;top:-6px;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#e66 0,#a22 60%,#611 100%);box-shadow:0 2px 3px rgba(0,0,0,.5)}
 #aside b{display:block;font:700 .72em var(--text);letter-spacing:.22em;text-transform:uppercase;color:#8a3b22;margin-bottom:.2em}#aside p{margin:0;font:italic 400 1.05em/1.35 var(--display)}
-#aside.inline{top:7%;left:4%;right:4%;max-width:none;font-size:14.5px}
+#aside.inline{position:relative;left:auto;top:auto;max-width:none;width:100%;font-size:15px;margin:2px 0 6px}
+.fit.aside-on #dialog .text,.fit.aside-on #dialog .who,.fit.aside-on #dialog .pager{display:none}
 @keyframes note{from{opacity:0;transform:rotate(-1.2deg) translateY(-10px)}}
 /* chapter slate: where you are, then gone */
 #slate{position:absolute;inset:0;display:grid;place-content:center;text-align:center;pointer-events:none;z-index:2;opacity:0}
