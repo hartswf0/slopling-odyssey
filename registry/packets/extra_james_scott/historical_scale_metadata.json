@@ -1,0 +1,782 @@
+{
+  "actor_id": "extra_james_scott",
+  "name": "James C. Scott",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "extra_james_scott__E00",
+      "part": "head",
+      "canvas_width_px": 180,
+      "canvas_height_px": 237,
+      "drawn_width_px": 179.91902834008098,
+      "drawn_height_px": 236.92307692307696,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E00.png",
+      "source_scale": 0.8906882591093118,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          90.8502024291498,
+          221.41619433198383
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "extra_james_scott__B03",
+      "part": "torso_front",
+      "canvas_width_px": 317,
+      "canvas_height_px": 344,
+      "drawn_width_px": 316.7731461167177,
+      "drawn_height_px": 343.47433084686253,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B03.png",
+      "source_scale": 1.2136902150065814,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          158.99341816586215,
+          37.867134708205334
+        ],
+        "waist": [
+          158.99341816586215,
+          314.46713470820526
+        ],
+        "shoulder_left": [
+          56.193856954804716,
+          82.8950416849495
+        ],
+        "shoulder_right": [
+          261.79297937691956,
+          82.8950416849495
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "extra_james_scott__B05",
+      "part": "pelvis_front",
+      "canvas_width_px": 329,
+      "canvas_height_px": 252,
+      "drawn_width_px": 328.44112250189465,
+      "drawn_height_px": 251.3993777174996,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B05.png",
+      "source_scale": 1.3516095576209657,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          164.22056125094733,
+          40.44015796401929
+        ],
+        "hip_left": [
+          85.71907814432164,
+          75.44015796401929
+        ],
+        "hip_right": [
+          242.72204435757303,
+          75.44015796401929
+        ],
+        "hem_pin_left": [
+          43.65698871115719,
+          206.47187602217872
+        ],
+        "hem_pin_right": [
+          284.7841337907375,
+          206.47187602217872
+        ],
+        "upper_pin_left": [
+          52.699256651641456,
+          58.38953288922572
+        ],
+        "upper_pin_right": [
+          275.7418658502532,
+          58.38953288922572
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "extra_james_scott__B11",
+      "part": "upper_arm_left",
+      "canvas_width_px": 174,
+      "canvas_height_px": 145,
+      "drawn_width_px": 173.0190677708047,
+      "drawn_height_px": 144.18255647567057,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B11.png",
+      "source_scale": 0.8239003227181176,
+      "assembly_rotation_deg": -41.618114633088716,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          140.3678979814857,
+          32.09091756987068
+        ],
+        "distal": [
+          30.171229817937466,
+          112.88258321560929
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "extra_james_scott__B12",
+      "part": "upper_arm_right",
+      "canvas_width_px": 175,
+      "canvas_height_px": 145,
+      "drawn_width_px": 174.88203005292425,
+      "drawn_height_px": 144.75880956533922,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B12.png",
+      "source_scale": 0.8367561246551399,
+      "assembly_rotation_deg": 41.384317718752456,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          30.658744407364328,
+          31.821835420634972
+        ],
+        "distal": [
+          140.5248235745842,
+          113.06248756340251
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "extra_james_scott__B13",
+      "part": "forearm_left",
+      "canvas_width_px": 144,
+      "canvas_height_px": 156,
+      "drawn_width_px": 143.08687317870573,
+      "drawn_height_px": 155.95712103075863,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B13.png",
+      "source_scale": 0.757073403061935,
+      "assembly_rotation_deg": -51.02910116171673,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          110.23745821984838,
+          29.419872442986794
+        ],
+        "distal": [
+          28.647657571863625,
+          125.60604830200565
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "extra_james_scott__B14",
+      "part": "forearm_right",
+      "canvas_width_px": 145,
+      "canvas_height_px": 163,
+      "drawn_width_px": 144.30563126589962,
+      "drawn_height_px": 162.14987599232805,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B14.png",
+      "source_scale": 0.7758367272360195,
+      "assembly_rotation_deg": 49.46028369264428,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          32.049815202119966,
+          30.55245031855445
+        ],
+        "distal": [
+          110.97568546384022,
+          128.93630569935408
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_open.png",
+      "asset_id": "extra_james_scott__B22",
+      "part": "hand_left_open",
+      "canvas_width_px": 86,
+      "canvas_height_px": 108,
+      "drawn_width_px": 85.8158556122449,
+      "drawn_height_px": 107.14580816326531,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B22.png",
+      "source_scale": 0.4960454081632653,
+      "assembly_rotation_deg": 169.2771319850097,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          40.621158474489796,
+          81.9566223367347
+        ],
+        "grip": [
+          43.15595051020408,
+          51.628406081632654
+        ],
+        "fingertip": [
+          43.15595051020408,
+          9.821699081632653
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_open.png",
+      "asset_id": "extra_james_scott__B21",
+      "part": "hand_right_open",
+      "canvas_width_px": 88,
+      "canvas_height_px": 107,
+      "drawn_width_px": 87.45355326633164,
+      "drawn_height_px": 106.01911206030148,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B21.png",
+      "source_scale": 0.48856733668341695,
+      "assembly_rotation_deg": 190.72286801499033,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          43.72677663316582,
+          92.87176503015073
+        ],
+        "grip": [
+          43.72677663316582,
+          51.06505803015074
+        ],
+        "fingertip": [
+          43.72677663316582,
+          9.25835103015075
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "extra_james_scott__B15",
+      "part": "thigh_left",
+      "canvas_width_px": 261,
+      "canvas_height_px": 302,
+      "drawn_width_px": 260.93202256906136,
+      "drawn_height_px": 301.0754106566092,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B15.png",
+      "source_scale": 1.4336924316981394,
+      "assembly_rotation_deg": -26.791998584228722,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          156.32982275236512,
+          48.96059654249146
+        ],
+        "distal": [
+          54.91042013403874,
+          249.80656929908383
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "extra_james_scott__B16",
+      "part": "thigh_right",
+      "canvas_width_px": 264,
+      "canvas_height_px": 310,
+      "drawn_width_px": 263.904145134482,
+      "drawn_height_px": 309.35430346319833,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B16.png",
+      "source_scale": 1.4661341396360112,
+      "assembly_rotation_deg": 27.414939853034614,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          100.7527380757867,
+          54.86273950517954
+        ],
+        "distal": [
+          204.34977638246724,
+          254.59419334779335
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "extra_james_scott__B17",
+      "part": "shin_left",
+      "canvas_width_px": 145,
+      "canvas_height_px": 249,
+      "drawn_width_px": 144.13116181637713,
+      "drawn_height_px": 248.95382495556046,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B17.png",
+      "source_scale": 1.1911666265816292,
+      "assembly_rotation_deg": -3.635686637298281,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          72.25616756844163,
+          41.964800254470795
+        ],
+        "distal": [
+          61.47610959787788,
+          211.62266287849224
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "extra_james_scott__B18",
+      "part": "shin_right",
+      "canvas_width_px": 148,
+      "canvas_height_px": 257,
+      "drawn_width_px": 147.17369002064046,
+      "drawn_height_px": 256.3275101192822,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B18.png",
+      "source_scale": 1.2264474168386705,
+      "assembly_rotation_deg": 3.4536020605010407,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          69.49051063807907,
+          46.22480314064949
+        ],
+        "distal": [
+          79.73134656868197,
+          215.91606773444795
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "extra_james_scott__B19",
+      "part": "shoe_left",
+      "canvas_width_px": 165,
+      "canvas_height_px": 111,
+      "drawn_width_px": 164.47662465361572,
+      "drawn_height_px": 110.12782694198616,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B19.png",
+      "source_scale": 0.7151157593635465,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          40.53276124072582,
+          22.976669348350754
+        ],
+        "sole": [
+          40.53276124072582,
+          102.9766693483507
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "extra_james_scott__B20",
+      "part": "shoe_right",
+      "canvas_width_px": 152,
+      "canvas_height_px": 109,
+      "drawn_width_px": 151.33998949027847,
+      "drawn_height_px": 108.60045542126463,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B20.png",
+      "source_scale": 0.70064809949203,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          111.3750218952531,
+          22.294622525836395
+        ],
+        "sole": [
+          111.3750218952531,
+          102.29462252583637
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "extra_james_scott__E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 179,
+      "canvas_height_px": 237,
+      "drawn_width_px": 178.64000000000001,
+      "drawn_height_px": 236.71999999999997,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E01.png",
+      "source_scale": 0.8800000000000001,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          87.12,
+          222.20000000000002
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "extra_james_scott__E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 187,
+      "canvas_height_px": 238,
+      "drawn_width_px": 186.42570281124497,
+      "drawn_height_px": 237.6706827309237,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E02.png",
+      "source_scale": 0.8835341365461847,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          96.30522088353413,
+          222.23534136546184
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "extra_james_scott__E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 178,
+      "canvas_height_px": 237,
+      "drawn_width_px": 177.41935483870967,
+      "drawn_height_px": 236.85483870967744,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E03.png",
+      "source_scale": 0.8870967741935484,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          89.59677419354838,
+          221.38387096774193
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "extra_james_scott__E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 183,
+      "canvas_height_px": 237,
+      "drawn_width_px": 182.89156626506025,
+      "drawn_height_px": 236.78714859437753,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E04.png",
+      "source_scale": 0.8835341365461847,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          98.07228915662651,
+          222.23534136546184
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "extra_james_scott__E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 176,
+      "canvas_height_px": 237,
+      "drawn_width_px": 175.47619047619048,
+      "drawn_height_px": 236.58730158730157,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E05.png",
+      "source_scale": 0.873015873015873,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          89.92063492063492,
+          222.13015873015874
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "extra_james_scott__E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 188,
+      "canvas_height_px": 238,
+      "drawn_width_px": 187.9352226720648,
+      "drawn_height_px": 237.81376518218624,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E06.png",
+      "source_scale": 0.8906882591093119,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          96.19433198380568,
+          222.30688259109317
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "extra_james_scott__E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 187,
+      "canvas_height_px": 238,
+      "drawn_width_px": 186.77551020408163,
+      "drawn_height_px": 237.06122448979593,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E07.png",
+      "source_scale": 0.8979591836734694,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          94.28571428571429,
+          222.3795918367347
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "extra_james_scott__E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 184,
+      "canvas_height_px": 237,
+      "drawn_width_px": 183.77510040160644,
+      "drawn_height_px": 236.78714859437753,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E08.png",
+      "source_scale": 0.8835341365461848,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          92.77108433734941,
+          222.23534136546186
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "extra_james_scott__E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 181,
+      "canvas_height_px": 237,
+      "drawn_width_px": 180.96774193548387,
+      "drawn_height_px": 236.85483870967744,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E09.png",
+      "source_scale": 0.8870967741935484,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          80.7258064516129,
+          222.2709677419355
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "extra_james_scott__E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 180,
+      "canvas_height_px": 239,
+      "drawn_width_px": 179.4262295081967,
+      "drawn_height_px": 238.03278688524588,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E10.png",
+      "source_scale": 0.9016393442622951,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          71.22950819672131,
+          222.41639344262296
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "extra_james_scott__E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 180,
+      "canvas_height_px": 238,
+      "drawn_width_px": 179.19354838709677,
+      "drawn_height_px": 237.74193548387092,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E11.png",
+      "source_scale": 0.8870967741935484,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          85.16129032258064,
+          222.2709677419355
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "extra_james_scott__E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 186,
+      "canvas_height_px": 238,
+      "drawn_width_px": 185.54216867469881,
+      "drawn_height_px": 237.6706827309237,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E12.png",
+      "source_scale": 0.8835341365461848,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          95.42168674698796,
+          222.23534136546186
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "extra_james_scott__E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 193,
+      "canvas_height_px": 237,
+      "drawn_width_px": 192.6104417670683,
+      "drawn_height_px": 236.78714859437753,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E13.png",
+      "source_scale": 0.8835341365461848,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          98.07228915662652,
+          221.3518072289157
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "extra_james_scott__E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 187,
+      "canvas_height_px": 238,
+      "drawn_width_px": 186.56,
+      "drawn_height_px": 237.59999999999997,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E14.png",
+      "source_scale": 0.88,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          97.68,
+          222.2
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "extra_james_scott__E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 186,
+      "canvas_height_px": 238,
+      "drawn_width_px": 185.68,
+      "drawn_height_px": 237.59999999999997,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E15.png",
+      "source_scale": 0.88,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          93.28,
+          222.2
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "extra_james_scott__E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 183,
+      "canvas_height_px": 238,
+      "drawn_width_px": 182.74193548387095,
+      "drawn_height_px": 237.74193548387092,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E16.png",
+      "source_scale": 0.8870967741935483,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          86.04838709677418,
+          222.27096774193546
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "extra_james_scott__E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 193,
+      "canvas_height_px": 238,
+      "drawn_width_px": 192.27642276422765,
+      "drawn_height_px": 237.88617886178864,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/heads/E17.png",
+      "source_scale": 0.8943089430894309,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          80.48780487804878,
+          222.3430894308943
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "extra_james_scott__B23",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 101,
+      "canvas_height_px": 109,
+      "drawn_width_px": 100.13582514970061,
+      "drawn_height_px": 108.8686005988024,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B23.png",
+      "source_scale": 0.5821850299401198,
+      "assembly_rotation_deg": -61.04549248050761,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          49.02580137125749,
+          20.393941598802396
+        ],
+        "grip": [
+          50.359005089820364,
+          52.4898022994012
+        ],
+        "fingertip": [
+          50.359005089820364,
+          99.15775429940119
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "extra_james_scott__B24",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 95,
+      "canvas_height_px": 108,
+      "drawn_width_px": 94.39859476744184,
+      "drawn_height_px": 107.96485988372092,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_james_scott/parts/B24.png",
+      "source_scale": 0.5652610465116278,
+      "assembly_rotation_deg": 61.04549248050761,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          41.71061262209302,
+          18.376636622093017
+        ],
+        "grip": [
+          47.19929738372092,
+          51.75530141860464
+        ],
+        "fingertip": [
+          47.19929738372092,
+          98.42325341860463
+        ]
+      }
+    }
+  ]
+}

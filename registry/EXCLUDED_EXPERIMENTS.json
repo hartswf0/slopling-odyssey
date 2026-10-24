@@ -1,0 +1,9 @@
+{
+  "policy": "Preserve the experiments in their existing locations, but do not use them as source cutouts.",
+  "user_rejected": [
+    "Amy_and_Mark_Rig_and_Motion_v1.zip",
+    "Amy_and_Mark_Rig_and_Motion_v2.zip",
+    "Amy_and_Mark_Watson_Method_v3.zip"
+  ],
+  "reason": "User rejected their construction and movement. The recovered source cutouts and working Watson reference are catalogued separately."
+}

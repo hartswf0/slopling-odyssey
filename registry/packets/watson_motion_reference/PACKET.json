@@ -1,0 +1,5667 @@
+{
+  "id": "watson_motion_reference",
+  "name": "Watson \u00b7 user-preferred motion reference",
+  "kind": "motion_reference",
+  "asset_ids": [
+    "watson_motion::front::pelvis",
+    "watson_motion::front::torso",
+    "watson_motion::front::head",
+    "watson_motion::front::upper_arm_left",
+    "watson_motion::front::forearm_left",
+    "watson_motion::front::hand_left",
+    "watson_motion::front::upper_arm_right",
+    "watson_motion::front::forearm_right",
+    "watson_motion::front::hand_right",
+    "watson_motion::front::thigh_left",
+    "watson_motion::front::shin_left",
+    "watson_motion::front::boot_left",
+    "watson_motion::front::thigh_right",
+    "watson_motion::front::shin_right",
+    "watson_motion::front::boot_right",
+    "watson_motion::side::head",
+    "watson_motion::side::torso",
+    "watson_motion::side::pelvis",
+    "watson_motion::side::upper_arm_far",
+    "watson_motion::side::forearm_far",
+    "watson_motion::side::hand_far",
+    "watson_motion::side::upper_arm_near",
+    "watson_motion::side::forearm_near",
+    "watson_motion::side::hand_near",
+    "watson_motion::side::thigh_far",
+    "watson_motion::side::shin_far",
+    "watson_motion::side::boot_far",
+    "watson_motion::side::thigh_near",
+    "watson_motion::side::shin_near",
+    "watson_motion::side::boot_near"
+  ],
+  "status": "user_preferred_reference_not_all_pose_approval",
+  "counts": {
+    "records": 30,
+    "native_records": 30,
+    "unique_native_files": 30,
+    "original": 0,
+    "historical_scale": 0,
+    "views": {
+      "front": 15,
+      "side": 15
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {
+      "pelvis": 1,
+      "torso": 1,
+      "head": 1,
+      "upper_arm": 2,
+      "forearm": 2,
+      "hand": 2,
+      "thigh": 2,
+      "shin": 2,
+      "foot": 2
+    },
+    "side": {
+      "head": 1,
+      "torso": 1,
+      "pelvis": 1,
+      "upper_arm": 2,
+      "forearm": 2,
+      "hand": 2,
+      "thigh": 2,
+      "shin": 2,
+      "foot": 2
+    },
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {}
+  },
+  "assets": [
+    {
+      "id": "watson_motion::front::pelvis",
+      "title": "Watson reference \u00b7 pelvis",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/pelvis.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "front",
+      "is_cutout": true,
+      "sha256_verified": "4911fb4542ab86e1809c4619fd5bda8d0e6d26bc8f157ed20de65eaf6baf8236",
+      "byte_size": 55614,
+      "width": 300,
+      "height": 138,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        12,
+        12,
+        288,
+        126
+      ],
+      "native_file": "assets/4911fb4542ab86e1809c4619fd5bda8d0e6d26bc8f157ed20de65eaf6baf8236.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/parts/pelvis.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "pelvis",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "inspect_thigh_overlap_before_rigging"
+      ],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              150,
+              59
+            ]
+          },
+          "global_source_pivot": [
+            512,
+            727
+          ],
+          "global_source_rect": [
+            362,
+            668,
+            300,
+            138
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "pelvis",
+        "label": "Compact pelvis cover",
+        "file": "parts/pelvis.png",
+        "polygon": [
+          [
+            381,
+            680
+          ],
+          [
+            646,
+            680
+          ],
+          [
+            650,
+            721
+          ],
+          [
+            650,
+            737
+          ],
+          [
+            647,
+            751
+          ],
+          [
+            641,
+            759
+          ],
+          [
+            632,
+            764
+          ],
+          [
+            620,
+            767
+          ],
+          [
+            608,
+            767
+          ],
+          [
+            594,
+            763
+          ],
+          [
+            580,
+            757
+          ],
+          [
+            565,
+            770
+          ],
+          [
+            544,
+            784
+          ],
+          [
+            525,
+            792
+          ],
+          [
+            514,
+            794
+          ],
+          [
+            499,
+            792
+          ],
+          [
+            480,
+            784
+          ],
+          [
+            459,
+            770
+          ],
+          [
+            444,
+            757
+          ],
+          [
+            430,
+            763
+          ],
+          [
+            416,
+            767
+          ],
+          [
+            404,
+            767
+          ],
+          [
+            392,
+            764
+          ],
+          [
+            383,
+            759
+          ],
+          [
+            377,
+            751
+          ],
+          [
+            374,
+            737
+          ],
+          [
+            376,
+            720
+          ]
+        ],
+        "pivot": [
+          512,
+          727
+        ],
+        "parent": null,
+        "layer": 40,
+        "clip_holes": [],
+        "underlap_pads": [],
+        "rest_angle": 0,
+        "rect": [
+          362,
+          668,
+          300,
+          138
+        ],
+        "core_pixels": 24488
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::front::torso",
+      "title": "Watson reference \u00b7 torso",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/torso.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "front",
+      "is_cutout": true,
+      "sha256_verified": "6971e2a06c9277b6f1b151afd6b35f290c18fade88f3aec5dd2ffe60757ad5f0",
+      "byte_size": 301415,
+      "width": 398,
+      "height": 500,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        12,
+        12,
+        386,
+        488
+      ],
+      "native_file": "assets/6971e2a06c9277b6f1b151afd6b35f290c18fade88f3aec5dd2ffe60757ad5f0.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/parts/torso.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "torso",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              201,
+              480
+            ]
+          },
+          "global_source_pivot": [
+            512,
+            701
+          ],
+          "global_source_rect": [
+            311,
+            221,
+            398,
+            500
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "torso",
+        "label": "Torso and shoulder caps",
+        "file": "parts/torso.png",
+        "polygon": [
+          [
+            333,
+            294
+          ],
+          [
+            412,
+            264
+          ],
+          [
+            430,
+            240
+          ],
+          [
+            450,
+            233
+          ],
+          [
+            457,
+            254
+          ],
+          [
+            456,
+            277
+          ],
+          [
+            453,
+            297
+          ],
+          [
+            463,
+            315
+          ],
+          [
+            489,
+            325
+          ],
+          [
+            539,
+            325
+          ],
+          [
+            558,
+            315
+          ],
+          [
+            568,
+            298
+          ],
+          [
+            565,
+            277
+          ],
+          [
+            563,
+            256
+          ],
+          [
+            572,
+            239
+          ],
+          [
+            595,
+            253
+          ],
+          [
+            615,
+            271
+          ],
+          [
+            686,
+            296
+          ],
+          [
+            697,
+            318
+          ],
+          [
+            695,
+            340
+          ],
+          [
+            688,
+            359
+          ],
+          [
+            673,
+            368
+          ],
+          [
+            656,
+            365
+          ],
+          [
+            646,
+            353
+          ],
+          [
+            648,
+            394
+          ],
+          [
+            650,
+            467
+          ],
+          [
+            650,
+            549
+          ],
+          [
+            661,
+            677
+          ],
+          [
+            661,
+            692
+          ],
+          [
+            647,
+            702
+          ],
+          [
+            632,
+            707
+          ],
+          [
+            523,
+            709
+          ],
+          [
+            505,
+            708
+          ],
+          [
+            382,
+            702
+          ],
+          [
+            366,
+            694
+          ],
+          [
+            362,
+            682
+          ],
+          [
+            374,
+            552
+          ],
+          [
+            373,
+            468
+          ],
+          [
+            375,
+            395
+          ],
+          [
+            373,
+            354
+          ],
+          [
+            364,
+            365
+          ],
+          [
+            346,
+            368
+          ],
+          [
+            329,
+            359
+          ],
+          [
+            323,
+            344
+          ],
+          [
+            323,
+            326
+          ]
+        ],
+        "pivot": [
+          512,
+          701
+        ],
+        "parent": "pelvis",
+        "layer": 50,
+        "clip_holes": [],
+        "underlap_pads": [
+          {
+            "kind": "concealed_neck_joint_backing",
+            "center": [
+              512,
+              315
+            ],
+            "radius": 28,
+            "donor_center": [
+              512,
+              365
+            ],
+            "source_pixel_scale": 1
+          }
+        ],
+        "rest_angle": 0,
+        "rect": [
+          311,
+          221,
+          398,
+          500
+        ],
+        "core_pixels": 124356
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::front::head",
+      "title": "Watson reference \u00b7 head",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/head.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "front",
+      "is_cutout": true,
+      "sha256_verified": "f3b0558729258c04830646930e1cbe3ded39d763eeaf623ba8f2beefd132e444",
+      "byte_size": 117954,
+      "width": 253,
+      "height": 338,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        19,
+        0,
+        226,
+        326
+      ],
+      "native_file": "assets/f3b0558729258c04830646930e1cbe3ded39d763eeaf623ba8f2beefd132e444.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/parts/head.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "head",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              128,
+              302
+            ]
+          },
+          "global_source_pivot": [
+            512,
+            302
+          ],
+          "global_source_rect": [
+            384,
+            0,
+            253,
+            338
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "head",
+        "label": "Head and neck",
+        "file": "parts/head.png",
+        "polygon": [
+          [
+            396,
+            0
+          ],
+          [
+            625,
+            0
+          ],
+          [
+            625,
+            216
+          ],
+          [
+            596,
+            241
+          ],
+          [
+            573,
+            248
+          ],
+          [
+            564,
+            269
+          ],
+          [
+            566,
+            297
+          ],
+          [
+            557,
+            314
+          ],
+          [
+            538,
+            325
+          ],
+          [
+            488,
+            326
+          ],
+          [
+            464,
+            315
+          ],
+          [
+            451,
+            297
+          ],
+          [
+            455,
+            267
+          ],
+          [
+            448,
+            245
+          ],
+          [
+            421,
+            225
+          ],
+          [
+            396,
+            196
+          ]
+        ],
+        "pivot": [
+          512,
+          302
+        ],
+        "parent": "torso",
+        "layer": 80,
+        "clip_holes": [],
+        "underlap_pads": [],
+        "rest_angle": 0,
+        "rect": [
+          384,
+          0,
+          253,
+          338
+        ],
+        "core_pixels": 44283
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::front::upper_arm_left",
+      "title": "Watson reference \u00b7 upper_arm_left",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/upper_arm_left.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "front",
+      "is_cutout": true,
+      "sha256_verified": "46fff4a6fdd75847c35c4323e60a71ce50b4ae36f685ec5d693b59a09336d24a",
+      "byte_size": 52859,
+      "width": 143,
+      "height": 281,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        12,
+        12,
+        131,
+        269
+      ],
+      "native_file": "assets/46fff4a6fdd75847c35c4323e60a71ce50b4ae36f685ec5d693b59a09336d24a.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/parts/upper_arm_left.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "upper_arm",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              100,
+              42
+            ]
+          },
+          "global_source_pivot": [
+            350,
+            342
+          ],
+          "global_source_rect": [
+            250,
+            300,
+            143,
+            281
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "upper_arm_left",
+        "label": "Viewer-left upper arm",
+        "file": "parts/upper_arm_left.png",
+        "polygon": [
+          [
+            330,
+            312
+          ],
+          [
+            356,
+            313
+          ],
+          [
+            375,
+            328
+          ],
+          [
+            381,
+            371
+          ],
+          [
+            376,
+            422
+          ],
+          [
+            364,
+            491
+          ],
+          [
+            350,
+            538
+          ],
+          [
+            335,
+            554
+          ],
+          [
+            311,
+            558
+          ],
+          [
+            283,
+            550
+          ],
+          [
+            262,
+            532
+          ],
+          [
+            264,
+            511
+          ],
+          [
+            279,
+            447
+          ],
+          [
+            293,
+            384
+          ],
+          [
+            307,
+            338
+          ]
+        ],
+        "pivot": [
+          350,
+          342
+        ],
+        "parent": "torso",
+        "layer": 45,
+        "clip_holes": [
+          {
+            "center": [
+              350,
+              342
+            ],
+            "radius": 25
+          },
+          {
+            "center": [
+              306,
+              545
+            ],
+            "radius": 24
+          }
+        ],
+        "underlap_pads": [
+          {
+            "kind": "replace_nonowned_hardware_with_solid_garment_tab",
+            "center": [
+              350,
+              342
+            ],
+            "radius": 25,
+            "donor_center": [
+              339,
+              406
+            ],
+            "source_pixel_scale": 1
+          },
+          {
+            "kind": "replace_nonowned_hardware_with_solid_garment_tab",
+            "center": [
+              306,
+              545
+            ],
+            "radius": 24,
+            "donor_center": [
+              321,
+              474
+            ],
+            "source_pixel_scale": 1
+          }
+        ],
+        "rest_angle": 0,
+        "rect": [
+          250,
+          300,
+          143,
+          281
+        ],
+        "core_pixels": 20225
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::front::forearm_left",
+      "title": "Watson reference \u00b7 forearm_left",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/forearm_left.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "front",
+      "is_cutout": true,
+      "sha256_verified": "e0753c096a4b6770b3ee8e9906d0e544e5bed075a8aaaaf54301cdb18db79def",
+      "byte_size": 47684,
+      "width": 144,
+      "height": 257,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        12,
+        12,
+        132,
+        245
+      ],
+      "native_file": "assets/e0753c096a4b6770b3ee8e9906d0e544e5bed075a8aaaaf54301cdb18db79def.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/parts/forearm_left.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "forearm",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              88,
+              37
+            ]
+          },
+          "global_source_pivot": [
+            306,
+            545
+          ],
+          "global_source_rect": [
+            218,
+            508,
+            144,
+            257
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "forearm_left",
+        "label": "Viewer-left forearm",
+        "file": "parts/forearm_left.png",
+        "polygon": [
+          [
+            281,
+            545
+          ],
+          [
+            281.8518543427733,
+            538.5295238724369
+          ],
+          [
+            284.34936490538905,
+            532.5
+          ],
+          [
+            288.3223304703363,
+            527.3223304703363
+          ],
+          [
+            293.5,
+            523.349364905389
+          ],
+          [
+            299.529523872437,
+            520.8518543427733
+          ],
+          [
+            306,
+            520
+          ],
+          [
+            312.470476127563,
+            520.8518543427733
+          ],
+          [
+            318.5,
+            523.349364905389
+          ],
+          [
+            323.67766952966366,
+            527.3223304703363
+          ],
+          [
+            327.65063509461095,
+            532.5
+          ],
+          [
+            330.1481456572267,
+            538.529523872437
+          ],
+          [
+            331,
+            545
+          ],
+          [
+            341,
+            554
+          ],
+          [
+            350,
+            577
+          ],
+          [
+            344,
+            619
+          ],
+          [
+            330,
+            676
+          ],
+          [
+            316,
+            726
+          ],
+          [
+            305,
+            739
+          ],
+          [
+            266,
+            747
+          ],
+          [
+            237,
+            737
+          ],
+          [
+            230,
+            719
+          ],
+          [
+            239,
+            677
+          ],
+          [
+            251,
+            607
+          ],
+          [
+            258,
+            572
+          ],
+          [
+            269,
+            554
+          ],
+          [
+            281,
+            549
+          ]
+        ],
+        "pivot": [
+          306,
+          545
+        ],
+        "parent": "upper_arm_left",
+        "layer": 60,
+        "clip_holes": [
+          {
+            "center": [
+              275,
+              734
+            ],
+            "radius": 19
+          }
+        ],
+        "underlap_pads": [
+          {
+            "kind": "replace_nonowned_hardware_with_solid_garment_tab",
+            "center": [
+              275,
+              734
+            ],
+            "radius": 19,
+            "donor_center": [
+              293,
+              642
+            ],
+            "source_pixel_scale": 1
+          },
+          {
+            "kind": "solid_backing_under_owned_joint_cap",
+            "center": [
+              306,
+              545
+            ],
+            "radius": 25,
+            "donor_center": [
+              302,
+              606
+            ],
+            "source_pixel_scale": 1
+          }
+        ],
+        "rest_angle": 0,
+        "rect": [
+          218,
+          508,
+          144,
+          257
+        ],
+        "core_pixels": 18398
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::front::hand_left",
+      "title": "Watson reference \u00b7 hand_left",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/hand_left.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "front",
+      "is_cutout": true,
+      "sha256_verified": "a96462db5bf7b5ecd774028164a3e2eb544c7abeee5a7a0f0933cbf74c291a8c",
+      "byte_size": 30109,
+      "width": 123,
+      "height": 197,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        12,
+        12,
+        111,
+        185
+      ],
+      "native_file": "assets/a96462db5bf7b5ecd774028164a3e2eb544c7abeee5a7a0f0933cbf74c291a8c.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/parts/hand_left.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "hand",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              58,
+              31
+            ]
+          },
+          "global_source_pivot": [
+            275,
+            734
+          ],
+          "global_source_rect": [
+            217,
+            703,
+            123,
+            197
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "hand_left",
+        "label": "Viewer-left hand",
+        "file": "parts/hand_left.png",
+        "polygon": [
+          [
+            256,
+            734
+          ],
+          [
+            256.6474093005077,
+            729.0824381430521
+          ],
+          [
+            258.5455173280957,
+            724.5
+          ],
+          [
+            261.5649711574556,
+            720.5649711574556
+          ],
+          [
+            265.5,
+            717.5455173280957
+          ],
+          [
+            270.0824381430521,
+            715.6474093005077
+          ],
+          [
+            275,
+            715
+          ],
+          [
+            279.9175618569479,
+            715.6474093005077
+          ],
+          [
+            284.5,
+            717.5455173280957
+          ],
+          [
+            288.4350288425444,
+            720.5649711574556
+          ],
+          [
+            291.4544826719043,
+            724.5
+          ],
+          [
+            293.3525906994923,
+            729.0824381430521
+          ],
+          [
+            294,
+            734
+          ],
+          [
+            299,
+            741
+          ],
+          [
+            310,
+            773
+          ],
+          [
+            325,
+            802
+          ],
+          [
+            328,
+            832
+          ],
+          [
+            321,
+            844
+          ],
+          [
+            309,
+            846
+          ],
+          [
+            301,
+            836
+          ],
+          [
+            301,
+            855
+          ],
+          [
+            312,
+            872
+          ],
+          [
+            309,
+            882
+          ],
+          [
+            299,
+            888
+          ],
+          [
+            286,
+            880
+          ],
+          [
+            262,
+            861
+          ],
+          [
+            247,
+            844
+          ],
+          [
+            235,
+            819
+          ],
+          [
+            229,
+            797
+          ],
+          [
+            236,
+            774
+          ],
+          [
+            248,
+            739
+          ],
+          [
+            256,
+            735
+          ]
+        ],
+        "pivot": [
+          275,
+          734
+        ],
+        "parent": "forearm_left",
+        "layer": 70,
+        "clip_holes": [],
+        "underlap_pads": [],
+        "rest_angle": 0,
+        "rect": [
+          217,
+          703,
+          123,
+          197
+        ],
+        "core_pixels": 9972
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::front::upper_arm_right",
+      "title": "Watson reference \u00b7 upper_arm_right",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/upper_arm_right.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "front",
+      "is_cutout": true,
+      "sha256_verified": "7542d4ff5b33d09913555e394845ff11c6962f1c4b79944433a885f4ba8e32c2",
+      "byte_size": 51407,
+      "width": 143,
+      "height": 281,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        12,
+        12,
+        131,
+        269
+      ],
+      "native_file": "assets/7542d4ff5b33d09913555e394845ff11c6962f1c4b79944433a885f4ba8e32c2.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/parts/upper_arm_right.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "upper_arm",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              42,
+              43
+            ]
+          },
+          "global_source_pivot": [
+            673,
+            343
+          ],
+          "global_source_rect": [
+            631,
+            300,
+            143,
+            281
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "upper_arm_right",
+        "label": "Viewer-right upper arm",
+        "file": "parts/upper_arm_right.png",
+        "polygon": [
+          [
+            694,
+            312
+          ],
+          [
+            668,
+            313
+          ],
+          [
+            649,
+            328
+          ],
+          [
+            643,
+            371
+          ],
+          [
+            648,
+            422
+          ],
+          [
+            660,
+            491
+          ],
+          [
+            674,
+            538
+          ],
+          [
+            689,
+            554
+          ],
+          [
+            713,
+            558
+          ],
+          [
+            741,
+            550
+          ],
+          [
+            762,
+            532
+          ],
+          [
+            760,
+            511
+          ],
+          [
+            745,
+            447
+          ],
+          [
+            731,
+            384
+          ],
+          [
+            717,
+            338
+          ]
+        ],
+        "pivot": [
+          673,
+          343
+        ],
+        "parent": "torso",
+        "layer": 45,
+        "clip_holes": [
+          {
+            "center": [
+              673,
+              343
+            ],
+            "radius": 25
+          },
+          {
+            "center": [
+              719,
+              545
+            ],
+            "radius": 24
+          }
+        ],
+        "underlap_pads": [
+          {
+            "kind": "replace_nonowned_hardware_with_solid_garment_tab",
+            "center": [
+              673,
+              343
+            ],
+            "radius": 25,
+            "donor_center": [
+              686,
+              406
+            ],
+            "source_pixel_scale": 1
+          },
+          {
+            "kind": "replace_nonowned_hardware_with_solid_garment_tab",
+            "center": [
+              719,
+              545
+            ],
+            "radius": 24,
+            "donor_center": [
+              703,
+              474
+            ],
+            "source_pixel_scale": 1
+          }
+        ],
+        "rest_angle": 0,
+        "rect": [
+          631,
+          300,
+          143,
+          281
+        ],
+        "core_pixels": 19973
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::front::forearm_right",
+      "title": "Watson reference \u00b7 forearm_right",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/forearm_right.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "front",
+      "is_cutout": true,
+      "sha256_verified": "ab18f8f585665c5b38f2033ecc805e265a3c55d4758a46ac32b70d8a7574ea86",
+      "byte_size": 47287,
+      "width": 144,
+      "height": 257,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        12,
+        12,
+        132,
+        245
+      ],
+      "native_file": "assets/ab18f8f585665c5b38f2033ecc805e265a3c55d4758a46ac32b70d8a7574ea86.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/parts/forearm_right.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "forearm",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              57,
+              37
+            ]
+          },
+          "global_source_pivot": [
+            719,
+            545
+          ],
+          "global_source_rect": [
+            662,
+            508,
+            144,
+            257
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "forearm_right",
+        "label": "Viewer-right forearm",
+        "file": "parts/forearm_right.png",
+        "polygon": [
+          [
+            743,
+            545
+          ],
+          [
+            742.1481456572267,
+            538.5295238724369
+          ],
+          [
+            739.650635094611,
+            532.5
+          ],
+          [
+            735.6776695296637,
+            527.3223304703363
+          ],
+          [
+            730.5,
+            523.349364905389
+          ],
+          [
+            724.470476127563,
+            520.8518543427733
+          ],
+          [
+            718,
+            520
+          ],
+          [
+            711.529523872437,
+            520.8518543427733
+          ],
+          [
+            705.5,
+            523.349364905389
+          ],
+          [
+            700.3223304703363,
+            527.3223304703363
+          ],
+          [
+            696.349364905389,
+            532.5
+          ],
+          [
+            693.8518543427733,
+            538.529523872437
+          ],
+          [
+            693,
+            545
+          ],
+          [
+            683,
+            554
+          ],
+          [
+            674,
+            577
+          ],
+          [
+            680,
+            619
+          ],
+          [
+            694,
+            676
+          ],
+          [
+            708,
+            726
+          ],
+          [
+            719,
+            739
+          ],
+          [
+            758,
+            747
+          ],
+          [
+            787,
+            737
+          ],
+          [
+            794,
+            719
+          ],
+          [
+            785,
+            677
+          ],
+          [
+            773,
+            607
+          ],
+          [
+            766,
+            572
+          ],
+          [
+            755,
+            554
+          ],
+          [
+            743,
+            549
+          ]
+        ],
+        "pivot": [
+          719,
+          545
+        ],
+        "parent": "upper_arm_right",
+        "layer": 60,
+        "clip_holes": [
+          {
+            "center": [
+              749,
+              734
+            ],
+            "radius": 19
+          }
+        ],
+        "underlap_pads": [
+          {
+            "kind": "replace_nonowned_hardware_with_solid_garment_tab",
+            "center": [
+              749,
+              734
+            ],
+            "radius": 19,
+            "donor_center": [
+              731,
+              642
+            ],
+            "source_pixel_scale": 1
+          },
+          {
+            "kind": "solid_backing_under_owned_joint_cap",
+            "center": [
+              719,
+              545
+            ],
+            "radius": 25,
+            "donor_center": [
+              722,
+              606
+            ],
+            "source_pixel_scale": 1
+          }
+        ],
+        "rest_angle": 0,
+        "rect": [
+          662,
+          508,
+          144,
+          257
+        ],
+        "core_pixels": 18457
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::front::hand_right",
+      "title": "Watson reference \u00b7 hand_right",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/hand_right.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "front",
+      "is_cutout": true,
+      "sha256_verified": "ca6a82dc1c6814955978670c5ccce8938124c57af3ff354b999beca137468668",
+      "byte_size": 29633,
+      "width": 123,
+      "height": 197,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        12,
+        12,
+        111,
+        184
+      ],
+      "native_file": "assets/ca6a82dc1c6814955978670c5ccce8938124c57af3ff354b999beca137468668.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/parts/hand_right.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "hand",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              65,
+              31
+            ]
+          },
+          "global_source_pivot": [
+            749,
+            734
+          ],
+          "global_source_rect": [
+            684,
+            703,
+            123,
+            197
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "hand_right",
+        "label": "Viewer-right hand",
+        "file": "parts/hand_right.png",
+        "polygon": [
+          [
+            768,
+            734
+          ],
+          [
+            767.3525906994923,
+            729.0824381430521
+          ],
+          [
+            765.4544826719043,
+            724.5
+          ],
+          [
+            762.4350288425444,
+            720.5649711574556
+          ],
+          [
+            758.5,
+            717.5455173280957
+          ],
+          [
+            753.9175618569479,
+            715.6474093005077
+          ],
+          [
+            749,
+            715
+          ],
+          [
+            744.0824381430521,
+            715.6474093005077
+          ],
+          [
+            739.5,
+            717.5455173280957
+          ],
+          [
+            735.5649711574556,
+            720.5649711574556
+          ],
+          [
+            732.5455173280957,
+            724.5
+          ],
+          [
+            730.6474093005077,
+            729.0824381430521
+          ],
+          [
+            730,
+            734
+          ],
+          [
+            725,
+            741
+          ],
+          [
+            714,
+            773
+          ],
+          [
+            699,
+            802
+          ],
+          [
+            696,
+            832
+          ],
+          [
+            703,
+            844
+          ],
+          [
+            715,
+            846
+          ],
+          [
+            723,
+            836
+          ],
+          [
+            723,
+            855
+          ],
+          [
+            712,
+            872
+          ],
+          [
+            715,
+            882
+          ],
+          [
+            725,
+            888
+          ],
+          [
+            738,
+            880
+          ],
+          [
+            762,
+            861
+          ],
+          [
+            777,
+            844
+          ],
+          [
+            789,
+            819
+          ],
+          [
+            795,
+            797
+          ],
+          [
+            788,
+            774
+          ],
+          [
+            776,
+            739
+          ],
+          [
+            768,
+            735
+          ]
+        ],
+        "pivot": [
+          749,
+          734
+        ],
+        "parent": "forearm_right",
+        "layer": 70,
+        "clip_holes": [],
+        "underlap_pads": [],
+        "rest_angle": 0,
+        "rect": [
+          684,
+          703,
+          123,
+          197
+        ],
+        "core_pixels": 9936
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::front::thigh_left",
+      "title": "Watson reference \u00b7 thigh_left",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/thigh_left.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "front",
+      "is_cutout": true,
+      "sha256_verified": "56dcb7483a11c06d9b28b113f22800991a7919b1ac8919477b7a2d7fb618bbe4",
+      "byte_size": 107048,
+      "width": 189,
+      "height": 412,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        12,
+        12,
+        177,
+        400
+      ],
+      "native_file": "assets/56dcb7483a11c06d9b28b113f22800991a7919b1ac8919477b7a2d7fb618bbe4.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/parts/thigh_left.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "thigh",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              75,
+              38
+            ]
+          },
+          "global_source_pivot": [
+            416,
+            727
+          ],
+          "global_source_rect": [
+            341,
+            689,
+            189,
+            412
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "thigh_left",
+        "label": "Viewer-left thigh",
+        "file": "parts/thigh_left.png",
+        "polygon": [
+          [
+            383,
+            707
+          ],
+          [
+            401,
+            704
+          ],
+          [
+            428,
+            705
+          ],
+          [
+            451,
+            714
+          ],
+          [
+            479,
+            736
+          ],
+          [
+            504,
+            771
+          ],
+          [
+            518,
+            785
+          ],
+          [
+            507,
+            832
+          ],
+          [
+            488,
+            943
+          ],
+          [
+            472,
+            1018
+          ],
+          [
+            464,
+            1052
+          ],
+          [
+            452,
+            1068
+          ],
+          [
+            373,
+            1068
+          ],
+          [
+            356,
+            1043
+          ],
+          [
+            353,
+            1000
+          ],
+          [
+            354,
+            938
+          ],
+          [
+            359,
+            863
+          ],
+          [
+            365,
+            811
+          ],
+          [
+            373,
+            761
+          ]
+        ],
+        "pivot": [
+          416,
+          727
+        ],
+        "parent": "pelvis",
+        "layer": 20,
+        "clip_holes": [
+          {
+            "center": [
+              416,
+              727
+            ],
+            "radius": 26
+          },
+          {
+            "center": [
+              401,
+              1064
+            ],
+            "radius": 25
+          }
+        ],
+        "underlap_pads": [
+          {
+            "kind": "replace_nonowned_hardware_with_solid_garment_tab",
+            "center": [
+              416,
+              727
+            ],
+            "radius": 26,
+            "donor_center": [
+              433,
+              852
+            ],
+            "source_pixel_scale": 1
+          },
+          {
+            "kind": "replace_nonowned_hardware_with_solid_garment_tab",
+            "center": [
+              401,
+              1064
+            ],
+            "radius": 25,
+            "donor_center": [
+              417,
+              980
+            ],
+            "source_pixel_scale": 1
+          }
+        ],
+        "rest_angle": 0,
+        "rect": [
+          341,
+          689,
+          189,
+          412
+        ],
+        "core_pixels": 45519
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::front::shin_left",
+      "title": "Watson reference \u00b7 shin_left",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/shin_left.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "front",
+      "is_cutout": true,
+      "sha256_verified": "02d43019c45bca36bc292e053cff72918acba0582114c56ad9783cebdd7bd766",
+      "byte_size": 73864,
+      "width": 171,
+      "height": 322,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        12,
+        12,
+        159,
+        310
+      ],
+      "native_file": "assets/02d43019c45bca36bc292e053cff72918acba0582114c56ad9783cebdd7bd766.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/parts/shin_left.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "shin",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              92,
+              37
+            ]
+          },
+          "global_source_pivot": [
+            401,
+            1064
+          ],
+          "global_source_rect": [
+            309,
+            1027,
+            171,
+            322
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "shin_left",
+        "label": "Viewer-left shin",
+        "file": "parts/shin_left.png",
+        "polygon": [
+          [
+            376,
+            1064
+          ],
+          [
+            376.8518543427733,
+            1057.529523872437
+          ],
+          [
+            379.34936490538905,
+            1051.5
+          ],
+          [
+            383.3223304703363,
+            1046.3223304703363
+          ],
+          [
+            388.5,
+            1042.349364905389
+          ],
+          [
+            394.529523872437,
+            1039.8518543427733
+          ],
+          [
+            401,
+            1039
+          ],
+          [
+            407.470476127563,
+            1039.8518543427733
+          ],
+          [
+            413.5,
+            1042.349364905389
+          ],
+          [
+            418.67766952966366,
+            1046.3223304703363
+          ],
+          [
+            422.65063509461095,
+            1051.5
+          ],
+          [
+            425.1481456572267,
+            1057.529523872437
+          ],
+          [
+            426,
+            1064
+          ],
+          [
+            446,
+            1068
+          ],
+          [
+            462,
+            1082
+          ],
+          [
+            468,
+            1107
+          ],
+          [
+            457,
+            1207
+          ],
+          [
+            442,
+            1290
+          ],
+          [
+            435,
+            1331
+          ],
+          [
+            424,
+            1337
+          ],
+          [
+            329,
+            1330
+          ],
+          [
+            321,
+            1316
+          ],
+          [
+            331,
+            1263
+          ],
+          [
+            343,
+            1174
+          ],
+          [
+            351,
+            1113
+          ],
+          [
+            357,
+            1083
+          ],
+          [
+            371,
+            1070
+          ],
+          [
+            377,
+            1064
+          ]
+        ],
+        "pivot": [
+          401,
+          1064
+        ],
+        "parent": "thigh_left",
+        "layer": 30,
+        "clip_holes": [],
+        "underlap_pads": [
+          {
+            "kind": "solid_backing_under_owned_joint_cap",
+            "center": [
+              401,
+              1064
+            ],
+            "radius": 25,
+            "donor_center": [
+              406,
+              1156
+            ],
+            "source_pixel_scale": 1
+          }
+        ],
+        "rest_angle": 0,
+        "rect": [
+          309,
+          1027,
+          171,
+          322
+        ],
+        "core_pixels": 31372
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::front::boot_left",
+      "title": "Watson reference \u00b7 boot_left",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/boot_left.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "front",
+      "is_cutout": true,
+      "sha256_verified": "6f9f0b648be8454e9cdd73970df5fa0f4970c4699f5b65c3cacf49da3b536730",
+      "byte_size": 59066,
+      "width": 222,
+      "height": 242,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        12,
+        12,
+        210,
+        228
+      ],
+      "native_file": "assets/6f9f0b648be8454e9cdd73970df5fa0f4970c4699f5b65c3cacf49da3b536730.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/parts/boot_left.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "foot",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              146,
+              68
+            ]
+          },
+          "global_source_pivot": [
+            360,
+            1330
+          ],
+          "global_source_rect": [
+            214,
+            1262,
+            222,
+            242
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "boot_left",
+        "label": "Viewer-left boot",
+        "file": "parts/boot_left.png",
+        "polygon": [
+          [
+            333,
+            1329
+          ],
+          [
+            416,
+            1329
+          ],
+          [
+            418,
+            1341
+          ],
+          [
+            414,
+            1387
+          ],
+          [
+            416,
+            1412
+          ],
+          [
+            418,
+            1449
+          ],
+          [
+            410,
+            1463
+          ],
+          [
+            381,
+            1478
+          ],
+          [
+            349,
+            1489
+          ],
+          [
+            283,
+            1492
+          ],
+          [
+            240,
+            1481
+          ],
+          [
+            226,
+            1462
+          ],
+          [
+            229,
+            1428
+          ],
+          [
+            241,
+            1410
+          ],
+          [
+            277,
+            1387
+          ],
+          [
+            309,
+            1354
+          ]
+        ],
+        "pivot": [
+          360,
+          1330
+        ],
+        "parent": "shin_left",
+        "layer": 10,
+        "clip_holes": [],
+        "underlap_pads": [
+          {
+            "kind": "concealed_leather_shaft_underlap",
+            "center": [
+              378,
+              1320
+            ],
+            "radius": 46,
+            "donor_rect": [
+              380,
+              1396,
+              24,
+              24
+            ],
+            "fill_method": "tile_source_texture_at_native_scale",
+            "source_pixel_scale": 1,
+            "note": "Tab is centered on the shaft rather than the off-center ankle pivot so it covers the whole angled cuff during the tested joint study."
+          }
+        ],
+        "rest_angle": 0,
+        "rect": [
+          214,
+          1262,
+          222,
+          242
+        ],
+        "core_pixels": 24730
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::front::thigh_right",
+      "title": "Watson reference \u00b7 thigh_right",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/thigh_right.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "front",
+      "is_cutout": true,
+      "sha256_verified": "7ad9274d3e3d147a9e854da780dd33f54ba3f60aaddcb9143235ccad83fe6fdf",
+      "byte_size": 107621,
+      "width": 189,
+      "height": 412,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        12,
+        12,
+        177,
+        400
+      ],
+      "native_file": "assets/7ad9274d3e3d147a9e854da780dd33f54ba3f60aaddcb9143235ccad83fe6fdf.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/parts/thigh_right.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "thigh",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              117,
+              38
+            ]
+          },
+          "global_source_pivot": [
+            611,
+            727
+          ],
+          "global_source_rect": [
+            494,
+            689,
+            189,
+            412
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "thigh_right",
+        "label": "Viewer-right thigh",
+        "file": "parts/thigh_right.png",
+        "polygon": [
+          [
+            641,
+            707
+          ],
+          [
+            623,
+            704
+          ],
+          [
+            596,
+            705
+          ],
+          [
+            573,
+            714
+          ],
+          [
+            545,
+            736
+          ],
+          [
+            520,
+            771
+          ],
+          [
+            506,
+            785
+          ],
+          [
+            517,
+            832
+          ],
+          [
+            536,
+            943
+          ],
+          [
+            552,
+            1018
+          ],
+          [
+            560,
+            1052
+          ],
+          [
+            572,
+            1068
+          ],
+          [
+            651,
+            1068
+          ],
+          [
+            668,
+            1043
+          ],
+          [
+            671,
+            1000
+          ],
+          [
+            670,
+            938
+          ],
+          [
+            665,
+            863
+          ],
+          [
+            659,
+            811
+          ],
+          [
+            651,
+            761
+          ]
+        ],
+        "pivot": [
+          611,
+          727
+        ],
+        "parent": "pelvis",
+        "layer": 20,
+        "clip_holes": [
+          {
+            "center": [
+              611,
+              727
+            ],
+            "radius": 26
+          },
+          {
+            "center": [
+              623,
+              1064
+            ],
+            "radius": 25
+          }
+        ],
+        "underlap_pads": [
+          {
+            "kind": "replace_nonowned_hardware_with_solid_garment_tab",
+            "center": [
+              611,
+              727
+            ],
+            "radius": 26,
+            "donor_center": [
+              591,
+              852
+            ],
+            "source_pixel_scale": 1
+          },
+          {
+            "kind": "replace_nonowned_hardware_with_solid_garment_tab",
+            "center": [
+              623,
+              1064
+            ],
+            "radius": 25,
+            "donor_center": [
+              607,
+              980
+            ],
+            "source_pixel_scale": 1
+          }
+        ],
+        "rest_angle": 0,
+        "rect": [
+          494,
+          689,
+          189,
+          412
+        ],
+        "core_pixels": 45903
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::front::shin_right",
+      "title": "Watson reference \u00b7 shin_right",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/shin_right.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "front",
+      "is_cutout": true,
+      "sha256_verified": "41a5b879ed7b2800d1e829c2b1c77b16dd68adeccc5449fd1efc43bdaa45093a",
+      "byte_size": 74218,
+      "width": 171,
+      "height": 322,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        12,
+        12,
+        159,
+        310
+      ],
+      "native_file": "assets/41a5b879ed7b2800d1e829c2b1c77b16dd68adeccc5449fd1efc43bdaa45093a.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/parts/shin_right.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "shin",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              79,
+              37
+            ]
+          },
+          "global_source_pivot": [
+            623,
+            1064
+          ],
+          "global_source_rect": [
+            544,
+            1027,
+            171,
+            322
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "shin_right",
+        "label": "Viewer-right shin",
+        "file": "parts/shin_right.png",
+        "polygon": [
+          [
+            648,
+            1064
+          ],
+          [
+            647.1481456572267,
+            1057.529523872437
+          ],
+          [
+            644.650635094611,
+            1051.5
+          ],
+          [
+            640.6776695296637,
+            1046.3223304703363
+          ],
+          [
+            635.5,
+            1042.349364905389
+          ],
+          [
+            629.470476127563,
+            1039.8518543427733
+          ],
+          [
+            623,
+            1039
+          ],
+          [
+            616.529523872437,
+            1039.8518543427733
+          ],
+          [
+            610.5,
+            1042.349364905389
+          ],
+          [
+            605.3223304703363,
+            1046.3223304703363
+          ],
+          [
+            601.349364905389,
+            1051.5
+          ],
+          [
+            598.8518543427733,
+            1057.529523872437
+          ],
+          [
+            598,
+            1064
+          ],
+          [
+            578,
+            1068
+          ],
+          [
+            562,
+            1082
+          ],
+          [
+            556,
+            1107
+          ],
+          [
+            567,
+            1207
+          ],
+          [
+            582,
+            1290
+          ],
+          [
+            589,
+            1331
+          ],
+          [
+            600,
+            1337
+          ],
+          [
+            695,
+            1330
+          ],
+          [
+            703,
+            1316
+          ],
+          [
+            693,
+            1263
+          ],
+          [
+            681,
+            1174
+          ],
+          [
+            673,
+            1113
+          ],
+          [
+            667,
+            1083
+          ],
+          [
+            653,
+            1070
+          ],
+          [
+            647,
+            1064
+          ]
+        ],
+        "pivot": [
+          623,
+          1064
+        ],
+        "parent": "thigh_right",
+        "layer": 30,
+        "clip_holes": [],
+        "underlap_pads": [
+          {
+            "kind": "solid_backing_under_owned_joint_cap",
+            "center": [
+              623,
+              1064
+            ],
+            "radius": 25,
+            "donor_center": [
+              618,
+              1156
+            ],
+            "source_pixel_scale": 1
+          }
+        ],
+        "rest_angle": 0,
+        "rect": [
+          544,
+          1027,
+          171,
+          322
+        ],
+        "core_pixels": 31208
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::front::boot_right",
+      "title": "Watson reference \u00b7 boot_right",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/boot_right.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "front",
+      "is_cutout": true,
+      "sha256_verified": "c4d7918b542f0af966d578cb14a603a47a5166cd3011cded9ee14f6c57efd64d",
+      "byte_size": 59640,
+      "width": 222,
+      "height": 242,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        12,
+        12,
+        210,
+        228
+      ],
+      "native_file": "assets/c4d7918b542f0af966d578cb14a603a47a5166cd3011cded9ee14f6c57efd64d.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/parts/boot_right.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "foot",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              70,
+              68
+            ]
+          },
+          "global_source_pivot": [
+            658,
+            1330
+          ],
+          "global_source_rect": [
+            588,
+            1262,
+            222,
+            242
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "boot_right",
+        "label": "Viewer-right boot",
+        "file": "parts/boot_right.png",
+        "polygon": [
+          [
+            691,
+            1329
+          ],
+          [
+            608,
+            1329
+          ],
+          [
+            606,
+            1341
+          ],
+          [
+            610,
+            1387
+          ],
+          [
+            608,
+            1412
+          ],
+          [
+            606,
+            1449
+          ],
+          [
+            614,
+            1463
+          ],
+          [
+            643,
+            1478
+          ],
+          [
+            675,
+            1489
+          ],
+          [
+            741,
+            1492
+          ],
+          [
+            784,
+            1481
+          ],
+          [
+            798,
+            1462
+          ],
+          [
+            795,
+            1428
+          ],
+          [
+            783,
+            1410
+          ],
+          [
+            747,
+            1387
+          ],
+          [
+            715,
+            1354
+          ]
+        ],
+        "pivot": [
+          658,
+          1330
+        ],
+        "parent": "shin_right",
+        "layer": 10,
+        "clip_holes": [],
+        "underlap_pads": [
+          {
+            "kind": "concealed_leather_shaft_underlap",
+            "center": [
+              646,
+              1320
+            ],
+            "radius": 46,
+            "donor_rect": [
+              621,
+              1396,
+              24,
+              24
+            ],
+            "fill_method": "tile_source_texture_at_native_scale",
+            "source_pixel_scale": 1,
+            "note": "Tab is centered on the shaft rather than the off-center ankle pivot so it covers the whole angled cuff during the tested joint study."
+          }
+        ],
+        "rest_angle": 0,
+        "rect": [
+          588,
+          1262,
+          222,
+          242
+        ],
+        "core_pixels": 24549
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::side::head",
+      "title": "Watson reference \u00b7 head",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/head.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "side",
+      "is_cutout": true,
+      "sha256_verified": "913b6966267cf878f315e9279167cf140caeab0e881915bb29095af37a06aa02",
+      "byte_size": 148331,
+      "width": 284,
+      "height": 308,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        7,
+        4,
+        279,
+        304
+      ],
+      "native_file": "assets/913b6966267cf878f315e9279167cf140caeab0e881915bb29095af37a06aa02.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/profile/parts/head.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "head",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              148,
+              271
+            ]
+          },
+          "global_source_pivot": [
+            558,
+            280
+          ],
+          "global_source_rect": [
+            410,
+            9,
+            284,
+            308
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "head",
+        "label": "Profile head + neck",
+        "file": "parts/head.png",
+        "polygon": [
+          [
+            420,
+            13
+          ],
+          [
+            672,
+            13
+          ],
+          [
+            681,
+            80
+          ],
+          [
+            674,
+            122
+          ],
+          [
+            690,
+            171
+          ],
+          [
+            689,
+            198
+          ],
+          [
+            671,
+            210
+          ],
+          [
+            664,
+            241
+          ],
+          [
+            638,
+            259
+          ],
+          [
+            618,
+            260
+          ],
+          [
+            601,
+            313
+          ],
+          [
+            558,
+            298
+          ],
+          [
+            513,
+            273
+          ],
+          [
+            474,
+            252
+          ],
+          [
+            453,
+            224
+          ],
+          [
+            432,
+            196
+          ],
+          [
+            417,
+            163
+          ],
+          [
+            414,
+            104
+          ]
+        ],
+        "pivot": [
+          558,
+          280
+        ],
+        "parent": "torso",
+        "layer": 80,
+        "donor": [
+          520,
+          151,
+          24,
+          24
+        ],
+        "holes": [],
+        "tabs": [],
+        "rect": [
+          410,
+          9,
+          284,
+          308
+        ]
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::side::torso",
+      "title": "Watson reference \u00b7 torso",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/torso.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "side",
+      "is_cutout": true,
+      "sha256_verified": "7d8a10771eb0acd5716767f88423c607b180a629218e85202d4c6fb0682ac9c5",
+      "byte_size": 239956,
+      "width": 234,
+      "height": 496,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        4,
+        4,
+        230,
+        492
+      ],
+      "native_file": "assets/7d8a10771eb0acd5716767f88423c607b180a629218e85202d4c6fb0682ac9c5.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/profile/parts/torso.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "torso",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              89,
+              467
+            ]
+          },
+          "global_source_pivot": [
+            502,
+            712
+          ],
+          "global_source_rect": [
+            413,
+            245,
+            234,
+            496
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "torso",
+        "label": "Profile torso",
+        "file": "parts/torso.png",
+        "polygon": [
+          [
+            477,
+            251
+          ],
+          [
+            513,
+            264
+          ],
+          [
+            550,
+            287
+          ],
+          [
+            598,
+            314
+          ],
+          [
+            621,
+            357
+          ],
+          [
+            632,
+            417
+          ],
+          [
+            633,
+            557
+          ],
+          [
+            643,
+            691
+          ],
+          [
+            622,
+            720
+          ],
+          [
+            426,
+            712
+          ],
+          [
+            417,
+            689
+          ],
+          [
+            428,
+            581
+          ],
+          [
+            437,
+            450
+          ],
+          [
+            433,
+            372
+          ],
+          [
+            449,
+            310
+          ]
+        ],
+        "pivot": [
+          502,
+          712
+        ],
+        "parent": "pelvis",
+        "layer": 45,
+        "donor": [
+          584,
+          426,
+          33,
+          80
+        ],
+        "holes": [
+          {
+            "polygon": [
+              [
+                442,
+                312
+              ],
+              [
+                520,
+                312
+              ],
+              [
+                560,
+                339
+              ],
+              [
+                582,
+                533
+              ],
+              [
+                610,
+                555
+              ],
+              [
+                651,
+                608
+              ],
+              [
+                654,
+                717
+              ],
+              [
+                576,
+                721
+              ],
+              [
+                526,
+                658
+              ],
+              [
+                504,
+                586
+              ],
+              [
+                470,
+                565
+              ],
+              [
+                452,
+                469
+              ],
+              [
+                438,
+                386
+              ]
+            ],
+            "reason": "The source near arm occludes the torso; reconstruct garment underneath at native pixel scale."
+          }
+        ],
+        "tabs": [
+          {
+            "center": [
+              502,
+              712
+            ],
+            "radius": 25,
+            "reason": "Concealed solid joint overlap at native texture scale."
+          },
+          {
+            "center": [
+              482,
+              344
+            ],
+            "radius": 32,
+            "reason": "Parent receiver overlap; hidden source texture construction."
+          },
+          {
+            "center": [
+              494,
+              345
+            ],
+            "radius": 31,
+            "reason": "Parent receiver overlap; hidden source texture construction."
+          },
+          {
+            "center": [
+              558,
+              280
+            ],
+            "radius": 31,
+            "reason": "Parent receiver overlap; hidden source texture construction."
+          }
+        ],
+        "rect": [
+          413,
+          245,
+          234,
+          496
+        ],
+        "paint_override": {
+          "source": "source/torso_repaint.png",
+          "script": "apply-profile-torso-paint.cjs",
+          "policy": "Generated paint only; original raster resolution, alpha mask, rect and pivots retained exactly."
+        }
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::side::pelvis",
+      "title": "Watson reference \u00b7 pelvis",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/pelvis.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "side",
+      "is_cutout": true,
+      "sha256_verified": "9246440642eeea70d14f97d0e235386bb7018b6deb17db1716ceeeeeb5c28f2c",
+      "byte_size": 34203,
+      "width": 183,
+      "height": 130,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        4,
+        4,
+        179,
+        126
+      ],
+      "native_file": "assets/9246440642eeea70d14f97d0e235386bb7018b6deb17db1716ceeeeeb5c28f2c.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/profile/parts/pelvis.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "pelvis",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "inspect_thigh_overlap_before_rigging"
+      ],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              73,
+              48
+            ]
+          },
+          "global_source_pivot": [
+            502,
+            747
+          ],
+          "global_source_rect": [
+            429,
+            699,
+            183,
+            130
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "pelvis",
+        "label": "Profile pelvis",
+        "file": "parts/pelvis.png",
+        "polygon": [
+          [
+            440,
+            703
+          ],
+          [
+            601,
+            711
+          ],
+          [
+            608,
+            749
+          ],
+          [
+            606,
+            783
+          ],
+          [
+            587,
+            810
+          ],
+          [
+            562,
+            825
+          ],
+          [
+            532,
+            800
+          ],
+          [
+            493,
+            787
+          ],
+          [
+            454,
+            769
+          ],
+          [
+            433,
+            747
+          ]
+        ],
+        "pivot": [
+          502,
+          747
+        ],
+        "parent": null,
+        "layer": 30,
+        "donor": [
+          573,
+          755,
+          24,
+          24
+        ],
+        "holes": [
+          {
+            "center": [
+              502,
+              747
+            ],
+            "radius": 24,
+            "reason": "Remove hardware owned by the connected card; reconstruct concealed garment material."
+          }
+        ],
+        "tabs": [
+          {
+            "center": [
+              502,
+              747
+            ],
+            "radius": 25,
+            "reason": "Concealed solid joint overlap at native texture scale."
+          },
+          {
+            "center": [
+              502,
+              747
+            ],
+            "radius": 32,
+            "reason": "Parent receiver overlap; hidden source texture construction."
+          }
+        ],
+        "rect": [
+          429,
+          699,
+          183,
+          130
+        ]
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::side::upper_arm_far",
+      "title": "Watson reference \u00b7 upper_arm_far",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/upper_arm_far.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "side",
+      "is_cutout": true,
+      "sha256_verified": "f06f506824d3674c76a56084997d9c16cf717bcc710146c101a015b71f160cd4",
+      "byte_size": 38567,
+      "width": 188,
+      "height": 247,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        4,
+        4,
+        184,
+        243
+      ],
+      "native_file": "assets/f06f506824d3674c76a56084997d9c16cf717bcc710146c101a015b71f160cd4.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/profile/parts/upper_arm_far.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "upper_arm",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              159,
+              29
+            ]
+          },
+          "global_source_pivot": [
+            482,
+            344
+          ],
+          "global_source_rect": [
+            323,
+            315,
+            188,
+            247
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "upper_arm_far",
+        "label": "Far upper arm",
+        "file": "parts/upper_arm_far.png",
+        "polygon": [
+          [
+            446,
+            333
+          ],
+          [
+            476,
+            341
+          ],
+          [
+            481,
+            361
+          ],
+          [
+            453,
+            422
+          ],
+          [
+            427,
+            475
+          ],
+          [
+            407,
+            523
+          ],
+          [
+            387,
+            547
+          ],
+          [
+            347,
+            545
+          ],
+          [
+            327,
+            524
+          ],
+          [
+            330,
+            495
+          ],
+          [
+            363,
+            441
+          ],
+          [
+            405,
+            378
+          ]
+        ],
+        "pivot": [
+          482,
+          344
+        ],
+        "parent": "torso",
+        "layer": 8,
+        "donor": [
+          386,
+          468,
+          28,
+          28
+        ],
+        "holes": [
+          {
+            "center": [
+              366,
+              533
+            ],
+            "radius": 24,
+            "reason": "Remove hardware owned by the connected card; reconstruct concealed garment material."
+          },
+          {
+            "polygon": [
+              [
+                415,
+                320
+              ],
+              [
+                500,
+                320
+              ],
+              [
+                500,
+                442
+              ],
+              [
+                430,
+                442
+              ]
+            ],
+            "reason": "Far upper-arm root is hidden by torso in source; native-scale garment reconstruction."
+          }
+        ],
+        "tabs": [
+          {
+            "center": [
+              482,
+              344
+            ],
+            "radius": 25,
+            "reason": "Concealed solid joint overlap at native texture scale."
+          },
+          {
+            "center": [
+              366,
+              533
+            ],
+            "radius": 25,
+            "reason": "Parent receiver overlap; hidden source texture construction."
+          }
+        ],
+        "rect": [
+          323,
+          315,
+          188,
+          247
+        ]
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::side::forearm_far",
+      "title": "Watson reference \u00b7 forearm_far",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/forearm_far.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "side",
+      "is_cutout": true,
+      "sha256_verified": "8ac40d828b467fa4cda34942cc151861dfc7dd3f7e631ff1c4c8f04042093858",
+      "byte_size": 47351,
+      "width": 146,
+      "height": 257,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        4,
+        4,
+        142,
+        253
+      ],
+      "native_file": "assets/8ac40d828b467fa4cda34942cc151861dfc7dd3f7e631ff1c4c8f04042093858.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/profile/parts/forearm_far.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "forearm",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              105,
+              29
+            ]
+          },
+          "global_source_pivot": [
+            366,
+            533
+          ],
+          "global_source_rect": [
+            261,
+            504,
+            146,
+            257
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "forearm_far",
+        "label": "Far forearm",
+        "file": "parts/forearm_far.png",
+        "polygon": [
+          [
+            347,
+            514
+          ],
+          [
+            380,
+            514
+          ],
+          [
+            403,
+            541
+          ],
+          [
+            396,
+            581
+          ],
+          [
+            374,
+            650
+          ],
+          [
+            343,
+            718
+          ],
+          [
+            327,
+            736
+          ],
+          [
+            303,
+            749
+          ],
+          [
+            273,
+            730
+          ],
+          [
+            265,
+            706
+          ],
+          [
+            289,
+            639
+          ],
+          [
+            311,
+            572
+          ],
+          [
+            323,
+            540
+          ]
+        ],
+        "pivot": [
+          366,
+          533
+        ],
+        "parent": "upper_arm_far",
+        "layer": 9,
+        "donor": [
+          337,
+          619,
+          28,
+          28
+        ],
+        "holes": [
+          {
+            "center": [
+              304,
+              735
+            ],
+            "radius": 20,
+            "reason": "Remove hardware owned by the connected card; reconstruct concealed garment material."
+          }
+        ],
+        "tabs": [
+          {
+            "center": [
+              366,
+              533
+            ],
+            "radius": 25,
+            "reason": "Concealed solid joint overlap at native texture scale."
+          },
+          {
+            "center": [
+              304,
+              735
+            ],
+            "radius": 22,
+            "reason": "Parent receiver overlap; hidden source texture construction."
+          }
+        ],
+        "rect": [
+          261,
+          504,
+          146,
+          257
+        ]
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::side::hand_far",
+      "title": "Watson reference \u00b7 hand_far",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/hand_far.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "side",
+      "is_cutout": true,
+      "sha256_verified": "58ad116cf1cdc649a34a2b0a191d1d7d71d2f43bbd3e19cd6417dd0493b87cfd",
+      "byte_size": 35024,
+      "width": 116,
+      "height": 179,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        4,
+        4,
+        112,
+        175
+      ],
+      "native_file": "assets/58ad116cf1cdc649a34a2b0a191d1d7d71d2f43bbd3e19cd6417dd0493b87cfd.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/profile/parts/hand_far.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "hand",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              78,
+              22
+            ]
+          },
+          "global_source_pivot": [
+            304,
+            735
+          ],
+          "global_source_rect": [
+            226,
+            713,
+            116,
+            179
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "hand_far",
+        "label": "Far hand",
+        "file": "parts/hand_far.png",
+        "polygon": [
+          [
+            290,
+            720
+          ],
+          [
+            321,
+            722
+          ],
+          [
+            338,
+            753
+          ],
+          [
+            331,
+            800
+          ],
+          [
+            328,
+            841
+          ],
+          [
+            314,
+            873
+          ],
+          [
+            296,
+            888
+          ],
+          [
+            273,
+            884
+          ],
+          [
+            256,
+            866
+          ],
+          [
+            235,
+            838
+          ],
+          [
+            230,
+            809
+          ],
+          [
+            237,
+            777
+          ],
+          [
+            257,
+            747
+          ]
+        ],
+        "pivot": [
+          304,
+          735
+        ],
+        "parent": "forearm_far",
+        "layer": 10,
+        "donor": [
+          292,
+          795,
+          20,
+          20
+        ],
+        "holes": [],
+        "tabs": [
+          {
+            "center": [
+              304,
+              735
+            ],
+            "radius": 18,
+            "reason": "Concealed solid joint overlap at native texture scale."
+          }
+        ],
+        "rect": [
+          226,
+          713,
+          116,
+          179
+        ]
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::side::upper_arm_near",
+      "title": "Watson reference \u00b7 upper_arm_near",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/upper_arm_near.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "side",
+      "is_cutout": true,
+      "sha256_verified": "c3896e8a79c4a1d6f377369956b9d629c4b28f55927aef769e32d93d8ce8003d",
+      "byte_size": 55700,
+      "width": 135,
+      "height": 277,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        4,
+        4,
+        131,
+        273
+      ],
+      "native_file": "assets/c3896e8a79c4a1d6f377369956b9d629c4b28f55927aef769e32d93d8ce8003d.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/profile/parts/upper_arm_near.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "upper_arm",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              46,
+              30
+            ]
+          },
+          "global_source_pivot": [
+            494,
+            345
+          ],
+          "global_source_rect": [
+            448,
+            315,
+            135,
+            277
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "upper_arm_near",
+        "label": "Near upper arm",
+        "file": "parts/upper_arm_near.png",
+        "polygon": [
+          [
+            473,
+            319
+          ],
+          [
+            510,
+            321
+          ],
+          [
+            538,
+            347
+          ],
+          [
+            554,
+            411
+          ],
+          [
+            566,
+            486
+          ],
+          [
+            579,
+            530
+          ],
+          [
+            569,
+            556
+          ],
+          [
+            545,
+            578
+          ],
+          [
+            509,
+            566
+          ],
+          [
+            487,
+            548
+          ],
+          [
+            469,
+            470
+          ],
+          [
+            452,
+            389
+          ],
+          [
+            453,
+            352
+          ]
+        ],
+        "pivot": [
+          494,
+          345
+        ],
+        "parent": "torso",
+        "layer": 55,
+        "donor": [
+          513,
+          433,
+          30,
+          30
+        ],
+        "holes": [
+          {
+            "center": [
+              546,
+              562
+            ],
+            "radius": 25,
+            "reason": "Remove hardware owned by the connected card; reconstruct concealed garment material."
+          }
+        ],
+        "tabs": [
+          {
+            "center": [
+              494,
+              345
+            ],
+            "radius": 25,
+            "reason": "Concealed solid joint overlap at native texture scale."
+          },
+          {
+            "center": [
+              546,
+              562
+            ],
+            "radius": 26,
+            "reason": "Parent receiver overlap; hidden source texture construction."
+          }
+        ],
+        "rect": [
+          448,
+          315,
+          135,
+          277
+        ]
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::side::forearm_near",
+      "title": "Watson reference \u00b7 forearm_near",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/forearm_near.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "side",
+      "is_cutout": true,
+      "sha256_verified": "bfd3b43e855f04ef2762ce44fc8b97a9af7918e3c1daabb5f2759136d6a35ea1",
+      "byte_size": 47475,
+      "width": 196,
+      "height": 219,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        4,
+        4,
+        192,
+        215
+      ],
+      "native_file": "assets/bfd3b43e855f04ef2762ce44fc8b97a9af7918e3c1daabb5f2759136d6a35ea1.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/profile/parts/forearm_near.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "forearm",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              29,
+              29
+            ]
+          },
+          "global_source_pivot": [
+            546,
+            562
+          ],
+          "global_source_rect": [
+            517,
+            533,
+            196,
+            219
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "forearm_near",
+        "label": "Near forearm",
+        "file": "parts/forearm_near.png",
+        "polygon": [
+          [
+            536,
+            538
+          ],
+          [
+            565,
+            538
+          ],
+          [
+            594,
+            559
+          ],
+          [
+            634,
+            610
+          ],
+          [
+            674,
+            657
+          ],
+          [
+            706,
+            691
+          ],
+          [
+            706,
+            715
+          ],
+          [
+            685,
+            740
+          ],
+          [
+            660,
+            748
+          ],
+          [
+            640,
+            735
+          ],
+          [
+            594,
+            685
+          ],
+          [
+            549,
+            638
+          ],
+          [
+            525,
+            594
+          ],
+          [
+            521,
+            568
+          ]
+        ],
+        "pivot": [
+          546,
+          562
+        ],
+        "parent": "upper_arm_near",
+        "layer": 56,
+        "donor": [
+          600,
+          636,
+          28,
+          28
+        ],
+        "holes": [
+          {
+            "center": [
+              687,
+              724
+            ],
+            "radius": 21,
+            "reason": "Remove hardware owned by the connected card; reconstruct concealed garment material."
+          }
+        ],
+        "tabs": [
+          {
+            "center": [
+              546,
+              562
+            ],
+            "radius": 25,
+            "reason": "Concealed solid joint overlap at native texture scale."
+          },
+          {
+            "center": [
+              687,
+              724
+            ],
+            "radius": 22,
+            "reason": "Parent receiver overlap; hidden source texture construction."
+          }
+        ],
+        "rect": [
+          517,
+          533,
+          196,
+          219
+        ]
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::side::hand_near",
+      "title": "Watson reference \u00b7 hand_near",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/hand_near.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "side",
+      "is_cutout": true,
+      "sha256_verified": "b972bbb98d09d6972b590ae84b5d5a5c683237dbee4af3e8c1ffb9324c4f1f30",
+      "byte_size": 28985,
+      "width": 139,
+      "height": 140,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        4,
+        4,
+        135,
+        136
+      ],
+      "native_file": "assets/b972bbb98d09d6972b590ae84b5d5a5c683237dbee4af3e8c1ffb9324c4f1f30.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/profile/parts/hand_near.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "hand",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              26,
+              23
+            ]
+          },
+          "global_source_pivot": [
+            687,
+            724
+          ],
+          "global_source_rect": [
+            661,
+            701,
+            139,
+            140
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "hand_near",
+        "label": "Near hand",
+        "file": "parts/hand_near.png",
+        "polygon": [
+          [
+            678,
+            705
+          ],
+          [
+            706,
+            711
+          ],
+          [
+            743,
+            728
+          ],
+          [
+            769,
+            746
+          ],
+          [
+            791,
+            772
+          ],
+          [
+            796,
+            795
+          ],
+          [
+            785,
+            818
+          ],
+          [
+            759,
+            837
+          ],
+          [
+            738,
+            831
+          ],
+          [
+            716,
+            815
+          ],
+          [
+            690,
+            782
+          ],
+          [
+            665,
+            744
+          ]
+        ],
+        "pivot": [
+          687,
+          724
+        ],
+        "parent": "forearm_near",
+        "layer": 57,
+        "donor": [
+          729,
+          778,
+          20,
+          20
+        ],
+        "holes": [],
+        "tabs": [
+          {
+            "center": [
+              687,
+              724
+            ],
+            "radius": 18,
+            "reason": "Concealed solid joint overlap at native texture scale."
+          }
+        ],
+        "rect": [
+          661,
+          701,
+          139,
+          140
+        ]
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::side::thigh_far",
+      "title": "Watson reference \u00b7 thigh_far",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/thigh_far.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "side",
+      "is_cutout": true,
+      "sha256_verified": "c9f817d05b21a7a9dc1deabe99b6d8359b545bc2ce709453bfabae7602bbdeaa",
+      "byte_size": 79488,
+      "width": 227,
+      "height": 355,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        4,
+        4,
+        223,
+        351
+      ],
+      "native_file": "assets/c9f817d05b21a7a9dc1deabe99b6d8359b545bc2ce709453bfabae7602bbdeaa.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/profile/parts/thigh_far.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "thigh",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              29,
+              29
+            ]
+          },
+          "global_source_pivot": [
+            502,
+            747
+          ],
+          "global_source_rect": [
+            473,
+            718,
+            227,
+            355
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "thigh_far",
+        "label": "Far thigh",
+        "file": "parts/thigh_far.png",
+        "polygon": [
+          [
+            489,
+            725
+          ],
+          [
+            550,
+            733
+          ],
+          [
+            588,
+            761
+          ],
+          [
+            610,
+            809
+          ],
+          [
+            638,
+            869
+          ],
+          [
+            669,
+            939
+          ],
+          [
+            696,
+            1007
+          ],
+          [
+            686,
+            1042
+          ],
+          [
+            664,
+            1065
+          ],
+          [
+            623,
+            1068
+          ],
+          [
+            597,
+            1051
+          ],
+          [
+            574,
+            1008
+          ],
+          [
+            549,
+            951
+          ],
+          [
+            529,
+            897
+          ],
+          [
+            516,
+            849
+          ],
+          [
+            498,
+            794
+          ]
+        ],
+        "pivot": [
+          502,
+          747
+        ],
+        "parent": "pelvis",
+        "layer": 15,
+        "donor": [
+          619,
+          953,
+          30,
+          30
+        ],
+        "holes": [
+          {
+            "center": [
+              658,
+              1043
+            ],
+            "radius": 24,
+            "reason": "Remove hardware owned by the connected card; reconstruct concealed garment material."
+          },
+          {
+            "polygon": [
+              [
+                479,
+                720
+              ],
+              [
+                552,
+                721
+              ],
+              [
+                577,
+                773
+              ],
+              [
+                559,
+                861
+              ],
+              [
+                530,
+                902
+              ],
+              [
+                500,
+                825
+              ]
+            ],
+            "reason": "The far thigh root is occluded by the source near thigh; reconstructed concealed trouser overlap."
+          }
+        ],
+        "tabs": [
+          {
+            "center": [
+              502,
+              747
+            ],
+            "radius": 25,
+            "reason": "Concealed solid joint overlap at native texture scale."
+          },
+          {
+            "center": [
+              658,
+              1043
+            ],
+            "radius": 26,
+            "reason": "Parent receiver overlap; hidden source texture construction."
+          }
+        ],
+        "rect": [
+          473,
+          718,
+          227,
+          355
+        ]
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::side::shin_far",
+      "title": "Watson reference \u00b7 shin_far",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/shin_far.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "side",
+      "is_cutout": true,
+      "sha256_verified": "61ae963cc93544d203c0cce0dd768563940163ac4079a34bee4469bcc2a0aea7",
+      "byte_size": 87575,
+      "width": 176,
+      "height": 385,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        4,
+        4,
+        172,
+        381
+      ],
+      "native_file": "assets/61ae963cc93544d203c0cce0dd768563940163ac4079a34bee4469bcc2a0aea7.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/profile/parts/shin_far.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "shin",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              63,
+              29
+            ]
+          },
+          "global_source_pivot": [
+            658,
+            1043
+          ],
+          "global_source_rect": [
+            595,
+            1014,
+            176,
+            385
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "shin_far",
+        "label": "Far shin",
+        "file": "parts/shin_far.png",
+        "polygon": [
+          [
+            639,
+            1020
+          ],
+          [
+            673,
+            1020
+          ],
+          [
+            697,
+            1051
+          ],
+          [
+            713,
+            1098
+          ],
+          [
+            728,
+            1174
+          ],
+          [
+            750,
+            1259
+          ],
+          [
+            767,
+            1317
+          ],
+          [
+            752,
+            1343
+          ],
+          [
+            687,
+            1363
+          ],
+          [
+            652,
+            1344
+          ],
+          [
+            637,
+            1284
+          ],
+          [
+            620,
+            1199
+          ],
+          [
+            607,
+            1131
+          ],
+          [
+            599,
+            1085
+          ],
+          [
+            613,
+            1057
+          ]
+        ],
+        "pivot": [
+          658,
+          1043
+        ],
+        "parent": "thigh_far",
+        "layer": 16,
+        "donor": [
+          663,
+          1170,
+          32,
+          32
+        ],
+        "holes": [],
+        "tabs": [
+          {
+            "center": [
+              658,
+              1043
+            ],
+            "radius": 25,
+            "reason": "Concealed solid joint overlap at native texture scale."
+          },
+          {
+            "center": [
+              707,
+              1362
+            ],
+            "radius": 33,
+            "reason": "Parent receiver overlap; hidden source texture construction."
+          }
+        ],
+        "rect": [
+          595,
+          1014,
+          176,
+          385
+        ]
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::side::boot_far",
+      "title": "Watson reference \u00b7 boot_far",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/boot_far.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "side",
+      "is_cutout": true,
+      "sha256_verified": "78ebf82f9b1e43fc54f12b73a0f4e21b0785a95fc20408911cbd5cdac65d24ef",
+      "byte_size": 73736,
+      "width": 281,
+      "height": 172,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        4,
+        4,
+        277,
+        168
+      ],
+      "native_file": "assets/78ebf82f9b1e43fc54f12b73a0f4e21b0785a95fc20408911cbd5cdac65d24ef.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/profile/parts/boot_far.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "foot",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              61,
+              48
+            ]
+          },
+          "global_source_pivot": [
+            707,
+            1362
+          ],
+          "global_source_rect": [
+            646,
+            1314,
+            281,
+            172
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "boot_far",
+        "label": "Far boot",
+        "file": "parts/boot_far.png",
+        "polygon": [
+          [
+            683,
+            1322
+          ],
+          [
+            733,
+            1318
+          ],
+          [
+            754,
+            1318
+          ],
+          [
+            773,
+            1336
+          ],
+          [
+            784,
+            1350
+          ],
+          [
+            800,
+            1365
+          ],
+          [
+            821,
+            1379
+          ],
+          [
+            846,
+            1389
+          ],
+          [
+            871,
+            1392
+          ],
+          [
+            890,
+            1399
+          ],
+          [
+            903,
+            1417
+          ],
+          [
+            912,
+            1434
+          ],
+          [
+            921,
+            1444
+          ],
+          [
+            923,
+            1465
+          ],
+          [
+            907,
+            1477
+          ],
+          [
+            857,
+            1482
+          ],
+          [
+            790,
+            1480
+          ],
+          [
+            743,
+            1478
+          ],
+          [
+            712,
+            1482
+          ],
+          [
+            655,
+            1478
+          ],
+          [
+            650,
+            1451
+          ],
+          [
+            653,
+            1410
+          ],
+          [
+            661,
+            1373
+          ],
+          [
+            671,
+            1347
+          ]
+        ],
+        "pivot": [
+          707,
+          1362
+        ],
+        "parent": "shin_far",
+        "layer": 14,
+        "donor": [
+          735,
+          1402,
+          22,
+          22
+        ],
+        "holes": [],
+        "tabs": [
+          {
+            "center": [
+              707,
+              1362
+            ],
+            "radius": 30,
+            "reason": "Concealed solid joint overlap at native texture scale."
+          }
+        ],
+        "rect": [
+          646,
+          1314,
+          281,
+          172
+        ]
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::side::thigh_near",
+      "title": "Watson reference \u00b7 thigh_near",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/thigh_near.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "side",
+      "is_cutout": true,
+      "sha256_verified": "21a9ca63febc230b9b8d17fa138f666dd4ae9f67444f6a8ef84f2c41276b8939",
+      "byte_size": 101178,
+      "width": 196,
+      "height": 376,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        4,
+        4,
+        192,
+        372
+      ],
+      "native_file": "assets/21a9ca63febc230b9b8d17fa138f666dd4ae9f67444f6a8ef84f2c41276b8939.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/profile/parts/thigh_near.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "thigh",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              137,
+              29
+            ]
+          },
+          "global_source_pivot": [
+            502,
+            747
+          ],
+          "global_source_rect": [
+            365,
+            718,
+            196,
+            376
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "thigh_near",
+        "label": "Near thigh",
+        "file": "parts/thigh_near.png",
+        "polygon": [
+          [
+            483,
+            725
+          ],
+          [
+            519,
+            724
+          ],
+          [
+            544,
+            740
+          ],
+          [
+            557,
+            771
+          ],
+          [
+            552,
+            818
+          ],
+          [
+            533,
+            904
+          ],
+          [
+            505,
+            985
+          ],
+          [
+            475,
+            1039
+          ],
+          [
+            448,
+            1075
+          ],
+          [
+            412,
+            1081
+          ],
+          [
+            381,
+            1063
+          ],
+          [
+            369,
+            1039
+          ],
+          [
+            383,
+            976
+          ],
+          [
+            403,
+            895
+          ],
+          [
+            423,
+            814
+          ],
+          [
+            441,
+            758
+          ]
+        ],
+        "pivot": [
+          502,
+          747
+        ],
+        "parent": "pelvis",
+        "layer": 35,
+        "donor": [
+          478,
+          930,
+          30,
+          30
+        ],
+        "holes": [
+          {
+            "center": [
+              420,
+              1064
+            ],
+            "radius": 24,
+            "reason": "Remove hardware owned by the connected card; reconstruct concealed garment material."
+          }
+        ],
+        "tabs": [
+          {
+            "center": [
+              502,
+              747
+            ],
+            "radius": 25,
+            "reason": "Concealed solid joint overlap at native texture scale."
+          },
+          {
+            "center": [
+              420,
+              1064
+            ],
+            "radius": 26,
+            "reason": "Parent receiver overlap; hidden source texture construction."
+          }
+        ],
+        "rect": [
+          365,
+          718,
+          196,
+          376
+        ]
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::side::shin_near",
+      "title": "Watson reference \u00b7 shin_near",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/shin_near.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "side",
+      "is_cutout": true,
+      "sha256_verified": "56bd7f7eeda58ffceec9b92471dc59cd0935d7c0a3389e7d65005d48d2c0fea6",
+      "byte_size": 97440,
+      "width": 243,
+      "height": 347,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        4,
+        4,
+        239,
+        343
+      ],
+      "native_file": "assets/56bd7f7eeda58ffceec9b92471dc59cd0935d7c0a3389e7d65005d48d2c0fea6.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/profile/parts/shin_near.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "shin",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              199,
+              29
+            ]
+          },
+          "global_source_pivot": [
+            420,
+            1064
+          ],
+          "global_source_rect": [
+            221,
+            1035,
+            243,
+            347
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "shin_near",
+        "label": "Near shin",
+        "file": "parts/shin_near.png",
+        "polygon": [
+          [
+            399,
+            1043
+          ],
+          [
+            433,
+            1040
+          ],
+          [
+            456,
+            1067
+          ],
+          [
+            460,
+            1095
+          ],
+          [
+            435,
+            1144
+          ],
+          [
+            402,
+            1213
+          ],
+          [
+            368,
+            1295
+          ],
+          [
+            345,
+            1338
+          ],
+          [
+            319,
+            1345
+          ],
+          [
+            277,
+            1337
+          ],
+          [
+            233,
+            1305
+          ],
+          [
+            225,
+            1284
+          ],
+          [
+            248,
+            1231
+          ],
+          [
+            281,
+            1171
+          ],
+          [
+            321,
+            1106
+          ],
+          [
+            363,
+            1057
+          ]
+        ],
+        "pivot": [
+          420,
+          1064
+        ],
+        "parent": "thigh_near",
+        "layer": 36,
+        "donor": [
+          342,
+          1197,
+          32,
+          32
+        ],
+        "holes": [],
+        "tabs": [
+          {
+            "center": [
+              420,
+              1064
+            ],
+            "radius": 25,
+            "reason": "Concealed solid joint overlap at native texture scale."
+          },
+          {
+            "center": [
+              264,
+              1345
+            ],
+            "radius": 33,
+            "reason": "Parent receiver overlap; hidden source texture construction."
+          }
+        ],
+        "rect": [
+          221,
+          1035,
+          243,
+          347
+        ]
+      },
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "watson_motion::side::boot_near",
+      "title": "Watson reference \u00b7 boot_near",
+      "bank": "watson_reference",
+      "category": "body",
+      "file": "parts/boot_near.png",
+      "packet_ids": [
+        "watson_motion_reference"
+      ],
+      "view": "side",
+      "is_cutout": true,
+      "sha256_verified": "0cb20baddd63c96af95e2aef8856536952d1f42db022abc544c8d5374f5c6a13",
+      "byte_size": 77065,
+      "width": 276,
+      "height": 205,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        4,
+        4,
+        272,
+        190
+      ],
+      "native_file": "assets/0cb20baddd63c96af95e2aef8856536952d1f42db022abc544c8d5374f5c6a13.png",
+      "source_archive": "Watson_Rig_and_Motion_v2.zip",
+      "source_member": "Watson_Rig_Lab_v2/profile/parts/boot_near.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "foot",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "anchors": {
+            "pivot": [
+              92,
+              42
+            ]
+          },
+          "global_source_pivot": [
+            264,
+            1345
+          ],
+          "global_source_rect": [
+            172,
+            1303,
+            276,
+            205
+          ],
+          "basis": "working Watson global pivot converted to local cutout pixels",
+          "status": "user_preferred_motion_reference"
+        }
+      ],
+      "source_registration": {
+        "id": "boot_near",
+        "label": "Near boot",
+        "file": "parts/boot_near.png",
+        "polygon": [
+          [
+            249,
+            1307
+          ],
+          [
+            312,
+            1328
+          ],
+          [
+            349,
+            1337
+          ],
+          [
+            363,
+            1374
+          ],
+          [
+            390,
+            1396
+          ],
+          [
+            427,
+            1415
+          ],
+          [
+            444,
+            1447
+          ],
+          [
+            442,
+            1483
+          ],
+          [
+            415,
+            1498
+          ],
+          [
+            365,
+            1504
+          ],
+          [
+            319,
+            1498
+          ],
+          [
+            270,
+            1484
+          ],
+          [
+            235,
+            1465
+          ],
+          [
+            207,
+            1452
+          ],
+          [
+            176,
+            1428
+          ],
+          [
+            184,
+            1394
+          ],
+          [
+            207,
+            1357
+          ],
+          [
+            230,
+            1324
+          ]
+        ],
+        "pivot": [
+          264,
+          1345
+        ],
+        "parent": "shin_near",
+        "layer": 34,
+        "donor": [
+          291,
+          1406,
+          22,
+          22
+        ],
+        "holes": [],
+        "tabs": [
+          {
+            "center": [
+              264,
+              1345
+            ],
+            "radius": 30,
+            "reason": "Concealed solid joint overlap at native texture scale."
+          }
+        ],
+        "rect": [
+          172,
+          1303,
+          276,
+          205
+        ]
+      },
+      "exact_duplicate_ids": []
+    }
+  ]
+}

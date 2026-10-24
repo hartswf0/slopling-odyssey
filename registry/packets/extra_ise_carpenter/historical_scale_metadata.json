@@ -1,0 +1,790 @@
+{
+  "actor_id": "extra_ise_carpenter",
+  "name": "Ise carpenter",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "extra_ise_carpenter__E00",
+      "part": "head",
+      "canvas_width_px": 192,
+      "canvas_height_px": 237,
+      "drawn_width_px": 191.26530612244898,
+      "drawn_height_px": 236.16326530612244,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E00.png",
+      "source_scale": 0.8979591836734694,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          96.08163265306122,
+          222.3795918367347
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "extra_ise_carpenter__B03",
+      "part": "torso_front",
+      "canvas_width_px": 344,
+      "canvas_height_px": 349,
+      "drawn_width_px": 343.0697674418604,
+      "drawn_height_px": 348.43023255813944,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B03.png",
+      "source_scale": 1.3401162790697672,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          171.5348837209302,
+          39.1313953488372
+        ],
+        "waist": [
+          171.5348837209302,
+          315.7313953488371
+        ],
+        "shoulder_left": [
+          60.841279069767424,
+          84.15930232558138
+        ],
+        "shoulder_right": [
+          282.22848837209295,
+          84.15930232558138
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "extra_ise_carpenter__B05",
+      "part": "pelvis_front",
+      "canvas_width_px": 314,
+      "canvas_height_px": 226,
+      "drawn_width_px": 313.9445736434108,
+      "drawn_height_px": 225.13953488372087,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B05.png",
+      "source_scale": 1.2507751937984495,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          157.59767441860464,
+          36.52263565891472
+        ],
+        "hip_left": [
+          77.1102906976744,
+          71.52263565891472
+        ],
+        "hip_right": [
+          238.08505813953488,
+          71.52263565891472
+        ],
+        "hem_pin_left": [
+          46.541344961240306,
+          187.2035232558139
+        ],
+        "hem_pin_right": [
+          278.97289922480616,
+          187.2535542635659
+        ],
+        "upper_pin_left": [
+          65.11535658914728,
+          57.29801162790697
+        ],
+        "upper_pin_right": [
+          252.14377131782945,
+          42.06356976744186
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "extra_ise_carpenter__B11",
+      "part": "upper_arm_left",
+      "canvas_width_px": 166,
+      "canvas_height_px": 173,
+      "drawn_width_px": 165.1250291754777,
+      "drawn_height_px": 172.58830733030152,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B11.png",
+      "source_scale": 0.9329097693529813,
+      "assembly_rotation_deg": -22.294393778994014,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          114.61729426270729,
+          31.336439152566644
+        ],
+        "distal": [
+          37.363036262586895,
+          144.04126838810032
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "extra_ise_carpenter__B12",
+      "part": "upper_arm_right",
+      "canvas_width_px": 176,
+      "canvas_height_px": 197,
+      "drawn_width_px": 175.89726640020652,
+      "drawn_height_px": 196.15210313720002,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B12.png",
+      "source_scale": 1.0660440387891303,
+      "assembly_rotation_deg": 29.12034116461356,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          53.55805250876591,
+          33.910860873882235
+        ],
+        "distal": [
+          143.6600946672232,
+          136.63486445160282
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "extra_ise_carpenter__B13",
+      "part": "forearm_left",
+      "canvas_width_px": 180,
+      "canvas_height_px": 214,
+      "drawn_width_px": 179.09906123988807,
+      "drawn_height_px": 213.1608458928729,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B13.png",
+      "source_scale": 1.098767246870479,
+      "assembly_rotation_deg": -32.1470443366739,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          135.62084128122322,
+          58.78404770757063
+        ],
+        "distal": [
+          89.54953061994404,
+          176.19831570815003
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "extra_ise_carpenter__B14",
+      "part": "forearm_right",
+      "canvas_width_px": 126,
+      "canvas_height_px": 149,
+      "drawn_width_px": 125.25685219701744,
+      "drawn_height_px": 148.169691013545,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B14.png",
+      "source_scale": 0.7637612938842526,
+      "assembly_rotation_deg": 46.48801764888814,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          27.29682864342319,
+          24.906255793565478
+        ],
+        "distal": [
+          101.01506872913124,
+          127.25026917405533
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_open.png",
+      "asset_id": "extra_ise_carpenter__B21",
+      "part": "hand_left_open",
+      "canvas_width_px": 87,
+      "canvas_height_px": 108,
+      "drawn_width_px": 86.93655079365078,
+      "drawn_height_px": 107.5132492063492,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B21.png",
+      "source_scale": 0.5144174603174603,
+      "assembly_rotation_deg": 169.27713198500976,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          37.37242849206349,
+          89.4263313015873
+        ],
+        "grip": [
+          43.46827539682539,
+          51.8121266031746
+        ],
+        "fingertip": [
+          43.46827539682539,
+          10.005419603174602
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_open.png",
+      "asset_id": "extra_ise_carpenter__B22",
+      "part": "hand_right_open",
+      "canvas_width_px": 81,
+      "canvas_height_px": 99,
+      "drawn_width_px": 80.18674013243415,
+      "drawn_height_px": 98.47494402228754,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B22.png",
+      "source_scale": 0.468928304868036,
+      "assembly_rotation_deg": 190.72286801499024,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          42.63496147860183,
+          82.57358520421246
+        ],
+        "grip": [
+          40.093370066217076,
+          47.6806300389819
+        ],
+        "fingertip": [
+          40.093370066217076,
+          9.167548360170104
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "extra_ise_carpenter__B15",
+      "part": "thigh_left",
+      "canvas_width_px": 275,
+      "canvas_height_px": 322,
+      "drawn_width_px": 274.04953981603103,
+      "drawn_height_px": 321.57258140262604,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B15.png",
+      "source_scale": 1.5841013862198325,
+      "assembly_rotation_deg": -20.878510808679167,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          144.80270771435488,
+          51.92684344028611
+        ],
+        "distal": [
+          64.61549554390697,
+          262.1529384055201
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "extra_ise_carpenter__B16",
+      "part": "thigh_right",
+      "canvas_width_px": 271,
+      "canvas_height_px": 332,
+      "drawn_width_px": 270.8828546937319,
+      "drawn_height_px": 331.26035845076854,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B16.png",
+      "source_scale": 1.6318244258658547,
+      "assembly_rotation_deg": 22.52908430565286,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          117.50767690660021,
+          55.10671086148992
+        ],
+        "distal": [
+          203.7169613250933,
+          262.93586973976517
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "extra_ise_carpenter__B17",
+      "part": "shin_left",
+      "canvas_width_px": 160,
+      "canvas_height_px": 248,
+      "drawn_width_px": 159.60847724200002,
+      "drawn_height_px": 247.50879804194207,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B17.png",
+      "source_scale": 1.15658316842029,
+      "assembly_rotation_deg": -15.144349441424497,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          90.5373304239403,
+          37.41546549839639
+        ],
+        "distal": [
+          46.124536756601174,
+          201.51148543386714
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "extra_ise_carpenter__B18",
+      "part": "shin_right",
+      "canvas_width_px": 158,
+      "canvas_height_px": 250,
+      "drawn_width_px": 157.65843027405123,
+      "drawn_height_px": 249.91780798997755,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B18.png",
+      "source_scale": 1.1678402242522312,
+      "assembly_rotation_deg": 14.981366065378188,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          62.40938158403923,
+          38.65551142274885
+        ],
+        "distal": [
+          106.35520922265069,
+          202.87720375709762
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "extra_ise_carpenter__B19",
+      "part": "shoe_left",
+      "canvas_width_px": 304,
+      "canvas_height_px": 235,
+      "drawn_width_px": 303.9999999999999,
+      "drawn_height_px": 234.1818181818181,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B19.png",
+      "source_scale": 1.454545454545454,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "ankle": [
+          238.54545454545445,
+          139.63636363636357
+        ],
+        "sole": [
+          238.54545454545445,
+          219.63636363636354
+        ],
+        "cuff_pin": [
+          190.8799999999999,
+          49.876363636363614
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "extra_ise_carpenter__B20",
+      "part": "shoe_right",
+      "canvas_width_px": 300,
+      "canvas_height_px": 236,
+      "drawn_width_px": 299.6363636363635,
+      "drawn_height_px": 235.6363636363635,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B20.png",
+      "source_scale": 1.454545454545454,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "ankle": [
+          58.18181818181816,
+          141.09090909090904
+        ],
+        "sole": [
+          58.18181818181816,
+          221.090909090909
+        ],
+        "cuff_pin": [
+          103.47636363636359,
+          52.20363636363634
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "extra_ise_carpenter__E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 198,
+      "canvas_height_px": 237,
+      "drawn_width_px": 197.55102040816328,
+      "drawn_height_px": 236.16326530612244,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E01.png",
+      "source_scale": 0.8979591836734695,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          98.77551020408164,
+          222.37959183673473
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "extra_ise_carpenter__E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 183,
+      "canvas_height_px": 228,
+      "drawn_width_px": 182.60397830018084,
+      "drawn_height_px": 227.55877034358048,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E02.png",
+      "source_scale": 0.39783001808318263,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          94.28571428571428,
+          217.37830018083181
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "extra_ise_carpenter__E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 190,
+      "canvas_height_px": 228,
+      "drawn_width_px": 189.4332723948812,
+      "drawn_height_px": 227.6416819012797,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E03.png",
+      "source_scale": 0.4021937842778794,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          100.54844606946985,
+          217.42193784277882
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "extra_ise_carpenter__E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 200,
+      "canvas_height_px": 237,
+      "drawn_width_px": 199.2622950819672,
+      "drawn_height_px": 236.22950819672133,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E04.png",
+      "source_scale": 0.9016393442622951,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          100.5327868852459,
+          222.41639344262296
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "extra_ise_carpenter__E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 193,
+      "canvas_height_px": 237,
+      "drawn_width_px": 192.27642276422765,
+      "drawn_height_px": 236.09756097560972,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E05.png",
+      "source_scale": 0.8943089430894309,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          96.58536585365853,
+          222.3430894308943
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "extra_ise_carpenter__E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 201,
+      "canvas_height_px": 235,
+      "drawn_width_px": 200.98765432098764,
+      "drawn_height_px": 234.4855967078189,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E06.png",
+      "source_scale": 0.9053497942386831,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          103.20987654320987,
+          220.64279835390946
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "extra_ise_carpenter__E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 201,
+      "canvas_height_px": 235,
+      "drawn_width_px": 200.98765432098764,
+      "drawn_height_px": 234.4855967078189,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E07.png",
+      "source_scale": 0.9053497942386831,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          103.20987654320987,
+          220.64279835390946
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "extra_ise_carpenter__E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 205,
+      "canvas_height_px": 235,
+      "drawn_width_px": 204.54545454545453,
+      "drawn_height_px": 234.54545454545456,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E08.png",
+      "source_scale": 0.9090909090909091,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.45454545454545,
+          220.6727272727273
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "extra_ise_carpenter__E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 201,
+      "canvas_height_px": 235,
+      "drawn_width_px": 200.98765432098764,
+      "drawn_height_px": 234.4855967078189,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E09.png",
+      "source_scale": 0.9053497942386831,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          101.39917695473251,
+          220.64279835390946
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "extra_ise_carpenter__E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 206,
+      "canvas_height_px": 235,
+      "drawn_width_px": 205.51440329218107,
+      "drawn_height_px": 234.4855967078189,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E10.png",
+      "source_scale": 0.9053497942386831,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          103.20987654320987,
+          220.64279835390946
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "extra_ise_carpenter__E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 195,
+      "canvas_height_px": 235,
+      "drawn_width_px": 194.65020576131687,
+      "drawn_height_px": 234.4855967078189,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E11.png",
+      "source_scale": 0.9053497942386831,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          107.73662551440329,
+          220.64279835390946
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "extra_ise_carpenter__E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 212,
+      "canvas_height_px": 238,
+      "drawn_width_px": 211.16071428571428,
+      "drawn_height_px": 237.67857142857142,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E12.png",
+      "source_scale": 0.9821428571428571,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          112.94642857142857,
+          223.22142857142856
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "extra_ise_carpenter__E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 215,
+      "canvas_height_px": 236,
+      "drawn_width_px": 214.15929203539824,
+      "drawn_height_px": 235.57522123893807,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E13.png",
+      "source_scale": 0.9734513274336284,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          103.18584070796462,
+          221.18761061946904
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "extra_ise_carpenter__E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 218,
+      "canvas_height_px": 236,
+      "drawn_width_px": 217.04035874439458,
+      "drawn_height_px": 235.78475336322867,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E14.png",
+      "source_scale": 0.9865470852017936,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          111.47982062780267,
+          221.29237668161431
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "extra_ise_carpenter__E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 213,
+      "canvas_height_px": 236,
+      "drawn_width_px": 212.21238938053096,
+      "drawn_height_px": 235.57522123893807,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E15.png",
+      "source_scale": 0.9734513274336283,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          106.10619469026548,
+          221.187610619469
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "extra_ise_carpenter__E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 213,
+      "canvas_height_px": 236,
+      "drawn_width_px": 212.21238938053096,
+      "drawn_height_px": 235.57522123893807,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E16.png",
+      "source_scale": 0.9734513274336283,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          107.0796460176991,
+          221.187610619469
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "extra_ise_carpenter__E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 222,
+      "canvas_height_px": 236,
+      "drawn_width_px": 221.94690265486724,
+      "drawn_height_px": 235.57522123893807,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/heads/E17.png",
+      "source_scale": 0.9734513274336283,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          96.3716814159292,
+          221.187610619469
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "extra_ise_carpenter__B23",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 86,
+      "canvas_height_px": 109,
+      "drawn_width_px": 85.85356666666665,
+      "drawn_height_px": 108.02766666666666,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B23.png",
+      "source_scale": 0.5685666666666666,
+      "assembly_rotation_deg": -63.47072287704683,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          40.828772333333326,
+          17.33559766666666
+        ],
+        "grip": [
+          42.64249999999999,
+          52.353618666666655
+        ],
+        "fingertip": [
+          42.64249999999999,
+          99.02157066666665
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "extra_ise_carpenter__B24",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 76,
+      "canvas_height_px": 97,
+      "drawn_width_px": 75.89581850779217,
+      "drawn_height_px": 96.1018481105161,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ise_carpenter/parts/B24.png",
+      "source_scale": 0.49282999031033875,
+      "assembly_rotation_deg": 63.47072287704683,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          37.13473976988402,
+          14.922892106597057
+        ],
+        "grip": [
+          37.947909253896086,
+          46.326019089171844
+        ],
+        "fingertip": [
+          37.947909253896086,
+          87.7237382752403
+        ]
+      }
+    }
+  ]
+}

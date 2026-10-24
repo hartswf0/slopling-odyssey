@@ -1,0 +1,1823 @@
+{
+  "schema": "watson-profile-bank-v1",
+  "revision": "profile_source_cut_v1",
+  "view": "profile",
+  "facing": "screen-right",
+  "width": 1024,
+  "height": 1536,
+  "source_file": "source/master.png",
+  "source_sha256": "a92a3c97c157cd2ee98b209050093508c2dddd5edf2a32a9a9867ba36f96a4d7",
+  "source_geometry": {
+    "alpha_bounds": [
+      176,
+      13,
+      921,
+      1490
+    ],
+    "silhouette_height": 1477,
+    "landmarks": {
+      "neck": [
+        558,
+        280
+      ],
+      "chest": [
+        494,
+        345
+      ],
+      "pelvis": [
+        502,
+        747
+      ],
+      "shoulder_near": [
+        494,
+        345
+      ],
+      "elbow_near": [
+        546,
+        562
+      ],
+      "wrist_near": [
+        687,
+        724
+      ],
+      "hand_near": [
+        773,
+        816
+      ],
+      "hip_near": [
+        502,
+        747
+      ],
+      "knee_near": [
+        420,
+        1064
+      ],
+      "ankle_near": [
+        264,
+        1345
+      ],
+      "heel_near": [
+        194,
+        1423
+      ],
+      "toe_near": [
+        431,
+        1481
+      ],
+      "shoulder_far": [
+        482,
+        344
+      ],
+      "elbow_far": [
+        366,
+        533
+      ],
+      "wrist_far": [
+        304,
+        735
+      ],
+      "hand_far": [
+        291,
+        884
+      ],
+      "hip_far": [
+        502,
+        747
+      ],
+      "knee_far": [
+        658,
+        1043
+      ],
+      "ankle_far": [
+        707,
+        1362
+      ],
+      "heel_far": [
+        664,
+        1468
+      ],
+      "toe_far": [
+        904,
+        1462
+      ]
+    },
+    "bounds_basis": "Actual alpha>128 source extent measured before component clipping. Faint generated halo is excluded by component polygons."
+  },
+  "side_mapping": {
+    "near": "left",
+    "far": "right"
+  },
+  "coordinate_system": "Source pixels. All transparent component PNGs retain native scale. Part rect stores crop placement.",
+  "parts": [
+    {
+      "id": "head",
+      "label": "Profile head + neck",
+      "file": "parts/head.png",
+      "polygon": [
+        [
+          420,
+          13
+        ],
+        [
+          672,
+          13
+        ],
+        [
+          681,
+          80
+        ],
+        [
+          674,
+          122
+        ],
+        [
+          690,
+          171
+        ],
+        [
+          689,
+          198
+        ],
+        [
+          671,
+          210
+        ],
+        [
+          664,
+          241
+        ],
+        [
+          638,
+          259
+        ],
+        [
+          618,
+          260
+        ],
+        [
+          601,
+          313
+        ],
+        [
+          558,
+          298
+        ],
+        [
+          513,
+          273
+        ],
+        [
+          474,
+          252
+        ],
+        [
+          453,
+          224
+        ],
+        [
+          432,
+          196
+        ],
+        [
+          417,
+          163
+        ],
+        [
+          414,
+          104
+        ]
+      ],
+      "pivot": [
+        558,
+        280
+      ],
+      "parent": "torso",
+      "layer": 80,
+      "donor": [
+        520,
+        151,
+        24,
+        24
+      ],
+      "holes": [],
+      "tabs": [],
+      "rect": [
+        410,
+        9,
+        284,
+        308
+      ]
+    },
+    {
+      "id": "torso",
+      "label": "Profile torso",
+      "file": "parts/torso.png",
+      "polygon": [
+        [
+          477,
+          251
+        ],
+        [
+          513,
+          264
+        ],
+        [
+          550,
+          287
+        ],
+        [
+          598,
+          314
+        ],
+        [
+          621,
+          357
+        ],
+        [
+          632,
+          417
+        ],
+        [
+          633,
+          557
+        ],
+        [
+          643,
+          691
+        ],
+        [
+          622,
+          720
+        ],
+        [
+          426,
+          712
+        ],
+        [
+          417,
+          689
+        ],
+        [
+          428,
+          581
+        ],
+        [
+          437,
+          450
+        ],
+        [
+          433,
+          372
+        ],
+        [
+          449,
+          310
+        ]
+      ],
+      "pivot": [
+        502,
+        712
+      ],
+      "parent": "pelvis",
+      "layer": 45,
+      "donor": [
+        584,
+        426,
+        33,
+        80
+      ],
+      "holes": [
+        {
+          "polygon": [
+            [
+              442,
+              312
+            ],
+            [
+              520,
+              312
+            ],
+            [
+              560,
+              339
+            ],
+            [
+              582,
+              533
+            ],
+            [
+              610,
+              555
+            ],
+            [
+              651,
+              608
+            ],
+            [
+              654,
+              717
+            ],
+            [
+              576,
+              721
+            ],
+            [
+              526,
+              658
+            ],
+            [
+              504,
+              586
+            ],
+            [
+              470,
+              565
+            ],
+            [
+              452,
+              469
+            ],
+            [
+              438,
+              386
+            ]
+          ],
+          "reason": "The source near arm occludes the torso; reconstruct garment underneath at native pixel scale."
+        }
+      ],
+      "tabs": [
+        {
+          "center": [
+            502,
+            712
+          ],
+          "radius": 25,
+          "reason": "Concealed solid joint overlap at native texture scale."
+        },
+        {
+          "center": [
+            482,
+            344
+          ],
+          "radius": 32,
+          "reason": "Parent receiver overlap; hidden source texture construction."
+        },
+        {
+          "center": [
+            494,
+            345
+          ],
+          "radius": 31,
+          "reason": "Parent receiver overlap; hidden source texture construction."
+        },
+        {
+          "center": [
+            558,
+            280
+          ],
+          "radius": 31,
+          "reason": "Parent receiver overlap; hidden source texture construction."
+        }
+      ],
+      "rect": [
+        413,
+        245,
+        234,
+        496
+      ],
+      "paint_override": {
+        "source": "source/torso_repaint.png",
+        "script": "apply-profile-torso-paint.cjs",
+        "policy": "Generated paint only; original raster resolution, alpha mask, rect and pivots retained exactly."
+      }
+    },
+    {
+      "id": "pelvis",
+      "label": "Profile pelvis",
+      "file": "parts/pelvis.png",
+      "polygon": [
+        [
+          440,
+          703
+        ],
+        [
+          601,
+          711
+        ],
+        [
+          608,
+          749
+        ],
+        [
+          606,
+          783
+        ],
+        [
+          587,
+          810
+        ],
+        [
+          562,
+          825
+        ],
+        [
+          532,
+          800
+        ],
+        [
+          493,
+          787
+        ],
+        [
+          454,
+          769
+        ],
+        [
+          433,
+          747
+        ]
+      ],
+      "pivot": [
+        502,
+        747
+      ],
+      "parent": null,
+      "layer": 30,
+      "donor": [
+        573,
+        755,
+        24,
+        24
+      ],
+      "holes": [
+        {
+          "center": [
+            502,
+            747
+          ],
+          "radius": 24,
+          "reason": "Remove hardware owned by the connected card; reconstruct concealed garment material."
+        }
+      ],
+      "tabs": [
+        {
+          "center": [
+            502,
+            747
+          ],
+          "radius": 25,
+          "reason": "Concealed solid joint overlap at native texture scale."
+        },
+        {
+          "center": [
+            502,
+            747
+          ],
+          "radius": 32,
+          "reason": "Parent receiver overlap; hidden source texture construction."
+        }
+      ],
+      "rect": [
+        429,
+        699,
+        183,
+        130
+      ]
+    },
+    {
+      "id": "upper_arm_far",
+      "label": "Far upper arm",
+      "file": "parts/upper_arm_far.png",
+      "polygon": [
+        [
+          446,
+          333
+        ],
+        [
+          476,
+          341
+        ],
+        [
+          481,
+          361
+        ],
+        [
+          453,
+          422
+        ],
+        [
+          427,
+          475
+        ],
+        [
+          407,
+          523
+        ],
+        [
+          387,
+          547
+        ],
+        [
+          347,
+          545
+        ],
+        [
+          327,
+          524
+        ],
+        [
+          330,
+          495
+        ],
+        [
+          363,
+          441
+        ],
+        [
+          405,
+          378
+        ]
+      ],
+      "pivot": [
+        482,
+        344
+      ],
+      "parent": "torso",
+      "layer": 8,
+      "donor": [
+        386,
+        468,
+        28,
+        28
+      ],
+      "holes": [
+        {
+          "center": [
+            366,
+            533
+          ],
+          "radius": 24,
+          "reason": "Remove hardware owned by the connected card; reconstruct concealed garment material."
+        },
+        {
+          "polygon": [
+            [
+              415,
+              320
+            ],
+            [
+              500,
+              320
+            ],
+            [
+              500,
+              442
+            ],
+            [
+              430,
+              442
+            ]
+          ],
+          "reason": "Far upper-arm root is hidden by torso in source; native-scale garment reconstruction."
+        }
+      ],
+      "tabs": [
+        {
+          "center": [
+            482,
+            344
+          ],
+          "radius": 25,
+          "reason": "Concealed solid joint overlap at native texture scale."
+        },
+        {
+          "center": [
+            366,
+            533
+          ],
+          "radius": 25,
+          "reason": "Parent receiver overlap; hidden source texture construction."
+        }
+      ],
+      "rect": [
+        323,
+        315,
+        188,
+        247
+      ]
+    },
+    {
+      "id": "forearm_far",
+      "label": "Far forearm",
+      "file": "parts/forearm_far.png",
+      "polygon": [
+        [
+          347,
+          514
+        ],
+        [
+          380,
+          514
+        ],
+        [
+          403,
+          541
+        ],
+        [
+          396,
+          581
+        ],
+        [
+          374,
+          650
+        ],
+        [
+          343,
+          718
+        ],
+        [
+          327,
+          736
+        ],
+        [
+          303,
+          749
+        ],
+        [
+          273,
+          730
+        ],
+        [
+          265,
+          706
+        ],
+        [
+          289,
+          639
+        ],
+        [
+          311,
+          572
+        ],
+        [
+          323,
+          540
+        ]
+      ],
+      "pivot": [
+        366,
+        533
+      ],
+      "parent": "upper_arm_far",
+      "layer": 9,
+      "donor": [
+        337,
+        619,
+        28,
+        28
+      ],
+      "holes": [
+        {
+          "center": [
+            304,
+            735
+          ],
+          "radius": 20,
+          "reason": "Remove hardware owned by the connected card; reconstruct concealed garment material."
+        }
+      ],
+      "tabs": [
+        {
+          "center": [
+            366,
+            533
+          ],
+          "radius": 25,
+          "reason": "Concealed solid joint overlap at native texture scale."
+        },
+        {
+          "center": [
+            304,
+            735
+          ],
+          "radius": 22,
+          "reason": "Parent receiver overlap; hidden source texture construction."
+        }
+      ],
+      "rect": [
+        261,
+        504,
+        146,
+        257
+      ]
+    },
+    {
+      "id": "hand_far",
+      "label": "Far hand",
+      "file": "parts/hand_far.png",
+      "polygon": [
+        [
+          290,
+          720
+        ],
+        [
+          321,
+          722
+        ],
+        [
+          338,
+          753
+        ],
+        [
+          331,
+          800
+        ],
+        [
+          328,
+          841
+        ],
+        [
+          314,
+          873
+        ],
+        [
+          296,
+          888
+        ],
+        [
+          273,
+          884
+        ],
+        [
+          256,
+          866
+        ],
+        [
+          235,
+          838
+        ],
+        [
+          230,
+          809
+        ],
+        [
+          237,
+          777
+        ],
+        [
+          257,
+          747
+        ]
+      ],
+      "pivot": [
+        304,
+        735
+      ],
+      "parent": "forearm_far",
+      "layer": 10,
+      "donor": [
+        292,
+        795,
+        20,
+        20
+      ],
+      "holes": [],
+      "tabs": [
+        {
+          "center": [
+            304,
+            735
+          ],
+          "radius": 18,
+          "reason": "Concealed solid joint overlap at native texture scale."
+        }
+      ],
+      "rect": [
+        226,
+        713,
+        116,
+        179
+      ]
+    },
+    {
+      "id": "upper_arm_near",
+      "label": "Near upper arm",
+      "file": "parts/upper_arm_near.png",
+      "polygon": [
+        [
+          473,
+          319
+        ],
+        [
+          510,
+          321
+        ],
+        [
+          538,
+          347
+        ],
+        [
+          554,
+          411
+        ],
+        [
+          566,
+          486
+        ],
+        [
+          579,
+          530
+        ],
+        [
+          569,
+          556
+        ],
+        [
+          545,
+          578
+        ],
+        [
+          509,
+          566
+        ],
+        [
+          487,
+          548
+        ],
+        [
+          469,
+          470
+        ],
+        [
+          452,
+          389
+        ],
+        [
+          453,
+          352
+        ]
+      ],
+      "pivot": [
+        494,
+        345
+      ],
+      "parent": "torso",
+      "layer": 55,
+      "donor": [
+        513,
+        433,
+        30,
+        30
+      ],
+      "holes": [
+        {
+          "center": [
+            546,
+            562
+          ],
+          "radius": 25,
+          "reason": "Remove hardware owned by the connected card; reconstruct concealed garment material."
+        }
+      ],
+      "tabs": [
+        {
+          "center": [
+            494,
+            345
+          ],
+          "radius": 25,
+          "reason": "Concealed solid joint overlap at native texture scale."
+        },
+        {
+          "center": [
+            546,
+            562
+          ],
+          "radius": 26,
+          "reason": "Parent receiver overlap; hidden source texture construction."
+        }
+      ],
+      "rect": [
+        448,
+        315,
+        135,
+        277
+      ]
+    },
+    {
+      "id": "forearm_near",
+      "label": "Near forearm",
+      "file": "parts/forearm_near.png",
+      "polygon": [
+        [
+          536,
+          538
+        ],
+        [
+          565,
+          538
+        ],
+        [
+          594,
+          559
+        ],
+        [
+          634,
+          610
+        ],
+        [
+          674,
+          657
+        ],
+        [
+          706,
+          691
+        ],
+        [
+          706,
+          715
+        ],
+        [
+          685,
+          740
+        ],
+        [
+          660,
+          748
+        ],
+        [
+          640,
+          735
+        ],
+        [
+          594,
+          685
+        ],
+        [
+          549,
+          638
+        ],
+        [
+          525,
+          594
+        ],
+        [
+          521,
+          568
+        ]
+      ],
+      "pivot": [
+        546,
+        562
+      ],
+      "parent": "upper_arm_near",
+      "layer": 56,
+      "donor": [
+        600,
+        636,
+        28,
+        28
+      ],
+      "holes": [
+        {
+          "center": [
+            687,
+            724
+          ],
+          "radius": 21,
+          "reason": "Remove hardware owned by the connected card; reconstruct concealed garment material."
+        }
+      ],
+      "tabs": [
+        {
+          "center": [
+            546,
+            562
+          ],
+          "radius": 25,
+          "reason": "Concealed solid joint overlap at native texture scale."
+        },
+        {
+          "center": [
+            687,
+            724
+          ],
+          "radius": 22,
+          "reason": "Parent receiver overlap; hidden source texture construction."
+        }
+      ],
+      "rect": [
+        517,
+        533,
+        196,
+        219
+      ]
+    },
+    {
+      "id": "hand_near",
+      "label": "Near hand",
+      "file": "parts/hand_near.png",
+      "polygon": [
+        [
+          678,
+          705
+        ],
+        [
+          706,
+          711
+        ],
+        [
+          743,
+          728
+        ],
+        [
+          769,
+          746
+        ],
+        [
+          791,
+          772
+        ],
+        [
+          796,
+          795
+        ],
+        [
+          785,
+          818
+        ],
+        [
+          759,
+          837
+        ],
+        [
+          738,
+          831
+        ],
+        [
+          716,
+          815
+        ],
+        [
+          690,
+          782
+        ],
+        [
+          665,
+          744
+        ]
+      ],
+      "pivot": [
+        687,
+        724
+      ],
+      "parent": "forearm_near",
+      "layer": 57,
+      "donor": [
+        729,
+        778,
+        20,
+        20
+      ],
+      "holes": [],
+      "tabs": [
+        {
+          "center": [
+            687,
+            724
+          ],
+          "radius": 18,
+          "reason": "Concealed solid joint overlap at native texture scale."
+        }
+      ],
+      "rect": [
+        661,
+        701,
+        139,
+        140
+      ]
+    },
+    {
+      "id": "thigh_far",
+      "label": "Far thigh",
+      "file": "parts/thigh_far.png",
+      "polygon": [
+        [
+          489,
+          725
+        ],
+        [
+          550,
+          733
+        ],
+        [
+          588,
+          761
+        ],
+        [
+          610,
+          809
+        ],
+        [
+          638,
+          869
+        ],
+        [
+          669,
+          939
+        ],
+        [
+          696,
+          1007
+        ],
+        [
+          686,
+          1042
+        ],
+        [
+          664,
+          1065
+        ],
+        [
+          623,
+          1068
+        ],
+        [
+          597,
+          1051
+        ],
+        [
+          574,
+          1008
+        ],
+        [
+          549,
+          951
+        ],
+        [
+          529,
+          897
+        ],
+        [
+          516,
+          849
+        ],
+        [
+          498,
+          794
+        ]
+      ],
+      "pivot": [
+        502,
+        747
+      ],
+      "parent": "pelvis",
+      "layer": 15,
+      "donor": [
+        619,
+        953,
+        30,
+        30
+      ],
+      "holes": [
+        {
+          "center": [
+            658,
+            1043
+          ],
+          "radius": 24,
+          "reason": "Remove hardware owned by the connected card; reconstruct concealed garment material."
+        },
+        {
+          "polygon": [
+            [
+              479,
+              720
+            ],
+            [
+              552,
+              721
+            ],
+            [
+              577,
+              773
+            ],
+            [
+              559,
+              861
+            ],
+            [
+              530,
+              902
+            ],
+            [
+              500,
+              825
+            ]
+          ],
+          "reason": "The far thigh root is occluded by the source near thigh; reconstructed concealed trouser overlap."
+        }
+      ],
+      "tabs": [
+        {
+          "center": [
+            502,
+            747
+          ],
+          "radius": 25,
+          "reason": "Concealed solid joint overlap at native texture scale."
+        },
+        {
+          "center": [
+            658,
+            1043
+          ],
+          "radius": 26,
+          "reason": "Parent receiver overlap; hidden source texture construction."
+        }
+      ],
+      "rect": [
+        473,
+        718,
+        227,
+        355
+      ]
+    },
+    {
+      "id": "shin_far",
+      "label": "Far shin",
+      "file": "parts/shin_far.png",
+      "polygon": [
+        [
+          639,
+          1020
+        ],
+        [
+          673,
+          1020
+        ],
+        [
+          697,
+          1051
+        ],
+        [
+          713,
+          1098
+        ],
+        [
+          728,
+          1174
+        ],
+        [
+          750,
+          1259
+        ],
+        [
+          767,
+          1317
+        ],
+        [
+          752,
+          1343
+        ],
+        [
+          687,
+          1363
+        ],
+        [
+          652,
+          1344
+        ],
+        [
+          637,
+          1284
+        ],
+        [
+          620,
+          1199
+        ],
+        [
+          607,
+          1131
+        ],
+        [
+          599,
+          1085
+        ],
+        [
+          613,
+          1057
+        ]
+      ],
+      "pivot": [
+        658,
+        1043
+      ],
+      "parent": "thigh_far",
+      "layer": 16,
+      "donor": [
+        663,
+        1170,
+        32,
+        32
+      ],
+      "holes": [],
+      "tabs": [
+        {
+          "center": [
+            658,
+            1043
+          ],
+          "radius": 25,
+          "reason": "Concealed solid joint overlap at native texture scale."
+        },
+        {
+          "center": [
+            707,
+            1362
+          ],
+          "radius": 33,
+          "reason": "Parent receiver overlap; hidden source texture construction."
+        }
+      ],
+      "rect": [
+        595,
+        1014,
+        176,
+        385
+      ]
+    },
+    {
+      "id": "boot_far",
+      "label": "Far boot",
+      "file": "parts/boot_far.png",
+      "polygon": [
+        [
+          683,
+          1322
+        ],
+        [
+          733,
+          1318
+        ],
+        [
+          754,
+          1318
+        ],
+        [
+          773,
+          1336
+        ],
+        [
+          784,
+          1350
+        ],
+        [
+          800,
+          1365
+        ],
+        [
+          821,
+          1379
+        ],
+        [
+          846,
+          1389
+        ],
+        [
+          871,
+          1392
+        ],
+        [
+          890,
+          1399
+        ],
+        [
+          903,
+          1417
+        ],
+        [
+          912,
+          1434
+        ],
+        [
+          921,
+          1444
+        ],
+        [
+          923,
+          1465
+        ],
+        [
+          907,
+          1477
+        ],
+        [
+          857,
+          1482
+        ],
+        [
+          790,
+          1480
+        ],
+        [
+          743,
+          1478
+        ],
+        [
+          712,
+          1482
+        ],
+        [
+          655,
+          1478
+        ],
+        [
+          650,
+          1451
+        ],
+        [
+          653,
+          1410
+        ],
+        [
+          661,
+          1373
+        ],
+        [
+          671,
+          1347
+        ]
+      ],
+      "pivot": [
+        707,
+        1362
+      ],
+      "parent": "shin_far",
+      "layer": 14,
+      "donor": [
+        735,
+        1402,
+        22,
+        22
+      ],
+      "holes": [],
+      "tabs": [
+        {
+          "center": [
+            707,
+            1362
+          ],
+          "radius": 30,
+          "reason": "Concealed solid joint overlap at native texture scale."
+        }
+      ],
+      "rect": [
+        646,
+        1314,
+        281,
+        172
+      ]
+    },
+    {
+      "id": "thigh_near",
+      "label": "Near thigh",
+      "file": "parts/thigh_near.png",
+      "polygon": [
+        [
+          483,
+          725
+        ],
+        [
+          519,
+          724
+        ],
+        [
+          544,
+          740
+        ],
+        [
+          557,
+          771
+        ],
+        [
+          552,
+          818
+        ],
+        [
+          533,
+          904
+        ],
+        [
+          505,
+          985
+        ],
+        [
+          475,
+          1039
+        ],
+        [
+          448,
+          1075
+        ],
+        [
+          412,
+          1081
+        ],
+        [
+          381,
+          1063
+        ],
+        [
+          369,
+          1039
+        ],
+        [
+          383,
+          976
+        ],
+        [
+          403,
+          895
+        ],
+        [
+          423,
+          814
+        ],
+        [
+          441,
+          758
+        ]
+      ],
+      "pivot": [
+        502,
+        747
+      ],
+      "parent": "pelvis",
+      "layer": 35,
+      "donor": [
+        478,
+        930,
+        30,
+        30
+      ],
+      "holes": [
+        {
+          "center": [
+            420,
+            1064
+          ],
+          "radius": 24,
+          "reason": "Remove hardware owned by the connected card; reconstruct concealed garment material."
+        }
+      ],
+      "tabs": [
+        {
+          "center": [
+            502,
+            747
+          ],
+          "radius": 25,
+          "reason": "Concealed solid joint overlap at native texture scale."
+        },
+        {
+          "center": [
+            420,
+            1064
+          ],
+          "radius": 26,
+          "reason": "Parent receiver overlap; hidden source texture construction."
+        }
+      ],
+      "rect": [
+        365,
+        718,
+        196,
+        376
+      ]
+    },
+    {
+      "id": "shin_near",
+      "label": "Near shin",
+      "file": "parts/shin_near.png",
+      "polygon": [
+        [
+          399,
+          1043
+        ],
+        [
+          433,
+          1040
+        ],
+        [
+          456,
+          1067
+        ],
+        [
+          460,
+          1095
+        ],
+        [
+          435,
+          1144
+        ],
+        [
+          402,
+          1213
+        ],
+        [
+          368,
+          1295
+        ],
+        [
+          345,
+          1338
+        ],
+        [
+          319,
+          1345
+        ],
+        [
+          277,
+          1337
+        ],
+        [
+          233,
+          1305
+        ],
+        [
+          225,
+          1284
+        ],
+        [
+          248,
+          1231
+        ],
+        [
+          281,
+          1171
+        ],
+        [
+          321,
+          1106
+        ],
+        [
+          363,
+          1057
+        ]
+      ],
+      "pivot": [
+        420,
+        1064
+      ],
+      "parent": "thigh_near",
+      "layer": 36,
+      "donor": [
+        342,
+        1197,
+        32,
+        32
+      ],
+      "holes": [],
+      "tabs": [
+        {
+          "center": [
+            420,
+            1064
+          ],
+          "radius": 25,
+          "reason": "Concealed solid joint overlap at native texture scale."
+        },
+        {
+          "center": [
+            264,
+            1345
+          ],
+          "radius": 33,
+          "reason": "Parent receiver overlap; hidden source texture construction."
+        }
+      ],
+      "rect": [
+        221,
+        1035,
+        243,
+        347
+      ]
+    },
+    {
+      "id": "boot_near",
+      "label": "Near boot",
+      "file": "parts/boot_near.png",
+      "polygon": [
+        [
+          249,
+          1307
+        ],
+        [
+          312,
+          1328
+        ],
+        [
+          349,
+          1337
+        ],
+        [
+          363,
+          1374
+        ],
+        [
+          390,
+          1396
+        ],
+        [
+          427,
+          1415
+        ],
+        [
+          444,
+          1447
+        ],
+        [
+          442,
+          1483
+        ],
+        [
+          415,
+          1498
+        ],
+        [
+          365,
+          1504
+        ],
+        [
+          319,
+          1498
+        ],
+        [
+          270,
+          1484
+        ],
+        [
+          235,
+          1465
+        ],
+        [
+          207,
+          1452
+        ],
+        [
+          176,
+          1428
+        ],
+        [
+          184,
+          1394
+        ],
+        [
+          207,
+          1357
+        ],
+        [
+          230,
+          1324
+        ]
+      ],
+      "pivot": [
+        264,
+        1345
+      ],
+      "parent": "shin_near",
+      "layer": 34,
+      "donor": [
+        291,
+        1406,
+        22,
+        22
+      ],
+      "holes": [],
+      "tabs": [
+        {
+          "center": [
+            264,
+            1345
+          ],
+          "radius": 30,
+          "reason": "Concealed solid joint overlap at native texture scale."
+        }
+      ],
+      "rect": [
+        172,
+        1303,
+        276,
+        205
+      ]
+    }
+  ],
+  "construction_policy": "Native source artwork clipped to registered component polygons. Local repeated garment/leather samples reconstruct hidden overlap tabs, nonowned hardware and occluded near-arm/upper-far-thigh areas. These constructed areas are explicitly recorded; they are not unseen source artwork.",
+  "limitations": [
+    "Profile illustration has slight three-quarter details in face/jacket; silhouette and limbs face screen-right.",
+    "Source boot brad is a mechanical attachment and not a measured anatomical ankle.",
+    "Source art is one contact pose; broad movement may reveal reconstructed hidden material.",
+    "Canonical shoe dimensions now come from the observed far profile shoe; native near/far profiles still differ by about12.5px in attachment-to-sole height and about4px in length. The renderer preserves shoe aspect and reports residual attachment error."
+  ]
+}

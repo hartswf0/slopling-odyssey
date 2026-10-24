@@ -1,0 +1,846 @@
+{
+  "actor_id": "char_player",
+  "name": "Watson",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "watson_head_E00",
+      "part": "head",
+      "canvas_width_px": 214,
+      "canvas_height_px": 227,
+      "drawn_width_px": 213.85474860335202,
+      "drawn_height_px": 226.84756584197933,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E00.png",
+      "source_scale": 0.17557861133280134,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          107.98084596967283,
+          215.33136472466092
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "watson_torso_front_standalone",
+      "part": "torso_front",
+      "canvas_width_px": 476,
+      "canvas_height_px": 435,
+      "drawn_width_px": 475.8883939038689,
+      "drawn_height_px": 434.9010550996486,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/torso_front.png",
+      "source_scale": 0.36271981242672935,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          237.5814771395077,
+          67.10316529894493
+        ],
+        "waist": [
+          237.5814771395077,
+          376.5031652989451
+        ],
+        "shoulder_left": [
+          83.06283704572103,
+          135.29449003517004
+        ],
+        "shoulder_right": [
+          392.46283704572113,
+          135.29449003517004
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "watson_pelvis_front",
+      "part": "pelvis_front",
+      "canvas_width_px": 336,
+      "canvas_height_px": 264,
+      "drawn_width_px": 335.8055854253413,
+      "drawn_height_px": 263.7302402608778,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_pelvis_front.png",
+      "source_scale": 1.6380760264650795,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          168.7218307259032,
+          43.048637975502295
+        ],
+        "hip_left": [
+          74.66350528627832,
+          78.0486379755023
+        ],
+        "hip_right": [
+          262.78015616552807,
+          78.0486379755023
+        ],
+        "hem_pin_left": [
+          47.50420476748731,
+          212.94988344046035
+        ],
+        "hem_pin_right": [
+          288.301380657854,
+          211.31180741399527
+        ],
+        "upper_pin_left": [
+          50.78035682041747,
+          57.33266092627778
+        ],
+        "upper_pin_right": [
+          288.301380657854,
+          57.33266092627778
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "watson_upper_arm_left",
+      "part": "upper_arm_left",
+      "canvas_width_px": 172,
+      "canvas_height_px": 228,
+      "drawn_width_px": 171.1320356432477,
+      "drawn_height_px": 227.7471451793597,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_upper_arm_left.png",
+      "source_scale": 1.2867070349116367,
+      "assembly_rotation_deg": -9.845551091239937,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          111.90491082626505,
+          44.77740481492496
+        ],
+        "distal": [
+          51.68702159240045,
+          193.97108551292925
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "watson_upper_arm_right",
+      "part": "upper_arm_right",
+      "canvas_width_px": 183,
+      "canvas_height_px": 237,
+      "drawn_width_px": 182.15541325952677,
+      "drawn_height_px": 236.66907708172096,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_upper_arm_right.png",
+      "source_scale": 1.3296015566388815,
+      "assembly_rotation_deg": 14.767196823951155,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          59.03430911476634,
+          46.549350497927236
+        ],
+        "distal": [
+          131.82999434074512,
+          190.02665447482892
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "watson_forearm_left",
+      "part": "forearm_left",
+      "canvas_width_px": 135,
+      "canvas_height_px": 243,
+      "drawn_width_px": 134.8639342855842,
+      "drawn_height_px": 242.20461667615126,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_forearm_left.png",
+      "source_scale": 1.3761625947508593,
+      "assembly_rotation_deg": -7.530374282608344,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          63.27595610664451,
+          43.36288336059958
+        ],
+        "distal": [
+          71.54669330109718,
+          191.64440294500466
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "watson_forearm_right",
+      "part": "forearm_right",
+      "canvas_width_px": 142,
+      "canvas_height_px": 243,
+      "drawn_width_px": 141.927191674506,
+      "drawn_height_px": 242.51636635643737,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_forearm_right.png",
+      "source_scale": 1.3779338997524853,
+      "assembly_rotation_deg": 1.6153734267513828,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          78.9556124558174,
+          47.73163028742609
+        ],
+        "distal": [
+          55.44806012604001,
+          194.3713558990856
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_relaxed.png",
+      "asset_id": "watson_hand_left_relaxed",
+      "part": "hand_left_relaxed",
+      "canvas_width_px": 90,
+      "canvas_height_px": 129,
+      "drawn_width_px": 89.45962913907287,
+      "drawn_height_px": 128.88251655629145,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_hand_left_relaxed.png",
+      "source_scale": 0.7581324503311261,
+      "assembly_rotation_deg": -10.722868014990297,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          37.36076715231789,
+          21.803889271523186
+        ],
+        "grip": [
+          44.72981456953644,
+          61.77263205298016
+        ],
+        "fingertip": [
+          44.72981456953644,
+          116.72207205298018
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_relaxed.png",
+      "asset_id": "watson_hand_right_relaxed",
+      "part": "hand_right_relaxed",
+      "canvas_width_px": 91,
+      "canvas_height_px": 129,
+      "drawn_width_px": 90.97589403973514,
+      "drawn_height_px": 128.88251655629145,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_hand_right_relaxed.png",
+      "source_scale": 0.7581324503311262,
+      "assembly_rotation_deg": 10.722868014990311,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          51.71979576158943,
+          20.264880397351003
+        ],
+        "grip": [
+          45.48794701986757,
+          61.772632052980164
+        ],
+        "fingertip": [
+          45.48794701986757,
+          116.7220720529802
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "watson_thigh_left",
+      "part": "thigh_left",
+      "canvas_width_px": 237,
+      "canvas_height_px": 357,
+      "drawn_width_px": 236.4459463048502,
+      "drawn_height_px": 356.98701697006794,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_thigh_left.png",
+      "source_scale": 1.545398341861766,
+      "assembly_rotation_deg": -6.100058911974835,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          97.36009553729126,
+          52.543543623300046
+        ],
+        "distal": [
+          75.72451875122654,
+          254.9907264071914
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "watson_thigh_right",
+      "part": "thigh_right",
+      "canvas_width_px": 241,
+      "canvas_height_px": 363,
+      "drawn_width_px": 240.0694229342793,
+      "drawn_height_px": 362.45775619489234,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_thigh_right.png",
+      "source_scale": 1.5690811956488842,
+      "assembly_rotation_deg": 6.193903918804168,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          142.78638880404847,
+          53.34876065206206
+        ],
+        "distal": [
+          164.75352554313284,
+          255.76023489076812
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "watson_shin_left",
+      "part": "shin_left",
+      "canvas_width_px": 135,
+      "canvas_height_px": 259,
+      "drawn_width_px": 134.0544676215458,
+      "drawn_height_px": 258.44735199108834,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_shin_left.png",
+      "source_scale": 1.2076979065004125,
+      "assembly_rotation_deg": -8.841815853788109,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          72.46187439002475,
+          45.89252044701568
+        ],
+        "distal": [
+          47.10021835351609,
+          208.93173782457137
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "watson_shin_right",
+      "part": "shin_right",
+      "canvas_width_px": 135,
+      "canvas_height_px": 259,
+      "drawn_width_px": 134.2019363926752,
+      "drawn_height_px": 258.73166115344594,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_shin_right.png",
+      "source_scale": 1.2090264539880649,
+      "assembly_rotation_deg": 8.42697031507712,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          62.869375607379375,
+          45.94300525154647
+        ],
+        "distal": [
+          87.04990468714067,
+          209.16157653993523
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "watson_boot_left",
+      "part": "shoe_left",
+      "canvas_width_px": 224,
+      "canvas_height_px": 199,
+      "drawn_width_px": 223.25333333333344,
+      "drawn_height_px": 198.72000000000008,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_boot_left.png",
+      "source_scale": 1.2266666666666672,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          44.16000000000002,
+          115.30666666666671
+        ],
+        "sole": [
+          44.16000000000002,
+          188.90666666666675
+        ],
+        "cuff_pin": [
+          46.61333333333336,
+          47.840000000000025
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "watson_boot_right",
+      "part": "shoe_right",
+      "canvas_width_px": 227,
+      "canvas_height_px": 199,
+      "drawn_width_px": 226.93333333333342,
+      "drawn_height_px": 198.72000000000008,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_boot_right.png",
+      "source_scale": 1.2266666666666672,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "ankle": [
+          42.93333333333335,
+          115.30666666666671
+        ],
+        "sole": [
+          42.93333333333335,
+          188.90666666666675
+        ],
+        "cuff_pin": [
+          104.26666666666671,
+          47.840000000000025
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "watson_head_E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 166,
+      "canvas_height_px": 249,
+      "drawn_width_px": 165.52534900808234,
+      "drawn_height_px": 248.2880235121235,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E01.png",
+      "source_scale": 0.16164584864070541,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          81.79279941219694,
+          223.2603967670831
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "watson_head_E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 215,
+      "canvas_height_px": 224,
+      "drawn_width_px": 214.76190476190482,
+      "drawn_height_px": 223.14285714285717,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E02.png",
+      "source_scale": 0.17460317460317465,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          112.44444444444447,
+          213.74920634920642
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "watson_head_E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 216,
+      "canvas_height_px": 231,
+      "drawn_width_px": 215.73505654281104,
+      "drawn_height_px": 230.129240710824,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E03.png",
+      "source_scale": 0.17770597738287564,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          111.06623586429727,
+          217.8426494345719
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "watson_head_E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 190,
+      "canvas_height_px": 228,
+      "drawn_width_px": 189.25619834710744,
+      "drawn_height_px": 227.107438016529,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E04.png",
+      "source_scale": 0.1652892561983471,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          98.67768595041322,
+          216.87107438016528
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "watson_head_E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 201,
+      "canvas_height_px": 241,
+      "drawn_width_px": 200.55732484076435,
+      "drawn_height_px": 240.66878980891724,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E05.png",
+      "source_scale": 0.17515923566878983,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          101.4171974522293,
+          220.93184713375797
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "watson_head_E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 219,
+      "canvas_height_px": 232,
+      "drawn_width_px": 218.56443719412727,
+      "drawn_height_px": 231.84339314845028,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E06.png",
+      "source_scale": 0.17944535073409462,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          108.92332789559543,
+          219.32169657422514
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "watson_head_E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 236,
+      "canvas_height_px": 239,
+      "drawn_width_px": 235.29613733905586,
+      "drawn_height_px": 238.3175965665237,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E07.png",
+      "source_scale": 0.18884120171673824,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          116.5150214592275,
+          221.5201716738198
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "watson_head_E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 225,
+      "canvas_height_px": 234,
+      "drawn_width_px": 224.93765586034922,
+      "drawn_height_px": 233.71571072319205,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E08.png",
+      "source_scale": 0.1828761429758937,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          111.37157107231926,
+          218.88628428927694
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "watson_head_E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 190,
+      "canvas_height_px": 246,
+      "drawn_width_px": 189.35837245696405,
+      "drawn_height_px": 245.9937402190924,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E09.png",
+      "source_scale": 0.1721439749608764,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          97.0892018779343,
+          226.48294209702667
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "watson_head_E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 195,
+      "canvas_height_px": 234,
+      "drawn_width_px": 194.51737451737455,
+      "drawn_height_px": 233.4208494208495,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E10.png",
+      "source_scale": 0.1698841698841699,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          102.10038610038612,
+          219.345945945946
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "watson_head_E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 202,
+      "canvas_height_px": 229,
+      "drawn_width_px": 201.6666666666667,
+      "drawn_height_px": 228.90965732087233,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E11.png",
+      "source_scale": 0.1713395638629284,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          100.57632398753897,
+          217.8548286604362
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "watson_head_E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 216,
+      "canvas_height_px": 227,
+      "drawn_width_px": 215.41666666666669,
+      "drawn_height_px": 226.87500000000003,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E12.png",
+      "source_scale": 0.1762820512820513,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          108.23717948717949,
+          216.04423076923078
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "watson_head_E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 194,
+      "canvas_height_px": 233,
+      "drawn_width_px": 193.47158218125966,
+      "drawn_height_px": 232.16589861751157,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E13.png",
+      "source_scale": 0.16897081413210452,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          98.17204301075273,
+          218.80706605222744
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "watson_head_E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 222,
+      "canvas_height_px": 234,
+      "drawn_width_px": 221.44975288303135,
+      "drawn_height_px": 233.22899505766068,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E14.png",
+      "source_scale": 0.18121911037891272,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          112.35584843492589,
+          218.11169686985176
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "watson_head_E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 231,
+      "canvas_height_px": 240,
+      "drawn_width_px": 230.29787234042558,
+      "drawn_height_px": 239.28510638297877,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E15.png",
+      "source_scale": 0.18723404255319154,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          113.83829787234046,
+          221.82553191489367
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "watson_head_E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 220,
+      "canvas_height_px": 231,
+      "drawn_width_px": 219.64081632653065,
+      "drawn_height_px": 230.95510204081637,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E16.png",
+      "source_scale": 0.17959183673469392,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          108.65306122448982,
+          217.17142857142863
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "watson_head_E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 231,
+      "canvas_height_px": 234,
+      "drawn_width_px": 230.55555555555557,
+      "drawn_height_px": 233.8888888888889,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/heads/E17.png",
+      "source_scale": 0.1851851851851852,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          119.62962962962965,
+          219.6962962962963
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_open.png",
+      "asset_id": "watson_hand_left_open",
+      "part": "hand_left_open",
+      "example_pose": "explaining",
+      "canvas_width_px": 106,
+      "canvas_height_px": 128,
+      "drawn_width_px": 105.78346835443044,
+      "drawn_height_px": 127.5197974683545,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_hand_left_open.png",
+      "source_scale": 0.7245443037974688,
+      "assembly_rotation_deg": 152.6731754352181,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          45.99407240506332,
+          102.77660949367095
+        ],
+        "grip": [
+          52.52946202531649,
+          62.194883037974726
+        ],
+        "fingertip": [
+          52.52946202531649,
+          12.96934303797469
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_open.png",
+      "asset_id": "watson_hand_right_open",
+      "part": "hand_right_open",
+      "example_pose": "explaining",
+      "canvas_width_px": 108,
+      "canvas_height_px": 128,
+      "drawn_width_px": 107.23255696202537,
+      "drawn_height_px": 127.5197974683545,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_hand_right_open.png",
+      "source_scale": 0.7245443037974687,
+      "assembly_rotation_deg": 155.08019587298045,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          58.21713481012661,
+          102.60271886075955
+        ],
+        "grip": [
+          53.616278481012685,
+          62.19488303797472
+        ],
+        "fingertip": [
+          53.616278481012685,
+          12.969343037974689
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "watson_hand_left_grip",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 96,
+      "canvas_height_px": 130,
+      "drawn_width_px": 95.3983333333334,
+      "drawn_height_px": 129.74173333333343,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_hand_left_grip.png",
+      "source_scale": 0.7631866666666671,
+      "assembly_rotation_deg": -78.57082432444841,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          48.81341920000003,
+          22.887968133333345
+        ],
+        "grip": [
+          47.6991666666667,
+          62.581306666666705
+        ],
+        "fingertip": [
+          47.6991666666667,
+          117.53074666666674
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "watson_hand_right_grip",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 96,
+      "canvas_height_px": 130,
+      "drawn_width_px": 95.3983333333334,
+      "drawn_height_px": 129.74173333333343,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/watson/body/watson_hand_right_grip.png",
+      "source_scale": 0.7631866666666671,
+      "assembly_rotation_deg": 78.63975087431439,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          43.57032680000003,
+          20.995265200000013
+        ],
+        "grip": [
+          47.6991666666667,
+          62.581306666666705
+        ],
+        "fingertip": [
+          47.6991666666667,
+          117.53074666666674
+        ]
+      }
+    }
+  ]
+}

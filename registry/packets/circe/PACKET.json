@@ -1,0 +1,164 @@
+{
+  "id": "circe",
+  "name": "Circe",
+  "kind": "set_or_support",
+  "asset_ids": [
+    "asset__5e107a03fe872876",
+    "asset__bdd639ef71687d11",
+    "asset__fa3f1f2873879a4a"
+  ],
+  "status": "inventory_only",
+  "counts": {
+    "records": 3,
+    "native_records": 2,
+    "unique_native_files": 2,
+    "original": 3,
+    "historical_scale": 0,
+    "views": {
+      "unspecified": 2,
+      "front": 1
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {
+      "torso": 1
+    },
+    "side": {},
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {
+      "head": 1
+    }
+  },
+  "assets": [
+    {
+      "id": "asset__5e107a03fe872876",
+      "file": "Odyssey_Watson_Kits/extras/circe/fullkit_reference.png",
+      "owner": "circe",
+      "category": "reference",
+      "is_cutout": false,
+      "title": "Fullkit Reference",
+      "note": "Reference / source image; see original metadata.",
+      "preferred": true,
+      "owner_name": "Circe",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "circe"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "69d37489ade3f77422e592d152334b0b56954ff26ab52c28c2f8b660464bb008",
+      "byte_size": 2769318,
+      "has_alpha": false,
+      "alpha_extrema": null,
+      "alpha_bounds": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/circe/fullkit_reference.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "reference",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2451,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__bdd639ef71687d11",
+      "file": "Odyssey_Watson_Kits/extras/circe/head_blank.png",
+      "owner": "circe",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Head Blank",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Circe",
+      "width": 1254,
+      "height": 1254,
+      "packet_ids": [
+        "circe"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "be17a89c574ed601f9303ddea53ac8d266d4e54008ec6dd054507e728ab3dec5",
+      "byte_size": 2474422,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        12,
+        1240,
+        1254
+      ],
+      "native_file": "assets/be17a89c574ed601f9303ddea53ac8d266d4e54008ec6dd054507e728ab3dec5.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/circe/head_blank.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "head",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2452,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__fa3f1f2873879a4a",
+      "file": "Odyssey_Watson_Kits/extras/circe/torso_front.png",
+      "owner": "circe",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Torso Front",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Circe",
+      "width": 1254,
+      "height": 1254,
+      "packet_ids": [
+        "circe"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "18312a493ace25bf7381603be4bccf267214c1bf7ffaeca05153e3ae337347cc",
+      "byte_size": 1968608,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        9,
+        1222,
+        1254
+      ],
+      "native_file": "assets/18312a493ace25bf7381603be4bccf267214c1bf7ffaeca05153e3ae337347cc.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/circe/torso_front.png",
+      "view_label": "front",
+      "view_label_basis": "filename_label",
+      "semantic_slot": "torso",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2453,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

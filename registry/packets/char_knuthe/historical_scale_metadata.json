@@ -1,0 +1,790 @@
+{
+  "actor_id": "char_knuthe",
+  "name": "Don Knuthe",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "char_knuthe__E00",
+      "part": "head",
+      "canvas_width_px": 196,
+      "canvas_height_px": 236,
+      "drawn_width_px": 195.96638655462186,
+      "drawn_height_px": 235.7142857142857,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E00.png",
+      "source_scale": 0.9243697478991597,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          95.21008403361346,
+          221.71932773109245
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "file__bf27dae02d64352b",
+      "part": "torso_front",
+      "canvas_width_px": 366,
+      "canvas_height_px": 400,
+      "drawn_width_px": 365.39677344832893,
+      "drawn_height_px": 399.833667026028,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/torso_front_override.png",
+      "source_scale": 0.30475127059910667,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          182.69838672416444,
+          47.12673648544585
+        ],
+        "waist": [
+          182.69838672416444,
+          363.72673648544577
+        ],
+        "shoulder_left": [
+          82.75520753118742,
+          98.66627136916678
+        ],
+        "shoulder_right": [
+          282.6415659171415,
+          98.66627136916678
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "char_knuthe__B05",
+      "part": "pelvis_front",
+      "canvas_width_px": 300,
+      "canvas_height_px": 239,
+      "drawn_width_px": 299.3810590199008,
+      "drawn_height_px": 238.99088831631568,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/parts/B05.png",
+      "source_scale": 1.28489724901245,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          149.6905295099504,
+          37.46760378120304
+        ],
+        "hip_left": [
+          71.24755245774034,
+          72.46760378120305
+        ],
+        "hip_right": [
+          228.1335065621605,
+          72.46760378120305
+        ],
+        "hem_pin_left": [
+          40.21728389408968,
+          197.2060297784308
+        ],
+        "hem_pin_right": [
+          259.1637751258112,
+          197.2060297784308
+        ],
+        "upper_pin_left": [
+          48.427777315279236,
+          54.73662280793037
+        ],
+        "upper_pin_right": [
+          215.22028920958536,
+          62.47170424698531
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "char_knuthe__B11",
+      "part": "upper_arm_left",
+      "canvas_width_px": 180,
+      "canvas_height_px": 238,
+      "drawn_width_px": 179.2153919885568,
+      "drawn_height_px": 237.59616362119272,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/parts/B11.png",
+      "source_scale": 1.3576923635496727,
+      "assembly_rotation_deg": 38.32368319298787,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          51.945309829410476,
+          49.420002033208085
+        ],
+        "distal": [
+          120.97038959227584,
+          189.76466165333778
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "char_knuthe__B12",
+      "part": "upper_arm_right",
+      "canvas_width_px": 183,
+      "canvas_height_px": 231,
+      "drawn_width_px": 182.1532876715647,
+      "drawn_height_px": 230.99148798930307,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/parts/B12.png",
+      "source_scale": 1.3199513599388746,
+      "assembly_rotation_deg": -41.03791939707942,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          124.62980740542854,
+          46.59428300584227
+        ],
+        "distal": [
+          49.03619302172919,
+          183.51283757230175
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "char_knuthe__B13",
+      "part": "forearm_left",
+      "canvas_width_px": 150,
+      "canvas_height_px": 200,
+      "drawn_width_px": 149.65819088141524,
+      "drawn_height_px": 199.54425450855365,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/parts/B13.png",
+      "source_scale": 0.9977212725427682,
+      "assembly_rotation_deg": -39.018260162735885,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          104.38159953342442,
+          32.28626037948398
+        ],
+        "distal": [
+          35.94789744971594,
+          159.40592771415808
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "char_knuthe__B14",
+      "part": "forearm_right",
+      "canvas_width_px": 145,
+      "canvas_height_px": 201,
+      "drawn_width_px": 144.58146995818993,
+      "drawn_height_px": 200.4198307696288,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/parts/B14.png",
+      "source_scale": 0.9971135859185513,
+      "assembly_rotation_deg": 37.597623092026986,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          39.70506299127671,
+          32.42613381407129
+        ],
+        "distal": [
+          104.96614718964588,
+          161.20335343545216
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_open.png",
+      "asset_id": "char_knuthe__B22",
+      "part": "hand_left_open",
+      "canvas_width_px": 108,
+      "canvas_height_px": 122,
+      "drawn_width_px": 107.0281005464481,
+      "drawn_height_px": 121.01472732240437,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/parts/B22.png",
+      "source_scale": 0.6081142076502734,
+      "assembly_rotation_deg": 169.27713198500982,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          51.85389848633881,
+          101.232772147541
+        ],
+        "grip": [
+          53.51405027322406,
+          58.2816656612022
+        ],
+        "fingertip": [
+          53.51405027322406,
+          10.429158661202187
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_open.png",
+      "asset_id": "char_knuthe__B21",
+      "part": "hand_right_open",
+      "canvas_width_px": 106,
+      "canvas_height_px": 122,
+      "drawn_width_px": 105.333835828877,
+      "drawn_height_px": 121.40170909090908,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/parts/B21.png",
+      "source_scale": 0.5951064171122994,
+      "assembly_rotation_deg": 190.72286801499015,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          51.47075401604277,
+          101.74534413368983
+        ],
+        "grip": [
+          52.66691791443849,
+          58.77270975401069
+        ],
+        "fingertip": [
+          52.66691791443849,
+          10.920202754010695
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "char_knuthe__B15",
+      "part": "thigh_left",
+      "canvas_width_px": 211,
+      "canvas_height_px": 283,
+      "drawn_width_px": 210.5270018328336,
+      "drawn_height_px": 282.98109986621137,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/parts/B15.png",
+      "source_scale": 1.3670584534599586,
+      "assembly_rotation_deg": -5.733763882793314,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          70.64958087481065,
+          43.66384700351108
+        ],
+        "distal": [
+          52.166950584032016,
+          227.7382677618945
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "char_knuthe__B16",
+      "part": "thigh_right",
+      "canvas_width_px": 211,
+      "canvas_height_px": 282,
+      "drawn_width_px": 210.54010780073904,
+      "drawn_height_px": 281.17291815969674,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/parts/B16.png",
+      "source_scale": 1.3583232761338002,
+      "assembly_rotation_deg": 5.883054269240549,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          134.05292412164474,
+          43.83309212083774
+        ],
+        "distal": [
+          153.0151170564726,
+          227.858729571445
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "char_knuthe__B17",
+      "part": "shin_left",
+      "canvas_width_px": 141,
+      "canvas_height_px": 256,
+      "drawn_width_px": 140.47768117585227,
+      "drawn_height_px": 255.07789476667915,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/parts/B17.png",
+      "source_scale": 1.2322603611916865,
+      "assembly_rotation_deg": -6.4300846710835735,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          74.99536558212604,
+          41.95846529857692
+        ],
+        "distal": [
+          55.95694300171448,
+          210.8890382143452
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "char_knuthe__B18",
+      "part": "shin_right",
+      "canvas_width_px": 141,
+      "canvas_height_px": 253,
+      "drawn_width_px": 140.70385204070516,
+      "drawn_height_px": 252.0434219163936,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/parts/B18.png",
+      "source_scale": 1.223511756875697,
+      "assembly_rotation_deg": 7.293803641742748,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          58.87538574085854,
+          41.8563372027176
+        ],
+        "distal": [
+          80.45813313214585,
+          210.48072753532617
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "char_knuthe__B19",
+      "part": "shoe_left",
+      "canvas_width_px": 265,
+      "canvas_height_px": 222,
+      "drawn_width_px": 264.51612903225794,
+      "drawn_height_px": 221.93548387096766,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/parts/B19.png",
+      "source_scale": 1.2903225806451606,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          55.48387096774191,
+          131.61290322580638
+        ],
+        "sole": [
+          55.48387096774191,
+          211.61290322580635
+        ],
+        "cuff_pin": [
+          73.4838709677419,
+          47.070967741935455
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "char_knuthe__B20",
+      "part": "shoe_right",
+      "canvas_width_px": 262,
+      "canvas_height_px": 222,
+      "drawn_width_px": 261.93548387096763,
+      "drawn_height_px": 221.93548387096766,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/parts/B20.png",
+      "source_scale": 1.2903225806451608,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          207.7419354838709,
+          131.6129032258064
+        ],
+        "sole": [
+          207.7419354838709,
+          211.61290322580638
+        ],
+        "cuff_pin": [
+          189.23870967741928,
+          46.61935483870966
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "char_knuthe__E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 201,
+      "canvas_height_px": 237,
+      "drawn_width_px": 200.50632911392407,
+      "drawn_height_px": 236.70886075949366,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E01.png",
+      "source_scale": 0.9282700421940929,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          95.61181434599158,
+          222.68270042194095
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "char_knuthe__E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 194,
+      "canvas_height_px": 238,
+      "drawn_width_px": 193.89830508474574,
+      "drawn_height_px": 237.71186440677965,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E02.png",
+      "source_scale": 0.9322033898305084,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          114.66101694915254,
+          221.78983050847455
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "char_knuthe__E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 195,
+      "canvas_height_px": 239,
+      "drawn_width_px": 194.83050847457628,
+      "drawn_height_px": 238.64406779661016,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E03.png",
+      "source_scale": 0.9322033898305085,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          114.66101694915255,
+          222.72203389830509
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "char_knuthe__E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 199,
+      "canvas_height_px": 238,
+      "drawn_width_px": 198.46808510638297,
+      "drawn_height_px": 237.78723404255317,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E04.png",
+      "source_scale": 0.9361702127659575,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          110.46808510638299,
+          222.76170212765956
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "char_knuthe__E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 194,
+      "canvas_height_px": 239,
+      "drawn_width_px": 193.89830508474574,
+      "drawn_height_px": 238.64406779661016,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E05.png",
+      "source_scale": 0.9322033898305084,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.33898305084745,
+          222.72203389830506
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "char_knuthe__E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 195,
+      "canvas_height_px": 238,
+      "drawn_width_px": 194.33333333333331,
+      "drawn_height_px": 237.41666666666669,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E06.png",
+      "source_scale": 0.9166666666666666,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          107.25,
+          221.65
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "char_knuthe__E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 195,
+      "canvas_height_px": 238,
+      "drawn_width_px": 194.43983402489627,
+      "drawn_height_px": 237.34439834024897,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E07.png",
+      "source_scale": 0.9128630705394191,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          104.97925311203319,
+          222.5286307053942
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "char_knuthe__E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 196,
+      "canvas_height_px": 236,
+      "drawn_width_px": 195.3526970954357,
+      "drawn_height_px": 235.51867219917008,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E08.png",
+      "source_scale": 0.9128630705394192,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          109.5435684647303,
+          221.6157676348548
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "char_knuthe__E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 202,
+      "canvas_height_px": 238,
+      "drawn_width_px": 201.74273858921157,
+      "drawn_height_px": 237.34439834024897,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E09.png",
+      "source_scale": 0.9128630705394188,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          99.50207468879665,
+          222.52863070539414
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "char_knuthe__E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 201,
+      "canvas_height_px": 238,
+      "drawn_width_px": 200.66945606694566,
+      "drawn_height_px": 237.48953974895397,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E10.png",
+      "source_scale": 0.9205020920502094,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          100.33472803347283,
+          222.60502092050214
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "char_knuthe__E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 201,
+      "canvas_height_px": 238,
+      "drawn_width_px": 200.66945606694566,
+      "drawn_height_px": 237.48953974895397,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E11.png",
+      "source_scale": 0.9205020920502094,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          94.81171548117156,
+          222.60502092050214
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "char_knuthe__E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 201,
+      "canvas_height_px": 237,
+      "drawn_width_px": 200.08230452674897,
+      "drawn_height_px": 236.29629629629628,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E12.png",
+      "source_scale": 0.9053497942386831,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          109.54732510288066,
+          222.45349794238683
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "char_knuthe__E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 195,
+      "canvas_height_px": 237,
+      "drawn_width_px": 194.0650406504065,
+      "drawn_height_px": 236.09756097560972,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E13.png",
+      "source_scale": 0.8943089430894309,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          104.6341463414634,
+          222.3430894308943
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "char_knuthe__E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 197,
+      "canvas_height_px": 237,
+      "drawn_width_px": 196.16666666666666,
+      "drawn_height_px": 236.5,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E14.png",
+      "source_scale": 0.9166666666666666,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          110.91666666666666,
+          222.56666666666666
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "char_knuthe__E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 199,
+      "canvas_height_px": 237,
+      "drawn_width_px": 198.91666666666666,
+      "drawn_height_px": 236.5,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E15.png",
+      "source_scale": 0.9166666666666666,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.41666666666666,
+          222.56666666666666
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "char_knuthe__E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 201,
+      "canvas_height_px": 237,
+      "drawn_width_px": 200.58823529411765,
+      "drawn_height_px": 236.63865546218491,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E16.png",
+      "source_scale": 0.9243697478991597,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          106.30252100840336,
+          222.6436974789916
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "char_knuthe__E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 207,
+      "canvas_height_px": 237,
+      "drawn_width_px": 206.55021834061134,
+      "drawn_height_px": 236.33187772925766,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/heads/E17.png",
+      "source_scale": 0.9606986899563318,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          99.91266375545851,
+          222.04628820960696
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "char_knuthe__B23",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 100,
+      "canvas_height_px": 124,
+      "drawn_width_px": 99.9677915254237,
+      "drawn_height_px": 123.85946497175136,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/parts/B23.png",
+      "source_scale": 0.6287282485875705,
+      "assembly_rotation_deg": -56.53924636951356,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          45.4947760677966,
+          20.18846406214689
+        ],
+        "grip": [
+          49.98389576271185,
+          59.70403448587569
+        ],
+        "fingertip": [
+          49.98389576271185,
+          113.12078648587567
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "char_knuthe__B24",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 99,
+      "canvas_height_px": 124,
+      "drawn_width_px": 98.85083296089384,
+      "drawn_height_px": 123.7189670391061,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_knuthe/parts/B24.png",
+      "source_scale": 0.6217033519553071,
+      "assembly_rotation_deg": 56.53924636951356,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          64.9680002793296,
+          43.89225664804468
+        ],
+        "grip": [
+          49.73626815642457,
+          59.63378551955306
+        ],
+        "fingertip": [
+          49.73626815642457,
+          113.05053751955305
+        ]
+      }
+    }
+  ]
+}

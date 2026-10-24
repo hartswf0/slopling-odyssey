@@ -1,0 +1,161 @@
+{
+  "id": "worker_a",
+  "name": "ENSEMBLE ACTOR A",
+  "kind": "set_or_support",
+  "asset_ids": [
+    "asset__5340a69d53430307",
+    "asset__800395f2a046be7e",
+    "asset__5636cb9858955edf"
+  ],
+  "status": "inventory_only",
+  "counts": {
+    "records": 3,
+    "native_records": 1,
+    "unique_native_files": 1,
+    "original": 3,
+    "historical_scale": 0,
+    "views": {
+      "unspecified": 3
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {},
+    "side": {},
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {
+      "head": 1
+    }
+  },
+  "assets": [
+    {
+      "id": "asset__5340a69d53430307",
+      "file": "Odyssey_Watson_Kits/extras/worker_a/fullkit_reference.png",
+      "owner": "worker_a",
+      "category": "reference",
+      "is_cutout": false,
+      "title": "Fullkit Reference",
+      "note": "Reference / source image; see original metadata.",
+      "preferred": true,
+      "owner_name": "ENSEMBLE ACTOR A",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "worker_a"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "a67049463f6a2796e36d066a3763c1bd3e3fe5ac7632db022a4aaad0962b0958",
+      "byte_size": 2842830,
+      "has_alpha": false,
+      "alpha_extrema": null,
+      "alpha_bounds": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/worker_a/fullkit_reference.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "reference",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2495,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__800395f2a046be7e",
+      "file": "Odyssey_Watson_Kits/extras/worker_a/head_blank.png",
+      "owner": "worker_a",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Head Blank",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "ENSEMBLE ACTOR A",
+      "width": 1312,
+      "height": 1199,
+      "packet_ids": [
+        "worker_a"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "852f7ac6a830a35d7380fbc551932f5be7274c681c27a6a689d1c469e8905835",
+      "byte_size": 2351571,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1290,
+        1199
+      ],
+      "native_file": "assets/852f7ac6a830a35d7380fbc551932f5be7274c681c27a6a689d1c469e8905835.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/worker_a/head_blank.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "head",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2496,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__5636cb9858955edf",
+      "file": "Odyssey_Scene_Ensembles_v3/characters/worker_a/emotion_sheet.png",
+      "owner": "worker_a",
+      "category": "reference",
+      "is_cutout": false,
+      "title": "Emotion Sheet",
+      "note": "Reference / source image; see original metadata.",
+      "preferred": true,
+      "owner_name": "ENSEMBLE ACTOR A",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "worker_a"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "a0c063b60c6ebb838f07a2081029ec838faba691a660c3680180c16b0bfcd72e",
+      "byte_size": 2804741,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1535,
+        1024
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Scene_Ensembles_v3/characters/worker_a/emotion_sheet.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "reference",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2677,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

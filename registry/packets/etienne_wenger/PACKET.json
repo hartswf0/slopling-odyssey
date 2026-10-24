@@ -1,0 +1,164 @@
+{
+  "id": "etienne_wenger",
+  "name": "Etienne Wenger",
+  "kind": "set_or_support",
+  "asset_ids": [
+    "asset__735250963253aa7c",
+    "asset__cca4a213c03178b3",
+    "asset__9389f763bbb8eed5"
+  ],
+  "status": "inventory_only",
+  "counts": {
+    "records": 3,
+    "native_records": 2,
+    "unique_native_files": 2,
+    "original": 3,
+    "historical_scale": 0,
+    "views": {
+      "unspecified": 2,
+      "front": 1
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {
+      "torso": 1
+    },
+    "side": {},
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {
+      "head": 1
+    }
+  },
+  "assets": [
+    {
+      "id": "asset__735250963253aa7c",
+      "file": "Odyssey_Watson_Kits/extras/etienne_wenger/fullkit_reference.png",
+      "owner": "etienne_wenger",
+      "category": "reference",
+      "is_cutout": false,
+      "title": "Fullkit Reference",
+      "note": "Reference / source image; see original metadata.",
+      "preferred": true,
+      "owner_name": "Etienne Wenger",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "etienne_wenger"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "327846d790600de96381484837da16457e8f34251484b94c227e75a459cdeb71",
+      "byte_size": 2706107,
+      "has_alpha": false,
+      "alpha_extrema": null,
+      "alpha_bounds": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/etienne_wenger/fullkit_reference.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "reference",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2460,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__cca4a213c03178b3",
+      "file": "Odyssey_Watson_Kits/extras/etienne_wenger/head_blank.png",
+      "owner": "etienne_wenger",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Head Blank",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Etienne Wenger",
+      "width": 1374,
+      "height": 1145,
+      "packet_ids": [
+        "etienne_wenger"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "1497cb3af1370b2f4694d2d5e86fd76439932b213f25f241ef71fe54af04eebc",
+      "byte_size": 1963490,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1371,
+        1145
+      ],
+      "native_file": "assets/1497cb3af1370b2f4694d2d5e86fd76439932b213f25f241ef71fe54af04eebc.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/etienne_wenger/head_blank.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "head",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2461,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__9389f763bbb8eed5",
+      "file": "Odyssey_Watson_Kits/extras/etienne_wenger/torso_front.png",
+      "owner": "etienne_wenger",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Torso Front",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Etienne Wenger",
+      "width": 1312,
+      "height": 1199,
+      "packet_ids": [
+        "etienne_wenger"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "3d967ed21d559c3b79e3cd821fd03f036b452df6dc44afce38c272a4372bea87",
+      "byte_size": 2187567,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        25,
+        1298,
+        1199
+      ],
+      "native_file": "assets/3d967ed21d559c3b79e3cd821fd03f036b452df6dc44afce38c272a4372bea87.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/etienne_wenger/torso_front.png",
+      "view_label": "front",
+      "view_label_basis": "filename_label",
+      "semantic_slot": "torso",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2462,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

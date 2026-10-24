@@ -1,0 +1,782 @@
+{
+  "actor_id": "extra_etienne_wenger",
+  "name": "Etienne Wenger",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "extra_etienne_wenger__E00",
+      "part": "head",
+      "canvas_width_px": 190,
+      "canvas_height_px": 236,
+      "drawn_width_px": 189.56521739130437,
+      "drawn_height_px": 235.6521739130435,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E00.png",
+      "source_scale": 0.8695652173913044,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          100.00000000000001,
+          222.09565217391307
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "extra_etienne_wenger__B03",
+      "part": "torso_front",
+      "canvas_width_px": 289,
+      "canvas_height_px": 345,
+      "drawn_width_px": 288.61245287531665,
+      "drawn_height_px": 344.5450987813857,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B03.png",
+      "source_scale": 1.1186529181213825,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          144.30622643765832,
+          37.139276881629904
+        ],
+        "waist": [
+          144.30622643765832,
+          316.1313146611027
+        ],
+        "shoulder_left": [
+          51.12243835814718,
+          82.55658535735802
+        ],
+        "shoulder_right": [
+          237.4900145171695,
+          82.55658535735802
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "extra_etienne_wenger__B05",
+      "part": "pelvis_front",
+      "canvas_width_px": 304,
+      "canvas_height_px": 237,
+      "drawn_width_px": 303.8626600039918,
+      "drawn_height_px": 236.0585953750019,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B05.png",
+      "source_scale": 1.255630826462776,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          151.9313300019959,
+          38.171177124468386
+        ],
+        "hip_left": [
+          78.83854833194478,
+          73.1711771244684
+        ],
+        "hip_right": [
+          225.024111672047,
+          73.1711771244684
+        ],
+        "hem_pin_left": [
+          40.431312612101394,
+          196.1295350934856
+        ],
+        "hem_pin_right": [
+          263.4313473918904,
+          196.1295350934856
+        ],
+        "upper_pin_left": [
+          48.793813916343474,
+          55.24775636436215
+        ],
+        "upper_pin_right": [
+          250.93782066858577,
+          76.166565933232
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "extra_etienne_wenger__B11",
+      "part": "upper_arm_left",
+      "canvas_width_px": 173,
+      "canvas_height_px": 152,
+      "drawn_width_px": 172.93867553194178,
+      "drawn_height_px": 151.84859314999764,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B11.png",
+      "source_scale": 0.8436032952777648,
+      "assembly_rotation_deg": -38.97998672918105,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          137.4989010973229,
+          29.29834244499677
+        ],
+        "distal": [
+          30.217870036849536,
+          115.81829640868432
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "extra_etienne_wenger__B12",
+      "part": "upper_arm_right",
+      "canvas_width_px": 175,
+      "canvas_height_px": 148,
+      "drawn_width_px": 174.16290825177643,
+      "drawn_height_px": 147.05264423145275,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B12.png",
+      "source_scale": 0.8215231521310209,
+      "assembly_rotation_deg": 40.94364225517608,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          30.31420431363467,
+          27.726406384421956
+        ],
+        "distal": [
+          140.4968894774472,
+          110.51950965618624
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "extra_etienne_wenger__B13",
+      "part": "forearm_left",
+      "canvas_width_px": 144,
+      "canvas_height_px": 165,
+      "drawn_width_px": 143.70225857414786,
+      "drawn_height_px": 164.93100131805605,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B13.png",
+      "source_scale": 0.8164901055349311,
+      "assembly_rotation_deg": -48.406924493479664,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          107.49908729472902,
+          28.92007953804726
+        ],
+        "distal": [
+          29.728404742526838,
+          129.6014744515596
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "extra_etienne_wenger__B14",
+      "part": "forearm_right",
+      "canvas_width_px": 143,
+      "canvas_height_px": 159,
+      "drawn_width_px": 142.8346751511279,
+      "drawn_height_px": 158.44502216218012,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B14.png",
+      "source_scale": 0.7805173505526115,
+      "assembly_rotation_deg": 50.603151360764265,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          29.222569604689774,
+          28.86353162343557
+        ],
+        "distal": [
+          110.7944379109432,
+          126.49064183055623
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_open.png",
+      "asset_id": "extra_etienne_wenger__B22",
+      "part": "hand_left_open",
+      "canvas_width_px": 86,
+      "canvas_height_px": 108,
+      "drawn_width_px": 85.8661403547641,
+      "drawn_height_px": 107.44997891388513,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B22.png",
+      "source_scale": 0.4692138817200224,
+      "assembly_rotation_deg": 169.27713198500982,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          54.5648823052214,
+          72.16040286972223
+        ],
+        "grip": [
+          42.93307017738205,
+          51.763675431352866
+        ],
+        "fingertip": [
+          42.93307017738205,
+          9.595423881174458
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_open.png",
+      "asset_id": "extra_etienne_wenger__B21",
+      "part": "hand_right_open",
+      "canvas_width_px": 86,
+      "canvas_height_px": 107,
+      "drawn_width_px": 85.45725397212237,
+      "drawn_height_px": 106.93831234762854,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B21.png",
+      "source_scale": 0.46697952990230807,
+      "assembly_rotation_deg": 190.72286801499018,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          42.72862698606119,
+          93.90958346335415
+        ],
+        "grip": [
+          42.72862698606119,
+          51.741331913175735
+        ],
+        "fingertip": [
+          42.72862698606119,
+          9.573080362997315
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "extra_etienne_wenger__B15",
+      "part": "thigh_left",
+      "canvas_width_px": 266,
+      "canvas_height_px": 340,
+      "drawn_width_px": 265.6886659960311,
+      "drawn_height_px": 339.94947326200247,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B15.png",
+      "source_scale": 1.6502401614660316,
+      "assembly_rotation_deg": -19.149529317812043,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          135.78176048542508,
+          59.29312900147451
+        ],
+        "distal": [
+          62.75863334055318,
+          269.5832327770909
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "extra_etienne_wenger__B16",
+      "part": "thigh_right",
+      "canvas_width_px": 264,
+      "canvas_height_px": 323,
+      "drawn_width_px": 263.22550754182834,
+      "drawn_height_px": 322.7646104381943,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B16.png",
+      "source_scale": 1.5668184972727877,
+      "assembly_rotation_deg": 23.094802162021,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          110.0533312484406,
+          53.804547196347535
+        ],
+        "distal": [
+          197.37212610145306,
+          258.57205660492815
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "extra_etienne_wenger__B17",
+      "part": "shin_left",
+      "canvas_width_px": 154,
+      "canvas_height_px": 273,
+      "drawn_width_px": 153.5823438193672,
+      "drawn_height_px": 272.13713553958047,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B17.png",
+      "source_scale": 1.3472135422751508,
+      "assembly_rotation_deg": -5.333788188199009,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          77.63991644131694,
+          44.72748960353501
+        ],
+        "distal": [
+          61.83710159042942,
+          213.99139905498495
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "extra_etienne_wenger__B18",
+      "part": "shin_right",
+      "canvas_width_px": 151,
+      "canvas_height_px": 272,
+      "drawn_width_px": 150.46853123433323,
+      "drawn_height_px": 271.380743833351,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B18.png",
+      "source_scale": 1.3434690288779751,
+      "assembly_rotation_deg": 2.9535313453343095,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          70.31716897147322,
+          43.93143724430979
+        ],
+        "distal": [
+          79.07658703975761,
+          213.70561842361948
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "extra_etienne_wenger__B19",
+      "part": "shoe_left",
+      "canvas_width_px": 141,
+      "canvas_height_px": 108,
+      "drawn_width_px": 140.15277316506135,
+      "drawn_height_px": 107.60544669544994,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B19.png",
+      "source_scale": 0.664231152441049,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          33.82929259382263,
+          21.627366323480558
+        ],
+        "sole": [
+          33.82929259382263,
+          101.6273663234805
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "extra_etienne_wenger__B20",
+      "part": "shoe_right",
+      "canvas_width_px": 143,
+      "canvas_height_px": 110,
+      "drawn_width_px": 142.01581692747763,
+      "drawn_height_px": 109.0358404846037,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B20.png",
+      "source_scale": 0.6730607437321214,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          107.54164563351836,
+          23.651354534746748
+        ],
+        "sole": [
+          107.54164563351836,
+          103.6513545347467
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "extra_etienne_wenger__E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 206,
+      "canvas_height_px": 236,
+      "drawn_width_px": 205.04000000000005,
+      "drawn_height_px": 235.84,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E01.png",
+      "source_scale": 0.8800000000000002,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          101.20000000000003,
+          222.20000000000005
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "extra_etienne_wenger__E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 189,
+      "canvas_height_px": 236,
+      "drawn_width_px": 188.57142857142856,
+      "drawn_height_px": 235.7142857142857,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E02.png",
+      "source_scale": 0.8730158730158729,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          116.98412698412697,
+          222.1301587301587
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "extra_etienne_wenger__E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 189,
+      "canvas_height_px": 236,
+      "drawn_width_px": 188.69565217391306,
+      "drawn_height_px": 235.6521739130435,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E03.png",
+      "source_scale": 0.8695652173913044,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          109.56521739130436,
+          222.09565217391307
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "extra_etienne_wenger__E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 198,
+      "canvas_height_px": 237,
+      "drawn_width_px": 197.55102040816328,
+      "drawn_height_px": 236.16326530612244,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E04.png",
+      "source_scale": 0.8979591836734695,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.51020408163266,
+          222.37959183673473
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "extra_etienne_wenger__E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 188,
+      "canvas_height_px": 236,
+      "drawn_width_px": 187.34374999999997,
+      "drawn_height_px": 235.46874999999997,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E05.png",
+      "source_scale": 0.8593749999999999,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.70312499999999,
+          221.99374999999998
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "extra_etienne_wenger__E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 185,
+      "canvas_height_px": 236,
+      "drawn_width_px": 184.9402390438247,
+      "drawn_height_px": 235.77689243027888,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E06.png",
+      "source_scale": 0.8764940239043825,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          106.93227091633466,
+          222.16494023904383
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "extra_etienne_wenger__E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 189,
+      "canvas_height_px": 236,
+      "drawn_width_px": 188.32000000000002,
+      "drawn_height_px": 235.84,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E07.png",
+      "source_scale": 0.8800000000000001,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          114.40000000000002,
+          222.20000000000002
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "extra_etienne_wenger__E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 184,
+      "canvas_height_px": 236,
+      "drawn_width_px": 183.90625,
+      "drawn_height_px": 235.46874999999997,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E08.png",
+      "source_scale": 0.859375,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.703125,
+          221.99375
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "extra_etienne_wenger__E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 194,
+      "canvas_height_px": 236,
+      "drawn_width_px": 193.49397590361443,
+      "drawn_height_px": 235.90361445783134,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E09.png",
+      "source_scale": 0.8835341365461846,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          87.46987951807228,
+          222.2353413654618
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "extra_etienne_wenger__E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 195,
+      "canvas_height_px": 236,
+      "drawn_width_px": 194.27419354838713,
+      "drawn_height_px": 235.96774193548387,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E10.png",
+      "source_scale": 0.8870967741935486,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          92.25806451612905,
+          222.27096774193555
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "extra_etienne_wenger__E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 199,
+      "canvas_height_px": 236,
+      "drawn_width_px": 198.7096774193548,
+      "drawn_height_px": 235.96774193548387,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E11.png",
+      "source_scale": 0.8870967741935482,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          94.0322580645161,
+          222.27096774193544
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "extra_etienne_wenger__E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 188,
+      "canvas_height_px": 236,
+      "drawn_width_px": 187.43999999999997,
+      "drawn_height_px": 235.84,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E12.png",
+      "source_scale": 0.8799999999999999,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.6,
+          222.19999999999996
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "extra_etienne_wenger__E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 190,
+      "canvas_height_px": 236,
+      "drawn_width_px": 189.07630522088354,
+      "drawn_height_px": 235.90361445783134,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E13.png",
+      "source_scale": 0.8835341365461847,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          108.67469879518072,
+          222.23534136546184
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "extra_etienne_wenger__E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 182,
+      "canvas_height_px": 236,
+      "drawn_width_px": 181.0236220472441,
+      "drawn_height_px": 235.59055118110234,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E14.png",
+      "source_scale": 0.8661417322834646,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.66929133858268,
+          222.06141732283464
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "extra_etienne_wenger__E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 185,
+      "canvas_height_px": 236,
+      "drawn_width_px": 184.8,
+      "drawn_height_px": 235.84,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E15.png",
+      "source_scale": 0.88,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.6,
+          222.2
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "extra_etienne_wenger__E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 186,
+      "canvas_height_px": 236,
+      "drawn_width_px": 185.4901960784314,
+      "drawn_height_px": 235.52941176470586,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E16.png",
+      "source_scale": 0.8627450980392158,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          100.07843137254903,
+          222.02745098039222
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "extra_etienne_wenger__E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 196,
+      "canvas_height_px": 236,
+      "drawn_width_px": 195.35999999999999,
+      "drawn_height_px": 235.84,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/heads/E17.png",
+      "source_scale": 0.8799999999999999,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          72.16,
+          222.19999999999996
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "extra_etienne_wenger__B23",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 92,
+      "canvas_height_px": 109,
+      "drawn_width_px": 91.06100833095006,
+      "drawn_height_px": 108.84215196953794,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B23.png",
+      "source_scale": 0.538822534502663,
+      "assembly_rotation_deg": -57.6766148643855,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          46.94221920587201,
+          15.631241725922255
+        ],
+        "grip": [
+          45.53050416547503,
+          52.459761959179275
+        ],
+        "fingertip": [
+          45.53050416547503,
+          99.53129857333191
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "extra_etienne_wenger__B24",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 90,
+      "canvas_height_px": 109,
+      "drawn_width_px": 89.0052832264888,
+      "drawn_height_px": 108.72501663595037,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_etienne_wenger/parts/B24.png",
+      "source_scale": 0.5329657678232862,
+      "assembly_rotation_deg": 57.6766148643855,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          40.04704779424173,
+          16.244796603253764
+        ],
+        "grip": [
+          44.5026416132444,
+          52.4011942923855
+        ],
+        "fingertip": [
+          44.5026416132444,
+          99.47273090653813
+        ]
+      }
+    }
+  ]
+}

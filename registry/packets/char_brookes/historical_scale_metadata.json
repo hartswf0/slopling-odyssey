@@ -1,0 +1,790 @@
+{
+  "actor_id": "char_brookes",
+  "name": "Fred Brookes",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "char_brookes__E00",
+      "part": "head",
+      "canvas_width_px": 215,
+      "canvas_height_px": 238,
+      "drawn_width_px": 214.47698744769872,
+      "drawn_height_px": 237.48953974895397,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E00.png",
+      "source_scale": 0.920502092050209,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          109.53974895397488,
+          221.68451882845187
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "file__daec794cc584a2c5",
+      "part": "torso_front",
+      "canvas_width_px": 375,
+      "canvas_height_px": 407,
+      "drawn_width_px": 374.0471794468888,
+      "drawn_height_px": 406.38376021370215,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/torso_front_override.png",
+      "source_scale": 0.3109286612193589,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          187.64544704588312,
+          46.552239157762415
+        ],
+        "waist": [
+          187.64544704588312,
+          363.15223915776244
+        ],
+        "shoulder_left": [
+          88.50584341609051,
+          98.09177404148336
+        ],
+        "shoulder_right": [
+          286.7850506756757,
+          98.09177404148336
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "char_brookes__B05",
+      "part": "pelvis_front",
+      "canvas_width_px": 295,
+      "canvas_height_px": 225,
+      "drawn_width_px": 294.41878723630276,
+      "drawn_height_px": 224.90324024995354,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/parts/B05.png",
+      "source_scale": 1.363049940908809,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          147.20939361815138,
+          36.14808443290161
+        ],
+        "hip_left": [
+          70.56236934096722,
+          71.14808443290161
+        ],
+        "hip_right": [
+          223.85641789533554,
+          71.14808443290161
+        ],
+        "hem_pin_left": [
+          40.34627825090075,
+          183.41200004868935
+        ],
+        "hem_pin_right": [
+          254.072508985402,
+          183.41200004868935
+        ],
+        "upper_pin_left": [
+          48.033879917626436,
+          59.27904193012411
+        ],
+        "upper_pin_right": [
+          244.19039691381315,
+          60.246807388169366
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "char_brookes__B11",
+      "part": "upper_arm_left",
+      "canvas_width_px": 191,
+      "canvas_height_px": 197,
+      "drawn_width_px": 190.36767262394318,
+      "drawn_height_px": 196.857479645214,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/parts/B11.png",
+      "source_scale": 1.0816345035451318,
+      "assembly_rotation_deg": 51.243014824189984,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          47.92722485208479,
+          34.77454928897598
+        ],
+        "distal": [
+          146.58310792043628,
+          156.13394058673978
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "char_brookes__B12",
+      "part": "upper_arm_right",
+      "canvas_width_px": 188,
+      "canvas_height_px": 194,
+      "drawn_width_px": 187.4052520429008,
+      "drawn_height_px": 193.7940674534542,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/parts/B12.png",
+      "source_scale": 1.0648025684255726,
+      "assembly_rotation_deg": -51.28233379612532,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          136.49704124647414,
+          34.233402574882156
+        ],
+        "distal": [
+          37.757899076370805,
+          155.52506314423914
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "char_brookes__B13",
+      "part": "forearm_left",
+      "canvas_width_px": 164,
+      "canvas_height_px": 170,
+      "drawn_width_px": 163.03901834864888,
+      "drawn_height_px": 169.4148458818363,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/parts/B13.png",
+      "source_scale": 0.9108325047410551,
+      "assembly_rotation_deg": -53.20178314298062,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          127.51655066374772,
+          31.460154713756044
+        ],
+        "distal": [
+          30.021039356265177,
+          137.9364745179854
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "char_brookes__B14",
+      "part": "forearm_right",
+      "canvas_width_px": 162,
+      "canvas_height_px": 170,
+      "drawn_width_px": 161.74629957892552,
+      "drawn_height_px": 169.97068769310818,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/parts/B14.png",
+      "source_scale": 0.9138209015758504,
+      "assembly_rotation_deg": 52.83408198543448,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          31.810105583855353,
+          32.22132498956448
+        ],
+        "distal": [
+          128.62029189680095,
+          139.32113465425417
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_open.png",
+      "asset_id": "char_brookes__B22",
+      "part": "hand_left_open",
+      "canvas_width_px": 96,
+      "canvas_height_px": 122,
+      "drawn_width_px": 95.0675025125628,
+      "drawn_height_px": 121.91009145728638,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/parts/B22.png",
+      "source_scale": 0.5592206030150753,
+      "assembly_rotation_deg": 169.27713198500982,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          54.32268937688441,
+          100.7324072211055
+        ],
+        "grip": [
+          47.5337512562814,
+          58.449737427135666
+        ],
+        "fingertip": [
+          47.5337512562814,
+          10.597230427135676
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_open.png",
+      "asset_id": "char_brookes__B21",
+      "part": "hand_right_open",
+      "canvas_width_px": 95,
+      "canvas_height_px": 123,
+      "drawn_width_px": 94.42355151515149,
+      "drawn_height_px": 122.52579898989896,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/parts/B21.png",
+      "source_scale": 0.5620449494949493,
+      "assembly_rotation_deg": 190.72286801499015,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          39.523000848484834,
+          100.79714124242422
+        ],
+        "grip": [
+          47.49279823232322,
+          59.03720149494948
+        ],
+        "fingertip": [
+          47.49279823232322,
+          11.184694494949492
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "char_brookes__B15",
+      "part": "thigh_left",
+      "canvas_width_px": 178,
+      "canvas_height_px": 266,
+      "drawn_width_px": 177.0849815121103,
+      "drawn_height_px": 265.6274722681655,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/parts/B15.png",
+      "source_scale": 1.3215297127769425,
+      "assembly_rotation_deg": -25.832876599514197,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          129.50991185214036,
+          50.21812908552381
+        ],
+        "distal": [
+          48.89659937274688,
+          216.73087289541857
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "char_brookes__B16",
+      "part": "thigh_right",
+      "canvas_width_px": 178,
+      "canvas_height_px": 267,
+      "drawn_width_px": 177.63422429877164,
+      "drawn_height_px": 266.4513364481575,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/parts/B16.png",
+      "source_scale": 1.325628539543072,
+      "assembly_rotation_deg": 25.46334506187161,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          46.39699888400752,
+          50.373884502636734
+        ],
+        "distal": [
+          125.93471125659184,
+          217.4030804850638
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "char_brookes__B17",
+      "part": "shin_left",
+      "canvas_width_px": 149,
+      "canvas_height_px": 251,
+      "drawn_width_px": 148.10843160077022,
+      "drawn_height_px": 250.08472876851366,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/parts/B17.png",
+      "source_scale": 1.2140035377112313,
+      "assembly_rotation_deg": -8.703544443712886,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          79.79645253375924,
+          40.98475943313117
+        ],
+        "distal": [
+          54.07171756965824,
+          209.0271291231198
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "char_brookes__B18",
+      "part": "shin_right",
+      "canvas_width_px": 143,
+      "canvas_height_px": 251,
+      "drawn_width_px": 142.89278249020282,
+      "drawn_height_px": 250.6678472497626,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/parts/B18.png",
+      "source_scale": 1.210955783815278,
+      "assembly_rotation_deg": 6.3266705118904945,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          64.15643742653343,
+          39.25918651129132
+        ],
+        "distal": [
+          82.88992340215579,
+          208.22384702703704
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "char_brookes__B19",
+      "part": "shoe_left",
+      "canvas_width_px": 297,
+      "canvas_height_px": 222,
+      "drawn_width_px": 296.1403508771929,
+      "drawn_height_px": 221.7543859649122,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/parts/B19.png",
+      "source_scale": 1.403508771929824,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          58.94736842105261,
+          127.71929824561398
+        ],
+        "sole": [
+          58.94736842105261,
+          207.71929824561397
+        ],
+        "cuff_pin": [
+          70.82105263157892,
+          52.72982456140349
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "char_brookes__B20",
+      "part": "shoe_right",
+      "canvas_width_px": 292,
+      "canvas_height_px": 221,
+      "drawn_width_px": 291.9298245614034,
+      "drawn_height_px": 220.35087719298238,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/parts/B20.png",
+      "source_scale": 1.403508771929824,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          232.9824561403508,
+          127.71929824561398
+        ],
+        "sole": [
+          232.9824561403508,
+          207.71929824561397
+        ],
+        "cuff_pin": [
+          218.6807017543859,
+          53.4736842105263
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "char_brookes__E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 220,
+      "canvas_height_px": 239,
+      "drawn_width_px": 219.07172995780593,
+      "drawn_height_px": 238.56540084388183,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E01.png",
+      "source_scale": 0.9282700421940929,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          90.9704641350211,
+          222.68270042194095
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "char_brookes__E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 211,
+      "canvas_height_px": 239,
+      "drawn_width_px": 210.8333333333333,
+      "drawn_height_px": 238.33333333333331,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E02.png",
+      "source_scale": 0.9166666666666664,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          120.99999999999997,
+          222.5666666666666
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "char_brookes__E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 215,
+      "canvas_height_px": 238,
+      "drawn_width_px": 214.47698744769872,
+      "drawn_height_px": 237.48953974895397,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E03.png",
+      "source_scale": 0.920502092050209,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          124.26778242677823,
+          221.68451882845187
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "char_brookes__E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 218,
+      "canvas_height_px": 239,
+      "drawn_width_px": 217.2151898734177,
+      "drawn_height_px": 238.56540084388183,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E04.png",
+      "source_scale": 0.9282700421940927,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          121.60337552742614,
+          222.6827004219409
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "char_brookes__E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 212,
+      "canvas_height_px": 239,
+      "drawn_width_px": 211.64556962025316,
+      "drawn_height_px": 238.56540084388183,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E05.png",
+      "source_scale": 0.9282700421940928,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          117.8902953586498,
+          222.68270042194092
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "char_brookes__E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 210,
+      "canvas_height_px": 239,
+      "drawn_width_px": 209.09090909090912,
+      "drawn_height_px": 238.1818181818182,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E06.png",
+      "source_scale": 0.9090909090909092,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          115.45454545454547,
+          222.49090909090913
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "char_brookes__E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 212,
+      "canvas_height_px": 237,
+      "drawn_width_px": 211.05691056910567,
+      "drawn_height_px": 236.99186991869917,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E07.png",
+      "source_scale": 0.8943089430894308,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          119.83739837398372,
+          221.44878048780484
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "char_brookes__E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 211,
+      "canvas_height_px": 238,
+      "drawn_width_px": 210.12244897959187,
+      "drawn_height_px": 237.95918367346937,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E08.png",
+      "source_scale": 0.8979591836734695,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          109.55102040816328,
+          222.37959183673473
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "char_brookes__E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 220,
+      "canvas_height_px": 239,
+      "drawn_width_px": 219.08713692946057,
+      "drawn_height_px": 238.2572614107884,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E09.png",
+      "source_scale": 0.9128630705394191,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          102.24066390041493,
+          222.5286307053942
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "char_brookes__E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 215,
+      "canvas_height_px": 239,
+      "drawn_width_px": 214.5228215767635,
+      "drawn_height_px": 238.2572614107884,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E10.png",
+      "source_scale": 0.9128630705394192,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          106.80497925311204,
+          222.52863070539422
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "char_brookes__E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 215,
+      "canvas_height_px": 239,
+      "drawn_width_px": 214.5228215767635,
+      "drawn_height_px": 238.2572614107884,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E11.png",
+      "source_scale": 0.9128630705394192,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          113.19502074688798,
+          222.52863070539422
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "char_brookes__E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 215,
+      "canvas_height_px": 239,
+      "drawn_width_px": 214.45378151260505,
+      "drawn_height_px": 238.48739495798318,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E12.png",
+      "source_scale": 0.9243697478991597,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          117.39495798319328,
+          222.6436974789916
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "char_brookes__E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 216,
+      "canvas_height_px": 238,
+      "drawn_width_px": 215.39748953974896,
+      "drawn_height_px": 237.48953974895397,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E13.png",
+      "source_scale": 0.9205020920502093,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          123.34728033472804,
+          221.6845188284519
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "char_brookes__E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 217,
+      "canvas_height_px": 239,
+      "drawn_width_px": 216.31799163179917,
+      "drawn_height_px": 238.41004184100416,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E14.png",
+      "source_scale": 0.9205020920502093,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          122.42677824267783,
+          222.6050209205021
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "char_brookes__E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 217,
+      "canvas_height_px": 239,
+      "drawn_width_px": 216.31799163179917,
+      "drawn_height_px": 238.41004184100416,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E15.png",
+      "source_scale": 0.9205020920502093,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          120.58577405857741,
+          222.6050209205021
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "char_brookes__E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 216,
+      "canvas_height_px": 239,
+      "drawn_width_px": 215.41666666666669,
+      "drawn_height_px": 238.33333333333331,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E16.png",
+      "source_scale": 0.9166666666666667,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          110.91666666666667,
+          222.5666666666667
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "char_brookes__E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 220,
+      "canvas_height_px": 239,
+      "drawn_width_px": 220,
+      "drawn_height_px": 238.48739495798318,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/heads/E17.png",
+      "source_scale": 0.9243697478991597,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          110,
+          222.6436974789916
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "char_brookes__B23",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 88,
+      "canvas_height_px": 123,
+      "drawn_width_px": 87.30638563535912,
+      "drawn_height_px": 122.96674033149174,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/parts/B23.png",
+      "source_scale": 0.6148337016574585,
+      "assembly_rotation_deg": -56.320942981831145,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          39.88426222651934,
+          18.432714375690608
+        ],
+        "grip": [
+          43.65319281767955,
+          59.56508901657458
+        ],
+        "fingertip": [
+          43.65319281767955,
+          112.98184101657458
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "char_brookes__B24",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 89,
+      "canvas_height_px": 124,
+      "drawn_width_px": 88.40967055555554,
+      "drawn_height_px": 123.03163944444441,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_brookes/parts/B24.png",
+      "source_scale": 0.6182494444444443,
+      "assembly_rotation_deg": 56.32094298183114,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          46.56654815555554,
+          18.33109602777777
+        ],
+        "grip": [
+          44.20483527777777,
+          59.59924644444443
+        ],
+        "fingertip": [
+          44.20483527777777,
+          113.01599844444442
+        ]
+      }
+    }
+  ]
+}

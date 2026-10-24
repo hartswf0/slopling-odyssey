@@ -1,0 +1,598 @@
+{
+  "id": "family",
+  "name": "Family",
+  "kind": "set_or_support",
+  "asset_ids": [
+    "family_pose_read_the_journal",
+    "family_pose_offer_the_calipers",
+    "family_pose_listen_in_silence",
+    "family_pose_name_the_trees",
+    "family_pose_hand_on_shoulder",
+    "family_pose_embrace",
+    "family_sheet_orchard_action_poses",
+    "family_sheet_orchard_stage_layers",
+    "family_sheet_orchard_props"
+  ],
+  "status": "inventory_only",
+  "counts": {
+    "records": 9,
+    "native_records": 0,
+    "unique_native_files": 0,
+    "original": 9,
+    "historical_scale": 0,
+    "views": {
+      "unspecified": 9
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {},
+    "side": {},
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {}
+  },
+  "assets": [
+    {
+      "id": "family_pose_read_the_journal",
+      "title": "Family Pose Read The Journal",
+      "actor": "family",
+      "category": "pose_reference",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/poses/family_pose_read_the_journal.png",
+      "width": 469,
+      "height": 389,
+      "state_code": null,
+      "view": "read_the_journal",
+      "notes": [
+        "Journal, bench and both actors are baked together. The lower crop trims the frame/caption contact at the shoe edges.",
+        "Whole-pose illustration only. A manual polygon omits the surrounding panel/caption; small source fringes at touching boundaries remain a reference-quality limitation. Use the modular body parts for articulated assembly."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_action_poses.png",
+      "source_frame": {
+        "x": 48,
+        "y": 107,
+        "w": 453,
+        "h": 373
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {},
+      "sha256": "6e1d2649a25f65418b463fa7637f160bfd432968e0b85e4539fd405ac6d0bae4",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 120544,
+      "visible_bounds_alpha_128": [
+        13,
+        8,
+        461,
+        381
+      ],
+      "owner": "family",
+      "is_cutout": false,
+      "note": "Journal, bench and both actors are baked together. The lower crop trims the frame/caption contact at the shoe edges. Whole-pose illustration only. A manual polygon omits the surrounding panel/caption; small source fringes at touching boundaries remain a reference-quality limitation. Use the modular body parts for articulated assembly.",
+      "owner_name": "Family",
+      "packet_ids": [
+        "family"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "6e1d2649a25f65418b463fa7637f160bfd432968e0b85e4539fd405ac6d0bae4",
+      "byte_size": 356551,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        461,
+        381
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/poses/family_pose_read_the_journal.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "pose_reference",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2343,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "family_pose_offer_the_calipers",
+      "title": "Family Pose Offer The Calipers",
+      "actor": "family",
+      "category": "pose_reference",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/poses/family_pose_offer_the_calipers.png",
+      "width": 475,
+      "height": 420,
+      "state_code": null,
+      "view": "offer_the_calipers",
+      "notes": [
+        "Both actors and the calipers are one fixed composition. Manual top outline follows the hat/hair areas that touch the panel border; shoe/caption contact is clipped at the bottom.",
+        "Whole-pose illustration only. A manual polygon omits the surrounding panel/caption; small source fringes at touching boundaries remain a reference-quality limitation. Use the modular body parts for articulated assembly."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_action_poses.png",
+      "source_frame": {
+        "x": 550,
+        "y": 76,
+        "w": 459,
+        "h": 404
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {},
+      "sha256": "5400685cc13718f59f4f4fedef80a1474c723ebb0d9024e9e5a2da6e590d8c13",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 97702,
+      "visible_bounds_alpha_128": [
+        8,
+        8,
+        467,
+        412
+      ],
+      "owner": "family",
+      "is_cutout": false,
+      "note": "Both actors and the calipers are one fixed composition. Manual top outline follows the hat/hair areas that touch the panel border; shoe/caption contact is clipped at the bottom. Whole-pose illustration only. A manual polygon omits the surrounding panel/caption; small source fringes at touching boundaries remain a reference-quality limitation. Use the modular body parts for articulated assembly.",
+      "owner_name": "Family",
+      "packet_ids": [
+        "family"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "5400685cc13718f59f4f4fedef80a1474c723ebb0d9024e9e5a2da6e590d8c13",
+      "byte_size": 310387,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        467,
+        412
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/poses/family_pose_offer_the_calipers.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "pose_reference",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2344,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "family_pose_listen_in_silence",
+      "title": "Family Pose Listen In Silence",
+      "actor": "family",
+      "category": "pose_reference",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/poses/family_pose_listen_in_silence.png",
+      "width": 407,
+      "height": 424,
+      "state_code": null,
+      "view": "listen_in_silence",
+      "notes": [
+        "Two standing actors are one reference region. Hat/top-frame and sole/caption boundaries are manually clipped; these are not replacement independent standing puppets.",
+        "Whole-pose illustration only. A manual polygon omits the surrounding panel/caption; small source fringes at touching boundaries remain a reference-quality limitation. Use the modular body parts for articulated assembly."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_action_poses.png",
+      "source_frame": {
+        "x": 1086,
+        "y": 72,
+        "w": 391,
+        "h": 408
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {},
+      "sha256": "f68aba6dff04ba36e75508f54ca8eec544feaac6ecccd8c8ca5c4b051e196293",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 101784,
+      "visible_bounds_alpha_128": [
+        10,
+        9,
+        397,
+        416
+      ],
+      "owner": "family",
+      "is_cutout": false,
+      "note": "Two standing actors are one reference region. Hat/top-frame and sole/caption boundaries are manually clipped; these are not replacement independent standing puppets. Whole-pose illustration only. A manual polygon omits the surrounding panel/caption; small source fringes at touching boundaries remain a reference-quality limitation. Use the modular body parts for articulated assembly.",
+      "owner_name": "Family",
+      "packet_ids": [
+        "family"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "f68aba6dff04ba36e75508f54ca8eec544feaac6ecccd8c8ca5c4b051e196293",
+      "byte_size": 309080,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        399,
+        416
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/poses/family_pose_listen_in_silence.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "pose_reference",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2345,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "family_pose_name_the_trees",
+      "title": "Family Pose Name The Trees",
+      "actor": "family",
+      "category": "pose_reference",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/poses/family_pose_name_the_trees.png",
+      "width": 483,
+      "height": 428,
+      "state_code": null,
+      "view": "name_the_trees",
+      "notes": [
+        "Pointing/tool gesture and both actors are baked together. Upper hat and lower sole edges touch the decorative panel; the manual envelope may trim their outer paper fringe.",
+        "Whole-pose illustration only. A manual polygon omits the surrounding panel/caption; small source fringes at touching boundaries remain a reference-quality limitation. Use the modular body parts for articulated assembly."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_action_poses.png",
+      "source_frame": {
+        "x": 48,
+        "y": 532,
+        "w": 467,
+        "h": 412
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {},
+      "sha256": "9d37d8b4df8fe7a0ff8e243a62935892765a2786beb3f2dd902dbf76c6484dee",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 96309,
+      "visible_bounds_alpha_128": [
+        11,
+        8,
+        475,
+        420
+      ],
+      "owner": "family",
+      "is_cutout": false,
+      "note": "Pointing/tool gesture and both actors are baked together. Upper hat and lower sole edges touch the decorative panel; the manual envelope may trim their outer paper fringe. Whole-pose illustration only. A manual polygon omits the surrounding panel/caption; small source fringes at touching boundaries remain a reference-quality limitation. Use the modular body parts for articulated assembly.",
+      "owner_name": "Family",
+      "packet_ids": [
+        "family"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "9d37d8b4df8fe7a0ff8e243a62935892765a2786beb3f2dd902dbf76c6484dee",
+      "byte_size": 298628,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        475,
+        420
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/poses/family_pose_name_the_trees.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "pose_reference",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2346,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "family_pose_hand_on_shoulder",
+      "title": "Family Pose Hand On Shoulder",
+      "actor": "family",
+      "category": "pose_reference",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/poses/family_pose_hand_on_shoulder.png",
+      "width": 376,
+      "height": 425,
+      "state_code": null,
+      "view": "hand_on_shoulder",
+      "notes": [
+        "The contact hand is baked into the paired illustration. Hat/frame and shoe/caption contacts are bounded manually; no hidden outline has been reconstructed.",
+        "Whole-pose illustration only. A manual polygon omits the surrounding panel/caption; small source fringes at touching boundaries remain a reference-quality limitation. Use the modular body parts for articulated assembly."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_action_poses.png",
+      "source_frame": {
+        "x": 610,
+        "y": 530,
+        "w": 360,
+        "h": 409
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {},
+      "sha256": "bbb6f1d3e4f1067fc9acdc49ae759c2079c652b20dd446236405ffb7d1fcbe1f",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 94949,
+      "visible_bounds_alpha_128": [
+        11,
+        8,
+        364,
+        417
+      ],
+      "owner": "family",
+      "is_cutout": false,
+      "note": "The contact hand is baked into the paired illustration. Hat/frame and shoe/caption contacts are bounded manually; no hidden outline has been reconstructed. Whole-pose illustration only. A manual polygon omits the surrounding panel/caption; small source fringes at touching boundaries remain a reference-quality limitation. Use the modular body parts for articulated assembly.",
+      "owner_name": "Family",
+      "packet_ids": [
+        "family"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "bbb6f1d3e4f1067fc9acdc49ae759c2079c652b20dd446236405ffb7d1fcbe1f",
+      "byte_size": 288558,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        368,
+        417
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/poses/family_pose_hand_on_shoulder.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "hand",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "view_not_recorded"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2347,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "family_pose_embrace",
+      "title": "Family Pose Embrace",
+      "actor": "family",
+      "category": "pose_reference",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/poses/family_pose_embrace.png",
+      "width": 299,
+      "height": 427,
+      "state_code": null,
+      "view": "embrace",
+      "notes": [
+        "Both bodies and crossed arms are one fused embrace pose. The top hat meets the panel frame; manual edge clipping does not recover any occluded art.",
+        "Whole-pose illustration only. A manual polygon omits the surrounding panel/caption; small source fringes at touching boundaries remain a reference-quality limitation. Use the modular body parts for articulated assembly."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_action_poses.png",
+      "source_frame": {
+        "x": 1153,
+        "y": 528,
+        "w": 283,
+        "h": 411
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {},
+      "sha256": "0ea1df767d71c0dacad5c36f48efee02e699a51d543b22f9cfa9419a9f70cb05",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 70080,
+      "visible_bounds_alpha_128": [
+        13,
+        8,
+        290,
+        419
+      ],
+      "owner": "family",
+      "is_cutout": false,
+      "note": "Both bodies and crossed arms are one fused embrace pose. The top hat meets the panel frame; manual edge clipping does not recover any occluded art. Whole-pose illustration only. A manual polygon omits the surrounding panel/caption; small source fringes at touching boundaries remain a reference-quality limitation. Use the modular body parts for articulated assembly.",
+      "owner_name": "Family",
+      "packet_ids": [
+        "family"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "0ea1df767d71c0dacad5c36f48efee02e699a51d543b22f9cfa9419a9f70cb05",
+      "byte_size": 209357,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        291,
+        419
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/poses/family_pose_embrace.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "pose_reference",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2348,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "family_sheet_orchard_action_poses",
+      "file": "Cardboard_Family_Film_Kits_v2/sheets/orchard_action_poses.png",
+      "owner": "family",
+      "title": "Watson + Mark \u00b7 Orchard actions",
+      "category": "sheet",
+      "is_cutout": false,
+      "note": "Six whole-pose action references. These are illustrated poses, not tested rigs.",
+      "preferred": true,
+      "owner_name": "Family",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "family"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "220c03c71ac3dfe93872fe8bddb4c759de773ddcecae5cfd230ca4b9ba761d71",
+      "byte_size": 3103527,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/sheets/orchard_action_poses.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "sheet",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2764,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "family_sheet_orchard_stage_layers",
+      "file": "Cardboard_Family_Film_Kits_v2/sheets/orchard_stage_layers.png",
+      "owner": "family",
+      "title": "Orchard \u00b7 Set layers",
+      "category": "sheet",
+      "is_cutout": false,
+      "note": "Background, ground, trees, house, foreground and four bench parts.",
+      "preferred": true,
+      "owner_name": "Family",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "family"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "2177e1d8a8d6243de6b9816207e6a852dc2e8ebc74fc3426b7c08fefb79dbef3",
+      "byte_size": 3268052,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1522,
+        1012
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/sheets/orchard_stage_layers.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "sheet",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2766,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "family_sheet_orchard_props",
+      "file": "Cardboard_Family_Film_Kits_v2/sheets/orchard_props.png",
+      "owner": "family",
+      "title": "Orchard \u00b7 Props and contact hands",
+      "category": "sheet",
+      "is_cutout": false,
+      "note": "Journal, page, calipers, grafting parts, phone and contact hands.",
+      "preferred": true,
+      "owner_name": "Family",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "family"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "2b7a6bd95f1996d301b441c2ea127fb6178e326a03aecfb5ef498e8fa2239abf",
+      "byte_size": 2628274,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        12,
+        0,
+        1522,
+        1024
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/sheets/orchard_props.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "hand",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "view_not_recorded"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2767,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

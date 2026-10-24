@@ -1,0 +1,2775 @@
+{
+  "id": "props",
+  "name": "Props",
+  "kind": "set_or_support",
+  "asset_ids": [
+    "orchard_prop_journal_closed",
+    "orchard_prop_journal_open",
+    "orchard_prop_journal_turning_page",
+    "orchard_prop_code_page_insert",
+    "orchard_prop_caliper_beam_fixed_jaw",
+    "orchard_prop_caliper_sliding_jaw",
+    "orchard_prop_graft_rootstock",
+    "orchard_prop_graft_scion",
+    "orchard_prop_graft_wrapping_tape",
+    "orchard_prop_grafting_knife",
+    "orchard_prop_wiping_rag",
+    "orchard_prop_phone",
+    "orchard_prop_book_support_hand_left",
+    "orchard_prop_book_support_hand_right",
+    "orchard_prop_page_turn_hand",
+    "orchard_prop_shoulder_contact_hand",
+    "orchard_prop_caliper_slider_compact",
+    "asset__13698f84f1ddafc2",
+    "asset__e2d385db95666c5b",
+    "asset__e81aa16dfc7f33c9",
+    "asset__dde06d40b8d06ef6",
+    "asset__0ff1059e09824b8e",
+    "asset__adb4d94ad3d959b9",
+    "asset__a02ce3b412dd3058",
+    "asset__1cf7028796e72b34",
+    "asset__089c0ff1733d4f9e",
+    "asset__b4c61f3ca6677f8b",
+    "asset__705268d8949b1841",
+    "asset__eecf036d714cbfde",
+    "asset__dd353f3e612d16d6",
+    "asset__f09b7a3ab5ede08c",
+    "asset__1311319907d59c2e",
+    "asset__218aa75f3c2c6542",
+    "asset__6d277be0c0f77367",
+    "asset__1dffe2c915fd1ff3",
+    "asset__d8bf36c71d2525c3",
+    "asset__00142aa35ebe7e99",
+    "asset__527f79bd61ccf81c",
+    "asset__89103451200062da",
+    "asset__d65c36ae70b5449b",
+    "asset__0ad0db25925178b6",
+    "asset__45af945122279a56",
+    "asset__6a14bce94fc381d4",
+    "asset__3d3e67ed1cbdb103",
+    "assembly_prop_caliper_slider_clean"
+  ],
+  "status": "inventory_only",
+  "counts": {
+    "records": 45,
+    "native_records": 45,
+    "unique_native_files": 45,
+    "original": 45,
+    "historical_scale": 0,
+    "views": {
+      "unspecified": 38,
+      "front": 2,
+      "side": 5
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {
+      "prop": 2
+    },
+    "side": {
+      "prop": 5
+    },
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {
+      "prop": 32,
+      "hand": 5,
+      "head": 1
+    }
+  },
+  "assets": [
+    {
+      "id": "orchard_prop_journal_closed",
+      "title": "Orchard Prop Journal Closed",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_journal_closed.png",
+      "width": 289,
+      "height": 321,
+      "state_code": null,
+      "view": "front_cover",
+      "notes": [
+        "Closed leather journal; no separate cover hinge is supplied."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 74,
+        "y": 74,
+        "w": 273,
+        "h": 305
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "spine": {
+          "x": 26,
+          "y": 162,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.08996539792387544,
+          "normalized_y": 0.5046728971962616
+        },
+        "hand_support": {
+          "x": 146,
+          "y": 294,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.5051903114186851,
+          "normalized_y": 0.9158878504672897
+        }
+      },
+      "sha256": "f21569cd2630dd3345ff1f7eedeaa5c43891d792366ceeeb347ecf9b3e7e6751",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 76821,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        279,
+        311
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "Closed leather journal; no separate cover hinge is supplied.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "f21569cd2630dd3345ff1f7eedeaa5c43891d792366ceeeb347ecf9b3e7e6751",
+      "byte_size": 198647,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        281,
+        313
+      ],
+      "native_file": "assets/f21569cd2630dd3345ff1f7eedeaa5c43891d792366ceeeb347ecf9b3e7e6751.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_journal_closed.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2311,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_journal_open",
+      "title": "Orchard Prop Journal Open",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_journal_open.png",
+      "width": 531,
+      "height": 313,
+      "state_code": null,
+      "view": "open_spread",
+      "notes": [
+        "Blank open pages. Add story text as a separate compositor layer; preserve the painted spine/rings."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 401,
+        "y": 85,
+        "w": 515,
+        "h": 297
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "spine": {
+          "x": 257,
+          "y": 155,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.4839924670433145,
+          "normalized_y": 0.4952076677316294
+        },
+        "support_left": {
+          "x": 74,
+          "y": 271,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.1393596986817326,
+          "normalized_y": 0.865814696485623
+        },
+        "support_right": {
+          "x": 451,
+          "y": 271,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.8493408662900188,
+          "normalized_y": 0.865814696485623
+        }
+      },
+      "sha256": "6f5929f97fe4c54c6be5c1a13a5012473a6ff433314d986266e23d848f528122",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 140037,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        521,
+        305
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "Blank open pages. Add story text as a separate compositor layer; preserve the painted spine/rings.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "6f5929f97fe4c54c6be5c1a13a5012473a6ff433314d986266e23d848f528122",
+      "byte_size": 296128,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        523,
+        305
+      ],
+      "native_file": "assets/6f5929f97fe4c54c6be5c1a13a5012473a6ff433314d986266e23d848f528122.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_journal_open.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2312,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_journal_turning_page",
+      "title": "Orchard Prop Journal Turning Page",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_journal_turning_page.png",
+      "width": 238,
+      "height": 304,
+      "state_code": null,
+      "view": "curled",
+      "notes": [
+        "One curled page pose, not a page-turn animation sequence. The two estimated hinge landmarks describe a bent page edge, not a straight registered hinge."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 964,
+        "y": 95,
+        "w": 222,
+        "h": 288
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "hinge_top": {
+          "x": 89,
+          "y": 20,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.3739495798319328,
+          "normalized_y": 0.06578947368421052
+        },
+        "hinge_bottom": {
+          "x": 20,
+          "y": 242,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.08403361344537816,
+          "normalized_y": 0.7960526315789473
+        }
+      },
+      "sha256": "3801eaf95f553fef1d9abe94614b6b5636ce6284bdcafb78a3fa4b591d04abf5",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 35761,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        228,
+        296
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "One curled page pose, not a page-turn animation sequence. The two estimated hinge landmarks describe a bent page edge, not a straight registered hinge.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "3801eaf95f553fef1d9abe94614b6b5636ce6284bdcafb78a3fa4b591d04abf5",
+      "byte_size": 91837,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        230,
+        296
+      ],
+      "native_file": "assets/3801eaf95f553fef1d9abe94614b6b5636ce6284bdcafb78a3fa4b591d04abf5.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_journal_turning_page.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2313,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_code_page_insert",
+      "title": "Orchard Prop Code Page Insert",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_code_page_insert.png",
+      "width": 215,
+      "height": 308,
+      "state_code": null,
+      "view": "front",
+      "notes": [
+        "Blank page. Typeset the VAT / Quebec / retry-loop material accurately outside image generation."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 1263,
+        "y": 87,
+        "w": 199,
+        "h": 292
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "page_center": {
+          "x": 108,
+          "y": 154,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.5023255813953489,
+          "normalized_y": 0.5
+        }
+      },
+      "sha256": "ac2bf0e4c492dbae79b073a539bbcb6decfbb0c12ba45f111257b34072fd7bef",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 51061,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        205,
+        298
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "Blank page. Typeset the VAT / Quebec / retry-loop material accurately outside image generation.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "ac2bf0e4c492dbae79b073a539bbcb6decfbb0c12ba45f111257b34072fd7bef",
+      "byte_size": 111161,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        207,
+        300
+      ],
+      "native_file": "assets/ac2bf0e4c492dbae79b073a539bbcb6decfbb0c12ba45f111257b34072fd7bef.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_code_page_insert.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2314,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_caliper_beam_fixed_jaw",
+      "title": "Orchard Prop Caliper Beam Fixed Jaw",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_caliper_beam_fixed_jaw.png",
+      "width": 728,
+      "height": 218,
+      "state_code": null,
+      "view": "side",
+      "notes": [
+        "The named fixed-jaw component contains a painted thumb knob and a second small upper prong; its engineering is illustrative.",
+        "Rail endpoints are visual alignment guides, not a mechanically verified slide track.",
+        "The caption lies inside the rectangular frame below the beam; apply the isolation polygon."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 98,
+        "y": 426,
+        "w": 712,
+        "h": 202
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {
+        "rail_left": {
+          "x": 88,
+          "y": 99,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.12087912087912088,
+          "normalized_y": 0.4541284403669725
+        },
+        "rail_right": {
+          "x": 701,
+          "y": 99,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.9629120879120879,
+          "normalized_y": 0.4541284403669725
+        },
+        "hold": {
+          "x": 161,
+          "y": 103,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.22115384615384615,
+          "normalized_y": 0.4724770642201835
+        }
+      },
+      "sha256": "0b5f9a44b36a48e3bc9ae6faec2349335dd99347b07a5d8ad0290fa72a6021d0",
+      "alpha_min": 0,
+      "alpha_max": 253,
+      "core_pixels": 50402,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        718,
+        208
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "The named fixed-jaw component contains a painted thumb knob and a second small upper prong; its engineering is illustrative. Rail endpoints are visual alignment guides, not a mechanically verified slide track. The caption lies inside the rectangular frame below the beam; apply the isolation polygon.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "0b5f9a44b36a48e3bc9ae6faec2349335dd99347b07a5d8ad0290fa72a6021d0",
+      "byte_size": 136723,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        253
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        720,
+        210
+      ],
+      "native_file": "assets/0b5f9a44b36a48e3bc9ae6faec2349335dd99347b07a5d8ad0290fa72a6021d0.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_caliper_beam_fixed_jaw.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2315,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_caliper_sliding_jaw",
+      "title": "Orchard Prop Caliper Sliding Jaw",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_caliper_sliding_jaw.png",
+      "width": 411,
+      "height": 203,
+      "state_code": null,
+      "view": "side",
+      "notes": [
+        "The sliding-jaw artwork includes an extra horizontal rail extending to the right. It is not a clean rail-free slider.",
+        "Do not claim that translating this piece over the fixed beam yields a mechanically correct caliper. Hide or clip the duplicate rail in the compositor only after manual inspection, or use staged open/closed cuts.",
+        "The caption lies inside the rectangular frame below the rail; apply the isolation polygon."
+      ],
+      "preferred": false,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 890,
+        "y": 432,
+        "w": 395,
+        "h": 187
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {
+        "slider_block_center": {
+          "x": 139,
+          "y": 90,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.3381995133819951,
+          "normalized_y": 0.4433497536945813
+        },
+        "rail_axis_left": {
+          "x": 201,
+          "y": 90,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.48905109489051096,
+          "normalized_y": 0.4433497536945813
+        },
+        "rail_axis_right": {
+          "x": 386,
+          "y": 90,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.9391727493917275,
+          "normalized_y": 0.4433497536945813
+        }
+      },
+      "sha256": "0567ad14ae4babd88053b72f8b8c7d696e44d0de991da944ff2654209bfeeeae",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 30602,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        401,
+        193
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "The sliding-jaw artwork includes an extra horizontal rail extending to the right. It is not a clean rail-free slider. Do not claim that translating this piece over the fixed beam yields a mechanically correct caliper. Hide or clip the duplicate rail in the compositor only after manual inspection, or use staged open/closed cuts. The caption lies inside the rectangular frame below the rail; apply the isolation polygon.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": false,
+      "sha256_verified": "0567ad14ae4babd88053b72f8b8c7d696e44d0de991da944ff2654209bfeeeae",
+      "byte_size": 87507,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        403,
+        195
+      ],
+      "native_file": "assets/0567ad14ae4babd88053b72f8b8c7d696e44d0de991da944ff2654209bfeeeae.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_caliper_sliding_jaw.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2316,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_graft_rootstock",
+      "title": "Orchard Prop Graft Rootstock",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_graft_rootstock.png",
+      "width": 328,
+      "height": 144,
+      "state_code": null,
+      "view": "side",
+      "notes": [
+        "Cut wooden stock, with buds/leaves baked in; the flat cut face is at viewer-right."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 19,
+        "y": 624,
+        "w": 312,
+        "h": 128
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {
+        "cut_face": {
+          "x": 293,
+          "y": 69,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.8932926829268293,
+          "normalized_y": 0.4791666666666667
+        },
+        "grip": {
+          "x": 118,
+          "y": 79,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.3597560975609756,
+          "normalized_y": 0.5486111111111112
+        }
+      },
+      "sha256": "344387fda645ef1c991dd7fe0df8a57c42b55aea9841f76304734958dcc0bba9",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 23235,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        318,
+        134
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "Cut wooden stock, with buds/leaves baked in; the flat cut face is at viewer-right.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "344387fda645ef1c991dd7fe0df8a57c42b55aea9841f76304734958dcc0bba9",
+      "byte_size": 70004,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        320,
+        136
+      ],
+      "native_file": "assets/344387fda645ef1c991dd7fe0df8a57c42b55aea9841f76304734958dcc0bba9.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_graft_rootstock.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2317,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_graft_scion",
+      "title": "Orchard Prop Graft Scion",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_graft_scion.png",
+      "width": 312,
+      "height": 124,
+      "state_code": null,
+      "view": "side",
+      "notes": [
+        "Loose leafy scion; tapered cut tip is at viewer-left. Rotate and scale to meet rootstock; the fit is not pre-registered."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 350,
+        "y": 627,
+        "w": 296,
+        "h": 108
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "cut_tip": {
+          "x": 26,
+          "y": 102,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.08333333333333333,
+          "normalized_y": 0.8225806451612904
+        },
+        "grip": {
+          "x": 143,
+          "y": 70,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.4583333333333333,
+          "normalized_y": 0.5645161290322581
+        }
+      },
+      "sha256": "ab21b791a241877600e80ecba996fbc5f6ac6492d7477b91b08480d3a6718a17",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 13054,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        302,
+        114
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "Loose leafy scion; tapered cut tip is at viewer-left. Rotate and scale to meet rootstock; the fit is not pre-registered.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "ab21b791a241877600e80ecba996fbc5f6ac6492d7477b91b08480d3a6718a17",
+      "byte_size": 46556,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        304,
+        116
+      ],
+      "native_file": "assets/ab21b791a241877600e80ecba996fbc5f6ac6492d7477b91b08480d3a6718a17.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_graft_scion.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2318,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_graft_wrapping_tape",
+      "title": "Orchard Prop Graft Wrapping Tape",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_graft_wrapping_tape.png",
+      "width": 212,
+      "height": 112,
+      "state_code": null,
+      "view": "loose_strip",
+      "notes": [
+        "Single pale tape strip. This is not a wrapped-cylinder replacement state; an actual wrap may need repeated instances, masking, and overlap."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 670,
+        "y": 642,
+        "w": 196,
+        "h": 96
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "wrap_center": {
+          "x": 106,
+          "y": 55,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.5,
+          "normalized_y": 0.49107142857142855
+        }
+      },
+      "sha256": "2f204a2285ed80fba1b7bc2b53a97d46730cb3a5a097c48c578120f358713b20",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 12712,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        202,
+        102
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "Single pale tape strip. This is not a wrapped-cylinder replacement state; an actual wrap may need repeated instances, masking, and overlap.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "2f204a2285ed80fba1b7bc2b53a97d46730cb3a5a097c48c578120f358713b20",
+      "byte_size": 38391,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        204,
+        104
+      ],
+      "native_file": "assets/2f204a2285ed80fba1b7bc2b53a97d46730cb3a5a097c48c578120f358713b20.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_graft_wrapping_tape.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2319,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_grafting_knife",
+      "title": "Orchard Prop Grafting Knife",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_grafting_knife.png",
+      "width": 387,
+      "height": 98,
+      "state_code": null,
+      "view": "side",
+      "notes": [
+        "Knife is open and rigid; blade and handle are fused. Handle faces viewer-left, blade points viewer-right."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 894,
+        "y": 645,
+        "w": 371,
+        "h": 82
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "handle_grip": {
+          "x": 117,
+          "y": 49,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.3023255813953488,
+          "normalized_y": 0.5
+        },
+        "blade_tip": {
+          "x": 358,
+          "y": 29,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.9250645994832042,
+          "normalized_y": 0.29591836734693877
+        }
+      },
+      "sha256": "19c0bb34bda754117a16216a295fe33a2cb87dedb333b204efc317d9e9ef98be",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 22798,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        377,
+        88
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "Knife is open and rigid; blade and handle are fused. Handle faces viewer-left, blade points viewer-right.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "19c0bb34bda754117a16216a295fe33a2cb87dedb333b204efc317d9e9ef98be",
+      "byte_size": 66296,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        379,
+        90
+      ],
+      "native_file": "assets/19c0bb34bda754117a16216a295fe33a2cb87dedb333b204efc317d9e9ef98be.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_grafting_knife.png",
+      "view_label": "side",
+      "view_label_basis": "source_label",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2320,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_wiping_rag",
+      "title": "Orchard Prop Wiping Rag",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_wiping_rag.png",
+      "width": 262,
+      "height": 170,
+      "state_code": null,
+      "view": "folded",
+      "notes": [
+        "Folded cloth; no wiping-hand pose is painted into it."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 1275,
+        "y": 590,
+        "w": 246,
+        "h": 154
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "grip": {
+          "x": 133,
+          "y": 77,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.5076335877862596,
+          "normalized_y": 0.45294117647058824
+        }
+      },
+      "sha256": "caeeb7e698988c267ea22c6323b5e98ef9b583353a3ad2168bba52d46371798f",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 26849,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        252,
+        162
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "Folded cloth; no wiping-hand pose is painted into it.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "caeeb7e698988c267ea22c6323b5e98ef9b583353a3ad2168bba52d46371798f",
+      "byte_size": 85514,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        254,
+        162
+      ],
+      "native_file": "assets/caeeb7e698988c267ea22c6323b5e98ef9b583353a3ad2168bba52d46371798f.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_wiping_rag.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2321,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_phone",
+      "title": "Orchard Prop Phone",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_phone.png",
+      "width": 162,
+      "height": 199,
+      "state_code": null,
+      "view": "front",
+      "notes": [
+        "Dark blank phone screen. Ines message and screen-share UI are authored overlays; no text is baked into the phone."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 68,
+        "y": 792,
+        "w": 146,
+        "h": 183
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "grip": {
+          "x": 82,
+          "y": 130,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.5061728395061729,
+          "normalized_y": 0.6532663316582915
+        },
+        "screen_center": {
+          "x": 82,
+          "y": 97,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.5061728395061729,
+          "normalized_y": 0.48743718592964824
+        }
+      },
+      "sha256": "ea6ec31dffc304f1810f44b62b3d4831a7b509604f84fb11aeca8e7a983599d6",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 24563,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        152,
+        191
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "Dark blank phone screen. Ines message and screen-share UI are authored overlays; no text is baked into the phone.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "ea6ec31dffc304f1810f44b62b3d4831a7b509604f84fb11aeca8e7a983599d6",
+      "byte_size": 50099,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        154,
+        191
+      ],
+      "native_file": "assets/ea6ec31dffc304f1810f44b62b3d4831a7b509604f84fb11aeca8e7a983599d6.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_phone.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2322,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_book_support_hand_left",
+      "title": "Orchard Prop Book Support Hand Left",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_book_support_hand_left.png",
+      "width": 276,
+      "height": 175,
+      "state_code": null,
+      "view": "palm_up",
+      "notes": [
+        "Side name follows the printed LEFT label. Wrist is at viewer-right. This perspective is not sufficient to certify actor-anatomical handedness; verify against the chosen arm."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 297,
+        "y": 810,
+        "w": 260,
+        "h": 159
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "wrist": {
+          "x": 244,
+          "y": 124,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.8840579710144928,
+          "normalized_y": 0.7085714285714285
+        },
+        "book_contact": {
+          "x": 117,
+          "y": 78,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.42391304347826086,
+          "normalized_y": 0.44571428571428573
+        }
+      },
+      "sha256": "9b725c7e72162487281746828c0ab4c4c10e046bff2c89def8873dbfacc3a012",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 24614,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        266,
+        165
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "Side name follows the printed LEFT label. Wrist is at viewer-right. This perspective is not sufficient to certify actor-anatomical handedness; verify against the chosen arm.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "9b725c7e72162487281746828c0ab4c4c10e046bff2c89def8873dbfacc3a012",
+      "byte_size": 72989,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        268,
+        167
+      ],
+      "native_file": "assets/9b725c7e72162487281746828c0ab4c4c10e046bff2c89def8873dbfacc3a012.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_book_support_hand_left.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "hand",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "view_not_recorded"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2323,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_book_support_hand_right",
+      "title": "Orchard Prop Book Support Hand Right",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_book_support_hand_right.png",
+      "width": 279,
+      "height": 171,
+      "state_code": null,
+      "view": "palm_up",
+      "notes": [
+        "Side name follows the printed RIGHT label. Wrist is at viewer-left; verify anatomical side in the assembled pose."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 633,
+        "y": 812,
+        "w": 263,
+        "h": 155
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "wrist": {
+          "x": 33,
+          "y": 117,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.11827956989247312,
+          "normalized_y": 0.6842105263157895
+        },
+        "book_contact": {
+          "x": 142,
+          "y": 74,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.5089605734767025,
+          "normalized_y": 0.4327485380116959
+        }
+      },
+      "sha256": "1be3f9a004f5cc84e9b93e7c7a10c259bf8e33f1175e1e4cf89a452086dfc604",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 23911,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        269,
+        161
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "Side name follows the printed RIGHT label. Wrist is at viewer-left; verify anatomical side in the assembled pose.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "1be3f9a004f5cc84e9b93e7c7a10c259bf8e33f1175e1e4cf89a452086dfc604",
+      "byte_size": 72135,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        271,
+        163
+      ],
+      "native_file": "assets/1be3f9a004f5cc84e9b93e7c7a10c259bf8e33f1175e1e4cf89a452086dfc604.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_book_support_hand_right.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "hand",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "view_not_recorded"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2324,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_page_turn_hand",
+      "title": "Orchard Prop Page Turn Hand",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_page_turn_hand.png",
+      "width": 194,
+      "height": 203,
+      "state_code": null,
+      "view": "pinch",
+      "notes": [
+        "Pinching hand with no explicit left/right label. Use the visible wrist and pinch landmarks; do not infer a second hand by mirroring without a review."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 955,
+        "y": 785,
+        "w": 178,
+        "h": 187
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "wrist": {
+          "x": 50,
+          "y": 170,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.25773195876288657,
+          "normalized_y": 0.8374384236453202
+        },
+        "pinch": {
+          "x": 143,
+          "y": 51,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.7371134020618557,
+          "normalized_y": 0.2512315270935961
+        }
+      },
+      "sha256": "fcc8b0ad9fb5de49ddad9583c6c8734d2c188155f3d22f0ffa2b8987ceb5c3ef",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 20419,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        184,
+        195
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "Pinching hand with no explicit left/right label. Use the visible wrist and pinch landmarks; do not infer a second hand by mirroring without a review.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "fcc8b0ad9fb5de49ddad9583c6c8734d2c188155f3d22f0ffa2b8987ceb5c3ef",
+      "byte_size": 60656,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        186,
+        195
+      ],
+      "native_file": "assets/fcc8b0ad9fb5de49ddad9583c6c8734d2c188155f3d22f0ffa2b8987ceb5c3ef.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_page_turn_hand.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "hand",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "view_not_recorded"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2325,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_shoulder_contact_hand",
+      "title": "Orchard Prop Shoulder Contact Hand",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_shoulder_contact_hand.png",
+      "width": 310,
+      "height": 171,
+      "state_code": null,
+      "view": "draped_contact",
+      "notes": [
+        "A single draped hand, with wrist at viewer-right. It does not include an arm, shoulder, or the person being touched."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_props.png",
+      "source_frame": {
+        "x": 1201,
+        "y": 806,
+        "w": 294,
+        "h": 155
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "wrist": {
+          "x": 273,
+          "y": 106,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.8806451612903226,
+          "normalized_y": 0.6198830409356725
+        },
+        "shoulder_contact": {
+          "x": 143,
+          "y": 80,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.4612903225806452,
+          "normalized_y": 0.4678362573099415
+        }
+      },
+      "sha256": "39287023af87beec1bd9e565e8f4d11c732d320ad04715519257c93ee53f8597",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 29043,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        300,
+        161
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "A single draped hand, with wrist at viewer-right. It does not include an arm, shoulder, or the person being touched.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "39287023af87beec1bd9e565e8f4d11c732d320ad04715519257c93ee53f8597",
+      "byte_size": 85668,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        302,
+        163
+      ],
+      "native_file": "assets/39287023af87beec1bd9e565e8f4d11c732d320ad04715519257c93ee53f8597.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/orchard_prop_shoulder_contact_hand.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "hand",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "view_not_recorded"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2326,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_prop_caliper_slider_compact",
+      "title": "Caliper \u00b7 Compact sliding jaw",
+      "actor": "props",
+      "category": "prop",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/props/caliper_slider.png",
+      "width": 1536,
+      "height": 1024,
+      "state_code": null,
+      "notes": [
+        "Use with the separate beam/fixed jaw. Match scale and align the slot before sliding it."
+      ],
+      "preferred": true,
+      "provenance": "new_single_component_generation",
+      "pivot_points": {},
+      "sha256": "39dd84842096a4dd3a61886556cdce84bb57a9caa2dded08b128b379e50decc7",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 273279,
+      "visible_bounds_alpha_128": [
+        406,
+        153,
+        1132,
+        846
+      ],
+      "owner": "props",
+      "is_cutout": true,
+      "note": "Use with the separate beam/fixed jaw. Match scale and align the slot before sliding it.",
+      "owner_name": "Props",
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "39dd84842096a4dd3a61886556cdce84bb57a9caa2dded08b128b379e50decc7",
+      "byte_size": 1556424,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        41,
+        23,
+        1504,
+        1024
+      ],
+      "native_file": "assets/39dd84842096a4dd3a61886556cdce84bb57a9caa2dded08b128b379e50decc7.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/props/caliper_slider.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2375,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__13698f84f1ddafc2",
+      "file": "Odyssey_Watson_Kits/props/ajax_shield.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Ajax Shield",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1278,
+      "height": 1230,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "3c7e19f79396666d86615a47cf86c92f0082e3138a2363b51bc2398980cfb7ab",
+      "byte_size": 3047371,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        28,
+        1256,
+        1230
+      ],
+      "native_file": "assets/3c7e19f79396666d86615a47cf86c92f0082e3138a2363b51bc2398980cfb7ab.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/ajax_shield.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2507,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__e2d385db95666c5b",
+      "file": "Odyssey_Watson_Kits/props/calipers.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Calipers",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "c0ab02550379be37ee8a132c7ffe39e83afd91f95682cf2b7ad612ec6c53dbe6",
+      "byte_size": 1838542,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "native_file": "assets/c0ab02550379be37ee8a132c7ffe39e83afd91f95682cf2b7ad612ec6c53dbe6.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/calipers.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2508,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__e81aa16dfc7f33c9",
+      "file": "Odyssey_Watson_Kits/props/chisel.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Chisel",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "3b8fe6f265322077aeffc7b38048f536afd2b08b2094148466b399242eb2bac2",
+      "byte_size": 1583832,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        65,
+        15,
+        1504,
+        1008
+      ],
+      "native_file": "assets/3b8fe6f265322077aeffc7b38048f536afd2b08b2094148466b399242eb2bac2.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/chisel.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2511,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__dde06d40b8d06ef6",
+      "file": "Odyssey_Watson_Kits/props/clay_pot.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Clay Pot",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "a6f066ac437addc680d3456f8dbc064760b896ed912b64503fbbdddcc0578230",
+      "byte_size": 1874813,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        37,
+        1522,
+        1000
+      ],
+      "native_file": "assets/a6f066ac437addc680d3456f8dbc064760b896ed912b64503fbbdddcc0578230.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/clay_pot.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2512,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__0ff1059e09824b8e",
+      "file": "Odyssey_Watson_Kits/props/craft_hammer.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Craft Hammer",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "af2d4242d9479595604b5dcf37a300eacfb30172d28287ac8ac26f04dd3beafe",
+      "byte_size": 1456374,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        31,
+        16,
+        1434,
+        1024
+      ],
+      "native_file": "assets/af2d4242d9479595604b5dcf37a300eacfb30172d28287ac8ac26f04dd3beafe.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/craft_hammer.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2513,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__adb4d94ad3d959b9",
+      "file": "Odyssey_Watson_Kits/props/flatwhite.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Flatwhite",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1374,
+      "height": 1145,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "c0b35aab59f92594e543e9944e376c67333ab30463604a6491f8794cb4c8d508",
+      "byte_size": 2272618,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1344,
+        1145
+      ],
+      "native_file": "assets/c0b35aab59f92594e543e9944e376c67333ab30463604a6491f8794cb4c8d508.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/flatwhite.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2514,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__a02ce3b412dd3058",
+      "file": "Odyssey_Watson_Kits/props/framework_cup.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Framework Cup",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1272,
+      "height": 1236,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "692c185b073a99d1d2b5be6f28702037ce08f83db5fc1b0fb492463c02a2819b",
+      "byte_size": 2247430,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        21,
+        1252,
+        1236
+      ],
+      "native_file": "assets/692c185b073a99d1d2b5be6f28702037ce08f83db5fc1b0fb492463c02a2819b.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/framework_cup.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2515,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__1cf7028796e72b34",
+      "file": "Odyssey_Watson_Kits/props/graft_branch.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Graft Branch",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "69300cd00cbb696ad85b10cd73b2c207641f6ca51b5ef5048d39b2d87ab5271a",
+      "byte_size": 1826690,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1524,
+        1024
+      ],
+      "native_file": "assets/69300cd00cbb696ad85b10cd73b2c207641f6ca51b5ef5048d39b2d87ab5271a.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/graft_branch.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2516,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__089c0ff1733d4f9e",
+      "file": "Odyssey_Watson_Kits/props/grafting_knife.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Grafting Knife",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "249bfc60d8bc2adf3f3a6e937e8d06e7a2158599dce570f3f5c1479ee2744467",
+      "byte_size": 1458576,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        21,
+        69,
+        1518,
+        954
+      ],
+      "native_file": "assets/249bfc60d8bc2adf3f3a6e937e8d06e7a2158599dce570f3f5c1479ee2744467.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/grafting_knife.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2517,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__b4c61f3ca6677f8b",
+      "file": "Odyssey_Watson_Kits/props/hand_plane.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Hand Plane",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "7388c0164d31563c74649c5be5c48173fac4dc83601977404c4ce1abf838183d",
+      "byte_size": 2399783,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        17,
+        1508,
+        1024
+      ],
+      "native_file": "assets/7388c0164d31563c74649c5be5c48173fac4dc83601977404c4ce1abf838183d.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/hand_plane.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "hand",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "view_not_recorded"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2518,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__705268d8949b1841",
+      "file": "Odyssey_Watson_Kits/props/journal.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Journal",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "ca9d9ef99e67d9a828a34545136d83bb2f5dbe8535f076b775e595c723f13577",
+      "byte_size": 2767272,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        39,
+        1516,
+        1024
+      ],
+      "native_file": "assets/ca9d9ef99e67d9a828a34545136d83bb2f5dbe8535f076b775e595c723f13577.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/journal.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2519,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__eecf036d714cbfde",
+      "file": "Odyssey_Watson_Kits/props/juggling_ball.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Juggling Ball",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1272,
+      "height": 1237,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "d052a141c3964e668110a003910e656ee318009c9ecb20e7ab25dec24842f5aa",
+      "byte_size": 2070571,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        19,
+        1258,
+        1237
+      ],
+      "native_file": "assets/d052a141c3964e668110a003910e656ee318009c9ecb20e7ab25dec24842f5aa.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/juggling_ball.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2520,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__dd353f3e612d16d6",
+      "file": "Odyssey_Watson_Kits/props/keyboard.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Keyboard",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "e4c0e87b40a1c30a72a17152b1fbc80304aa60dab33522b5028142a9d2e804c5",
+      "byte_size": 2233925,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        16,
+        1536,
+        1024
+      ],
+      "native_file": "assets/e4c0e87b40a1c30a72a17152b1fbc80304aa60dab33522b5028142a9d2e804c5.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/keyboard.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2521,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__f09b7a3ab5ede08c",
+      "file": "Odyssey_Watson_Kits/props/lanyard.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Lanyard",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "055ce50b9af91b065b1ec95484551312faa634945efd6a9b1d30893f7fad986b",
+      "byte_size": 1425307,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        65,
+        0,
+        1516,
+        988
+      ],
+      "native_file": "assets/055ce50b9af91b065b1ec95484551312faa634945efd6a9b1d30893f7fad986b.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/lanyard.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2522,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__1311319907d59c2e",
+      "file": "Odyssey_Watson_Kits/props/lead_badge.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Lead Badge",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "6cfcb188a1fdda112a031617176113b08715419e7991b7e3a2cfa197531a42ac",
+      "byte_size": 2440404,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        53,
+        1532,
+        1024
+      ],
+      "native_file": "assets/6cfcb188a1fdda112a031617176113b08715419e7991b7e3a2cfa197531a42ac.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/lead_badge.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2523,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__218aa75f3c2c6542",
+      "file": "Odyssey_Watson_Kits/props/maze.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Maze",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "840ece43584fc7d86219c8b60381f18c278120f206f0679f9ef16b45479d974f",
+      "byte_size": 2786294,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1535,
+        1024
+      ],
+      "native_file": "assets/840ece43584fc7d86219c8b60381f18c278120f206f0679f9ef16b45479d974f.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/maze.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2524,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__6d277be0c0f77367",
+      "file": "Odyssey_Watson_Kits/props/moly_herb.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Moly Herb",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1024,
+      "height": 1536,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "cf2a27fa1599cf136451e4add730a724b86ea1dedfa39415cece893d26a8bc1d",
+      "byte_size": 2163659,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        19,
+        1006,
+        1536
+      ],
+      "native_file": "assets/cf2a27fa1599cf136451e4add730a724b86ea1dedfa39415cece893d26a8bc1d.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/moly_herb.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2525,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__1dffe2c915fd1ff3",
+      "file": "Odyssey_Watson_Kits/props/offer_letter.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Offer Letter",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "b48b66e2b8e3ae019619539c2b6867b1f2a7446c3bb2cd2cde440748f97445ce",
+      "byte_size": 1905527,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        33,
+        50,
+        1510,
+        966
+      ],
+      "native_file": "assets/b48b66e2b8e3ae019619539c2b6867b1f2a7446c3bb2cd2cde440748f97445ce.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/offer_letter.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2526,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__d8bf36c71d2525c3",
+      "file": "Odyssey_Watson_Kits/props/phone.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Phone",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1024,
+      "height": 1536,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "2cab4035750a8e544e3e4d8a03079d19e5cb5d88d0ba5c7b3228882be4b9225e",
+      "byte_size": 2738503,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        7,
+        1023,
+        1536
+      ],
+      "native_file": "assets/2cab4035750a8e544e3e4d8a03079d19e5cb5d88d0ba5c7b3228882be4b9225e.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/phone.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2527,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__00142aa35ebe7e99",
+      "file": "Odyssey_Watson_Kits/props/pottery_wheel.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Pottery Wheel",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "735f708407cb99988d68555b8b5c1932ae6f930cb881a474fae03a88958ab3ec",
+      "byte_size": 2305050,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        25,
+        1535,
+        1024
+      ],
+      "native_file": "assets/735f708407cb99988d68555b8b5c1932ae6f930cb881a474fae03a88958ab3ec.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/pottery_wheel.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2528,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__527f79bd61ccf81c",
+      "file": "Odyssey_Watson_Kits/props/research_hood.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Research Hood",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1312,
+      "height": 1199,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "5e8b3380324a22e9109537f7b9359a739fd7791307c12b5ff91fda40112ff99c",
+      "byte_size": 1686513,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        24,
+        1300,
+        1199
+      ],
+      "native_file": "assets/5e8b3380324a22e9109537f7b9359a739fd7791307c12b5ff91fda40112ff99c.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/research_hood.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2529,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__89103451200062da",
+      "file": "Odyssey_Watson_Kits/props/timber_joinery_piece.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Timber Joinery Piece",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "f31d7fbda4c4ee916922ff417dccfd3ef44f966a1dac2254b9f0055914719847",
+      "byte_size": 1835910,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        47,
+        21,
+        1488,
+        1024
+      ],
+      "native_file": "assets/f31d7fbda4c4ee916922ff417dccfd3ef44f966a1dac2254b9f0055914719847.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/timber_joinery_piece.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2532,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__d65c36ae70b5449b",
+      "file": "Odyssey_Watson_Kits/props/unicycle.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Unicycle",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1024,
+      "height": 1536,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "b4f4ea45020f73e60b121f5cc4a480444361e7fa7e7634ca74ce51060cfec742",
+      "byte_size": 2329051,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        16,
+        1023,
+        1536
+      ],
+      "native_file": "assets/b4f4ea45020f73e60b121f5cc4a480444361e7fa7e7634ca74ce51060cfec742.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/unicycle.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2533,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__0ad0db25925178b6",
+      "file": "Odyssey_Watson_Kits/props/wayfinding_canoe.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Wayfinding Canoe",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "facc526b2f84c0cc5eeb46374e948e6c4e05db66dff99140f6af84f83598485a",
+      "byte_size": 1962531,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        47,
+        1521,
+        1024
+      ],
+      "native_file": "assets/facc526b2f84c0cc5eeb46374e948e6c4e05db66dff99140f6af84f83598485a.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/wayfinding_canoe.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2534,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__45af945122279a56",
+      "file": "Odyssey_Watson_Kits/props/wayfinding_paddle.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Wayfinding Paddle",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "4f6f2b7194f939fddb74bf9bc1b02039fa140833d453dea1eca4cfde880e7bd2",
+      "byte_size": 1512671,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        18,
+        1484,
+        982
+      ],
+      "native_file": "assets/4f6f2b7194f939fddb74bf9bc1b02039fa140833d453dea1eca4cfde880e7bd2.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/wayfinding_paddle.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2535,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__6a14bce94fc381d4",
+      "file": "Odyssey_Watson_Kits/props/wireless_headset.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Wireless Headset",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "8958a5bad793917e01d30384857e3c3942984295eab7ab5a35153f1805a5fa5b",
+      "byte_size": 2062130,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        41,
+        0,
+        1508,
+        1024
+      ],
+      "native_file": "assets/8958a5bad793917e01d30384857e3c3942984295eab7ab5a35153f1805a5fa5b.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/wireless_headset.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "head",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2536,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__3d3e67ed1cbdb103",
+      "file": "Odyssey_Watson_Kits/props/wooden_mallet.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Wooden Mallet",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "510d16a6c1f59c76b108b9d7d28e42164447bc1337bbd8916d1aefad63a774e3",
+      "byte_size": 1929999,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1500,
+        1006
+      ],
+      "native_file": "assets/510d16a6c1f59c76b108b9d7d28e42164447bc1337bbd8916d1aefad63a774e3.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/wooden_mallet.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2537,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "assembly_prop_caliper_slider_clean",
+      "title": "Caliper \u00b7 Independent sliding jaw / assembly candidate",
+      "actor": "props",
+      "owner": "props",
+      "owner_name": "Props",
+      "category": "prop",
+      "is_cutout": true,
+      "preferred": true,
+      "file": "Ideator_Assembly/props/caliper_slider_clean.png",
+      "width": 1536,
+      "height": 1024,
+      "state_code": null,
+      "provenance": "single_builtin_imagegen_component_edit",
+      "sha256": "355a784cf63d597eb58fe3c0335739bb66689d65542bd3bcf6ce6ef82656fd7d",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "visible_bounds_alpha_128": [
+        343,
+        99,
+        1227,
+        937
+      ],
+      "note": "Separate movable jaw. Original PNG alpha preserved; nine edge pixels have alpha 1/255. Slot aligned in orchard proof to illustrative fixed rail. Mechanical registration remains a shot-specific proposal.",
+      "pivot_points": {
+        "slot_center": {
+          "normalized_x": 0.556,
+          "normalized_y": 0.488,
+          "basis": "visual_slot_registration_for_blocking",
+          "confidence": "proposed"
+        }
+      },
+      "packet_ids": [
+        "props"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "355a784cf63d597eb58fe3c0335739bb66689d65542bd3bcf6ce6ef82656fd7d",
+      "byte_size": 1905755,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        37,
+        1468,
+        998
+      ],
+      "native_file": "assets/355a784cf63d597eb58fe3c0335739bb66689d65542bd3bcf6ce6ef82656fd7d.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Ideator_Assembly/props/caliper_slider_clean.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2854,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

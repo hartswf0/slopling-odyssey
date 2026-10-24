@@ -1,0 +1,782 @@
+{
+  "actor_id": "extra_compagnon_stonemason",
+  "name": "Compagnon stonemason",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "extra_compagnon_stonemason__E00",
+      "part": "head",
+      "canvas_width_px": 192,
+      "canvas_height_px": 235,
+      "drawn_width_px": 191.96911196911194,
+      "drawn_height_px": 234.44015444015443,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E00.png",
+      "source_scale": 0.8494208494208493,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          95.98455598455597,
+          221.04478764478762
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "extra_compagnon_stonemason__B03",
+      "part": "torso_front",
+      "canvas_width_px": 317,
+      "canvas_height_px": 342,
+      "drawn_width_px": 316.8806315970136,
+      "drawn_height_px": 341.8038273405989,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B03.png",
+      "source_scale": 1.1868188449326351,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          158.4403157985068,
+          36.41160216253324
+        ],
+        "waist": [
+          158.4403157985068,
+          313.0116021625332
+        ],
+        "shoulder_left": [
+          55.839826654080476,
+          81.43950913927743
+        ],
+        "shoulder_right": [
+          261.0408049429331,
+          81.43950913927743
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "extra_compagnon_stonemason__B05",
+      "part": "pelvis_front",
+      "canvas_width_px": 363,
+      "canvas_height_px": 264,
+      "drawn_width_px": 362.4593525801458,
+      "drawn_height_px": 263.3599790282707,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B05.png",
+      "source_scale": 1.357525665094179,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          181.2296762900729,
+          42.24619869773085
+        ],
+        "hip_left": [
+          102.74297243698784,
+          77.24619869773086
+        ],
+        "hip_right": [
+          259.71638014315795,
+          77.24619869773086
+        ],
+        "hem_pin_left": [
+          115.53900935616556,
+          198.49740275007085
+        ],
+        "hem_pin_right": [
+          293.90430649288976,
+          192.68719290346775
+        ],
+        "upper_pin_left": [
+          84.99468189154655,
+          80.79992758640553
+        ],
+        "upper_pin_right": [
+          276.10714502350504,
+          53.45936069140877
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "extra_compagnon_stonemason__B11",
+      "part": "upper_arm_left",
+      "canvas_width_px": 177,
+      "canvas_height_px": 206,
+      "drawn_width_px": 176.93250396540438,
+      "drawn_height_px": 205.6553130506973,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B11.png",
+      "source_scale": 1.1489123634117167,
+      "assembly_rotation_deg": 31.29772937854986,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          73.6912389892275,
+          38.741324894243085
+        ],
+        "distal": [
+          118.54477765682093,
+          167.81013979991533
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "extra_compagnon_stonemason__B12",
+      "part": "upper_arm_right",
+      "canvas_width_px": 174,
+      "canvas_height_px": 204,
+      "drawn_width_px": 173.8689426242008,
+      "drawn_height_px": 203.4152988871369,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B12.png",
+      "source_scale": 1.136398317805234,
+      "assembly_rotation_deg": -32.696170524519836,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          100.73034689025593,
+          38.648906788556005
+        ],
+        "distal": [
+          52.7402459293409,
+          166.58462940706926
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "extra_compagnon_stonemason__B13",
+      "part": "forearm_left",
+      "canvas_width_px": 128,
+      "canvas_height_px": 191,
+      "drawn_width_px": 127.08173652554161,
+      "drawn_height_px": 190.62260478831246,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B13.png",
+      "source_scale": 0.9208821487358088,
+      "assembly_rotation_deg": 7.239819025445269,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          42.415831770771355,
+          31.181069556194483
+        ],
+        "distal": [
+          81.31389373337191,
+          151.16280471498303
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "extra_compagnon_stonemason__B14",
+      "part": "forearm_right",
+      "canvas_width_px": 130,
+      "canvas_height_px": 189,
+      "drawn_width_px": 129.6946520712402,
+      "drawn_height_px": 188.1485797653203,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B14.png",
+      "source_scale": 0.9133426202200015,
+      "assembly_rotation_deg": -7.6727203060997615,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          81.91769960753193,
+          29.619701173734647
+        ],
+        "distal": [
+          42.114228218344266,
+          149.30411812736364
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_open.png",
+      "asset_id": "extra_compagnon_stonemason__B21",
+      "part": "hand_left_open",
+      "canvas_width_px": 87,
+      "canvas_height_px": 107,
+      "drawn_width_px": 86.59922786885244,
+      "drawn_height_px": 106.78800491803277,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B21.png",
+      "source_scale": 0.5312836065573769,
+      "assembly_rotation_deg": 169.2771319850097,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          36.74888706557376,
+          89.27689724590162
+        ],
+        "grip": [
+          43.033972131147536,
+          51.98078806557376
+        ],
+        "fingertip": [
+          43.033972131147536,
+          10.174081065573768
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_open.png",
+      "asset_id": "extra_compagnon_stonemason__B22",
+      "part": "hand_right_open",
+      "canvas_width_px": 90,
+      "canvas_height_px": 107,
+      "drawn_width_px": 89.82735326086956,
+      "drawn_height_px": 106.73603152173914,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B22.png",
+      "source_scale": 0.5283961956521739,
+      "assembly_rotation_deg": 190.72286801499027,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          47.97309060326087,
+          89.04004292934782
+        ],
+        "grip": [
+          44.91367663043478,
+          51.951913956521736
+        ],
+        "fingertip": [
+          44.91367663043478,
+          10.145206956521738
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "extra_compagnon_stonemason__B15",
+      "part": "thigh_left",
+      "canvas_width_px": 235,
+      "canvas_height_px": 321,
+      "drawn_width_px": 234.74742382689405,
+      "drawn_height_px": 320.49348881755583,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B15.png",
+      "source_scale": 1.4056731965682279,
+      "assembly_rotation_deg": 9.84188846107768,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          122.99640469971993,
+          46.92137130144745
+        ],
+        "distal": [
+          161.45562335782665,
+          268.6100911322227
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "extra_compagnon_stonemason__B16",
+      "part": "thigh_right",
+      "canvas_width_px": 235,
+      "canvas_height_px": 321,
+      "drawn_width_px": 234.12131114022216,
+      "drawn_height_px": 320.15384113753277,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B16.png",
+      "source_scale": 1.4103693442182057,
+      "assembly_rotation_deg": -12.062901398931842,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          113.4360063554703,
+          47.62817275424881
+        ],
+        "distal": [
+          66.41429241923531,
+          267.6598941457311
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "extra_compagnon_stonemason__B17",
+      "part": "shin_left",
+      "canvas_width_px": 155,
+      "canvas_height_px": 250,
+      "drawn_width_px": 154.18469975947696,
+      "drawn_height_px": 249.84673975623278,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B17.png",
+      "source_scale": 1.125435764667715,
+      "assembly_rotation_deg": -11.347128148998337,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          83.41729887717105,
+          36.981819226981116
+        ],
+        "distal": [
+          49.96934795124655,
+          203.65885597426973
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "extra_compagnon_stonemason__B18",
+      "part": "shin_right",
+      "canvas_width_px": 156,
+      "canvas_height_px": 250,
+      "drawn_width_px": 155.18742981759115,
+      "drawn_height_px": 249.64934361960314,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B18.png",
+      "source_scale": 1.1245465928810954,
+      "assembly_rotation_deg": 11.58941586848742,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          67.11294066314377,
+          36.941355576143984
+        ],
+        "distal": [
+          101.26542068894264,
+          203.47546051590538
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "extra_compagnon_stonemason__B19",
+      "part": "shoe_left",
+      "canvas_width_px": 165,
+      "canvas_height_px": 115,
+      "drawn_width_px": 164.28895956383457,
+      "drawn_height_px": 114.85688323489319,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B19.png",
+      "source_scale": 0.7269422989550202,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          66.00636074511583,
+          29.041344843253057
+        ],
+        "sole": [
+          66.00636074511583,
+          109.04134484325303
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "extra_compagnon_stonemason__B20",
+      "part": "shoe_right",
+      "canvas_width_px": 160,
+      "canvas_height_px": 120,
+      "drawn_width_px": 159.090909090909,
+      "drawn_height_px": 119.50146627565977,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B20.png",
+      "source_scale": 0.733137829912023,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          98.24046920821108,
+          33.63636363636362
+        ],
+        "sole": [
+          98.24046920821108,
+          113.63636363636357
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "extra_compagnon_stonemason__E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 196,
+      "canvas_height_px": 236,
+      "drawn_width_px": 195.55555555555557,
+      "drawn_height_px": 235.7142857142857,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E01.png",
+      "source_scale": 0.8730158730158731,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          96.03174603174604,
+          222.13015873015877
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "extra_compagnon_stonemason__E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 199,
+      "canvas_height_px": 236,
+      "drawn_width_px": 198.7096774193548,
+      "drawn_height_px": 235.08064516129033,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E02.png",
+      "source_scale": 0.8870967741935482,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          101.12903225806448,
+          221.38387096774187
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "extra_compagnon_stonemason__E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 196,
+      "canvas_height_px": 229,
+      "drawn_width_px": 195.86837294332724,
+      "drawn_height_px": 228.0438756855576,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E03.png",
+      "source_scale": 0.40219378427787933,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          98.13528336380256,
+          217.4219378427788
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "extra_compagnon_stonemason__E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 194,
+      "canvas_height_px": 236,
+      "drawn_width_px": 193.8095238095238,
+      "drawn_height_px": 235.7142857142857,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E04.png",
+      "source_scale": 0.8730158730158729,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          101.26984126984125,
+          222.1301587301587
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "extra_compagnon_stonemason__E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 194,
+      "canvas_height_px": 236,
+      "drawn_width_px": 193.359375,
+      "drawn_height_px": 235.46874999999997,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E05.png",
+      "source_scale": 0.859375,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          97.96875,
+          221.99375
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "extra_compagnon_stonemason__E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 208,
+      "canvas_height_px": 235,
+      "drawn_width_px": 207.21991701244812,
+      "drawn_height_px": 234.6058091286307,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E06.png",
+      "source_scale": 0.9128630705394191,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          100.4149377593361,
+          220.70290456431536
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "extra_compagnon_stonemason__E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 213,
+      "canvas_height_px": 235,
+      "drawn_width_px": 212.69709543568462,
+      "drawn_height_px": 234.6058091286307,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E07.png",
+      "source_scale": 0.912863070539419,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          106.80497925311202,
+          220.70290456431533
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "extra_compagnon_stonemason__E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 212,
+      "canvas_height_px": 235,
+      "drawn_width_px": 211.71548117154813,
+      "drawn_height_px": 234.72803347280333,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E08.png",
+      "source_scale": 0.9205020920502093,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          104.93723849372385,
+          220.76401673640171
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "extra_compagnon_stonemason__E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 208,
+      "canvas_height_px": 235,
+      "drawn_width_px": 207.21991701244812,
+      "drawn_height_px": 234.6058091286307,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E09.png",
+      "source_scale": 0.9128630705394191,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          102.24066390041493,
+          220.70290456431536
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "extra_compagnon_stonemason__E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 210,
+      "canvas_height_px": 235,
+      "drawn_width_px": 209.1358024691358,
+      "drawn_height_px": 234.4855967078189,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E10.png",
+      "source_scale": 0.9053497942386831,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          101.39917695473251,
+          220.64279835390946
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "extra_compagnon_stonemason__E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 208,
+      "canvas_height_px": 235,
+      "drawn_width_px": 207.21991701244812,
+      "drawn_height_px": 234.6058091286307,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E11.png",
+      "source_scale": 0.9128630705394191,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          99.50207468879668,
+          220.70290456431536
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "extra_compagnon_stonemason__E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 247,
+      "canvas_height_px": 238,
+      "drawn_width_px": 246.66666666666666,
+      "drawn_height_px": 237.77777777777774,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E12.png",
+      "source_scale": 1.1111111111111112,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          130,
+          222.2888888888889
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "extra_compagnon_stonemason__E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 220,
+      "canvas_height_px": 237,
+      "drawn_width_px": 220,
+      "drawn_height_px": 236.14678899082568,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E13.png",
+      "source_scale": 1.0091743119266054,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          116.05504587155963,
+          221.47339449541283
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "extra_compagnon_stonemason__E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 244,
+      "canvas_height_px": 238,
+      "drawn_width_px": 243.33333333333334,
+      "drawn_height_px": 237.77777777777774,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E14.png",
+      "source_scale": 1.1111111111111112,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          120,
+          222.2888888888889
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "extra_compagnon_stonemason__E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 240,
+      "canvas_height_px": 238,
+      "drawn_width_px": 239.6039603960396,
+      "drawn_height_px": 237.42574257425744,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E15.png",
+      "source_scale": 1.0891089108910892,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          115.44554455445545,
+          222.11287128712874
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "extra_compagnon_stonemason__E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 242,
+      "canvas_height_px": 238,
+      "drawn_width_px": 241.89054726368158,
+      "drawn_height_px": 237.51243781094527,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E16.png",
+      "source_scale": 1.0945273631840795,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          119.30348258706466,
+          222.15621890547263
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "extra_compagnon_stonemason__E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 253,
+      "canvas_height_px": 238,
+      "drawn_width_px": 252.2222222222222,
+      "drawn_height_px": 237.77777777777774,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/heads/E17.png",
+      "source_scale": 1.111111111111111,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          126.66666666666664,
+          222.28888888888886
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "extra_compagnon_stonemason__B23",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 83,
+      "canvas_height_px": 108,
+      "drawn_width_px": 82.22448685714284,
+      "drawn_height_px": 107.78074628571424,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B23.png",
+      "source_scale": 0.555570857142857,
+      "assembly_rotation_deg": -60.98239452043727,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          43.20674555999999,
+          17.806045971428567
+        ],
+        "grip": [
+          41.11224342857142,
+          52.22366057142856
+        ],
+        "fingertip": [
+          41.11224342857142,
+          98.89161257142855
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "extra_compagnon_stonemason__B24",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 81,
+      "canvas_height_px": 108,
+      "drawn_width_px": 80.19681016949151,
+      "drawn_height_px": 107.66147118644065,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_compagnon_stonemason/parts/B24.png",
+      "source_scale": 0.549293220338983,
+      "assembly_rotation_deg": 60.982394520437225,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          37.63757145762711,
+          17.48400320338983
+        ],
+        "grip": [
+          39.823758474576266,
+          51.61159098305084
+        ],
+        "fingertip": [
+          39.823758474576266,
+          98.27954298305083
+        ]
+      }
+    }
+  ]
+}

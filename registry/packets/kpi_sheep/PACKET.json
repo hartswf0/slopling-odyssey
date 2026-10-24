@@ -1,0 +1,71 @@
+{
+  "id": "kpi_sheep",
+  "name": "Kpi Sheep",
+  "kind": "set_or_support",
+  "asset_ids": [
+    "asset__d91a8f74b32febe2"
+  ],
+  "status": "inventory_only",
+  "counts": {
+    "records": 1,
+    "native_records": 0,
+    "unique_native_files": 0,
+    "original": 1,
+    "historical_scale": 0,
+    "views": {
+      "unspecified": 1
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {},
+    "side": {},
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {}
+  },
+  "assets": [
+    {
+      "id": "asset__d91a8f74b32febe2",
+      "file": "Odyssey_Watson_Kits/extras/kpi_sheep/fullkit_reference.png",
+      "owner": "kpi_sheep",
+      "category": "reference",
+      "is_cutout": false,
+      "title": "Fullkit Reference",
+      "note": "Reference / source image; see original metadata.",
+      "preferred": true,
+      "owner_name": "Kpi Sheep",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "kpi_sheep"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "465e87c2f7adaad6004e405428d2384b4cf7fc15390c13468a3579b58291cf61",
+      "byte_size": 2587657,
+      "has_alpha": false,
+      "alpha_extrema": null,
+      "alpha_bounds": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/kpi_sheep/fullkit_reference.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "reference",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2468,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

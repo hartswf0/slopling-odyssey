@@ -1,0 +1,34 @@
+{
+  "family": {
+    "file": "Amy_Mark_Cutout_Packets.html",
+    "records": 215,
+    "defaultPacket": "Amy",
+    "checks": [
+      "filters",
+      "pagination",
+      "detail formatting across sampled records",
+      "recorded guides",
+      "mixed-bank selection warning",
+      "export provenance",
+      "test evidence required",
+      "review save/export"
+    ],
+    "runtime": "Delivered inline JavaScript with Node canvas DOM stubs; not a browser layout test."
+  },
+  "full": {
+    "file": "Cutout_Inventory.html",
+    "records": 5227,
+    "defaultPacket": "Amy",
+    "checks": [
+      "filters",
+      "pagination",
+      "detail formatting across sampled records",
+      "recorded guides",
+      "mixed-bank selection warning",
+      "export provenance",
+      "test evidence required",
+      "review save/export"
+    ],
+    "runtime": "Delivered inline JavaScript with Node canvas DOM stubs; not a browser layout test."
+  }
+}

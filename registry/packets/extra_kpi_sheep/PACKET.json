@@ -1,0 +1,249 @@
+{
+  "id": "extra_kpi_sheep",
+  "name": "KPI sheep",
+  "kind": "character",
+  "asset_ids": [
+    "asset__298db76a54e33780",
+    "asset__b12d76aa4f889870",
+    "asset__03b48669d82f26c4",
+    "asset__f972c31198411848"
+  ],
+  "source_role": "extra_kpi_sheep",
+  "status": "inventory_only_not_motion_approved",
+  "counts": {
+    "records": 4,
+    "native_records": 4,
+    "unique_native_files": 4,
+    "original": 4,
+    "historical_scale": 0,
+    "views": {
+      "unspecified": 4
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {},
+    "side": {},
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {
+      "legacy_body": 3,
+      "head": 1
+    }
+  },
+  "assets": [
+    {
+      "id": "asset__298db76a54e33780",
+      "file": "Odyssey_Watson_Kits/extras/kpi_sheep/body.png",
+      "owner": "kpi_sheep",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Body",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Kpi Sheep",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "extra_kpi_sheep"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "6e3399545330fbf228a25b6e9029aa0746b6b83dde81eda2bff6a798daa56fd6",
+      "byte_size": 2414120,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        23,
+        23,
+        1524,
+        1004
+      ],
+      "native_file": "assets/6e3399545330fbf228a25b6e9029aa0746b6b83dde81eda2bff6a798daa56fd6.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/kpi_sheep/body.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "legacy_body",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "actor_id": "extra_kpi_sheep",
+          "slot": "body",
+          "anchors": {},
+          "basis": [],
+          "status": "historical_proposal_not_motion_validated"
+        }
+      ],
+      "original_metadata_index": 2466,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__b12d76aa4f889870",
+      "file": "Odyssey_Watson_Kits/extras/kpi_sheep/foreleg.png",
+      "owner": "kpi_sheep",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Foreleg",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Kpi Sheep",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "extra_kpi_sheep"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "57c08cf1580fc11cc4e00e7211c2a44c670ec440372aee1a08b1eb55051c7f79",
+      "byte_size": 1359959,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        49,
+        32,
+        1394,
+        984
+      ],
+      "native_file": "assets/57c08cf1580fc11cc4e00e7211c2a44c670ec440372aee1a08b1eb55051c7f79.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/kpi_sheep/foreleg.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "legacy_body",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "actor_id": "extra_kpi_sheep",
+          "slot": "foreleg",
+          "anchors": {},
+          "basis": [],
+          "status": "historical_proposal_not_motion_validated"
+        }
+      ],
+      "original_metadata_index": 2467,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__03b48669d82f26c4",
+      "file": "Odyssey_Watson_Kits/extras/kpi_sheep/head.png",
+      "owner": "kpi_sheep",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Head",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Kpi Sheep",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "extra_kpi_sheep"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "db51642e80dfbd77de1f0536d0db176b585aa87bc732df13f345b8791c03db2f",
+      "byte_size": 2334716,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        18,
+        1516,
+        992
+      ],
+      "native_file": "assets/db51642e80dfbd77de1f0536d0db176b585aa87bc732df13f345b8791c03db2f.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/kpi_sheep/head.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "head",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "actor_id": "extra_kpi_sheep",
+          "slot": "head",
+          "anchors": {
+            "neck": [
+              800.0,
+              951.26
+            ]
+          },
+          "basis": [
+            "central_lower_silhouette_no_brass_detection"
+          ],
+          "status": "historical_proposal_not_motion_validated"
+        }
+      ],
+      "original_metadata_index": 2469,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__f972c31198411848",
+      "file": "Odyssey_Watson_Kits/extras/kpi_sheep/hindleg.png",
+      "owner": "kpi_sheep",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Hindleg",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Kpi Sheep",
+      "width": 1365,
+      "height": 1152,
+      "packet_ids": [
+        "extra_kpi_sheep"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "7b5cb63b985b928894e93e90805a7a86a6ff70efdad06568c7de2a78b793c2a7",
+      "byte_size": 769021,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        23,
+        1351,
+        1128
+      ],
+      "native_file": "assets/7b5cb63b985b928894e93e90805a7a86a6ff70efdad06568c7de2a78b793c2a7.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/kpi_sheep/hindleg.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "legacy_body",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "actor_id": "extra_kpi_sheep",
+          "slot": "hindleg",
+          "anchors": {},
+          "basis": [],
+          "status": "historical_proposal_not_motion_validated"
+        }
+      ],
+      "original_metadata_index": 2470,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

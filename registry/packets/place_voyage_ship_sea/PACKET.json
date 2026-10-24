@@ -1,0 +1,663 @@
+{
+  "id": "place_voyage_ship_sea",
+  "name": "Voyage deck, backlog storm and landing",
+  "kind": "set_or_support",
+  "asset_ids": [
+    "place_voyage_ship_sea__cell_01",
+    "place_voyage_ship_sea__cell_02",
+    "place_voyage_ship_sea__cell_03",
+    "place_voyage_ship_sea__cell_04",
+    "place_voyage_ship_sea__cell_05",
+    "place_voyage_ship_sea__cell_06",
+    "place_voyage_ship_sea__cell_07",
+    "place_voyage_ship_sea__cell_08",
+    "place_voyage_ship_sea__cell_09",
+    "asset__de2b30315c82c419"
+  ],
+  "status": "inventory_only",
+  "counts": {
+    "records": 10,
+    "native_records": 9,
+    "unique_native_files": 9,
+    "original": 10,
+    "historical_scale": 0,
+    "views": {
+      "unspecified": 10
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {},
+    "side": {},
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {
+      "pelvis": 9
+    }
+  },
+  "assets": [
+    {
+      "id": "place_voyage_ship_sea__cell_01",
+      "owner": "place_voyage_ship_sea",
+      "category": "set",
+      "code": "01",
+      "file": "Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/01.png",
+      "width": 491,
+      "height": 274,
+      "sha256": "2da94b107076ebd8076f249b892fffb06eb2da9f43c7897b2c5f872d229e1b1a",
+      "source_image": "sets/place_voyage_ship_sea/sheet.png",
+      "source_sha256": "0e830b8d2a88d3ff8af56ac77dda0d3d337ac14a81dfdfba9757d8a4f53659a6",
+      "geometry_sha256": "a674a27fa31c5b6a79b2c562f000fa9dda9ff8223348a9abb65cb2f5988fa18a",
+      "source_frame": {
+        "x": 9,
+        "y": 148,
+        "w": 475,
+        "h": 258
+      },
+      "export_padding": 8,
+      "registration": "native_pixel_cutout_requires_scale_and_joint_alignment",
+      "component_islands": 1,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "opaque_core_pixels": 105271,
+      "alpha_core_edge_pixels": 0,
+      "caption_inferred": true,
+      "title": "01 \u00b7 calm sea and island horizon",
+      "is_cutout": true,
+      "preferred": true,
+      "note": "",
+      "owner_name": "Voyage deck, backlog storm and landing",
+      "packet_ids": [
+        "place_voyage_ship_sea"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "2da94b107076ebd8076f249b892fffb06eb2da9f43c7897b2c5f872d229e1b1a",
+      "byte_size": 249183,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        482,
+        266
+      ],
+      "native_file": "assets/2da94b107076ebd8076f249b892fffb06eb2da9f43c7897b2c5f872d229e1b1a.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/01.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "pelvis",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "inspect_thigh_overlap_before_rigging"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 198,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "place_voyage_ship_sea__cell_02",
+      "owner": "place_voyage_ship_sea",
+      "category": "set",
+      "code": "02",
+      "file": "Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/02.png",
+      "width": 495,
+      "height": 203,
+      "sha256": "92aa29ce8519435acc24b3d5cccfb209bfd0d4d55506d8008b1abeb17f107331",
+      "source_image": "sets/place_voyage_ship_sea/sheet.png",
+      "source_sha256": "0e830b8d2a88d3ff8af56ac77dda0d3d337ac14a81dfdfba9757d8a4f53659a6",
+      "geometry_sha256": "63652ee97a9c9413127d7ba7653bc5a413730b6e83f7d19cd46bc72c55370f62",
+      "source_frame": {
+        "x": 465,
+        "y": 218,
+        "w": 479,
+        "h": 187
+      },
+      "export_padding": 8,
+      "registration": "native_pixel_cutout_requires_scale_and_joint_alignment",
+      "component_islands": 1,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "opaque_core_pixels": 65750,
+      "alpha_core_edge_pixels": 0,
+      "caption_inferred": true,
+      "title": "02 \u00b7 wooden ship deck floor",
+      "is_cutout": true,
+      "preferred": true,
+      "note": "",
+      "owner_name": "Voyage deck, backlog storm and landing",
+      "packet_ids": [
+        "place_voyage_ship_sea"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "92aa29ce8519435acc24b3d5cccfb209bfd0d4d55506d8008b1abeb17f107331",
+      "byte_size": 186276,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        487,
+        195
+      ],
+      "native_file": "assets/92aa29ce8519435acc24b3d5cccfb209bfd0d4d55506d8008b1abeb17f107331.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/02.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "pelvis",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "inspect_thigh_overlap_before_rigging"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 199,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "place_voyage_ship_sea__cell_03",
+      "owner": "place_voyage_ship_sea",
+      "category": "set",
+      "code": "03",
+      "file": "Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/03.png",
+      "width": 346,
+      "height": 304,
+      "sha256": "1858e12fdbc9d3d790f9194fa59b7b5e03501b4a114af54aec0d95af205e72e3",
+      "source_image": "sets/place_voyage_ship_sea/sheet.png",
+      "source_sha256": "0e830b8d2a88d3ff8af56ac77dda0d3d337ac14a81dfdfba9757d8a4f53659a6",
+      "geometry_sha256": "9e54dc88770fad9155af5bef68b7dc43016c3a9c20e8d40dab49281af0bfcf0c",
+      "source_frame": {
+        "x": 917,
+        "y": 119,
+        "w": 330,
+        "h": 288
+      },
+      "export_padding": 8,
+      "registration": "native_pixel_cutout_requires_scale_and_joint_alignment",
+      "component_islands": 1,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "opaque_core_pixels": 56482,
+      "alpha_core_edge_pixels": 0,
+      "caption_inferred": true,
+      "title": "03 \u00b7 open deck hatch",
+      "is_cutout": true,
+      "preferred": true,
+      "note": "",
+      "owner_name": "Voyage deck, backlog storm and landing",
+      "packet_ids": [
+        "place_voyage_ship_sea"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "1858e12fdbc9d3d790f9194fa59b7b5e03501b4a114af54aec0d95af205e72e3",
+      "byte_size": 161218,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        338,
+        296
+      ],
+      "native_file": "assets/1858e12fdbc9d3d790f9194fa59b7b5e03501b4a114af54aec0d95af205e72e3.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/03.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "pelvis",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "inspect_thigh_overlap_before_rigging"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 200,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "place_voyage_ship_sea__cell_04",
+      "owner": "place_voyage_ship_sea",
+      "category": "set",
+      "code": "04",
+      "file": "Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/04.png",
+      "width": 275,
+      "height": 456,
+      "sha256": "38391385f414aacd333249f317b5db318629e854b816bb838d2ac2a87d12370f",
+      "source_image": "sets/place_voyage_ship_sea/sheet.png",
+      "source_sha256": "0e830b8d2a88d3ff8af56ac77dda0d3d337ac14a81dfdfba9757d8a4f53659a6",
+      "geometry_sha256": "0eef565717c0214cc8d84c7cb2fe33cee752f35e83e2104443ba74898cb60518",
+      "source_frame": {
+        "x": 78,
+        "y": 448,
+        "w": 259,
+        "h": 440
+      },
+      "export_padding": 8,
+      "registration": "native_pixel_cutout_requires_scale_and_joint_alignment",
+      "component_islands": 1,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "opaque_core_pixels": 27640,
+      "alpha_core_edge_pixels": 0,
+      "caption_inferred": true,
+      "title": "04 \u00b7 mast",
+      "is_cutout": true,
+      "preferred": true,
+      "note": "",
+      "owner_name": "Voyage deck, backlog storm and landing",
+      "packet_ids": [
+        "place_voyage_ship_sea"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "38391385f414aacd333249f317b5db318629e854b816bb838d2ac2a87d12370f",
+      "byte_size": 84155,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        267,
+        448
+      ],
+      "native_file": "assets/38391385f414aacd333249f317b5db318629e854b816bb838d2ac2a87d12370f.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/04.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "pelvis",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "inspect_thigh_overlap_before_rigging"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 201,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "place_voyage_ship_sea__cell_05",
+      "owner": "place_voyage_ship_sea",
+      "category": "set",
+      "code": "05",
+      "file": "Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/05.png",
+      "width": 486,
+      "height": 208,
+      "sha256": "42e7ed2b14da3deeb1c6d9e39d7b537a6fe525aad74ac280260db37bc92f290f",
+      "source_image": "sets/place_voyage_ship_sea/sheet.png",
+      "source_sha256": "0e830b8d2a88d3ff8af56ac77dda0d3d337ac14a81dfdfba9757d8a4f53659a6",
+      "geometry_sha256": "ec1362cee5dc39d7ae35860c164a791c9cab7e431eccda1de1c644e5eda6b90b",
+      "source_frame": {
+        "x": 391,
+        "y": 689,
+        "w": 470,
+        "h": 192
+      },
+      "export_padding": 8,
+      "registration": "native_pixel_cutout_requires_scale_and_joint_alignment",
+      "component_islands": 1,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "opaque_core_pixels": 52507,
+      "alpha_core_edge_pixels": 0,
+      "caption_inferred": true,
+      "title": "05 \u00b7 deck railing",
+      "is_cutout": true,
+      "preferred": true,
+      "note": "",
+      "owner_name": "Voyage deck, backlog storm and landing",
+      "packet_ids": [
+        "place_voyage_ship_sea"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "42e7ed2b14da3deeb1c6d9e39d7b537a6fe525aad74ac280260db37bc92f290f",
+      "byte_size": 145333,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        478,
+        200
+      ],
+      "native_file": "assets/42e7ed2b14da3deeb1c6d9e39d7b537a6fe525aad74ac280260db37bc92f290f.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/05.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "pelvis",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "inspect_thigh_overlap_before_rigging"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 202,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "place_voyage_ship_sea__cell_06",
+      "owner": "place_voyage_ship_sea",
+      "category": "set",
+      "code": "06",
+      "file": "Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/06.png",
+      "width": 412,
+      "height": 442,
+      "sha256": "c7f4a2ef840e99ae2dc3920439d239d446f9183223617036be004338adeeb0dc",
+      "source_image": "sets/place_voyage_ship_sea/sheet.png",
+      "source_sha256": "0e830b8d2a88d3ff8af56ac77dda0d3d337ac14a81dfdfba9757d8a4f53659a6",
+      "geometry_sha256": "e377dfab508ca3ddef48f56ba37c4533422dae0bc0e1add7aa0c925693be267a",
+      "source_frame": {
+        "x": 850,
+        "y": 462,
+        "w": 396,
+        "h": 426
+      },
+      "export_padding": 8,
+      "registration": "native_pixel_cutout_requires_scale_and_joint_alignment",
+      "component_islands": 1,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "opaque_core_pixels": 97774,
+      "alpha_core_edge_pixels": 0,
+      "caption_inferred": true,
+      "title": "06 \u00b7 storm sail replacement",
+      "is_cutout": true,
+      "preferred": true,
+      "note": "",
+      "owner_name": "Voyage deck, backlog storm and landing",
+      "packet_ids": [
+        "place_voyage_ship_sea"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "c7f4a2ef840e99ae2dc3920439d239d446f9183223617036be004338adeeb0dc",
+      "byte_size": 267081,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        404,
+        434
+      ],
+      "native_file": "assets/c7f4a2ef840e99ae2dc3920439d239d446f9183223617036be004338adeeb0dc.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/06.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "pelvis",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "inspect_thigh_overlap_before_rigging"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 203,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "place_voyage_ship_sea__cell_07",
+      "owner": "place_voyage_ship_sea",
+      "category": "set",
+      "code": "07",
+      "file": "Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/07.png",
+      "width": 460,
+      "height": 256,
+      "sha256": "750a40fcd99cb545d0ed9b00728f5ae1bbd2fb11d1750ce973cb9526014ac235",
+      "source_image": "sets/place_voyage_ship_sea/sheet.png",
+      "source_sha256": "0e830b8d2a88d3ff8af56ac77dda0d3d337ac14a81dfdfba9757d8a4f53659a6",
+      "geometry_sha256": "b59cb956f0a347f699f8eff186655774bbc4504d522ece39da97fa56887d23a8",
+      "source_frame": {
+        "x": 9,
+        "y": 951,
+        "w": 444,
+        "h": 240
+      },
+      "export_padding": 8,
+      "registration": "native_pixel_cutout_requires_scale_and_joint_alignment",
+      "component_islands": 1,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "opaque_core_pixels": 82700,
+      "alpha_core_edge_pixels": 0,
+      "caption_inferred": true,
+      "title": "07 \u00b7 backlog storm waves",
+      "is_cutout": true,
+      "preferred": true,
+      "note": "",
+      "owner_name": "Voyage deck, backlog storm and landing",
+      "packet_ids": [
+        "place_voyage_ship_sea"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "750a40fcd99cb545d0ed9b00728f5ae1bbd2fb11d1750ce973cb9526014ac235",
+      "byte_size": 249747,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        452,
+        248
+      ],
+      "native_file": "assets/750a40fcd99cb545d0ed9b00728f5ae1bbd2fb11d1750ce973cb9526014ac235.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/07.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "pelvis",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "inspect_thigh_overlap_before_rigging"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 204,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "place_voyage_ship_sea__cell_08",
+      "owner": "place_voyage_ship_sea",
+      "category": "set",
+      "code": "08",
+      "file": "Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/08.png",
+      "width": 413,
+      "height": 188,
+      "sha256": "f6060359c301d2e8d057fdfaa2d77577257f2b28a17d5fe105d1ff7646c74211",
+      "source_image": "sets/place_voyage_ship_sea/sheet.png",
+      "source_sha256": "0e830b8d2a88d3ff8af56ac77dda0d3d337ac14a81dfdfba9757d8a4f53659a6",
+      "geometry_sha256": "e46bd4122ab4bf05a2db267c088106eba4b0248d7b0de3d18620848e99ef6afc",
+      "source_frame": {
+        "x": 459,
+        "y": 1020,
+        "w": 397,
+        "h": 172
+      },
+      "export_padding": 8,
+      "registration": "native_pixel_cutout_requires_scale_and_joint_alignment",
+      "component_islands": 1,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "opaque_core_pixels": 60161,
+      "alpha_core_edge_pixels": 0,
+      "caption_inferred": true,
+      "title": "08 \u00b7 beached shoreline replacement",
+      "is_cutout": true,
+      "preferred": true,
+      "note": "",
+      "owner_name": "Voyage deck, backlog storm and landing",
+      "packet_ids": [
+        "place_voyage_ship_sea"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "f6060359c301d2e8d057fdfaa2d77577257f2b28a17d5fe105d1ff7646c74211",
+      "byte_size": 172644,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        405,
+        180
+      ],
+      "native_file": "assets/f6060359c301d2e8d057fdfaa2d77577257f2b28a17d5fe105d1ff7646c74211.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/08.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "pelvis",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "inspect_thigh_overlap_before_rigging"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 205,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "place_voyage_ship_sea__cell_09",
+      "owner": "place_voyage_ship_sea",
+      "category": "set",
+      "code": "09",
+      "file": "Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/09.png",
+      "width": 388,
+      "height": 279,
+      "sha256": "93466892073a9ee2d3e570ae28402bafc11cce39dab91309c81ed8a1863d00e6",
+      "source_image": "sets/place_voyage_ship_sea/sheet.png",
+      "source_sha256": "0e830b8d2a88d3ff8af56ac77dda0d3d337ac14a81dfdfba9757d8a4f53659a6",
+      "geometry_sha256": "3c1fe98f2b69f3885b2db093bb5ab046d0a406c22f94ca6c472124c1c0875bf4",
+      "source_frame": {
+        "x": 871,
+        "y": 928,
+        "w": 372,
+        "h": 263
+      },
+      "export_padding": 8,
+      "registration": "native_pixel_cutout_requires_scale_and_joint_alignment",
+      "component_islands": 5,
+      "alpha_min": 0,
+      "alpha_max": 255,
+      "opaque_core_pixels": 30383,
+      "alpha_core_edge_pixels": 0,
+      "caption_inferred": true,
+      "title": "09 \u00b7 blank backlog papers in wind",
+      "is_cutout": true,
+      "preferred": true,
+      "note": "",
+      "owner_name": "Voyage deck, backlog storm and landing",
+      "packet_ids": [
+        "place_voyage_ship_sea"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "93466892073a9ee2d3e570ae28402bafc11cce39dab91309c81ed8a1863d00e6",
+      "byte_size": 90515,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        380,
+        271
+      ],
+      "native_file": "assets/93466892073a9ee2d3e570ae28402bafc11cce39dab91309c81ed8a1863d00e6.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/parts/09.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "pelvis",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "inspect_thigh_overlap_before_rigging"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 206,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__de2b30315c82c419",
+      "file": "Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/sheet.png",
+      "owner": "place_voyage_ship_sea",
+      "category": "reference",
+      "is_cutout": false,
+      "title": "Sheet",
+      "note": "Reference / source image; see original metadata.",
+      "preferred": true,
+      "owner_name": "Voyage deck, backlog storm and landing",
+      "width": 1254,
+      "height": 1254,
+      "packet_ids": [
+        "place_voyage_ship_sea"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "0e830b8d2a88d3ff8af56ac77dda0d3d337ac14a81dfdfba9757d8a4f53659a6",
+      "byte_size": 2059562,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        11,
+        1254,
+        1254
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Scene_Ensembles_v3/sets/place_voyage_ship_sea/sheet.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "pelvis",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [
+        "inspect_thigh_overlap_before_rigging"
+      ],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2611,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

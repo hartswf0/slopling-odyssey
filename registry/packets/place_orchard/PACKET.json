@@ -1,0 +1,1107 @@
+{
+  "id": "place_orchard",
+  "name": "Orchard",
+  "kind": "set_or_support",
+  "asset_ids": [
+    "orchard_stage_distant_orchard_sky",
+    "orchard_stage_ground_path",
+    "orchard_stage_tree_bramley",
+    "orchard_stage_tree_discovery",
+    "orchard_stage_tree_committee",
+    "orchard_stage_tree_pear_no_fruit",
+    "orchard_stage_house_doorway",
+    "orchard_stage_foreground_leaf_strip",
+    "orchard_stage_bench_back",
+    "orchard_stage_bench_seat",
+    "orchard_stage_bench_support_viewer_left",
+    "orchard_stage_bench_support_viewer_right"
+  ],
+  "status": "inventory_only",
+  "counts": {
+    "records": 12,
+    "native_records": 12,
+    "unique_native_files": 12,
+    "original": 12,
+    "historical_scale": 0,
+    "views": {
+      "front": 8,
+      "unspecified": 2,
+      "three_quarter": 2
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {
+      "set": 8
+    },
+    "side": {},
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {
+      "set": 2
+    },
+    "back": {},
+    "unspecified": {
+      "set": 2
+    }
+  },
+  "assets": [
+    {
+      "id": "orchard_stage_distant_orchard_sky",
+      "title": "Orchard Stage Distant Orchard Sky",
+      "actor": "set",
+      "category": "set",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_distant_orchard_sky.png",
+      "width": 1519,
+      "height": 217,
+      "state_code": null,
+      "view": "front",
+      "notes": [
+        "A wide shallow orchard-and-sky strip, not a full 16:9 background.",
+        "Caption removal cuts the lower-left area where the printed caption meets the strip. Pixels hidden by that caption cannot be recovered by metadata; overlap the separate ground strip there."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_stage_layers.png",
+      "source_frame": {
+        "x": 17,
+        "y": 47,
+        "w": 1503,
+        "h": 201
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {
+        "ground_line": {
+          "x": 760,
+          "y": 193,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.500329163923634,
+          "normalized_y": 0.8894009216589862
+        }
+      },
+      "sha256": "d974a36ba81276ef55b75a5c0abaa13fc0abd5c761d731765fc559f5a1c0e1ff",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 218604,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        1509,
+        209
+      ],
+      "owner": "place_orchard",
+      "is_cutout": true,
+      "note": "A wide shallow orchard-and-sky strip, not a full 16:9 background. Caption removal cuts the lower-left area where the printed caption meets the strip. Pixels hidden by that caption cannot be recovered by metadata; overlap the separate ground strip there.",
+      "owner_name": "Orchard",
+      "packet_ids": [
+        "place_orchard"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "d974a36ba81276ef55b75a5c0abaa13fc0abd5c761d731765fc559f5a1c0e1ff",
+      "byte_size": 598227,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        1511,
+        209
+      ],
+      "native_file": "assets/d974a36ba81276ef55b75a5c0abaa13fc0abd5c761d731765fc559f5a1c0e1ff.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_distant_orchard_sky.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "set",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2327,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_stage_ground_path",
+      "title": "Orchard Stage Ground Path",
+      "actor": "set",
+      "category": "set",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_ground_path.png",
+      "width": 1517,
+      "height": 132,
+      "state_code": null,
+      "view": "front",
+      "notes": [
+        "Shallow ground/path band, with its own painted perspective. It requires placement beneath the orchard strip.",
+        "The lower-left printed caption touches the ground edge. Use the polygon and cover the removed edge with an overlap or framing; metadata does not reconstruct missing art."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_stage_layers.png",
+      "source_frame": {
+        "x": 17,
+        "y": 267,
+        "w": 1501,
+        "h": 116
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {
+        "front_ground_line": {
+          "x": 758,
+          "y": 109,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.4996704021094265,
+          "normalized_y": 0.8257575757575758
+        }
+      },
+      "sha256": "3eb91576601c0e7b6c96b7dff29e04b960c91814e323bf60241f3189b1cd9803",
+      "alpha_min": 0,
+      "alpha_max": 253,
+      "core_pixels": 143745,
+      "visible_bounds_alpha_128": [
+        10,
+        9,
+        1507,
+        122
+      ],
+      "owner": "place_orchard",
+      "is_cutout": true,
+      "note": "Shallow ground/path band, with its own painted perspective. It requires placement beneath the orchard strip. The lower-left printed caption touches the ground edge. Use the polygon and cover the removed edge with an overlap or framing; metadata does not reconstruct missing art.",
+      "owner_name": "Orchard",
+      "packet_ids": [
+        "place_orchard"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "3eb91576601c0e7b6c96b7dff29e04b960c91814e323bf60241f3189b1cd9803",
+      "byte_size": 408800,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        253
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        1509,
+        124
+      ],
+      "native_file": "assets/3eb91576601c0e7b6c96b7dff29e04b960c91814e323bf60241f3189b1cd9803.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_ground_path.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "set",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2328,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_stage_tree_bramley",
+      "title": "Orchard Stage Tree Bramley",
+      "actor": "set",
+      "category": "set",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_tree_bramley.png",
+      "width": 604,
+      "height": 353,
+      "state_code": null,
+      "view": "front",
+      "notes": [
+        "Broad fruiting apple tree with low spreading branches. Branches, leaves, fruit and trunk are fused in one sprite."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_stage_layers.png",
+      "source_frame": {
+        "x": 16,
+        "y": 390,
+        "w": 588,
+        "h": 337
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {
+        "ground": {
+          "x": 265,
+          "y": 329,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.43874172185430466,
+          "normalized_y": 0.9320113314447592
+        },
+        "trunk": {
+          "x": 269,
+          "y": 258,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.445364238410596,
+          "normalized_y": 0.7308781869688386
+        }
+      },
+      "sha256": "1e10d5519f99f8a2d67b711f68969e336f51a02280948dd0b917d06edb04e55d",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 113092,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        594,
+        344
+      ],
+      "owner": "place_orchard",
+      "is_cutout": true,
+      "note": "Broad fruiting apple tree with low spreading branches. Branches, leaves, fruit and trunk are fused in one sprite.",
+      "owner_name": "Orchard",
+      "packet_ids": [
+        "place_orchard"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "1e10d5519f99f8a2d67b711f68969e336f51a02280948dd0b917d06edb04e55d",
+      "byte_size": 357047,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        596,
+        345
+      ],
+      "native_file": "assets/1e10d5519f99f8a2d67b711f68969e336f51a02280948dd0b917d06edb04e55d.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_tree_bramley.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "set",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2329,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_stage_tree_discovery",
+      "title": "Orchard Stage Tree Discovery",
+      "actor": "set",
+      "category": "set",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_tree_discovery.png",
+      "width": 289,
+      "height": 315,
+      "state_code": null,
+      "view": "front",
+      "notes": [
+        "One small fruiting tree. Use exactly THREE spatially separate instances for the source story. Three apples are not a substitute for three trees."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_stage_layers.png",
+      "source_frame": {
+        "x": 576,
+        "y": 427,
+        "w": 273,
+        "h": 299
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {
+        "ground": {
+          "x": 128,
+          "y": 294,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.4429065743944637,
+          "normalized_y": 0.9333333333333333
+        },
+        "trunk": {
+          "x": 126,
+          "y": 228,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.4359861591695502,
+          "normalized_y": 0.7238095238095238
+        }
+      },
+      "sha256": "a3c3a62a380a949ee8663df465fbabe4f99179996182803e834abab894a914b0",
+      "alpha_min": 0,
+      "alpha_max": 253,
+      "core_pixels": 45101,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        279,
+        307
+      ],
+      "owner": "place_orchard",
+      "is_cutout": true,
+      "note": "One small fruiting tree. Use exactly THREE spatially separate instances for the source story. Three apples are not a substitute for three trees.",
+      "owner_name": "Orchard",
+      "packet_ids": [
+        "place_orchard"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "a3c3a62a380a949ee8663df465fbabe4f99179996182803e834abab894a914b0",
+      "byte_size": 144043,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        253
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        281,
+        307
+      ],
+      "native_file": "assets/a3c3a62a380a949ee8663df465fbabe4f99179996182803e834abab894a914b0.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_tree_discovery.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "set",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2330,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_stage_tree_committee",
+      "title": "Orchard Stage Tree Committee",
+      "actor": "set",
+      "category": "set",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_tree_committee.png",
+      "width": 427,
+      "height": 351,
+      "state_code": null,
+      "view": "front",
+      "notes": [
+        "The label says 4 GRAFTS, and the image shows visible white bindings at several branch/trunk sites. Four approximate wrap groups are recorded as landmarks.",
+        "It is ONE fused cutout. No four independent graft scions, four distinct apple varieties, or detachable fruit clusters are supplied.",
+        "The four-variety reading is a story instruction; the sparse fruit does not visually prove four botanical varieties."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_stage_layers.png",
+      "source_frame": {
+        "x": 838,
+        "y": 393,
+        "w": 411,
+        "h": 335
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {
+        "ground": {
+          "x": 216,
+          "y": 330,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.5058548009367682,
+          "normalized_y": 0.9401709401709402
+        },
+        "wrap_left": {
+          "x": 130,
+          "y": 203,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.3044496487119438,
+          "normalized_y": 0.5783475783475783
+        },
+        "wrap_upper": {
+          "x": 178,
+          "y": 125,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.4168618266978923,
+          "normalized_y": 0.3561253561253561
+        },
+        "wrap_middle": {
+          "x": 177,
+          "y": 192,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.41451990632318503,
+          "normalized_y": 0.5470085470085471
+        },
+        "wrap_right": {
+          "x": 277,
+          "y": 201,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.6487119437939111,
+          "normalized_y": 0.5726495726495726
+        }
+      },
+      "sha256": "0035e73e62ed9e501a0c0433b0488d828841511d5d24db7c106ad100e0e0b292",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 71341,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        417,
+        343
+      ],
+      "owner": "place_orchard",
+      "is_cutout": true,
+      "note": "The label says 4 GRAFTS, and the image shows visible white bindings at several branch/trunk sites. Four approximate wrap groups are recorded as landmarks. It is ONE fused cutout. No four independent graft scions, four distinct apple varieties, or detachable fruit clusters are supplied. The four-variety reading is a story instruction; the sparse fruit does not visually prove four botanical varieties.",
+      "owner_name": "Orchard",
+      "packet_ids": [
+        "place_orchard"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "0035e73e62ed9e501a0c0433b0488d828841511d5d24db7c106ad100e0e0b292",
+      "byte_size": 231319,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        419,
+        343
+      ],
+      "native_file": "assets/0035e73e62ed9e501a0c0433b0488d828841511d5d24db7c106ad100e0e0b292.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_tree_committee.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "set",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2331,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_stage_tree_pear_no_fruit",
+      "title": "Orchard Stage Tree Pear No Fruit",
+      "actor": "set",
+      "category": "set",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_tree_pear_no_fruit.png",
+      "width": 284,
+      "height": 336,
+      "state_code": null,
+      "view": "front",
+      "notes": [
+        "Leafy pear-tree silhouette with no visible fruit. Do not add pear fruit in this story scene."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_stage_layers.png",
+      "source_frame": {
+        "x": 1251,
+        "y": 408,
+        "w": 268,
+        "h": 320
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "ground": {
+          "x": 128,
+          "y": 315,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.4507042253521127,
+          "normalized_y": 0.9375
+        },
+        "trunk": {
+          "x": 132,
+          "y": 250,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.4647887323943662,
+          "normalized_y": 0.7440476190476191
+        }
+      },
+      "sha256": "3723a5fb7417b0d497ea9edee73fb50568b458cb5271952325ffab264848e816",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 45800,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        274,
+        328
+      ],
+      "owner": "place_orchard",
+      "is_cutout": true,
+      "note": "Leafy pear-tree silhouette with no visible fruit. Do not add pear fruit in this story scene.",
+      "owner_name": "Orchard",
+      "packet_ids": [
+        "place_orchard"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "3723a5fb7417b0d497ea9edee73fb50568b458cb5271952325ffab264848e816",
+      "byte_size": 154204,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        276,
+        328
+      ],
+      "native_file": "assets/3723a5fb7417b0d497ea9edee73fb50568b458cb5271952325ffab264848e816.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_tree_pear_no_fruit.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "set",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2332,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_stage_house_doorway",
+      "title": "Orchard Stage House Doorway",
+      "actor": "set",
+      "category": "set",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_house_doorway.png",
+      "width": 317,
+      "height": 261,
+      "state_code": null,
+      "view": "front_three_quarter",
+      "notes": [
+        "A small stone doorway/outbuilding facade. The complete semi-detached home described in the story is not depicted.",
+        "Use as a partial home-entry vignette, not documentary architecture. Door is painted closed; no separate hinged door is supplied."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_stage_layers.png",
+      "source_frame": {
+        "x": 23,
+        "y": 721,
+        "w": 301,
+        "h": 245
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {
+        "doorstep": {
+          "x": 129,
+          "y": 224,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.4069400630914827,
+          "normalized_y": 0.8582375478927203
+        },
+        "ground": {
+          "x": 158,
+          "y": 243,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.49842271293375395,
+          "normalized_y": 0.9310344827586207
+        }
+      },
+      "sha256": "2b1cd67a7f8e65fb8da5f05ea90ec3e1068f52cde008468fbe4ec2e39ab3dfe6",
+      "alpha_min": 0,
+      "alpha_max": 253,
+      "core_pixels": 60450,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        307,
+        252
+      ],
+      "owner": "place_orchard",
+      "is_cutout": true,
+      "note": "A small stone doorway/outbuilding facade. The complete semi-detached home described in the story is not depicted. Use as a partial home-entry vignette, not documentary architecture. Door is painted closed; no separate hinged door is supplied.",
+      "owner_name": "Orchard",
+      "packet_ids": [
+        "place_orchard"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "2b1cd67a7f8e65fb8da5f05ea90ec3e1068f52cde008468fbe4ec2e39ab3dfe6",
+      "byte_size": 175831,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        253
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        309,
+        253
+      ],
+      "native_file": "assets/2b1cd67a7f8e65fb8da5f05ea90ec3e1068f52cde008468fbe4ec2e39ab3dfe6.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_house_doorway.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "set",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2333,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_stage_foreground_leaf_strip",
+      "title": "Orchard Stage Foreground Leaf Strip",
+      "actor": "set",
+      "category": "set",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_foreground_leaf_strip.png",
+      "width": 646,
+      "height": 227,
+      "state_code": null,
+      "view": "front",
+      "notes": [
+        "Branch and leaves are fused. Alpha holes remain transparent. Do not scale it as if it were a full tree."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_stage_layers.png",
+      "source_frame": {
+        "x": 332,
+        "y": 772,
+        "w": 630,
+        "h": 211
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {
+        "left_anchor": {
+          "x": 28,
+          "y": 131,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.043343653250773995,
+          "normalized_y": 0.5770925110132159
+        },
+        "right_anchor": {
+          "x": 612,
+          "y": 136,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.9473684210526315,
+          "normalized_y": 0.5991189427312775
+        }
+      },
+      "sha256": "19f52f06e96664556e1066d9d57b6b925742bcafed76d903f2c3661cec52cfa6",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 73258,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        636,
+        217
+      ],
+      "owner": "place_orchard",
+      "is_cutout": true,
+      "note": "Branch and leaves are fused. Alpha holes remain transparent. Do not scale it as if it were a full tree.",
+      "owner_name": "Orchard",
+      "packet_ids": [
+        "place_orchard"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "19f52f06e96664556e1066d9d57b6b925742bcafed76d903f2c3661cec52cfa6",
+      "byte_size": 230371,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        638,
+        219
+      ],
+      "native_file": "assets/19f52f06e96664556e1066d9d57b6b925742bcafed76d903f2c3661cec52cfa6.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_foreground_leaf_strip.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "set",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2334,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_stage_bench_back",
+      "title": "Orchard Stage Bench Back",
+      "actor": "set",
+      "category": "set",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_bench_back.png",
+      "width": 323,
+      "height": 99,
+      "state_code": null,
+      "view": "front",
+      "notes": [
+        "Back slats include two short support stubs. Caption sits between those stubs; the polygon excludes it."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_stage_layers.png",
+      "source_frame": {
+        "x": 986,
+        "y": 790,
+        "w": 307,
+        "h": 83
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {
+        "support_left": {
+          "x": 56,
+          "y": 63,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.17337461300309598,
+          "normalized_y": 0.6363636363636364
+        },
+        "support_right": {
+          "x": 273,
+          "y": 64,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.8452012383900929,
+          "normalized_y": 0.6464646464646465
+        }
+      },
+      "sha256": "40af6c565708f0a5dd4a6863775da7f7fdd14c4032a8893e9c7294b03c738bbd",
+      "alpha_min": 0,
+      "alpha_max": 253,
+      "core_pixels": 17871,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        313,
+        89
+      ],
+      "owner": "place_orchard",
+      "is_cutout": true,
+      "note": "Back slats include two short support stubs. Caption sits between those stubs; the polygon excludes it.",
+      "owner_name": "Orchard",
+      "packet_ids": [
+        "place_orchard"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "40af6c565708f0a5dd4a6863775da7f7fdd14c4032a8893e9c7294b03c738bbd",
+      "byte_size": 50236,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        253
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        315,
+        91
+      ],
+      "native_file": "assets/40af6c565708f0a5dd4a6863775da7f7fdd14c4032a8893e9c7294b03c738bbd.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_bench_back.png",
+      "view_label": "front",
+      "view_label_basis": "source_label",
+      "semantic_slot": "set",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2335,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_stage_bench_seat",
+      "title": "Orchard Stage Bench Seat",
+      "actor": "set",
+      "category": "set",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_bench_seat.png",
+      "width": 344,
+      "height": 94,
+      "state_code": null,
+      "view": "front_three_quarter",
+      "notes": [
+        "Seat planks include short downward support stubs. Do not interpret those stubs as a complete pair of legs."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_stage_layers.png",
+      "source_frame": {
+        "x": 974,
+        "y": 893,
+        "w": 328,
+        "h": 78
+      },
+      "export_padding": 8,
+      "polygon_clipped": true,
+      "pivot_points": {
+        "support_left": {
+          "x": 51,
+          "y": 51,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.14825581395348839,
+          "normalized_y": 0.5425531914893617
+        },
+        "support_right": {
+          "x": 296,
+          "y": 51,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.8604651162790697,
+          "normalized_y": 0.5425531914893617
+        }
+      },
+      "sha256": "77fba192f36f9b483a76d45e8c5ad0575857e752ba1497e3bf2d5a182e0b4614",
+      "alpha_min": 0,
+      "alpha_max": 254,
+      "core_pixels": 16633,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        334,
+        84
+      ],
+      "owner": "place_orchard",
+      "is_cutout": true,
+      "note": "Seat planks include short downward support stubs. Do not interpret those stubs as a complete pair of legs.",
+      "owner_name": "Orchard",
+      "packet_ids": [
+        "place_orchard"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "77fba192f36f9b483a76d45e8c5ad0575857e752ba1497e3bf2d5a182e0b4614",
+      "byte_size": 46152,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        336,
+        86
+      ],
+      "native_file": "assets/77fba192f36f9b483a76d45e8c5ad0575857e752ba1497e3bf2d5a182e0b4614.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_bench_seat.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "set",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2336,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_stage_bench_support_viewer_left",
+      "title": "Orchard Stage Bench Support Viewer Left",
+      "actor": "set",
+      "category": "set",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_bench_support_viewer_left.png",
+      "width": 104,
+      "height": 140,
+      "state_code": null,
+      "view": "three_quarter",
+      "notes": [
+        "One A-shaped end support with two splayed feet, not an isolated single leg. Side name means its position on the sheet."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_stage_layers.png",
+      "source_frame": {
+        "x": 1307,
+        "y": 836,
+        "w": 88,
+        "h": 124
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "seat_attachment": {
+          "x": 50,
+          "y": 38,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.4807692307692308,
+          "normalized_y": 0.2714285714285714
+        },
+        "ground": {
+          "x": 50,
+          "y": 117,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.4807692307692308,
+          "normalized_y": 0.8357142857142857
+        }
+      },
+      "sha256": "eda9608cd412fea7e24a3743cdd1a7bdfe184601f12bf158b275020746104ac5",
+      "alpha_min": 0,
+      "alpha_max": 253,
+      "core_pixels": 6592,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        94,
+        130
+      ],
+      "owner": "place_orchard",
+      "is_cutout": true,
+      "note": "One A-shaped end support with two splayed feet, not an isolated single leg. Side name means its position on the sheet.",
+      "owner_name": "Orchard",
+      "packet_ids": [
+        "place_orchard"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "eda9608cd412fea7e24a3743cdd1a7bdfe184601f12bf158b275020746104ac5",
+      "byte_size": 23831,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        253
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        96,
+        132
+      ],
+      "native_file": "assets/eda9608cd412fea7e24a3743cdd1a7bdfe184601f12bf158b275020746104ac5.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_bench_support_viewer_left.png",
+      "view_label": "three_quarter",
+      "view_label_basis": "source_label",
+      "semantic_slot": "set",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2337,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "orchard_stage_bench_support_viewer_right",
+      "title": "Orchard Stage Bench Support Viewer Right",
+      "actor": "set",
+      "category": "set",
+      "file": "Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_bench_support_viewer_right.png",
+      "width": 100,
+      "height": 140,
+      "state_code": null,
+      "view": "three_quarter",
+      "notes": [
+        "Second A-shaped end support. Align manually with the seat and back; the sheet is an exploded illustration, not a registered bench assembly."
+      ],
+      "preferred": true,
+      "provenance": "exported_from_new_generated_sheet",
+      "source_sheet": "sheets/orchard_stage_layers.png",
+      "source_frame": {
+        "x": 1426,
+        "y": 836,
+        "w": 84,
+        "h": 124
+      },
+      "export_padding": 8,
+      "polygon_clipped": false,
+      "pivot_points": {
+        "seat_attachment": {
+          "x": 47,
+          "y": 37,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.47,
+          "normalized_y": 0.2642857142857143
+        },
+        "ground": {
+          "x": 52,
+          "y": 117,
+          "basis": "estimated_attachment_landmark",
+          "confidence": "low",
+          "normalized_x": 0.52,
+          "normalized_y": 0.8357142857142857
+        }
+      },
+      "sha256": "d66f0f31c4600738606df608217f512e6328a2c7c13e82b715cfbd4c3270a6dd",
+      "alpha_min": 0,
+      "alpha_max": 253,
+      "core_pixels": 6361,
+      "visible_bounds_alpha_128": [
+        10,
+        10,
+        90,
+        130
+      ],
+      "owner": "place_orchard",
+      "is_cutout": true,
+      "note": "Second A-shaped end support. Align manually with the seat and back; the sheet is an exploded illustration, not a registered bench assembly.",
+      "owner_name": "Orchard",
+      "packet_ids": [
+        "place_orchard"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "d66f0f31c4600738606df608217f512e6328a2c7c13e82b715cfbd4c3270a6dd",
+      "byte_size": 22770,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        253
+      ],
+      "alpha_bounds": [
+        8,
+        8,
+        92,
+        132
+      ],
+      "native_file": "assets/d66f0f31c4600738606df608217f512e6328a2c7c13e82b715cfbd4c3270a6dd.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Cardboard_Family_Film_Kits_v2/parts/set/orchard_stage_bench_support_viewer_right.png",
+      "view_label": "three_quarter",
+      "view_label_basis": "source_label",
+      "semantic_slot": "set",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2338,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

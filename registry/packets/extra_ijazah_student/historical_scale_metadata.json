@@ -1,0 +1,782 @@
+{
+  "actor_id": "extra_ijazah_student",
+  "name": "Ijazah student",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "extra_ijazah_student__E00",
+      "part": "head",
+      "canvas_width_px": 192,
+      "canvas_height_px": 236,
+      "drawn_width_px": 191.0756972111553,
+      "drawn_height_px": 235.77689243027882,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E00.png",
+      "source_scale": 0.8764940239043821,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          96.41434262948204,
+          222.16494023904374
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "extra_ijazah_student__B03",
+      "part": "torso_front",
+      "canvas_width_px": 315,
+      "canvas_height_px": 343,
+      "drawn_width_px": 314.26238238949037,
+      "drawn_height_px": 342.49689330729615,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B03.png",
+      "source_scale": 1.2275874312089468,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          157.13119119474518,
+          36.778519439020045
+        ],
+        "waist": [
+          157.13119119474518,
+          313.37851943901995
+        ],
+        "shoulder_left": [
+          55.73246937688618,
+          81.80642641576421
+        ],
+        "shoulder_right": [
+          258.5299130126042,
+          81.80642641576421
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "extra_ijazah_student__B05",
+      "part": "pelvis_front",
+      "canvas_width_px": 325,
+      "canvas_height_px": 247,
+      "drawn_width_px": 324.0619165386239,
+      "drawn_height_px": 246.5969165692317,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B05.png",
+      "source_scale": 1.2910833328232028,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          162.03095826931195,
+          39.40386331776415
+        ],
+        "hip_left": [
+          82.95468630055643,
+          74.40386331776413
+        ],
+        "hip_right": [
+          241.10723023806744,
+          74.40386331776413
+        ],
+        "hem_pin_left": [
+          42.73485831644801,
+          202.77754825321222
+        ],
+        "hem_pin_right": [
+          281.3270582221759,
+          202.77754825321222
+        ],
+        "upper_pin_left": [
+          72.4039533047252,
+          46.246604981727124
+        ],
+        "upper_pin_right": [
+          256.92558323181737,
+          56.07174914451169
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "extra_ijazah_student__B11",
+      "part": "upper_arm_left",
+      "canvas_width_px": 173,
+      "canvas_height_px": 169,
+      "drawn_width_px": 172.140535045045,
+      "drawn_height_px": 168.31518982182178,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B11.png",
+      "source_scale": 0.9563363058058055,
+      "assembly_rotation_deg": -27.244864269736095,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          128.41683914360357,
+          31.539971365475463
+        ],
+        "distal": [
+          41.7249530223073,
+          137.1577529786686
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "extra_ijazah_student__B12",
+      "part": "upper_arm_right",
+      "canvas_width_px": 178,
+      "canvas_height_px": 180,
+      "drawn_width_px": 177.011411583417,
+      "drawn_height_px": 179.04602550966317,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B12.png",
+      "source_scale": 1.0173069631230862,
+      "assembly_rotation_deg": 29.977590336204425,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          43.520391882405626,
+          34.12047554314831
+        ],
+        "distal": [
+          135.149230050902,
+          135.48494134873263
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "extra_ijazah_student__B13",
+      "part": "forearm_left",
+      "canvas_width_px": 118,
+      "canvas_height_px": 184,
+      "drawn_width_px": 117.56300882197665,
+      "drawn_height_px": 183.1597601211955,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B13.png",
+      "source_scale": 0.8519058610288163,
+      "assembly_rotation_deg": -28.291359805075754,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          70.98931539953126,
+          29.81670513600857
+        ],
+        "distal": [
+          32.91764247015346,
+          150.06321742022598
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "extra_ijazah_student__B14",
+      "part": "forearm_right",
+      "canvas_width_px": 122,
+      "canvas_height_px": 181,
+      "drawn_width_px": 121.75417786640405,
+      "drawn_height_px": 180.5320568363922,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B14.png",
+      "source_scale": 0.8396839852855452,
+      "assembly_rotation_deg": 31.188286512263417,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          41.656722510015896,
+          29.44771736396407
+        ],
+        "distal": [
+          85.75692541721273,
+          147.61644461319887
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_open.png",
+      "asset_id": "extra_ijazah_student__B21",
+      "part": "hand_left_open",
+      "canvas_width_px": 92,
+      "canvas_height_px": 107,
+      "drawn_width_px": 91.68358445595851,
+      "drawn_height_px": 106.29250725388596,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B21.png",
+      "source_scale": 0.5037559585492226,
+      "assembly_rotation_deg": 169.27713198500976,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          40.66821853367875,
+          90.32848092746111
+        ],
+        "grip": [
+          45.841792227979255,
+          51.70551158549221
+        ],
+        "fingertip": [
+          45.841792227979255,
+          9.898804585492224
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_open.png",
+      "asset_id": "extra_ijazah_student__B22",
+      "part": "hand_right_open",
+      "canvas_width_px": 94,
+      "canvas_height_px": 107,
+      "drawn_width_px": 93.69860829015539,
+      "drawn_height_px": 106.29250725388596,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B22.png",
+      "source_scale": 0.5037559585492225,
+      "assembly_rotation_deg": 190.72286801499024,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          47.28253426943002,
+          90.29825556994814
+        ],
+        "grip": [
+          46.849304145077696,
+          51.7055115854922
+        ],
+        "fingertip": [
+          46.849304145077696,
+          9.898804585492222
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "extra_ijazah_student__B15",
+      "part": "thigh_left",
+      "canvas_width_px": 256,
+      "canvas_height_px": 312,
+      "drawn_width_px": 255.58517512300284,
+      "drawn_height_px": 311.08367029256925,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B15.png",
+      "source_scale": 1.4604867149885876,
+      "assembly_rotation_deg": 31.17551426784324,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          68.00026144986865,
+          66.48135526628052
+        ],
+        "distal": [
+          184.4740769702085,
+          258.98810916892626
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "extra_ijazah_student__B16",
+      "part": "thigh_right",
+      "canvas_width_px": 258,
+      "canvas_height_px": 312,
+      "drawn_width_px": 257.320484391672,
+      "drawn_height_px": 311.72538680591117,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B16.png",
+      "source_scale": 1.4704027679524114,
+      "assembly_rotation_deg": -29.81872654797927,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          181.21243712245519,
+          61.9480686138351
+        ],
+        "distal": [
+          69.3294905089562,
+          257.1587400871972
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "extra_ijazah_student__B17",
+      "part": "shin_left",
+      "canvas_width_px": 160,
+      "canvas_height_px": 255,
+      "drawn_width_px": 159.89403235896611,
+      "drawn_height_px": 254.86868315865274,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B17.png",
+      "source_scale": 1.2022107696162865,
+      "assembly_rotation_deg": -9.443005939184653,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          90.62264781367567,
+          43.159366629224685
+        ],
+        "distal": [
+          62.73135795857783,
+          210.85574688300048
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "extra_ijazah_student__B18",
+      "part": "shin_right",
+      "canvas_width_px": 159,
+      "canvas_height_px": 257,
+      "drawn_width_px": 158.28834425710687,
+      "drawn_height_px": 256.16128994279893,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B18.png",
+      "source_scale": 1.2083079714282967,
+      "assembly_rotation_deg": 7.145222409930638,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          67.94315723341312,
+          43.487003891704404
+        ],
+        "distal": [
+          89.08854673340832,
+          212.16679670309463
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "extra_ijazah_student__B19",
+      "part": "shoe_left",
+      "canvas_width_px": 180,
+      "canvas_height_px": 126,
+      "drawn_width_px": 179.31858936043025,
+      "drawn_height_px": 125.12452679816687,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B19.png",
+      "source_scale": 0.7969715082685789,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          58.79258816497306,
+          38.748754732018305
+        ],
+        "sole": [
+          58.79258816497306,
+          118.74875473201826
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "extra_ijazah_student__B20",
+      "part": "shoe_right",
+      "canvas_width_px": 154,
+      "canvas_height_px": 112,
+      "drawn_width_px": 153.4265857306236,
+      "drawn_height_px": 111.19908507081895,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B20.png",
+      "source_scale": 0.703791677663411,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "ankle": [
+          50.54631828978617,
+          25.56875164951172
+        ],
+        "sole": [
+          50.54631828978617,
+          105.56875164951165
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "extra_ijazah_student__E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 193,
+      "canvas_height_px": 236,
+      "drawn_width_px": 192.71999999999997,
+      "drawn_height_px": 235.83999999999995,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E01.png",
+      "source_scale": 0.8799999999999999,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          95.03999999999999,
+          222.19999999999996
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "extra_ijazah_student__E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 196,
+      "canvas_height_px": 237,
+      "drawn_width_px": 195.06072874493924,
+      "drawn_height_px": 236.03238866396757,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E02.png",
+      "source_scale": 0.8906882591093116,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          115.7894736842105,
+          222.30688259109309
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "extra_ijazah_student__E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 197,
+      "canvas_height_px": 236,
+      "drawn_width_px": 196.04838709677412,
+      "drawn_height_px": 235.08064516129028,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E03.png",
+      "source_scale": 0.887096774193548,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          113.10483870967738,
+          221.38387096774184
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "extra_ijazah_student__E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 196,
+      "canvas_height_px": 236,
+      "drawn_width_px": 195.26104417670675,
+      "drawn_height_px": 235.0200803212851,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E04.png",
+      "source_scale": 0.8835341365461844,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          102.4899598393574,
+          221.3518072289156
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "extra_ijazah_student__E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 194,
+      "canvas_height_px": 236,
+      "drawn_width_px": 193.59999999999994,
+      "drawn_height_px": 235.83999999999995,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E05.png",
+      "source_scale": 0.8799999999999997,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          98.55999999999996,
+          222.1999999999999
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "extra_ijazah_student__E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 207,
+      "canvas_height_px": 235,
+      "drawn_width_px": 206.30705394190863,
+      "drawn_height_px": 234.60580912863065,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E06.png",
+      "source_scale": 0.9128630705394187,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          108.63070539419083,
+          220.70290456431528
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "extra_ijazah_student__E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 204,
+      "canvas_height_px": 235,
+      "drawn_width_px": 203.5684647302904,
+      "drawn_height_px": 234.60580912863065,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E07.png",
+      "source_scale": 0.9128630705394188,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          107.71784232365142,
+          220.7029045643153
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "extra_ijazah_student__E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 208,
+      "canvas_height_px": 235,
+      "drawn_width_px": 207.11297071129704,
+      "drawn_height_px": 234.72803347280328,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E08.png",
+      "source_scale": 0.920502092050209,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          110.46025104602509,
+          220.76401673640166
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "extra_ijazah_student__E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 205,
+      "canvas_height_px": 235,
+      "drawn_width_px": 204.48132780082983,
+      "drawn_height_px": 234.60580912863065,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E09.png",
+      "source_scale": 0.9128630705394188,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.89211618257258,
+          220.7029045643153
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "extra_ijazah_student__E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 211,
+      "canvas_height_px": 235,
+      "drawn_width_px": 210.71729957805903,
+      "drawn_height_px": 234.8523206751054,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E10.png",
+      "source_scale": 0.9282700421940926,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          106.75105485232065,
+          220.82616033755266
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "extra_ijazah_student__E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 206,
+      "canvas_height_px": 236,
+      "drawn_width_px": 205.3333333333333,
+      "drawn_height_px": 235.5833333333333,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E11.png",
+      "source_scale": 0.9166666666666664,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          104.49999999999997,
+          221.64999999999995
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "extra_ijazah_student__E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 224,
+      "canvas_height_px": 237,
+      "drawn_width_px": 223.09859154929572,
+      "drawn_height_px": 236.5258215962441,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E12.png",
+      "source_scale": 1.032863849765258,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          122.9107981220657,
+          221.66291079812203
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "extra_ijazah_student__E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 223,
+      "canvas_height_px": 237,
+      "drawn_width_px": 222.06572769953047,
+      "drawn_height_px": 236.5258215962441,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E13.png",
+      "source_scale": 1.032863849765258,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          123.94366197183096,
+          221.66291079812203
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "extra_ijazah_student__E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 225,
+      "canvas_height_px": 237,
+      "drawn_width_px": 224.13145539906102,
+      "drawn_height_px": 236.5258215962441,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E14.png",
+      "source_scale": 1.0328638497652582,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          116.71361502347418,
+          221.66291079812208
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "extra_ijazah_student__E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 223,
+      "canvas_height_px": 237,
+      "drawn_width_px": 222.06572769953047,
+      "drawn_height_px": 236.5258215962441,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E15.png",
+      "source_scale": 1.032863849765258,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          116.71361502347416,
+          221.66291079812203
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "extra_ijazah_student__E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 255,
+      "canvas_height_px": 239,
+      "drawn_width_px": 254.92063492063482,
+      "drawn_height_px": 238.62433862433858,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E16.png",
+      "source_scale": 1.1640211640211635,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          130.37037037037032,
+          222.71216931216924
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "extra_ijazah_student__E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 230,
+      "canvas_height_px": 237,
+      "drawn_width_px": 229.29577464788727,
+      "drawn_height_px": 236.5258215962441,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/heads/E17.png",
+      "source_scale": 1.032863849765258,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          134.27230046948355,
+          221.66291079812203
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "extra_ijazah_student__B23",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 77,
+      "canvas_height_px": 108,
+      "drawn_width_px": 76.61744836956518,
+      "drawn_height_px": 107.26442771739127,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B23.png",
+      "source_scale": 0.5283961956521737,
+      "assembly_rotation_deg": -60.599515282385035,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          44.82384927717389,
+          16.750159402173903
+        ],
+        "grip": [
+          38.30872418478259,
+          51.95191395652171
+        ],
+        "fingertip": [
+          38.30872418478259,
+          98.61986595652168
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "extra_ijazah_student__B24",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 78,
+      "canvas_height_px": 108,
+      "drawn_width_px": 77.25437999999997,
+      "drawn_height_px": 107.73569999999995,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_ijazah_student/parts/B24.png",
+      "source_scale": 0.5255399999999998,
+      "assembly_rotation_deg": 60.59951528238506,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          34.31776199999999,
+          17.637122399999996
+        ],
+        "grip": [
+          38.88995999999998,
+          51.92335199999998
+        ],
+        "fingertip": [
+          38.88995999999998,
+          98.59130399999995
+        ]
+      }
+    }
+  ]
+}

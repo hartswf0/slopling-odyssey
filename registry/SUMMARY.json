@@ -1,0 +1,22 @@
+{
+  "original_catalog_records": 2855,
+  "original_cutout_records": 2542,
+  "historical_scale_pngs": 2342,
+  "working_Watson_cards": 30,
+  "all_inventory_records": 5227,
+  "packet_count": 124,
+  "character_bindings": 71,
+  "unique_byte_hashes": 4502,
+  "exact_duplicate_records_beyond_first": 725,
+  "stored_native_files": 4221,
+  "stored_native_bytes": 722586549,
+  "original_hash_mismatch_ids": [],
+  "missing_source_paths": [],
+  "motion_approved_parent_packets": 0,
+  "notes": [
+    "Counts are measured from the recovered archives. Inventory is not animation readiness.",
+    "All included PNG bytes are untouched; previews are separate downscaled images.",
+    "Large original reference sheets remain locatable in source archives; isolated cutouts are included.",
+    "Rejected parent motion experiments are excluded from production source banks."
+  ]
+}

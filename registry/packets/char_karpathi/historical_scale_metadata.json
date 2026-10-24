@@ -1,0 +1,790 @@
+{
+  "actor_id": "char_karpathi",
+  "name": "Andrei Karpathi",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "char_karpathi__E00",
+      "part": "head",
+      "canvas_width_px": 184,
+      "canvas_height_px": 236,
+      "drawn_width_px": 183.77510040160647,
+      "drawn_height_px": 235.9036144578314,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E00.png",
+      "source_scale": 0.883534136546185,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          94.53815261044178,
+          222.2353413654619
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "file__5134846b8cdf983f",
+      "part": "torso_front",
+      "canvas_width_px": 398,
+      "canvas_height_px": 363,
+      "drawn_width_px": 397.03053269771425,
+      "drawn_height_px": 362.83506761018253,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/torso_front_override.png",
+      "source_scale": 0.30261473528789196,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          198.66657371650106,
+          45.150118504953475
+        ],
+        "waist": [
+          198.66657371650106,
+          328.8211713638234
+        ],
+        "shoulder_left": [
+          99.63590159353842,
+          91.32912710988579
+        ],
+        "shoulder_right": [
+          297.69724583946373,
+          91.32912710988579
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "char_karpathi__B05",
+      "part": "pelvis_front",
+      "canvas_width_px": 325,
+      "canvas_height_px": 244,
+      "drawn_width_px": 324.4994820862483,
+      "drawn_height_px": 243.7057334851824,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/parts/B05.png",
+      "source_scale": 1.324487681984687,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          162.24974104312415,
+          39.31079440130551
+        ],
+        "hip_left": [
+          77.80570439050845,
+          74.31079440130553
+        ],
+        "hip_right": [
+          246.69377769573984,
+          74.31079440130553
+        ],
+        "hem_pin_left": [
+          40.05250750321693,
+          196.05066668737336
+        ],
+        "hem_pin_right": [
+          282.7648752269108,
+          196.54072712970768
+        ],
+        "upper_pin_left": [
+          57.35031662993694,
+          57.24435761537816
+        ],
+        "upper_pin_right": [
+          264.4604554618824,
+          59.89333297934754
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "char_karpathi__B11",
+      "part": "upper_arm_left",
+      "canvas_width_px": 168,
+      "canvas_height_px": 207,
+      "drawn_width_px": 167.54790670997863,
+      "drawn_height_px": 206.21280825843522,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/parts/B11.png",
+      "source_scale": 1.0740250430126836,
+      "assembly_rotation_deg": -18.375081226583102,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          113.65333005160218,
+          38.729343051037375
+        ],
+        "distal": [
+          42.50991120244202,
+          159.46049813609315
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "char_karpathi__B12",
+      "part": "upper_arm_right",
+      "canvas_width_px": 169,
+      "canvas_height_px": 207,
+      "drawn_width_px": 168.1315560416645,
+      "drawn_height_px": 206.9311458974332,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/parts/B12.png",
+      "source_scale": 1.0777663848824648,
+      "assembly_rotation_deg": 17.885260701567457,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          51.47412254198652,
+          38.745701536524614
+        ],
+        "distal": [
+          121.58282587859085,
+          160.08064114659248
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "char_karpathi__B13",
+      "part": "forearm_left",
+      "canvas_width_px": 157,
+      "canvas_height_px": 183,
+      "drawn_width_px": 156.01600578059978,
+      "drawn_height_px": 182.31083821553233,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/parts/B13.png",
+      "source_scale": 0.8764944144977516,
+      "assembly_rotation_deg": -46.20819370640933,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          107.0813226191903,
+          32.684476716621155
+        ],
+        "distal": [
+          31.99204612916793,
+          138.01281050681598
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "char_karpathi__B14",
+      "part": "forearm_right",
+      "canvas_width_px": 155,
+      "canvas_height_px": 182,
+      "drawn_width_px": 154.6438058674776,
+      "drawn_height_px": 181.5761540803529,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/parts/B14.png",
+      "source_scale": 0.8687854262217842,
+      "assembly_rotation_deg": 45.638281194197035,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          45.2376571433683,
+          32.34488141823702
+        ],
+        "distal": [
+          119.27555116598874,
+          138.41489410565467
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_open.png",
+      "asset_id": "char_karpathi__B22",
+      "part": "hand_left_open",
+      "canvas_width_px": 94,
+      "canvas_height_px": 110,
+      "drawn_width_px": 93.99780150760724,
+      "drawn_height_px": 109.05822274363271,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/parts/B22.png",
+      "source_scale": 0.5193248702077747,
+      "assembly_rotation_deg": 169.27713198500976,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          45.84080629324028,
+          91.02207000131668
+        ],
+        "grip": [
+          46.73923831869973,
+          52.53490387021849
+        ],
+        "fingertip": [
+          46.73923831869973,
+          9.65944258586461
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_open.png",
+      "asset_id": "char_karpathi__B21",
+      "part": "hand_right_open",
+      "canvas_width_px": 96,
+      "canvas_height_px": 110,
+      "drawn_width_px": 95.03645124802279,
+      "drawn_height_px": 109.57754761384048,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/parts/B21.png",
+      "source_scale": 0.5193248702077747,
+      "assembly_rotation_deg": 190.72286801499024,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          46.72365857259349,
+          91.85298979364912
+        ],
+        "grip": [
+          47.518225624011386,
+          53.05422874042627
+        ],
+        "fingertip": [
+          47.518225624011386,
+          10.178767456072386
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "char_karpathi__B15",
+      "part": "thigh_left",
+      "canvas_width_px": 224,
+      "canvas_height_px": 301,
+      "drawn_width_px": 223.35088414344122,
+      "drawn_height_px": 300.6106239414869,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/parts/B15.png",
+      "source_scale": 1.4047225417826492,
+      "assembly_rotation_deg": -14.483213857413432,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          99.25769480236198,
+          50.83690878711407
+        ],
+        "distal": [
+          44.754460181195206,
+          261.84028178828584
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "char_karpathi__B16",
+      "part": "thigh_right",
+      "canvas_width_px": 220,
+      "canvas_height_px": 297,
+      "drawn_width_px": 219.01705310329157,
+      "drawn_height_px": 296.64335040572405,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/parts/B16.png",
+      "source_scale": 1.3861838804005795,
+      "assembly_rotation_deg": 15.820245865991478,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          109.1065332263296,
+          48.017409617076076
+        ],
+        "distal": [
+          168.51837434029844,
+          257.69158336646774
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "char_karpathi__B17",
+      "part": "shin_left",
+      "canvas_width_px": 148,
+      "canvas_height_px": 245,
+      "drawn_width_px": 147.79611459675155,
+      "drawn_height_px": 244.7503657722206,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/parts/B17.png",
+      "source_scale": 1.1823689167740123,
+      "assembly_rotation_deg": -11.46545512512725,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          78.03634850708481,
+          37.68209737758777
+        ],
+        "distal": [
+          44.24424486568354,
+          204.28970144021386
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "char_karpathi__B18",
+      "part": "shin_right",
+      "canvas_width_px": 146,
+      "canvas_height_px": 245,
+      "drawn_width_px": 145.52616796929914,
+      "drawn_height_px": 244.90989243613754,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/parts/B18.png",
+      "source_scale": 1.183139576986172,
+      "assembly_rotation_deg": 11.094873914393572,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          65.69974071004212,
+          37.304390862374
+        ],
+        "distal": [
+          98.41355001370978,
+          204.12707121742423
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "char_karpathi__B19",
+      "part": "shoe_left",
+      "canvas_width_px": 278,
+      "canvas_height_px": 220,
+      "drawn_width_px": 277.49999999999983,
+      "drawn_height_px": 219.99999999999986,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/parts/B19.png",
+      "source_scale": 1.2499999999999993,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          53.74999999999997,
+          127.49999999999993
+        ],
+        "sole": [
+          53.74999999999997,
+          207.4999999999999
+        ],
+        "cuff_pin": [
+          61.162499999999966,
+          59.36249999999997
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "char_karpathi__B20",
+      "part": "shoe_right",
+      "canvas_width_px": 275,
+      "canvas_height_px": 220,
+      "drawn_width_px": 274.99999999999983,
+      "drawn_height_px": 219.99999999999986,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/parts/B20.png",
+      "source_scale": 1.2499999999999993,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          222.4999999999999,
+          127.49999999999993
+        ],
+        "sole": [
+          222.4999999999999,
+          207.4999999999999
+        ],
+        "cuff_pin": [
+          211.46249999999986,
+          58.33749999999997
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "char_karpathi__E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 192,
+      "canvas_height_px": 236,
+      "drawn_width_px": 191.38211382113826,
+      "drawn_height_px": 235.20325203252037,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E01.png",
+      "source_scale": 0.8943089430894311,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          90.32520325203254,
+          221.44878048780492
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "char_karpathi__E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 185,
+      "canvas_height_px": 236,
+      "drawn_width_px": 184.08163265306126,
+      "drawn_height_px": 235.26530612244903,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E02.png",
+      "source_scale": 0.8979591836734696,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          81.71428571428574,
+          221.4816326530613
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "char_karpathi__E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 194,
+      "canvas_height_px": 236,
+      "drawn_width_px": 193.17073170731712,
+      "drawn_height_px": 235.20325203252037,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E03.png",
+      "source_scale": 0.8943089430894311,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.52845528455288,
+          221.44878048780492
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "char_karpathi__E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 196,
+      "canvas_height_px": 237,
+      "drawn_width_px": 195.55555555555563,
+      "drawn_height_px": 236.29629629629633,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E04.png",
+      "source_scale": 0.9053497942386834,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          107.73662551440333,
+          222.45349794238692
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "char_karpathi__E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 187,
+      "canvas_height_px": 236,
+      "drawn_width_px": 186.01626016260167,
+      "drawn_height_px": 235.20325203252037,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E05.png",
+      "source_scale": 0.8943089430894311,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          107.31707317073173,
+          221.44878048780492
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "char_karpathi__E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 189,
+      "canvas_height_px": 238,
+      "drawn_width_px": 188.5714285714286,
+      "drawn_height_px": 237.061224489796,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E06.png",
+      "source_scale": 0.8979591836734696,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          113.14285714285717,
+          222.37959183673476
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "char_karpathi__E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 185,
+      "canvas_height_px": 238,
+      "drawn_width_px": 184.97959183673473,
+      "drawn_height_px": 237.061224489796,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E07.png",
+      "source_scale": 0.8979591836734695,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.9591836734694,
+          222.37959183673473
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "char_karpathi__E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 190,
+      "canvas_height_px": 239,
+      "drawn_width_px": 189.344262295082,
+      "drawn_height_px": 238.03278688524594,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E08.png",
+      "source_scale": 0.9016393442622952,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          94.672131147541,
+          222.416393442623
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "char_karpathi__E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 188,
+      "canvas_height_px": 239,
+      "drawn_width_px": 187.54098360655743,
+      "drawn_height_px": 238.03278688524594,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E09.png",
+      "source_scale": 0.9016393442622953,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          94.67213114754101,
+          222.41639344262302
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "char_karpathi__E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 192,
+      "canvas_height_px": 238,
+      "drawn_width_px": 191.265306122449,
+      "drawn_height_px": 237.061224489796,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E10.png",
+      "source_scale": 0.8979591836734695,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          95.18367346938777,
+          222.37959183673473
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "char_karpathi__E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 189,
+      "canvas_height_px": 238,
+      "drawn_width_px": 188.3127572016461,
+      "drawn_height_px": 237.201646090535,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E11.png",
+      "source_scale": 0.9053497942386831,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          96.8724279835391,
+          222.45349794238683
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "char_karpathi__E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 190,
+      "canvas_height_px": 238,
+      "drawn_width_px": 189.75000000000006,
+      "drawn_height_px": 237.41666666666674,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E12.png",
+      "source_scale": 0.916666666666667,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          103.58333333333337,
+          222.56666666666675
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "char_karpathi__E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 191,
+      "canvas_height_px": 238,
+      "drawn_width_px": 190.54393305439336,
+      "drawn_height_px": 237.48953974895403,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E13.png",
+      "source_scale": 0.9205020920502095,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          112.30125523012556,
+          222.60502092050217
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "char_karpathi__E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 196,
+      "canvas_height_px": 238,
+      "drawn_width_px": 195.04201680672273,
+      "drawn_height_px": 237.5630252100841,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E14.png",
+      "source_scale": 0.9243697478991598,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          114.62184873949582,
+          222.64369747899164
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "char_karpathi__E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 190,
+      "canvas_height_px": 238,
+      "drawn_width_px": 189.62343096234315,
+      "drawn_height_px": 237.48953974895403,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E15.png",
+      "source_scale": 0.9205020920502095,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          104.93723849372388,
+          222.60502092050217
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "char_karpathi__E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 193,
+      "canvas_height_px": 237,
+      "drawn_width_px": 192.26890756302524,
+      "drawn_height_px": 236.63865546218497,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E16.png",
+      "source_scale": 0.9243697478991598,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          94.2857142857143,
+          222.64369747899164
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "char_karpathi__E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 190,
+      "canvas_height_px": 238,
+      "drawn_width_px": 189.367088607595,
+      "drawn_height_px": 237.63713080168782,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/heads/E17.png",
+      "source_scale": 0.9282700421940931,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          93.7552742616034,
+          222.68270042194098
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "char_karpathi__B23",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 82,
+      "canvas_height_px": 111,
+      "drawn_width_px": 81.88505662985607,
+      "drawn_height_px": 110.85119911116568,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/parts/B23.png",
+      "source_scale": 0.5570412015636467,
+      "assembly_rotation_deg": -59.135146955398774,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          44.32376840841936,
+          18.482627067881797
+        ],
+        "grip": [
+          41.22104891570985,
+          53.43139205398499
+        ],
+        "fingertip": [
+          41.22104891570985,
+          101.29237209233351
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "char_karpathi__B24",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 85,
+      "canvas_height_px": 110,
+      "drawn_width_px": 84.11322143611065,
+      "drawn_height_px": 109.73711670803837,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_karpathi/parts/B24.png",
+      "source_scale": 0.5570412015636467,
+      "assembly_rotation_deg": 59.135146955398774,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          38.140611071062885,
+          17.869881746161784
+        ],
+        "grip": [
+          42.056610718055325,
+          52.874350852421344
+        ],
+        "fingertip": [
+          42.056610718055325,
+          100.73533089076986
+        ]
+      }
+    }
+  ]
+}

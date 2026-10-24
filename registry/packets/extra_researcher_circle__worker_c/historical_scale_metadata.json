@@ -1,0 +1,846 @@
+{
+  "actor_id": "extra_researcher_circle__worker_c",
+  "name": "Oracle researcher D",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "worker_c__E00",
+      "part": "head",
+      "canvas_width_px": 213,
+      "canvas_height_px": 240,
+      "drawn_width_px": 212.24669603524228,
+      "drawn_height_px": 239.38325991189427,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E00.png",
+      "source_scale": 0.9691629955947136,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          110.48458149779735,
+          223.09162995594713
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "asset__cd30a35c84ecec3b",
+      "part": "torso_front",
+      "canvas_width_px": 446,
+      "canvas_height_px": 372,
+      "drawn_width_px": 445.4805888972242,
+      "drawn_height_px": 371.2338240810202,
+      "source_file": "Odyssey_Watson_Kits/extras/worker_c/torso_front.png",
+      "source_scale": 0.32422168042010496,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          222.7402944486121,
+          51.992188672168034
+        ],
+        "waist": [
+          222.7402944486121,
+          328.592188672168
+        ],
+        "shoulder_left": [
+          133.0929998124531,
+          97.02009564891222
+        ],
+        "shoulder_right": [
+          312.38758908477115,
+          97.02009564891222
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "asset__cbdb5e4e50a93f08",
+      "part": "pelvis_front",
+      "canvas_width_px": 280,
+      "canvas_height_px": 280,
+      "drawn_width_px": 279.46901711987135,
+      "drawn_height_px": 279.46901711987135,
+      "source_file": "Odyssey_Watson_Kits/shared/body/front_pelvis.png",
+      "source_scale": 0.22286205511951462,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          140.06880164261494,
+          56.321698569803736
+        ],
+        "hip_left": [
+          66.20072774914158,
+          91.32169856980373
+        ],
+        "hip_right": [
+          213.9368755360883,
+          91.32169856980373
+        ],
+        "hem_pin_left": [
+          23.425030613612183,
+          218.16189437704406
+        ],
+        "hem_pin_right": [
+          255.32637068877435,
+          218.21760989082392
+        ],
+        "upper_pin_left": [
+          43.01460525861752,
+          72.92046443510519
+        ],
+        "upper_pin_right": [
+          237.12299802661238,
+          72.92046443510519
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "asset__63cbaf04356da628",
+      "part": "upper_arm_left",
+      "canvas_width_px": 185,
+      "canvas_height_px": 185,
+      "drawn_width_px": 184.59870471737406,
+      "drawn_height_px": 184.59870471737406,
+      "source_file": "Odyssey_Watson_Kits/shared/body/upper_arm_left.png",
+      "source_scale": 0.1472078984987034,
+      "assembly_rotation_deg": 10.050805226196278,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          95.61594631186281,
+          21.967834692961507
+        ],
+        "distal": [
+          90.64767973753156,
+          158.51788134035877
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "asset__7d17d1a24e317b90",
+      "part": "upper_arm_right",
+      "canvas_width_px": 195,
+      "canvas_height_px": 195,
+      "drawn_width_px": 194.30629320511642,
+      "drawn_height_px": 194.30629320511645,
+      "source_file": "Odyssey_Watson_Kits/shared/body/upper_arm_right.png",
+      "source_scale": 0.1549491971332667,
+      "assembly_rotation_deg": -12.134548150630257,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          100.09718134809027,
+          27.122307466207
+        ],
+        "distal": [
+          100.09718134809027,
+          163.7627074662069
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "asset__41cc139dcf108bec",
+      "part": "forearm_left",
+      "canvas_width_px": 175,
+      "canvas_height_px": 175,
+      "drawn_width_px": 174.16217719001284,
+      "drawn_height_px": 174.16217719001284,
+      "source_file": "Odyssey_Watson_Kits/shared/body/forearm_left.png",
+      "source_scale": 0.13888530876396557,
+      "assembly_rotation_deg": -7.499782652325157,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          85.78945522350153,
+          23.841052102422328
+        ],
+        "distal": [
+          92.8809390889896,
+          149.77113926488522
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "asset__ae8456fc0f3db046",
+      "part": "forearm_right",
+      "canvas_width_px": 206,
+      "canvas_height_px": 206,
+      "drawn_width_px": 205.7988624691541,
+      "drawn_height_px": 205.7988624691541,
+      "source_file": "Odyssey_Watson_Kits/shared/body/forearm_right.png",
+      "source_scale": 0.1641139254139985,
+      "assembly_rotation_deg": 19.22145231930706,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          106.42788063097802,
+          30.62037620374384
+        ],
+        "distal": [
+          125.06794027949998,
+          155.36501205017825
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_relaxed.png",
+      "asset_id": "asset__80676edf71d43b06",
+      "part": "hand_left_relaxed",
+      "canvas_width_px": 75,
+      "canvas_height_px": 75,
+      "drawn_width_px": 74.90939256826778,
+      "drawn_height_px": 74.90939256826778,
+      "source_file": "Odyssey_Watson_Kits/shared/hands/hand_medium_left_relaxed.png",
+      "source_scale": 0.05973635770994241,
+      "assembly_rotation_deg": -10.722868014990226,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          36.11062823566019,
+          11.905456091591523
+        ],
+        "grip": [
+          36.11062823566019,
+          35.99473970170289
+        ],
+        "fingertip": [
+          36.11062823566019,
+          71.03369768004671
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_relaxed.png",
+      "asset_id": "asset__678a032942272f3c",
+      "part": "hand_right_relaxed",
+      "canvas_width_px": 98,
+      "canvas_height_px": 98,
+      "drawn_width_px": 97.1046208046286,
+      "drawn_height_px": 97.10462080462861,
+      "source_file": "Odyssey_Watson_Kits/shared/hands/hand_medium_right_relaxed.png",
+      "source_scale": 0.07743590175807703,
+      "assembly_rotation_deg": 10.722868014990226,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          45.063823028112935,
+          10.196759543503584
+        ],
+        "grip": [
+          52.036925981427764,
+          46.26020771027522
+        ],
+        "fingertip": [
+          52.036925981427764,
+          90.11990246605005
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "asset__59fb7db13153d80b",
+      "part": "thigh_left",
+      "canvas_width_px": 315,
+      "canvas_height_px": 315,
+      "drawn_width_px": 314.6499580898687,
+      "drawn_height_px": 314.6499580898687,
+      "source_file": "Odyssey_Watson_Kits/shared/body/thigh_left.png",
+      "source_scale": 0.25091703196959225,
+      "assembly_rotation_deg": -0.07411879778418592,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          158.42901398560053,
+          31.914137296212438
+        ],
+        "distal": [
+          158.13795022851582,
+          256.9139490336655
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "asset__b68155dfa018ef7f",
+      "part": "thigh_right",
+      "canvas_width_px": 289,
+      "canvas_height_px": 289,
+      "drawn_width_px": 288.6120086891315,
+      "drawn_height_px": 288.6120086891315,
+      "source_file": "Odyssey_Watson_Kits/shared/body/thigh_right.png",
+      "source_scale": 0.23015311697697888,
+      "assembly_rotation_deg": 0.018168483396978893,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          142.20240485539617,
+          25.772546039082094
+        ],
+        "distal": [
+          142.27375232165903,
+          250.7725347269464
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "asset__66bb8186a55d815a",
+      "part": "shin_left",
+      "canvas_width_px": 220,
+      "canvas_height_px": 220,
+      "drawn_width_px": 219.54539550001414,
+      "drawn_height_px": 219.54539550001417,
+      "source_file": "Odyssey_Watson_Kits/shared/body/shin_left.png",
+      "source_scale": 0.17507607296651845,
+      "assembly_rotation_deg": 0.42308108559237145,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          108.3930982950309,
+          23.026005116556508
+        ],
+        "distal": [
+          109.64839373820084,
+          193.0213704455866
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "asset__2904f28fb8123436",
+      "part": "shin_right",
+      "canvas_width_px": 213,
+      "canvas_height_px": 213,
+      "drawn_width_px": 212.96667104125896,
+      "drawn_height_px": 212.966671041259,
+      "source_file": "Odyssey_Watson_Kits/shared/body/shin_right.png",
+      "source_scale": 0.16982988121312517,
+      "assembly_rotation_deg": 0.2770351469626068,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          105.63758271218812,
+          17.033937085676456
+        ],
+        "distal": [
+          106.45955933725965,
+          187.03194988120262
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "asset__12f8c73eed553a90",
+      "part": "shoe_left",
+      "canvas_width_px": 275,
+      "canvas_height_px": 275,
+      "drawn_width_px": 274.0983606557375,
+      "drawn_height_px": 274.0983606557375,
+      "source_file": "Odyssey_Watson_Kits/shared/body/boot_left.png",
+      "source_scale": 0.21857923497267745,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          100.54644808743163,
+          174.86338797814196
+        ],
+        "sole": [
+          100.54644808743163,
+          254.8633879781419
+        ],
+        "cuff_pin": [
+          116.2841530054644,
+          37.8142076502732
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "asset__a7b5ad4d2706358b",
+      "part": "shoe_right",
+      "canvas_width_px": 251,
+      "canvas_height_px": 251,
+      "drawn_width_px": 250.17456359102235,
+      "drawn_height_px": 250.17456359102235,
+      "source_file": "Odyssey_Watson_Kits/shared/body/boot_right.png",
+      "source_scale": 0.19950124688279294,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          173.56608478802985,
+          163.5910224438902
+        ],
+        "sole": [
+          173.56608478802985,
+          243.59102244389018
+        ],
+        "cuff_pin": [
+          163.5910224438902,
+          26.932668329177048
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "worker_c__E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 235,
+      "canvas_height_px": 240,
+      "drawn_width_px": 234.73214285714286,
+      "drawn_height_px": 239.6428571428571,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E01.png",
+      "source_scale": 0.9821428571428572,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          122.76785714285715,
+          223.2214285714286
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "worker_c__E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 231,
+      "canvas_height_px": 240,
+      "drawn_width_px": 230.7079646017699,
+      "drawn_height_px": 239.46902654867253,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E02.png",
+      "source_scale": 0.9734513274336283,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          138.23008849557522,
+          223.13451327433629
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "worker_c__E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 230,
+      "canvas_height_px": 239,
+      "drawn_width_px": 229.82142857142858,
+      "drawn_height_px": 238.66071428571428,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E03.png",
+      "source_scale": 0.9821428571428572,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          131.60714285714286,
+          223.2214285714286
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "worker_c__E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 224,
+      "canvas_height_px": 239,
+      "drawn_width_px": 223.9111111111111,
+      "drawn_height_px": 238.57777777777775,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E04.png",
+      "source_scale": 0.9777777777777777,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          127.1111111111111,
+          222.2
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "worker_c__E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 224,
+      "canvas_height_px": 240,
+      "drawn_width_px": 223.9111111111111,
+      "drawn_height_px": 239.55555555555557,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E05.png",
+      "source_scale": 0.9777777777777777,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          126.13333333333333,
+          223.17777777777778
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "worker_c__E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 220,
+      "canvas_height_px": 238,
+      "drawn_width_px": 219.0557939914163,
+      "drawn_height_px": 237.9399141630901,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E06.png",
+      "source_scale": 0.944206008583691,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          120.85836909871244,
+          221.8978540772532
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "worker_c__E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 226,
+      "canvas_height_px": 239,
+      "drawn_width_px": 225.68965517241378,
+      "drawn_height_px": 238.0172413793103,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E07.png",
+      "source_scale": 0.9482758620689654,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          127.06896551724137,
+          222.88275862068963
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "worker_c__E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 224,
+      "canvas_height_px": 240,
+      "drawn_width_px": 223.8095238095238,
+      "drawn_height_px": 239.047619047619,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E08.png",
+      "source_scale": 0.9523809523809523,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          121.9047619047619,
+          222.9238095238095
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "worker_c__E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 223,
+      "canvas_height_px": 238,
+      "drawn_width_px": 222.8085106382979,
+      "drawn_height_px": 237.78723404255317,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E09.png",
+      "source_scale": 0.9361702127659575,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          120.76595744680851,
+          221.82553191489362
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "worker_c__E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 220,
+      "canvas_height_px": 239,
+      "drawn_width_px": 219.05172413793105,
+      "drawn_height_px": 238.0172413793103,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E10.png",
+      "source_scale": 0.9482758620689655,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          112.8448275862069,
+          221.93448275862067
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "worker_c__E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 220,
+      "canvas_height_px": 239,
+      "drawn_width_px": 220,
+      "drawn_height_px": 238.0172413793103,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E11.png",
+      "source_scale": 0.9482758620689655,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          116.63793103448276,
+          222.88275862068966
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "worker_c__E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 223,
+      "canvas_height_px": 239,
+      "drawn_width_px": 222.83261802575103,
+      "drawn_height_px": 238.88412017167377,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E12.png",
+      "source_scale": 0.9442060085836909,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          121.80257510729612,
+          222.84206008583686
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "worker_c__E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 227,
+      "canvas_height_px": 239,
+      "drawn_width_px": 226.5531914893617,
+      "drawn_height_px": 238.7234042553192,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E13.png",
+      "source_scale": 0.9361702127659575,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          128.25531914893617,
+          222.76170212765956
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "worker_c__E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 220,
+      "canvas_height_px": 239,
+      "drawn_width_px": 219.05982905982907,
+      "drawn_height_px": 238.8034188034188,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E14.png",
+      "source_scale": 0.9401709401709402,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          121.28205128205128,
+          222.8017094017094
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "worker_c__E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 223,
+      "canvas_height_px": 239,
+      "drawn_width_px": 222.8205128205128,
+      "drawn_height_px": 238.8034188034188,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E15.png",
+      "source_scale": 0.94017094017094,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          118.46153846153845,
+          222.80170940170936
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "worker_c__E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 224,
+      "canvas_height_px": 240,
+      "drawn_width_px": 223.82608695652172,
+      "drawn_height_px": 239.1304347826087,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E16.png",
+      "source_scale": 0.9565217391304347,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          118.6086956521739,
+          222.96521739130432
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "worker_c__E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 231,
+      "canvas_height_px": 239,
+      "drawn_width_px": 230.6140350877193,
+      "drawn_height_px": 238.33333333333331,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/worker_c/heads/E17.png",
+      "source_scale": 0.9649122807017544,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          118.6842105263158,
+          222.0842105263158
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_open.png",
+      "asset_id": "asset__7a96edd8caecff1c",
+      "part": "hand_left_open",
+      "example_pose": "explaining",
+      "canvas_width_px": 88,
+      "canvas_height_px": 88,
+      "drawn_width_px": 87.38488296584663,
+      "drawn_height_px": 87.38488296584663,
+      "source_file": "Odyssey_Watson_Kits/shared/hands/hand_medium_left_open.png",
+      "source_scale": 0.06968491464581071,
+      "assembly_rotation_deg": 177.13065290376073,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          42.647167763236155,
+          78.78367395111421
+        ],
+        "grip": [
+          42.647167763236155,
+          42.01721613483803
+        ],
+        "fingertip": [
+          42.647167763236155,
+          5.250758318561837
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_open.png",
+      "asset_id": "asset__7ffeb3a2ca83ba2c",
+      "part": "hand_right_open",
+      "example_pose": "explaining",
+      "canvas_width_px": 88,
+      "canvas_height_px": 88,
+      "drawn_width_px": 87.08757645779289,
+      "drawn_height_px": 87.08757645779289,
+      "source_file": "Odyssey_Watson_Kits/shared/hands/hand_medium_right_open.png",
+      "source_scale": 0.06944782811626228,
+      "assembly_rotation_deg": 155.08019587298045,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          38.383120121577,
+          68.98461110272682
+        ],
+        "grip": [
+          46.32170135354694,
+          41.843705396610346
+        ],
+        "fingertip": [
+          46.32170135354694,
+          6.785052806958825
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "asset__e401b66ad3e31692",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 72,
+      "canvas_height_px": 72,
+      "drawn_width_px": 71.76339310344824,
+      "drawn_height_px": 71.76339310344824,
+      "source_file": "Odyssey_Watson_Kits/shared/hands/hand_medium_left_grip.png",
+      "source_scale": 0.05722758620689652,
+      "assembly_rotation_deg": -56.68580119525269,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          38.34248275862067,
+          14.438519999999992
+        ],
+        "grip": [
+          38.34248275862067,
+          35.24990399999998
+        ],
+        "fingertip": [
+          38.34248275862067,
+          65.52100799999997
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "asset__6785a058f664b760",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 67,
+      "canvas_height_px": 67,
+      "drawn_width_px": 66.34501610738252,
+      "drawn_height_px": 66.34501610738252,
+      "source_file": "Odyssey_Watson_Kits/shared/hands/hand_medium_right_grip.png",
+      "source_scale": 0.05290671140939595,
+      "assembly_rotation_deg": 56.68580119525271,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          19.92043497986576,
+          13.959435805369123
+        ],
+        "grip": [
+          33.516401677852336,
+          31.699585208053676
+        ],
+        "fingertip": [
+          33.516401677852336,
+          61.97068920805366
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "odysseus_home",
+  "name": "Odysseus Home",
+  "kind": "set_or_support",
+  "asset_ids": [
+    "asset__1c1c307db189a90e",
+    "asset__90d3dd8ddc0191b7",
+    "asset__dc97aecc2323aa5a"
+  ],
+  "status": "inventory_only",
+  "counts": {
+    "records": 3,
+    "native_records": 2,
+    "unique_native_files": 2,
+    "original": 3,
+    "historical_scale": 0,
+    "views": {
+      "unspecified": 2,
+      "front": 1
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {
+      "torso": 1
+    },
+    "side": {},
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {
+      "head": 1
+    }
+  },
+  "assets": [
+    {
+      "id": "asset__1c1c307db189a90e",
+      "file": "Odyssey_Watson_Kits/extras/odysseus_home/fullkit_reference.png",
+      "owner": "odysseus_home",
+      "category": "reference",
+      "is_cutout": false,
+      "title": "Fullkit Reference",
+      "note": "Reference / source image; see original metadata.",
+      "preferred": true,
+      "owner_name": "Odysseus Home",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "odysseus_home"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "eeed3998e87ca389e4231fba2edbf3de804bc2931465d144b66a9d59b8c3e28b",
+      "byte_size": 2706089,
+      "has_alpha": false,
+      "alpha_extrema": null,
+      "alpha_bounds": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/odysseus_home/fullkit_reference.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "reference",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2475,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__90d3dd8ddc0191b7",
+      "file": "Odyssey_Watson_Kits/extras/odysseus_home/head_blank.png",
+      "owner": "odysseus_home",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Head Blank",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Odysseus Home",
+      "width": 1254,
+      "height": 1254,
+      "packet_ids": [
+        "odysseus_home"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "1162b5ddd117cc9d24b3748f52ffdc17b8ec33a06d8c3e22e98881da57d72078",
+      "byte_size": 2317264,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1242,
+        1254
+      ],
+      "native_file": "assets/1162b5ddd117cc9d24b3748f52ffdc17b8ec33a06d8c3e22e98881da57d72078.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/odysseus_home/head_blank.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "head",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2476,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__dc97aecc2323aa5a",
+      "file": "Odyssey_Watson_Kits/extras/odysseus_home/torso_front.png",
+      "owner": "odysseus_home",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Torso Front",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Odysseus Home",
+      "width": 1254,
+      "height": 1254,
+      "packet_ids": [
+        "odysseus_home"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "f2752d14a9ce416f9d6e6e45cd8d41729f932742b3d72e2b1dd67546ef8cada2",
+      "byte_size": 2352637,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1253,
+        1254
+      ],
+      "native_file": "assets/f2752d14a9ce416f9d6e6e45cd8d41729f932742b3d72e2b1dd67546ef8cada2.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/odysseus_home/torso_front.png",
+      "view_label": "front",
+      "view_label_basis": "filename_label",
+      "semantic_slot": "torso",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2477,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

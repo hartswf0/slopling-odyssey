@@ -1,0 +1,782 @@
+{
+  "actor_id": "extra_jean_lave",
+  "name": "Jean Lave",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "extra_jean_lave__E00",
+      "part": "head",
+      "canvas_width_px": 219,
+      "canvas_height_px": 236,
+      "drawn_width_px": 218.30769230769232,
+      "drawn_height_px": 235.23076923076923,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E00.png",
+      "source_scale": 0.8461538461538463,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.76923076923079,
+          221.8615384615385
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "extra_jean_lave__B03",
+      "part": "torso_front",
+      "canvas_width_px": 294,
+      "canvas_height_px": 343,
+      "drawn_width_px": 293.3529261436238,
+      "drawn_height_px": 342.8341426015844,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B03.png",
+      "source_scale": 1.1781242013800153,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          146.6764630718119,
+          37.51147457193969
+        ],
+        "waist": [
+          146.6764630718119,
+          314.11147457193965
+        ],
+        "shoulder_left": [
+          52.24980833120368,
+          82.53938154868388
+        ],
+        "shoulder_right": [
+          241.10311781242012,
+          82.53938154868388
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "extra_jean_lave__B05",
+      "part": "pelvis_front",
+      "canvas_width_px": 331,
+      "canvas_height_px": 251,
+      "drawn_width_px": 330.38606335324886,
+      "drawn_height_px": 250.2086923302847,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B05.png",
+      "source_scale": 1.3823684659131752,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          164.50184744366786,
+          40.69692763648388
+        ],
+        "hip_left": [
+          85.03501381218307,
+          75.69692763648389
+        ],
+        "hip_right": [
+          243.96868107515263,
+          75.69692763648389
+        ],
+        "hem_pin_left": [
+          42.85342244330843,
+          206.41525933015532
+        ],
+        "hem_pin_right": [
+          286.1502724440273,
+          206.41525933015532
+        ],
+        "upper_pin_left": [
+          51.97705431833539,
+          58.612422954718625
+        ],
+        "upper_pin_right": [
+          277.02664056900034,
+          58.612422954718625
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "extra_jean_lave__B11",
+      "part": "upper_arm_left",
+      "canvas_width_px": 170,
+      "canvas_height_px": 155,
+      "drawn_width_px": 169.2462344624073,
+      "drawn_height_px": 154.41537886518603,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B11.png",
+      "source_scale": 0.8724032704247799,
+      "assembly_rotation_deg": -36.872927681839734,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          133.05894680518745,
+          30.359633810782338
+        ],
+        "distal": [
+          29.92343217556995,
+          119.99034581422423
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "extra_jean_lave__B12",
+      "part": "upper_arm_right",
+      "canvas_width_px": 171,
+      "canvas_height_px": 149,
+      "drawn_width_px": 170.3574361400927,
+      "drawn_height_px": 148.53825712707592,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B12.png",
+      "source_scale": 0.8391991928083383,
+      "assembly_rotation_deg": 38.53296434457229,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          30.328658828093346,
+          29.94262719940151
+        ],
+        "distal": [
+          136.0174051703755,
+          116.54798389722203
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "extra_jean_lave__B13",
+      "part": "forearm_left",
+      "canvas_width_px": 139,
+      "canvas_height_px": 163,
+      "drawn_width_px": 138.45267754125,
+      "drawn_height_px": 162.6014003682122,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B13.png",
+      "source_scale": 0.804957427565407,
+      "assembly_rotation_deg": -46.07436387138155,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          102.31813861783888,
+          28.57598867857195
+        ],
+        "distal": [
+          29.34069823475909,
+          131.44954792143096
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "extra_jean_lave__B14",
+      "part": "forearm_right",
+      "canvas_width_px": 153,
+      "canvas_height_px": 172,
+      "drawn_width_px": 152.05394290208392,
+      "drawn_height_px": 171.81236486111172,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B14.png",
+      "source_scale": 0.8590618243055589,
+      "assembly_rotation_deg": 39.79831893329025,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          55.40948766770855,
+          25.771854729166765
+        ],
+        "distal": [
+          116.70354883191017,
+          136.00666802405607
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_open.png",
+      "asset_id": "extra_jean_lave__B22",
+      "part": "hand_left_open",
+      "canvas_width_px": 90,
+      "canvas_height_px": 107,
+      "drawn_width_px": 89.40782261306532,
+      "drawn_height_px": 106.01911206030148,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B22.png",
+      "source_scale": 0.48856733668341706,
+      "assembly_rotation_deg": 169.2771319850097,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          44.70391130653266,
+          93.36033236683417
+        ],
+        "grip": [
+          44.70391130653266,
+          51.55362536683417
+        ],
+        "fingertip": [
+          44.70391130653266,
+          9.74691836683417
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_open.png",
+      "asset_id": "extra_jean_lave__B21",
+      "part": "hand_right_open",
+      "canvas_width_px": 90,
+      "canvas_height_px": 107,
+      "drawn_width_px": 89.85937727272726,
+      "drawn_height_px": 106.06352727272724,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B21.png",
+      "source_scale": 0.4910348484848484,
+      "assembly_rotation_deg": 190.72286801499033,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          49.98734757575757,
+          79.84226636363636
+        ],
+        "grip": [
+          44.68417121212121,
+          51.57830048484848
+        ],
+        "fingertip": [
+          44.68417121212121,
+          9.771593484848482
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "extra_jean_lave__B15",
+      "part": "thigh_left",
+      "canvas_width_px": 251,
+      "canvas_height_px": 307,
+      "drawn_width_px": 250.89043993912722,
+      "drawn_height_px": 306.3197231814925,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B15.png",
+      "source_scale": 1.4586653484832979,
+      "assembly_rotation_deg": -23.40392637726307,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          143.89733662787734,
+          46.72105111192003
+        ],
+        "distal": [
+          54.52491072630568,
+          253.20971784321569
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "extra_jean_lave__B16",
+      "part": "thigh_right",
+      "canvas_width_px": 248,
+      "canvas_height_px": 307,
+      "drawn_width_px": 247.01170343877956,
+      "drawn_height_px": 306.9376196576551,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B16.png",
+      "source_scale": 1.4616077126555003,
+      "assembly_rotation_deg": 24.092489135054212,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          94.27369746627977,
+          46.09910725715448
+        ],
+        "distal": [
+          186.1211261295514,
+          251.49883911663193
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "extra_jean_lave__B17",
+      "part": "shin_left",
+      "canvas_width_px": 142,
+      "canvas_height_px": 250,
+      "drawn_width_px": 141.78461940742167,
+      "drawn_height_px": 249.5878011056266,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B17.png",
+      "source_scale": 1.171773714110923,
+      "assembly_rotation_deg": -2.32281038477133,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          70.38844700664315,
+          38.94975825704709
+        ],
+        "distal": [
+          63.49841756767091,
+          208.81007585456646
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "extra_jean_lave__B18",
+      "part": "shin_right",
+      "canvas_width_px": 141,
+      "canvas_height_px": 249,
+      "drawn_width_px": 140.05121388616394,
+      "drawn_height_px": 248.59090464794102,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B18.png",
+      "source_scale": 1.167093449051366,
+      "assembly_rotation_deg": -0.21240957843673827,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          65.07713071910416,
+          38.25732325990378
+        ],
+        "distal": [
+          64.44690025661643,
+          208.25615504872576
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "extra_jean_lave__B19",
+      "part": "shoe_left",
+      "canvas_width_px": 138,
+      "canvas_height_px": 109,
+      "drawn_width_px": 137.02239789196307,
+      "drawn_height_px": 108.03689064558624,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B19.png",
+      "source_scale": 0.6587615283267455,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          35.54018445322792,
+          22.10803689064558
+        ],
+        "sole": [
+          35.54018445322792,
+          102.10803689064555
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "extra_jean_lave__B20",
+      "part": "shoe_right",
+      "canvas_width_px": 134,
+      "canvas_height_px": 109,
+      "drawn_width_px": 133.44289235825795,
+      "drawn_height_px": 108.46343467543133,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B20.png",
+      "source_scale": 0.6573541495480687,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          94.5209531635168,
+          21.889893179950686
+        ],
+        "sole": [
+          94.5209531635168,
+          101.88989317995065
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "extra_jean_lave__E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 219,
+      "canvas_height_px": 236,
+      "drawn_width_px": 218.29457364341087,
+      "drawn_height_px": 235.34883720930236,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E01.png",
+      "source_scale": 0.8527131782945737,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          123.64341085271319,
+          221.92713178294574
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "extra_jean_lave__E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 218,
+      "canvas_height_px": 235,
+      "drawn_width_px": 217.42187499999997,
+      "drawn_height_px": 234.60937499999997,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E02.png",
+      "source_scale": 0.8593749999999999,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          122.89062499999999,
+          221.13437499999998
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "extra_jean_lave__E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 220,
+      "canvas_height_px": 236,
+      "drawn_width_px": 219.140625,
+      "drawn_height_px": 235.46874999999997,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E03.png",
+      "source_scale": 0.859375,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          122.03125,
+          221.99375
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "extra_jean_lave__E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 214,
+      "canvas_height_px": 236,
+      "drawn_width_px": 213.984375,
+      "drawn_height_px": 235.46874999999997,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E04.png",
+      "source_scale": 0.859375,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          110,
+          221.99375
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "extra_jean_lave__E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 221,
+      "canvas_height_px": 235,
+      "drawn_width_px": 220.85603112840465,
+      "drawn_height_px": 234.55252918287937,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E05.png",
+      "source_scale": 0.8560311284046692,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          124.12451361867704,
+          221.10428015564202
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "extra_jean_lave__E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 224,
+      "canvas_height_px": 236,
+      "drawn_width_px": 223.39768339768344,
+      "drawn_height_px": 235.2895752895753,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E06.png",
+      "source_scale": 0.8494208494208496,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          125.71428571428574,
+          221.89420849420856
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "extra_jean_lave__E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 220,
+      "canvas_height_px": 236,
+      "drawn_width_px": 219.15708812260533,
+      "drawn_height_px": 235.17241379310343,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E07.png",
+      "source_scale": 0.8429118773946359,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          117.1647509578544,
+          221.82911877394633
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "extra_jean_lave__E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 215,
+      "canvas_height_px": 236,
+      "drawn_width_px": 214.09961685823757,
+      "drawn_height_px": 235.17241379310343,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E08.png",
+      "source_scale": 0.8429118773946361,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          115.05747126436783,
+          221.8291187739464
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "extra_jean_lave__E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 222,
+      "canvas_height_px": 236,
+      "drawn_width_px": 221.68582375478925,
+      "drawn_height_px": 235.17241379310343,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E09.png",
+      "source_scale": 0.8429118773946359,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          115.47892720306513,
+          221.82911877394633
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "extra_jean_lave__E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 216,
+      "canvas_height_px": 236,
+      "drawn_width_px": 215.78544061302676,
+      "drawn_height_px": 235.17241379310343,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E10.png",
+      "source_scale": 0.8429118773946358,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          119.69348659003829,
+          221.8291187739463
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "extra_jean_lave__E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 213,
+      "canvas_height_px": 236,
+      "drawn_width_px": 212.35521235521233,
+      "drawn_height_px": 235.2895752895753,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E11.png",
+      "source_scale": 0.8494208494208493,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          112.1235521235521,
+          221.89420849420847
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "extra_jean_lave__E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 210,
+      "canvas_height_px": 235,
+      "drawn_width_px": 209.36802973977697,
+      "drawn_height_px": 234.7211895910781,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E12.png",
+      "source_scale": 0.8178438661710038,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          118.58736059479556,
+          221.57843866171007
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "extra_jean_lave__E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 215,
+      "canvas_height_px": 235,
+      "drawn_width_px": 214.188679245283,
+      "drawn_height_px": 234.94339622641505,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E13.png",
+      "source_scale": 0.830188679245283,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          120.37735849056602,
+          221.70188679245283
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "extra_jean_lave__E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 212,
+      "canvas_height_px": 235,
+      "drawn_width_px": 211.72932330827072,
+      "drawn_height_px": 234.88721804511275,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E14.png",
+      "source_scale": 0.8270676691729325,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          117.44360902255642,
+          221.67067669172937
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "extra_jean_lave__E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 211,
+      "canvas_height_px": 235,
+      "drawn_width_px": 210.07518796992477,
+      "drawn_height_px": 234.06015037593988,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E15.png",
+      "source_scale": 0.8270676691729322,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          107.51879699248119,
+          220.84360902255634
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "extra_jean_lave__E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 207,
+      "canvas_height_px": 235,
+      "drawn_width_px": 206.7669172932331,
+      "drawn_height_px": 234.88721804511275,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E16.png",
+      "source_scale": 0.8270676691729324,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          115.78947368421053,
+          221.6706766917293
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "extra_jean_lave__E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 207,
+      "canvas_height_px": 236,
+      "drawn_width_px": 206.61596958174906,
+      "drawn_height_px": 235.893536121673,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/heads/E17.png",
+      "source_scale": 0.8365019011406845,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          89.50570342205323,
+          220.92851711026617
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "extra_jean_lave__B23",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 92,
+      "canvas_height_px": 109,
+      "drawn_width_px": 91.70075795454544,
+      "drawn_height_px": 108.27318409090907,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B23.png",
+      "source_scale": 0.5524142045454544,
+      "assembly_rotation_deg": -58.31356216846089,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          50.79448610795453,
+          17.85955123295454
+        ],
+        "grip": [
+          45.85037897727272,
+          52.19209404545454
+        ],
+        "fingertip": [
+          45.85037897727272,
+          98.86004604545452
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "extra_jean_lave__B24",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 96,
+      "canvas_height_px": 109,
+      "drawn_width_px": 95.56765738636362,
+      "drawn_height_px": 108.27318409090907,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_jean_lave/parts/B24.png",
+      "source_scale": 0.5524142045454544,
+      "assembly_rotation_deg": 58.31356216846089,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          41.1493340965909,
+          18.063944488636363
+        ],
+        "grip": [
+          47.78382869318181,
+          52.19209404545454
+        ],
+        "fingertip": [
+          47.78382869318181,
+          98.86004604545452
+        ]
+      }
+    }
+  ]
+}

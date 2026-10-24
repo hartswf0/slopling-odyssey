@@ -1,0 +1,5 @@
+archives/**/*.part-* binary
+*.png binary
+*.jpg binary
+*.webp binary
+*.zip binary

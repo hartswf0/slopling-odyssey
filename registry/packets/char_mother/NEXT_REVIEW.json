@@ -1,0 +1,56 @@
+{
+  "actor_id": "char_mother",
+  "name": "Amy Hartsoe",
+  "source_banks": [
+    "original",
+    "historical_scale"
+  ],
+  "decision": "Do not replace or redraw these parts before inspecting and trying compatible originals.",
+  "front": "Candidates exist. Torso/pelvis fit, limb and shoe overlap require a new assembly review using the actual parts.",
+  "profile": "Some head and pelvis cards have profile/side labels. Unlabelled limbs must be visually identified; a complete compatible profile chain has not been established by this inventory.",
+  "seated": "The old rig explicitly marks front-facing seated assembly unsupported. Retain the cards as variants, not as an approved seated rig.",
+  "motion_status": "not_passed; rejected parent animation demos are not evidence of readiness",
+  "next_test": [
+    "Inspect original armless torso against front pelvis at one common character scale.",
+    "Choose one shoulder-to-hand chain, retaining native joint guides.",
+    "Check one hip-to-foot chain against the complete-pose reference.",
+    "Only after those connections fit, compare a short motion test with the working Watson reference."
+  ],
+  "part_availability": {
+    "front": {
+      "head": 2,
+      "body": 1,
+      "torso": 3,
+      "pelvis": 2,
+      "upper_arm": 4,
+      "forearm": 4,
+      "thigh": 4,
+      "shin": 4,
+      "hand": 6,
+      "foot": 2,
+      "expression_head": 17
+    },
+    "side": {
+      "pelvis": 1,
+      "foot": 2
+    },
+    "left_profile": {
+      "head": 1
+    },
+    "right_profile": {},
+    "three_quarter": {
+      "torso": 1
+    },
+    "back": {
+      "torso": 1,
+      "pelvis": 1
+    },
+    "unspecified": {
+      "body": 2,
+      "connector": 1,
+      "pelvis": 2,
+      "hand": 6,
+      "head": 18
+    }
+  }
+}

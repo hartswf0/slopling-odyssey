@@ -1,0 +1,790 @@
+{
+  "actor_id": "char_ines",
+  "name": "Ines Duarte",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "char_ines__E00",
+      "part": "head",
+      "canvas_width_px": 243,
+      "canvas_height_px": 238,
+      "drawn_width_px": 242.79279279279282,
+      "drawn_height_px": 237.83783783783787,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E00.png",
+      "source_scale": 0.9909909909909911,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          121.8918918918919,
+          223.30990990990995
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "file__381fd129d4b33b72",
+      "part": "torso_front",
+      "canvas_width_px": 447,
+      "canvas_height_px": 407,
+      "drawn_width_px": 446.70493562231763,
+      "drawn_height_px": 406.28068669527903,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/torso_front_override.png",
+      "source_scale": 0.33969957081545066,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          227.9384120171674,
+          49.596137339055794
+        ],
+        "waist": [
+          228.27811158798283,
+          366.1961373390558
+        ],
+        "shoulder_left": [
+          114.47875536480687,
+          124.33004291845494
+        ],
+        "shoulder_right": [
+          341.73776824034337,
+          124.33004291845494
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "char_ines__B05",
+      "part": "pelvis_front",
+      "canvas_width_px": 283,
+      "canvas_height_px": 193,
+      "drawn_width_px": 282.7648443354453,
+      "drawn_height_px": 192.62583282239942,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/parts/B05.png",
+      "source_scale": 1.2347809796307654,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          141.38242216772264,
+          32.499435383881746
+        ],
+        "hip_left": [
+          69.50335178145652,
+          67.49943538388176
+        ],
+        "hip_right": [
+          213.26149255398875,
+          67.49943538388176
+        ],
+        "hem_pin_left": [
+          38.15473227059065,
+          156.76779317392197
+        ],
+        "hem_pin_right": [
+          244.6101120648546,
+          156.76779317392197
+        ],
+        "upper_pin_left": [
+          45.89680901287555,
+          45.933852442264474
+        ],
+        "upper_pin_right": [
+          236.86803532256974,
+          45.933852442264474
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "char_ines__B11",
+      "part": "upper_arm_left",
+      "canvas_width_px": 168,
+      "canvas_height_px": 228,
+      "drawn_width_px": 167.29931066394596,
+      "drawn_height_px": 227.71295062592642,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/parts/B11.png",
+      "source_scale": 1.1618007684996248,
+      "assembly_rotation_deg": -12.901886685943627,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          107.22259292483038,
+          40.140216551662036
+        ],
+        "distal": [
+          41.03480314340675,
+          181.84505628556127
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "char_ines__B12",
+      "part": "upper_arm_right",
+      "canvas_width_px": 170,
+      "canvas_height_px": 233,
+      "drawn_width_px": 169.8332721265264,
+      "drawn_height_px": 232.77847088670754,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/parts/B12.png",
+      "source_scale": 1.1876452596260587,
+      "assembly_rotation_deg": 12.336412387324687,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          55.534292340114504,
+          42.31580060047647
+        ],
+        "distal": [
+          120.320341252716,
+          184.66696141925587
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "char_ines__B13",
+      "part": "forearm_left",
+      "canvas_width_px": 163,
+      "canvas_height_px": 212,
+      "drawn_width_px": 162.41956636238007,
+      "drawn_height_px": 211.3679288277549,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/parts/B13.png",
+      "source_scale": 1.112462783303973,
+      "assembly_rotation_deg": -38.405531921985215,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          107.96451311965059,
+          36.19953896871128
+        ],
+        "distal": [
+          40.89413191425405,
+          164.0437620260039
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "char_ines__B14",
+      "part": "forearm_right",
+      "canvas_width_px": 160,
+      "canvas_height_px": 217,
+      "drawn_width_px": 159.95892135491943,
+      "drawn_height_px": 216.28248521228545,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/parts/B14.png",
+      "source_scale": 1.12647127714732,
+      "assembly_rotation_deg": 36.508160879990534,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          50.556030918371725,
+          36.801816624402946
+        ],
+        "distal": [
+          113.35680461933481,
+          166.79660200720366
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_open.png",
+      "asset_id": "char_ines__B22",
+      "part": "hand_left_open",
+      "canvas_width_px": 104,
+      "canvas_height_px": 122,
+      "drawn_width_px": 103.94122639593908,
+      "drawn_height_px": 121.45306345177666,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/parts/B22.png",
+      "source_scale": 0.5648979695431472,
+      "assembly_rotation_deg": 169.27713198500982,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          49.620637644670055,
+          102.52333249238579
+        ],
+        "grip": [
+          51.97061319796954,
+          59.065731695431474
+        ],
+        "fingertip": [
+          51.97061319796954,
+          11.213224695431473
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_open.png",
+      "asset_id": "char_ines__B21",
+      "part": "hand_right_open",
+      "canvas_width_px": 104,
+      "canvas_height_px": 122,
+      "drawn_width_px": 103.90375867346943,
+      "drawn_height_px": 121.50494183673473,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/parts/B21.png",
+      "source_scale": 0.5677801020408165,
+      "assembly_rotation_deg": 190.72286801499015,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          51.02639777040818,
+          104.26713793877553
+        ],
+        "grip": [
+          51.95187933673471,
+          59.094553020408185
+        ],
+        "fingertip": [
+          51.95187933673471,
+          11.242046020408168
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "char_ines__B15",
+      "part": "thigh_left",
+      "canvas_width_px": 206,
+      "canvas_height_px": 254,
+      "drawn_width_px": 205.6014772541043,
+      "drawn_height_px": 253.6161934990748,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/parts/B15.png",
+      "source_scale": 1.2311465703838582,
+      "assembly_rotation_deg": -9.963804189907187,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          89.87369963802165,
+          41.858983393051176
+        ],
+        "distal": [
+          57.86388880804134,
+          224.06867580986219
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "char_ines__B16",
+      "part": "thigh_right",
+      "canvas_width_px": 212,
+      "canvas_height_px": 259,
+      "drawn_width_px": 211.30788993029427,
+      "drawn_height_px": 258.8209066010113,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/parts/B16.png",
+      "source_scale": 1.2503425439662383,
+      "assembly_rotation_deg": 9.334998463138234,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          120.03288422075889,
+          45.01233158278458
+        ],
+        "distal": [
+          150.0411052759486,
+          227.56234300185537
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "char_ines__B17",
+      "part": "shin_left",
+      "canvas_width_px": 152,
+      "canvas_height_px": 243,
+      "drawn_width_px": 151.95905814849164,
+      "drawn_height_px": 242.69720078392191,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/parts/B17.png",
+      "source_scale": 1.0932306341618103,
+      "assembly_rotation_deg": -15.287434424116825,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          91.83137326959206,
+          41.542764098148794
+        ],
+        "distal": [
+          47.008917268957845,
+          205.52735922242033
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "char_ines__B18",
+      "part": "shin_right",
+      "canvas_width_px": 149,
+      "canvas_height_px": 241,
+      "drawn_width_px": 148.64880808147896,
+      "drawn_height_px": 240.87617075976883,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/parts/B18.png",
+      "source_scale": 1.0850277962151749,
+      "assembly_rotation_deg": 14.03624346792647,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          59.67652879183462,
+          40.14602845996147
+        ],
+        "distal": [
+          100.90758504801126,
+          205.07025348466806
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "char_ines__B19",
+      "part": "shoe_left",
+      "canvas_width_px": 263,
+      "canvas_height_px": 216,
+      "drawn_width_px": 262.15384615384613,
+      "drawn_height_px": 215.38461538461536,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/parts/B19.png",
+      "source_scale": 1.2307692307692306,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          65.23076923076923,
+          123.07692307692307
+        ],
+        "sole": [
+          65.23076923076923,
+          203.07692307692304
+        ],
+        "cuff_pin": [
+          65.23076923076923,
+          62.76923076923076
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "char_ines__B20",
+      "part": "shoe_right",
+      "canvas_width_px": 261,
+      "canvas_height_px": 216,
+      "drawn_width_px": 260.92307692307685,
+      "drawn_height_px": 215.38461538461536,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/parts/B20.png",
+      "source_scale": 1.2307692307692304,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          196.92307692307685,
+          123.07692307692304
+        ],
+        "sole": [
+          196.92307692307685,
+          203.076923076923
+        ],
+        "cuff_pin": [
+          196.92307692307685,
+          62.76923076923075
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "char_ines__E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 274,
+      "canvas_height_px": 239,
+      "drawn_width_px": 273.70892018779347,
+      "drawn_height_px": 238.59154929577474,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E01.png",
+      "source_scale": 1.0328638497652585,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          137.3708920187794,
+          223.72863849765264
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "char_ines__E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 257,
+      "canvas_height_px": 238,
+      "drawn_width_px": 256.3302752293578,
+      "drawn_height_px": 237.15596330275235,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E02.png",
+      "source_scale": 1.0091743119266057,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          128.1651376146789,
+          222.4825688073395
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "char_ines__E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 259,
+      "canvas_height_px": 239,
+      "drawn_width_px": 258.52534562211986,
+      "drawn_height_px": 238.2488479262673,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E03.png",
+      "source_scale": 1.013824884792627,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          128.75576036866363,
+          223.53824884792633
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "char_ines__E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 275,
+      "canvas_height_px": 239,
+      "drawn_width_px": 274.7465437788019,
+      "drawn_height_px": 238.2488479262673,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E04.png",
+      "source_scale": 1.0138248847926268,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          128.7557603686636,
+          223.5382488479263
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "char_ines__E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 245,
+      "canvas_height_px": 238,
+      "drawn_width_px": 244.7747747747748,
+      "drawn_height_px": 237.83783783783787,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E05.png",
+      "source_scale": 0.9909909909909912,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          120.90090090090092,
+          223.30990990990995
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "char_ines__E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 270,
+      "canvas_height_px": 239,
+      "drawn_width_px": 269.47368421052636,
+      "drawn_height_px": 238.94736842105263,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E06.png",
+      "source_scale": 1.0526315789473686,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          130.5263157894737,
+          223.9263157894737
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "char_ines__E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 270,
+      "canvas_height_px": 239,
+      "drawn_width_px": 269.57746478873247,
+      "drawn_height_px": 238.59154929577474,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E07.png",
+      "source_scale": 1.0328638497652585,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          127.0422535211268,
+          223.72863849765264
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "char_ines__E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 276,
+      "canvas_height_px": 240,
+      "drawn_width_px": 275.00000000000006,
+      "drawn_height_px": 239.03846153846158,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E08.png",
+      "source_scale": 1.057692307692308,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          141.73076923076925,
+          223.97692307692313
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "char_ines__E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 262,
+      "canvas_height_px": 239,
+      "drawn_width_px": 261.7061611374408,
+      "drawn_height_px": 238.76777251184845,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E09.png",
+      "source_scale": 1.042654028436019,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          130.33175355450237,
+          223.8265402843602
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "char_ines__E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 257,
+      "canvas_height_px": 238,
+      "drawn_width_px": 256.3207547169812,
+      "drawn_height_px": 237.64150943396228,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E10.png",
+      "source_scale": 1.037735849056604,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          120.37735849056607,
+          222.73962264150947
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "char_ines__E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 251,
+      "canvas_height_px": 239,
+      "drawn_width_px": 250.84112149532717,
+      "drawn_height_px": 238.50467289719634,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E11.png",
+      "source_scale": 1.0280373831775704,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          122.33644859813089,
+          223.6803738317758
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "char_ines__E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 242,
+      "canvas_height_px": 239,
+      "drawn_width_px": 241.48837209302334,
+      "drawn_height_px": 238.41860465116287,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E12.png",
+      "source_scale": 1.0232558139534886,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          123.81395348837212,
+          223.63255813953495
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "char_ines__E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 259,
+      "canvas_height_px": 239,
+      "drawn_width_px": 258.34862385321105,
+      "drawn_height_px": 238.16513761467897,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E13.png",
+      "source_scale": 1.0091743119266057,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          124.1284403669725,
+          223.4917431192661
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "char_ines__E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 260,
+      "canvas_height_px": 239,
+      "drawn_width_px": 259.53917050691246,
+      "drawn_height_px": 238.2488479262673,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E14.png",
+      "source_scale": 1.0138248847926268,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          136.8663594470046,
+          223.5382488479263
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "char_ines__E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 256,
+      "canvas_height_px": 239,
+      "drawn_width_px": 255.64814814814818,
+      "drawn_height_px": 238.33333333333337,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E15.png",
+      "source_scale": 1.0185185185185186,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          127.31481481481482,
+          223.58518518518522
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "char_ines__E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 254,
+      "canvas_height_px": 239,
+      "drawn_width_px": 253.61111111111114,
+      "drawn_height_px": 238.33333333333337,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E16.png",
+      "source_scale": 1.0185185185185186,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          128.33333333333334,
+          223.58518518518522
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "char_ines__E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 263,
+      "canvas_height_px": 238,
+      "drawn_width_px": 262.9767441860466,
+      "drawn_height_px": 237.39534883720938,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/heads/E17.png",
+      "source_scale": 1.0232558139534886,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          132.00000000000003,
+          222.60930232558147
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "char_ines__B23",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 99,
+      "canvas_height_px": 124,
+      "drawn_width_px": 98.71033502824858,
+      "drawn_height_px": 123.23073672316386,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/parts/B23.png",
+      "source_scale": 0.6287282485875706,
+      "assembly_rotation_deg": -67.30250771917487,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          59.84864198305085,
+          18.666941700564973
+        ],
+        "grip": [
+          49.66953163841808,
+          59.07530623728813
+        ],
+        "fingertip": [
+          49.66953163841808,
+          112.49205823728812
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "char_ines__B24",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 98,
+      "canvas_height_px": 123,
+      "drawn_width_px": 97.45287853107347,
+      "drawn_height_px": 122.60200847457631,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_ines/parts/B24.png",
+      "source_scale": 0.6287282485875707,
+      "assembly_rotation_deg": 67.39806244280365,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          39.12575890960452,
+          18.77382550282486
+        ],
+        "grip": [
+          48.726439265536726,
+          59.07530623728814
+        ],
+        "fingertip": [
+          48.726439265536726,
+          112.49205823728815
+        ]
+      }
+    }
+  ]
+}

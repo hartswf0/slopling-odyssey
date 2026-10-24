@@ -1,0 +1,71 @@
+{
+  "id": "wayfinding",
+  "name": "Wayfinding",
+  "kind": "set_or_support",
+  "asset_ids": [
+    "asset__3b6044e9d2f95d0e"
+  ],
+  "status": "inventory_only",
+  "counts": {
+    "records": 1,
+    "native_records": 0,
+    "unique_native_files": 0,
+    "original": 1,
+    "historical_scale": 0,
+    "views": {
+      "unspecified": 1
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {},
+    "side": {},
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {}
+  },
+  "assets": [
+    {
+      "id": "asset__3b6044e9d2f95d0e",
+      "file": "Odyssey_Watson_Kits/extras/wayfinding/tableau_reference.png",
+      "owner": "wayfinding",
+      "category": "reference",
+      "is_cutout": false,
+      "title": "Tableau Reference",
+      "note": "Reference / source image; see original metadata.",
+      "preferred": true,
+      "owner_name": "Wayfinding",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "wayfinding"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "f358b8c872d7fd1a4b6620dfb2c970fa9234623f007f116c1e6ea00a6d819689",
+      "byte_size": 2938580,
+      "has_alpha": false,
+      "alpha_extrema": null,
+      "alpha_bounds": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/wayfinding/tableau_reference.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "reference",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2494,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

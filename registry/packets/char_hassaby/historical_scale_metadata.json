@@ -1,0 +1,790 @@
+{
+  "actor_id": "char_hassaby",
+  "name": "Denis Hassaby",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "char_hassaby__E00",
+      "part": "head",
+      "canvas_width_px": 182,
+      "canvas_height_px": 237,
+      "drawn_width_px": 181.9230769230769,
+      "drawn_height_px": 236.0769230769231,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E00.png",
+      "source_scale": 0.846153846153846,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          94.76923076923076,
+          221.01538461538456
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "file__38ed956611414748",
+      "part": "torso_front",
+      "canvas_width_px": 358,
+      "canvas_height_px": 391,
+      "drawn_width_px": 357.29695972471984,
+      "drawn_height_px": 390.97048470294607,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/torso_front_override.png",
+      "source_scale": 0.29799579626748945,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          179.39346935302865,
+          47.46477042948572
+        ],
+        "waist": [
+          179.39346935302865,
+          352.6899447144245
+        ],
+        "shoulder_left": [
+          80.3098670940884,
+          97.1525894991269
+        ],
+        "shoulder_right": [
+          278.4770716119689,
+          97.1525894991269
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "char_hassaby__B05",
+      "part": "pelvis_front",
+      "canvas_width_px": 307,
+      "canvas_height_px": 218,
+      "drawn_width_px": 306.99442988998936,
+      "drawn_height_px": 217.51174853192066,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/parts/B05.png",
+      "source_scale": 1.3766566362779793,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          153.49721494499468,
+          36.56400025954313
+        ],
+        "hip_left": [
+          76.08505897381136,
+          71.56400025954315
+        ],
+        "hip_right": [
+          230.90937091617803,
+          71.56400025954315
+        ],
+        "hem_pin_left": [
+          41.71269607922277,
+          177.14817595625038
+        ],
+        "hem_pin_right": [
+          265.28173381076664,
+          177.14817595625038
+        ],
+        "upper_pin_left": [
+          58.67310583816747,
+          62.156047127950764
+        ],
+        "upper_pin_right": [
+          246.94466741554393,
+          63.312438702424274
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "char_hassaby__B11",
+      "part": "upper_arm_left",
+      "canvas_width_px": 201,
+      "canvas_height_px": 256,
+      "drawn_width_px": 200.0422600025559,
+      "drawn_height_px": 255.5378547129424,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/parts/B11.png",
+      "source_scale": 1.2905952258229414,
+      "assembly_rotation_deg": -0.593202437881788,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          116.30844175116349,
+          46.02262575284609
+        ],
+        "distal": [
+          83.08852063848096,
+          193.0988576876285
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "char_hassaby__B12",
+      "part": "upper_arm_right",
+      "canvas_width_px": 187,
+      "canvas_height_px": 231,
+      "drawn_width_px": 186.28767569755573,
+      "drawn_height_px": 230.53099867572516,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/parts/B12.png",
+      "source_scale": 1.1642979731097234,
+      "assembly_rotation_deg": 8.694906578099912,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          65.31711629145548,
+          40.529212443949476
+        ],
+        "distal": [
+          118.93303795315825,
+          181.4558391091504
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "char_hassaby__B13",
+      "part": "forearm_left",
+      "canvas_width_px": 128,
+      "canvas_height_px": 199,
+      "drawn_width_px": 127.67246394911622,
+      "drawn_height_px": 198.60161058751413,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/parts/B13.png",
+      "source_scale": 1.0132735234056842,
+      "assembly_rotation_deg": -11.39445141807237,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          74.20202011899826,
+          32.404487278513784
+        ],
+        "distal": [
+          72.57064974631511,
+          171.57760571828453
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "char_hassaby__B14",
+      "part": "forearm_right",
+      "canvas_width_px": 190,
+      "canvas_height_px": 226,
+      "drawn_width_px": 189.28645830097696,
+      "drawn_height_px": 225.06621566274697,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/parts/B14.png",
+      "source_scale": 1.1541857213474205,
+      "assembly_rotation_deg": 23.29084245285363,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          56.543558488810135,
+          36.2875990791629
+        ],
+        "distal": [
+          86.82939181696645,
+          172.13525848175428
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_open.png",
+      "asset_id": "char_hassaby__B22",
+      "part": "hand_left_open",
+      "canvas_width_px": 105,
+      "canvas_height_px": 118,
+      "drawn_width_px": 104.32292918211849,
+      "drawn_height_px": 117.95603924569077,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/parts/B22.png",
+      "source_scale": 0.5927439158074914,
+      "assembly_rotation_deg": 169.27713198500965,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          52.50525606222759,
+          103.03667488481624
+        ],
+        "grip": [
+          52.45783654896299,
+          57.425030563429765
+        ],
+        "fingertip": [
+          52.45783654896299,
+          11.291771596132712
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_open.png",
+      "asset_id": "char_hassaby__B21",
+      "part": "hand_right_open",
+      "canvas_width_px": 104,
+      "canvas_height_px": 118,
+      "drawn_width_px": 103.16023919341917,
+      "drawn_height_px": 117.89741622105048,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/parts/B21.png",
+      "source_scale": 0.5894870811052524,
+      "assembly_rotation_deg": 190.72286801499035,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          49.90597628637067,
+          97.73695804725085
+        ],
+        "grip": [
+          51.87486313726221,
+          57.392462216407374
+        ],
+        "fingertip": [
+          51.87486313726221,
+          11.259203249110321
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "char_hassaby__B15",
+      "part": "thigh_left",
+      "canvas_width_px": 185,
+      "canvas_height_px": 273,
+      "drawn_width_px": 184.4514882479268,
+      "drawn_height_px": 272.0327704375899,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/parts/B15.png",
+      "source_scale": 1.3269891240858043,
+      "assembly_rotation_deg": -2.7887398347915417,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          67.50393674224486,
+          42.45038207950488
+        ],
+        "distal": [
+          57.94961504882708,
+          238.59264451062762
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "char_hassaby__B16",
+      "part": "thigh_right",
+      "canvas_width_px": 187,
+      "canvas_height_px": 279,
+      "drawn_width_px": 186.71310322616606,
+      "drawn_height_px": 278.71666133761016,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/parts/B16.png",
+      "source_scale": 1.3529935016388845,
+      "assembly_rotation_deg": 7.406558722697161,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          111.36489511989659,
+          41.80749920064153
+        ],
+        "distal": [
+          136.6794035355601,
+          236.5438538915262
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "char_hassaby__B17",
+      "part": "shin_left",
+      "canvas_width_px": 149,
+      "canvas_height_px": 263,
+      "drawn_width_px": 148.7774602030835,
+      "drawn_height_px": 262.18978642346684,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/parts/B17.png",
+      "source_scale": 1.2194873787137992,
+      "assembly_rotation_deg": -6.632041152105688,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          68.1449547225271,
+          41.49915549763059
+        ],
+        "distal": [
+          48.511207925234935,
+          210.36157282813036
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "char_hassaby__B18",
+      "part": "shin_right",
+      "canvas_width_px": 153,
+      "canvas_height_px": 260,
+      "drawn_width_px": 152.0511192055808,
+      "drawn_height_px": 259.45230658095136,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/parts/B18.png",
+      "source_scale": 1.2067549143300063,
+      "assembly_rotation_deg": 7.464024019007239,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          75.24116890847588,
+          40.84865385007071
+        ],
+        "distal": [
+          97.32478384071501,
+          209.408180283686
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "char_hassaby__B19",
+      "part": "shoe_left",
+      "canvas_width_px": 281,
+      "canvas_height_px": 220,
+      "drawn_width_px": 280.6779661016948,
+      "drawn_height_px": 219.6610169491524,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/parts/B19.png",
+      "source_scale": 1.3559322033898298,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          49.762711864406754,
+          128.81355932203383
+        ],
+        "sole": [
+          49.762711864406754,
+          208.8135593220338
+        ],
+        "cuff_pin": [
+          110.22372881355928,
+          74.57627118644064
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "char_hassaby__B20",
+      "part": "shoe_right",
+      "canvas_width_px": 253,
+      "canvas_height_px": 214,
+      "drawn_width_px": 252.6315789473683,
+      "drawn_height_px": 213.07814992025507,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/parts/B20.png",
+      "source_scale": 1.275917065390749,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          203.12599681020723,
+          122.87081339712913
+        ],
+        "sole": [
+          203.12599681020723,
+          202.8708133971291
+        ],
+        "cuff_pin": [
+          146.94736842105257,
+          49.13556618819774
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "char_hassaby__E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 187,
+      "canvas_height_px": 237,
+      "drawn_width_px": 186.02316602316603,
+      "drawn_height_px": 236.98841698841701,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E01.png",
+      "source_scale": 0.8494208494208494,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          95.13513513513513,
+          221.8942084942085
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "char_hassaby__E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 184,
+      "canvas_height_px": 237,
+      "drawn_width_px": 183.1906614785992,
+      "drawn_height_px": 236.26459143968867,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E02.png",
+      "source_scale": 0.8560311284046691,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          107.00389105058363,
+          221.96031128404667
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "char_hassaby__E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 183,
+      "canvas_height_px": 235,
+      "drawn_width_px": 182.62548262548262,
+      "drawn_height_px": 234.44015444015443,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E03.png",
+      "source_scale": 0.8494208494208494,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.32818532818533,
+          221.04478764478765
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "char_hassaby__E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 188,
+      "canvas_height_px": 236,
+      "drawn_width_px": 187.72200772200773,
+      "drawn_height_px": 235.2895752895753,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E04.png",
+      "source_scale": 0.8494208494208495,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          98.53281853281854,
+          221.89420849420853
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "char_hassaby__E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 180,
+      "canvas_height_px": 235,
+      "drawn_width_px": 179.84790874524714,
+      "drawn_height_px": 234.2205323193916,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E05.png",
+      "source_scale": 0.8365019011406843,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          97.87072243346007,
+          220.92851711026614
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "char_hassaby__E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 189,
+      "canvas_height_px": 236,
+      "drawn_width_px": 188.07843137254903,
+      "drawn_height_px": 235.52941176470586,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E06.png",
+      "source_scale": 0.8627450980392157,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          101.80392156862746,
+          222.0274509803922
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "char_hassaby__E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 189,
+      "canvas_height_px": 237,
+      "drawn_width_px": 188.9411764705882,
+      "drawn_height_px": 236.3921568627451,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E07.png",
+      "source_scale": 0.8627450980392155,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          106.11764705882351,
+          222.02745098039213
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "char_hassaby__E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 194,
+      "canvas_height_px": 236,
+      "drawn_width_px": 193.6,
+      "drawn_height_px": 235.84,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E08.png",
+      "source_scale": 0.88,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          98.56,
+          222.2
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "char_hassaby__E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 194,
+      "canvas_height_px": 237,
+      "drawn_width_px": 193.359375,
+      "drawn_height_px": 236.32812499999997,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E09.png",
+      "source_scale": 0.859375,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          100.546875,
+          221.99375
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "char_hassaby__E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 195,
+      "canvas_height_px": 236,
+      "drawn_width_px": 194.3190661478599,
+      "drawn_height_px": 235.40856031128405,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E10.png",
+      "source_scale": 0.8560311284046692,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          93.30739299610894,
+          221.9603112840467
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "char_hassaby__E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 189,
+      "canvas_height_px": 236,
+      "drawn_width_px": 188.07843137254903,
+      "drawn_height_px": 235.52941176470586,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E11.png",
+      "source_scale": 0.8627450980392157,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          96.62745098039215,
+          222.0274509803922
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "char_hassaby__E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 195,
+      "canvas_height_px": 236,
+      "drawn_width_px": 194.48,
+      "drawn_height_px": 235.84,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E12.png",
+      "source_scale": 0.88,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          109.12,
+          222.2
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "char_hassaby__E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 193,
+      "canvas_height_px": 235,
+      "drawn_width_px": 192.06349206349205,
+      "drawn_height_px": 234.84126984126985,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E13.png",
+      "source_scale": 0.8730158730158729,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          108.25396825396824,
+          221.25714285714284
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "char_hassaby__E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 186,
+      "canvas_height_px": 234,
+      "drawn_width_px": 185.4406130268199,
+      "drawn_height_px": 233.48659003831412,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E14.png",
+      "source_scale": 0.8429118773946359,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          101.14942528735631,
+          220.14329501915708
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "char_hassaby__E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 197,
+      "canvas_height_px": 237,
+      "drawn_width_px": 196.8421052631579,
+      "drawn_height_px": 236.03238866396762,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E15.png",
+      "source_scale": 0.8906882591093117,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.10121457489878,
+          222.3068825910931
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "char_hassaby__E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 197,
+      "canvas_height_px": 237,
+      "drawn_width_px": 196.8421052631579,
+      "drawn_height_px": 236.03238866396762,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E16.png",
+      "source_scale": 0.8906882591093117,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          97.97570850202429,
+          222.3068825910931
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "char_hassaby__E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 196,
+      "canvas_height_px": 236,
+      "drawn_width_px": 195.2610441767068,
+      "drawn_height_px": 235.90361445783134,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/heads/E17.png",
+      "source_scale": 0.8835341365461846,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          98.0722891566265,
+          222.2353413654618
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "char_hassaby__B23",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 91,
+      "canvas_height_px": 120,
+      "drawn_width_px": 90.02213056970555,
+      "drawn_height_px": 119.00185753392583,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/parts/B23.png",
+      "source_scale": 0.6165899354089421,
+      "assembly_rotation_deg": -57.21907614303953,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          43.660733326307195,
+          18.966306413179062
+        ],
+        "grip": [
+          45.011065284852776,
+          57.663490759444265
+        ],
+        "fingertip": [
+          45.011065284852776,
+          109.16108216479911
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "char_hassaby__B24",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 91,
+      "canvas_height_px": 120,
+      "drawn_width_px": 90.41009727063702,
+      "drawn_height_px": 119.34132839724089,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_hassaby/parts/B24.png",
+      "source_scale": 0.6027339818042469,
+      "assembly_rotation_deg": 57.21907614303953,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          46.80832102691781,
+          20.348299225711372
+        ],
+        "grip": [
+          45.20504863531851,
+          57.52493122339732
+        ],
+        "fingertip": [
+          45.20504863531851,
+          109.02252262875217
+        ]
+      }
+    }
+  ]
+}

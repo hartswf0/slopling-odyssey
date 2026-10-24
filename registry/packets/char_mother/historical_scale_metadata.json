@@ -1,0 +1,838 @@
+{
+  "actor_id": "char_mother",
+  "name": "Amy",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "amy_head_E00",
+      "part": "head",
+      "canvas_width_px": 188,
+      "canvas_height_px": 234,
+      "drawn_width_px": 187.8231292517007,
+      "drawn_height_px": 233.46938775510205,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E00.png",
+      "source_scale": 0.7482993197278912,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          95.78231292517007,
+          220.88299319727892
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "amy_torso_front_standalone",
+      "part": "torso_front",
+      "canvas_width_px": 356,
+      "canvas_height_px": 370,
+      "drawn_width_px": 355.3848022839095,
+      "drawn_height_px": 369.25347749498883,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/torso_front.png",
+      "source_scale": 0.28893073356415405,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          177.9813318755189,
+          46.43694749843084
+        ],
+        "waist": [
+          177.11453967482643,
+          331.8369474984309
+        ],
+        "shoulder_left": [
+          77.57790196197536,
+          52.585393508676034
+        ],
+        "shoulder_right": [
+          277.2290388548058,
+          52.72985887545811
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "amy_pelvis_front",
+      "part": "pelvis_front",
+      "canvas_width_px": 357,
+      "canvas_height_px": 310,
+      "drawn_width_px": 356.31436219568644,
+      "drawn_height_px": 309.7078422460396,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_pelvis_front.png",
+      "source_scale": 1.5034361274079597,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          178.9088991615472,
+          48.59105563782526
+        ],
+        "hip_left": [
+          92.58159672578216,
+          83.59105563782526
+        ],
+        "hip_right": [
+          265.2362015973123,
+          83.59105563782526
+        ],
+        "hem_pin_left": [
+          48.10995607705471,
+          257.08757778676113
+        ],
+        "hem_pin_right": [
+          306.70096999122376,
+          257.08757778676113
+        ],
+        "upper_pin_left": [
+          87.19929538966167,
+          58.63400896891043
+        ],
+        "upper_pin_right": [
+          273.62537518824865,
+          55.62713671409451
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "amy_upper_arm_left",
+      "part": "upper_arm_left",
+      "canvas_width_px": 106,
+      "canvas_height_px": 228,
+      "drawn_width_px": 105.84179510145108,
+      "drawn_height_px": 227.82894877769974,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_upper_arm_left.png",
+      "source_scale": 0.8969643652665346,
+      "assembly_rotation_deg": 5.316333578978382,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          60.096612472857814,
+          26.908930957996038
+        ],
+        "distal": [
+          40.36339643699406,
+          191.9503741670384
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "amy_upper_arm_right",
+      "part": "upper_arm_right",
+      "canvas_width_px": 107,
+      "canvas_height_px": 228,
+      "drawn_width_px": 106.37078431769035,
+      "drawn_height_px": 227.04352282935594,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_upper_arm_right.png",
+      "source_scale": 0.8938721371234484,
+      "assembly_rotation_deg": -1.912379516994126,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          45.58747899329587,
+          26.81616411370345
+        ],
+        "distal": [
+          75.08525951836967,
+          190.3947652072945
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "amy_forearm_left",
+      "part": "forearm_left",
+      "canvas_width_px": 81,
+      "canvas_height_px": 213,
+      "drawn_width_px": 80.0918249553657,
+      "drawn_height_px": 212.378322353554,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_forearm_left.png",
+      "source_scale": 0.8999081455659067,
+      "assembly_rotation_deg": -6.349936738109086,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          35.09641767707036,
+          26.997244366977203
+        ],
+        "distal": [
+          46.79522356942715,
+          179.98162911318133
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "amy_forearm_right",
+      "part": "forearm_right",
+      "canvas_width_px": 88,
+      "canvas_height_px": 214,
+      "drawn_width_px": 87.6147704080135,
+      "drawn_height_px": 213.96449194378036,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_forearm_right.png",
+      "source_scale": 0.9222607411369842,
+      "assembly_rotation_deg": 14.514033702355471,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          39.19608149832183,
+          27.206691863541035
+        ],
+        "distal": [
+          49.340949650828655,
+          180.3019748922804
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_relaxed.png",
+      "asset_id": "amy_hand_left_relaxed",
+      "part": "hand_left_relaxed",
+      "canvas_width_px": 72,
+      "canvas_height_px": 113,
+      "drawn_width_px": 71.27549516099178,
+      "drawn_height_px": 112.70056927165368,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_hand_left_relaxed.png",
+      "source_scale": 0.6091922663332631,
+      "assembly_rotation_deg": -10.722868014990226,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          36.6672825105991,
+          17.514277657081312
+        ],
+        "grip": [
+          36.24693984682915,
+          54.33995015692707
+        ],
+        "fingertip": [
+          36.24693984682915,
+          102.58797765052151
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_relaxed.png",
+      "asset_id": "amy_hand_right_relaxed",
+      "part": "hand_right_relaxed",
+      "canvas_width_px": 69,
+      "canvas_height_px": 109,
+      "drawn_width_px": 68.57949204498932,
+      "drawn_height_px": 108.09987729125436,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_hand_right_relaxed.png",
+      "source_scale": 0.5811821359744858,
+      "assembly_rotation_deg": 10.722868014990226,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          38.21853726168219,
+          24.37477878276993
+        ],
+        "grip": [
+          34.28974602249466,
+          52.12041395419189
+        ],
+        "fingertip": [
+          34.28974602249466,
+          98.42900654863891
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "amy_thigh_left",
+      "part": "thigh_left",
+      "canvas_width_px": 154,
+      "canvas_height_px": 287,
+      "drawn_width_px": 153.84274092169736,
+      "drawn_height_px": 286.192745979334,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_thigh_left.png",
+      "source_scale": 1.1311966244242453,
+      "assembly_rotation_deg": -3.6913846282441156,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          50.903848099091036,
+          42.98547172812132
+        ],
+        "distal": [
+          39.59188185484859,
+          218.32094851387933
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "amy_thigh_right",
+      "part": "thigh_right",
+      "canvas_width_px": 169,
+      "canvas_height_px": 282,
+      "drawn_width_px": 168.29796432422836,
+      "drawn_height_px": 281.23475617338164,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_thigh_right.png",
+      "source_scale": 1.1072234495015023,
+      "assembly_rotation_deg": 12.372153892311163,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          90.79232285912319,
+          42.07449108105709
+        ],
+        "distal": [
+          128.43792014217428,
+          213.69412575378993
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "amy_shin_left",
+      "part": "shin_left",
+      "canvas_width_px": 122,
+      "canvas_height_px": 260,
+      "drawn_width_px": 121.56852171871142,
+      "drawn_height_px": 259.132901558306,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_shin_left.png",
+      "source_scale": 1.0663905413922055,
+      "assembly_rotation_deg": 2.9609348497881545,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          53.319527069610274,
+          40.52284057290381
+        ],
+        "distal": [
+          62.91704194214012,
+          226.07479477514755
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "amy_shin_right",
+      "part": "shin_right",
+      "canvas_width_px": 126,
+      "canvas_height_px": 256,
+      "drawn_width_px": 125.18217999657142,
+      "drawn_height_px": 255.6686896540145,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_shin_right.png",
+      "source_scale": 1.0608659321743341,
+      "assembly_rotation_deg": 2.29061132701412,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          74.2606152522034,
+          39.252039490450365
+        ],
+        "distal": [
+          81.68667677742373,
+          224.90357762095883
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "amy_shoe_left",
+      "part": "shoe_left",
+      "canvas_width_px": 117,
+      "canvas_height_px": 138,
+      "drawn_width_px": 116.24173228346456,
+      "drawn_height_px": 137.67637795275593,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_shoe_left.png",
+      "source_scale": 0.8244094488188976,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "ankle": [
+          79.14330708661416,
+          24.732283464566926
+        ],
+        "sole": [
+          79.14330708661416,
+          129.43228346456692
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "amy_shoe_right",
+      "part": "shoe_right",
+      "canvas_width_px": 118,
+      "canvas_height_px": 139,
+      "drawn_width_px": 117.16428571428571,
+      "drawn_height_px": 138.76904761904763,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_shoe_right.png",
+      "source_scale": 0.8309523809523809,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "ankle": [
+          40.71666666666666,
+          25.759523809523806
+        ],
+        "sole": [
+          40.71666666666666,
+          130.4595238095238
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "amy_head_E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 190,
+      "canvas_height_px": 234,
+      "drawn_width_px": 189.86301369863017,
+      "drawn_height_px": 233.56164383561642,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E01.png",
+      "source_scale": 0.7534246575342467,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          97.19178082191783,
+          220.9342465753425
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "amy_head_E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 190,
+      "canvas_height_px": 234,
+      "drawn_width_px": 189.21501706484645,
+      "drawn_height_px": 233.5153583617747,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E02.png",
+      "source_scale": 0.7508532423208193,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          103.61774744027306,
+          220.90853242320821
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "amy_head_E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 188,
+      "canvas_height_px": 234,
+      "drawn_width_px": 187.6027397260274,
+      "drawn_height_px": 233.56164383561642,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E03.png",
+      "source_scale": 0.7534246575342466,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          83.63013698630137,
+          220.93424657534248
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "amy_head_E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 189,
+      "canvas_height_px": 233,
+      "drawn_width_px": 188.89655172413794,
+      "drawn_height_px": 232.89655172413788,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E04.png",
+      "source_scale": 0.7586206896551725,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          92.55172413793105,
+          220.22758620689658
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "amy_head_E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 187,
+      "canvas_height_px": 234,
+      "drawn_width_px": 186.3265306122449,
+      "drawn_height_px": 233.46938775510205,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E05.png",
+      "source_scale": 0.7482993197278912,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          98.02721088435375,
+          220.88299319727892
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "amy_head_E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 195,
+      "canvas_height_px": 234,
+      "drawn_width_px": 194.47098976109214,
+      "drawn_height_px": 233.5153583617747,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E06.png",
+      "source_scale": 0.7508532423208191,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          92.35494880546075,
+          220.90853242320816
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "amy_head_E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 194,
+      "canvas_height_px": 234,
+      "drawn_width_px": 193.35640138408303,
+      "drawn_height_px": 233.7024221453287,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E07.png",
+      "source_scale": 0.7612456747404843,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          96.67820069204151,
+          221.0124567474048
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "amy_head_E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 194,
+      "canvas_height_px": 233,
+      "drawn_width_px": 193.7201365187713,
+      "drawn_height_px": 232.76450511945393,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E08.png",
+      "source_scale": 0.7508532423208191,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          96.10921501706484,
+          220.15767918088736
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "amy_head_E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 191,
+      "canvas_height_px": 234,
+      "drawn_width_px": 190.97222222222223,
+      "drawn_height_px": 233.75,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E09.png",
+      "source_scale": 0.763888888888889,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          97.77777777777779,
+          221.03888888888892
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "amy_head_E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 196,
+      "canvas_height_px": 234,
+      "drawn_width_px": 195.6401384083045,
+      "drawn_height_px": 233.7024221453287,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E10.png",
+      "source_scale": 0.7612456747404844,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          111.14186851211073,
+          221.01245674740483
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "amy_head_E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 192,
+      "canvas_height_px": 234,
+      "drawn_width_px": 191.73611111111111,
+      "drawn_height_px": 233.75,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E11.png",
+      "source_scale": 0.763888888888889,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          101.59722222222223,
+          221.03888888888892
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "amy_head_E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 195,
+      "canvas_height_px": 234,
+      "drawn_width_px": 194.79166666666663,
+      "drawn_height_px": 233.75,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E12.png",
+      "source_scale": 0.7638888888888887,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          111.52777777777776,
+          221.03888888888886
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "amy_head_E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 189,
+      "canvas_height_px": 233,
+      "drawn_width_px": 188.35616438356163,
+      "drawn_height_px": 232.8082191780822,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E13.png",
+      "source_scale": 0.7534246575342466,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          113.76712328767124,
+          220.18082191780823
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "amy_head_E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 192,
+      "canvas_height_px": 234,
+      "drawn_width_px": 191.27147766323023,
+      "drawn_height_px": 233.60824742268042,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E14.png",
+      "source_scale": 0.7560137457044673,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          91.47766323024055,
+          220.96013745704465
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "amy_head_E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 195,
+      "canvas_height_px": 233,
+      "drawn_width_px": 194.79166666666663,
+      "drawn_height_px": 232.98611111111114,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E15.png",
+      "source_scale": 0.7638888888888887,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          93.95833333333331,
+          220.27499999999998
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "amy_head_E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 194,
+      "canvas_height_px": 234,
+      "drawn_width_px": 193.17073170731706,
+      "drawn_height_px": 233.79790940766551,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E16.png",
+      "source_scale": 0.7665505226480835,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          101.18466898954702,
+          221.0655052264808
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "amy_head_E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 195,
+      "canvas_height_px": 233,
+      "drawn_width_px": 194.2955326460481,
+      "drawn_height_px": 232.8522336769759,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/heads/E17.png",
+      "source_scale": 0.7560137457044672,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          99.03780068728521,
+          220.20412371134015
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_open.png",
+      "asset_id": "amy_hand_left_open",
+      "part": "hand_left_open",
+      "example_pose": "explaining",
+      "canvas_width_px": 95,
+      "canvas_height_px": 133,
+      "drawn_width_px": 94.20323906976745,
+      "drawn_height_px": 132.0220576744186,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_hand_left_open.png",
+      "source_scale": 0.6876148837209303,
+      "assembly_rotation_deg": 167.29934248951093,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          46.75781209302326,
+          114.50163043720931
+        ],
+        "grip": [
+          46.75781209302326,
+          63.64563363720931
+        ],
+        "fingertip": [
+          46.75781209302326,
+          12.789636837209304
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_open.png",
+      "asset_id": "amy_hand_right_open",
+      "part": "hand_right_open",
+      "example_pose": "explaining",
+      "canvas_width_px": 93,
+      "canvas_height_px": 133,
+      "drawn_width_px": 92.92623999999999,
+      "drawn_height_px": 132.34949333333336,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_hand_right_open.png",
+      "source_scale": 0.7039866666666666,
+      "assembly_rotation_deg": 155.08019587298045,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          43.07694413333333,
+          106.53430226666667
+        ],
+        "grip": [
+          46.81511333333333,
+          63.80935146666666
+        ],
+        "fingertip": [
+          46.81511333333333,
+          12.953354666666666
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "amy_hand_left_grip",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 81,
+      "canvas_height_px": 116,
+      "drawn_width_px": 80.28884814022096,
+      "drawn_height_px": 115.49242001708708,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_hand_left_grip.png",
+      "source_scale": 0.6176065241555458,
+      "assembly_rotation_deg": -55.87382926901464,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          30.08361379161664,
+          17.29915874159684
+        ],
+        "grip": [
+          40.14442407011048,
+          55.68340421786401
+        ],
+        "fingertip": [
+          40.14442407011048,
+          105.19074319417257
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "amy_hand_right_grip",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 66,
+      "canvas_height_px": 98,
+      "drawn_width_px": 65.39946371368224,
+      "drawn_height_px": 97.31440200595917,
+      "source_file": "Cardboard_Family_Film_Kits_v2/parts/amy/body/amy_hand_right_grip.png",
+      "source_scale": 0.523195709709458,
+      "assembly_rotation_deg": 55.6203651213973,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          25.662749561248912,
+          22.329992890399666
+        ],
+        "grip": [
+          32.69973185684112,
+          46.92019124674419
+        ],
+        "fingertip": [
+          32.69973185684112,
+          88.6084253963938
+        ]
+      }
+    }
+  ]
+}

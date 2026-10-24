@@ -1,0 +1,164 @@
+{
+  "id": "mau",
+  "name": "Mau",
+  "kind": "set_or_support",
+  "asset_ids": [
+    "asset__9756b7357642797a",
+    "asset__96c68df78e28aee2",
+    "asset__e353a866e5676e55"
+  ],
+  "status": "inventory_only",
+  "counts": {
+    "records": 3,
+    "native_records": 2,
+    "unique_native_files": 2,
+    "original": 3,
+    "historical_scale": 0,
+    "views": {
+      "unspecified": 2,
+      "front": 1
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {
+      "torso": 1
+    },
+    "side": {},
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {
+      "head": 1
+    }
+  },
+  "assets": [
+    {
+      "id": "asset__9756b7357642797a",
+      "file": "Odyssey_Watson_Kits/extras/mau/fullkit_reference.png",
+      "owner": "mau",
+      "category": "reference",
+      "is_cutout": false,
+      "title": "Fullkit Reference",
+      "note": "Reference / source image; see original metadata.",
+      "preferred": true,
+      "owner_name": "Mau",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "mau"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "7eeae4c13cde3fecc8216a970fce0794a766fc14565edb3a54fe1eb86dc121bd",
+      "byte_size": 2890822,
+      "has_alpha": false,
+      "alpha_extrema": null,
+      "alpha_bounds": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/mau/fullkit_reference.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "reference",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2471,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__96c68df78e28aee2",
+      "file": "Odyssey_Watson_Kits/extras/mau/head_blank.png",
+      "owner": "mau",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Head Blank",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Mau",
+      "width": 1254,
+      "height": 1254,
+      "packet_ids": [
+        "mau"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "b51c4a931ce059c4db73c6c1bca4be9e146ba7f1073da2388ef9dc2dd76bb923",
+      "byte_size": 2336867,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1238,
+        1254
+      ],
+      "native_file": "assets/b51c4a931ce059c4db73c6c1bca4be9e146ba7f1073da2388ef9dc2dd76bb923.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/mau/head_blank.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "head",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2472,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__e353a866e5676e55",
+      "file": "Odyssey_Watson_Kits/extras/mau/torso_front.png",
+      "owner": "mau",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Torso Front",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Mau",
+      "width": 1254,
+      "height": 1254,
+      "packet_ids": [
+        "mau"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "38cd23018de695372cdd7c20eaf0c48308b1538f070c1a59f1b2bc70e71d23cf",
+      "byte_size": 2475270,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        9,
+        1240,
+        1254
+      ],
+      "native_file": "assets/38cd23018de695372cdd7c20eaf0c48308b1538f070c1a59f1b2bc70e71d23cf.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/mau/torso_front.png",
+      "view_label": "front",
+      "view_label_basis": "filename_label",
+      "semantic_slot": "torso",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2473,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

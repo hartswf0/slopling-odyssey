@@ -1,0 +1,790 @@
+{
+  "actor_id": "char_sutskov",
+  "name": "Ilya Sutskov",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "char_sutskov__E00",
+      "part": "head",
+      "canvas_width_px": 192,
+      "canvas_height_px": 237,
+      "drawn_width_px": 191.96911196911194,
+      "drawn_height_px": 236.13899613899613,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E00.png",
+      "source_scale": 0.8494208494208493,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          97.68339768339767,
+          221.04478764478762
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "file__cc4ea61bf0d94419",
+      "part": "torso_front",
+      "canvas_width_px": 438,
+      "canvas_height_px": 400,
+      "drawn_width_px": 437.4991573980451,
+      "drawn_height_px": 399.81820862824395,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/torso_front_override.png",
+      "source_scale": 0.3334597236265588,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          218.91630856083586,
+          44.12339063026626
+        ],
+        "waist": [
+          218.91630856083586,
+          360.72339063026624
+        ],
+        "shoulder_left": [
+          109.3247703909673,
+          95.66292551398719
+        ],
+        "shoulder_right": [
+          328.5078467307044,
+          95.66292551398719
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "char_sutskov__B05",
+      "part": "pelvis_front",
+      "canvas_width_px": 248,
+      "canvas_height_px": 178,
+      "drawn_width_px": 247.5144080522748,
+      "drawn_height_px": 177.56468403750154,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/parts/B05.png",
+      "source_scale": 1.0761496002272817,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          123.75720402613739,
+          29.486499046227518
+        ],
+        "hip_left": [
+          55.927494723811826,
+          64.48649904622751
+        ],
+        "hip_right": [
+          191.58691332846297,
+          64.48649904622751
+        ],
+        "hem_pin_left": [
+          33.36063760704573,
+          144.95735115061484
+        ],
+        "hem_pin_right": [
+          214.15377044522904,
+          144.95735115061484
+        ],
+        "upper_pin_left": [
+          40.140380088477606,
+          41.96983440886399
+        ],
+        "upper_pin_right": [
+          207.37402796379718,
+          41.96983440886399
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "char_sutskov__B11",
+      "part": "upper_arm_left",
+      "canvas_width_px": 213,
+      "canvas_height_px": 174,
+      "drawn_width_px": 212.9099945746224,
+      "drawn_height_px": 173.36956701076392,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/parts/B11.png",
+      "source_scale": 1.0138571170220114,
+      "assembly_rotation_deg": 66.89910603051861,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          45.623570265990516,
+          39.540427563858444
+        ],
+        "distal": [
+          173.36956701076394,
+          129.77371097881746
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "char_sutskov__B12",
+      "part": "upper_arm_right",
+      "canvas_width_px": 213,
+      "canvas_height_px": 172,
+      "drawn_width_px": 212.45142706630628,
+      "drawn_height_px": 171.16939621455955,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/parts/B12.png",
+      "source_scale": 1.006878801262115,
+      "assembly_rotation_deg": -67.62602516296181,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          168.1487598107732,
+          39.26827324922249
+        ],
+        "distal": [
+          39.26827324922249,
+          127.8736077602886
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "char_sutskov__B13",
+      "part": "forearm_left",
+      "canvas_width_px": 160,
+      "canvas_height_px": 195,
+      "drawn_width_px": 159.2843526002017,
+      "drawn_height_px": 194.36483501810326,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/parts/B13.png",
+      "source_scale": 0.948121146429772,
+      "assembly_rotation_deg": -36.17553591029978,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          111.29994137939093,
+          34.04703036829311
+        ],
+        "distal": [
+          49.254893557026655,
+          164.40420679092247
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "char_sutskov__B14",
+      "part": "forearm_right",
+      "canvas_width_px": 160,
+      "canvas_height_px": 196,
+      "drawn_width_px": 159.4771032176469,
+      "drawn_height_px": 195.7653063450157,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/parts/B14.png",
+      "source_scale": 0.9549527138781252,
+      "assembly_rotation_deg": 42.31125230253294,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          41.57864116225357,
+          34.04406424975516
+        ],
+        "distal": [
+          117.2013465742623,
+          157.02287474298012
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_open.png",
+      "asset_id": "char_sutskov__B22",
+      "part": "hand_left_open",
+      "canvas_width_px": 106,
+      "canvas_height_px": 123,
+      "drawn_width_px": 105.98561904761902,
+      "drawn_height_px": 122.47227089947086,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/parts/B22.png",
+      "source_scale": 0.5888089947089946,
+      "assembly_rotation_deg": 169.27713198500982,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          53.30487829100528,
+          102.68240058730156
+        ],
+        "grip": [
+          53.28721402116401,
+          58.71603295238094
+        ],
+        "fingertip": [
+          53.28721402116401,
+          10.86352595238095
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_open.png",
+      "asset_id": "char_sutskov__B21",
+      "part": "hand_right_open",
+      "canvas_width_px": 108,
+      "canvas_height_px": 124,
+      "drawn_width_px": 107.1413132978723,
+      "drawn_height_px": 123.12371914893613,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/parts/B21.png",
+      "source_scale": 0.5919409574468083,
+      "assembly_rotation_deg": 190.72286801499015,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          48.11296102127658,
+          103.24634179787229
+        ],
+        "grip": [
+          53.57065664893615,
+          59.33616157446806
+        ],
+        "fingertip": [
+          53.57065664893615,
+          11.48365457446808
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "char_sutskov__B15",
+      "part": "thigh_left",
+      "canvas_width_px": 213,
+      "canvas_height_px": 272,
+      "drawn_width_px": 212.2249319318273,
+      "drawn_height_px": 271.45049433140696,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/parts/B15.png",
+      "source_scale": 1.2338658833245775,
+      "assembly_rotation_deg": -19.240993323848283,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          121.84425597830203,
+          43.01256469269477
+        ],
+        "distal": [
+          60.878942683234655,
+          217.67861913612194
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "char_sutskov__B16",
+      "part": "thigh_right",
+      "canvas_width_px": 213,
+      "canvas_height_px": 279,
+      "drawn_width_px": 212.7541774147096,
+      "drawn_height_px": 278.60666090021493,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/parts/B16.png",
+      "source_scale": 1.2663939131827953,
+      "assembly_rotation_deg": 19.174176173769837,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          88.63490998366383,
+          44.85567240493461
+        ],
+        "distal": [
+          149.39648993817437,
+          219.5927045458967
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "char_sutskov__B17",
+      "part": "shin_left",
+      "canvas_width_px": 143,
+      "canvas_height_px": 249,
+      "drawn_width_px": 142.8087524668135,
+      "drawn_height_px": 248.76363332928807,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/parts/B17.png",
+      "source_scale": 1.1516834876355928,
+      "assembly_rotation_deg": -8.17511512484547,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          74.20296710836125,
+          38.37409380801795
+        ],
+        "distal": [
+          50.02913070289015,
+          206.64656818645443
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "char_sutskov__B18",
+      "part": "shin_right",
+      "canvas_width_px": 142,
+      "canvas_height_px": 250,
+      "drawn_width_px": 141.58154862480058,
+      "drawn_height_px": 249.50846683878794,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/parts/B18.png",
+      "source_scale": 1.1605044969245948,
+      "assembly_rotation_deg": 6.758735872706277,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          67.12358010211857,
+          38.41269884820409
+        ],
+        "distal": [
+          87.13067762909857,
+          207.23128801582487
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "char_sutskov__B19",
+      "part": "shoe_left",
+      "canvas_width_px": 271,
+      "canvas_height_px": 217,
+      "drawn_width_px": 270.62314540059333,
+      "drawn_height_px": 216.0237388724034,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/parts/B19.png",
+      "source_scale": 1.186943620178041,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          36.43916913946586,
+          125.34124629080112
+        ],
+        "sole": [
+          36.43916913946586,
+          205.34124629080108
+        ],
+        "cuff_pin": [
+          49.982195845697305,
+          44.106824925816
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "char_sutskov__B20",
+      "part": "shoe_right",
+      "canvas_width_px": 267,
+      "canvas_height_px": 207,
+      "drawn_width_px": 266.6666666666666,
+      "drawn_height_px": 206.11353711790383,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/parts/B20.png",
+      "source_scale": 1.1644832605531292,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "ankle": [
+          39.01018922852983,
+          115.63318777292572
+        ],
+        "sole": [
+          39.01018922852983,
+          195.6331877729257
+        ],
+        "cuff_pin": [
+          101.8922852983988,
+          36.44832605531295
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "char_sutskov__E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 198,
+      "canvas_height_px": 237,
+      "drawn_width_px": 197.15384615384616,
+      "drawn_height_px": 236.0769230769231,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E01.png",
+      "source_scale": 0.8461538461538461,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          110,
+          221.0153846153846
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "char_sutskov__E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 199,
+      "canvas_height_px": 237,
+      "drawn_width_px": 198.76447876447878,
+      "drawn_height_px": 236.98841698841701,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E02.png",
+      "source_scale": 0.8494208494208495,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          116.37065637065638,
+          221.89420849420853
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "char_sutskov__E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 201,
+      "canvas_height_px": 237,
+      "drawn_width_px": 200.61302681992336,
+      "drawn_height_px": 236.01532567049804,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E03.png",
+      "source_scale": 0.842911877394636,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          111.26436781609195,
+          221.82911877394636
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "char_sutskov__E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 205,
+      "canvas_height_px": 236,
+      "drawn_width_px": 204.53124999999997,
+      "drawn_height_px": 235.46874999999997,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E04.png",
+      "source_scale": 0.8593749999999999,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          97.10937499999999,
+          221.13437499999998
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "char_sutskov__E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 195,
+      "canvas_height_px": 237,
+      "drawn_width_px": 194.7126436781609,
+      "drawn_height_px": 236.01532567049804,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E05.png",
+      "source_scale": 0.8429118773946359,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          106.20689655172413,
+          220.98620689655172
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "char_sutskov__E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 198,
+      "canvas_height_px": 237,
+      "drawn_width_px": 197.06563706563705,
+      "drawn_height_px": 236.98841698841701,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E06.png",
+      "source_scale": 0.8494208494208494,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          104.47876447876448,
+          221.8942084942085
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "char_sutskov__E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 196,
+      "canvas_height_px": 237,
+      "drawn_width_px": 195.55555555555557,
+      "drawn_height_px": 236.01532567049804,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E07.png",
+      "source_scale": 0.8429118773946361,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          103.67816091954025,
+          221.8291187739464
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "char_sutskov__E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 203,
+      "canvas_height_px": 237,
+      "drawn_width_px": 202.16216216216216,
+      "drawn_height_px": 236.13899613899613,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E08.png",
+      "source_scale": 0.8494208494208494,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          108.72586872586872,
+          221.8942084942085
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "char_sutskov__E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 199,
+      "canvas_height_px": 237,
+      "drawn_width_px": 198.9272030651341,
+      "drawn_height_px": 236.01532567049804,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E09.png",
+      "source_scale": 0.842911877394636,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.3639846743295,
+          221.82911877394636
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "char_sutskov__E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 198,
+      "canvas_height_px": 237,
+      "drawn_width_px": 197.32824427480918,
+      "drawn_height_px": 236.79389312977102,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E10.png",
+      "source_scale": 0.8396946564885497,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          102.44274809160306,
+          221.7969465648855
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "char_sutskov__E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 197,
+      "canvas_height_px": 237,
+      "drawn_width_px": 196.4885496183206,
+      "drawn_height_px": 236.79389312977102,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E11.png",
+      "source_scale": 0.8396946564885496,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.80152671755725,
+          221.79694656488547
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "char_sutskov__E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 198,
+      "canvas_height_px": 237,
+      "drawn_width_px": 197.9150579150579,
+      "drawn_height_px": 236.98841698841701,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E12.png",
+      "source_scale": 0.8494208494208494,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          107.87644787644787,
+          221.8942084942085
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "char_sutskov__E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 204,
+      "canvas_height_px": 237,
+      "drawn_width_px": 203.79844961240306,
+      "drawn_height_px": 236.2015503875969,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E13.png",
+      "source_scale": 0.8527131782945735,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          110.85271317829455,
+          221.92713178294568
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "char_sutskov__E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 209,
+      "canvas_height_px": 236,
+      "drawn_width_px": 208.5140562248996,
+      "drawn_height_px": 235.02008032128515,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E14.png",
+      "source_scale": 0.8835341365461847,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          113.09236947791165,
+          221.35180722891567
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "char_sutskov__E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 213,
+      "canvas_height_px": 236,
+      "drawn_width_px": 212.08,
+      "drawn_height_px": 235.84,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E15.png",
+      "source_scale": 0.88,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          110.88,
+          222.2
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "char_sutskov__E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 210,
+      "canvas_height_px": 236,
+      "drawn_width_px": 209.44,
+      "drawn_height_px": 235.84,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E16.png",
+      "source_scale": 0.88,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          110,
+          222.2
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "char_sutskov__E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 209,
+      "canvas_height_px": 236,
+      "drawn_width_px": 208.69565217391306,
+      "drawn_height_px": 235.6521739130435,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/heads/E17.png",
+      "source_scale": 0.8695652173913044,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          103.47826086956523,
+          222.09565217391307
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "char_sutskov__B23",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 89,
+      "canvas_height_px": 123,
+      "drawn_width_px": 88.42638,
+      "drawn_height_px": 122.71415999999999,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/parts/B23.png",
+      "source_scale": 0.60154,
+      "assembly_rotation_deg": -59.0761017000878,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          45.259869599999995,
+          19.5320038
+        ],
+        "grip": [
+          44.21319,
+          58.830611999999995
+        ],
+        "fingertip": [
+          44.21319,
+          112.24736399999999
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "char_sutskov__B24",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 89,
+      "canvas_height_px": 124,
+      "drawn_width_px": 88.54927526881717,
+      "drawn_height_px": 123.25101827956986,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_sutskov/parts/B24.png",
+      "source_scale": 0.5983059139784944,
+      "assembly_rotation_deg": 59.0761017000878,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          42.84468649999999,
+          18.954331354838704
+        ],
+        "grip": [
+          44.274637634408585,
+          59.39981113978493
+        ],
+        "fingertip": [
+          44.274637634408585,
+          112.8165631397849
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "jean_lave",
+  "name": "Jean Lave",
+  "kind": "set_or_support",
+  "asset_ids": [
+    "asset__c6d91a7444fae2a1",
+    "asset__d78305181422d9b0",
+    "asset__7e2905186181c5da"
+  ],
+  "status": "inventory_only",
+  "counts": {
+    "records": 3,
+    "native_records": 2,
+    "unique_native_files": 2,
+    "original": 3,
+    "historical_scale": 0,
+    "views": {
+      "unspecified": 2,
+      "front": 1
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {
+      "torso": 1
+    },
+    "side": {},
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {
+      "head": 1
+    }
+  },
+  "assets": [
+    {
+      "id": "asset__c6d91a7444fae2a1",
+      "file": "Odyssey_Watson_Kits/extras/jean_lave/fullkit_reference.png",
+      "owner": "jean_lave",
+      "category": "reference",
+      "is_cutout": false,
+      "title": "Fullkit Reference",
+      "note": "Reference / source image; see original metadata.",
+      "preferred": true,
+      "owner_name": "Jean Lave",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "jean_lave"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "6de5aa68feb94a919738d064a24f421d90eefc87c9f82d4b2fe4dd542cd0ce44",
+      "byte_size": 2846506,
+      "has_alpha": false,
+      "alpha_extrema": null,
+      "alpha_bounds": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/jean_lave/fullkit_reference.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "reference",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2463,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__d78305181422d9b0",
+      "file": "Odyssey_Watson_Kits/extras/jean_lave/head_blank.png",
+      "owner": "jean_lave",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Head Blank",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Jean Lave",
+      "width": 1261,
+      "height": 1247,
+      "packet_ids": [
+        "jean_lave"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "447b950cdee5122823d3723c49823578f9d2e289feb6a11a6a76b5a55644e419",
+      "byte_size": 2622538,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1237,
+        1247
+      ],
+      "native_file": "assets/447b950cdee5122823d3723c49823578f9d2e289feb6a11a6a76b5a55644e419.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/jean_lave/head_blank.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "head",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2464,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__7e2905186181c5da",
+      "file": "Odyssey_Watson_Kits/extras/jean_lave/torso_front.png",
+      "owner": "jean_lave",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Torso Front",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Jean Lave",
+      "width": 1199,
+      "height": 1312,
+      "packet_ids": [
+        "jean_lave"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "bd21b2882429b529d9a4db9dbe9a9f75f1ce9d31c19c6fd5e4de11b81a878a4b",
+      "byte_size": 2790191,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1183,
+        1312
+      ],
+      "native_file": "assets/bd21b2882429b529d9a4db9dbe9a9f75f1ce9d31c19c6fd5e4de11b81a878a4b.png",
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/jean_lave/torso_front.png",
+      "view_label": "front",
+      "view_label_basis": "filename_label",
+      "semantic_slot": "torso",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2465,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

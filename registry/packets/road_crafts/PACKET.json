@@ -1,0 +1,71 @@
+{
+  "id": "road_crafts",
+  "name": "Road Crafts",
+  "kind": "set_or_support",
+  "asset_ids": [
+    "asset__c0086edec0e8e050"
+  ],
+  "status": "inventory_only",
+  "counts": {
+    "records": 1,
+    "native_records": 0,
+    "unique_native_files": 0,
+    "original": 1,
+    "historical_scale": 0,
+    "views": {
+      "unspecified": 1
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {},
+    "side": {},
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {}
+  },
+  "assets": [
+    {
+      "id": "asset__c0086edec0e8e050",
+      "file": "Odyssey_Watson_Kits/extras/road_crafts/ensemble_reference.png",
+      "owner": "road_crafts",
+      "category": "reference",
+      "is_cutout": false,
+      "title": "Ensemble Reference",
+      "note": "Reference / source image; see original metadata.",
+      "preferred": true,
+      "owner_name": "Road Crafts",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "road_crafts"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "261ea04a8fced5e565a00067d966a1bfd196bba4953cca2c72ab770b833709a8",
+      "byte_size": 2951060,
+      "has_alpha": false,
+      "alpha_extrema": null,
+      "alpha_bounds": [
+        0,
+        0,
+        1536,
+        1024
+      ],
+      "native_file": null,
+      "source_archive": "Slopling_Production_Part_2_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/road_crafts/ensemble_reference.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "reference",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [],
+      "original_metadata_index": 2481,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

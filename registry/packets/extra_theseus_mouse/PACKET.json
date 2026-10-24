@@ -1,0 +1,301 @@
+{
+  "id": "extra_theseus_mouse",
+  "name": "Theseus \u2014 mechanical mouse",
+  "kind": "character",
+  "asset_ids": [
+    "asset__39762035646db45c",
+    "asset__5702d6ffd343a795",
+    "asset__55e7b6fbc5b323d6",
+    "asset__7336e3d681b4e5d4",
+    "asset__80a79fc6474330ca"
+  ],
+  "source_role": "extra_theseus_mouse",
+  "status": "inventory_only_not_motion_approved",
+  "counts": {
+    "records": 5,
+    "native_records": 5,
+    "unique_native_files": 5,
+    "original": 5,
+    "historical_scale": 0,
+    "views": {
+      "unspecified": 5
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {},
+    "side": {},
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {
+      "legacy_body": 4,
+      "head": 1
+    }
+  },
+  "assets": [
+    {
+      "id": "asset__39762035646db45c",
+      "file": "Odyssey_Watson_Kits/extras/theseus_mouse/body.png",
+      "owner": "theseus_mouse",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Body",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Theseus Mouse",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "extra_theseus_mouse"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "9def63bca6cec976eef39593fe36c279ed9dc532e63a0979e520866b6b924bb4",
+      "byte_size": 2536494,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        16,
+        1520,
+        1024
+      ],
+      "native_file": "assets/9def63bca6cec976eef39593fe36c279ed9dc532e63a0979e520866b6b924bb4.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/theseus_mouse/body.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "legacy_body",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "actor_id": "extra_theseus_mouse",
+          "slot": "body",
+          "anchors": {},
+          "basis": [],
+          "status": "historical_proposal_not_motion_validated"
+        }
+      ],
+      "original_metadata_index": 2488,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__5702d6ffd343a795",
+      "file": "Odyssey_Watson_Kits/extras/theseus_mouse/ear.png",
+      "owner": "theseus_mouse",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Ear",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Theseus Mouse",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "extra_theseus_mouse"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "b54d613cb5f897a4ef79fadf1f0928124fdf3516ff16c2343a4e0f753c8f78c8",
+      "byte_size": 1876100,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1522,
+        1008
+      ],
+      "native_file": "assets/b54d613cb5f897a4ef79fadf1f0928124fdf3516ff16c2343a4e0f753c8f78c8.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/theseus_mouse/ear.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "legacy_body",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "actor_id": "extra_theseus_mouse",
+          "slot": "ear",
+          "anchors": {},
+          "basis": [],
+          "status": "historical_proposal_not_motion_validated"
+        }
+      ],
+      "original_metadata_index": 2489,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__55e7b6fbc5b323d6",
+      "file": "Odyssey_Watson_Kits/extras/theseus_mouse/head.png",
+      "owner": "theseus_mouse",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Head",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Theseus Mouse",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "extra_theseus_mouse"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "630f8d4d9b71cf6e829f6779363d00e7a9b70c791adea4772ad9af7a1e2c654a",
+      "byte_size": 2048614,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        9,
+        1536,
+        1024
+      ],
+      "native_file": "assets/630f8d4d9b71cf6e829f6779363d00e7a9b70c791adea4772ad9af7a1e2c654a.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/theseus_mouse/head.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "head",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "actor_id": "extra_theseus_mouse",
+          "slot": "head",
+          "anchors": {
+            "neck": [
+              846.0,
+              860.88
+            ]
+          },
+          "basis": [
+            "central_lower_silhouette_no_brass_detection"
+          ],
+          "status": "historical_proposal_not_motion_validated"
+        }
+      ],
+      "original_metadata_index": 2491,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__7336e3d681b4e5d4",
+      "file": "Odyssey_Watson_Kits/extras/theseus_mouse/tail.png",
+      "owner": "theseus_mouse",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Tail",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Theseus Mouse",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "extra_theseus_mouse"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "5610d555686b6b66f97c060bc4c94158080010e80007237d180a8a6442cd337e",
+      "byte_size": 1341635,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        73,
+        25,
+        1496,
+        1024
+      ],
+      "native_file": "assets/5610d555686b6b66f97c060bc4c94158080010e80007237d180a8a6442cd337e.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/theseus_mouse/tail.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "legacy_body",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "actor_id": "extra_theseus_mouse",
+          "slot": "tail",
+          "anchors": {},
+          "basis": [],
+          "status": "historical_proposal_not_motion_validated"
+        }
+      ],
+      "original_metadata_index": 2492,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__80a79fc6474330ca",
+      "file": "Odyssey_Watson_Kits/extras/theseus_mouse/wheel.png",
+      "owner": "theseus_mouse",
+      "category": "legacy_body",
+      "is_cutout": true,
+      "title": "Wheel",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Theseus Mouse",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "extra_theseus_mouse"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "d4f2319ef28727ff68a8ba4bbee53b00a8cfa0d1ac7376b39c1c6eee7912da22",
+      "byte_size": 1654112,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        55,
+        17,
+        1460,
+        986
+      ],
+      "native_file": "assets/d4f2319ef28727ff68a8ba4bbee53b00a8cfa0d1ac7376b39c1c6eee7912da22.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/extras/theseus_mouse/wheel.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "legacy_body",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "actor_id": "extra_theseus_mouse",
+          "slot": "wheel",
+          "anchors": {},
+          "basis": [],
+          "status": "historical_proposal_not_motion_validated"
+        }
+      ],
+      "original_metadata_index": 2493,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

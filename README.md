@@ -5,7 +5,7 @@ Existing production cutouts, labeled character packets, source provenance, and t
 ## Start here
 
 - [Amy and Mark preview catalog](catalogs/Amy_Mark_Cutout_Packets.html) — download the HTML and open it in a browser.
-- [Full inventory preview catalog](catalogs/Cutout_Inventory.html) — the complete searchable inventory.
+- Full inventory preview catalog — run the restoration command below, then open `catalogs/Cutout_Inventory.html` for the complete searchable inventory.
 - [Character and set packets](registry/packets/) — source records, joints, variants, and review instructions.
 - [Current production status](docs/STATUS.md) — inventory does not mean animation-ready.
 
@@ -35,7 +35,7 @@ To reconstruct the downloadable ZIPs without extracting them:
 python3 tools/restore_packets.py --assemble-only
 ```
 
-The archives are stored as clearly labeled 8 MiB chunks so this repository does not depend on Git LFS. The script checks every chunk and the reconstructed ZIP against [the archive manifest](archives/MANIFEST.json). The recovered PNG bytes remain unchanged.
+The archives and two large support files (`catalogs/Cutout_Inventory.html` and `registry/CATALOG.json`) are stored as clearly labeled 8 MiB chunks so this repository does not depend on Git LFS. The script checks every chunk and the reconstructed ZIP against [the archive manifest](archives/MANIFEST.json). The recovered PNG bytes remain unchanged.
 
 ## What is indexed
 

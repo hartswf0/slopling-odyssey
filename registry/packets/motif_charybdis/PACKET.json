@@ -1,0 +1,137 @@
+{
+  "id": "motif_charybdis",
+  "name": "Charybdis",
+  "kind": "character",
+  "asset_ids": [
+    "asset__212f0f8eaae4759c",
+    "asset__f72c45064527bf9e"
+  ],
+  "source_role": "motif_charybdis",
+  "status": "inventory_only_not_motion_approved",
+  "counts": {
+    "records": 2,
+    "native_records": 2,
+    "unique_native_files": 2,
+    "original": 2,
+    "historical_scale": 0,
+    "views": {
+      "unspecified": 2
+    }
+  },
+  "assembly_policy": "Choose a source bank and compatible view first. Do not combine independent scales or assume unlabeled limbs are front/profile. Source preferred and anchor claims are historical evidence, not validation.",
+  "availability": {
+    "front": {},
+    "side": {},
+    "left_profile": {},
+    "right_profile": {},
+    "three_quarter": {},
+    "back": {},
+    "unspecified": {
+      "prop": 2
+    }
+  },
+  "assets": [
+    {
+      "id": "asset__212f0f8eaae4759c",
+      "file": "Odyssey_Watson_Kits/props/charybdis_outer_ring.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Charybdis Outer Ring",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1536,
+      "height": 1024,
+      "packet_ids": [
+        "motif_charybdis"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "4defa4ec2fa2a291409ad7d968e2e42fcaa051dbdfd61923927d1de20de58a64",
+      "byte_size": 2978422,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        254
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1535,
+        1024
+      ],
+      "native_file": "assets/4defa4ec2fa2a291409ad7d968e2e42fcaa051dbdfd61923927d1de20de58a64.png",
+      "source_archive": "Slopling_Production_Part_3_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/charybdis_outer_ring.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "actor_id": "motif_charybdis",
+          "slot": "charybdis_outer_ring",
+          "anchors": {},
+          "basis": [],
+          "status": "historical_proposal_not_motion_validated"
+        }
+      ],
+      "original_metadata_index": 2509,
+      "exact_duplicate_ids": []
+    },
+    {
+      "id": "asset__f72c45064527bf9e",
+      "file": "Odyssey_Watson_Kits/props/charybdis_vortex.png",
+      "owner": "props",
+      "category": "prop",
+      "is_cutout": true,
+      "title": "Charybdis Vortex",
+      "note": "Existing generated component",
+      "preferred": true,
+      "owner_name": "Props",
+      "width": 1292,
+      "height": 1218,
+      "packet_ids": [
+        "motif_charybdis"
+      ],
+      "bank": "original",
+      "historical_preferred": true,
+      "sha256_verified": "5b8c5a507b5c05e653fbb0c21a06b475ac4507f88e7fa0a67d327ee68cecd4f0",
+      "byte_size": 2649323,
+      "has_alpha": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bounds": [
+        0,
+        0,
+        1281,
+        1218
+      ],
+      "native_file": "assets/5b8c5a507b5c05e653fbb0c21a06b475ac4507f88e7fa0a67d327ee68cecd4f0.png",
+      "source_archive": "Slopling_Production_Part_1_of_3.zip",
+      "source_member": "Slopling_Odyssey_Scene_Ensembles_v3/Odyssey_Watson_Kits/props/charybdis_vortex.png",
+      "view_label": "unspecified",
+      "view_label_basis": "not_recorded",
+      "semantic_slot": "prop",
+      "lighting": "unrecorded",
+      "review_status": "inventory_only",
+      "flags": [],
+      "recorded_joint_guides": [
+        {
+          "actor_id": "motif_charybdis",
+          "slot": "charybdis_vortex",
+          "anchors": {},
+          "basis": [],
+          "status": "historical_proposal_not_motion_validated"
+        }
+      ],
+      "original_metadata_index": 2510,
+      "exact_duplicate_ids": []
+    }
+  ]
+}

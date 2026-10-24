@@ -1,0 +1,782 @@
+{
+  "actor_id": "extra_potter_teacher",
+  "name": "Potter teacher",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "extra_potter_teacher__E00",
+      "part": "head",
+      "canvas_width_px": 195,
+      "canvas_height_px": 237,
+      "drawn_width_px": 194.33333333333331,
+      "drawn_height_px": 236.5,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E00.png",
+      "source_scale": 0.9166666666666666,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          97.16666666666666,
+          222.56666666666666
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "extra_potter_teacher__B03",
+      "part": "torso_front",
+      "canvas_width_px": 312,
+      "canvas_height_px": 346,
+      "drawn_width_px": 311.16846284741905,
+      "drawn_height_px": 345.1616562677254,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B03.png",
+      "source_scale": 1.3074305161656263,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          155.58423142370953,
+          38.80453771979579
+        ],
+        "waist": [
+          155.58423142370953,
+          315.4045377197957
+        ],
+        "shoulder_left": [
+          55.82728304027225,
+          83.83244469653997
+        ],
+        "shoulder_right": [
+          255.34117980714683,
+          83.83244469653997
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "extra_potter_teacher__B05",
+      "part": "pelvis_front",
+      "canvas_width_px": 345,
+      "canvas_height_px": 248,
+      "drawn_width_px": 344.82913058731333,
+      "drawn_height_px": 247.3159748064747,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B05.png",
+      "source_scale": 1.4132341417512841,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          172.41456529365666,
+          40.41849645408673
+        ],
+        "hip_left": [
+          91.73302814107585,
+          75.41849645408672
+        ],
+        "hip_right": [
+          253.0961024462375,
+          75.41849645408672
+        ],
+        "hem_pin_left": [
+          49.971959252325405,
+          202.3468644159489
+        ],
+        "hem_pin_right": [
+          298.5881094692113,
+          185.0206138380781
+        ],
+        "upper_pin_left": [
+          72.6261025445985,
+          47.2161526759104
+        ],
+        "upper_pin_right": [
+          266.14025357460184,
+          46.77805009196751
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "extra_potter_teacher__B11",
+      "part": "upper_arm_left",
+      "canvas_width_px": 166,
+      "canvas_height_px": 181,
+      "drawn_width_px": 165.20232533324815,
+      "drawn_height_px": 180.31229411372814,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B11.png",
+      "source_scale": 1.007331252032001,
+      "assembly_rotation_deg": -15.14456162911637,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          111.54178953750348,
+          32.567019378194594
+        ],
+        "distal": [
+          48.91600559867397,
+          154.0108751231726
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "extra_potter_teacher__B12",
+      "part": "upper_arm_right",
+      "canvas_width_px": 173,
+      "canvas_height_px": 189,
+      "drawn_width_px": 172.06815477005438,
+      "drawn_height_px": 188.85529182079136,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B12.png",
+      "source_scale": 1.0491960656710633,
+      "assembly_rotation_deg": 22.49633035952491,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          47.0669355060039,
+          34.57101036386154
+        ],
+        "distal": [
+          124.71793632631929,
+          147.00286076117268
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "extra_potter_teacher__B13",
+      "part": "forearm_left",
+      "canvas_width_px": 126,
+      "canvas_height_px": 181,
+      "drawn_width_px": 125.78830435500171,
+      "drawn_height_px": 180.55328040071672,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B13.png",
+      "source_scale": 0.8557027507142974,
+      "assembly_rotation_deg": -33.21146761635493,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          84.51776068805114,
+          27.125777197643224
+        ],
+        "distal": [
+          36.273239602779064,
+          143.66393481742338
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "extra_potter_teacher__B14",
+      "part": "forearm_right",
+      "canvas_width_px": 121,
+      "canvas_height_px": 182,
+      "drawn_width_px": 120.73032923712621,
+      "drawn_height_px": 181.09549385568934,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B14.png",
+      "source_scale": 0.8623594945509016,
+      "assembly_rotation_deg": 30.917160000946446,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          36.10699203684624,
+          28.13879030719592
+        ],
+        "distal": [
+          79.64752291672127,
+          146.5148781241982
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_open.png",
+      "asset_id": "extra_potter_teacher__B21",
+      "part": "hand_left_open",
+      "canvas_width_px": 92,
+      "canvas_height_px": 107,
+      "drawn_width_px": 91.36209195979896,
+      "drawn_height_px": 106.01911206030144,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B21.png",
+      "source_scale": 0.4885673366834169,
+      "assembly_rotation_deg": 169.2771319850097,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          53.0193273768844,
+          88.78734209547734
+        ],
+        "grip": [
+          45.92532964824119,
+          51.55362536683415
+        ],
+        "fingertip": [
+          45.92532964824119,
+          9.746918366834167
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_open.png",
+      "asset_id": "extra_potter_teacher__B22",
+      "part": "hand_right_open",
+      "canvas_width_px": 92,
+      "canvas_height_px": 107,
+      "drawn_width_px": 91.79609847715734,
+      "drawn_height_px": 106.60192081218273,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B22.png",
+      "source_scale": 0.4935274111675126,
+      "assembly_rotation_deg": 190.72286801499027,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          36.24465307614212,
+          94.37231156345176
+        ],
+        "grip": [
+          45.89804923857867,
+          51.60322611167512
+        ],
+        "fingertip": [
+          45.89804923857867,
+          9.796519111675126
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "extra_potter_teacher__B15",
+      "part": "thigh_left",
+      "canvas_width_px": 267,
+      "canvas_height_px": 343,
+      "drawn_width_px": 266.3109214861658,
+      "drawn_height_px": 342.1785677235037,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B15.png",
+      "source_scale": 1.5483193109660802,
+      "assembly_rotation_deg": 28.589691661735014,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          60.384453127677126,
+          65.97388584026467
+        ],
+        "distal": [
+          168.05457801225836,
+          263.53942991953653
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "extra_potter_teacher__B16",
+      "part": "thigh_right",
+      "canvas_width_px": 257,
+      "canvas_height_px": 328,
+      "drawn_width_px": 256.5062350209739,
+      "drawn_height_px": 327.67559502679325,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B16.png",
+      "source_scale": 1.4826950001212365,
+      "assembly_rotation_deg": -30.097990758074626,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          196.20502936604325,
+          65.06065660531986
+        ],
+        "distal": [
+          83.37193985681712,
+          259.723683171237
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "extra_potter_teacher__B17",
+      "part": "shin_left",
+      "canvas_width_px": 146,
+      "canvas_height_px": 248,
+      "drawn_width_px": 145.56433561296583,
+      "drawn_height_px": 247.67663074444937,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B17.png",
+      "source_scale": 1.0863010120370584,
+      "assembly_rotation_deg": -8.82911242854085,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          74.77009865851073,
+          36.49971400444517
+        ],
+        "distal": [
+          48.67714834938059,
+          204.48530250585588
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "extra_potter_teacher__B18",
+      "part": "shin_right",
+      "canvas_width_px": 149,
+      "canvas_height_px": 244,
+      "drawn_width_px": 148.2331836845108,
+      "drawn_height_px": 243.8328456259707,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B18.png",
+      "source_scale": 1.0741535049602233,
+      "assembly_rotation_deg": 11.181423834484747,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          57.60685247101678,
+          34.80257356071123
+        ],
+        "distal": [
+          90.57262353824602,
+          201.5756467408355
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "extra_potter_teacher__B19",
+      "part": "shoe_left",
+      "canvas_width_px": 172,
+      "canvas_height_px": 123,
+      "drawn_width_px": 171.2846347607052,
+      "drawn_height_px": 122.45688819996118,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B19.png",
+      "source_scale": 0.7750435962022859,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          43.572950978492514,
+          34.706452237938365
+        ],
+        "sole": [
+          43.572950978492514,
+          114.70645223793832
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "extra_potter_teacher__B20",
+      "part": "shoe_right",
+      "canvas_width_px": 166,
+      "canvas_height_px": 120,
+      "drawn_width_px": 165.21167746174774,
+      "drawn_height_px": 119.4029850746268,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B20.png",
+      "source_scale": 0.7509621702806716,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "ankle": [
+          43.89373885290526,
+          31.893363371820122
+        ],
+        "sole": [
+          43.89373885290526,
+          111.89336337182007
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "extra_potter_teacher__E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 195,
+      "canvas_height_px": 237,
+      "drawn_width_px": 194.33333333333331,
+      "drawn_height_px": 236.5,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E01.png",
+      "source_scale": 0.9166666666666666,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          96.25,
+          222.56666666666666
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "extra_potter_teacher__E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 199,
+      "canvas_height_px": 237,
+      "drawn_width_px": 198.82845188284523,
+      "drawn_height_px": 236.56903765690373,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E02.png",
+      "source_scale": 0.9205020920502094,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          108.61924686192471,
+          222.60502092050214
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "extra_potter_teacher__E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 201,
+      "canvas_height_px": 237,
+      "drawn_width_px": 200.66945606694566,
+      "drawn_height_px": 236.56903765690373,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E03.png",
+      "source_scale": 0.9205020920502094,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          107.6987447698745,
+          222.60502092050214
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "extra_potter_teacher__E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 201,
+      "canvas_height_px": 237,
+      "drawn_width_px": 200.66945606694566,
+      "drawn_height_px": 236.56903765690373,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E04.png",
+      "source_scale": 0.9205020920502094,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          108.61924686192471,
+          222.60502092050214
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "extra_potter_teacher__E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 196,
+      "canvas_height_px": 237,
+      "drawn_width_px": 195.25000000000003,
+      "drawn_height_px": 236.5,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E05.png",
+      "source_scale": 0.9166666666666669,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          95.33333333333336,
+          222.56666666666672
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "extra_potter_teacher__E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 204,
+      "canvas_height_px": 236,
+      "drawn_width_px": 203.94849785407723,
+      "drawn_height_px": 235.10729613733906,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E06.png",
+      "source_scale": 0.9442060085836909,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          101.97424892703862,
+          220.95364806866948
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "extra_potter_teacher__E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 207,
+      "canvas_height_px": 236,
+      "drawn_width_px": 206.6086956521739,
+      "drawn_height_px": 235.30434782608694,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E07.png",
+      "source_scale": 0.9565217391304347,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          105.21739130434781,
+          221.05217391304345
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "extra_potter_teacher__E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 209,
+      "canvas_height_px": 236,
+      "drawn_width_px": 208.37004405286345,
+      "drawn_height_px": 235.50660792951538,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E08.png",
+      "source_scale": 0.9691629955947137,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          104.66960352422909,
+          221.15330396475773
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "extra_potter_teacher__E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 203,
+      "canvas_height_px": 236,
+      "drawn_width_px": 202.8571428571428,
+      "drawn_height_px": 235.2380952380952,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E09.png",
+      "source_scale": 0.9523809523809521,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          96.19047619047616,
+          221.01904761904754
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "extra_potter_teacher__E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 201,
+      "canvas_height_px": 236,
+      "drawn_width_px": 200.9523809523809,
+      "drawn_height_px": 235.2380952380952,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E10.png",
+      "source_scale": 0.9523809523809522,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          100.95238095238093,
+          221.01904761904757
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "extra_potter_teacher__E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 200,
+      "canvas_height_px": 236,
+      "drawn_width_px": 199.22746781115873,
+      "drawn_height_px": 235.10729613733906,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E11.png",
+      "source_scale": 0.9442060085836906,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          101.0300429184549,
+          220.95364806866942
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "extra_potter_teacher__E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 208,
+      "canvas_height_px": 236,
+      "drawn_width_px": 207.40088105726872,
+      "drawn_height_px": 235.50660792951538,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E12.png",
+      "source_scale": 0.9691629955947136,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          114.36123348017621,
+          221.1533039647577
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "extra_potter_teacher__E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 214,
+      "canvas_height_px": 236,
+      "drawn_width_px": 213.00000000000003,
+      "drawn_height_px": 236,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E13.png",
+      "source_scale": 1.0000000000000002,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          118.00000000000003,
+          221.40000000000006
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "extra_potter_teacher__E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 215,
+      "canvas_height_px": 237,
+      "drawn_width_px": 214.88372093023258,
+      "drawn_height_px": 236.37209302325584,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E14.png",
+      "source_scale": 1.0232558139534884,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          109.48837209302326,
+          221.58604651162793
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "extra_potter_teacher__E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 217,
+      "canvas_height_px": 237,
+      "drawn_width_px": 216.95852534562212,
+      "drawn_height_px": 236.22119815668202,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E15.png",
+      "source_scale": 1.0138248847926268,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          112.53456221198157,
+          221.51059907834104
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "extra_potter_teacher__E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 201,
+      "canvas_height_px": 236,
+      "drawn_width_px": 200.61674008810573,
+      "drawn_height_px": 235.50660792951538,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E16.png",
+      "source_scale": 0.9691629955947136,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          98.85462555066078,
+          221.1533039647577
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "extra_potter_teacher__E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 214,
+      "canvas_height_px": 238,
+      "drawn_width_px": 213.1555555555556,
+      "drawn_height_px": 237.59999999999997,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/heads/E17.png",
+      "source_scale": 0.977777777777778,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          107.55555555555557,
+          223.17777777777783
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "extra_potter_teacher__B23",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 81,
+      "canvas_height_px": 108,
+      "drawn_width_px": 80.76354126984124,
+      "drawn_height_px": 107.51324920634914,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B23.png",
+      "source_scale": 0.5144174603174602,
+      "assembly_rotation_deg": -60.071053521692434,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          42.51660309523808,
+          19.522142619047614
+        ],
+        "grip": [
+          40.38177063492062,
+          51.81212660317459
+        ],
+        "fingertip": [
+          40.38177063492062,
+          98.48007860317458
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "extra_potter_teacher__B24",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 84,
+      "canvas_height_px": 108,
+      "drawn_width_px": 83.18708021390374,
+      "drawn_height_px": 107.62328502673796,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/extra_potter_teacher/parts/B24.png",
+      "source_scale": 0.5199192513368984,
+      "assembly_rotation_deg": 60.07105352169245,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          45.092596668449204,
+          19.637350122994654
+        ],
+        "grip": [
+          41.85349973262032,
+          51.86714451336899
+        ],
+        "fingertip": [
+          41.85349973262032,
+          98.535096513369
+        ]
+      }
+    }
+  ]
+}

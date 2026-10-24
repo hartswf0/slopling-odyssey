@@ -1,0 +1,46 @@
+[
+  {
+    "path": "catalogs/Cutout_Inventory.html",
+    "byte_size": 26941515,
+    "sha256": "d9c81fceaefc5d9fdcfa11d579394bc3589d37522d9ae5d94bb8fb5feea3069a",
+    "chunks": [
+      {
+        "path": "archives/support-files/Cutout_Inventory.html.part-000",
+        "byte_size": 8388608,
+        "sha256": "2724fb806a2653eabd3cd6cb894fb3151b8f7685bb1490e60af3f967b402c6f6"
+      },
+      {
+        "path": "archives/support-files/Cutout_Inventory.html.part-001",
+        "byte_size": 8388608,
+        "sha256": "0742def2588e3c7b830781f0d1686134a2b7b69fddf0699065427efa1cb9d930"
+      },
+      {
+        "path": "archives/support-files/Cutout_Inventory.html.part-002",
+        "byte_size": 8388608,
+        "sha256": "0da9b4e886f7949002abca486e423996801fa7e1abaa09f625e75db76ea3c8a4"
+      },
+      {
+        "path": "archives/support-files/Cutout_Inventory.html.part-003",
+        "byte_size": 1775691,
+        "sha256": "e9c36299fe761fd6bcc22341ad906fa1f977c67b7f7c0542a087bd4381f640d7"
+      }
+    ]
+  },
+  {
+    "path": "registry/CATALOG.json",
+    "byte_size": 14664482,
+    "sha256": "ab5337ae2c124e5a3c901840327b4dcde94173347b3a2234147a968e1ccca452",
+    "chunks": [
+      {
+        "path": "archives/support-files/CATALOG.json.part-000",
+        "byte_size": 8388608,
+        "sha256": "6a1a0e6fbab8c4d1e7543e72f996e99c41ecf351d475964eb4956dc36cd04a88"
+      },
+      {
+        "path": "archives/support-files/CATALOG.json.part-001",
+        "byte_size": 6275874,
+        "sha256": "5a7912de5463610d7856d5d29f94f64cc522c3762551a53a110f6ab8cd1b2fdc"
+      }
+    ]
+  }
+]

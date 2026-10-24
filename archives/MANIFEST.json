@@ -1,0 +1,578 @@
+{
+  "schema": "slopling.repository_archives.v1",
+  "chunk_size_bytes": 8388608,
+  "archives": [
+    {
+      "id": "family",
+      "original_filename": "Family_Cutout_Packets_v1.zip",
+      "byte_size": 105019286,
+      "sha256": "76afa282ae024ca624f0a23953ae367b7fbf83b1b5445f8142892fbe0134dc76",
+      "chunks": [
+        {
+          "path": "archives/family/Family_Cutout_Packets_v1.zip.part-000",
+          "byte_size": 8388608,
+          "sha256": "81375336720223dbac2232221df2846ab088f017cd1f1605dce128bdf204200b"
+        },
+        {
+          "path": "archives/family/Family_Cutout_Packets_v1.zip.part-001",
+          "byte_size": 8388608,
+          "sha256": "6a1a74fe627e963561af47310f8d9fa4b20be0a8a8477fc6eb3eafecc954792c"
+        },
+        {
+          "path": "archives/family/Family_Cutout_Packets_v1.zip.part-002",
+          "byte_size": 8388608,
+          "sha256": "1166564501e1e9798542a4ef357c6938ed1ccde6c9833cbbcf281c70bf45ad45"
+        },
+        {
+          "path": "archives/family/Family_Cutout_Packets_v1.zip.part-003",
+          "byte_size": 8388608,
+          "sha256": "599e43434072a2e614a5f018e198d8be823937ecc183e46f3061e0f6ffc20533"
+        },
+        {
+          "path": "archives/family/Family_Cutout_Packets_v1.zip.part-004",
+          "byte_size": 8388608,
+          "sha256": "5274f1523c9091a6b40e7745a36727499183425c20f3a3ba40e4f2dbf26b7814"
+        },
+        {
+          "path": "archives/family/Family_Cutout_Packets_v1.zip.part-005",
+          "byte_size": 8388608,
+          "sha256": "02572a794383b1046bd2ba9d2cdeca431739607806a2528bddaeec0517da3e1c"
+        },
+        {
+          "path": "archives/family/Family_Cutout_Packets_v1.zip.part-006",
+          "byte_size": 8388608,
+          "sha256": "aded62f03980dfadd1a7877901a37fdcc5036a06d32974eca48248487daab9dd"
+        },
+        {
+          "path": "archives/family/Family_Cutout_Packets_v1.zip.part-007",
+          "byte_size": 8388608,
+          "sha256": "386991cb8287f09327551006077d4f3b033ef53dbc7f934f2042afbcb2741f2c"
+        },
+        {
+          "path": "archives/family/Family_Cutout_Packets_v1.zip.part-008",
+          "byte_size": 8388608,
+          "sha256": "105f0d9e0cac6f3034c36a17056377951b800fa0f46579c3057113b2f93010be"
+        },
+        {
+          "path": "archives/family/Family_Cutout_Packets_v1.zip.part-009",
+          "byte_size": 8388608,
+          "sha256": "a7b43fe1a0d3027532fa9a18322efc209bbc1913592f836ce8401f313d23a646"
+        },
+        {
+          "path": "archives/family/Family_Cutout_Packets_v1.zip.part-010",
+          "byte_size": 8388608,
+          "sha256": "b69bdb348148a18f044d44c6b87018ffb11275c581e4bdfb6742cc81136caf30"
+        },
+        {
+          "path": "archives/family/Family_Cutout_Packets_v1.zip.part-011",
+          "byte_size": 8388608,
+          "sha256": "e7c1c5faaf41b5527c2e4eb5bfda1ff9bf531daef9797751447b6bd7cc628205"
+        },
+        {
+          "path": "archives/family/Family_Cutout_Packets_v1.zip.part-012",
+          "byte_size": 4355990,
+          "sha256": "6f56c9f7393b4b0c9735a35f7ba9b1f6abe2b6ca43697648677506d66dcd7768"
+        }
+      ]
+    },
+    {
+      "id": "full-part-1",
+      "original_filename": "Slopling_Cutout_Packets_Part_1_of_3.zip",
+      "byte_size": 287791347,
+      "sha256": "7124e8a7fff8acf2514d5570666b5dfc48661e49e8f643d270393870653e3a10",
+      "chunks": [
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-000",
+          "byte_size": 8388608,
+          "sha256": "616cf1876982db12e203c7e4c3f37a2ceeb8495c05087f3bddf748c062aea019"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-001",
+          "byte_size": 8388608,
+          "sha256": "d4c7ec153a420c36f45b7d9f3127118f0cc50970190b461d0eb943a921bf69d0"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-002",
+          "byte_size": 8388608,
+          "sha256": "b7d8accc6d188aed350371b44ace0cb92c2305d5deb8d522c60349cfc0c1883e"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-003",
+          "byte_size": 8388608,
+          "sha256": "81bd628f1bce4cd97dd827edae44e89ee7f71c267dfdcbd5c62e07b0be8e59a4"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-004",
+          "byte_size": 8388608,
+          "sha256": "de75ce9ed41c3d1457dff3570993f167c5c7b05baeb5cd0474f6a9f7fab899b3"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-005",
+          "byte_size": 8388608,
+          "sha256": "bf4dfcb25057a371b26a21e5d606c977543b060aef09713fd040f57cc2729fd6"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-006",
+          "byte_size": 8388608,
+          "sha256": "2ebb45ebfd7d8c3c69a08e1823c1ec2b50b9c29d63e8fe61dd5c10cb72172b28"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-007",
+          "byte_size": 8388608,
+          "sha256": "a8cc50a81b88987cbf1555070efb1c2dacb28f450059df5406a5b4ffec33488c"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-008",
+          "byte_size": 8388608,
+          "sha256": "e81fe8c06b7a52653eb2ea2e4545718213aefc5c5ca3476e3f875745bb793803"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-009",
+          "byte_size": 8388608,
+          "sha256": "948270193e18d48ea2a539e50b1c4f9583a63a22c318cef62e0f9c2ce25be070"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-010",
+          "byte_size": 8388608,
+          "sha256": "29fb920da89986a82ed315be22619e3d4d202624e119322934c95bf7f060db80"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-011",
+          "byte_size": 8388608,
+          "sha256": "8c1d440027485163509b3f86e147cacf62dffaf9c0fa63f283db6a656d9d1ee8"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-012",
+          "byte_size": 8388608,
+          "sha256": "9f7ab0bb4fe910a991dfe0ed9147a4b8107234450726f38bdc145dcc98d0581f"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-013",
+          "byte_size": 8388608,
+          "sha256": "bfc70877e49754556ecd572c8e9333be0f4728961e6de44ebd281dfe20589f09"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-014",
+          "byte_size": 8388608,
+          "sha256": "0bba18c3da8c76736dfa6c52a941a328e479fa054d20e542513801b2cc0dccda"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-015",
+          "byte_size": 8388608,
+          "sha256": "8132198256411e50d637335845b5bf48952e4b341c71332cbb347b35b1740cec"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-016",
+          "byte_size": 8388608,
+          "sha256": "4bc6c9dc0f8cadb9e215c348932c07e79d0702e172f3542a6e11edefc44b2c89"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-017",
+          "byte_size": 8388608,
+          "sha256": "b5dee0dee1a73e3e688ae559f2807f4088ab53530823b21a0d68ad58ae56fbe1"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-018",
+          "byte_size": 8388608,
+          "sha256": "dd61a4778071f2fd3df19fd002d37798d4d523f737c6678c158d92ef41fcdf0c"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-019",
+          "byte_size": 8388608,
+          "sha256": "ba4d959e4f73b072c8631032845205b7cfb4262800a9eec4b10ccb6d5ff72bbe"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-020",
+          "byte_size": 8388608,
+          "sha256": "e050085d30107b55880c99752b28b11646754a88b6286170f1e81a30d7a394d3"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-021",
+          "byte_size": 8388608,
+          "sha256": "35ca2a5a34b65c248de127195766c0e0f9fd06bb0f50203536770f4950e5074c"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-022",
+          "byte_size": 8388608,
+          "sha256": "3c8385604665226919aff2e99af3731836e262cf991aa0a6171655ddb073c869"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-023",
+          "byte_size": 8388608,
+          "sha256": "52c520aa8c6e6135838c33609df0bf945d2f64b655a5f1e7c5120725db6fd2eb"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-024",
+          "byte_size": 8388608,
+          "sha256": "999c82fcdf6610e633130620c53382050825c9bb0d161bedbc674be5f3fa01ae"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-025",
+          "byte_size": 8388608,
+          "sha256": "46415294892c178ad68609b508c273a24473fb500c6124a6c0257990ec8f1694"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-026",
+          "byte_size": 8388608,
+          "sha256": "8fe37d9cf55d57f6c572a2ebc98706ce3869e481e472b7ab97f84680594a2112"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-027",
+          "byte_size": 8388608,
+          "sha256": "88d199fc488a728f77e94733cb9ba66e4e9ecc161779bfaa618b175677b87fd6"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-028",
+          "byte_size": 8388608,
+          "sha256": "d6b825d9b96bfb602849374929abecf720a7af23c9039de8675ab9a10a7f7b36"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-029",
+          "byte_size": 8388608,
+          "sha256": "95140937fdec871c64039484ac25554a364ad33ac11d0bd4c52093a89e41cdd4"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-030",
+          "byte_size": 8388608,
+          "sha256": "53c13cf697d0c8a1c43cbfc6a6e02b6795a3f0a3830a73a10939d6775660e2db"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-031",
+          "byte_size": 8388608,
+          "sha256": "7f58ffdee30886ed41543cff8c7eac851b7f3c1a5580e99429f9e7f9d1f21516"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-032",
+          "byte_size": 8388608,
+          "sha256": "ace18b6a2ffb077de659e3e7fbe74f6c2051f4191cf0fb0ef3c3cae652b1b46b"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-033",
+          "byte_size": 8388608,
+          "sha256": "09127785ee19abbb070a354d274652307bea1cae882f459e284cc517b0c87264"
+        },
+        {
+          "path": "archives/full-part-1/Slopling_Cutout_Packets_Part_1_of_3.zip.part-034",
+          "byte_size": 2578675,
+          "sha256": "5cb16a43dabfa16ad95ec3283ffc33324ff43a2fe4b8339372851d8f18c490c5"
+        }
+      ]
+    },
+    {
+      "id": "full-part-2",
+      "original_filename": "Slopling_Cutout_Packets_Part_2_of_3.zip",
+      "byte_size": 245576746,
+      "sha256": "30434b868adae28981afa1dc54b934c80eb4b74c7c47e951eda7cff1a802f03c",
+      "chunks": [
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-000",
+          "byte_size": 8388608,
+          "sha256": "6b5776063440e2f79e24e1fc74b10c37476157a209e5065f5a202921eba284d0"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-001",
+          "byte_size": 8388608,
+          "sha256": "fd4051035779f3ce0f52ce1309e3344cbc2705bc24b5ec70482f4386b5975c06"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-002",
+          "byte_size": 8388608,
+          "sha256": "7e4e5af1467842c354ac36b05a3e320d7685c1de5cd543535bc90d19d81c5470"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-003",
+          "byte_size": 8388608,
+          "sha256": "a485da71dc35e260539efbaad571d1b3b5982294d24e261243bde01132a62630"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-004",
+          "byte_size": 8388608,
+          "sha256": "c5230b373c1720a1e4037fbab00bab477463a7692435379ac05fb49cf9c48a70"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-005",
+          "byte_size": 8388608,
+          "sha256": "98f6db8bd2bc2c2617e3f8ef82ba33e67d7a9a760b8753453069aab6af4024e2"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-006",
+          "byte_size": 8388608,
+          "sha256": "f19db2f6cc45e1b3660caa027394485fcdc319b667191c501adadcac281b3cf8"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-007",
+          "byte_size": 8388608,
+          "sha256": "0b9499e41bc800d0204e2b498aca72dc304bea5a1982e55f1ee6406adebb25c8"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-008",
+          "byte_size": 8388608,
+          "sha256": "f6c224226e5495f83aef64b506e34323b12919018eb9478a0ba64d1308288a64"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-009",
+          "byte_size": 8388608,
+          "sha256": "796e79c739d02bc8d01cd56895985bbdb40a0cc7915b53b939c508ce5a9936d3"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-010",
+          "byte_size": 8388608,
+          "sha256": "7b2bb5a0211daaf557258debc2df0b5e748fc416420fec7f1c3a6ecdff03dae6"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-011",
+          "byte_size": 8388608,
+          "sha256": "835d6ef58c332612011aae4cf42fdfecfa0cae49437323a6d60f7c5ba60a502e"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-012",
+          "byte_size": 8388608,
+          "sha256": "af95141edab21585dd65dfa16e6696049b22493681f2c1290fd31100d70fd461"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-013",
+          "byte_size": 8388608,
+          "sha256": "0571bb363a251d936b581a31bc2ea3f808ffcf68ec3f88bad2f67e232bba2900"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-014",
+          "byte_size": 8388608,
+          "sha256": "c6e6a888f09413ce8f6b81074e4f6fcd00e49911af0891cf7682de68c6aa04dc"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-015",
+          "byte_size": 8388608,
+          "sha256": "d6e63eeba0bb04aaf54d7525c57ef304f50310e8fdde1ed62ec35a3eb5be2eed"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-016",
+          "byte_size": 8388608,
+          "sha256": "df97ea0fcbf2d902813f937089b4a858849fe745dbb7b58cd1196f1e5159340f"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-017",
+          "byte_size": 8388608,
+          "sha256": "fd6dc63935ac7f739cac4354a70be8db5c001a2875282573da6b105a75542353"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-018",
+          "byte_size": 8388608,
+          "sha256": "a6a71b066fecc25dbe1475577fea3208984224b2ee0dd4b800b313d14db62991"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-019",
+          "byte_size": 8388608,
+          "sha256": "7128690a3643de0d3b89163e219ccfcc36f26210393cf020bcaa8060e61b54b6"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-020",
+          "byte_size": 8388608,
+          "sha256": "6e2721328fe96c9ea712a48e8f8b07e4bba9d2ba3482cddad4db006d41bf8f83"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-021",
+          "byte_size": 8388608,
+          "sha256": "894647bbacfa70bbf9d372a4ef58bc1edcb0e4b1d420840281d0bfcdf686482a"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-022",
+          "byte_size": 8388608,
+          "sha256": "8b3a2208d182287b514e0fb92a379467b8c4927b525868108c0ac345d1013397"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-023",
+          "byte_size": 8388608,
+          "sha256": "c57f54521716da310e0a34a7e1d5f4086c9c629fb2d3c47cfcc60d39bacbcd01"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-024",
+          "byte_size": 8388608,
+          "sha256": "06d62a9bb94a305cc5a7c76fbfaabe13a463873e7e07b95048a36b1b8bf657b6"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-025",
+          "byte_size": 8388608,
+          "sha256": "502502c33043913ccbea15f8ed2a4cfd3f92960f5433d370f7c377820ee468c7"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-026",
+          "byte_size": 8388608,
+          "sha256": "e79f8d986f4ba2030b7e0a3330659c2eb63f3c744c015d722d28fac33eb843d0"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-027",
+          "byte_size": 8388608,
+          "sha256": "421e985ef4600649b04664cef3ee71d03fabd0501c3df648e670a43bff08d0ea"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-028",
+          "byte_size": 8388608,
+          "sha256": "d4066ec00475d940a5fc4e7db98a9542609b5bfb208da94d8a3c73904c752654"
+        },
+        {
+          "path": "archives/full-part-2/Slopling_Cutout_Packets_Part_2_of_3.zip.part-029",
+          "byte_size": 2307114,
+          "sha256": "07855c9a6e9cdb143eefb1a7901d5b9505a41fdde608890933cb34e4478168b4"
+        }
+      ]
+    },
+    {
+      "id": "full-part-3",
+      "original_filename": "Slopling_Cutout_Packets_Part_3_of_3.zip",
+      "byte_size": 250211420,
+      "sha256": "1600060fc1b34eba9fd31d96059253467ed138ec9bd6d13871b7220ae827fca5",
+      "chunks": [
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-000",
+          "byte_size": 8388608,
+          "sha256": "6777dd230147e8e40ff042da0e188e48086b057eb9d702416d95287d4cad1c4e"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-001",
+          "byte_size": 8388608,
+          "sha256": "3d3120538206cf8cf2e2bd7f300b3b39461243051b568a6bf6a829c9cc68444f"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-002",
+          "byte_size": 8388608,
+          "sha256": "99aa8e77fbca61e8e8de45c2865833ed6588cc531afa6e32a02cd7430745a0f8"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-003",
+          "byte_size": 8388608,
+          "sha256": "8e62d1669870e045f44e13f8b41445eb5d59f84fbae55a6f513725579296fde8"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-004",
+          "byte_size": 8388608,
+          "sha256": "fba38e77195472a06ef7df04a813139763b7b61528fb0e9aec23adccf564b59d"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-005",
+          "byte_size": 8388608,
+          "sha256": "bcfbe31eb412268a35a400580aa11c35419ffd980c2bb935e3e729314df275ab"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-006",
+          "byte_size": 8388608,
+          "sha256": "e1fadb617ca2f087e07a518217dc0c85fc57442188fa5f887fa637cae23002f9"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-007",
+          "byte_size": 8388608,
+          "sha256": "040d75c64c9380b3922ee0fd27c1146636afc9fcfef2e8a9f89ed728747dc50a"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-008",
+          "byte_size": 8388608,
+          "sha256": "e05ce5383da5a214e1722200eb0c0f6da72545f03cb792c2a92796dd244fd6f3"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-009",
+          "byte_size": 8388608,
+          "sha256": "47fc684bf6ea8bc3a99fa77ef62aaf075de47c0998e2a628e2fd3fbf95e2f7d6"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-010",
+          "byte_size": 8388608,
+          "sha256": "ebd82529d0df41c4cb7dc618406c0c584bdcc77fdd5234970a62e73e36072635"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-011",
+          "byte_size": 8388608,
+          "sha256": "f789f46122b78adcdb4ad0d25b0c7dfe579d0e6b5e040206503d1bdf102fceb8"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-012",
+          "byte_size": 8388608,
+          "sha256": "d36bdfce51947cffbc4d6021976d24f272c318933931a55ca09658c409803996"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-013",
+          "byte_size": 8388608,
+          "sha256": "f30d06703b2bb49c8946ecf20f0410c6755063fa0b5fe8164e84be17e9b6f483"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-014",
+          "byte_size": 8388608,
+          "sha256": "645fdbf9ddb4262e7be95b7a28ce64e66c859e33132153c1ecc55b0c8a0f2f1c"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-015",
+          "byte_size": 8388608,
+          "sha256": "abb91df4ea50560bd5bd72d48bfafaed6f4a035011e7100c471277857cf5282b"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-016",
+          "byte_size": 8388608,
+          "sha256": "cab8208b9bb1a0dba5b1be02af28fd6bd71e08b340eefee610b8115a4db54933"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-017",
+          "byte_size": 8388608,
+          "sha256": "0aa4c29d86911e2ce0e9a6e100db077d081b276a2df4fc1cb863b5dbf9eee1f1"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-018",
+          "byte_size": 8388608,
+          "sha256": "0ff8ffd40f56676ff089f5188ba3e53c24867e0eba50aa9cef7d2d73f67d14ad"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-019",
+          "byte_size": 8388608,
+          "sha256": "4c31180d225b14501c744cf663b873326d5e37ed20f7d44a8bb57f443b3f80bc"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-020",
+          "byte_size": 8388608,
+          "sha256": "106faeeedfdc5294583e9a8b7de69d0f9ddd7bdf4490e9ff04e7cc819e4f54f3"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-021",
+          "byte_size": 8388608,
+          "sha256": "2637fa05fbb5e07f3927f1c108fad75d5677945fcce1ba2a78afe6743788e273"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-022",
+          "byte_size": 8388608,
+          "sha256": "ea2c072a8bc6abffb9bd0dcaae3dd523ac25e91f684fa44b1d27b3214cb33666"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-023",
+          "byte_size": 8388608,
+          "sha256": "3ad236678753d4ed4869ecd0ac128ebc75f4078588e5cf855bbcaf09e914466b"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-024",
+          "byte_size": 8388608,
+          "sha256": "b939ae8aefa1b5e7f4031a51c8003a24941f1a8a14cb9d40f73536a0a20434a7"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-025",
+          "byte_size": 8388608,
+          "sha256": "593fb9947e4656d0843184dd8c694fbfc15159393884ce9eb22075dc6cefbd55"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-026",
+          "byte_size": 8388608,
+          "sha256": "c62e7656a584aaa1737cbdc02ee7be7eda2a9604f39e1ee2fb0d85f085440d8a"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-027",
+          "byte_size": 8388608,
+          "sha256": "6aca58e8e99561b28a617e5c594f14251995bea72be71a2c6de010729d112c29"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-028",
+          "byte_size": 8388608,
+          "sha256": "ae731588668c8c0297568e6e7006eeef5b9af74b3ebb378d47e773c05ce76d5c"
+        },
+        {
+          "path": "archives/full-part-3/Slopling_Cutout_Packets_Part_3_of_3.zip.part-029",
+          "byte_size": 6941788,
+          "sha256": "f590488e58ac8129dc92140814082246b496b5737c022c1521544d3b8d24858a"
+        }
+      ]
+    }
+  ]
+}

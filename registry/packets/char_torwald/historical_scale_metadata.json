@@ -1,0 +1,790 @@
+{
+  "actor_id": "char_torwald",
+  "name": "Linos Torwald",
+  "revision": "proportions_20261022_v1",
+  "assembled_visible_height_px": 1000,
+  "instructions": "Import all loose PNGs at their native exported dimensions. Do not auto-fit each image to a separate box. All use one common scale for a 1000-pixel-high assembled figure. Rotate and connect at the recorded anchors; resize the complete figure as a group.",
+  "parts": [
+    {
+      "file": "01_head.png",
+      "asset_id": "char_torwald__E00",
+      "part": "head",
+      "canvas_width_px": 184,
+      "canvas_height_px": 237,
+      "drawn_width_px": 183.03999999999996,
+      "drawn_height_px": 236.7199999999999,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E00.png",
+      "source_scale": 0.8799999999999998,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          91.51999999999998,
+          221.31999999999994
+        ]
+      }
+    },
+    {
+      "file": "02_torso_front.png",
+      "asset_id": "file__2dde65a8216ba5ca",
+      "part": "torso_front",
+      "canvas_width_px": 363,
+      "canvas_height_px": 398,
+      "drawn_width_px": 362.99284730722144,
+      "drawn_height_px": 397.2031823745409,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/torso_front_override.png",
+      "source_scale": 0.3027463280293757,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          181.49642365361072,
+          41.863762239902066
+        ],
+        "waist": [
+          181.49642365361072,
+          358.46376223990194
+        ],
+        "shoulder_left": [
+          79.87961865055078,
+          93.40329712362298
+        ],
+        "shoulder_right": [
+          283.1132286566707,
+          93.40329712362298
+        ]
+      }
+    },
+    {
+      "file": "03_pelvis_front.png",
+      "asset_id": "char_torwald__B05",
+      "part": "pelvis_front",
+      "canvas_width_px": 306,
+      "canvas_height_px": 219,
+      "drawn_width_px": 305.9507656103903,
+      "drawn_height_px": 218.92477005899045,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/parts/B05.png",
+      "source_scale": 1.3597811804906237,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "waist": [
+          152.97538280519515,
+          36.60530937880759
+        ],
+        "hip_left": [
+          73.90954628438736,
+          71.60530937880759
+        ],
+        "hip_right": [
+          232.041219326003,
+          71.60530937880759
+        ],
+        "hem_pin_left": [
+          41.47332600496402,
+          178.48487775119926
+        ],
+        "hem_pin_right": [
+          279.3262500963839,
+          153.65527339544047
+        ],
+        "upper_pin_left": [
+          53.53458507591585,
+          51.440522057960294
+        ],
+        "upper_pin_right": [
+          253.09607112471977,
+          53.12665072176867
+        ]
+      }
+    },
+    {
+      "file": "04_upper_arm_left.png",
+      "asset_id": "char_torwald__B11",
+      "part": "upper_arm_left",
+      "canvas_width_px": 300,
+      "canvas_height_px": 275,
+      "drawn_width_px": 299.2293232070285,
+      "drawn_height_px": 274.03106441064716,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/parts/B11.png",
+      "source_scale": 1.5748911747738341,
+      "assembly_rotation_deg": 30.075061065638174,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          65.95644239952817,
+          66.06668478176235
+        ],
+        "distal": [
+          114.13236343585976,
+          214.8624029743942
+        ]
+      }
+    },
+    {
+      "file": "05_upper_arm_right.png",
+      "asset_id": "char_torwald__B12",
+      "part": "upper_arm_right",
+      "canvas_width_px": 208,
+      "canvas_height_px": 169,
+      "drawn_width_px": 207.70064499880218,
+      "drawn_height_px": 168.82072130444513,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/parts/B12.png",
+      "source_scale": 1.0231558866936068,
+      "assembly_rotation_deg": -64.81185924507342,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          164.03235175471903,
+          41.396887175623334
+        ],
+        "distal": [
+          39.6575221682442,
+          136.2229747543868
+        ]
+      }
+    },
+    {
+      "file": "06_forearm_left.png",
+      "asset_id": "char_torwald__B13",
+      "part": "forearm_left",
+      "canvas_width_px": 175,
+      "canvas_height_px": 188,
+      "drawn_width_px": 174.87192502545193,
+      "drawn_height_px": 187.43757233267002,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/parts/B13.png",
+      "source_scale": 1.0471372756015085,
+      "assembly_rotation_deg": -44.439445354584194,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          125.16431855264831,
+          34.335631266973465
+        ],
+        "distal": [
+          45.026902850864865,
+          154.42133403295446
+        ]
+      }
+    },
+    {
+      "file": "07_forearm_right.png",
+      "asset_id": "char_torwald__B14",
+      "part": "forearm_right",
+      "canvas_width_px": 186,
+      "canvas_height_px": 198,
+      "drawn_width_px": 185.43124666718495,
+      "drawn_height_px": 197.64528087879594,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/parts/B14.png",
+      "source_scale": 1.1103667465100895,
+      "assembly_rotation_deg": 49.24021651485331,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          52.67579845443864,
+          36.919694321460476
+        ],
+        "distal": [
+          142.58219391936058,
+          149.87730344393188
+        ]
+      }
+    },
+    {
+      "file": "08_hand_left_open.png",
+      "asset_id": "char_torwald__B22",
+      "part": "hand_left_open",
+      "canvas_width_px": 109,
+      "canvas_height_px": 124,
+      "drawn_width_px": 108.1589196629213,
+      "drawn_height_px": 123.16362528089884,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/parts/B22.png",
+      "source_scale": 0.6251960674157301,
+      "assembly_rotation_deg": 169.27713198500982,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          58.255769561797734,
+          101.24425115730332
+        ],
+        "grip": [
+          54.07945983146065,
+          59.04351660674155
+        ],
+        "fingertip": [
+          54.07945983146065,
+          11.191009606741568
+        ]
+      }
+    },
+    {
+      "file": "09_hand_right_open.png",
+      "asset_id": "char_torwald__B21",
+      "part": "hand_right_open",
+      "canvas_width_px": 112,
+      "canvas_height_px": 124,
+      "drawn_width_px": 111.91362824858753,
+      "drawn_height_px": 123.85946497175134,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/parts/B21.png",
+      "source_scale": 0.6287282485875704,
+      "assembly_rotation_deg": 190.72286801499015,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          51.84493137853105,
+          108.5310702711864
+        ],
+        "grip": [
+          55.956814124293764,
+          59.70403448587568
+        ],
+        "fingertip": [
+          55.956814124293764,
+          11.851527485875703
+        ]
+      }
+    },
+    {
+      "file": "10_thigh_left.png",
+      "asset_id": "char_torwald__B15",
+      "part": "thigh_left",
+      "canvas_width_px": 219,
+      "canvas_height_px": 278,
+      "drawn_width_px": 218.12192393286145,
+      "drawn_height_px": 277.6097213690964,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/parts/B15.png",
+      "source_scale": 1.4163761294341652,
+      "assembly_rotation_deg": -13.436185636693125,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          100.54854142853138,
+          40.42337473405107
+        ],
+        "distal": [
+          57.56152590020448,
+          220.35979821736746
+        ]
+      }
+    },
+    {
+      "file": "11_thigh_right.png",
+      "asset_id": "char_torwald__B16",
+      "part": "thigh_right",
+      "canvas_width_px": 227,
+      "canvas_height_px": 271,
+      "drawn_width_px": 226.43014481540132,
+      "drawn_height_px": 270.856312469056,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/parts/B16.png",
+      "source_scale": 1.4331021823759578,
+      "assembly_rotation_deg": 13.219170490162183,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          116.21025596886642,
+          34.46610748614179
+        ],
+        "distal": [
+          158.51543239260468,
+          214.5640587453284
+        ]
+      }
+    },
+    {
+      "file": "12_shin_left.png",
+      "asset_id": "char_torwald__B17",
+      "part": "shin_left",
+      "canvas_width_px": 155,
+      "canvas_height_px": 253,
+      "drawn_width_px": 154.65375111916597,
+      "drawn_height_px": 252.84660897260468,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/parts/B17.png",
+      "source_scale": 1.2274107231679838,
+      "assembly_rotation_deg": -10.302257965381244,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          86.49563366164782,
+          37.865620809732306
+        ],
+        "distal": [
+          56.09267004877687,
+          205.12488005583347
+        ]
+      }
+    },
+    {
+      "file": "13_shin_right.png",
+      "asset_id": "char_torwald__B18",
+      "part": "shin_right",
+      "canvas_width_px": 154,
+      "canvas_height_px": 253,
+      "drawn_width_px": 153.34635810476726,
+      "drawn_height_px": 252.71479815665646,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/parts/B18.png",
+      "source_scale": 1.2267708648381381,
+      "assembly_rotation_deg": 10.578510656861564,
+      "assembly_flip": false,
+      "anchors_px": {
+        "proximal": [
+          61.96419638297436,
+          37.52692075539864
+        ],
+        "distal": [
+          93.1732471844566,
+          204.6376479636498
+        ]
+      }
+    },
+    {
+      "file": "14_shoe_left.png",
+      "asset_id": "char_torwald__B19",
+      "part": "shoe_left",
+      "canvas_width_px": 217,
+      "canvas_height_px": 190,
+      "drawn_width_px": 216.86121919584934,
+      "drawn_height_px": 189.8832684824901,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/parts/B19.png",
+      "source_scale": 1.0376134889753557,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          33.307392996108916,
+          99.50713359273661
+        ],
+        "sole": [
+          33.307392996108916,
+          179.50713359273652
+        ],
+        "cuff_pin": [
+          80.66407263294414,
+          31.605706874189334
+        ]
+      }
+    },
+    {
+      "file": "15_shoe_right.png",
+      "asset_id": "char_torwald__B20",
+      "part": "shoe_right",
+      "canvas_width_px": 223,
+      "canvas_height_px": 198,
+      "drawn_width_px": 222.82608695652158,
+      "drawn_height_px": 197.8260869565216,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/parts/B20.png",
+      "source_scale": 1.0869565217391297,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": true,
+      "anchors_px": {
+        "ankle": [
+          185.2173913043477,
+          106.95652173913037
+        ],
+        "sole": [
+          185.2173913043477,
+          186.95652173913032
+        ],
+        "cuff_pin": [
+          138.19565217391295,
+          35.23913043478259
+        ]
+      }
+    },
+    {
+      "file": "expressions/E01.png",
+      "asset_id": "char_torwald__E01",
+      "part": "head",
+      "expression_code": "E01",
+      "canvas_width_px": 195,
+      "canvas_height_px": 238,
+      "drawn_width_px": 194.37751004016056,
+      "drawn_height_px": 237.67068273092363,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E01.png",
+      "source_scale": 0.8835341365461844,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          76.86746987951804,
+          222.23534136546175
+        ]
+      }
+    },
+    {
+      "file": "expressions/E02.png",
+      "asset_id": "char_torwald__E02",
+      "part": "head",
+      "expression_code": "E02",
+      "canvas_width_px": 185,
+      "canvas_height_px": 236,
+      "drawn_width_px": 184.20634920634916,
+      "drawn_height_px": 235.71428571428564,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E02.png",
+      "source_scale": 0.8730158730158728,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          101.26984126984125,
+          222.13015873015868
+        ]
+      }
+    },
+    {
+      "file": "expressions/E03.png",
+      "asset_id": "char_torwald__E03",
+      "part": "head",
+      "expression_code": "E03",
+      "canvas_width_px": 188,
+      "canvas_height_px": 238,
+      "drawn_width_px": 187.30923694779113,
+      "drawn_height_px": 237.67068273092363,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E03.png",
+      "source_scale": 0.8835341365461846,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          84.81927710843372,
+          222.2353413654618
+        ]
+      }
+    },
+    {
+      "file": "expressions/E04.png",
+      "asset_id": "char_torwald__E04",
+      "part": "head",
+      "expression_code": "E04",
+      "canvas_width_px": 199,
+      "canvas_height_px": 238,
+      "drawn_width_px": 198.62348178137648,
+      "drawn_height_px": 237.8137651821862,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E04.png",
+      "source_scale": 0.8906882591093116,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          78.38056680161942,
+          222.30688259109309
+        ]
+      }
+    },
+    {
+      "file": "expressions/E05.png",
+      "asset_id": "char_torwald__E05",
+      "part": "head",
+      "expression_code": "E05",
+      "canvas_width_px": 187,
+      "canvas_height_px": 237,
+      "drawn_width_px": 186.82539682539678,
+      "drawn_height_px": 236.5873015873015,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E05.png",
+      "source_scale": 0.8730158730158728,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          93.41269841269839,
+          222.13015873015868
+        ]
+      }
+    },
+    {
+      "file": "expressions/E06.png",
+      "asset_id": "char_torwald__E06",
+      "part": "head",
+      "expression_code": "E06",
+      "canvas_width_px": 189,
+      "canvas_height_px": 236,
+      "drawn_width_px": 188.81889763779523,
+      "drawn_height_px": 235.59055118110228,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E06.png",
+      "source_scale": 0.8661417322834644,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          99.6062992125984,
+          222.0614173228346
+        ]
+      }
+    },
+    {
+      "file": "expressions/E07.png",
+      "asset_id": "char_torwald__E07",
+      "part": "head",
+      "expression_code": "E07",
+      "canvas_width_px": 187,
+      "canvas_height_px": 235,
+      "drawn_width_px": 186.9565217391304,
+      "drawn_height_px": 234.78260869565213,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E07.png",
+      "source_scale": 0.8695652173913042,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          91.30434782608694,
+          221.2260869565217
+        ]
+      }
+    },
+    {
+      "file": "expressions/E08.png",
+      "asset_id": "char_torwald__E08",
+      "part": "head",
+      "expression_code": "E08",
+      "canvas_width_px": 188,
+      "canvas_height_px": 236,
+      "drawn_width_px": 187.21568627450975,
+      "drawn_height_px": 235.5294117647058,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E08.png",
+      "source_scale": 0.8627450980392154,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          92.31372549019605,
+          221.16470588235288
+        ]
+      }
+    },
+    {
+      "file": "expressions/E09.png",
+      "asset_id": "char_torwald__E09",
+      "part": "head",
+      "expression_code": "E09",
+      "canvas_width_px": 197,
+      "canvas_height_px": 236,
+      "drawn_width_px": 196.3346613545816,
+      "drawn_height_px": 235.77689243027882,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E09.png",
+      "source_scale": 0.8764940239043822,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          85.89641434262946,
+          222.16494023904377
+        ]
+      }
+    },
+    {
+      "file": "expressions/E10.png",
+      "asset_id": "char_torwald__E10",
+      "part": "head",
+      "expression_code": "E10",
+      "canvas_width_px": 197,
+      "canvas_height_px": 236,
+      "drawn_width_px": 196.14457831325294,
+      "drawn_height_px": 235.90361445783128,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E10.png",
+      "source_scale": 0.8835341365461844,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          91.00401606425699,
+          222.23534136546175
+        ]
+      }
+    },
+    {
+      "file": "expressions/E11.png",
+      "asset_id": "char_torwald__E11",
+      "part": "head",
+      "expression_code": "E11",
+      "canvas_width_px": 193,
+      "canvas_height_px": 236,
+      "drawn_width_px": 192.06349206349202,
+      "drawn_height_px": 235.71428571428564,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E11.png",
+      "source_scale": 0.8730158730158728,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          92.53968253968252,
+          222.13015873015868
+        ]
+      }
+    },
+    {
+      "file": "expressions/E12.png",
+      "asset_id": "char_torwald__E12",
+      "part": "head",
+      "expression_code": "E12",
+      "canvas_width_px": 211,
+      "canvas_height_px": 238,
+      "drawn_width_px": 210.3083700440528,
+      "drawn_height_px": 237.44493392070478,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E12.png",
+      "source_scale": 0.9691629955947133,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          94.97797356828191,
+          223.09162995594704
+        ]
+      }
+    },
+    {
+      "file": "expressions/E13.png",
+      "asset_id": "char_torwald__E13",
+      "part": "head",
+      "expression_code": "E13",
+      "canvas_width_px": 202,
+      "canvas_height_px": 237,
+      "drawn_width_px": 201.35593220338976,
+      "drawn_height_px": 236.77966101694906,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E13.png",
+      "source_scale": 0.9322033898305081,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          82.96610169491522,
+          222.72203389830497
+        ]
+      }
+    },
+    {
+      "file": "expressions/E14.png",
+      "asset_id": "char_torwald__E14",
+      "part": "head",
+      "expression_code": "E14",
+      "canvas_width_px": 202,
+      "canvas_height_px": 237,
+      "drawn_width_px": 201.2765957446808,
+      "drawn_height_px": 236.8510638297872,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E14.png",
+      "source_scale": 0.9361702127659572,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          109.531914893617,
+          222.7617021276595
+        ]
+      }
+    },
+    {
+      "file": "expressions/E15.png",
+      "asset_id": "char_torwald__E15",
+      "part": "head",
+      "expression_code": "E15",
+      "canvas_width_px": 204,
+      "canvas_height_px": 237,
+      "drawn_width_px": 203.076923076923,
+      "drawn_height_px": 236.92307692307682,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E15.png",
+      "source_scale": 0.9401709401709398,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          107.17948717948714,
+          222.8017094017093
+        ]
+      }
+    },
+    {
+      "file": "expressions/E16.png",
+      "asset_id": "char_torwald__E16",
+      "part": "head",
+      "expression_code": "E16",
+      "canvas_width_px": 205,
+      "canvas_height_px": 237,
+      "drawn_width_px": 204.9572649572649,
+      "drawn_height_px": 236.92307692307682,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E16.png",
+      "source_scale": 0.9401709401709399,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          103.41880341880339,
+          222.80170940170933
+        ]
+      }
+    },
+    {
+      "file": "expressions/E17.png",
+      "asset_id": "char_torwald__E17",
+      "part": "head",
+      "expression_code": "E17",
+      "canvas_width_px": 207,
+      "canvas_height_px": 238,
+      "drawn_width_px": 206.6666666666666,
+      "drawn_height_px": 237.14285714285703,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/heads/E17.png",
+      "source_scale": 0.9523809523809521,
+      "assembly_rotation_deg": 0,
+      "assembly_flip": false,
+      "anchors_px": {
+        "neck": [
+          94.28571428571426,
+          222.92380952380944
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_left_grip.png",
+      "asset_id": "char_torwald__B23",
+      "part": "hand_left_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 99,
+      "canvas_height_px": 126,
+      "drawn_width_px": 98.84310993788816,
+      "drawn_height_px": 125.10911118012415,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/parts/B23.png",
+      "source_scale": 0.6912105590062109,
+      "assembly_rotation_deg": -56.99052403973282,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          49.42155496894408,
+          23.6048405900621
+        ],
+        "grip": [
+          49.42155496894408,
+          60.328857590062086
+        ],
+        "fingertip": [
+          49.42155496894408,
+          113.74560959006206
+        ]
+      }
+    },
+    {
+      "file": "alternates/hand_right_grip.png",
+      "asset_id": "char_torwald__B24",
+      "part": "hand_right_grip",
+      "example_pose": "reading",
+      "canvas_width_px": 99,
+      "canvas_height_px": 126,
+      "drawn_width_px": 98.84310993788816,
+      "drawn_height_px": 125.10911118012415,
+      "source_file": "Odyssey_Scene_Ensembles_v3/characters/char_torwald/parts/B24.png",
+      "source_scale": 0.6912105590062109,
+      "assembly_rotation_deg": 56.99052403973283,
+      "assembly_flip": false,
+      "anchors_px": {
+        "wrist": [
+          50.8938334596273,
+          18.579739826086946
+        ],
+        "grip": [
+          49.42155496894408,
+          60.328857590062086
+        ],
+        "fingertip": [
+          49.42155496894408,
+          113.74560959006206
+        ]
+      }
+    }
+  ]
+}
