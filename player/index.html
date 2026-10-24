@@ -46,6 +46,7 @@ select,.btn{font:inherit;font-size:13px;background:#1c1610;color:var(--ink);bord
 #gauges{list-style:none;margin:0;padding:0;display:grid;gap:6px}
 #gauges li{display:grid;grid-template-columns:96px 1fr 34px;gap:8px;align-items:center;font-size:12.5px}
 #gauges li.father{grid-template-columns:96px 1fr 34px;color:#f0c9a8}
+#sound{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px}#sound label{display:flex;gap:6px;align-items:center}#sound .vol{flex:1 1 100%}#sound .vol input{flex:1;accent-color:var(--brass)}
 #gauges b{text-align:right;font-variant-numeric:tabular-nums}
 meter{width:100%;height:10px}
 #log{list-style:none;margin:0;padding:0;max-height:260px;overflow:auto;font-size:11.5px;color:var(--muted);display:grid;gap:3px}
@@ -58,7 +59,7 @@ a{color:var(--kraft)}
 <div class="wrap">
   <header>
     <h1>The Slopling's Odyssey</h1>
-    <p class="sub">A playable ASAPS protostory on a cardboard stage · sound on · <a href="lab.html" style="color:inherit">casting lab</a></p>
+    <p class="sub">A playable ASAPS protostory on a cardboard stage · sound on (voices, music, effects) · <a href="lab.html" style="color:inherit">casting lab</a></p>
   </header>
   <div class="col">
     <div class="theatre">
@@ -76,6 +77,8 @@ a{color:var(--kraft)}
       <button class="btn primary" id="start">▶ Play</button>
       <p class="small">"Start from" plays the earlier beats through ASAPS with a fixed set of choices, then hands you control.</p>
     </div>
+    <div class="panel"><h3>Sound</h3><div id="sound"></div>
+      <p class="small">Voices are Kokoro renders, one voice per role. Effects come from the cards' own movements; the score follows the place and the story state.</p></div>
     <div class="panel"><h3>What the story tracks</h3><ul id="gauges"></ul>
       <p class="small">Live values from the ASAPS story state. The line of light is Craft; the tag is Standing.</p></div>
     <details class="panel"><summary class="small">Story map: the ASAPS beats you've played</summary><div id="beat" class="small">—</div><ul id="log"></ul></details>
@@ -83,14 +86,6 @@ a{color:var(--kraft)}
   </aside>
 </div>
 <script src="vendor/watson-rig/rig-renderer.js"></script>
-<script>
-// Small synthesized sound: room tone, card slides, brad clicks. Starts on Play.
-window.SFX=(()=>{let A=null,M=null;const rand=Math.random;/* own reference: rehearsal seeds Math.random */const nb=s=>{const b=A.createBuffer(1,A.sampleRate*s,A.sampleRate),d=b.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=rand()*2-1;return b};
- const env=(g,t,a,p,d)=>{g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(p,t+a);g.gain.exponentialRampToValueAtTime(.0001,t+a+d)};
- return{init(){if(A)return;try{A=new AudioContext();M=A.createGain();M.gain.value=.6;M.connect(A.destination);const s=A.createBufferSource();s.buffer=nb(4);s.loop=true;const f=A.createBiquadFilter();f.type='lowpass';f.frequency.value=300;const g=A.createGain();g.gain.value=.03;s.connect(f);f.connect(g);g.connect(M);s.start()}catch(e){A=null}},
- click(){if(!A)return;const t=A.currentTime,s=A.createBufferSource();s.buffer=nb(.05);const f=A.createBiquadFilter();f.type='bandpass';f.frequency.value=3000;f.Q.value=4;const g=A.createGain();env(g,t,.001,.25,.04);s.connect(f);f.connect(g);g.connect(M);s.start(t)},
- slide(){if(!A)return;const t=A.currentTime,s=A.createBufferSource();s.buffer=nb(.6);const f=A.createBiquadFilter();f.type='bandpass';f.frequency.setValueAtTime(800,t);f.frequency.linearRampToValueAtTime(1700,t+.45);const g=A.createGain();env(g,t,.2,.1,.3);s.connect(f);f.connect(g);g.connect(M);s.start(t)}}})();
-</script>
 <script type="module" src="player.js"></script>
 </body>
 </html>

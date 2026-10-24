@@ -85,6 +85,8 @@ export class Stage {
     }
     this.onFrame = this.onFrame.bind(this); requestAnimationFrame(this.onFrame);
   }
+  // animation events for the sound engine; nothing is emitted while a rehearsal fast-forwards
+  emit(name, d) { if (!this.quiet) this.onSound?.(name, d); }
   layoutFor(place) { const set = this.staging.sets[place]; if (!set) return null; return LAYOUTS[place] || this.staging.layouts?.[place] || autoLayout(set); }
   async setScene(beatId) {
     const b = this.staging.beats[beatId]; if (!b) return;
@@ -95,6 +97,7 @@ export class Stage {
         if (this.beatId !== beatId) return clearInterval(this.panTimer);
         const seg = b.panorama[i % b.panorama.length]; i++;
         this.panLabel = seg.label;
+        if (i > 1) this.emit('pan');
         await this.applyStage({ ...b, place: seg.place, cast: ['char_player', ...seg.cast], panoProps: seg.place });
       };
       await step(); this.panTimer = setInterval(step, 7000); return;
@@ -105,6 +108,7 @@ export class Stage {
   async applyStage(b) {
     this.memory = !!b.memory; this.chorusMode = b.chorusMode || 'idle';
     if (b.place !== this.place) {
+      if (this.place) this.emit('flat');
       this.place = b.place; this.lastSwitch = performance.now(); this.treeT = 0; this.workTags = 0; this.state.dim = false;
       for (const f of this.figures.values()) { f.held = false; f.arm = 0; f.front = false; f.flip = false; f.ttilt = 0; f.slow = false; }
       const set = this.staging.sets[b.place];
@@ -116,7 +120,7 @@ export class Stage {
     this.hasWatson = b.cast.includes('char_player');
     const lay = this.layoutFor(this.place) || { slots: [430, 780, 1000, 1150] };
     this.watson.tx = this.hasWatson ? lay.slots[0] : this.watson.tx;
-    for (const [id, f] of this.figures) if (!want.includes(id) && !chorus.includes(id) && !this.motifs.includes(id)) { f.tx = f.x > 640 ? W + 260 : -260; f.leaving = true; }
+    for (const [id, f] of this.figures) if (!want.includes(id) && !chorus.includes(id) && !this.motifs.includes(id)) { if (!f.leaving) this.emit('leave', { x: f.x }); f.tx = f.x > 640 ? W + 260 : -260; f.leaving = true; }
     const slotFor = (i) => this.hasWatson ? lay.slots[Math.min(i + 1, lay.slots.length - 1)] + (i >= lay.slots.length - 1 ? (i - lay.slots.length + 2) * 120 : 0) : lay.slots[Math.min(i, lay.slots.length - 1)];
     // the chorus stands a step upstage, spread across the back
     const backX = (i, n) => 230 + (n === 1 ? 0.5 : i / (n - 1)) * 820 + (i % 2 ? 24 : -24);
@@ -127,7 +131,7 @@ export class Stage {
       const f = this.figures.get(id);
       if (f && !f.leaving) { if (!f.held) f.tx = tx; f.chorus = isChorus; continue; }
       this.figures.set(id, { id, img, w: fig.w, h: fig.h, x: tx > 640 ? W + 260 : -260, tx, lean: 0, motif: this.motifs.includes(id), chorus: isChorus, leaving: false, arm: 0, armA: 74, phase: Math.random() * 6 });
-      this.onEnter && this.onEnter();
+      this.emit('enter', { x: tx, chorus: isChorus });
     }
   }
   setSpeaker(id) { this.speaker = id; }
@@ -154,6 +158,7 @@ export class Stage {
     for (const p of this.props || []) {
       const [cx, by, h, ly] = p.at; if (ly !== layer || !p.img || (p.pano && p.pano !== this.place)) continue;
       const u = p.born ? clamp((performance.now() - p.born) / 500, 0, 1) : 1, w = h * p.img.width / p.img.height;
+      if (p.born && u >= 1) this.once('prop' + p.born + p.key, p.lift ? 'lift' : 'prop', { x: cx, h }); // lands when the fade-in drop finishes
       const lift = p.lift ? 26 + Math.sin(t * 2.4) * 4 : 0, x = this.x;
       x.save(); x.globalAlpha = u; x.translate(cx, by - lift - (1 - u) * 40);
       if (p.lift) { x.globalCompositeOperation = 'source-over'; x.shadowColor = 'rgba(255,230,160,.8)'; x.shadowBlur = 22; }
@@ -165,19 +170,20 @@ export class Stage {
   cue(name, who = 'char_father') {
     const f = this.figures.get(who), w = this.watson;
     if (name === 'nameTrees') { this.treeT = performance.now(); this.setWatsonPose('point'); }
-    if (name === 'nameWork') { this.workTags = performance.now(); this.surge = performance.now(); this.setWatsonPose('point'); }
+    if (name === 'nameWork') { this.workTags = performance.now(); this.surge = performance.now(); this.setWatsonPose('point'); this.emit('surge'); }
     // The father crosses to his son; his near arm rises until the hand rests on Watson's shoulder.
     if ((name === 'approach' || name === 'hug') && this.props) this.props = this.props.filter(p => !(p.cue && p.key === 'journal_open')); // he hands the journal back
     if (name === 'approach' && f) { f.tx = w.tx + 205; f.slow = true; f.front = true; f.held = true; f.reach = true; this.setWatsonPose('turn'); }
     if (name === 'hug' && f) { f.tx = w.tx + 150; f.slow = true; f.front = true; f.held = true; f.reach = true; this.setWatsonPose('turn'); }
     if (name === 'cutTag') this.state.tagFall = performance.now();
     if (name === 'turnAway' && f) { f.tx = 1130; f.slow = true; f.flip = true; f.front = false; f.held = true; f.ttilt = 0; f.reach = false; }
-    if (name === 'still') { this.setWatsonPose('low'); if (f) { f.ttilt = 0; f.front = false; } this.state.dim = true; }
+    if (name === 'still') { this.emit('still'); this.setWatsonPose('low'); if (f) { f.ttilt = 0; f.front = false; } this.state.dim = true; }
   }
   drawTreeTags(lay, t) {
     if (!this.treeT || !lay.labels) return; const x = this.x, el = (performance.now() - this.treeT) / 1000;
     Object.entries(lay.labels).forEach(([id, txt], i) => {
       const p = lay.pieces.find(q => q[0] === id); if (!p) return; const u = clamp((el - i * 1.1) / .6, 0, 1); if (!u) return;
+      this.once('tree' + this.treeT + i, 'tagDrop', { x: p[1] });
       const drop = 1 - Math.pow(1 - u, 3), cx = p[1], top = p[2] - p[3] + 30;
       x.save(); x.translate(cx, top - 170 + drop * 60); x.rotate(Math.sin(t * 1.6 + i) * .05);
       x.strokeStyle = 'rgba(250,240,220,.8)'; x.lineWidth = 1.2; x.beginPath(); x.moveTo(0, -200); x.lineTo(0, 0); x.stroke();
@@ -193,6 +199,7 @@ export class Stage {
     [['the VAT bug', -120, 70], ['the Québec refactor', 10, 20], ['the retry loop', 130, 80]].forEach(([txt, dx, dy], i) => {
       const u = clamp((el - .4 - i * .9) / .5, 0, 1); if (!u) return;
       const cx = lay.work[0] + dx * 1.25, cy = lay.work[1] - 55 + dy * 0.5;
+      this.once('work' + this.workTags + i, 'workTag', { x: cx, i });
       x.save(); x.globalAlpha = u; x.translate(cx, cy - (1 - u) * 30); x.rotate(Math.sin(t * 2 + i) * .08);
       x.strokeStyle = 'rgba(70,50,30,.8)'; x.lineWidth = 1; x.beginPath(); x.moveTo(0, -22); x.lineTo(0, 0); x.stroke();
       x.font = 'italic 13px "Courier Prime", monospace'; const tw = x.measureText(txt).width + 18;
@@ -200,7 +207,13 @@ export class Stage {
       x.fillStyle = '#3a2410'; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText(txt, 0, 11); x.restore();
     });
   }
-  setWatsonPose(pose) { if (pose === this.watson.pose) return; this.watson.from = this.currentRotations(); this.watson.pose = pose; this.watson.poseT = performance.now(); }
+  setWatsonPose(pose) {
+    if (pose === this.watson.pose) return; const from = this.currentRotations(), to = this.poseTable(pose);
+    const delta = [...new Set([...Object.keys(from), ...Object.keys(to)])].reduce((s, k) => s + Math.abs((to[k] || 0) - (from[k] || 0)), 0);
+    this.watson.from = from; this.watson.pose = pose; this.watson.poseT = performance.now();
+    if (this.hasWatson && delta > 3) this.emit('pose', { x: this.watson.x, delta });
+  }
+  once(key, name, d) { (this.sounded ||= new Set()); if (!this.sounded.has(key)) { this.sounded.add(key); this.emit(name, d); } }
   poseTable(pose) {
     return ({
       idle: {},
@@ -233,9 +246,9 @@ export class Stage {
     draw('back'); this.drawProps('back', t); draw('floor'); draw('mid'); this.drawProps('mid', t);
     // motifs and figure cards
     const drawFig = (id, f) => {
-      const speaking = this.speaker === id, rig = this.rigs[id];
+      const speaking = this.speaker === id, rig = this.rigs[id], lvl = speaking ? this.voiceLevel?.() ?? null : null;
       const depth = f.chorus ? 0.84 : 1, mode = f.chorus ? this.chorusMode : 'cast';
-      const h = (f.motif ? 330 : FIG_H) * depth, w = h * f.w / f.h, bob = speaking ? Math.sin(t * 9) * 1.6 : 0;
+      const h = (f.motif ? 330 : FIG_H) * depth, w = h * f.w / f.h, bob = speaking ? (lvl != null ? -lvl * 3.2 : Math.sin(t * 9) * 1.6) : 0;
       const lift = f.reach ? 0 : f.lean * 12, tilt = f.reach ? 0 : (f.x < 640 ? 1 : -1) * f.lean * 0.04 + (f.tilt || 0);
       const footY = FLOOR + 8 - (f.chorus ? 30 : 0);
       x.save(); x.translate(f.x, footY - lift + bob); x.rotate(tilt);
@@ -246,13 +259,13 @@ export class Stage {
       if (rig) {
         // jointed father: his screen-left arm rises toward Watson when reaching
         f.arm += ((f.reach ? 1 : 0) - f.arm) * 0.04;
-        const a = f.arm, g = speaking ? 1 : 0; f.talk = (f.talk || 0) + (g - (f.talk || 0)) * 0.06;
+        const a = f.arm, g = speaking ? (lvl != null ? Math.min(1, lvl * 1.6) : 1) : 0; f.talk = (f.talk || 0) + (g - (f.talk || 0)) * 0.06;
         const ph = t + (f.phase || 0);
         let extra = { upper_arm_left: a * f.armA, forearm_left: a * 24, hand_left_relaxed: -a * 12,
           upper_arm_right: -f.talk * (14 + Math.sin(t * 2.3) * 6), forearm_right: -f.talk * (38 + Math.sin(t * 3.1) * 10), head: Math.sin(t * 1.3 + f.x) * 1.2 };
         // crowd actions: the Greeks' applause, the Oracle's chant, the shades' drift; Mau and the learner stay still
-        if (mode === 'clap') { const c = (Math.sin(ph * 9) + 1) / 2; extra = { upper_arm_left: 22, forearm_left: 92 + c * 16, upper_arm_right: -22, forearm_right: -92 - c * 16, head: -2 }; }
-        if (mode === 'chant') { const c = Math.sin(ph * 2.4); extra = { upper_arm_left: 150 + c * 10, forearm_left: 10, upper_arm_right: -150 - c * 10, forearm_right: -10, head: -6 }; }
+        if (mode === 'clap') { const c = (Math.sin(ph * 9) + 1) / 2; if (c > 0.97 && !(f.cPrev > 0.97)) this.emit('clap', { x: f.x }); f.cPrev = c; extra = { upper_arm_left: 22, forearm_left: 92 + c * 16, upper_arm_right: -22, forearm_right: -92 - c * 16, head: -2 }; }
+        if (mode === 'chant') { const c = Math.sin(ph * 2.4); if (c > 0.98 && !(f.cPrev > 0.98)) this.emit('chant', { x: f.x }); f.cPrev = c; extra = { upper_arm_left: 150 + c * 10, forearm_left: 10, upper_arm_right: -150 - c * 10, forearm_right: -10, head: -6 }; }
         if (mode === 'shade') extra = { head: Math.sin(ph * .6) * 3, upper_arm_left: 3, upper_arm_right: -3 };
         if (mode === 'still') extra = {};
         if (mode === 'idle') extra = { head: Math.sin(ph * 1.1) * 1.5 };
@@ -276,14 +289,15 @@ export class Stage {
     };
     const order = [...this.figures].sort((p, q) => (q[1].chorus ? 1 : 0) - (p[1].chorus ? 1 : 0));
     for (const [id, f] of order) {
-      f.x += (f.tx - f.x) * (f.slow ? 0.025 : 0.09); f.tilt = (f.tilt || 0) + ((f.ttilt || 0) - (f.tilt || 0)) * 0.05;
+      const dx = (f.tx - f.x) * (f.slow ? 0.025 : 0.09); f.x += dx;
+      if (f.slow && !f.chorus && !(f.reach && f.arm > 0.6)) { f.walked = (f.walked || 0) + Math.abs(dx); if (Math.abs(dx) > 0.35 && f.walked > 46) { f.walked = 0; this.emit('step', { x: f.x, heavy: id === 'char_father' }); } } f.tilt = (f.tilt || 0) + ((f.ttilt || 0) - (f.tilt || 0)) * 0.05; // no steps while the hand steers onto the shoulder
       if (f.leaving && Math.abs(f.x - f.tx) < 4) { this.figures.delete(id); continue; }
       const speaking = this.speaker === id;
       f.lean += ((speaking ? 1 : 0) - f.lean) * 0.12;
       if (!f.front) drawFig(id, f);
     }
     // Watson
-    if (this.hasWatson && this.rig) this.drawWatson(t);
+    if (this.hasWatson && this.rig) this.drawWatson(t); else this.onLight?.(0);
     for (const [id, f] of this.figures) if (f.front) drawFig(id, f);
     this.drawTreeTags(lay, t); this.drawWorkTags(lay, t);
     draw('front'); this.drawProps('front', t);
@@ -318,8 +332,10 @@ export class Stage {
     this.watsonPts = { shoulder: map(info.pivots.upper_arm_right), head: map(info.pivots.head) };
     // Craft: line of light from his working hand, strength from the craft counter.
     const surge = this.surge ? clamp(1 - (performance.now() - this.surge) / 5000, 0, 1) : 0;
-    const touching = this.touching = [...this.figures.values()].some(f => f.reach && f.arm > 0.85);
+    const touching = [...this.figures.values()].some(f => f.reach && f.arm > 0.85);
+    if (touching && !this.touching) this.emit('touch', { x: this.watsonPts.shoulder[0] }); this.touching = touching;
     const a = clamp(this.state.craft / 8 + surge, 0, 1.6) * (this.state.dim ? 0.25 : 1) * (touching ? 0.2 : 1);
+    this.onLight?.(this.quiet ? 0 : a);
     if (a > 0.02) {
       const [hx, hy] = map(this.watson.pose === 'point' ? info.pivots.hand_right : info.pivots.hand_left);
       const lay = this.layoutFor(this.place) || {}; const [wx, wy] = lay.work || [w.x - 150, 140];
@@ -334,7 +350,10 @@ export class Stage {
     const tag = this.state.tag;
     if (tag) {
       const [hx, hy] = map(info.pivots.head), top = hy - 190, el = this.state.tagFall ? (performance.now() - this.state.tagFall) / 1000 : 0;
-      const land = FLOOR + 22 - top, drop = Math.min(land, el * el * 520), lying = drop >= land, rot = el ? Math.sin(el * 7) * .5 * Math.max(0, 1 - el) + 0.1 : Math.sin(t * 1.8) * .06;
+      const land = FLOOR + 22 - top, drop = Math.min(land, el * el * 520), lying = drop >= land;
+      if (el) { this.once('snip' + this.state.tagFall, 'snip', { x: hx }); this.once('flutter' + this.state.tagFall, 'flutter', { x: hx }); }
+      if (lying) this.once('land' + this.state.tagFall, 'tagLand', { x: hx + 70 });
+      const rot = el ? Math.sin(el * 7) * .5 * Math.max(0, 1 - el) + 0.1 : Math.sin(t * 1.8) * .06;
       const tx = el ? hx + Math.min(70, el * 60) : hx;
       x.save();
       if (!el) { x.strokeStyle = 'rgba(250,240,220,.75)'; x.lineWidth = 1.3; x.beginPath(); x.moveTo(hx, 0); x.lineTo(hx, top); x.stroke(); }

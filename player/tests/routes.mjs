@@ -6,7 +6,7 @@ import fs from 'fs';
 const json = JSON.parse(fs.readFileSync(new URL('../story/odyssey-tragic-comedy.json', import.meta.url)));
 function prng(seed) { let s = seed % 2147483647 || 1; return () => (s = (s * 16807) % 2147483647) / 2147483647; }
 const quiet = { log: console.log, warn: console.warn, error: console.error };
-export async function play(seed, { until = null, maxBeats = 600 } = {}) {
+export async function play(seed, { until = null, maxBeats = 600, spy = null } = {}) { // spy(method, args) sees every renderer call
   const rnd = prng(seed), realRandom = Math.random; Math.random = rnd;
   console.log = console.warn = console.error = () => {};
   const st = {}; let visited = [], snap = null, end = null, steps = 0;
@@ -19,7 +19,7 @@ export async function play(seed, { until = null, maxBeats = 600 } = {}) {
     async renderEndScreen(m) { end = String(m).split('\n')[0].replace(/\*/g, ''); snap = state(); engine.stop(); return 'exit'; },
     async renderAISummary(d) { end = d.title; snap = state(); engine.stop(); return 'exit'; },
     async renderConversationInput() { return 'set sail'; }, async renderInputText() { return ''; }, async renderCreditsPage() { return 'close'; },
-  }, { get: (t, k) => t[k] ?? (async () => {}) });
+  }, { get: (t, k) => { const f = t[k] ?? (async () => {}); return spy && typeof k === 'string' && k.startsWith('render') ? (...a) => { spy(k, a); return f(...a); } : f; } });
   engine = new StoryEngine(R, { mockMode: true });
   const story = storyFromGeneratedJson(json); const path = [];
   for (const b of story.getAllBeats()) { const ex = b.execute.bind(b); b.execute = async (c, r) => { path.push(b.id); if (++steps > maxBeats || b.id === until) { snap = state(); engine.stop(); return null; } return ex(c, r); }; }

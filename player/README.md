@@ -19,6 +19,8 @@ Press **Play**. "Start from" lets you rehearse to a later point. ASAPS plays the
 - Ithaca carrying the calipers;
 - Ithaca after taking the chair.
 
+The voices, effects and score can each be switched off in the Sound panel; see [`docs/SOUND.md`](../docs/SOUND.md).
+
 The side panel shows live ASAPS state: Craft, Standing, Cunning, Meaning, Leverage, and how much the father sees the title versus the son.
 
 Everything the player needs is in `player/`. You don't need to restore the archives to play it.
@@ -32,6 +34,7 @@ Everything the player needs is in `player/`. You don't need to restore the archi
 | `stage.js` | Canvas stage. Watson is the working 15-card front rig from `Watson_Working_Reference.zip`. Everyone else is assembled from their scale-matched cards at the recorded anchors (`anchor-rig.js`), with leg and arm cards lengthened so they stand as adults. Craft is drawn as a line of light; Standing as a paper tag. |
 | `staging.json`, `assets/` | Built by `tools/build_player_assets.py` from the scene dependencies and packet crosswalk, with authored cast fixes. Native PNG bytes are copied unchanged; `assets/SELECTION.json` records each one's packet, source member and hash. |
 | `layouts.json` | Set layouts for 22 places, authored with `tools/preview_set_layout.py`. The orchard layout lives in `stage.js`. |
+| `sound.js`, `voices/` | Sound. Kokoro voices are pre-rendered for every line and looked up by a hash of the text ASAPS renders. Effects are synthesized from the stage's own animation events, with ambience and a small procedural score on top. The details are in `docs/SOUND.md`. |
 | `props/`, `props.json` | Story props (calipers, offer letter states, clementines, prompt journal, bow, lathe, phone, hourglasses, moly, IBM 360, Knuthe's ladder). No native PNG exists for these, so `tools/extract_kit_props.py` cuts them from the JPEG kit crops and records each source and crop box in `props/PROPS.json`. |
 
 ## Who and what is on stage
@@ -74,6 +77,8 @@ python3 tools/restore_packets.py          # restores production/ (about 1 GB, gi
 python3 tools/build_player_assets.py      # staging.json + assets/
 python3 tools/extract_kit_props.py        # props/
 node player/tests/conformance.mjs         # ASAPS conformance (below)
+.kvenv/bin/python tools/render_voices.py --model kokoro-v1.0.onnx --voices voices-v1.0.bin   # voices (setup in the script header)
+node player/tests/voices.mjs              # every spoken line has its voice
 ```
 
 To rebuild the ASAPS bundle, clone ASAPS Modern, `npm install --workspace @asaps/core`, then
@@ -91,6 +96,10 @@ To rebuild the ASAPS bundle, clone ASAPS Modern, `npm install --workspace @asaps
 2. **Inquiry:** I rebuilt the father from his cards at the recorded anchors. At rest it matches his assembled reference (`tests/anchor-rig-test.html`), so his arm can rise.
 3. **Second critic: acceptance condition met, narrowly.** The hand rests on the shoulder, faces are clear, and the tag lies cut on the floor. Its refinements are applied: the hand sits higher, the light dims at contact, and the page fits at 1400×900.
 4. **User review: the cast looked squat, and the story props were missing.** Since then, the cast is lengthened at the anchors (`tests/proportion-test.html`) and props come from the kit crops. Neither change has had an independent review yet.
+
+## On GitHub Pages
+
+`.github/workflows/pages.yml` publishes the root page, `player/`, `story/` and `catalogs/` on every push to `main`. The cutout archives are left out: with them the site is about 1.2 GB, over GitHub Pages' 1 GB limit. One-time setup: Settings → Pages → Source: **GitHub Actions**. The site is then at `https://hartswf0.github.io/slopling-odyssey/`, and the player is at `/player/`.
 
 ## Known limits
 
