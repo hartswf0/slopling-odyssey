@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Casting Lab</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Fraunces:opsz,wght@9..144,600&display=swap">
+<style>
+/* Layout: the stage on top (three cast slots performing one performance), the live validation matrix below.
+   Deliberately single dark theme, matching the player. */
+:root{--room:#17130f;--board:#251d15;--line:#3d3123;--ink:#efe3cf;--muted:#a8977f;--brass:#c9a24a;--pass:#7fb069;--fail:#e0703f;--block:#8a7f6f;
+  --type:"Courier Prime","Courier New",monospace;--display:"Fraunces",Georgia,serif;color-scheme:dark}
+*{box-sizing:border-box}[hidden]{display:none!important}
+html,body{margin:0;background:var(--room);color:var(--ink);font-family:var(--type)}
+body{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:14px 40px}
+.wrap{max-width:1300px;margin:0 auto;display:grid;gap:12px}
+h1{font-family:var(--display);margin:0;font-size:clamp(22px,3vw,30px)}
+.sub{color:var(--muted);font-size:13px;margin:2px 0 0;max-width:90ch}
+canvas{width:100%;height:auto;aspect-ratio:1280/600;border-radius:6px;display:block;background:#d9c39a}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.bar input[type=range]{flex:1 1 220px;accent-color:var(--brass)}
+button,select{font:inherit;font-size:12.5px;background:var(--board);color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:7px 10px;cursor:pointer}
+button.on{border-color:var(--brass);color:var(--brass)}
+button.blocked{opacity:.55;cursor:not-allowed;border-style:dashed}
+#perfs,#cast{display:flex;flex-wrap:wrap;gap:6px}
+.slot{display:grid;gap:3px;font-size:11px;color:var(--muted)}
+.slot select{min-width:0;max-width:220px}
+.small{font-size:12px;color:var(--muted)}
+.panel{background:var(--board);border:1px solid var(--line);border-radius:6px;padding:12px;min-width:0}
+h2{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);margin:0 0 8px;font-weight:400}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:12px;font-variant-numeric:tabular-nums}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;white-space:nowrap}
+th{color:var(--muted);font-weight:400}
+td.pass{color:var(--pass);cursor:pointer}td.fail{color:var(--fail);cursor:pointer;font-weight:700}td.blocked{color:var(--block);font-style:italic}
+td.lim{color:var(--muted)}
+tr.hash td{color:var(--muted)}tr.hash td.pass{color:var(--pass)}
+#summary{font-size:13px}
+label.tog{font-size:12.5px;display:flex;gap:6px;align-items:center}
+a{color:var(--brass)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Casting Lab</h1>
+    <p class="sub">One performance, three actors. The performance is data that belongs to no actor. Recast any slot and it plays the same choreography on that actor's own body. Every invariant is measured on every frame; click a cell in the table to jump to its worst frame.</p>
+  </header>
+  <canvas id="stage" width="1280" height="600" aria-label="Three cast members performing the same performance"></canvas>
+  <div class="bar">
+    <button id="play">❚❚ Pause</button>
+    <input type="range" id="scrub" min="0" max="1000" aria-label="Scrub time">
+    <span class="small" id="time"></span>
+    <label class="tog"><input type="checkbox" id="overlay" checked> Joints and contacts</label>
+    <label class="tog"><input type="checkbox" id="lock" checked> Plant feet (contact solve)</label>
+    <button id="clear">Show all</button>
+  </div>
+  <div class="panel"><h2>Performance</h2><div id="perfs"></div></div>
+  <div class="panel"><h2>Cast</h2><div class="bar"><div id="cast"></div><button id="shuffle">Recast at random</button></div></div>
+  <div class="panel"><h2>Validation</h2><p id="summary"></p><div class="tablewrap"><table id="matrix"></table></div>
+    <p class="small">Measured with the contact solve on. Untick "Plant feet" to see the raw pose slide. A check can pass by construction (the rig joins parts at their anchors); it is still measured, so a broken rig would show here.</p></div>
+  <p class="small"><a href="index.html">← back to the player</a></p>
+</div>
+<script type="module" src="lab.js"></script>
+</body>
+</html>

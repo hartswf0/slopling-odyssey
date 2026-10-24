@@ -65,6 +65,35 @@ export function bounds(rig, M) {
   return [x0, y0, x1, y1];
 }
 
+// World positions of the joints and contacts, without drawing (used by the casting lab's invariant checks).
+export function anchorPoints(rig, extra, cx, footY, h, rest) {
+  const M = pose(rig, extra), R = rest || bounds(rig, pose(rig, {})), k = h / (R[3] - R[1]);
+  const w = ([x, y]) => [cx + (x - (R[0] + R[2]) / 2) * k, footY + (y - R[3]) * k];
+  const a = (part, anchor) => w(pt(M[part], rig.parts[part].anchors_px[anchor]));
+  return {
+    neck_torso: a('torso_front', 'neck'), neck_head: a('head', 'neck'),
+    shoulder_right: a('torso_front', 'shoulder_right'), elbow_right: a('upper_arm_right', 'distal'), wrist_right: a('forearm_right', 'distal'),
+    elbow_right_child: a('forearm_right', 'proximal'), wrist_right_child: a('hand_right_relaxed', 'wrist'),
+    grip_right: a('hand_right_relaxed', 'grip'), sole_left: a('shoe_left', 'sole'), sole_right: a('shoe_right', 'sole'),
+    k, bounds: bounds(rig, M).map((v, i) => i % 2 ? footY + (v - R[3]) * k : cx + (v - (R[0] + R[2]) / 2) * k),
+    outline: ORDER.flatMap(id => hull(rig, id).map(c => w(pt(M[id], c)))), // the visible art, not the padded card
+  };
+}
+
+// Convex hull of a card's opaque pixels (alpha > 50%), in card pixels; cached on the rig. Browser only.
+function hull(rig, id) {
+  rig.hulls ||= {}; if (rig.hulls[id]) return rig.hulls[id];
+  const p = rig.parts[id], W = p.canvas_width_px, H = p.canvas_height_px, c = document.createElement('canvas');
+  c.width = W; c.height = H; const g = c.getContext('2d', { willReadFrequently: true }); g.drawImage(rig.images[id], 0, 0, W, H);
+  const a = g.getImageData(0, 0, W, H).data, pts = [];
+  for (let y = 0; y < H; y += 2) { let l = -1, r = -1; for (let x = 0; x < W; x++) if (a[(y * W + x) * 4 + 3] > 128) { if (l < 0) l = x; r = x; } if (l >= 0) pts.push([l, y], [r + 1, y + 1]); }
+  pts.sort((u, v) => u[0] - v[0] || u[1] - v[1]);
+  const cross = (o, u, v) => (u[0] - o[0]) * (v[1] - o[1]) - (u[1] - o[1]) * (v[0] - o[0]), lo = [], hi = [];
+  for (const q of pts) { while (lo.length > 1 && cross(lo[lo.length - 2], lo[lo.length - 1], q) <= 0) lo.pop(); lo.push(q); }
+  for (const q of pts.slice().reverse()) { while (hi.length > 1 && cross(hi[hi.length - 2], hi[hi.length - 1], q) <= 0) hi.pop(); hi.push(q); }
+  return (rig.hulls[id] = lo.slice(0, -1).concat(hi.slice(0, -1)));
+}
+
 // Draw with feet on footY, total height h at rest, centred on cx. Returns world positions of named anchors.
 export function drawAnchorRig(ctx, rig, extra, cx, footY, h, rest) {
   const M = pose(rig, extra), R = rest || bounds(rig, pose(rig, {})), k = h / (R[3] - R[1]);

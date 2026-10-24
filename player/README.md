@@ -45,6 +45,28 @@ Everything the player needs is in `player/`. You don't need to restore the archi
 | **Sets** | 26 laid out. The Road (beat 47) is a panorama through Compagnons, pottery, Ise and ijazah. Beat 8 is the Hendry works as a sepia memory. |
 | **Props** | Native props from the packets take precedence: the journal (closed, open, reading hands), calipers, offer letter, grafting knife and scion, rag, the father's shoulder-contact hand, Ajax's shield, the oat flat white, unicycle, maze, juggling ball, moly, canoe and paddle, potter's wheel, Ise tools. JPEG kit cuts are used only where nothing native exists: the letter's later states, clementines, bow, hourglasses, lathe, sprint board. |
 
+## Casting Lab (`lab.html`)
+
+The first proof for a recastable puppet-film studio. A performance is data that belongs to no actor: joint channels, foot contacts, an IK hand target and a prop. One performance plays on three cast slots at once, and any slot can be recast to any of the 64 rigs.
+
+Every invariant is measured on 120 frames per performance, on the visible art (each card's opaque hull), not on the padded cards:
+
+- the head stays on the neck;
+- elbow and wrist stay joined;
+- nothing sinks below the floor;
+- a planted foot doesn't slide;
+- a fall lands on the floor;
+- the hand stays on the prop while holding it;
+- the figure ends where it started;
+- the performance hash is the same on every actor.
+
+Click a cell to jump to its worst frame. Untick "Plant feet" to see what the contact solve is fixing.
+
+- **Measured:** walk (front, in place), reach–grasp–lift–release, fall and recover, and speak pass 78 of 78 checks on Dana, Chad and Ines.
+- **Caught by looking, not by the numbers:** the first fall floated above the floor, because the check measured the padded cards. The check now uses opaque hulls, and the downside arm tucks in so the body takes the floor.
+- **Blocked:** a front-to-profile turn. The packets hold front cards only.
+- **Not yet in the lab:** Watson, who uses a different rig.
+
 ## Rebuild
 
 ```sh
