@@ -58,6 +58,15 @@ Everything the player needs is in `player/`. You don't need to restore the archi
 | **Sets** | 26 laid out. The Road (beat 47) is a panorama through Compagnons, pottery, Ise and ijazah. Beat 8 is the Hendry works as a sepia memory. |
 | **Props** | Native props from the packets take precedence: the journal (closed, open, reading hands), calipers, offer letter, grafting knife and scion, rag, the father's shoulder-contact hand, Ajax's shield, the oat flat white, unicycle, maze, juggling ball, moly, canoe and paddle, potter's wheel, Ise tools. JPEG kit cuts are used only where nothing native exists: the letter's later states, clementines, bow, hourglasses, lathe, sprint board. |
 
+## The shot list (`shots.json`)
+
+Camera direction is data, decided per beat, as previs tools do it.
+- **Sizes.** Each entry names a size (`wide`, `group`, `two`, `single` or `close`), who the shot holds (`on`; `speaker` means whoever is talking) and a director's note (`why`).
+- **Cuts.** An authored shot cuts in. `"cut": false` drifts in instead.
+- **Unlisted beats.** These keep the automatic camera, which holds Odie and whoever speaks.
+
+`tests/shots-qa.mjs` renders every beat on an upright phone or on desktop. It checks that the faces the shot holds sit clear of the valance, the subtitles and the cards, and writes a contact sheet. `docs/shots/before-after-phone.png` compares the automatic camera with the shot list on the directed beats.
+
 ## Casting Lab (`lab.html`)
 
 The first proof for a recastable puppet-film studio. A performance is data that belongs to no actor: joint channels, foot contacts, an IK hand target and a prop. One performance plays on three cast slots at once, and any slot can be recast to any of the 64 rigs.
@@ -100,6 +109,7 @@ To rebuild the ASAPS bundle, clone ASAPS Modern, `npm install --workspace @asaps
 **Measured**
 - `node player/tests/conformance.mjs`: across rehearsal seeds 1–60, real ASAPS reaches all four endings and no route loops. The counts were Argos 27, Telemachus 25, Ajax's Silence 5, Laertes's Orchard 3.
 - The two Ithaca rehearsal presets hand over in recorded states, and the browser matched Node exactly. A sound effect that drew on the seeded `Math.random` had broken this; it now uses its own random source.
+- `node player/tests/shots-qa.mjs phone|desk`: all 97 beats pass on both, with the shot list. The first pass found Ines standing half off the stage edge in the homecoming office scenes (77–89), on every screen. Cast beyond a set's marks had been stacked past the last mark; they are now spread over the open floor.
 - With no AI provider, ASAPS's AI conversation beat shows its own "requires configuration" line and the story continues.
 
 **Judged** (independent critics with fresh context, from still frames; no reviewer watched motion or heard sound)

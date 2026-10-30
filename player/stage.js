@@ -112,6 +112,10 @@ export class Stage {
   async setScene(beatId) {
     const b = this.staging.beats[beatId]; if (!b) return;
     this.beatId = beatId; clearInterval(this.panTimer);
+    // the beat's authored shot (shots.json); an authored shot cuts in rather than drifts, unless it says otherwise
+    const shot = b.panorama ? null : this.staging.shots?.[beatId] || null;
+    if (shot && shot !== this.shot && shot.cut !== false) this.cutPending = true;
+    this.shot = shot;
     if (b.panorama) {
       // The Road: slide through each tradition's set while the passage is read.
       let i = 0; const step = async () => {
@@ -142,7 +146,10 @@ export class Stage {
     const lay = this.layoutFor(this.place) || { slots: [430, 780, 1000, 1150] };
     this.watson.tx = this.hasWatson ? lay.slots[0] : this.watson.tx;
     for (const [id, f] of this.figures) if (!want.includes(id) && !chorus.includes(id) && !this.motifs.includes(id)) { if (!f.leaving) this.emit('leave', { x: f.x }); f.tx = f.x > 640 ? W + 260 : -260; f.leaving = true; }
-    const slotFor = (i) => this.hasWatson ? lay.slots[Math.min(i + 1, lay.slots.length - 1)] + (i >= lay.slots.length - 1 ? (i - lay.slots.length + 2) * 120 : 0) : lay.slots[Math.min(i, lay.slots.length - 1)];
+    // the set's marks, in order; when the cast outnumbers them, spread everyone evenly over the open floor instead
+    // (stacking extras past the last mark pushed them off the edge of the stage)
+    const marks = this.hasWatson ? lay.slots.slice(1) : lay.slots, a = this.hasWatson ? (lay.slots[0] + lay.slots[1]) / 2 : 160, z = W - 110;
+    const slotFor = (i) => want.length <= marks.length ? marks[i] : a + i * (z - a) / Math.max(1, want.length - 1);
     // the chorus stands a step upstage, spread across the back
     const backX = (i, n) => 230 + (n === 1 ? 0.5 : i / (n - 1)) * 820 + (i % 2 ? 24 : -24);
     const entries = [...want.map((id, i) => [id, slotFor(i), false]), ...chorus.map((id, i) => [id, backX(i, chorus.length), true]), ...this.motifs.map((id, i) => [id, i % 2 ? 1060 : 180, false])];
@@ -260,6 +267,7 @@ export class Stage {
     const lay = this.layoutFor(this.place) || { wash: ['#c9a777', '#6e5236'], pieces: [] };
     // the camera: eases in on whoever speaks, closer on the touch, and back out when no one does.
     // On a tall screen the scene fills the frame and the camera holds on one person at a time, as vertical film does.
+    if (this.cutPending) { this.cutPending = false; this.cam = null; }
     const tg = this.camTarget(t), c = this.cam ||= { ...tg };
     c.s += (tg.s - c.s) * 0.025; c.x += (tg.x - c.x) * 0.03; c.y += (tg.y - c.y) * 0.03;
     const hw = W / (2 * c.s), hh = CH / (2 * c.s); c.x = clamp(c.x, hw, W - hw); if (!this.tall) c.y = clamp(c.y, hh, H - hh);
@@ -410,6 +418,7 @@ export class Stage {
   }
   camTarget(t) {
     const breathe = 0.008 * Math.sin(t * 0.09); // a slow breath, so a held scene is never quite still
+    if (this.shot && !this.touching) { const tg = this.shotTarget(this.shot, breathe); if (tg) return tg; }
     if (this.tall) { // vertical film: a shot that holds everyone who matters, feet at three-fifths of the frame (words and cards sit below)
       const CH = this.cv.height, xs = [];
       if (this.touching && this.watsonPts) xs.push(this.watsonPts.shoulder[0] - 90, this.watsonPts.shoulder[0] + 160);
@@ -424,6 +433,33 @@ export class Stage {
     if (f && !f.leaving) return { s: (1.06 + breathe) * z, x: f.x, y: FLOOR - FIG_H * 0.55 };
     if (z > 1.3 && this.hasWatson) return { s: z + Math.max(0, breathe), x: this.watson.x, y: H / 2 }; // tall screen, no one speaking: hold on Odie
     return { s: z + Math.max(0, breathe), x: W / 2, y: H / 2 };
+  }
+  // Who an authored shot holds: 'speaker' is whoever is talking; a two-shot adds Odie; wide and group hold everyone.
+  shotSubjects(sh) {
+    const live = id => id === 'char_player' ? this.hasWatson : (f => f && !f.leaving && !f.chorus && !f.motif)(this.figures.get(id));
+    const on = (sh.on || []).map(i => i === 'speaker' ? this.speaker : i).filter(live);
+    const all = [...(this.hasWatson ? ['char_player'] : []), ...[...this.figures.keys()].filter(id => live(id))];
+    if (sh.size === 'wide' || sh.size === 'group') return all;
+    if (sh.size === 'two') return [...new Set([...(this.hasWatson ? ['char_player'] : []), ...(on.length ? on : all.filter(i => i !== 'char_player').slice(0, 1))])];
+    return on.slice(0, 1).length ? on.slice(0, 1) : all.slice(0, 1);
+  }
+  // The camera for an authored shot, on either frame shape. Figures are framed at their marks, not mid-walk.
+  shotTarget(sh, breathe) {
+    const ids = this.shotSubjects(sh); if (!ids.length) return null;
+    const xOf = id => id === 'char_player' ? this.watson.tx : this.figures.get(id).tx;
+    const topOf = () => FLOOR + 8 - FIG_H; // every figure is drawn at the same height
+    const xs = ids.map(xOf), lo = Math.min(...xs), hi = Math.max(...xs), mid = (lo + hi) / 2, span = hi - lo, b = 1 + breathe;
+    if (this.tall) {
+      const CH = this.cv.height, feet = s => FLOOR - 0.15 * CH / s;
+      if (sh.size === 'close') { const s = 3.4 * b, top = topOf(ids[0]); return { s, x: mid, y: top - ((this.valanceH || 0) + 0.05 * CH - CH / 2) / s }; }
+      if (sh.size === 'single') { const s = 2.6 * b; return { s, x: mid, y: feet(s) }; }
+      const s = (sh.size === 'wide' ? clamp(W / (span + 520), 1.2, 1.8) : clamp(W / (span + 250), sh.size === 'group' ? 1.2 : 1.6, 3.1)) * b;
+      return { s, x: mid, y: feet(s) };
+    }
+    if (sh.size === 'wide') return { s: 1 + Math.max(0, breathe), x: W / 2, y: H / 2 };
+    if (sh.size === 'close') { const s = 1.6 * b; return { s, x: mid, y: topOf(ids[0]) + 0.35 * H / s }; }
+    if (sh.size === 'single') return { s: 1.18 * b, x: mid, y: FLOOR - FIG_H * 0.55 };
+    return { s: clamp(W / (span + 560), 1.02, 1.3) * b, x: mid, y: FLOOR - FIG_H * 0.55 };
   }
   // screen pixels → stage pixels, through the camera
   toWorld(px, py) { const c = this.cam || { s: 1, x: W / 2, y: H / 2 }, CH = this.cv.height; return [(px - (W / 2 - c.x * c.s)) / c.s, (py - (CH / 2 - c.y * c.s)) / c.s]; }

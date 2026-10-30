@@ -140,6 +140,7 @@ async function boot() {
   const [json, staging, manifest, layouts] = await Promise.all(['story/odyssey-tragic-comedy.json', 'staging.json', 'vendor/watson-rig/manifest.json', 'layouts.json'].map(u => fetch(u).then(r => r.json())));
   staging.layouts = layouts.layouts;
   staging.props = await fetch('props.json').then(r => r.json());
+  staging.shots = await fetch('shots.json').then(r => r.json()).then(j => j.shots).catch(() => ({}));
   const images = {};
   await Promise.all(manifest.parts.map(async p => { images[p.id] = await loadImage('vendor/watson-rig/' + p.file); }));
   const stage = new Stage($('#stage'), staging, { api: window.WatsonRig, manifest, images });
