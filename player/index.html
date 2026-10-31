@@ -47,7 +47,7 @@ canvas{display:block;width:100%;height:100%}
 .card .n{display:none}
 .card .thumb{flex:0 0 auto;width:3.4em;height:2.4em;background:center/contain no-repeat;filter:drop-shadow(0 2px 2px rgba(0,0,0,.35))}
 .card .lbl{display:grid;gap:3px;padding-left:6px}.card small{font-weight:400;font-size:.82em;color:#5a4630}
-.card.cont,#start.card{flex:0 0 auto;min-height:0;padding:.5em 2em;font:600 italic clamp(13px,1.35cqw,19px)/1.2 var(--display);letter-spacing:.02em;
+.card.cont,#start.card,#watch.card{flex:0 0 auto;min-height:0;padding:.5em 2em;font:600 italic clamp(13px,1.35cqw,19px)/1.2 var(--display);letter-spacing:.02em;
   -webkit-mask:radial-gradient(circle .45em at 0 50%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle .45em at 100% 50%,#0000 98%,#000) right/51% 100% no-repeat;mask:radial-gradient(circle .45em at 0 50%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle .45em at 100% 50%,#0000 98%,#000) right/51% 100% no-repeat}
 /* a locked card: dark board, a keyhole, the reason. Touch it to try the lock. */
 .card.locked{background:linear-gradient(160deg,#3a2c1f,#2a1f16);color:#cdb894;font-weight:400;box-shadow:0 10px 22px rgba(0,0,0,.55),0 2px 0 #1a120b}
@@ -92,7 +92,7 @@ canvas{display:block;width:100%;height:100%}
 #journalBtn[data-n]:not([data-n=""])::after{content:" " attr(data-n);color:var(--brass)}
 #ff,#loading{position:absolute;bottom:4%;left:50%;transform:translateX(-50%);z-index:4;color:var(--kraft);font:italic 15px var(--display);text-shadow:0 2px 8px #000}
 /* the beginning: one invitation */
-#start-screen{position:absolute;inset:0;z-index:5;display:grid;align-content:start;justify-content:center;justify-items:center;gap:1.4cqw;text-align:center;padding:5.5cqw 16px 0;background:linear-gradient(to bottom,rgba(7,6,10,.82) 0%,rgba(7,6,10,.45) 34%,rgba(7,6,10,0) 52%,rgba(7,6,10,0) 80%,rgba(7,6,10,.5) 100%)}
+#start-screen{position:absolute;inset:0;z-index:5;display:grid;align-content:start;justify-content:center;justify-items:center;gap:1.4cqw;text-align:center;padding:5.5cqw 16px 0;background:linear-gradient(to bottom,rgba(7,6,10,.82) 0%,rgba(7,6,10,.45) 34%,rgba(7,6,10,0) 52%,rgba(7,6,10,0) 66%,rgba(7,6,10,.82) 88%,rgba(7,6,10,.9) 100%)}
 #start-screen h1{font:italic 400 clamp(28px,6cqw,72px)/1 var(--display);margin:0;text-shadow:0 3px 24px #000}
 #start-screen p{margin:0;color:var(--kraft);font:italic clamp(13px,1.7cqw,19px) var(--display)}
 #start.card{max-width:none;font-size:clamp(17px,2.2cqw,26px);padding:.45em 2.4em}
@@ -143,6 +143,22 @@ select{font:inherit;font-size:13px;background:#120e0a;color:var(--ink);border:1p
 #gauges{list-style:none;margin:0;padding:0;display:grid;gap:6px}#gauges li{display:grid;grid-template-columns:130px 1fr 34px;gap:8px;align-items:center;font-size:14px}#gauges li.father{color:#ffcfae}#gauges b{text-align:right}meter{width:100%;height:9px}
 #log{list-style:none;margin:0;padding:0;max-height:200px;overflow:auto;font-size:12.5px;color:var(--muted);display:grid;gap:3px}#log code{color:var(--kraft)}#log .end{color:var(--ember)}
 .small{font-size:13px;color:var(--muted);line-height:1.5}a{color:var(--kraft)}
+
+/* watching: the prompter plays; one faint line says so, and the card he takes is lit before he takes it */
+#watching{position:absolute;left:0;right:0;top:calc(var(--valance,0px) + 1.2cqh);z-index:4;text-align:center;pointer-events:none;font:italic clamp(11px,1.2cqw,15px) var(--display);color:var(--kraft);opacity:.7;text-shadow:0 1px 6px #000;animation:breathe 5s ease-in-out infinite}
+@keyframes breathe{50%{opacity:.35}}
+.card.chosen{transform:rotate(0) translateY(-6px)!important;box-shadow:0 0 0 2px var(--brass),0 0 34px rgba(255,200,120,.55),0 16px 28px rgba(0,0,0,.6);transition:transform .35s,box-shadow .35s}
+.isle.pick .img{transform:scale(1.1);box-shadow:0 0 0 3px var(--brass),0 0 30px rgba(255,200,120,.6)}
+/* the start: two tickets, and the repertory of endings (found ones lit, the rest teased) */
+#start-screen .tickets{display:flex;gap:1em;flex-wrap:wrap;justify-content:center;align-items:center}
+#watch.card{max-width:none;white-space:nowrap;font-size:clamp(14px,1.7cqw,20px);padding:.4em 1.8em;filter:brightness(.88)}
+#start.card{white-space:nowrap}
+@media (orientation:portrait){#start-screen .tickets{flex-direction:column;gap:.7em}}
+@media (orientation:landscape) and (max-height:520px){#start-screen{padding-top:2cqw;gap:.8cqw}#start-screen h1{font-size:clamp(24px,4.6cqw,40px)}#tagline{display:none}#start.card,#watch.card{font-size:clamp(13px,1.9cqw,17px);padding:.3em 1.6em}}
+#sent{color:var(--brass)!important}
+#repertory{position:absolute;left:50%;transform:translateX(-50%);bottom:calc(4% + 5.2em);width:max-content;display:flex;flex-wrap:wrap;justify-content:center;gap:.25em 1.1em;max-width:min(92cqw,860px);font:italic clamp(11px,1.25cqw,16px)/1.3 var(--display);color:var(--muted);text-shadow:0 1px 5px #000}
+#repertory span{flex-basis:100%;font:700 .72em var(--text);letter-spacing:.24em;text-transform:uppercase;font-style:normal;color:var(--kraft)}
+#repertory b{color:var(--brass);font-weight:600}
 </style>
 </head>
 <body>
@@ -159,6 +175,7 @@ select{font:inherit;font-size:13px;background:#120e0a;color:var(--ink);border:1p
       <div id="slate" aria-live="polite"></div>
       <div id="aside" hidden aria-live="polite"><b>The prompter</b><p></p></div>
       <div id="slips" aria-live="polite"></div>
+      <div id="watching" hidden>The prompter is playing. Touch anything to take over.</div>
       <div id="pocket" class="rest" aria-label="What you carry"></div>
       <section id="dialog" aria-live="polite" hidden>
         <div class="who" hidden></div>
@@ -171,8 +188,10 @@ select{font:inherit;font-size:13px;background:#120e0a;color:var(--ink);border:1p
       <div id="loading" hidden></div>
       <div id="start-screen">
         <h1>The Slopling's Odyssey</h1>
-        <p>A tragicomedy in three crossings, for one player, with the sound on.</p>
-        <button id="start" class="card">Begin</button>
+        <p id="tagline">A tragicomedy in three crossings, for one player, with the sound on.</p>
+        <p id="sent" hidden>Someone sent you their odyssey.</p>
+        <div class="tickets"><button id="start" class="card">Begin</button><button id="watch" class="card">Just watch</button></div>
+        <div id="repertory" aria-label="The endings"></div>
         <div id="playbill" aria-label="Or begin at"></div>
         <select id="rehearse" hidden aria-hidden="true"></select>
       </div>
