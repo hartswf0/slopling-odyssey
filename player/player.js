@@ -1,7 +1,7 @@
 // The Slopling's Odyssey player: the real ASAPS engine (vendor/asaps, built from
 // ASAPS Modern packages/core) drives a cardboard toy-theatre renderer.
 import { StoryEngine, storyFromGeneratedJson, ASAPS_CORE_VERSION } from './vendor/asaps/asaps-core.slopling.js';
-import { Stage, loadImage } from './stage.js';
+import { Stage, loadImage, VALANCE } from './stage.js';
 import { Sound } from './sound.js';
 import { makeUI } from './ui.js';
 import { makeHUD } from './hud.js';
@@ -276,6 +276,8 @@ async function boot() {
     sound.init(); $('#start-screen').hidden = true; $('#menu').hidden = true; $('#controls').hidden = false; backs = 0;
     const greet = opts.script ? 'watch:theirs' : opts.watch ? 'watch:start' : memory.greeting(); memory.began();
     run(null, opts); setTimeout(() => prompter.say(greet, { force: true }), 900);
+    // an upright phone sees the whole stage, but small: say once that sideways is bigger
+    try { if (matchMedia('(orientation: portrait)').matches && !localStorage.getItem('slopling.sideways')) { localStorage.setItem('slopling.sideways', '1'); setTimeout(() => ui.toast('Turn your phone sideways for a bigger stage'), 7000); } } catch {}
   };
   const start = () => begin();
   ui.onTakeOver = () => { ui.toast('Your hands now'); prompter.say('watch:take', { force: true }); };
@@ -290,7 +292,7 @@ async function boot() {
   $('#playbill').innerHTML = '<span>or begin at</span>' + Object.entries(REHEARSALS).filter(([k]) => k !== 'start').map(([k, r]) => `<button data-k="${k}">${esc(r.label.replace(/ \(.*\)$/, ''))}</button>`).join('');
   $('#playbill').querySelectorAll('button').forEach(b => b.onclick = () => { sel.value = b.dataset.k; start(); });
   // the frame follows the screen: a tall screen gets a stage apron where the words and cards rest
-  const fitFrame = () => { const f = $('.fit'), r = f.getBoundingClientRect(), fr = stage.setFrame(r.width, r.height); f.style.setProperty('--band-top', (fr.bandTop * 100) + '%'); f.style.setProperty('--apron-top', (fr.apronTop * 100) + '%'); f.style.setProperty('--valance', (stage.tall ? r.height * 0.13 : 0) + 'px'); };
+  const fitFrame = () => { const f = $('.fit'), r = f.getBoundingClientRect(), fr = stage.setFrame(r.width, r.height); f.style.setProperty('--band-top', (fr.bandTop * 100) + '%'); f.style.setProperty('--apron-top', (fr.apronTop * 100) + '%'); f.style.setProperty('--valance', (stage.tall ? r.height * VALANCE : 0) + 'px'); };
   addEventListener('resize', fitFrame); fitFrame();
   // preview(beatId): stage a beat without playing (review and screenshots only)
   window.__player = { stage, sound, ui, memory, get engine() { return engine; }, get renderer() { return renderer; }, run, begin, select: k => { sel.value = k; }, preview: async id => { stage.state.craft = 6; await stage.setScene(id); await stage.setProps(id); } };
