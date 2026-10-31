@@ -81,10 +81,11 @@ export function makeUI({ story, staging, stage, sound, prompter }) {
     },
 
     // A card: title/speaker/body paged to fit, then the choices. Resolves with the chosen id.
-    card({ title, sub, speaker, body, button, choices, timed }) {
+    // auto: while the prompter plays (watching), the id he will take when the reading is done
+    card({ title, sub, speaker, body, button, choices, timed, auto }) {
       if (current) current.cancel();
       return new Promise(res => {
-        let page = 0, pages = [], manual = -1, timer = null, idleT = null;
+        let page = 0, pages = [], manual = -1, timer = null, idleT = null, autoT = null;
         const list = choices || (timed ? [] : [{ id: 'ok', text: button || 'Continue', isContinue: true }]);
         const onlyContinue = list.length === 1 && list[0].isContinue;
         const asChart = ((list.length && authored(list[0])?.siblings) || list).filter(c => { const a = ui.about(c); return a?.kind === 'place' && CHART[a.id]; }).length >= 5; // the hub stays a chart even as islands close
@@ -94,7 +95,7 @@ export function makeUI({ story, staging, stage, sound, prompter }) {
         const cardEl = (cls, html) => { const b = document.createElement('button'); b.className = 'card ' + cls; b.innerHTML = html; b.style.setProperty('--r', ((deal % 2 ? 1 : -1) * (0.6 + (deal % 3) * 0.4)).toFixed(2) + 'deg'); b.style.setProperty('--d', (deal++ * 0.07) + 's'); acts.append(b); return b; };
         if (asChart) cardEl('opt', `<span class="lbl">Unroll the chart<small>${list.length} islands within reach. Where do the winds take you?</small></span>`).onclick = () => openMap(list);
         else list.forEach((c, i) => {
-          if (c.isContinue) { cardEl('cont', esc(c.text || 'Continue')).onclick = () => done(c.id); return; }
+          if (c.isContinue) { const b = cardEl('cont', esc(c.text || 'Continue')); b.dataset.id = c.id; b.onclick = () => done(c.id); return; }
           const a = ui.about(c), thumb = a && a.kind !== 'fig', b = cardEl('opt', `<span class="n">${i + 1}</span>${thumb ? '<span class="thumb"></span>' : ''}<span class="lbl">${md(c.text)}${c.description ? `<small>${esc(c.description)}</small>` : ''}${visited.includes(c.id) ? '<small>you have been down this road</small>' : ''}</span>`);
           b.dataset.id = c.id; b.onclick = () => done(c.id);
           if (thumb) stage.thumb(a.kind, a.id, 120, 68).then(src => { const th = b.querySelector('.thumb'); if (src && th) th.style.backgroundImage = `url(${src})`; else th?.remove(); }); if (a && a.kind !== 'place') marks.push({ n: i + 1, kind: a.kind, id: a.id }); // the person is ringed on stage; a card shows things and places only
@@ -134,7 +135,7 @@ export function makeUI({ story, staging, stage, sound, prompter }) {
           if (last) { acts.querySelector('.card.cont')?.focus({ preventScroll: true }); armIdle(); } // a choice is never pre-selected: Enter must not pick option 1
         };
         // sitting on a real choice for a long time earns a remark, at most twice
-        const armIdle = () => { clearTimeout(idleT); if (offered.length < 2) return; idleT = setTimeout(() => { prompter?.say('idle'); idleT = setTimeout(() => prompter?.say('idle:2'), 70000); }, 50000); };
+        const armIdle = () => { clearTimeout(idleT); if (offered.length < 2 || ui.watching) return; idleT = setTimeout(() => { prompter?.say('idle'); idleT = setTimeout(() => prompter?.say('idle:2'), 70000); }, 50000); };
         const next = () => { if (page < pages.length - 1) { manual = page + 1; show(page + 1); sound.seekVoice(pages[page].start); return true; } return false; };
         const tick = () => { // the page follows the voice
           const pr = sound.voiceProgress(); if (pr == null || !pages.length) return;
@@ -142,7 +143,25 @@ export function makeUI({ story, staging, stage, sound, prompter }) {
           if (k > page && k > manual) show(k);
         };
         const done = id => { cleanup(); acts.innerHTML = ''; pager.innerHTML = ''; dlg.hidden = !!timed; sound.stopVoice(); sound.click(); stage.marks = []; res(id); };
-        const cleanup = () => { clearInterval(timer); clearTimeout(idleT); removeEventListener('resize', layout); current = null; };
+        const cleanup = () => { clearInterval(timer); clearInterval(autoT); clearTimeout(idleT); removeEventListener('resize', layout); current = null; };
+        // The prompter plays: each page is read to the end of its voice (or at reading pace when there is none),
+        // the choices are held long enough to be read, then the card he takes is lit and taken.
+        const act = () => {
+          const id = auto ?? (onlyContinue ? list[0].id : null); if (id == null) return; // an ending: the show stops for you
+          if (asChart) { openMap(list); setTimeout(() => { if (!ui.watching) return; map.querySelector(`.isle[data-id="${CSS.escape(id)}"]`)?.classList.add('pick'); setTimeout(() => { if (!ui.watching) return; closeMap(); done(id); }, 1500 * ui.pace); }, 2200 * ui.pace); return; }
+          const b = acts.querySelector(`.card[data-id="${CSS.escape(id)}"]`); if (b && !onlyContinue) b.classList.add('chosen');
+          setTimeout(() => { if (ui.watching && current?.marks === marks) done(id); }, (b && !onlyContinue ? 1400 : 300) * ui.pace);
+        };
+        if (ui.watching && !timed) { let heard = false, quiet = null;
+          autoT = setInterval(() => {
+            if (!ui.watching) return clearInterval(autoT);
+            if (!pages.length) return;
+            const now = performance.now(); if (sound.voiceProgress() != null) { heard = true; quiet = null; return; }
+            quiet ??= now; const chars = pages[page].us.reduce((n, u) => n + u.s.length, 0);
+            if (now - quiet < ui.pace * (heard ? 1100 : Math.max(2400, chars * 55) + (page === pages.length - 1 && offered.length > 1 ? 1600 : 0))) return;
+            quiet = now; if (next()) return;
+            clearInterval(autoT); act();
+          }, 250); }
         text.onclick = pager.onclick = () => { if (!next() && onlyContinue) done(list[0].id); };
         current = { cancel: cleanup, next, pick: id => done(id), choose: n => { const b = acts.querySelectorAll('.card.opt')[n]; if (b && !acts.hidden) b.click(); }, cont: () => { if (!next()) { const b = acts.querySelector('.card.cont') || (list.length === 1 ? acts.querySelector('.card') : null); b?.click(); } }, marks };
         requestAnimationFrame(layout); addEventListener('resize', layout);
@@ -180,7 +199,7 @@ export function makeUI({ story, staging, stage, sound, prompter }) {
         const [name, ...rest] = c.text.split(/,\s*/);
         b.innerHTML = `<span class="img"></span><span class="nm">${open ? `<b>${i + 1}</b> ` : ''}${esc(name)}</span><small>${esc(open ? rest.join(', ') : wasHere ? 'you have been' : closed.map(k => why(k, world, beats)).join('. '))}</small>`;
         b.onclick = () => { if (open) { closeMap(); current?.pick(c.id); } else { sound.event('rattle'); prompter?.say(wasHere ? 'var:visited' : prompter.lockKey(closed), { force: true }); } };
-        if (open) b.dataset.open = '1';
+        if (open) b.dataset.open = '1'; b.dataset.id = c.id;
         if (a) stage.thumb('place', a.id, 200, 112).then(src => { if (src) b.querySelector('.img').style.backgroundImage = `url(${src})`; });
         ch.append(b);
       });
@@ -212,6 +231,13 @@ export function makeUI({ story, staging, stage, sound, prompter }) {
     pokes = pokes.filter(p => now - p.t < 10000 && p.id === h.id).concat({ t: now, id: h.id }); if (pokes.length >= 4) { pokes = []; prompter?.say('poke'); }
     stage.poke(h); ui.onInspect?.(h); // the sheet: who or what it is, how they are, and the choice about them
   });
+
+  // ---------- watching: the prompter plays until you touch anything ----------
+  ui.watching = false; ui.pace = 1; // pace: a multiplier on how long he lingers (tests run it fast)
+  ui.setWatching = on => { ui.watching = !!on; $('#watching').hidden = !on; document.body.classList.toggle('watching', !!on); };
+  const takeOver = () => { if (!ui.watching) return; ui.setWatching(false); document.querySelectorAll('.chosen, .isle.pick').forEach(e => e.classList.remove('chosen', 'pick')); ui.onTakeOver?.(); };
+  addEventListener('pointerdown', e => { if (e.target.closest('#screen') && !e.target.closest('#start-screen')) takeOver(); }, true);
+  addEventListener('keydown', e => { if (e.key !== 'Escape') takeOver(); }, true);
 
   // ---------- controls wake when you reach for them ----------
   const ctl = $('#controls'); let sleepT;

@@ -1,5 +1,5 @@
 {
-  "note": "The Prompter: the toy theatre's prompter, who holds the book, sees every choice and is not above saying so. Asides break the fourth wall; they never block play. Voiced by tools/render_voices.py (speaker 'Prompter').",
+  "note": "The Prompter: the toy theatre's prompter, who holds the book, sees every choice and is not above saying so. Asides break the fourth wall; they never block play. Voiced by tools/render_voices.py (speaker 'Prompter'). Return greetings, the watch-mode remarks and the unseen-ending teases use the browser's memory (player/memory.js).",
   "lines": {
     "hello": "Lights. I'm the prompter. I hold the book, and I see everything you choose. Go on.",
     "item:Prompt Journal": "That needs the Prompt Journal. You left it on the desk at one in the morning. I watched you walk past it.",
@@ -22,6 +22,24 @@
     "poke": "He's not a button. It's very thin cardboard.",
     "idle": "Take your time. He's only been waiting thirty years.",
     "idle:2": "The model would have answered by now. Badly. But by now.",
-    "end": "That's the show. They don't all end like that. Ask me how I know."
+    "end": "That's the show. They don't all end like that. Ask me how I know.",
+    "return": "You're back. They always come back. I kept your seat warm. Metaphorically. It's cardboard.",
+    "return:Laertes's Orchard": "Back again. Last time your father learned the names of the trees. Greedy, wanting more.",
+    "return:Telemachus": "Last time he hugged you and still had no word for what you do. Shall we find him one?",
+    "return:Argos": "Last time the only one who knew you was the work. And Ines. Let's try for your father.",
+    "return:Ajax's Silence": "Last time you said nothing in your own orchard. I've seen livelier topiary.",
+    "return:all": "All four endings. You've seen everything. You're here for the scenery now. I painted it, so, thank you.",
+    "watch:start": "Sit back. I'll play. I've read ahead, which is cheating, but I hold the book.",
+    "watch:pick:1": "This one. I've never seen it go this way either.",
+    "watch:pick:2": "I'll take the one you didn't. Don't take it personally.",
+    "watch:pick:3": "Left, right. It's all the same to a man with a book.",
+    "watch:pick:4": "Watch this. No, really, that's the whole idea.",
+    "watch:take": "Oh, you want it back? Fine. Your hands.",
+    "watch:theirs": "Someone sent you this. Every choice in it is theirs. Judge accordingly.",
+    "share": "Copied. Now someone else gets to watch you make those choices. Brave.",
+    "end:unseen:Laertes's Orchard": "There's an ending where your father learns the names of the trees. Not this one. Just saying.",
+    "end:unseen:Telemachus": "There's an ending with a hug in it. You didn't get the hug.",
+    "end:unseen:Argos": "There's an ending where only the work remembers you. It's sadder than it sounds. Or funnier.",
+    "end:unseen:Ajax's Silence": "There's an ending where you say nothing at all. Some people find it restful."
   }
 }

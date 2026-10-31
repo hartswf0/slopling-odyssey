@@ -1531,6 +1531,150 @@
 "dur": 3.18,
 "env": "3924446869975245564365678545103431020000068351353246554555433100",
 "text": "That's the show. They don't all end like that. Ask me how I know."
+},
+"488a2984": {
+"file": "488a2984.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 4.54,
+"env": "1792997300056656441453654200014126203343420146653200000003733314997014323314015663025432200",
+"text": "You're back. They always come back. I kept your seat warm. Metaphorically. It's "
+},
+"056bad5e": {
+"file": "056bad5e.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 4.33,
+"env": "292141785420059352368655216886385886364665432030335422133000000002996353136342445543100",
+"text": "Back again. Last time your father learned the names of the trees. Greedy, wantin"
+},
+"2faa98c4": {
+"file": "2faa98c4.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 4.33,
+"env": "059352587645238103442345437632512666526874203274123045421000000000248461287633334432100",
+"text": "Last time he hugged you and still had no word for what you do. Shall we find him"
+},
+"82ce863c": {
+"file": "82ce863c.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 4.63,
+"env": "059533267554356665433531345552322303155320000000025556764221310000028223226652023510454213100",
+"text": "Last time the only one who knew you was the work. And Ines. Let's try for your f"
+},
+"7e25300c": {
+"file": "7e25300c.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 3.99,
+"env": "04953226755423650464004344453654314202332200000000562445665566403532244101332100",
+"text": "Last time you said nothing in your own orchard. I've seen livelier topiary."
+},
+"4d650a43": {
+"file": "4d650a43.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 5.14,
+"env": "2895117786676363321100334365266042033210154166602133435644433454310000000007403773316313365103630113100",
+"text": "All four endings. You've seen everything. You're here for the scenery now. I pai"
+},
+"bb39df99": {
+"file": "bb39df99.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 3.75,
+"env": "0459006763002550166542000000057298543771242434053522333323531474113065100000",
+"text": "Sit back. I'll play. I've read ahead, which is cheating, but I hold the book."
+},
+"3c1bbdcc": {
+"file": "3c1bbdcc.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 2.45,
+"env": "02933056431144166422333444015640322044433431221000",
+"text": "This one. I've never seen it go this way either."
+},
+"c8ee415d": {
+"file": "c8ee415d.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 2.67,
+"env": "089334870043655432842420200001972227223016724343332000",
+"text": "I'll take the one you didn't. Don't take it personally."
+},
+"f87b1df7": {
+"file": "f87b1df7.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 2.47,
+"env": "15972113865301100314763455854224446543333065100000",
+"text": "Left, right. It's all the same to a man with a book."
+},
+"f19798fe": {
+"file": "f19798fe.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 2.37,
+"env": "059416337323204787446634337132422765544124432100",
+"text": "Watch this. No, really, that's the whole idea."
+},
+"39905a25": {
+"file": "39905a25.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 1.98,
+"env": "1898564754306542000038655446225533334200",
+"text": "Oh, you want it back? Fine. Your hands."
+},
+"4face9bd": {
+"file": "4face9bd.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 3.75,
+"env": "0269876643563123261121000000871540437522441332066544210037722301452433221000",
+"text": "Someone sent you this. Every choice in it is theirs. Judge accordingly."
+},
+"82d6c2f5": {
+"file": "82d6c2f5.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 3.8,
+"env": "1491176136785345667521262022425603245530055222245322431210000000039976431000",
+"text": "Copied. Now someone else gets to watch you make those choices. Brave."
+},
+"d4549cfa": {
+"file": "d4549cfa.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 4.61,
+"env": "197584889555437846310988175688544055554332132244322121000000007810734155320000463446865322000",
+"text": "There's an ending where your father learns the names of the trees. Not this one."
+},
+"8352abe8": {
+"file": "8352abe8.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 2.69,
+"env": "089767679846455252392454202210002627844155032267511000",
+"text": "There's an ending with a hug in it. You didn't get the hug."
+},
+"f5021577": {
+"file": "f5021577.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 4.37,
+"env": "1985958995554389569886442696014656442333200000000072454993536532456533323004511774432000",
+"text": "There's an ending where only the work remembers you. It's sadder than it sounds."
+},
+"1f2b1d0d": {
+"file": "1f2b1d0d.mp3",
+"speaker": "Prompter",
+"voice": "bf_emma",
+"dur": 3.86,
+"env": "297484568735344743344664465004332344432000000003797402520431375341182231032100",
+"text": "There's an ending where you say nothing at all. Some people find it restful."
 }
 }
 }

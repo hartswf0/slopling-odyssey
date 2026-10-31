@@ -58,6 +58,16 @@ Everything the player needs is in `player/`. You don't need to restore the archi
 | **Sets** | 26 laid out. The Road (beat 47) is a panorama through Compagnons, pottery, Ise and ijazah. Beat 8 is the Hendry works as a sepia memory. |
 | **Props** | Native props from the packets take precedence: the journal (closed, open, reading hands), calipers, offer letter, grafting knife and scion, rag, the father's shoulder-contact hand, Ajax's shield, the oat flat white, unicycle, maze, juggling ball, moly, canoe and paddle, potter's wheel, Ise tools. JPEG kit cuts are used only where nothing native exists: the letter's later states, clementines, bow, hourglasses, lathe, sprint board. |
 
+## Watching, sending and coming back
+
+- **Just watch.** The prompter plays the show. He reads each page to the end of its voice (or at reading pace with the sound off), holds on the choices and lights the card he takes. He prefers roads this browser has never taken, so watching again shows something new. He sometimes says why. Touch anything, or press a key, and the controls are yours.
+- **Send this odyssey.** Every ending offers a link (`#w1.<seed>.<one character per choice>`). Whoever opens it watches the same show: same seed, same choices, the same beats in the same order. They can take over at any point.
+- **Memory** (`memory.js`, localStorage). The browser keeps the endings found, the roads taken and how the last show ended.
+  - **The start screen** lists the four endings: found ones by name, the rest by a teasing line.
+  - **The prompter** greets a returning player by how the last show ended.
+  - **Each ending** says how many of the four you've found, and the prompter teases one you haven't.
+  - **Private windows** and blocked storage simply forget; nothing else changes.
+
 ## The shot list (`shots.json`)
 
 Camera direction is data, decided per beat, as previs tools do it.
@@ -109,6 +119,7 @@ To rebuild the ASAPS bundle, clone ASAPS Modern, `npm install --workspace @asaps
 **Measured**
 - `node player/tests/conformance.mjs`: across rehearsal seeds 1–60, real ASAPS reaches all four endings and no route loops. The counts were Argos 27, Telemachus 25, Ajax's Silence 5, Laertes's Orchard 3.
 - The two Ithaca rehearsal presets hand over in recorded states, and the browser matched Node exactly. A sound effect that drew on the seeded `Math.random` had broken this; it now uses its own random source.
+- Watch mode, played to an ending at test speed on an upright phone. Its sent link, opened in a fresh browser, replayed the identical 70 beats and choices to the same ending. Touching the stage while he plays hands control back, and the show waits.
 - `node player/tests/shots-qa.mjs phone|desk`: all 97 beats pass on both, with the shot list. The first pass found Ines standing half off the stage edge in the homecoming office scenes (77–89), on every screen. Cast beyond a set's marks had been stacked past the last mark; they are now spread over the open floor.
 - With no AI provider, ASAPS's AI conversation beat shows its own "requires configuration" line and the story continues.
 
