@@ -71,6 +71,7 @@ Everything the player needs is in `player/`. You don't need to restore the archi
 ## The shot list (`shots.json`)
 
 Camera direction is data, decided per beat, as previs tools do it.
+- **Tall screens.** An upright phone sees the whole stage, edge to edge, under a deeper curtain; only the touch and shots authored `single` or `close` move in. A one-time hint says sideways is bigger.
 - **Sizes.** Each entry names a size (`wide`, `group`, `two`, `single` or `close`), who the shot holds (`on`; `speaker` means whoever is talking) and a director's note (`why`).
 - **Cuts.** An authored shot cuts in. `"cut": false` drifts in instead.
 - **Unlisted beats.** These keep the automatic camera, which holds Odie and whoever speaks.

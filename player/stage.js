@@ -5,6 +5,9 @@ import { makeAnchorRig, drawAnchorRig, pose, bounds } from './anchor-rig.js';
 // State the ladder cannot see is drawn: Craft as a line of light, Standing as a tag.
 
 const W = 1280, H = 720, FLOOR = 612, FIG_H = 372;
+// how far the valance hangs on a tall frame, as a share of its height: down to just above the scenery, so the
+// stage's full width sits under the curtain with no bare sky between them
+export const VALANCE = 0.23;
 // The scale-matched cards assemble squat (short legs, big heads). Lengthen limb cards along
 // their own axis at the recorded anchors; see player/tests/proportion-test.html.
 const STRETCH = { thigh_left: 1.35, thigh_right: 1.35, shin_left: 1.35, shin_right: 1.35, upper_arm_left: 1.1, upper_arm_right: 1.1, forearm_left: 1.1, forearm_right: 1.1 };
@@ -274,7 +277,7 @@ export class Stage {
     x.save();
     x.setTransform(c.s, 0, 0, c.s, W / 2 - c.x * c.s, CH / 2 - c.y * c.s);
     if (this.tall) { // the set continues past its own edges: sky above, boards below, so a tall frame is never blank
-      x.fillStyle = lay.wash[0]; x.fillRect(-W, -3000, 3 * W, 3000);
+      x.fillStyle = lay.wash[0]; x.fillRect(-W, -3000, 3 * W, 3002); // overlaps the set's own wash by a hair: no seam
       const fl = x.createLinearGradient(0, H, 0, H + 900); fl.addColorStop(0, lay.wash[1]); fl.addColorStop(1, '#120c07'); x.fillStyle = fl; x.fillRect(-W, H - 1, 3 * W, 3000);
     }
     // wash + proscenium board
@@ -403,7 +406,7 @@ export class Stage {
   // A toy theatre's proscenium valance, hung across the top of a tall frame: the theatre's own
   // architecture where a narrow screen would otherwise show bare wall above the set.
   drawValance(CH, t) {
-    const x = this.x, h = this.valanceH = Math.round(CH * 0.13), sw = W / 7;
+    const x = this.x, h = this.valanceH = Math.round(CH * VALANCE), sw = W / 7;
     const g = x.createLinearGradient(0, 0, 0, h); g.addColorStop(0, '#2a0707'); g.addColorStop(0.55, '#6b1616'); g.addColorStop(1, '#4a0f0f');
     x.save(); x.fillStyle = g; x.shadowColor = 'rgba(0,0,0,.6)'; x.shadowBlur = 30; x.shadowOffsetY = 12;
     x.beginPath(); x.moveTo(0, 0); x.lineTo(W, 0); x.lineTo(W, h - 40);
@@ -419,13 +422,9 @@ export class Stage {
   camTarget(t) {
     const breathe = 0.008 * Math.sin(t * 0.09); // a slow breath, so a held scene is never quite still
     if (this.shot && !this.touching) { const tg = this.shotTarget(this.shot, breathe); if (tg) return tg; }
-    if (this.tall) { // vertical film: a shot that holds everyone who matters, feet at three-fifths of the frame (words and cards sit below)
-      const CH = this.cv.height, xs = [];
-      if (this.touching && this.watsonPts) xs.push(this.watsonPts.shoulder[0] - 90, this.watsonPts.shoulder[0] + 160);
-      else { if (this.hasWatson) xs.push(this.watson.x); for (const [id, f] of this.figures) if (!f.chorus && !f.leaving && !f.motif && (id === this.speaker || xs.length < 2)) xs.push(f.x); }
-      if (!xs.length) xs.push(W / 2);
-      const lo = Math.min(...xs), hi = Math.max(...xs), s = clamp(W / (hi - lo + 250), 1.6, 3.1) * (1 + breathe);
-      return { s, x: (lo + hi) / 2, y: FLOOR - 0.15 * CH / s };
+    if (this.tall) { // a tall screen sees the whole stage, edge to edge; only the touch, and authored close shots, move in
+      if (this.touching && this.watsonPts) { const s = 1.35 * (1 + breathe); return { s, x: this.watsonPts.shoulder[0] + 35, y: this.tallFloorY(s) }; }
+      return this.tallWhole(breathe);
     }
     const z = this.baseZoom || 1;
     if (this.touching && this.watsonPts) return { s: 1.12 * z, x: this.watsonPts.shoulder[0] + 60, y: FLOOR - FIG_H * 0.6 };
@@ -449,18 +448,20 @@ export class Stage {
     const xOf = id => id === 'char_player' ? this.watson.tx : this.figures.get(id).tx;
     const topOf = () => FLOOR + 8 - FIG_H; // every figure is drawn at the same height
     const xs = ids.map(xOf), lo = Math.min(...xs), hi = Math.max(...xs), mid = (lo + hi) / 2, span = hi - lo, b = 1 + breathe;
-    if (this.tall) {
-      const CH = this.cv.height, feet = s => FLOOR - 0.15 * CH / s;
-      if (sh.size === 'close') { const s = 3.4 * b, top = topOf(ids[0]); return { s, x: mid, y: top - ((this.valanceH || 0) + 0.05 * CH - CH / 2) / s }; }
-      if (sh.size === 'single') { const s = 2.6 * b; return { s, x: mid, y: feet(s) }; }
-      const s = (sh.size === 'wide' ? clamp(W / (span + 520), 1.2, 1.8) : clamp(W / (span + 250), sh.size === 'group' ? 1.2 : 1.6, 3.1)) * b;
-      return { s, x: mid, y: feet(s) };
+    if (this.tall) { // the whole stage, unless the shot is authored to come close
+      const CH = this.cv.height;
+      if (sh.size === 'close') { const s = 2.6 * b, top = topOf(ids[0]); return { s, x: mid, y: top - ((this.valanceH || 0) + 0.06 * CH - CH / 2) / s }; }
+      if (sh.size === 'single') { const s = 1.7 * b; return { s, x: mid, y: this.tallFloorY(s) }; }
+      return this.tallWhole(breathe);
     }
     if (sh.size === 'wide') return { s: 1 + Math.max(0, breathe), x: W / 2, y: H / 2 };
     if (sh.size === 'close') { const s = 1.6 * b; return { s, x: mid, y: topOf(ids[0]) + 0.35 * H / s }; }
     if (sh.size === 'single') return { s: 1.18 * b, x: mid, y: FLOOR - FIG_H * 0.55 };
     return { s: clamp(W / (span + 560), 1.02, 1.3) * b, x: mid, y: FLOOR - FIG_H * 0.55 };
   }
+  // On a tall frame: the stage's full width, its floor just above where the words begin
+  tallFloorY(s) { return FLOOR - 0.03 * this.cv.height / s; }
+  tallWhole(breathe) { const s = 1 + Math.max(0, breathe); return { s, x: W / 2, y: this.tallFloorY(s) }; }
   // screen pixels → stage pixels, through the camera
   toWorld(px, py) { const c = this.cam || { s: 1, x: W / 2, y: H / 2 }, CH = this.cv.height; return [(px - (W / 2 - c.x * c.s)) / c.s, (py - (CH / 2 - c.y * c.s)) / c.s]; }
   // ---------- what you can click ----------
